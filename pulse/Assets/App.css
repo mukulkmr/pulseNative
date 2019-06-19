@@ -1,0 +1,31 @@
+﻿/* Primary : #ffcc67*/
+/* Accent : #80deea*/
+
+
+^ContentPage {
+    background-color: white;
+    color: #000;
+}
+
+navigationpage {
+    -xf-bar-background-color: #ffcc67;
+    -xf-bar-text-color: #000;
+    text-align: center;
+}
+
+.heading{
+    font-size: 48;
+    text-align:center;
+    margin: 10;
+}
+
+entry, Picker {
+    margin: 5;
+    margin-left: 20;
+    margin-right: 20;
+}
+
+
+activityindicator {
+    color: #ff4081;
+}

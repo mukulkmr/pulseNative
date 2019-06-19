@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:pulse"
+            Title="Pulse"
+            x:Class="pulse.MainPage"
+            NavigationPage.HasNavigationBar="False"
+            
+            android:TabbedPage.BarSelectedItemColor="{StaticResource AccentColor}"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom">
+  
+    <NavigationPage Title="Events" IconImageSource="event.png">
+        <x:Arguments>
+            <local:EventsPage />
+        </x:Arguments>
+    </NavigationPage>
+    
+    <NavigationPage Title="Payments" IconImageSource="payment.png">
+        <x:Arguments>
+            <local:RegistrationsPage />
+        </x:Arguments>
+    </NavigationPage>
+    
+    <NavigationPage Title="Notifications" IconImageSource="notifications_active.png">
+        <x:Arguments>
+            <local:NotificationsPage />
+        </x:Arguments>
+    </NavigationPage>
+    
+    <NavigationPage Title="Accounts" IconImageSource="account_box.png">
+        <x:Arguments>
+            <local:AccountsPage />
+        </x:Arguments>
+    </NavigationPage>
+    
+    <NavigationPage Title="About us" IconImageSource="pawprint.png">
+        <x:Arguments>
+            <local:CatsPage />
+        </x:Arguments>
+    </NavigationPage>
+
+</TabbedPage>
