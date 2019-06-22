@@ -31,6 +31,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidDexTool>d8</AndroidDexTool>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,6 +42,7 @@
     <WarningLevel>4</WarningLevel>
     <AndroidManagedSymbols>true</AndroidManagedSymbols>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AndroidDexTool>d8</AndroidDexTool>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -105,6 +107,7 @@
     <AndroidResource Include="Resources\drawable\notifications_active.png" />
     <AndroidResource Include="Resources\drawable\event.png" />
     <AndroidResource Include="Resources\drawable\payment.png" />
+    <AndroidResource Include="Resources\drawable\stars.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

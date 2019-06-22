@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Net.Http;
+using System.Text;
+using Microsoft.AppCenter;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace pulse
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
         IList<string> States;
@@ -591,7 +593,7 @@ namespace pulse
             StatesPicker.ItemsSource = States as System.Collections.IList;
 
             StatesPicker.SelectedIndex = 6;
-            CollegePicker.SelectedIndex = 0;
+            CollegePicker.SelectedIndex = 1;
         }
 
         void Handle_SelectedIndexChanged(object sender, EventArgs e)
@@ -601,25 +603,58 @@ namespace pulse
 
         async void Login(object sender, System.EventArgs e)
         {
+
+            var college = CollegePicker.SelectedItem;
+            var id = await AppCenter.GetInstallIdAsync();
+
+            if (inviteSwitch.IsToggled)
+                college = "President's Invite";
+
+
+            if (userName.Text == null || userEmail.Text == null || userMobile.Text == null || college == null)
+            {
+                await DisplayAlert("Alert", "Please Enter your Credentials", "OK");
+                return;
+            }
+
             Registerbutton.IsVisible = false;
-            string id = Guid.NewGuid().ToString() + "WeLoveCats";
-            HttpClient httpClient = new HttpClient();
 
             Application.Current.Properties.Add("Name", userName.Text);
             Application.Current.Properties.Add("Email", userEmail.Text);
             Application.Current.Properties.Add("Mobile", userMobile.Text);
-            Application.Current.Properties.Add("Id", id);
+            Application.Current.Properties.Add("Id", id.ToString());
             Application.Current.Properties.Add("DelCard", false);
             Application.Current.Properties.Add("Accomodations", false);
-            Application.Current.Properties.Add("College", CollegePicker.SelectedItem);
+            Application.Current.Properties.Add("College", college);
+
+            AppCenter.SetUserId(id.ToString());
 
             await Application.Current.SavePropertiesAsync();
 
-            Uri uri = new Uri($"https://pulse-aiims.herokuapp.com/user/{id}/{userName.Text}/{CollegePicker.SelectedItem}/{userMobile.Text}/{userEmail.Text}");
-            await httpClient.GetAsync(uri);
 
+            HttpClient httpClient = new HttpClient();
+
+            var formContent = new FormUrlEncodedContent(new[]
+            {
+                new KeyValuePair<string, string>("guid", id.ToString()),
+                new KeyValuePair<string, string>("name", userName.Text),
+                new KeyValuePair<string, string>("email", userEmail.Text),
+                new KeyValuePair<string, string>("college", (string)college),
+                new KeyValuePair<string, string>("number", userMobile.Text)
+            });
+
+            string uri = "https://app.aiimspulse.website/scripts/adduser.php";
+
+            await httpClient.PostAsync(uri, formContent);
             await DisplayAlert("Alert", "Logged in with " + userEmail.Text, "OK");
+
+            Debug.Write(CollegePicker.SelectedIndex);
             await Navigation.PushAsync(new MainPage());
+        }
+
+        void Handle_Toggled(object sender, ToggledEventArgs e)
+        {
+            CollegeInputCard.IsVisible = !e.Value;
         }
     }
 }

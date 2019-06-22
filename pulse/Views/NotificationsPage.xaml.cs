@@ -3,26 +3,17 @@ using Xamarin.Forms.Xaml;
 
 namespace pulse
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class NotificationsPage : ContentPage
     {
-        public NotificationsPage()
-        { 
-            InitializeComponent();
+        public NotificationsPage() => InitializeComponent();
 
-            if (Application.Current.Properties.ContainsKey("Id"))
-            {
-                webView.Source = "https://pulse-aiims.herokuapp.com/events/NOTF?id=" + (string)Application.Current.Properties["Id"];
-            }
-        }
-
-        void Handle_Navigating(object sender, Xamarin.Forms.WebNavigatingEventArgs e)
+        void Handle_Navigating(object sender, WebNavigatingEventArgs e)
         {
             loading.IsVisible = true;
             webView.IsVisible = false;
         }
 
-        void Handle_Navigated(object sender, Xamarin.Forms.WebNavigatedEventArgs e)
+        void Handle_Navigated(object sender, WebNavigatedEventArgs e)
         {
             if (e.Result == WebNavigationResult.Success)
             {

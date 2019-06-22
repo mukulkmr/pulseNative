@@ -5,6 +5,8 @@
 /Users/mukulkumar/Projects/pulse/pulse.Android/bin/Debug/pulse.dll
 /Users/mukulkumar/Projects/pulse/pulse.Android/bin/Debug/pulse.pdb
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Debug/pulse.Android.nuget.stamp
+/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Debug/MonoAndroid,Version=v9.0.AssemblyAttributes.cs
+/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Debug/pulse.Android.csprojAssemblyReference.cache
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Debug/XbdMerge/Xamarin.GooglePlayServices.Basement.dll.stamp
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Debug/XbdMerge/Xamarin.GooglePlayServices.Tasks.dll.stamp
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Debug/XbdMerge/Xamarin.Firebase.Common.dll.stamp
@@ -52,11 +54,10 @@
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Debug/res/drawable/notifications_active.png
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Debug/res/drawable/event.png
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Debug/res/drawable/payment.png
+/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Debug/res/drawable/stars.png
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Debug/R.cs.flag
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Debug/R.txt
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Debug/uploadflags.txt
-/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Debug/pulse.Android.csprojAssemblyReference.cache
-/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Debug/MonoAndroid,Version=v9.0.AssemblyAttributes.cs
 /Users/mukulkumar/Projects/pulse/pulse.Android/bin/Debug/FormsViewGroup.pdb
 /Users/mukulkumar/Projects/pulse/pulse.Android/bin/Debug/Mono.Android.pdb
 /Users/mukulkumar/Projects/pulse/pulse.Android/bin/Debug/Xamarin.Forms.Core.pdb

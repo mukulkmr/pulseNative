@@ -1,7 +1,6 @@
 ﻿/* Primary : #ffcc67*/
 /* Accent : #80deea*/
 
-
 ^ContentPage {
     background-color: white;
     color: #000;
@@ -23,6 +22,7 @@ entry, Picker {
     margin: 5;
     margin-left: 20;
     margin-right: 20;
+    text-align:center;
 }
 
 

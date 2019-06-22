@@ -155,6 +155,10 @@
     <ImageAsset Include="Assets.xcassets\payment.imageset\baseline_payment_black_24pt_1x.png" />
     <ImageAsset Include="Assets.xcassets\payment.imageset\baseline_payment_black_24pt_2x.png" />
     <ImageAsset Include="Assets.xcassets\payment.imageset\baseline_payment_black_24pt_3x.png" />
+    <ImageAsset Include="Assets.xcassets\stars.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\stars.imageset\outline_stars_black_24pt_1x.png" />
+    <ImageAsset Include="Assets.xcassets\stars.imageset\outline_stars_black_24pt_2x.png" />
+    <ImageAsset Include="Assets.xcassets\stars.imageset\outline_stars_black_24pt_3x.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -191,5 +195,6 @@
     <Folder Include="Assets.xcassets\notifications_active.imageset\" />
     <Folder Include="Assets.xcassets\event.imageset\" />
     <Folder Include="Assets.xcassets\payment.imageset\" />
+    <Folder Include="Assets.xcassets\stars.imageset\" />
   </ItemGroup>
 </Project>

@@ -44,11 +44,10 @@ namespace pulse.ViewModels
         }
 
 
-        public string QR => $"https://pulse-aiims.herokuapp.com/delcard/{id}";
+        public string QR => $"https://app.aiimspulse.website/views/delcard.php?guid={id}";
 
-        public bool DelCardVisible { get; } = false;
+        public bool DelCardRequest { get; } = false;
         public bool AccoCardVisible { get; } = false;
-        public bool DelCardRequest => !DelCardVisible && (string)Application.Current.Properties["College"] != "Not MCI registered College";
 
         public AccountViewModel()
         {
@@ -69,12 +68,22 @@ namespace pulse.ViewModels
 
             if (Application.Current.Properties.ContainsKey("DelCard"))
             {
-                DelCardVisible = (bool)Application.Current.Properties["DelCard"];
+                DelCardRequest = !(bool)Application.Current.Properties["DelCard"];
+
+                if((string)Application.Current.Properties["College"] == "Not MCI registered College" || (string)Application.Current.Properties["College"] == "President's Invite") 
+                {
+                    DelCardRequest = false;
+                }
             }
 
             if (Application.Current.Properties.ContainsKey("Accomodations"))
             {
                 AccoCardVisible = !(bool)Application.Current.Properties["Accomodations"];
+
+                if ((string)Application.Current.Properties["College"] == "Not MCI registered College" || (string)Application.Current.Properties["College"] == "President's Invite")
+                {
+                    AccoCardVisible = false;
+                }
             }
         }
 

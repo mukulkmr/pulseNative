@@ -2,21 +2,21 @@
 using Xamarin.Forms;
 using pulse.ViewModels;
 using System.Net.Http;
-using Xamarin.Essentials;
-using System.Diagnostics;
-using Xamarin.Forms.Xaml;
+using System.Collections.Generic;
 
 namespace pulse
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AccountsPage : ContentPage
     {
         int cost = 2000;
 
         public AccountsPage()
         {
+            string id = (string)Application.Current.Properties["Id"];
+
             InitializeComponent();
-            userImage.Source = $"https://avatars.dicebear.com/v2/identicon/{(string)Application.Current.Properties["Id"]}.svg";
+            AccomodationsWebview.Source = $"https://app.aiimspulse.website/views/accomodations.php?guid={id}";
+            userImage.Source = $"https://avatars.dicebear.com/v2/identicon/{id}.svg";
             BindingContext = new AccountViewModel();
         }
 
@@ -33,8 +33,17 @@ namespace pulse
                 HttpClient httpClient = new HttpClient();
                 string id = (string)Application.Current.Properties["Id"];
 
-                string uri = $"https://pulse-aiims.herokuapp.com/register/D/{id}/delcard/{cost}";
-                await httpClient.GetAsync(uri);
+                var formContent = new FormUrlEncodedContent(new[] {
+                        new KeyValuePair<string, string>("guid", id),
+                        new KeyValuePair<string, string>("event", "D"),
+                        new KeyValuePair<string, string>("name", "delcard"),
+                        new KeyValuePair<string, string>("cost", cost.ToString()),
+                        new KeyValuePair<string, string>("status", "PND"),
+                        new KeyValuePair<string, string>("approvedby", "NOT_APPROVED")
+                });
+
+                string uri = "https://app.aiimspulse.website/scripts/register.php";
+                await httpClient.PostAsync(uri, formContent);
 
                 QR.Reload();
 
@@ -55,11 +64,20 @@ namespace pulse
                 string id = (string)Application.Current.Properties["Id"];
                 string mobile = (string)Application.Current.Properties["Mobile"];
 
-                int p = (int)people.Value;
-                int s = (int)share.Value;
+                var formContent = new FormUrlEncodedContent(new[] {
+                        new KeyValuePair<string, string>("guid", id),
+                        new KeyValuePair<string, string>("people", people.Value.ToString()),
+                        new KeyValuePair<string, string>("rooms", rooms.Value.ToString()),
+                        new KeyValuePair<string, string>("sharewith", share.Value.ToString()),
+                        new KeyValuePair<string, string>("oncampus", OnCampus.IsToggled.ToString()),
+                        new KeyValuePair<string, string>("checkin", checkin.Date.ToShortDateString()),
+                        new KeyValuePair<string, string>("checkout", checkout.Date.ToShortDateString())
+                });
 
-                string uri = $"https://pulse-aiims.herokuapp.com/accomodations/{id}/{p}-{s}/{mobile}";
-                await httpClient.GetAsync(uri);
+                string uri = "https://app.aiimspulse.website/scripts/accomodations.php";
+                await httpClient.PostAsync(uri, formContent);
+
+                AccomodationsWebview.Reload();
 
                 Application.Current.Properties["Accomodations"] = true;
 
@@ -68,37 +86,28 @@ namespace pulse
             }
         }
 
-        async void OnRequestAccomodationsOffCampus(object sender, System.EventArgs e)
+        void Room_ValueChanged(object sender, ValueChangedEventArgs e)
         {
-            if (Application.Current.Properties.ContainsKey("Accomodations"))
-            {
-                await AccomodationsCard.FadeTo(0, 250, Easing.Linear);
-                AccomodationsCard.IsVisible = false;
-
-                Application.Current.Properties["Accomodations"] = true;
-
-                await Application.Current.SavePropertiesAsync();
-                await Browser.OpenAsync("http://oyorooms.com", BrowserLaunchMode.SystemPreferred);
-            }
+            roomText.Text = e.NewValue.ToString();
         }
 
-        void People_ValueChanged(object sender, Xamarin.Forms.ValueChangedEventArgs e)
+        void People_ValueChanged(object sender, ValueChangedEventArgs e)
         {
-            peoplesteppervalue.Text = e.NewValue.ToString();
+            peopleText.Text = e.NewValue.ToString();
         }
 
-        void Share_ValueChanged(object sender, Xamarin.Forms.ValueChangedEventArgs e)
+        void Share_ValueChanged(object sender, ValueChangedEventArgs e)
         {
-            sharesteppervalue.Text = e.NewValue.ToString();
+            shareText.Text = e.NewValue.ToString();
         }
 
-        void Handle_Navigating(object sender, Xamarin.Forms.WebNavigatingEventArgs e)
+        void Handle_Navigating(object sender, WebNavigatingEventArgs e)
         {
             Loading.IsVisible = true;
             QRCard.IsVisible = false;
         }
 
-        void Handle_Navigated(object sender, Xamarin.Forms.WebNavigatedEventArgs e)
+        void Handle_Navigated(object sender, WebNavigatedEventArgs e)
         {
             if (e.Result == WebNavigationResult.Success)
             {
