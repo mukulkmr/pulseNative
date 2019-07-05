@@ -39,15 +39,11 @@ namespace pulse.ViewModels
             {
                 Id = value;
                 OnPropertyChanged(nameof(Id));
-                OnPropertyChanged(nameof(QR));
             }
         }
 
-
-        public string QR => $"https://app.aiimspulse.website/views/delcard.php?guid={id}";
-
         public bool DelCardRequest { get; } = false;
-        public bool AccoCardVisible { get; } = false;
+        public string College { get; }
 
         public AccountViewModel()
         {
@@ -76,14 +72,9 @@ namespace pulse.ViewModels
                 }
             }
 
-            if (Application.Current.Properties.ContainsKey("Accomodations"))
+            if (Application.Current.Properties.ContainsKey("College"))
             {
-                AccoCardVisible = !(bool)Application.Current.Properties["Accomodations"];
-
-                if ((string)Application.Current.Properties["College"] == "Not MCI registered College" || (string)Application.Current.Properties["College"] == "President's Invite")
-                {
-                    AccoCardVisible = false;
-                }
+                College = (string)Application.Current.Properties["College"];
             }
         }
 

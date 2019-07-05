@@ -1,28 +1,21 @@
 ﻿<Properties StartupConfiguration="{B2E6F745-E837-4740-AD9A-6BB82767B924}|Default">
-  <MonoDevelop.Ide.ItemProperties.pulse.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7243C592-9BA1-47B1-B961-D3236F69B4E4" />
+  <MonoDevelop.Ide.ItemProperties.pulse.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7243C592-9BA1-47B1-B961-D3236F69B4E4" />
   <MonoDevelop.Ide.ItemProperties.pulse HideGettingStarted="True" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="pulse.Android/Resources/drawable/splash.xml">
     <Files>
-      <File FileName="pulse/Views/EventsPage.xaml" Line="16" Column="63" />
-      <File FileName="pulse/App.xaml" />
-      <File FileName="pulse/Views/RegistrationsPage.xaml" />
-      <File FileName="pulse/Views/NotificationsPage.xaml" />
-      <File FileName="pulse/Views/NightsPage.xaml" />
-      <File FileName="pulse/MainPage.xaml" Line="24" Column="38" />
-      <File FileName="pulse/Views/AccountsPage.xaml" Line="44" Column="115" />
-      <File FileName="pulse/Views/AccountsPage.xaml.cs" Line="79" Column="1" />
+      <File FileName="pulse.Android/MainActivity.cs" Line="18" Column="1" />
+      <File FileName="pulse/Pages/NotificationsPage.xaml.cs" />
+      <File FileName="pulse/Pages/NotificationsPage.xaml" />
+      <File FileName="pulse/Pages/PulsePage.xaml" Line="18" Column="28" />
+      <File FileName="pulse.Android/Resources/drawable/splash.xml" Line="8" Column="42" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="pulse" expanded="True">
-            <Node name="pulse" expanded="True">
-              <Node name="Views" expanded="True">
-                <Node name="AccountsPage.xaml" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="pulse.iOS" expanded="True">
-              <Node name="Assets.xcassets" selected="True" />
+            <Node name="pulse" expanded="True" />
+            <Node name="pulse.Android" expanded="True">
+              <Node name="Assets" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -30,8 +23,8 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.pulse.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.pulse.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.ZH33L289QH" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

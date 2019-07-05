@@ -36,13 +36,17 @@
       "frameworks": {
         "xamarinios10": {
           "dependencies": {
+            "Com.Airbnb.Xamarin.Forms.Lottie": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Microsoft.AppCenter": {
               "target": "Package",
-              "version": "[2.0.0, )"
+              "version": "[2.1.1, )"
             },
             "Microsoft.AppCenter.Push": {
               "target": "Package",
-              "version": "[2.0.0, )"
+              "version": "[2.1.1, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
@@ -50,7 +54,7 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.0.0.482894, )"
+              "version": "[4.1.0.555618, )"
             }
           }
         }
@@ -102,6 +106,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Com.Airbnb.Xamarin.Forms.Lottie": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Microsoft.AppCenter": {
               "target": "Package",
               "version": "[2.0.0, )"
@@ -115,6 +123,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
             },
             "Xam.Plugins.Notifier": {
               "target": "Package",

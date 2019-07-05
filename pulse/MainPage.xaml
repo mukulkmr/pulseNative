@@ -8,34 +8,34 @@
             android:TabbedPage.BarSelectedItemColor="{StaticResource AccentColor}"
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             android:TabbedPage.ToolbarPlacement="Bottom">
-  
-    <NavigationPage Title="Events" IconImageSource="event.png">
+    
+    <NavigationPage Title="Events" IconImageSource="event">
         <x:Arguments>
             <local:EventsPage />
         </x:Arguments>
     </NavigationPage>
     
-    <NavigationPage Title="Payments" IconImageSource="payment.png">
+    <NavigationPage Title="Payments" IconImageSource="payment">
         <x:Arguments>
             <local:RegistrationsPage />
         </x:Arguments>
     </NavigationPage>
     
-    <NavigationPage Title="Star Shows" IconImageSource="stars.png">
+    <NavigationPage Title="Star Shows" IconImageSource="stars">
         <x:Arguments>
             <local:NightsPage />
         </x:Arguments>
     </NavigationPage>
     
-    <NavigationPage Title="Accounts" IconImageSource="account_box.png">
+    <NavigationPage Title="Notifications" IconImageSource="notifications_active">
         <x:Arguments>
-            <local:AccountsPage />
+            <local:NotificationsPage />
         </x:Arguments>
     </NavigationPage>
     
-    <NavigationPage Title="About us" IconImageSource="pawprint.png">
+    <NavigationPage Title="Accounts" IconImageSource="account_circle">
         <x:Arguments>
-            <local:CatsPage />
+            <local:AccountsPage />
         </x:Arguments>
     </NavigationPage>
 

@@ -38,11 +38,15 @@
           "dependencies": {
             "Microsoft.AppCenter": {
               "target": "Package",
-              "version": "[2.0.0, )"
+              "version": "[2.1.1, )"
             },
             "Microsoft.AppCenter.Push": {
               "target": "Package",
-              "version": "[2.0.0, )"
+              "version": "[2.1.1, )"
+            },
+            "Xamarin.Android.Support.Animated.Vector.Drawable": {
+              "target": "Package",
+              "version": "[28.0.0.1, )"
             },
             "Xamarin.Android.Support.Core.Utils": {
               "target": "Package",
@@ -53,6 +57,10 @@
               "version": "[28.0.0.1, )"
             },
             "Xamarin.Android.Support.Design": {
+              "target": "Package",
+              "version": "[28.0.0.1, )"
+            },
+            "Xamarin.Android.Support.Transition": {
               "target": "Package",
               "version": "[28.0.0.1, )"
             },
@@ -78,7 +86,7 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.0.0.497661, )"
+              "version": "[4.1.0.555618, )"
             }
           }
         }
@@ -119,6 +127,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Com.Airbnb.Xamarin.Forms.Lottie": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Microsoft.AppCenter": {
               "target": "Package",
               "version": "[2.0.0, )"
@@ -132,6 +144,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
             },
             "Xam.Plugins.Notifier": {
               "target": "Package",

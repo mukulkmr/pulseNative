@@ -4,12 +4,11 @@ using Microsoft.AppCenter;
 using Microsoft.AppCenter.Push;
 using Xamarin.Forms.Xaml;
 using Plugin.LocalNotifications;
-using System;
-using System.Diagnostics;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace pulse
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class App : Application
     {
         public App()

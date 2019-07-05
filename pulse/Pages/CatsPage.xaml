@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="pulse.CatsPage">
+    <ContentPage.Content>
+        <AbsoluteLayout Margin="0,10,0,10">
+            <ScrollView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+                <StackLayout Margin="0,30,0,0">
+                    <Frame Style="{StaticResource Card}">
+                        <StackLayout>
+                            <Label FontSize="Large" Text="We love cats !" />
+                            <WebView Source="https://cataas.com/cat/gif" x:Name="CatWebview" HeightRequest="300" HorizontalOptions="FillAndExpand" />
+                        </StackLayout>
+                    </Frame>
+                    <Frame Style="{StaticResource Card}">
+                        <StackLayout>
+                            <Label FontSize="Large" Text="About the developer" />
+                            <Label FontSize="Default" Text="Ayush" />
+                            <Label Font="small" Text="ayushkumar121@outlook.com" />
+                        </StackLayout>
+                    </Frame>
+                    <Frame Style="{StaticResource Card}">
+                        <StackLayout>
+                            <Label FontSize="Large" Text="About the developer" />
+                            <Label FontSize="Default" Text="Mukul" />
+                            <Label Font="small" Text="mukulkmr789@gmail.com" />
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+            <BoxView Color="#fcfcfc" AbsoluteLayout.LayoutFlags="WidthProportional" AbsoluteLayout.LayoutBounds="0,0,1,35" />
+            <ImageButton BackgroundColor="Transparent" Clicked="Handle_Clicked" Source="back_button" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds=".05,0,30,30" />
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

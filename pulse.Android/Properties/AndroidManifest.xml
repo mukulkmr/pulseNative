@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.aiimssu.pulse">
-	<uses-sdk android:minSdkVersion="23" android:targetSdkVersion="28" />
-	<application android:label="Pulse">
+	<uses-sdk android:minSdkVersion="24" android:targetSdkVersion="28" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<application android:label="Pulse" android:hardwareAccelerated="true" android:icon="@drawable/icon">
 		<meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/notifications_active" />
 		<meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/notification" />
 	</application>

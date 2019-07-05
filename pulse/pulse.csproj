@@ -12,10 +12,12 @@
 
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
     <PackageReference Include="Microsoft.AppCenter" Version="2.0.0" />
     <PackageReference Include="Microsoft.AppCenter.Push" Version="2.0.0" />
     <PackageReference Include="Xam.Plugins.Notifier" Version="3.0.1" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="3.0.0" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Models\Todos.cs" />
@@ -24,9 +26,8 @@
     <Compile Remove="Views\MapsPage.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Views\" />
+    <Folder Include="Pages\" />
     <Folder Include="ViewModels\" />
-    <Folder Include="Assets\" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Mono.Android">
@@ -35,5 +36,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="Views\MapsPage.xaml" />
+    <EmbeddedResource Remove="Assets\App.css" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" NavigationPage.HasNavigationBar="False" x:Class="pulse.LoginPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>                
+                
+                <Label Text="Registration" Margin="10" HorizontalOptions="Center" FontSize="Large" />
+                
+                <Entry x:Name="userName" Margin="10" HorizontalTextAlignment="Start" Placeholder="Enter Name" />            
+                <Entry  x:Name="userEmail" Margin="10" HorizontalTextAlignment="Start" Placeholder="Enter Email" Keyboard="Email" />         
+                <Entry x:Name="userMobile" Margin="10"  Placeholder="Enter Mobile" Keyboard="Telephone" MaxLength="10" HorizontalTextAlignment="Start" />
+                
+                <Grid Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Text="President's Invite" />
+                    <Switch x:Name="inviteSwitch" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Toggled="Handle_Toggled"/>
+                </Grid>
+
+                <Frame HasShadow="false" Margin="10" BackgroundColor="Transparent" x:Name="CollegeInputCard">
+                    <StackLayout>
+                        <Label Text="College" HorizontalOptions="CenterAndExpand" />
+                        <Picker SelectedIndexChanged="Handle_SelectedIndexChanged" x:Name="StatesPicker" />
+                        <Picker x:Name="CollegePicker" />
+                    </StackLayout>
+                </Frame>
+                
+                <Button x:Name="Registerbutton" Text="Register" Margin="10" Clicked="Login" />
+                <Button x:Name="MainPageButton" IsVisible="false" Text="Go To MainPage" Margin="10" Clicked="Handle_Clicked" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

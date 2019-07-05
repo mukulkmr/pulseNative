@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" 
+             BackgroundColor="White"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="pulse.EventDescriptionPage">
+    <ContentPage.Content>
+        <AbsoluteLayout Margin="0,10,0,10">
+            <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+                <ListView SelectionMode="None" Margin="0,35,0,0" 
+                          SeparatorColor="Transparent" 
+                          HasUnevenRows="true" 
+                          x:Name="listView" 
+                          IsGroupingEnabled="true"
+                          ItemTapped="Handle_ItemTapped"
+                          ItemsSource="{Binding Events}" >
+                    
+                    <ListView.GroupHeaderTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Frame HasShadow="true" BackgroundColor="White">
+                                    <StackLayout>
+                                        <Label Text="{Binding Key}" FontSize="28" />
+                                    </StackLayout>
+                                </Frame>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.GroupHeaderTemplate>
+                    
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Vertical">
+                                    <Frame BackgroundColor="Transparent" HasShadow="false" Margin="5" Padding="15">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            
+                                            <Label Grid.Column="0" HorizontalOptions="Start" Text="{Binding name}" FontSize="Large" />
+                                            <Label Grid.Column="1" HorizontalOptions="End" FontFamily="{StaticResource MaterialFontFamily}" 
+                                                   FontSize="28" Text="{Binding status_icon}"/>                                    
+                                        </Grid>
+                                    </Frame>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+            
+            <Frame IsVisible="false"
+                   Scale="0"
+                   x:Name="DetailsCard"
+                   AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional" 
+                   BackgroundColor="White" 
+                   Padding="0"
+                   CornerRadius="2"
+                   AbsoluteLayout.LayoutBounds="0,50,1,1">
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    
+                    <Label TextColor="#666" HorizontalOptions="Center" FontFamily="{StaticResource MaterialFontFamily}" FontSize="48" Text="cancel">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="ClosePopUp" />
+                        </Label.GestureRecognizers>
+                    </Label>                                    
+                    
+                    <WebView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="webview" />
+                </StackLayout>
+            </Frame>
+            
+            <BoxView Color="#fcfcfc" AbsoluteLayout.LayoutFlags="WidthProportional" AbsoluteLayout.LayoutBounds="0,0,1,35" />           
+            
+            <forms:AnimationView
+                AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds=".5,.5,500,500" 
+                x:Name="Loading" 
+                Animation="wizard_animation.json" 
+                Loop="true" 
+                AutoPlay="true"
+                IsVisible="false"/>
+
+            <ImageButton BackgroundColor="Transparent" Clicked="Handle_Clicked" Source="back_button" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds=".05,0,30,30" />
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -65,6 +65,7 @@
     <ConsolePause>false</ConsolePause>
     <CodesignKey>iPhone Developer</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+<MtouchUseLlvm>true</MtouchUseLlvm>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -122,8 +123,6 @@
     <ImageAsset Include="Assets.xcassets\cached.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\map.imageset\outline_map_black_24dp.png" />
     <ImageAsset Include="Assets.xcassets\map.imageset\outline_map_black_24dp-1.png" />
-    <ImageAsset Include="Assets.xcassets\Image.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\Image.imageset\pawprint.png" />
     <ImageAsset Include="Assets.xcassets\pawprint.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\aiims_map.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\aiims_map.imageset\aiims-map.png" />
@@ -133,8 +132,6 @@
     <ImageAsset Include="Assets.xcassets\notifications_active.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\notifications_active.imageset\outline_notifications_active_black_24dp.png" />
     <ImageAsset Include="Assets.xcassets\notifications_active.imageset\outline_notifications_active_black_24dp-1.png" />
-    <ImageAsset Include="Assets.xcassets\notifications_active.imageset\outline_notifications_active_black_24.png" />
-    <ImageAsset Include="Assets.xcassets\notifications_active.imageset\outline_notifications_active_black_36.png" />
     <ImageAsset Include="Assets.xcassets\cached.imageset\baseline_cached_black_24pt_1x.png" />
     <ImageAsset Include="Assets.xcassets\cached.imageset\baseline_cached_black_24pt_2x.png" />
     <ImageAsset Include="Assets.xcassets\cached.imageset\baseline_cached_black_24pt_3x.png" />
@@ -152,13 +149,42 @@
     <ImageAsset Include="Assets.xcassets\event.imageset\outline_event_black_36.png" />
     <ImageAsset Include="Assets.xcassets\event.imageset\outline_event_black_48.png" />
     <ImageAsset Include="Assets.xcassets\payment.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\payment.imageset\baseline_payment_black_24pt_1x.png" />
-    <ImageAsset Include="Assets.xcassets\payment.imageset\baseline_payment_black_24pt_2x.png" />
-    <ImageAsset Include="Assets.xcassets\payment.imageset\baseline_payment_black_24pt_3x.png" />
     <ImageAsset Include="Assets.xcassets\stars.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\stars.imageset\outline_stars_black_24pt_1x.png" />
-    <ImageAsset Include="Assets.xcassets\stars.imageset\outline_stars_black_24pt_2x.png" />
-    <ImageAsset Include="Assets.xcassets\stars.imageset\outline_stars_black_24pt_3x.png" />
+    <ImageAsset Include="Assets.xcassets\back_button.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\back_button.imageset\baseline_arrow_back_black_24pt_1x.png" />
+    <ImageAsset Include="Assets.xcassets\back_button.imageset\baseline_arrow_back_black_24pt_2x.png" />
+    <ImageAsset Include="Assets.xcassets\back_button.imageset\baseline_arrow_back_black_24pt_3x.png" />
+    <ImageAsset Include="Assets.xcassets\stars.imageset\baseline_stars_black_24pt_1x.png" />
+    <ImageAsset Include="Assets.xcassets\stars.imageset\baseline_stars_black_24pt_2x.png" />
+    <ImageAsset Include="Assets.xcassets\stars.imageset\baseline_stars_black_24pt_3x.png" />
+    <ImageAsset Include="Assets.xcassets\account_circle.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\account_circle.imageset\baseline_account_circle_black_24pt_1x.png" />
+    <ImageAsset Include="Assets.xcassets\account_circle.imageset\baseline_account_circle_black_24pt_2x.png" />
+    <ImageAsset Include="Assets.xcassets\account_circle.imageset\baseline_account_circle_black_24pt_3x.png" />
+    <ImageAsset Include="Assets.xcassets\notifications_active.imageset\round_notifications_active_black_24pt_2x.png" />
+    <ImageAsset Include="Assets.xcassets\notifications_active.imageset\round_notifications_active_black_24pt_3x.png" />
+    <ImageAsset Include="Assets.xcassets\payment.imageset\round_payment_black_24pt_1x.png" />
+    <ImageAsset Include="Assets.xcassets\payment.imageset\round_payment_black_24pt_2x.png" />
+    <ImageAsset Include="Assets.xcassets\payment.imageset\round_payment_black_24pt_3x.png" />
+    <ImageAsset Include="Assets.xcassets\notifications_active.imageset\round_notifications_active_black_24pt_1x.png" />
+    <ImageAsset Include="Assets.xcassets\refresh.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\refresh.imageset\round_refresh_black_24pt_1x.png" />
+    <ImageAsset Include="Assets.xcassets\refresh.imageset\round_refresh_black_24pt_2x.png" />
+    <ImageAsset Include="Assets.xcassets\refresh.imageset\round_refresh_black_24pt_3x.png" />
+    <ImageAsset Include="Assets.xcassets\pulse_tabs_01.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\pulse_tabs_02.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\pulse_tabs_03.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\pulse_tabs_01.imageset\pulse tabs-01.png" />
+    <ImageAsset Include="Assets.xcassets\pulse_tabs_02.imageset\pulse tabs-02.png" />
+    <ImageAsset Include="Assets.xcassets\pulse_tabs_04.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\pulse_tabs_05.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\pulse_tabs_06.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\pulse_tabs_03.imageset\pulse tabs-03.png" />
+    <ImageAsset Include="Assets.xcassets\pulse_tabs_04.imageset\pulse tabs-04.png" />
+    <ImageAsset Include="Assets.xcassets\pulse_tabs_05.imageset\pulse tabs-05.png" />
+    <ImageAsset Include="Assets.xcassets\pulse_tabs_06.imageset\pulse tabs-06.png" />
+    <ImageAsset Include="Assets.xcassets\pulse_logo.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\pulse_logo.imageset\9847E61B-0100-4DAE-9FFF-689852A45311.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -169,13 +195,18 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.0.0.482894" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.555618" />
     <PackageReference Include="Microsoft.AppCenter.Push">
-      <Version>2.0.0</Version>
+      <Version>2.1.1</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.AppCenter">
-      <Version>2.0.0</Version>
+      <Version>2.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Essentials">
+      <Version>1.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie">
+      <Version>3.0.0</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
@@ -196,5 +227,20 @@
     <Folder Include="Assets.xcassets\event.imageset\" />
     <Folder Include="Assets.xcassets\payment.imageset\" />
     <Folder Include="Assets.xcassets\stars.imageset\" />
+    <Folder Include="Assets.xcassets\back_button.imageset\" />
+    <Folder Include="Assets.xcassets\account_circle.imageset\" />
+    <Folder Include="Assets.xcassets\refresh.imageset\" />
+    <Folder Include="Assets.xcassets\pulse_tabs_01.imageset\" />
+    <Folder Include="Assets.xcassets\pulse_tabs_02.imageset\" />
+    <Folder Include="Assets.xcassets\pulse_tabs_03.imageset\" />
+    <Folder Include="Assets.xcassets\pulse_tabs_04.imageset\" />
+    <Folder Include="Assets.xcassets\pulse_tabs_05.imageset\" />
+    <Folder Include="Assets.xcassets\pulse_tabs_06.imageset\" />
+    <Folder Include="Assets.xcassets\pulse_logo.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MaterialIcons_Regular.ttf" />
+    <BundleResource Include="Resources\wizard_animation.json" />
+    <BundleResource Include="Resources\rainbow.json" />
   </ItemGroup>
 </Project>
