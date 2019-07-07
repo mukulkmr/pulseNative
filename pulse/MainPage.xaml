@@ -4,7 +4,6 @@
             xmlns:local="clr-namespace:pulse"
             x:Class="pulse.MainPage"
             NavigationPage.HasNavigationBar="False"
-            
             android:TabbedPage.BarSelectedItemColor="{StaticResource AccentColor}"
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             android:TabbedPage.ToolbarPlacement="Bottom">

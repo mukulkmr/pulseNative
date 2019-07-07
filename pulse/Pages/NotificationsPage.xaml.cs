@@ -13,8 +13,8 @@ namespace pulse
         public string time { get; set; }
         public string guid { get; set; }
 
-        public string background { get; set; }
-        public string icon { get; set; }
+        public string background { get => (guid == "all") ? "#F0F8FF" : "#EFDECD"; }
+        public string icon { get => (guid == "all") ? "public" : "perm_identity";  }
     }
 
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -41,12 +41,6 @@ namespace pulse
             {
                 string json = await responseMessage.Content.ReadAsStringAsync();
                 Notifications = JsonConvert.DeserializeObject<IList<Notification>>(json);
-
-                foreach(Notification n in Notifications)
-                {
-                    n.background = (n.guid == "all")? "#F0F8FF" : "#EFDECD";
-                    n.icon = (n.guid == "all") ? "public" : "perm_identity";
-                }
 
                 listView.ItemsSource = Notifications;
                 Loading.IsVisible = false;

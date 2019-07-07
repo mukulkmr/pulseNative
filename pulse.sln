@@ -54,4 +54,10 @@ Global
 		{45464985-BFBA-4775-974B-6F01ABD57EAB}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{45464985-BFBA-4775-974B-6F01ABD57EAB}.Release|iPhone.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+		$0.StandardHeader = $2
+	EndGlobalSection
 EndGlobal

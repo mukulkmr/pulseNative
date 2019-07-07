@@ -1,7 +1,9 @@
 ﻿using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace pulse
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RegistrationsPage : ContentPage
     {
         public RegistrationsPage()

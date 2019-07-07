@@ -619,6 +619,7 @@ namespace pulse
             }
 
             Registerbutton.IsVisible = false;
+            Loading.IsVisible = true;
 
             Application.Current.Properties.Add("Name", userName.Text);
             Application.Current.Properties.Add("Email", userEmail.Text);
@@ -647,8 +648,9 @@ namespace pulse
             string uri = "https://app.aiimspulse.website/scripts/adduser.php";
 
             await httpClient.PostAsync(uri, formContent);
-            await DisplayAlert("Alert", "Logged in with " + userEmail.Text, "OK");
+            await DisplayAlert("Alert", $"Logged in with {userName.Text}\n{(string)college}" , "OK");
 
+            Loading.IsVisible = false;
             MainPageButton.IsVisible = true;
 
             Debug.Write(CollegePicker.SelectedIndex);

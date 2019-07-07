@@ -4,20 +4,28 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Xamarin.Essentials;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace pulse
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class EventDescriptionPage : ContentPage
     {
-        public IList<Event> Events { get; private set; }
-        public List<ObservableGroupCollection<string, Event>> GroupedEvent { get; set; }
+        public List<ObservableGroupCollection<string, Event>> GroupedEvents { get; private set; }
+        public List<Event> Events { get; set; }
 
         readonly string id = (string)Application.Current.Properties["Id"];
         string Dept = "0";
 
+        public string Venue = "Foyer";
+        public string Location = "28.567535, 77.211151";
+
         public EventDescriptionPage(string dept)
         {
+            GroupedEvents = new List<ObservableGroupCollection<string, Event>>();
+
             Dept = dept;
             InitializeComponent();
 
@@ -35,22 +43,15 @@ namespace pulse
 
             if (responseMessage.IsSuccessStatusCode)
             {
-
                 string json = await responseMessage.Content.ReadAsStringAsync();
 
                 Events = JsonConvert.DeserializeObject<List<Event>>(json);
 
-                foreach(var e in Events)
-                {
-                    e.status_icon = (e.subscribed)? "check" : "radio_button_unchecked";
-                }
+                GroupedEvents = Events.OrderBy(p => p.id[1])
+                                      .GroupBy(p => p.group)
+                                      .Select(p => new ObservableGroupCollection<string, Event>(p)).ToList();
 
-
-                GroupedEvent = Events.OrderBy(p => p.id)
-                                     .GroupBy(p => p.group)
-                                     .Select(p => new ObservableGroupCollection<string, Event>(p)).ToList();
-
-                listView.ItemsSource = GroupedEvent;
+                listView.ItemsSource = GroupedEvents;
 
                 Loading.IsVisible = false;
             }
@@ -70,6 +71,9 @@ namespace pulse
 
             Event _event = e.Item as Event;
 
+            Venue = _event.venue;
+            Location = _event.location;
+
             webview.Source = $"https://app.aiimspulse.website/views/event.php?id={_event.id}&guid={id}";
         }
 
@@ -77,6 +81,16 @@ namespace pulse
         {
             await DetailsCard.ScaleTo(0, 250, Easing.SinOut);
             DetailsCard.IsVisible = false;
+        }
+
+        async void OpenVenue(object sender, EventArgs e)
+        {
+            var locationCords = Location.Split(',');
+
+            var location = new Location(double.Parse(locationCords[0].Trim()), double.Parse(locationCords[1].Trim()));
+            var options = new MapLaunchOptions { Name = Venue };
+
+            await Map.OpenAsync(location, options);
         }
     }
 }

@@ -6,6 +6,7 @@ using Xamarin.Essentials;
 using Android.Widget;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Xamarin.Forms.Xaml;
 
 namespace pulse
 {
@@ -14,6 +15,7 @@ namespace pulse
         public string status;
     }
 
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AccountsPage : ContentPage
     {
         readonly int cost = 2000;
@@ -87,7 +89,8 @@ namespace pulse
             await ReloadButton.RotateTo(360, 1000, Easing.Linear);
             ReloadButton.Rotation = 0;
 
-            await UpdateAsync();
+            if ((bool)Application.Current.Properties["DelCard"])
+                await UpdateAsync();
         }
 
         void Handle_Clicked(object sender, System.EventArgs e) => Navigation.PushModalAsync(new CatsPage());
@@ -103,7 +106,7 @@ namespace pulse
         void QRCodePopUp(object sender, System.EventArgs e)
         {
             QRPopUp.IsVisible = true;
-            _= QRPopUp.ScaleTo(1, 250, Easing.SinIn);
+            _ = QRPopUp.ScaleTo(1, 250, Easing.SinIn);
 
             QRImageLarge.Source = $" https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${id}";
         }
@@ -112,6 +115,11 @@ namespace pulse
         {
             await QRPopUp.ScaleTo(0, 250, Easing.SinOut);
             QRPopUp.IsVisible = false;
+        }
+
+        void DelCardInfo(object sender, System.EventArgs e)
+        {
+            DisplayAlert("Perks of being delegates", "Some Unformatted Text", "OK");
         }
 
         void OpenPulsePage(object sender, System.EventArgs e) => Navigation.PushModalAsync(new PulsePage());

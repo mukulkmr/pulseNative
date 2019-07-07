@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage 
+<ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" NavigationPage.HasNavigationBar="False" x:Class="pulse.LoginPage">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout>                
-                
+            <StackLayout> 
                 <Label Text="Registration" Margin="10" HorizontalOptions="Center" FontSize="Large" />
                 
                 <Entry x:Name="userName" Margin="10" HorizontalTextAlignment="Start" Placeholder="Enter Name" />            
@@ -31,6 +31,17 @@
                 
                 <Button x:Name="Registerbutton" Text="Register" Margin="10" Clicked="Login" />
                 <Button x:Name="MainPageButton" IsVisible="false" Text="Go To MainPage" Margin="10" Clicked="Handle_Clicked" />
+                
+                    <forms:AnimationView
+                        Animation="rainbow.json" 
+                        Loop="true"
+                        x:Name="Loading"
+                        AutoPlay="true"
+                        HorizontalOptions="Center"
+                        Margin="10"
+                        IsVisible="false"
+                        HeightRequest="50"/>
+                
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

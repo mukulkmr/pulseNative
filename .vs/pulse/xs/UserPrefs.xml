@@ -1,21 +1,19 @@
 ﻿<Properties StartupConfiguration="{B2E6F745-E837-4740-AD9A-6BB82767B924}|Default">
   <MonoDevelop.Ide.ItemProperties.pulse.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7243C592-9BA1-47B1-B961-D3236F69B4E4" />
   <MonoDevelop.Ide.ItemProperties.pulse HideGettingStarted="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="pulse.Android/Resources/drawable/splash.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="pulse/Pages/PulsePage.xaml">
     <Files>
-      <File FileName="pulse.Android/MainActivity.cs" Line="18" Column="1" />
-      <File FileName="pulse/Pages/NotificationsPage.xaml.cs" />
-      <File FileName="pulse/Pages/NotificationsPage.xaml" />
-      <File FileName="pulse/Pages/PulsePage.xaml" Line="18" Column="28" />
-      <File FileName="pulse.Android/Resources/drawable/splash.xml" Line="8" Column="42" />
+      <File FileName="pulse/Pages/AccomodationsPage.xaml" Line="45" Column="61" />
+      <File FileName="pulse/Pages/PulsePage.xaml" Line="9" Column="57" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="pulse" expanded="True">
-            <Node name="pulse" expanded="True" />
-            <Node name="pulse.Android" expanded="True">
-              <Node name="Assets" expanded="True" />
+            <Node name="pulse" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="PulsePage.xaml" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -23,7 +21,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.pulse.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.ZH33L289QH" />
+  <MonoDevelop.Ide.ItemProperties.pulse.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

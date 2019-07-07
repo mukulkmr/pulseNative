@@ -24,6 +24,8 @@ namespace pulse.iOS
         public override bool FinishedLaunching(UIApplication uiApplication, NSDictionary launchOptions)
         {
             global::Xamarin.Forms.Forms.Init();
+            global::Xamarin.Forms.FormsMaterial.Init();
+
             AnimationViewRenderer.Init();
             LoadApplication(new App());
             return base.FinishedLaunching(uiApplication, launchOptions);

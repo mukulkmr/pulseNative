@@ -1,67 +1,46 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Newtonsoft.Json;
 using Xamarin.Forms;
+using Xamarin.Essentials;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using Xamarin.Forms.Xaml;
 
 namespace pulse
 {
-    public class Event
-    {
-        public string id { get; set; }
-        public string group { get; set; }
-        public string name { get; set; }
-        public int time { get; set; }
-        public string type { get; set; }
-        public int members { get; set; }
-
-        public int cost { get; set; }
-        public string contact { get; set; }
-        public string venue { get; set; }
-
-        public bool subscribed { get; set; }
-
-        public string status_icon { get; set; }
-
-        public override string ToString()
-        {
-            return name;
-        }
-    }
-
-    public class ObservableGroupCollection<S, T> : ObservableCollection<T>
-    {
-        public ObservableGroupCollection(IGrouping<S, T> group)
-            : base(group)
-        {
-            Key = group.Key;
-        }
-        public S Key { get; }
-    }
-
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class EventsPage : ContentPage
     {
-        public IList<Event> Events { get; private set; }
-        public List<ObservableGroupCollection<string, Event>> GroupedEvent { get; set; }
+        public ObservableCollection<Event> Events { get; set; }
+
         public ICommand OpenEventPage { private set; get; }
 
+        public string Day = "0";
+
+        public string Venue = "Foyer";
+        public string Location = "28.567535, 77.211151";
+
         readonly string id = (string)Application.Current.Properties["Id"];
+        Button ActiveButton;
 
         public EventsPage()
         {
+            InitializeComponent();
+
+            Events = new ObservableCollection<Event>();
+            ActiveButton = ColoredButtonFirst;
+
             OpenEventPage = new Command<string>((string dept) =>
             {
                 Navigation.PushModalAsync(new EventDescriptionPage(dept));
             });
 
-            InitializeComponent();
-            _ = UpdateAsync();
-
             BindingContext = this;
+
+            _ = UpdateAsync();
         }
 
         async void OnReloadButtonClicked(object sender, EventArgs e)
@@ -79,13 +58,26 @@ namespace pulse
 
             Event _event = e.Item as Event;
 
+            Venue = _event.venue;
+            Location = _event.location;
+
             webview.Source = $"https://app.aiimspulse.website/views/event.php?id={_event.id}&guid={id}";
         }
 
-        void ClosePopUp(object sender, EventArgs e)
+        async void ClosePopUp(object sender, EventArgs e)
         {
-            _ = DetailsCard.ScaleTo(0, 250, Easing.SinOut);
+            await DetailsCard.ScaleTo(0, 250, Easing.SinOut);
             DetailsCard.IsVisible = false;
+        }
+
+        async void OpenVenue(object sender, EventArgs e)
+        {
+            var locationCords = Location.Split(',');
+
+            var location = new Location(double.Parse(locationCords[0].Trim()), double.Parse(locationCords[1].Trim()));
+            var options = new MapLaunchOptions { Name = Venue };
+
+            await Map.OpenAsync(location, options);
         }
 
         async Task UpdateAsync()
@@ -93,27 +85,19 @@ namespace pulse
             Loading.IsVisible = true;
 
             HttpClient httpClient = new HttpClient();
-            HttpResponseMessage responseMessage = await httpClient.GetAsync($"https://app.aiimspulse.website/scripts/data/schedule.php?guid={id}");
+            HttpResponseMessage responseMessage = await httpClient.GetAsync($"https://app.aiimspulse.website/scripts/data/schedule.php?guid={id}&day={Day}");
 
             if (responseMessage.IsSuccessStatusCode)
             {
-
                 string json = await responseMessage.Content.ReadAsStringAsync();
-                Console.WriteLine(json);
 
-                Events = JsonConvert.DeserializeObject<List<Event>>(json);
+                listView.ItemsSource = new ObservableCollection<Event>();
 
-                foreach (var e in Events)
-                {
-                    e.status_icon = (e.subscribed) ? "check" : "radio_button_unchecked";
-                }
+                await Task.Delay(50);
 
-                GroupedEvent = Events.OrderBy(p => p.id)
-                                     .GroupBy(p => p.id[1].ToString())
-                                     .Select(p => new ObservableGroupCollection<string, Event>(p)).ToList();
+                Events = JsonConvert.DeserializeObject<ObservableCollection<Event>>(json);
 
-                listView.ItemsSource = GroupedEvent;
-
+                listView.ItemsSource = Events;
                 Loading.IsVisible = false;
             }
             else
@@ -123,10 +107,9 @@ namespace pulse
 
         }
 
+        void Handle_Clicked(object sender, EventArgs e) => Navigation.PushModalAsync(new CatsPage());
 
-        void Handle_Clicked(object sender, System.EventArgs e) => Navigation.PushModalAsync(new CatsPage());
-
-        void OnTapDepartment(object sender, System.EventArgs e)
+        void OnTapDepartment(object sender, EventArgs e)
         {
             SchActiveLine.IsVisible = false;
             DeptActiveLine.IsVisible = true;
@@ -135,7 +118,7 @@ namespace pulse
             ScheduleCard.IsVisible = false;
         }
 
-        void OnTapSchedule(object sender, System.EventArgs e)
+        void OnTapSchedule(object sender, EventArgs e)
         {
             SchActiveLine.IsVisible = true;
             DeptActiveLine.IsVisible = false;
@@ -144,6 +127,23 @@ namespace pulse
             ScheduleCard.IsVisible = true;
         }
 
-        void OpenPulsePage(object sender, System.EventArgs e) => Navigation.PushModalAsync(new PulsePage());
+        void OpenPulsePage(object sender, EventArgs e) => Navigation.PushModalAsync(new PulsePage());
+
+        void LoadSchedule(object sender, EventArgs e)
+        {
+
+            ActiveButton.BackgroundColor = Color.Transparent;
+            ActiveButton.TextColor = Color.FromHex("#666");
+
+            ActiveButton = sender as Button;
+
+            ActiveButton.BackgroundColor = Color.FromHex("#be81f7");
+            ActiveButton.TextColor = Color.FromHex("#fff");
+
+            string day = (string)(sender as Button).CommandParameter;
+
+            Day = day;
+            _ = UpdateAsync();
+        }
     }
 }

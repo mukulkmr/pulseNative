@@ -981,6 +981,22 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Visual.Material/4.1.0.555618": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Design": "28.0.0.1",
+          "Xamarin.Android.Support.v7.AppCompat": "28.0.0.1"
+        },
+        "compile": {
+          "lib/MonoAndroid90/Xamarin.Forms.Material.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid90/Xamarin.Forms.Material.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid10/Xamarin.Forms.Visual.Material.targets": {}
+        }
+      },
       "Xamarin.GooglePlayServices.Basement/60.1142.1": {
         "type": "package",
         "dependencies": {
@@ -2373,6 +2389,27 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Forms.Visual.Material/4.1.0.555618": {
+      "sha512": "nQGlgeO2JoUV2ZZs1s2tXlWk2nwMbgMRzptQyM79wwLYWLbCkVMWHKasjvlc/2CX04lcGhORkCZJ8C0me0TP3A==",
+      "type": "package",
+      "path": "xamarin.forms.visual.material/4.1.0.555618",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid10/Xamarin.Forms.Visual.Material.targets",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoAndroid90/Xamarin.Forms.Material.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Material.dll.mdb",
+        "lib/MonoAndroid90/Xamarin.Forms.Material.pdb",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Material.pdb",
+        "lib/netstandard1.0/_._",
+        "lib/tizen40/Xamarin.Forms.Material.dll",
+        "lib/tizen40/Xamarin.Forms.Material.pdb",
+        "xamarin.forms.visual.material.4.1.0.555618.nupkg.sha512",
+        "xamarin.forms.visual.material.nuspec"
+      ]
+    },
     "Xamarin.GooglePlayServices.Basement/60.1142.1": {
       "sha512": "G4PFBPoAovRwmCdO7jpdeZ5N974JsOjiLKDnOcZxC+4IjYs0ZvoBP/dyYDI32tCbpzNEbb/00oqx35Gjgl5f2g==",
       "type": "package",
@@ -2414,13 +2451,13 @@
       "Xamarin.Android.Support.Core.Utils >= 28.0.0.1",
       "Xamarin.Android.Support.CustomTabs >= 28.0.0.1",
       "Xamarin.Android.Support.Design >= 28.0.0.1",
-      "Xamarin.Android.Support.Transition >= 28.0.0.1",
       "Xamarin.Android.Support.v4 >= 28.0.0.1",
       "Xamarin.Android.Support.v7.AppCompat >= 28.0.0.1",
       "Xamarin.Android.Support.v7.CardView >= 28.0.0.1",
       "Xamarin.Android.Support.v7.MediaRouter >= 28.0.0.1",
       "Xamarin.Essentials >= 1.1.0",
       "Xamarin.Forms >= 4.1.0.555618",
+      "Xamarin.Forms.Visual.Material >= 4.1.0.555618",
       "pulse >= 1.0.0"
     ]
   },
@@ -2483,10 +2520,6 @@
             "target": "Package",
             "version": "[28.0.0.1, )"
           },
-          "Xamarin.Android.Support.Transition": {
-            "target": "Package",
-            "version": "[28.0.0.1, )"
-          },
           "Xamarin.Android.Support.v4": {
             "target": "Package",
             "version": "[28.0.0.1, )"
@@ -2508,6 +2541,10 @@
             "version": "[1.1.0, )"
           },
           "Xamarin.Forms": {
+            "target": "Package",
+            "version": "[4.1.0.555618, )"
+          },
+          "Xamarin.Forms.Visual.Material": {
             "target": "Package",
             "version": "[4.1.0.555618, )"
           }

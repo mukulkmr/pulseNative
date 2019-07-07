@@ -211,6 +211,8 @@
 -r=/Users/mukulkumar/.nuget/packages/xamarin.forms/4.1.0.555618/lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll
 -r=/Users/mukulkumar/.nuget/packages/xamarin.forms/4.1.0.555618/lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
 -r=/Users/mukulkumar/.nuget/packages/xamarin.forms/4.1.0.555618/lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
+-r=/Users/mukulkumar/.nuget/packages/xamarin.forms.visual.material/4.1.0.555618/lib/Xamarin.iOS10/Xamarin.Forms.Material.dll
+-r=/Users/mukulkumar/.nuget/packages/xamarin.ios.materialcomponents/72.2.0.1/lib/Xamarin.iOS/MaterialComponents.dll
 -r=/Users/mukulkumar/Projects/pulse/pulse/bin/Release/netstandard2.0/pulse.dll
 -r=/Users/mukulkumar/Projects/pulse/pulse/bin/Release/netstandard2.0/Mono.Android.dll
  --target-framework=Xamarin.iOS,v1.0

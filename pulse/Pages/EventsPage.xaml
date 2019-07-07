@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:local="clr-namespace:pulse"             
              xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" 
              xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" NavigationPage.HasNavigationBar="False" x:Class="pulse.EventsPage">
+    
     <ContentPage.Content>
         <AbsoluteLayout Margin="0,10,0,10">
             
@@ -15,7 +17,7 @@
                     
                     <Frame BackgroundColor="Transparent" HeightRequest="50" Padding="5,10,5,5" Grid.Column="0" HasShadow="false">
                         <StackLayout>
-                            <Label FontSize="Large" Text="Departments" FontAttributes="Bold" />
+                            <Label FontSize="Large" Text="Departments"/>
                             <BoxView x:Name="DeptActiveLine" IsVisible="true" BackgroundColor="{StaticResource AccentColor}" HeightRequest="3"/>            
                         </StackLayout>
                         
@@ -27,7 +29,7 @@
                     
                     <Frame BackgroundColor="Transparent" HeightRequest="50" Padding="5,10,5,5" Grid.Column="1" HasShadow="false">
                         <StackLayout>
-                            <Label FontSize="Large" Text="Schedule" FontAttributes="Bold" />
+                            <Label FontSize="Large" Text="Schedule" />
                             <BoxView x:Name="SchActiveLine" IsVisible="false" BackgroundColor="{StaticResource AccentColor}" HeightRequest="3"/>         
                         </StackLayout>
                         
@@ -94,24 +96,40 @@
                 
                 <Frame IsVisible="false" Margin="0,5,0,0" x:Name="ScheduleCard">
                     <StackLayout>
+                    <Grid HeightRequest="100">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />        
+                            <ColumnDefinition Width="*" />        
+                            <ColumnDefinition Width="*" />        
+                            <ColumnDefinition Width="*" />        
+                            <ColumnDefinition Width="*" />        
+                            <ColumnDefinition Width="*" />        
+                            <ColumnDefinition Width="*" />        
+                        </Grid.ColumnDefinitions>  
+                            
+                        <Button x:Name="ColoredButtonFirst" BackgroundColor="MediumPurple" Grid.Column="0" CornerRadius="50" FontSize="15"
+                                Clicked="LoadSchedule" TextColor="#fff" CommandParameter="0" Text="16" />
+                        <Button BackgroundColor="Transparent" Grid.Column="1" CornerRadius="50" FontSize="15" 
+                                Clicked="LoadSchedule" TextColor="#666" CommandParameter="1" Text="17" />
+                        <Button BackgroundColor="Transparent" Grid.Column="2" CornerRadius="50" FontSize="15"
+                                Clicked="LoadSchedule" TextColor="#666" CommandParameter="2" Text="18" />
+                        <Button BackgroundColor="Transparent" Grid.Column="3" CornerRadius="50" FontSize="15" 
+                                Clicked="LoadSchedule" TextColor="#666" CommandParameter="3" Text="19" />
+                        <Button BackgroundColor="Transparent" Grid.Column="4" CornerRadius="50" FontSize="15"
+                                Clicked="LoadSchedule" TextColor="#666" CommandParameter="4" Text="20" />
+                        <Button BackgroundColor="Transparent" Grid.Column="5" CornerRadius="50" FontSize="15" 
+                                Clicked="LoadSchedule" TextColor="#666" CommandParameter="5" Text="21" />
+                        <Button BackgroundColor="Transparent" Grid.Column="6" CornerRadius="50" FontSize="15" 
+                                Clicked="LoadSchedule" TextColor="#666" CommandParameter="6" Text="22" />
+                    </Grid>
+                    
                     <ListView SelectionMode="None" Margin="0,35,0,0" 
                           SeparatorColor="Transparent" 
                           HasUnevenRows="true" 
                           x:Name="listView" 
-                          IsGroupingEnabled="true"
                           ItemTapped="Handle_ItemTapped"
-                          ItemsSource="{Binding GroupedEvent}" >
-                    <ListView.GroupHeaderTemplate>
-                        <DataTemplate>
-                            <ViewCell>
-                                <Frame HasShadow="true" BackgroundColor="White">
-                                    <StackLayout>
-                                        <Label Text="{Binding Key}" FontSize="28" />
-                                    </StackLayout>
-                                </Frame>
-                            </ViewCell>
-                        </DataTemplate>
-                    </ListView.GroupHeaderTemplate>
+                          ItemsSource="{Binding Events}" >
+                            
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -120,12 +138,14 @@
                                         <Grid>
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="*"/>
                                                 <ColumnDefinition Width="*" />
                                             </Grid.ColumnDefinitions>
                                           
                                             <Label Grid.Column="0" HorizontalOptions="Start" Text="{Binding name}" FontSize="Large" />
-                                            <Label Grid.Column="3" HorizontalOptions="End" FontFamily="{StaticResource MaterialFontFamily}" 
-                                                   FontSize="28" Text="{Binding status_icon}"/>                                    
+                                            <Label Grid.Column="1" HorizontalOptions="Center" Text="{Binding dept}" FontSize="Medium" />
+                                            <Label Grid.Column="2" HorizontalOptions="End" FontFamily="{StaticResource MaterialFontFamily}" 
+                                                   FontSize="28" Text="{Binding statusIcon}"/>                                     
                                         </Grid>
                                     </Frame>
                                 </StackLayout>
@@ -135,7 +155,6 @@
                 </ListView>
                 </StackLayout>
                 </Frame>
-                
             </StackLayout>
     
             <Frame IsVisible="false"
@@ -148,31 +167,39 @@
                    AbsoluteLayout.LayoutBounds="0,50,1,1">
                 <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                     
-                    <Label TextColor="#666" HorizontalOptions="Center" FontFamily="{StaticResource MaterialFontFamily}" FontSize="48" Text="close">
-                        <Label.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="ClosePopUp" />
-                        </Label.GestureRecognizers>
-                    </Label>                                    
+                    <Grid Margin="10,5,10,0">                                                                    
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*" />                                           
+                        </Grid.ColumnDefinitions>
+                        
+                        <Label Grid.Column="0" TextColor="#666" HorizontalOptions="Start" FontFamily="{StaticResource MaterialFontFamily}" FontSize="48" Text="close">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="ClosePopUp" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    
+                        <Label Grid.Column="1" TextColor="#666" HorizontalOptions="End" FontFamily="{StaticResource MaterialFontFamily}" FontSize="48" Rotation="45" Text="navigation">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OpenVenue" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                      </Grid>
                     
                     <WebView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="webview" />
                 </StackLayout>
             </Frame>
             
-            <ActivityIndicator x:Name="Loading"
-                               AbsoluteLayout.LayoutFlags="PositionProportional"  
-                               AbsoluteLayout.LayoutBounds=".5,.5,50,50" />
+            <ActivityIndicator AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds=".5,.5,50,50" x:Name="Loading" IsRunning="true" IsVisible="false" />
             
             <ImageButton Source="refresh"
                 x:Name="ReloadButton"
                 BackgroundColor="Transparent"
                 AbsoluteLayout.LayoutFlags="PositionProportional"  
                 AbsoluteLayout.LayoutBounds="0.05,0,30,30" 
-                Clicked="OnReloadButtonClicked" />
+                Clicked="OnReloadButtonClicked" />                
             
-            <BoxView Color="{StaticResource AccentColor}" 
-                     CornerRadius="8" 
-                     AbsoluteLayout.LayoutFlags="PositionProportional" 
-                     AbsoluteLayout.LayoutBounds=".5,0,30,30">
+            <BoxView Color="{StaticResource AccentColor}" CornerRadius="8" AbsoluteLayout.LayoutFlags="PositionProportional" Margin="0,2,0,0" AbsoluteLayout.LayoutBounds=".5,0,30,32">
                 <BoxView.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OpenPulsePage" />
                 </BoxView.GestureRecognizers>

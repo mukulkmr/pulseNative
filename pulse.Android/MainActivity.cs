@@ -20,6 +20,8 @@ namespace pulse.Droid
             Platform.Init(this, savedInstanceState); // add this line to your code, it may also be called: bundle
 
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            global::Xamarin.Forms.FormsMaterial.Init(this, savedInstanceState);
+
             AnimationViewRenderer.Init();
             LoadApplication(new App());
         }

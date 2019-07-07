@@ -29,8 +29,8 @@
                                 <Label x:Name="roomText" FontSize="Large" FontAttributes="Bold" HorizontalOptions="End" VerticalOptions="Center" Text="1" Grid.Row="0" Grid.Column="1" />
                                 <Stepper x:Name="rooms" Maximum="5" Minimum="1" Grid.Column="2" Grid.Row="0" ValueChanged="Room_ValueChanged" />
                                 <Label Grid.Column="0" Grid.Row="1" VerticalOptions="CenterAndExpand" Text="Number of Adults" />
-                                <Label x:Name="peopleText" FontSize="Large" FontAttributes="Bold" HorizontalOptions="End" VerticalOptions="Center" Text="1" Grid.Row="1" Grid.Column="1" />
-                                <Stepper x:Name="people" Maximum="20" Minimum="1" Grid.Column="2" Grid.Row="1" ValueChanged="People_ValueChanged" />
+                                <Label x:Name="peopleText" FontSize="Large" FontAttributes="Bold" HorizontalOptions="End" VerticalOptions="Center" Text="0" Grid.Row="1" Grid.Column="1" />
+                                <Stepper x:Name="people" Maximum="20" Minimum="0" Grid.Column="2" Grid.Row="1" ValueChanged="People_ValueChanged" />
                                 <Label Grid.Column="0" Grid.Row="2" VerticalOptions="CenterAndExpand" Text="Can Share with" />
                                 <Label x:Name="shareText" FontSize="Large" FontAttributes="Bold" HorizontalOptions="End" VerticalOptions="Center" Text="0" Grid.Row="2" Grid.Column="1" />
                                 <Stepper x:Name="share" Maximum="5" Minimum="0" Grid.Column="2" Grid.Row="2" ValueChanged="Share_ValueChanged" />
@@ -41,6 +41,10 @@
                                 <Label VerticalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="5" Text="Check Out" />
                                 <DatePicker Grid.Column="2" Grid.Row="5" x:Name="checkout" />
                             </Grid>
+                            
+                            <StackLayout x:Name="TeamEntries">
+                            </StackLayout>
+                            
                             <Button Clicked="OnRequestAccomodations" Text="Request" />
                         </StackLayout>
                     </Frame>

@@ -61,6 +61,7 @@
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/Xamarin.Firebase.Iid.dll
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/Xamarin.Firebase.Messaging.dll
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/Xamarin.Forms.Core.dll
+/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/Xamarin.Forms.Material.dll
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/Xamarin.Forms.Platform.Android.dll
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/Xamarin.Forms.Platform.dll
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/Xamarin.Forms.Xaml.dll

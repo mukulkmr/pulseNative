@@ -5,7 +5,10 @@
             <ScrollView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
                 <StackLayout Margin="0,30,0,0">
                     <Image Source="pulse_logo" HeightRequest="300"/>
-                    <Grid>
+                    
+                    <Label Margin="10" x:Name="pulseDesc" />
+                    
+                    <Grid  Margin="10">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="*" />

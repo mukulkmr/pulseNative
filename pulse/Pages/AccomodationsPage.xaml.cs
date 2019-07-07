@@ -4,6 +4,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace pulse
 {
@@ -19,6 +20,7 @@ namespace pulse
         public string checkout;
     }
 
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AccomodationsPage : ContentPage
     {
         readonly string id = (string)Application.Current.Properties["Id"];
@@ -54,9 +56,9 @@ namespace pulse
                 List<Accomodations> accomodations = JsonConvert.DeserializeObject<List<Accomodations>>(json);
 
                 if (accomodations[0].status == "PND")
-                    AccomodationStatus.Text = "Accomodation Status is Pending";
+                    AccomodationStatus.Text = "Accommodation Status is Pending";
                 else
-                    AccomodationStatus.Text = "Accomodation Status is Confirmed";
+                    AccomodationStatus.Text = "Accommodation Status is Confirmed";
 
                 AccomodationRooms.Text = $"Rooms Requested: {accomodations[0].rooms}";
                 AccomodationDates.Text = $"From ({accomodations[0].checkin}) - ({accomodations[0].checkout}) ";
@@ -72,12 +74,20 @@ namespace pulse
 
                 HttpClient httpClient = new HttpClient();
 
+                List<string> TeamMembers = new List<string>();
+
+                foreach (Entry entry in TeamEntries.Children)
+                {
+                    TeamMembers.Add(entry.Text);
+                }
+
                 var formContent = new FormUrlEncodedContent(new[] {
                         new KeyValuePair<string, string>("guid", id),
                         new KeyValuePair<string, string>("people", people.Value.ToString()),
                         new KeyValuePair<string, string>("rooms", rooms.Value.ToString()),
                         new KeyValuePair<string, string>("sharewith", share.Value.ToString()),
                         new KeyValuePair<string, string>("oncampus", OnCampus.IsToggled.ToString()),
+                       new KeyValuePair<string, string>("team", string.Join(",",TeamMembers)),
                         new KeyValuePair<string, string>("checkin", $"{checkin.Date.Year}-{checkin.Date.Month}-{checkin.Date.Day}"),
                         new KeyValuePair<string, string>("checkout", $"{checkout.Date.Year}-{checkout.Date.Month}-{checkout.Date.Day}")
                 });
@@ -86,7 +96,7 @@ namespace pulse
                 await httpClient.PostAsync(uri, formContent);
 
                 await UpdateAsync();
-                AccomodationsCard.IsVisible = true;
+                AccomodationSummary.IsVisible = true;
 
                 Application.Current.Properties["Accomodations"] = true;
 
@@ -102,6 +112,17 @@ namespace pulse
 
         void People_ValueChanged(object sender, ValueChangedEventArgs e)
         {
+            TeamEntries.Children.Clear();
+
+            for (int i = 0; i < e.NewValue; i++)
+            {
+                TeamEntries.Children.Add(new Entry
+                {
+                    Placeholder = $"Enter Delcard ID  #{i}",
+                    HorizontalOptions = LayoutOptions.FillAndExpand
+                });
+            }
+
             peopleText.Text = e.NewValue.ToString();
         }
 
@@ -110,6 +131,6 @@ namespace pulse
             shareText.Text = e.NewValue.ToString();
         }
 
-        void Handle_Clicked(object sender, EventArgs e) =>  Navigation.PopModalAsync();
+        void Handle_Clicked(object sender, EventArgs e) => Navigation.PopModalAsync();
     }
 }
