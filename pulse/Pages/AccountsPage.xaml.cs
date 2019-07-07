@@ -81,6 +81,8 @@ namespace pulse
 
                 QRCard.IsVisible = true;
                 await Application.Current.SavePropertiesAsync();
+
+                await DisplayAlert("Alert", "Added to payments", "OK");
             }
         }
 
