@@ -25,8 +25,8 @@ namespace pulse.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             global::Xamarin.Forms.FormsMaterial.Init();
-
             AnimationViewRenderer.Init();
+
             LoadApplication(new App());
             return base.FinishedLaunching(uiApplication, launchOptions);
         }

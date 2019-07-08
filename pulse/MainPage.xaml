@@ -32,7 +32,7 @@
         </x:Arguments>
     </NavigationPage>
     
-    <NavigationPage Title="Accounts" IconImageSource="account_circle">
+    <NavigationPage Title="Accounts" IconImageSource="account_box">
         <x:Arguments>
             <local:AccountsPage />
         </x:Arguments>

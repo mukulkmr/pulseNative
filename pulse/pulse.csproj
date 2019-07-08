@@ -28,6 +28,7 @@
   <ItemGroup>
     <Folder Include="Pages\" />
     <Folder Include="Models\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Mono.Android">
@@ -37,5 +38,15 @@
   <ItemGroup>
     <EmbeddedResource Remove="Views\MapsPage.xaml" />
     <EmbeddedResource Remove="Assets\App.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Resources\DelegatesInfo.txt" />
+    <None Remove="Models\DelegatesInfo.txt" />
+    <None Remove="Models\RegistrationsInfo.txt" />
+    <None Remove="Resources\RegistrationsInfo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\RegistrationsInfo.txt" />
+    <EmbeddedResource Include="Resources\DelegatesInfo.txt" />
   </ItemGroup>
 </Project>

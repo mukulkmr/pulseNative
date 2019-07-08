@@ -1,22 +1,23 @@
-﻿<Properties StartupConfiguration="{B2E6F745-E837-4740-AD9A-6BB82767B924}|Default">
+﻿<Properties StartupConfiguration="{D592D262-83E9-4942-A1ED-D176AC32BDE5}|Default">
   <MonoDevelop.Ide.ItemProperties.pulse.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7243C592-9BA1-47B1-B961-D3236F69B4E4" />
   <MonoDevelop.Ide.ItemProperties.pulse HideGettingStarted="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="pulse/Pages/PulsePage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="pulse.iOS/AppDelegate.cs">
     <Files>
-      <File FileName="pulse/Pages/AccomodationsPage.xaml" Line="45" Column="61" />
-      <File FileName="pulse/Pages/PulsePage.xaml" Line="9" Column="57" />
-      <File FileName="pulse/Pages/AccountsPage.xaml.cs" Line="85" Column="45" />
-      <File FileName="pulse/Pages/PulsePage.xaml.cs" Line="8" Column="1" />
+      <File FileName="pulse/Pages/AccountsPage.xaml" Line="29" Column="47" />
+      <File FileName="pulse.iOS/AppDelegate.cs" Line="28" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="pulse" expanded="True" selected="True">
+          <Node name="pulse" expanded="True">
             <Node name="pulse" expanded="True">
-              <Node name="Pages" expanded="True">
-                <Node name="AccountsPage.xaml" expanded="True" />
-                <Node name="PulsePage.xaml" expanded="True" />
+              <Node name="Dependencies" expanded="True">
+                <Node name="AssemblyDependencies" expanded="True" />
               </Node>
+            </Node>
+            <Node name="pulse.iOS" expanded="True">
+              <Node name="Packages" expanded="True" />
+              <Node name="AppDelegate.cs" selected="True" />
             </Node>
           </Node>
         </State>

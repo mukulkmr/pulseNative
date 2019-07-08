@@ -36,7 +36,7 @@ namespace pulse
                 AccomodationsCard.IsVisible = !(bool)Application.Current.Properties["Accomodations"];
                 AccomodationSummary.IsVisible = (bool)Application.Current.Properties["Accomodations"];
 
-                if ((string)Application.Current.Properties["College"] == "Not MCI registered College" || (string)Application.Current.Properties["College"] == "President's Invite")
+                if (!(bool)Application.Current.Properties["MedicalStudent"] || (string)Application.Current.Properties["College"] == "Students' Union Invite")
                 {
                     AccomodationsCard.IsVisible = false;
                 }

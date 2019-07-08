@@ -8,24 +8,37 @@
             <StackLayout> 
                 <Label Text="Registration" Margin="10" HorizontalOptions="Center" FontSize="Large" />
                 
-                <Entry x:Name="userName" Margin="10" HorizontalTextAlignment="Start" Placeholder="Enter Name" />            
-                <Entry  x:Name="userEmail" Margin="10" HorizontalTextAlignment="Start" Placeholder="Enter Email" Keyboard="Email" />         
-                <Entry x:Name="userMobile" Margin="10"  Placeholder="Enter Mobile" Keyboard="Telephone" MaxLength="10" HorizontalTextAlignment="Start" />
+                <Entry x:Name="userName" HorizontalTextAlignment="Start" Placeholder="Enter Name" />            
+                <Entry  x:Name="userEmail" HorizontalTextAlignment="Start" Placeholder="Enter Email" Keyboard="Email" />         
+                <Entry x:Name="userMobile" Placeholder="Enter Mobile" Keyboard="Telephone" MaxLength="10" HorizontalTextAlignment="Start" />
                 
                 <Grid Margin="10">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-                    <Label Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Text="President's Invite" />
-                    <Switch x:Name="inviteSwitch" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Toggled="Handle_Toggled"/>
+                    <Label Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" Text="Students' Union Invite" />
+                    <Switch x:Name="inviteSwitch" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="End" Toggled="Handle_Toggled"/>
                 </Grid>
 
-                <Frame HasShadow="false" Margin="10" BackgroundColor="Transparent" x:Name="CollegeInputCard">
+                <Frame Padding="0" HasShadow="false" BackgroundColor="Transparent" x:Name="CollegeInputCard">
                     <StackLayout>
-                        <Label Text="College" HorizontalOptions="CenterAndExpand" />
+                        <Label Text="College" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+                        
+                        <Grid Margin="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" Text="Medical Student" />
+                            <Switch x:Name="MedicalStudent" IsToggled="true" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="End" Toggled="StudentToggle"/>
+                        </Grid>
+                        
+                        
                         <Picker SelectedIndexChanged="Handle_SelectedIndexChanged" x:Name="StatesPicker" />
                         <Picker x:Name="CollegePicker" />
+                        
+                        <Entry x:Name="CollegePickerOther" IsVisible="false" HorizontalTextAlignment="Start" Placeholder="Enter Non MCI Registered College " />            
                     </StackLayout>
                 </Frame>
                 

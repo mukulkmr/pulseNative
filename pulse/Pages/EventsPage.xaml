@@ -40,7 +40,7 @@
                     </Frame>
                 </Grid>
                 
-                <Frame x:Name="DepartmentCard" Padding="5" Margin="0,5,0,0">
+                <Frame HasShadow="false" x:Name="DepartmentCard" Padding="10,0,5,10" VerticalOptions="FillAndExpand" Margin="0,0,0,0">
                     <ScrollView>
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -49,44 +49,37 @@
                         </Grid.ColumnDefinitions>
                             
                         <ImageButton Grid.Column="0" Grid.Row="0" 
-                               Source="pulse_tabs_05" 
-                               HeightRequest="200" 
+                               Source="pulse_tabs_05"
                                CommandParameter="0"
                                Command="{Binding OpenEventPage}"      
                                />
                         
                         <ImageButton Grid.Column="1" Grid.Row="0" 
-                               Source="pulse_tabs_02" 
-                               HeightRequest="200" 
+                               Source="pulse_tabs_02"
                                CommandParameter="1"
                                Command="{Binding OpenEventPage}"    
                                />
                         
                         <ImageButton Grid.Column="0" Grid.Row="1" 
-                               Source="pulse_tabs_03" 
-                               HeightRequest="200" 
+                               Source="pulse_tabs_03"
                                CommandParameter="2"
                                Command="{Binding OpenEventPage}"    
                                />
                         
                         <ImageButton Grid.Column="1" Grid.Row="1" 
-                               Source="pulse_tabs_06" 
-                               HeightRequest="200"  
+                               Source="pulse_tabs_06"
                                CommandParameter="3"
                                Command="{Binding OpenEventPage}"    
                                />
                         
                         <ImageButton Grid.Column="0" Grid.Row="2" 
-                               BackgroundColor="#eee" 
-                               Source="pulse_tabs_01" 
-                               HeightRequest="200"  
+                               Source="pulse_tabs_01"
                                CommandParameter="4"
                                Command="{Binding OpenEventPage}"    
                                />
                         
                         <ImageButton Grid.Column="1" Grid.Row="2" 
-                               Source="pulse_tabs_04" 
-                               HeightRequest="200"
+                               Source="pulse_tabs_04"
                                CommandParameter="5"
                                Command="{Binding OpenEventPage}"    
                                />
@@ -94,7 +87,7 @@
                     </ScrollView>
                 </Frame>
                 
-                <Frame IsVisible="false" Margin="0,5,0,0" x:Name="ScheduleCard">
+                <Frame HasShadow="false" IsVisible="false" Margin="0,5,0,0" x:Name="ScheduleCard">
                     <StackLayout>
                     <Grid HeightRequest="100">
                         <Grid.ColumnDefinitions>
@@ -173,17 +166,8 @@
                             <ColumnDefinition Width="*" />                                           
                         </Grid.ColumnDefinitions>
                         
-                        <Label Grid.Column="0" TextColor="#666" HorizontalOptions="Start" FontFamily="{StaticResource MaterialFontFamily}" FontSize="48" Text="close">
-                            <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="ClosePopUp" />
-                            </Label.GestureRecognizers>
-                        </Label>
-                    
-                        <Label Grid.Column="1" TextColor="#666" HorizontalOptions="End" FontFamily="{StaticResource MaterialFontFamily}" FontSize="48" Rotation="45" Text="navigation">
-                            <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="OpenVenue" />
-                            </Label.GestureRecognizers>
-                        </Label>
+                        <ImageButton Grid.Column="0" HorizontalOptions="Start" Source="close" BackgroundColor="Transparent" Clicked="ClosePopUp" />
+                        <ImageButton Grid.Column="1" HorizontalOptions="End" BackgroundColor="Transparent"  Source="directions" Clicked="OpenVenue" />
                       </Grid>
                     
                     <WebView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="webview" />

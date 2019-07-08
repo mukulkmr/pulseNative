@@ -7,6 +7,8 @@ using Android.Widget;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Xamarin.Forms.Xaml;
+using System.Reflection;
+using System.IO;
 
 namespace pulse
 {
@@ -27,8 +29,6 @@ namespace pulse
             userImage.Source = $"https://avatars.dicebear.com/v2/identicon/{id}.svg";
             BindingContext = new AccountViewModel();
 
-            QRCard.IsVisible |= (bool)Application.Current.Properties["DelCard"];
-
             _ = UpdateAsync();
         }
 
@@ -43,12 +43,22 @@ namespace pulse
                 string json = await responseMessage.Content.ReadAsStringAsync();
                 List<WebStatus> status = JsonConvert.DeserializeObject<List<WebStatus>>(json);
 
-                if (status[0].status == "PND")
-                    QRStatus.Text = "Delcard Pending";
-                else
+                QRStatus.Text = "Delcard Pending";
+                QRImage.IsVisible = false;
+
+                try
                 {
-                    QRStatus.Text = "Delcard Confirmed";
-                    QRImage.Source = $" https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${id}";
+                    if (status[0].status == "CNF")
+                    {
+                        QRStatus.Text = "Delcard Confirmed";
+                        QRImage.IsVisible = true;
+                        QRImage.Source = $"https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${id}";
+                    }
+
+                }
+                catch (System.Exception ex)
+                {
+                    System.Console.WriteLine(ex.Message);
                 }
             }
         }
@@ -91,8 +101,7 @@ namespace pulse
             await ReloadButton.RotateTo(360, 1000, Easing.Linear);
             ReloadButton.Rotation = 0;
 
-            if ((bool)Application.Current.Properties["DelCard"])
-                await UpdateAsync();
+            await UpdateAsync();
         }
 
         void Handle_Clicked(object sender, System.EventArgs e) => Navigation.PushModalAsync(new CatsPage());
@@ -121,7 +130,9 @@ namespace pulse
 
         void DelCardInfo(object sender, System.EventArgs e)
         {
-            DisplayAlert("Perks of being delegates", "Some Unformatted Text", "OK");
+            var text = ResourceLoader.GetEmbeddedResourceString(Assembly.GetAssembly(typeof(ResourceLoader)), "DelegatesInfo.txt");
+
+            DisplayAlert("Perks of being delegates", text, "OK");
         }
 
         void OpenPulsePage(object sender, System.EventArgs e) => Navigation.PushModalAsync(new PulsePage());

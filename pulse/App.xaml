@@ -37,7 +37,7 @@
         
         <Style TargetType="Switch">
             <Setter Property="Visual" Value="Material"/>            
-        </Style>
+        </Style>        
         
         <Style x:Key="Card" TargetType="Frame">
             <Setter Property="CornerRadius" Value="4" />

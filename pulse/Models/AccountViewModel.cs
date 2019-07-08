@@ -63,7 +63,7 @@ namespace pulse.ViewModels
             {
                 DelCardRequest = !(bool)Application.Current.Properties["DelCard"];
 
-                if((string)Application.Current.Properties["College"] == "Not MCI registered College" || (string)Application.Current.Properties["College"] == "President's Invite") 
+                if(!(bool)Application.Current.Properties["MedicalStudent"] || (string)Application.Current.Properties["College"] == "Students' Union Invite") 
                 {
                     DelCardRequest = false;
                 }

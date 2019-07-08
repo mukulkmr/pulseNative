@@ -609,14 +609,16 @@ namespace pulse
             var id = await AppCenter.GetInstallIdAsync();
 
             if (inviteSwitch.IsToggled)
-                college = "President's Invite";
-
+                college = "Students' Union Invite";
 
             if (userName.Text == null || userEmail.Text == null || userMobile.Text == null || college == null)
             {
                 await DisplayAlert("Alert", "Please Enter your Credentials", "OK");
                 return;
             }
+
+            if (!MedicalStudent.IsToggled)
+                college = CollegePickerOther.Text;
 
             Registerbutton.IsVisible = false;
             Loading.IsVisible = true;
@@ -625,6 +627,7 @@ namespace pulse
             Application.Current.Properties.Add("Email", userEmail.Text);
             Application.Current.Properties.Add("Mobile", userMobile.Text);
             Application.Current.Properties.Add("Id", id.ToString());
+            Application.Current.Properties.Add("MedicalStudent", MedicalStudent.IsToggled);
             Application.Current.Properties.Add("DelCard", false);
             Application.Current.Properties.Add("Accomodations", false);
             Application.Current.Properties.Add("College", college);
@@ -665,6 +668,14 @@ namespace pulse
         void Handle_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new MainPage());
+        }
+
+        void StudentToggle(object sender, ToggledEventArgs e)
+        {
+            StatesPicker.IsVisible = e.Value;
+            CollegePicker.IsVisible = e.Value;
+
+            CollegePickerOther.IsVisible = !e.Value;
         }
     }
 }

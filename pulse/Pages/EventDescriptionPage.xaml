@@ -67,17 +67,8 @@
                             <ColumnDefinition Width="*" />                                           
                         </Grid.ColumnDefinitions>
                         
-                        <Label Grid.Column="0" TextColor="#666" HorizontalOptions="Start" FontFamily="{StaticResource MaterialFontFamily}" FontSize="48" Text="close">
-                            <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="ClosePopUp" />
-                            </Label.GestureRecognizers>
-                        </Label>
-                    
-                        <Label Grid.Column="1" TextColor="#666" HorizontalOptions="End" FontFamily="{StaticResource MaterialFontFamily}" FontSize="48" Rotation="45" Text="navigation">
-                            <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="OpenVenue" />
-                            </Label.GestureRecognizers>
-                        </Label>
+                        <ImageButton Grid.Column="0" HorizontalOptions="Start" Source="close" BackgroundColor="Transparent" Clicked="ClosePopUp" />
+                        <ImageButton Grid.Column="1" HorizontalOptions="End" BackgroundColor="Transparent"  Source="directions" Clicked="OpenVenue" />
                       </Grid>
                     
                     <WebView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="webview" />

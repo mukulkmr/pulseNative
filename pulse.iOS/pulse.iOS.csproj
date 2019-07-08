@@ -27,6 +27,7 @@
     <MtouchArch>x86_64</MtouchArch>
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -38,6 +39,7 @@
     <MtouchArch>x86_64</MtouchArch>
     <ConsolePause>false</ConsolePause>
     <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -139,9 +141,6 @@
     <ImageAsset Include="Assets.xcassets\event_available.imageset\outline_event_available_black_36pt_1x.png" />
     <ImageAsset Include="Assets.xcassets\event_available.imageset\outline_event_available_black_36pt_2x-1.png" />
     <ImageAsset Include="Assets.xcassets\event_available.imageset\outline_event_available_black_36pt_3x-1.png" />
-    <ImageAsset Include="Assets.xcassets\account_box.imageset\outline_account_box_black_36pt_1x.png" />
-    <ImageAsset Include="Assets.xcassets\account_box.imageset\outline_account_box_black_36pt_2x-1.png" />
-    <ImageAsset Include="Assets.xcassets\account_box.imageset\outline_account_box_black_36pt_3x.png" />
     <ImageAsset Include="Assets.xcassets\pawprint.imageset\outline_pets_black_36pt_1x.png" />
     <ImageAsset Include="Assets.xcassets\pawprint.imageset\outline_pets_black_36pt_2x.png" />
     <ImageAsset Include="Assets.xcassets\pawprint.imageset\outline_pets_black_36pt_3x.png" />
@@ -152,26 +151,12 @@
     <ImageAsset Include="Assets.xcassets\payment.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\stars.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\back_button.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\back_button.imageset\baseline_arrow_back_black_24pt_1x.png" />
-    <ImageAsset Include="Assets.xcassets\back_button.imageset\baseline_arrow_back_black_24pt_2x.png" />
-    <ImageAsset Include="Assets.xcassets\back_button.imageset\baseline_arrow_back_black_24pt_3x.png" />
-    <ImageAsset Include="Assets.xcassets\stars.imageset\baseline_stars_black_24pt_1x.png" />
-    <ImageAsset Include="Assets.xcassets\stars.imageset\baseline_stars_black_24pt_2x.png" />
-    <ImageAsset Include="Assets.xcassets\stars.imageset\baseline_stars_black_24pt_3x.png" />
     <ImageAsset Include="Assets.xcassets\account_circle.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\account_circle.imageset\baseline_account_circle_black_24pt_1x.png" />
     <ImageAsset Include="Assets.xcassets\account_circle.imageset\baseline_account_circle_black_24pt_2x.png" />
     <ImageAsset Include="Assets.xcassets\account_circle.imageset\baseline_account_circle_black_24pt_3x.png" />
-    <ImageAsset Include="Assets.xcassets\notifications_active.imageset\round_notifications_active_black_24pt_2x.png" />
-    <ImageAsset Include="Assets.xcassets\notifications_active.imageset\round_notifications_active_black_24pt_3x.png" />
-    <ImageAsset Include="Assets.xcassets\payment.imageset\round_payment_black_24pt_1x.png" />
     <ImageAsset Include="Assets.xcassets\payment.imageset\round_payment_black_24pt_2x.png" />
-    <ImageAsset Include="Assets.xcassets\payment.imageset\round_payment_black_24pt_3x.png" />
-    <ImageAsset Include="Assets.xcassets\notifications_active.imageset\round_notifications_active_black_24pt_1x.png" />
     <ImageAsset Include="Assets.xcassets\refresh.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\refresh.imageset\round_refresh_black_24pt_1x.png" />
-    <ImageAsset Include="Assets.xcassets\refresh.imageset\round_refresh_black_24pt_2x.png" />
-    <ImageAsset Include="Assets.xcassets\refresh.imageset\round_refresh_black_24pt_3x.png" />
     <ImageAsset Include="Assets.xcassets\pulse_tabs_01.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\pulse_tabs_02.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\pulse_tabs_03.imageset\Contents.json" />
@@ -204,6 +189,35 @@
     <ImageAsset Include="Assets.xcassets\radio_button_unchecked.imageset\outline_radio_button_unchecked_black_36pt_1x.png" />
     <ImageAsset Include="Assets.xcassets\radio_button_unchecked.imageset\outline_radio_button_unchecked_black_36pt_2x.png" />
     <ImageAsset Include="Assets.xcassets\radio_button_unchecked.imageset\outline_radio_button_unchecked_black_36pt_3x.png" />
+    <ImageAsset Include="Assets.xcassets\refresh.imageset\outline_refresh_black_48pt_1x.png" />
+    <ImageAsset Include="Assets.xcassets\refresh.imageset\outline_refresh_black_48pt_2x.png" />
+    <ImageAsset Include="Assets.xcassets\refresh.imageset\outline_refresh_black_48pt_3x.png" />
+    <ImageAsset Include="Assets.xcassets\back_button.imageset\outline_arrow_back_black_48pt_1x.png" />
+    <ImageAsset Include="Assets.xcassets\back_button.imageset\outline_arrow_back_black_48pt_2x.png" />
+    <ImageAsset Include="Assets.xcassets\back_button.imageset\outline_arrow_back_black_48pt_3x.png" />
+    <ImageAsset Include="Assets.xcassets\directions.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\directions.imageset\outline_directions_black_48pt_1x.png" />
+    <ImageAsset Include="Assets.xcassets\directions.imageset\outline_directions_black_48pt_2x.png" />
+    <ImageAsset Include="Assets.xcassets\directions.imageset\outline_directions_black_48pt_3x.png" />
+    <ImageAsset Include="Assets.xcassets\close.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\close.imageset\outline_close_black_48pt_1x.png" />
+    <ImageAsset Include="Assets.xcassets\close.imageset\outline_close_black_48pt_2x.png" />
+    <ImageAsset Include="Assets.xcassets\close.imageset\outline_close_black_48pt_3x.png" />
+    <ImageAsset Include="Assets.xcassets\account_box.imageset\outline_account_box_black_48pt_1x.png" />
+    <ImageAsset Include="Assets.xcassets\account_box.imageset\outline_account_box_black_48pt_2x.png" />
+    <ImageAsset Include="Assets.xcassets\account_box.imageset\outline_account_box_black_48pt_3x.png" />
+    <ImageAsset Include="Assets.xcassets\notifications_active.imageset\outline_notifications_active_black_48pt_1x.png" />
+    <ImageAsset Include="Assets.xcassets\notifications_active.imageset\outline_notifications_active_black_48pt_2x.png" />
+    <ImageAsset Include="Assets.xcassets\notifications_active.imageset\outline_notifications_active_black_48pt_3x.png" />
+    <ImageAsset Include="Assets.xcassets\stars.imageset\outline_stars_black_48pt_1x.png" />
+    <ImageAsset Include="Assets.xcassets\stars.imageset\outline_stars_black_48pt_2x.png" />
+    <ImageAsset Include="Assets.xcassets\stars.imageset\outline_stars_black_48pt_3x.png" />
+    <ImageAsset Include="Assets.xcassets\payment.imageset\outline_credit_card_black_48pt_1x.png" />
+    <ImageAsset Include="Assets.xcassets\payment.imageset\outline_credit_card_black_48pt_3x.png" />
+    <ImageAsset Include="Assets.xcassets\info.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\info.imageset\outline_info_black_48pt_1x.png" />
+    <ImageAsset Include="Assets.xcassets\info.imageset\outline_info_black_48pt_2x.png" />
+    <ImageAsset Include="Assets.xcassets\info.imageset\outline_info_black_48pt_3x.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -224,11 +238,11 @@
     <PackageReference Include="Xamarin.Essentials">
       <Version>1.1.0</Version>
     </PackageReference>
-    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie">
-      <Version>3.0.0</Version>
-    </PackageReference>
     <PackageReference Include="Xamarin.Forms.Visual.Material">
       <Version>4.1.0.555618</Version>
+    </PackageReference>
+    <PackageReference Include="Com.Airbnb.iOS.Lottie">
+      <Version>2.5.8</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
@@ -263,6 +277,9 @@
     <Folder Include="Assets.xcassets\expand_less.imageset\" />
     <Folder Include="Assets.xcassets\check.imageset\" />
     <Folder Include="Assets.xcassets\radio_button_unchecked.imageset\" />
+    <Folder Include="Assets.xcassets\directions.imageset\" />
+    <Folder Include="Assets.xcassets\close.imageset\" />
+    <Folder Include="Assets.xcassets\info.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\MaterialIcons_Regular.ttf" />

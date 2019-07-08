@@ -36,9 +36,9 @@
       "frameworks": {
         "xamarinios10": {
           "dependencies": {
-            "Com.Airbnb.Xamarin.Forms.Lottie": {
+            "Com.Airbnb.iOS.Lottie": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[2.5.8, )"
             },
             "Microsoft.AppCenter": {
               "target": "Package",

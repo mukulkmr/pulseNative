@@ -39,8 +39,6 @@ namespace pulse
             });
 
             BindingContext = this;
-
-            _ = UpdateAsync();
         }
 
         async void OnReloadButtonClicked(object sender, EventArgs e)
@@ -125,6 +123,8 @@ namespace pulse
 
             DepartmentCard.IsVisible = false;
             ScheduleCard.IsVisible = true;
+
+            _ = UpdateAsync();
         }
 
         void OpenPulsePage(object sender, EventArgs e) => Navigation.PushModalAsync(new PulsePage());
