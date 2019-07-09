@@ -61,6 +61,10 @@
               "target": "Package",
               "version": "[12.0.2, )"
             },
+            "Plugin.InAppBilling": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
             "Xam.Plugins.Notifier": {
               "target": "Package",
               "version": "[3.0.1, )"

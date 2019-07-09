@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage NavigationPage.HasNavigationBar="False" 
+             Padding="{OnPlatform iOS={StaticResource PageMargin}}"
              xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" 
              xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
@@ -11,8 +12,8 @@
                 <StackLayout Margin="0,40,0,0">
                     <Frame x:Name="QRCard" Style="{StaticResource Card}">
                         <StackLayout>
-                            <Label x:Name="QRStatus" Text="Loading..." />
-                           <Image x:Name="QRImage" HeightRequest="150" IsVisible="false">
+                            <Label x:Name="QRStatus" Margin="5" FontAttributes="Bold" FontSize="Large" Text="Loading..." />
+                           <Image x:Name="QRImage" HeightRequest="150">
                                 <Image.GestureRecognizers>
                                     <TapGestureRecognizer Tapped="QRCodePopUp" />
                                 </Image.GestureRecognizers>
@@ -52,11 +53,11 @@
             </ScrollView>
             
              <Frame IsVisible="false"
-                   Scale="0"
                    x:Name="QRPopUp"
                    AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional" 
                    BackgroundColor="White" 
                    Padding="0"
+                   Margin="5"
                    CornerRadius="2"
                    AbsoluteLayout.LayoutBounds="0,50,1,1">
                 <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
@@ -68,9 +69,10 @@
                         Animation="rainbow.json" 
                         Loop="true" 
                         AutoPlay="true"
-                        HorizontalOptions="Center"
                         Margin="10"
-                        HeightRequest="50"/>
+                        HorizontalOptions="Center"
+                        HeightRequest="50"
+                        />
                     
                 </StackLayout>
             </Frame>

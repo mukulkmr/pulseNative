@@ -34,6 +34,7 @@ namespace pulse
             BindingContext = this;
         }
 
+
         async Task UpdateAsync()
         {
             Loading.IsVisible = true;
@@ -64,22 +65,24 @@ namespace pulse
 
         void Handle_Clicked(object sender, EventArgs e) => Navigation.PopModalAsync();
 
-        void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
+        async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            DetailsCard.IsVisible = true;
-            _ = DetailsCard.ScaleTo(1, 250, Easing.SinIn);
-
             Event _event = e.Item as Event;
 
             Venue = _event.venue;
             Location = _event.location;
 
             webview.Source = $"https://app.aiimspulse.website/views/event.php?id={_event.id}&guid={id}";
+
+            DetailsCard.IsVisible = true;
+            DetailsCard.TranslationY = Height;
+
+            await DetailsCard.TranslateTo(0, 0, 250, Easing.SinIn);
         }
 
         async void ClosePopUp(object sender, EventArgs e)
         {
-            await DetailsCard.ScaleTo(0, 250, Easing.SinOut);
+            await DetailsCard.TranslateTo(0, Height, 250, Easing.SinOut);
             DetailsCard.IsVisible = false;
         }
 

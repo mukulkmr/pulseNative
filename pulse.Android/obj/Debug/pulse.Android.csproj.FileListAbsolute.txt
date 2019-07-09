@@ -114,6 +114,10 @@
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Debug/res/drawable/expand_more.png
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Debug/res/drawable/check.png
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Debug/res/drawable/radio_button_unchecked.png
+/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Debug/res/drawable/directions.png
+/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Debug/res/drawable/close.png
+/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Debug/res/drawable/account_box.png
+/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Debug/res/drawable/info.png
 /Users/mukulkumar/Projects/pulse/pulse.Android/bin/Debug/FormsViewGroup.pdb
 /Users/mukulkumar/Projects/pulse/pulse.Android/bin/Debug/Mono.Android.pdb
 /Users/mukulkumar/Projects/pulse/pulse.Android/bin/Debug/Xamarin.Forms.Core.pdb

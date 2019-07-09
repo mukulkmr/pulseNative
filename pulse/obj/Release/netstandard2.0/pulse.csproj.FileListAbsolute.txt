@@ -1,8 +1,6 @@
 /Users/mukulkumar/Projects/pulse/pulse/bin/Release/netstandard2.0/pulse.deps.json
 /Users/mukulkumar/Projects/pulse/pulse/bin/Release/netstandard2.0/pulse.dll
 /Users/mukulkumar/Projects/pulse/pulse/bin/Release/netstandard2.0/pulse.pdb
-/Users/mukulkumar/Projects/pulse/pulse/bin/Release/netstandard2.0/Mono.Android.dll
-/Users/mukulkumar/Projects/pulse/pulse/bin/Release/netstandard2.0/Mono.Android.pdb
 /Users/mukulkumar/Projects/pulse/pulse/obj/Release/netstandard2.0/pulse.csprojAssemblyReference.cache
 /Users/mukulkumar/Projects/pulse/pulse/obj/Release/netstandard2.0/App.xaml.g.cs
 /Users/mukulkumar/Projects/pulse/pulse/obj/Release/netstandard2.0/MainPage.xaml.g.cs
@@ -20,6 +18,5 @@
 /Users/mukulkumar/Projects/pulse/pulse/obj/Release/netstandard2.0/pulse.AssemblyInfoInputs.cache
 /Users/mukulkumar/Projects/pulse/pulse/obj/Release/netstandard2.0/pulse.AssemblyInfo.cs
 /Users/mukulkumar/Projects/pulse/pulse/obj/Release/netstandard2.0/XamlC.stamp
-/Users/mukulkumar/Projects/pulse/pulse/obj/Release/netstandard2.0/pulse.csproj.CopyComplete
 /Users/mukulkumar/Projects/pulse/pulse/obj/Release/netstandard2.0/pulse.dll
 /Users/mukulkumar/Projects/pulse/pulse/obj/Release/netstandard2.0/pulse.pdb

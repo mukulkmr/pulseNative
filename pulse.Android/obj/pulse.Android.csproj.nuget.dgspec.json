@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[2.1.1, )"
             },
+            "Plugin.InAppBilling": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
             "Xamarin.Android.Support.Animated.Vector.Drawable": {
               "target": "Package",
               "version": "[28.0.0.1, )"
@@ -148,6 +152,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.2, )"
+            },
+            "Plugin.InAppBilling": {
+              "target": "Package",
+              "version": "[2.0.0, )"
             },
             "Xam.Plugins.Notifier": {
               "target": "Package",

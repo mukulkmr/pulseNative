@@ -5,7 +5,7 @@
  --linksdkonly
 --sdkroot=/Applications/Xcode.app/Contents/Developer
 --sdk=12.2
---targetver=9.1
+--targetver=10.0
  --aot-options=-O=-float32
  --http-message-handler=NSUrlSessionHandler
  --abi=x86_64
@@ -170,6 +170,8 @@
 -r=/Users/mukulkumar/.nuget/packages/microsoft.appcenter.push/2.1.1/lib/Xamarin.iOS10/Microsoft.AppCenter.Push.dll
 -r=/Users/mukulkumar/.nuget/packages/microsoft.appcenter.push/2.1.1/lib/Xamarin.iOS10/Microsoft.AppCenter.Push.iOS.Bindings.dll
 -r=/Users/mukulkumar/.nuget/packages/newtonsoft.json/12.0.2/lib/netstandard2.0/Newtonsoft.Json.dll
+-r=/Users/mukulkumar/.nuget/packages/plugin.inappbilling/2.0.0/lib/Xamarin.iOS10/Plugin.InAppBilling.Abstractions.dll
+-r=/Users/mukulkumar/.nuget/packages/plugin.inappbilling/2.0.0/lib/Xamarin.iOS10/Plugin.InAppBilling.dll
 -r=/Users/mukulkumar/.nuget/packages/xam.plugins.notifier/3.0.1/lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll
 -r=/Users/mukulkumar/.nuget/packages/xam.plugins.notifier/3.0.1/lib/Xamarin.iOS10/Plugin.LocalNotifications.dll
 -r=/Users/mukulkumar/.nuget/packages/xamarin.essentials/1.1.0/lib/xamarinios10/Xamarin.Essentials.dll
@@ -214,7 +216,6 @@
 -r=/Users/mukulkumar/.nuget/packages/xamarin.forms.visual.material/4.1.0.555618/lib/Xamarin.iOS10/Xamarin.Forms.Material.dll
 -r=/Users/mukulkumar/.nuget/packages/xamarin.ios.materialcomponents/72.2.0.1/lib/Xamarin.iOS/MaterialComponents.dll
 -r=/Users/mukulkumar/Projects/pulse/pulse/bin/Release/netstandard2.0/pulse.dll
--r=/Users/mukulkumar/Projects/pulse/pulse/bin/Release/netstandard2.0/Mono.Android.dll
  --target-framework=Xamarin.iOS,v1.0
 --root-assembly=/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/pulse.iOS.exe
  

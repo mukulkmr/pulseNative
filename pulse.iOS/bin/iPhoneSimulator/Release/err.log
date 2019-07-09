@@ -1,0 +1,53 @@
+MonoTouch: Could not install sigaction override, unexpected sigaction implementation.
+2019-07-09 19:25:15.902729+0530 pulse.iOS[91864:2198900] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=91864
+2019-07-09 19:25:15.903173+0530 pulse.iOS[91864:2198900] SecTaskCopyDebugDescription: pulse.iOS[91864]/0#-1 LF=0
+2019-07-09 19:25:16.027389+0530 pulse.iOS[91864:2198900] You've implemented -[<UIApplicationDelegate> application:didReceiveRemoteNotification:fetchCompletionHandler:], but you still need to add "remote-notification" to the list of your supported UIBackgroundModes in your Info.plist.
+2019-07-09 19:25:16.848424+0530 pulse.iOS[91864:2198946] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=91864
+2019-07-09 19:25:16.848779+0530 pulse.iOS[91864:2198946] SecTaskCopyDebugDescription: pulse.iOS[91864]/0#-1 LF=0
+2019-07-09 19:25:17.175691+0530 pulse.iOS[91864:2198900] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=91864
+2019-07-09 19:25:17.176020+0530 pulse.iOS[91864:2198900] SecTaskCopyDebugDescription: pulse.iOS[91864]/0#-1 LF=0
+2019-07-09 19:25:17.541005+0530 pulse.iOS[91864:2198900] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=91864
+2019-07-09 19:25:17.541299+0530 pulse.iOS[91864:2198900] SecTaskCopyDebugDescription: pulse.iOS[91864]/0#-1 LF=0
+2019-07-09 19:25:17.822371+0530 pulse.iOS[91864:2198900] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=91864
+2019-07-09 19:25:17.822681+0530 pulse.iOS[91864:2198900] SecTaskCopyDebugDescription: pulse.iOS[91864]/0#-1 LF=0
+2019-07-09 19:25:18.070954+0530 pulse.iOS[91864:2198900] [AppCenter] WARNING: -[MSAuthTokenContext authTokenHistory]/210 Failed to retrieve history state or none was found.
+2019-07-09 19:25:18.073169+0530 pulse.iOS[91864:2198900] [AppCenter] WARNING: -[MSAuthTokenContext setAuthTokenHistory:]/225 Failed to save new history state.
+2019-07-09 19:25:18.090070+0530 pulse.iOS[91864:2198947] [Client] Remote object proxy returned error: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated." UserInfo={NSDebugDescription=The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated.}
+2019-07-09 19:25:18.090547+0530 pulse.iOS[91864:2198947] [Client] Remote object proxy returned error: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated." UserInfo={NSDebugDescription=The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated.}
+2019-07-09 19:25:18.090635+0530 pulse.iOS[91864:2199000] [Client] Sending selectors failed with: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated." UserInfo={NSDebugDescription=The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated.}
+2019-07-09 19:25:18.090824+0530 pulse.iOS[91864:2199000] [Client] Sending selectors failed with: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated." UserInfo={NSDebugDescription=The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated.}
+2019-07-09 19:25:18.091727+0530 pulse.iOS[91864:2198900] [Client] Synchronous remote object proxy returned error: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated." UserInfo={NSDebugDescription=The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated.}
+2019-07-09 19:25:18.092028+0530 pulse.iOS[91864:2198900] [NetworkInfo] Descriptors query returned error: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated." UserInfo={NSDebugDescription=The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated.}
+2019-07-09 19:25:18.098747+0530 pulse.iOS[91864:2199000] [Client] Remote object proxy returned error: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated." UserInfo={NSDebugDescription=The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated.}
+2019-07-09 19:25:18.099073+0530 pulse.iOS[91864:2198947] [Client] Sending selectors failed with: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated." UserInfo={NSDebugDescription=The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated.}
+2019-07-09 19:25:18.099406+0530 pulse.iOS[91864:2198900] [Client] Synchronous remote object proxy returned error: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated." UserInfo={NSDebugDescription=The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated.}
+2019-07-09 19:25:18.099937+0530 pulse.iOS[91864:2198900] [NetworkInfo] Descriptors query returned error: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated." UserInfo={NSDebugDescription=The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated.}
+2019-07-09 19:25:18.101116+0530 pulse.iOS[91864:2198947] [Client] Remote object proxy returned error: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated." UserInfo={NSDebugDescription=The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated.}
+2019-07-09 19:25:18.101356+0530 pulse.iOS[91864:2198947] [Client] Sending selectors failed with: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated." UserInfo={NSDebugDescription=The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated.}
+2019-07-09 19:25:18.101902+0530 pulse.iOS[91864:2198900] [Client] Synchronous remote object proxy returned error: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated." UserInfo={NSDebugDescription=The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated.}
+2019-07-09 19:25:18.102087+0530 pulse.iOS[91864:2198900] [NetworkInfo] Descriptors query returned error: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated." UserInfo={NSDebugDescription=The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated.}
+2019-07-09 19:25:18.351301+0530 pulse.iOS[91864:2198900] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=91864
+2019-07-09 19:25:18.351640+0530 pulse.iOS[91864:2198900] SecTaskCopyDebugDescription: pulse.iOS[91864]/0#-1 LF=0
+2019-07-09 19:25:18.668855+0530 pulse.iOS[91864:2198900] [AppCenterPush] WARNING: -[MSPush didFailToRegisterForRemoteNotificationsWithError:]/281 Registering for push notifications has been finished with error: remote notifications are not supported in the simulator
+2019-07-09 19:25:21.632112+0530 pulse.iOS[91864:2198900] [Debug]Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+2019-07-09 19:29:36.127144+0530 pulse.iOS[91864:2198900] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=91864
+2019-07-09 19:29:36.127440+0530 pulse.iOS[91864:2198900] SecTaskCopyDebugDescription: pulse.iOS[91864]/0#-1 LF=0
+2019-07-09 19:29:44.784522+0530 pulse.iOS[91864:2198900] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=91864
+2019-07-09 19:29:44.784926+0530 pulse.iOS[91864:2198900] SecTaskCopyDebugDescription: pulse.iOS[91864]/0#-1 LF=0
+2019-07-09 19:29:52.667199+0530 pulse.iOS[91864:2198900] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=91864
+2019-07-09 19:29:52.667531+0530 pulse.iOS[91864:2198900] SecTaskCopyDebugDescription: pulse.iOS[91864]/0#-1 LF=0
+2019-07-09 19:29:53.747703+0530 pulse.iOS[91864:2198900] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=91864
+2019-07-09 19:29:53.747998+0530 pulse.iOS[91864:2198900] SecTaskCopyDebugDescription: pulse.iOS[91864]/0#-1 LF=0
+2019-07-09 19:29:53.765223+0530 pulse.iOS[91864:2198995] +[LOTShapeGroup shapeItemWithJSON:]: Warning: merge shape is not supported. name: Merge Paths 1
+2019-07-09 19:29:53.765947+0530 pulse.iOS[91864:2198995] +[LOTShapeGroup shapeItemWithJSON:]: Warning: merge shape is not supported. name: Merge Paths 1
+2019-07-09 19:29:53.811964+0530 pulse.iOS[91864:2198900] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=91864
+2019-07-09 19:29:53.812264+0530 pulse.iOS[91864:2198900] SecTaskCopyDebugDescription: pulse.iOS[91864]/0#-1 LF=0
+2019-07-09 19:30:00.351442+0530 pulse.iOS[91864:2198900] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=91864
+2019-07-09 19:30:00.351867+0530 pulse.iOS[91864:2198900] SecTaskCopyDebugDescription: pulse.iOS[91864]/0#-1 LF=0
+2019-07-09 19:30:01.226623+0530 pulse.iOS[91864:2198900] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=91864
+2019-07-09 19:30:01.226856+0530 pulse.iOS[91864:2198900] SecTaskCopyDebugDescription: pulse.iOS[91864]/0#-1 LF=0
+2019-07-09 19:30:01.250933+0530 pulse.iOS[91864:2198900] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=91864
+2019-07-09 19:30:01.251349+0530 pulse.iOS[91864:2198900] SecTaskCopyDebugDescription: pulse.iOS[91864]/0#-1 LF=0
+2019-07-09 19:30:30.919295+0530 pulse.iOS[91864:2198900] Could not signal service com.apple.WebKit.WebContent: 113: Could not find specified service
+2019-07-09 19:30:30.929269+0530 pulse.iOS[91864:2198900] Could not signal service com.apple.WebKit.Networking: 113: Could not find specified service

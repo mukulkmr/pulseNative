@@ -6,6 +6,10 @@ Microsoft.AppCenter
 Microsoft.AppCenter.Push.Android.Bindings
 Microsoft.AppCenter.Push
 Newtonsoft.Json
+Plugin.CurrentActivity
+Plugin.InAppBilling.Abstractions
+Plugin.InAppBilling
+Plugin.InAppBilling.VendingLibrary
 Plugin.LocalNotifications.Abstractions
 Plugin.LocalNotifications
 pulse

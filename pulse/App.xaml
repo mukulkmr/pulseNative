@@ -7,7 +7,14 @@
         
         <Color x:Key="PrimaryColor">#ff87a5</Color>
         <Color x:Key="AccentColor">#be81f7</Color>
-      
+        <Thickness x:Key="PageMargin">0,50,0,0</Thickness>
+        
+        <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
+            <On Platform="iOS" Value="Material Icons" />
+            <On Platform="Android" Value="MaterialIcons_Regular.ttf#Material Design Icons" />
+        </OnPlatform>
+        
+        
         <Style TargetType="Button">
             <Setter Property="BorderRadius" Value="4" />
             <Setter Property="BackgroundColor" Value="{StaticResource AccentColor}" />
@@ -55,11 +62,6 @@
             <Setter Property="Color" Value="{StaticResource AccentColor}" />
             <Setter Property="Visual" Value="Material"/>            
         </Style>
-        
-        <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
-            <On Platform="iOS" Value="Material Icons" />
-            <On Platform="Android" Value="MaterialIcons_Regular.ttf#Material Design Icons" />
-        </OnPlatform>
-        
+
     </Application.Resources>
 </Application>

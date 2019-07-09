@@ -6,7 +6,7 @@
  --nolink
 --sdkroot=/Applications/Xcode.app/Contents/Developer
 --sdk=12.2
---targetver=9.1
+--targetver=10.0
  --aot-options=-O=-float32
  --http-message-handler=NSUrlSessionHandler
  --abi=x86_64
@@ -215,7 +215,6 @@
 -r=/Users/mukulkumar/.nuget/packages/xamarin.forms.visual.material/4.1.0.555618/lib/Xamarin.iOS10/Xamarin.Forms.Material.dll
 -r=/Users/mukulkumar/.nuget/packages/xamarin.ios.materialcomponents/72.2.0.1/lib/Xamarin.iOS/MaterialComponents.dll
 -r=/Users/mukulkumar/Projects/pulse/pulse/bin/Debug/netstandard2.0/pulse.dll
--r=/Users/mukulkumar/Projects/pulse/pulse/bin/Debug/netstandard2.0/Mono.Android.dll
  --target-framework=Xamarin.iOS,v1.0
 --root-assembly=/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Debug/pulse.iOS.exe
  

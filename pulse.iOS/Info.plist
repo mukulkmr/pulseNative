@@ -21,7 +21,7 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>9.1</string>
+	<string>10.0</string>
 	<key>CFBundleDisplayName</key>
 	<string>pulse</string>
 	<key>CFBundleIdentifier</key>

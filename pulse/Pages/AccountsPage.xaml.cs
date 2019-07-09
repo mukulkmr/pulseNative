@@ -3,12 +3,12 @@ using pulse.ViewModels;
 using System.Net.Http;
 using System.Collections.Generic;
 using Xamarin.Essentials;
-using Android.Widget;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Xamarin.Forms.Xaml;
 using System.Reflection;
-using System.IO;
+using Plugin.InAppBilling;
+using Plugin.InAppBilling.Abstractions;
 
 namespace pulse
 {
@@ -27,6 +27,8 @@ namespace pulse
         {
             InitializeComponent();
             userImage.Source = $"https://avatars.dicebear.com/v2/identicon/{id}.svg";
+            QRImage.Source = $"https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${id}";
+
             BindingContext = new AccountViewModel();
 
             _ = UpdateAsync();
@@ -44,24 +46,21 @@ namespace pulse
                 List<WebStatus> status = JsonConvert.DeserializeObject<List<WebStatus>>(json);
 
                 QRStatus.Text = "Delcard Pending";
-                QRImage.IsVisible = false;
 
                 try
                 {
                     if (status[0].status == "CNF")
                     {
                         QRStatus.Text = "Delcard Confirmed";
-                        QRImage.IsVisible = true;
-                        QRImage.Source = $"https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${id}";
                     }
-
                 }
                 catch (System.Exception ex)
                 {
-                    System.Console.WriteLine(ex.Message);
+                    System.Console.WriteLine("[Debug]"+ex.Message);
                 }
             }
         }
+
 
         async void OnPurchaseDelCard(object sender, System.EventArgs e)
         {
@@ -111,20 +110,22 @@ namespace pulse
         void CopyGuid(object sender, System.EventArgs e)
         {
             Clipboard.SetTextAsync(id);
-            Toast.MakeText(Android.App.Application.Context, "Copied", ToastLength.Short).Show();
+           // Toast.MakeText(Android.App.Application.Context, "Copied", ToastLength.Short).Show();
         }
 
-        void QRCodePopUp(object sender, System.EventArgs e)
+        async void QRCodePopUp(object sender, System.EventArgs e)
         {
             QRPopUp.IsVisible = true;
-            _ = QRPopUp.ScaleTo(1, 250, Easing.SinIn);
+            QRPopUp.TranslationY = Height;
+
+            await QRPopUp.TranslateTo(0, 0, 250, Easing.SinIn);
 
             QRImageLarge.Source = $" https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${id}";
         }
 
         async void ClosePopUp(object sender, System.EventArgs e)
         {
-            await QRPopUp.ScaleTo(0, 250, Easing.SinOut);
+            await QRPopUp.TranslateTo(0, Height, 250, Easing.SinOut);
             QRPopUp.IsVisible = false;
         }
 

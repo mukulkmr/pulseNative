@@ -40,6 +40,7 @@
     <ConsolePause>false</ConsolePause>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchUseLlvm>true</MtouchUseLlvm>
+    <CodesignProvision>iOS Team Provisioning Profile: com.aiimssu.pulse</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -145,9 +146,6 @@
     <ImageAsset Include="Assets.xcassets\pawprint.imageset\outline_pets_black_36pt_2x.png" />
     <ImageAsset Include="Assets.xcassets\pawprint.imageset\outline_pets_black_36pt_3x.png" />
     <ImageAsset Include="Assets.xcassets\event.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\event.imageset\outline_event_black_24.png" />
-    <ImageAsset Include="Assets.xcassets\event.imageset\outline_event_black_36.png" />
-    <ImageAsset Include="Assets.xcassets\event.imageset\outline_event_black_48.png" />
     <ImageAsset Include="Assets.xcassets\payment.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\stars.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\back_button.imageset\Contents.json" />
@@ -155,7 +153,6 @@
     <ImageAsset Include="Assets.xcassets\account_circle.imageset\baseline_account_circle_black_24pt_1x.png" />
     <ImageAsset Include="Assets.xcassets\account_circle.imageset\baseline_account_circle_black_24pt_2x.png" />
     <ImageAsset Include="Assets.xcassets\account_circle.imageset\baseline_account_circle_black_24pt_3x.png" />
-    <ImageAsset Include="Assets.xcassets\payment.imageset\round_payment_black_24pt_2x.png" />
     <ImageAsset Include="Assets.xcassets\refresh.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\pulse_tabs_01.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\pulse_tabs_02.imageset\Contents.json" />
@@ -203,21 +200,25 @@
     <ImageAsset Include="Assets.xcassets\close.imageset\outline_close_black_48pt_1x.png" />
     <ImageAsset Include="Assets.xcassets\close.imageset\outline_close_black_48pt_2x.png" />
     <ImageAsset Include="Assets.xcassets\close.imageset\outline_close_black_48pt_3x.png" />
-    <ImageAsset Include="Assets.xcassets\account_box.imageset\outline_account_box_black_48pt_1x.png" />
-    <ImageAsset Include="Assets.xcassets\account_box.imageset\outline_account_box_black_48pt_2x.png" />
-    <ImageAsset Include="Assets.xcassets\account_box.imageset\outline_account_box_black_48pt_3x.png" />
-    <ImageAsset Include="Assets.xcassets\notifications_active.imageset\outline_notifications_active_black_48pt_1x.png" />
-    <ImageAsset Include="Assets.xcassets\notifications_active.imageset\outline_notifications_active_black_48pt_2x.png" />
-    <ImageAsset Include="Assets.xcassets\notifications_active.imageset\outline_notifications_active_black_48pt_3x.png" />
-    <ImageAsset Include="Assets.xcassets\stars.imageset\outline_stars_black_48pt_1x.png" />
-    <ImageAsset Include="Assets.xcassets\stars.imageset\outline_stars_black_48pt_2x.png" />
-    <ImageAsset Include="Assets.xcassets\stars.imageset\outline_stars_black_48pt_3x.png" />
-    <ImageAsset Include="Assets.xcassets\payment.imageset\outline_credit_card_black_48pt_1x.png" />
-    <ImageAsset Include="Assets.xcassets\payment.imageset\outline_credit_card_black_48pt_3x.png" />
     <ImageAsset Include="Assets.xcassets\info.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\info.imageset\outline_info_black_48pt_1x.png" />
     <ImageAsset Include="Assets.xcassets\info.imageset\outline_info_black_48pt_2x.png" />
     <ImageAsset Include="Assets.xcassets\info.imageset\outline_info_black_48pt_3x.png" />
+    <ImageAsset Include="Assets.xcassets\event.imageset\outline_event_black_36pt_3x.png" />
+    <ImageAsset Include="Assets.xcassets\event.imageset\outline_event_black_36pt_2x-1.png" />
+    <ImageAsset Include="Assets.xcassets\event.imageset\outline_event_black_36pt_1x.png" />
+    <ImageAsset Include="Assets.xcassets\payment.imageset\outline_payment_black_36pt_1x.png" />
+    <ImageAsset Include="Assets.xcassets\payment.imageset\outline_payment_black_36pt_2x-1.png" />
+    <ImageAsset Include="Assets.xcassets\payment.imageset\outline_payment_black_36pt_3x.png" />
+    <ImageAsset Include="Assets.xcassets\stars.imageset\outline_stars_black_36pt_1x-1.png" />
+    <ImageAsset Include="Assets.xcassets\stars.imageset\outline_stars_black_36pt_2x-2.png" />
+    <ImageAsset Include="Assets.xcassets\stars.imageset\outline_stars_black_36pt_3x.png" />
+    <ImageAsset Include="Assets.xcassets\account_box.imageset\outline_account_box_black_36pt_2x.png" />
+    <ImageAsset Include="Assets.xcassets\account_box.imageset\outline_account_box_black_36pt_3x.png" />
+    <ImageAsset Include="Assets.xcassets\account_box.imageset\outline_account_box_black_36pt_1x.png" />
+    <ImageAsset Include="Assets.xcassets\notifications_active.imageset\outline_notifications_active_black_36pt_1x.png" />
+    <ImageAsset Include="Assets.xcassets\notifications_active.imageset\outline_notifications_active_black_36pt_3x.png" />
+    <ImageAsset Include="Assets.xcassets\notifications_active.imageset\outline_notifications_active_black_36pt_2x-1.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -243,6 +244,9 @@
     </PackageReference>
     <PackageReference Include="Com.Airbnb.iOS.Lottie">
       <Version>2.5.8</Version>
+    </PackageReference>
+    <PackageReference Include="Plugin.InAppBilling">
+      <Version>2.0.0</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

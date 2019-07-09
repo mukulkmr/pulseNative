@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" NavigationPage.HasNavigationBar="False" x:Class="pulse.NotificationsPage">
+<ContentPage 
+    Padding="{OnPlatform iOS={StaticResource PageMargin}}"
+    xmlns="http://xamarin.com/schemas/2014/forms" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" NavigationPage.HasNavigationBar="False" x:Class="pulse.NotificationsPage">
     <ContentPage.Content>
         <AbsoluteLayout Margin="0,10,0,10">
             <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">

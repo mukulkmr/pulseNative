@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.22" package="com.aiimssu.pulse">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="4" android:versionName="1.23" package="com.aiimssu.pulse">
   <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="28" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="com.android.vending.BILLING" />
   <application android:label="Pulse" android:hardwareAccelerated="true" android:icon="@drawable/icon" android:name="android.support.multidex.MultiDexApplication" android:allowBackup="true">
     <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/notifications_active" />
     <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/notification" />

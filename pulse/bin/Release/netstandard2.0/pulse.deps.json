@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "b9ee1667c52f541bfb9be8e70d4a217f2cd490aa"
+    "signature": "2d1ec2571269c11944ae219591a649ac7484de7f"
   },
   "compilationOptions": {},
   "targets": {
@@ -14,10 +14,10 @@
           "Microsoft.AppCenter.Push": "2.0.0",
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "12.0.2",
+          "Plugin.InAppBilling": "2.0.0",
           "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.1.0",
-          "Xamarin.Forms": "4.0.0.425677",
-          "Mono.Android": "0.0.0.0"
+          "Xamarin.Forms": "4.0.0.425677"
         },
         "runtime": {
           "pulse.dll": {}
@@ -67,6 +67,18 @@
           }
         }
       },
+      "Plugin.InAppBilling/2.0.0": {
+        "runtime": {
+          "lib/netstandard1.0/Plugin.InAppBilling.Abstractions.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          },
+          "lib/netstandard1.0/Plugin.InAppBilling.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "runtime": {
           "lib/netstandard2.0/System.Numerics.Vectors.dll": {
@@ -111,14 +123,6 @@
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.0.0.0"
-          }
-        }
-      },
-      "Mono.Android/0.0.0.0": {
-        "runtime": {
-          "Mono.Android.dll": {
-            "assemblyVersion": "0.0.0.0",
-            "fileVersion": "0.0.0.0"
           }
         }
       }
@@ -172,6 +176,13 @@
       "path": "newtonsoft.json/12.0.2",
       "hashPath": "newtonsoft.json.12.0.2.nupkg.sha512"
     },
+    "Plugin.InAppBilling/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NAuSohkp1QP4Z9WMGi1NhZBDomfKNgKgLCnoheRBJ3NRv+R4qi92LtO3hJWT2rcxl+HvPc/CgIhh4uD6MNNH0A==",
+      "path": "plugin.inappbilling/2.0.0",
+      "hashPath": "plugin.inappbilling.2.0.0.nupkg.sha512"
+    },
     "System.Numerics.Vectors/4.5.0": {
       "type": "package",
       "serviceable": true,
@@ -199,11 +210,6 @@
       "sha512": "sha512-drwO/MimaMUnmvkULASYjU5MRciVIJyiLxD3ihFq8P+DWynQZ2NLNej0Vrs3k2L7UdmqvcgCxEJdfT7uFl2KVg==",
       "path": "xamarin.forms/4.0.0.425677",
       "hashPath": "xamarin.forms.4.0.0.425677.nupkg.sha512"
-    },
-    "Mono.Android/0.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
     }
   }
 }

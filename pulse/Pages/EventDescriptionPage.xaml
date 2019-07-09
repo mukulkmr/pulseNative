@@ -2,16 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" 
              BackgroundColor="White"
+             Padding="{OnPlatform iOS={StaticResource PageMargin}}"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="pulse.EventDescriptionPage">
     <ContentPage.Content>
         <AbsoluteLayout Margin="0,10,0,10">
             <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"> 
-                <ListView x:Name="listView"
+        <ListView x:Name="listView"
                           Margin="0,35,0,0" 
                           SelectionMode="None"
                           SeparatorColor="Transparent"
-                          ItemTapped="Handle_ItemTapped"
                           IsGroupingEnabled="true"
+                          ItemTapped="Handle_ItemTapped"
                           ItemsSource="{Binding GroupedEvents}"
                           HasUnevenRows="true" >
                     
@@ -51,14 +52,15 @@
                 </ListView>
             </StackLayout>
             
+            
             <Frame IsVisible="false"
-                   Scale="0"
                    x:Name="DetailsCard"
                    AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional" 
                    BackgroundColor="White" 
                    Padding="0"
+                   Margin="5"
                    CornerRadius="2"
-                   AbsoluteLayout.LayoutBounds="0,50,1,1">
+                   AbsoluteLayout.LayoutBounds="0,100,1,1">
                 <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                     
                     <Grid Margin="10,5,10,0">                                                                    
@@ -71,7 +73,7 @@
                         <ImageButton Grid.Column="1" HorizontalOptions="End" BackgroundColor="Transparent"  Source="directions" Clicked="OpenVenue" />
                       </Grid>
                     
-                    <WebView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="webview" />
+                      <WebView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="webview" />
                 </StackLayout>
             </Frame>
            

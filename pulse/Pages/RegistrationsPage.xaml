@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" NavigationPage.HasNavigationBar="False" x:Class="pulse.RegistrationsPage">
+<ContentPage Padding="{OnPlatform iOS={StaticResource PageMargin}}"
+ xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" NavigationPage.HasNavigationBar="False" x:Class="pulse.RegistrationsPage">
     <ContentPage.Content>
         <AbsoluteLayout Margin="0,10,0,10">
             <ActivityIndicator x:Name="Loading" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds=".5,.5,50,50" />

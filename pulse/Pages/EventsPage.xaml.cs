@@ -4,10 +4,9 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Newtonsoft.Json;
 using Xamarin.Forms;
-using Xamarin.Essentials;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using Xamarin.Forms.Xaml;
+using Xamarin.Essentials;
 
 namespace pulse
 {
@@ -49,25 +48,6 @@ namespace pulse
             await UpdateAsync();
         }
 
-        void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
-        {
-            DetailsCard.IsVisible = true;
-            _ = DetailsCard.ScaleTo(1, 250, Easing.SinIn);
-
-            Event _event = e.Item as Event;
-
-            Venue = _event.venue;
-            Location = _event.location;
-
-            webview.Source = $"https://app.aiimspulse.website/views/event.php?id={_event.id}&guid={id}";
-        }
-
-        async void ClosePopUp(object sender, EventArgs e)
-        {
-            await DetailsCard.ScaleTo(0, 250, Easing.SinOut);
-            DetailsCard.IsVisible = false;
-        }
-
         async void OpenVenue(object sender, EventArgs e)
         {
             var locationCords = Location.Split(',');
@@ -76,7 +56,9 @@ namespace pulse
             var options = new MapLaunchOptions { Name = Venue };
 
             await Map.OpenAsync(location, options);
+
         }
+
 
         async Task UpdateAsync()
         {
@@ -115,7 +97,6 @@ namespace pulse
             DepartmentCard.IsVisible = true;
             ScheduleCard.IsVisible = false;
         }
-
         void OnTapSchedule(object sender, EventArgs e)
         {
             SchActiveLine.IsVisible = true;
@@ -128,6 +109,7 @@ namespace pulse
         }
 
         void OpenPulsePage(object sender, EventArgs e) => Navigation.PushModalAsync(new PulsePage());
+
 
         void LoadSchedule(object sender, EventArgs e)
         {
@@ -144,6 +126,27 @@ namespace pulse
 
             Day = day;
             _ = UpdateAsync();
+        }
+
+        async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            Event _event = e.Item as Event;
+
+            Venue = _event.venue;
+            Location = _event.location;
+
+            webview.Source = $"https://app.aiimspulse.website/views/event.php?id={_event.id}&guid={id}";
+
+            DetailsCard.IsVisible = true;
+            DetailsCard.TranslationY = Height;
+
+            await DetailsCard.TranslateTo(0, 0, 250, Easing.SinIn);
+        }
+
+        async void ClosePopUp(object sender, EventArgs e)
+        {
+            await DetailsCard.TranslateTo(0, Height, 250, Easing.SinOut);
+            DetailsCard.IsVisible = false;
         }
     }
 }
