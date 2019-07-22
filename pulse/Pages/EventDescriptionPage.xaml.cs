@@ -6,17 +6,15 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Xamarin.Essentials;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace pulse
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class EventDescriptionPage : ContentPage
     {
         public List<ObservableGroupCollection<string, Event>> GroupedEvents { get; private set; }
         public List<Event> Events { get; set; }
 
-        readonly string id = (string)Application.Current.Properties["Id"];
+        readonly string id = Preferences.Get("Id", "0");
         string Dept = "0";
 
         public string Venue = "Foyer";
@@ -37,30 +35,38 @@ namespace pulse
 
         async Task UpdateAsync()
         {
-            Loading.IsVisible = true;
+            var current = Connectivity.NetworkAccess;
 
-            HttpClient httpClient = new HttpClient();
-            HttpResponseMessage responseMessage = await httpClient.GetAsync($"https://app.aiimspulse.website/scripts/data/events.php?guid={id}&dept={Dept}");
-
-            if (responseMessage.IsSuccessStatusCode)
+            if (current == NetworkAccess.Internet)
             {
-                string json = await responseMessage.Content.ReadAsStringAsync();
+                try
+                {
+                    Loading.IsVisible = true;
 
-                Events = JsonConvert.DeserializeObject<List<Event>>(json);
+                    HttpClient httpClient = new HttpClient();
+                    HttpResponseMessage responseMessage = await httpClient.GetAsync($"https://app.aiimspulse.website/scripts/data/events.php?guid={id}&dept={Dept}");
 
-                GroupedEvents = Events.OrderBy(p => p.id[1])
-                                      .GroupBy(p => p.group)
-                                      .Select(p => new ObservableGroupCollection<string, Event>(p)).ToList();
+                    if (responseMessage.IsSuccessStatusCode)
+                    {
+                        string json = await responseMessage.Content.ReadAsStringAsync();
+                        Events = JsonConvert.DeserializeObject<List<Event>>(json);
 
-                listView.ItemsSource = GroupedEvents;
+                        GroupedEvents = Events.OrderBy(p => p.time)
+                                              .GroupBy(p => p.group)
+                                              .Select(p => new ObservableGroupCollection<string, Event>(p)).ToList();
 
-                Loading.IsVisible = false;
+                        if (GroupedEvents != null && GroupedEvents.Count != 0)
+                            listView.ItemsSource = GroupedEvents;
+
+                        Loading.IsVisible = false;
+                    }
+                }
+                catch
+                {
+                    await DisplayAlert("Error", "Could not connect to the network ", "Retry");
+                    await UpdateAsync();
+                }
             }
-            else
-            {
-                await UpdateAsync();
-            }
-
         }
 
         void Handle_Clicked(object sender, EventArgs e) => Navigation.PopModalAsync();
@@ -94,6 +100,18 @@ namespace pulse
             var options = new MapLaunchOptions { Name = Venue };
 
             await Map.OpenAsync(location, options);
+        }
+
+        async void Handle_Navigating(object sender, WebNavigatingEventArgs e)
+        {
+            await webview.FadeTo(0);
+            webview.IsVisible = false;
+        }
+
+        void Handle_Navigated(object sender, WebNavigatedEventArgs e)
+        {
+            webview.IsVisible = true;
+            webview.FadeTo(1);
         }
     }
 }

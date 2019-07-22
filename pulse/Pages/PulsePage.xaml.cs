@@ -1,10 +1,8 @@
 ﻿using System;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace pulse
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PulsePage : ContentPage
     {
         public PulsePage()

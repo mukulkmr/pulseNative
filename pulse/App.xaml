@@ -2,19 +2,24 @@
 <Application xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              x:Class="pulse.App">
     <Application.Resources>
         
         <Color x:Key="PrimaryColor">#ff87a5</Color>
-        <Color x:Key="AccentColor">#be81f7</Color>
-        <Thickness x:Key="PageMargin">0,50,0,0</Thickness>
+        <Color x:Key="AccentColor">#333</Color>
+        <Thickness x:Key="PageMarginiOS">0,50,0,0</Thickness>
         
         <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
             <On Platform="iOS" Value="Material Icons" />
-            <On Platform="Android" Value="MaterialIcons_Regular.ttf#Material Design Icons" />
+            <On Platform="Android" Value="MaterialIcons_Regular.ttf#Material Icons" />
         </OnPlatform>
         
-        
+        <OnPlatform x:Key="ChunkFive" x:TypeArguments="x:String">
+            <On Platform="iOS" Value="ChunkFive" />
+            <On Platform="Android" Value="Chunk.ttf#ChunkFive" />
+        </OnPlatform>
+       
         <Style TargetType="Button">
             <Setter Property="BorderRadius" Value="4" />
             <Setter Property="BackgroundColor" Value="{StaticResource AccentColor}" />
@@ -27,6 +32,12 @@
         
         <Style TargetType="Label">
             <Setter Property="HorizontalOptions" Value="Center"/>
+            <Setter Property="Visual" Value="Material"/> 
+            <Setter Property="TextColor" Value="#666"/> 
+        </Style>          
+        
+        <Style TargetType="ImageButton">
+            <Setter Property="CornerRadius" Value="4" />
             <Setter Property="Visual" Value="Material"/>            
         </Style>      
         
@@ -55,7 +66,11 @@
         </Style>
         
         <Style TargetType="{x:Type ContentPage}">
-            <Setter Property="BackgroundColor" Value="#fcfcfc" />
+            <Setter Property="BackgroundColor" Value="#fff" />
+        </Style>
+        
+        <Style TargetType="{x:Type NavigationPage}">
+            <Setter Property="BackgroundColor" Value="#fff" />
         </Style>
         
         <Style TargetType="ActivityIndicator">

@@ -25,7 +25,13 @@ void xamarin_register_assemblies_impl ()
 	xamarin_process_managed_exception_gchandle (exception_gchandle);
 	xamarin_open_and_register ("Xamarin.Essentials.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);
+	xamarin_open_and_register ("Xamarin.Forms.PancakeView.dll", &exception_gchandle);
+	xamarin_process_managed_exception_gchandle (exception_gchandle);
 	xamarin_open_and_register ("Microsoft.AppCenter.iOS.Bindings.dll", &exception_gchandle);
+	xamarin_process_managed_exception_gchandle (exception_gchandle);
+	xamarin_open_and_register ("Microsoft.AppCenter.Crashes.iOS.Bindings.dll", &exception_gchandle);
+	xamarin_process_managed_exception_gchandle (exception_gchandle);
+	xamarin_open_and_register ("Microsoft.AppCenter.Analytics.iOS.Bindings.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);
 
 }

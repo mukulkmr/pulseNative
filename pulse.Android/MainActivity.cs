@@ -3,7 +3,6 @@ using Android.Content;
 using Android.Content.PM;
 using Android.OS;
 using Lottie.Forms.Droid;
-using Plugin.InAppBilling;
 using Xamarin.Essentials;
 
 namespace pulse.Droid
@@ -25,13 +24,13 @@ namespace pulse.Droid
             global::Xamarin.Forms.FormsMaterial.Init(this, savedInstanceState);
 
             AnimationViewRenderer.Init();
+
             LoadApplication(new App());
         }
 
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
         {
             base.OnActivityResult(requestCode, resultCode, data);
-            InAppBillingImplementation.HandleActivityResult(requestCode, resultCode, data);
         }
     }
 }

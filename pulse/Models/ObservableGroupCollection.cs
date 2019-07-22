@@ -1,5 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 using System.Linq;
+using System.Runtime.Serialization;
 
 namespace pulse
 {
@@ -16,6 +17,7 @@ namespace pulse
 
         public int ItemCount { get; set; }
 
+        [DataMember]
         public string TitleWithItemCount
         {
             get { return string.Format("{0} ({1})", Title, ItemCount); }

@@ -1,63 +1,79 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Runtime.Serialization;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Xamarin.Essentials;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace pulse
 {
+    [Serializable]
     public class Show
     {
+        [DataMember]
         public string id { get; set; }
+        [DataMember]
         public string name { get; set; }
+        [DataMember]
         public string contact { get; set; }
+        [DataMember]
         public string venue { get; set; }
 
-        public string image { get; set; }
+        public string image { get => $"https://app.aiimspulse.website/assets/covers/events/{id}.jpg"; }
     }
 
 
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class NightsPage : ContentPage
     {
         public IList<Show> Shows { get; private set; }
-        readonly string id = (string)Application.Current.Properties["Id"];
+        readonly string id = Preferences.Get("Id", "0");
 
         public NightsPage()
         {
             InitializeComponent();
 
-            _ = UpdateAsync();
+             _ = UpdateAsync();
 
             BindingContext = this;
         }
 
         async Task UpdateAsync()
         {
-            Loading.IsVisible = true;
+            var current = Connectivity.NetworkAccess;
 
-            HttpClient httpClient = new HttpClient();
-            HttpResponseMessage responseMessage = await httpClient.GetAsync($"https://app.aiimspulse.website/scripts/data/nights.php?guid={id}");
-
-            if (responseMessage.IsSuccessStatusCode)
+            if (current == NetworkAccess.Internet)
             {
-                string json = await responseMessage.Content.ReadAsStringAsync();
-                Shows = JsonConvert.DeserializeObject<List<Show>>(json);
-
-                foreach(Show s in Shows)
+                try
                 {
-                    s.image = $"https://app.aiimspulse.website/assets/covers/events/{s.id}.jpg";
+                    Loading.IsVisible = true;
+
+                    HttpClient httpClient = new HttpClient();
+                    HttpResponseMessage responseMessage = await httpClient.GetAsync($"https://app.aiimspulse.website/scripts/data/nights.php?guid={id}");
+
+                    if (responseMessage.IsSuccessStatusCode)
+                    {
+                        string json = await responseMessage.Content.ReadAsStringAsync();
+                        Shows = JsonConvert.DeserializeObject<List<Show>>(json);
+
+                        if (Shows != null && Shows.Count != 0)
+                        {
+                            listView.ItemsSource = Shows;
+                            statusText.IsVisible = false;
+                        }
+
+                        Loading.IsVisible = false;
+                    }
                 }
-
-                listView.ItemsSource = Shows;
-
-                Loading.IsVisible = false;
+                catch
+                {
+                    statusText.Text = "Could not connect to the network, Please reload";
+                }
             }
             else
             {
-                await UpdateAsync();
+                statusText.Text = "Could not connect to the network, Please reload";
             }
         }
 
@@ -71,6 +87,6 @@ namespace pulse
 
         void Handle_Clicked(object sender, EventArgs e) => Navigation.PushModalAsync(new CatsPage());
 
-        void OpenPulsePage(object sender, System.EventArgs e) => Navigation.PushModalAsync(new PulsePage());
+        void OpenPulsePage(object sender, EventArgs e) => Navigation.PushModalAsync(new PulsePage());
     }
 }

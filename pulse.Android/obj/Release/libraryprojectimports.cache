@@ -47,14 +47,18 @@
     <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/56/jl/classes.jar</Jar>
     <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/57/jl/classes.jar</Jar>
     <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/58/jl/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/64/jl/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/6/jl/bin/classes.jar</Jar>
     <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/65/jl/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/66/jl/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/9/jl/bin/classes.jar</Jar>
   </Jars>
   <ResolvedResourceDirectories>
     <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/1/jl/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/4/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/5/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/6/jl/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/7/jl/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/8/jl/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/9/jl/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/10/jl/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/13/jl/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/17/jl/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/19/jl/res</ResolvedResourceDirectory>
@@ -74,12 +78,14 @@
     <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/55/jl/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/58/jl/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/60/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/61/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/64/jl/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/62/jl/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/65/jl/res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
     <ResolvedAssetDirectory>obj/Release/lp/4/jl/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj/Release/lp/6/jl/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Release/lp/7/jl/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Release/lp/8/jl/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Release/lp/10/jl/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Release/lp/13/jl/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Release/lp/17/jl/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Release/lp/19/jl/assets</ResolvedAssetDirectory>
@@ -88,14 +94,16 @@
     <ResolvedAssetDirectory>obj/Release/lp/22/jl/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Release/lp/55/jl/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Release/lp/60/jl/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj/Release/lp/61/jl/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Release/lp/62/jl/assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
     <ResolvedResourceDirectoryStamp>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/1.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/4.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/5.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/6.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/7.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/8.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/9.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/10.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/13.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/17.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/19.stamp</ResolvedResourceDirectoryStamp>
@@ -115,7 +123,7 @@
     <ResolvedResourceDirectoryStamp>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/55.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/58.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/60.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/61.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/64.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/62.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/65.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

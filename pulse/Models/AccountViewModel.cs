@@ -1,4 +1,7 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
+using System.Runtime.Serialization;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace pulse.ViewModels
@@ -9,6 +12,7 @@ namespace pulse.ViewModels
         string email = "someone@example.com";
         string id = "0";
 
+        [DataMember]
         public string Name
         {
             get => name;
@@ -19,6 +23,7 @@ namespace pulse.ViewModels
             }
         }
 
+        [DataMember]
         public string Email
         {
             get => email;
@@ -29,6 +34,7 @@ namespace pulse.ViewModels
             }
         }
 
+        [DataMember]
         public string Id
         {
             get => id;
@@ -39,40 +45,30 @@ namespace pulse.ViewModels
             }
         }
 
-        public bool DelCardRequest { get; } = false;
-        public string College { get; }
+        [DataMember]
+        public bool DelCardRequest { get; private set; } = false;
+        [DataMember]
+        public bool AccomodationsRequest { get; private set; } = true;
+        [DataMember]
+        public string College { get; private set; }
 
         public AccountViewModel()
         {
-            if (Application.Current.Properties.ContainsKey("Name"))
-            {
-                name = (string)Application.Current.Properties["Name"];
-            }
+            name = Preferences.Get("Name", "Cannot fetch name");
+            email = Preferences.Get("Email", "Cannot fetch email");
+            id = Preferences.Get("Id", "0");
 
-            if (Application.Current.Properties.ContainsKey("Email"))
-            {
-                email = (string)Application.Current.Properties["Email"];
-            }
+            College = Preferences.Get("College", "All India Institute of Medical Sciences, New Delhi");
 
-            if (Application.Current.Properties.ContainsKey("Id"))
-            {
-                id = (string)Application.Current.Properties["Id"];
-            }
+            DelCardRequest = !Preferences.Get("DelCard", false);
 
-            if (Application.Current.Properties.ContainsKey("DelCard"))
-            {
-                DelCardRequest = !(bool)Application.Current.Properties["DelCard"];
+            if (!Preferences.Get("MedicalStudent", true)
+                || College == "Not MCI registered College")
+                DelCardRequest = false;
 
-                if(!(bool)Application.Current.Properties["MedicalStudent"] || (string)Application.Current.Properties["College"] == "Students' Union Invite") 
-                {
-                    DelCardRequest = false;
-                }
-            }
-
-            if (Application.Current.Properties.ContainsKey("College"))
-            {
-                College = (string)Application.Current.Properties["College"];
-            }
+            if (!Preferences.Get("MedicalStudent", true)
+                || College == "Not MCI registered College")
+                AccomodationsRequest = false;
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

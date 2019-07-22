@@ -1,0 +1,1663 @@
+.subsections_via_symbols
+.section __DWARF, __debug_line,regular,debug
+Ldebug_line_section_start:
+Ldebug_line_start:
+.section __DWARF, __debug_abbrev,regular,debug
+
+	.byte 1,17,1,37,8,3,8,27,8,19,11,17,1,18,1,16,6,0,0,2,46,1,3,8,135,64,8,58,15,59,15,17
+	.byte 1,18,1,64,10,0,0,3,5,0,3,8,73,19,2,10,0,0,15,5,0,3,8,73,19,2,6,0,0,4,36,0
+	.byte 11,11,62,11,3,8,0,0,5,2,1,3,8,11,15,0,0,17,2,0,3,8,11,15,0,0,6,13,0,3,8,73
+	.byte 19,56,10,0,0,7,22,0,3,8,73,19,0,0,8,4,1,3,8,11,15,73,19,0,0,9,40,0,3,8,28,13
+	.byte 0,0,10,57,1,3,8,0,0,11,52,0,3,8,73,19,2,10,0,0,12,52,0,3,8,73,19,2,6,0,0,13
+	.byte 15,0,73,19,0,0,14,16,0,73,19,0,0,16,28,0,73,19,56,10,0,0,18,46,0,3,8,17,1,18,1,0
+	.byte 0,0
+.section __DWARF, __debug_info,regular,debug
+Ldebug_info_start:
+
+LDIFF_SYM0=Ldebug_info_end - Ldebug_info_begin
+	.long LDIFF_SYM0
+Ldebug_info_begin:
+
+	.short 2
+	.long 0
+	.byte 8,1
+	.asciz "Mono AOT Compiler 5.18.1 (2018-08/3a07bd426d3 Mon Jun  3 14:53:42 EDT 2019)"
+	.asciz "Microsoft.AppCenter.Analytics.iOS.Bindings.dll"
+	.asciz ""
+
+	.byte 2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+LDIFF_SYM1=Ldebug_line_start - Ldebug_line_section_start
+	.long LDIFF_SYM1
+LDIE_I1:
+
+	.byte 4,1,5
+	.asciz "sbyte"
+LDIE_U1:
+
+	.byte 4,1,7
+	.asciz "byte"
+LDIE_I2:
+
+	.byte 4,2,5
+	.asciz "short"
+LDIE_U2:
+
+	.byte 4,2,7
+	.asciz "ushort"
+LDIE_I4:
+
+	.byte 4,4,5
+	.asciz "int"
+LDIE_U4:
+
+	.byte 4,4,7
+	.asciz "uint"
+LDIE_I8:
+
+	.byte 4,8,5
+	.asciz "long"
+LDIE_U8:
+
+	.byte 4,8,7
+	.asciz "ulong"
+LDIE_I:
+
+	.byte 4,8,5
+	.asciz "intptr"
+LDIE_U:
+
+	.byte 4,8,7
+	.asciz "uintptr"
+LDIE_R4:
+
+	.byte 4,4,4
+	.asciz "float"
+LDIE_R8:
+
+	.byte 4,8,4
+	.asciz "double"
+LDIE_BOOLEAN:
+
+	.byte 4,1,2
+	.asciz "boolean"
+LDIE_CHAR:
+
+	.byte 4,2,8
+	.asciz "char"
+LDIE_STRING:
+
+	.byte 4,8,1
+	.asciz "string"
+LDIE_OBJECT:
+
+	.byte 4,8,1
+	.asciz "object"
+LDIE_SZARRAY:
+
+	.byte 4,8,1
+	.asciz "object"
+.section __DWARF, __debug_loc,regular,debug
+Ldebug_loc_start:
+.section __DWARF, __debug_frame,regular,debug
+	.align 3
+
+LDIFF_SYM2=Lcie0_end - Lcie0_start
+	.long LDIFF_SYM2
+Lcie0_start:
+
+	.long -1
+	.byte 3
+	.asciz ""
+
+	.byte 1,120,30
+	.align 3
+Lcie0_end:
+.text
+	.align 3
+jit_code_start:
+_mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindingsjit_code_start:
+	.globl _mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindingsjit_code_start
+
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+.text
+ut_53:
+add x0, x0, 16
+b _Microsoft_AppCenter_Analytics_iOS_Bindings_System_Array_InternalEnumerator_1_T_INST__ctor_System_Array
+ut_end:
+.section __TEXT, __const
+_unbox_trampoline_p:
+
+	.long 0
+LDIFF_SYM3=ut_end - ut_53
+	.long LDIFF_SYM3
+.text
+ut_54:
+add x0, x0, 16
+b _Microsoft_AppCenter_Analytics_iOS_Bindings_System_Array_InternalEnumerator_1_T_INST_Dispose
+.text
+ut_55:
+add x0, x0, 16
+b _Microsoft_AppCenter_Analytics_iOS_Bindings_System_Array_InternalEnumerator_1_T_INST_MoveNext
+.text
+ut_56:
+add x0, x0, 16
+b _Microsoft_AppCenter_Analytics_iOS_Bindings_System_Array_InternalEnumerator_1_T_INST_get_Current
+.text
+ut_57:
+add x0, x0, 16
+b _Microsoft_AppCenter_Analytics_iOS_Bindings_System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_Reset
+.text
+ut_58:
+add x0, x0, 16
+b _Microsoft_AppCenter_Analytics_iOS_Bindings_System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr:
+.file 1 "<unknown>"
+.loc 1 1 0
+.word 0xa9b77bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf90013be
+.word 0xa902d3b3
+.word 0xa903dbb5
+.word 0xa904e3b7
+.word 0xa905ebb9
+.word 0xa906f3bb
+.word 0xf9003fbd
+.word 0x910003f1
+.word 0xf90043b1
+.word 0xaa0003f9
+.word 0xaa0103fa
+
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #112]
+.word 0xd63f0000
+.word 0xaa0003f8
+.word 0x910043a0
+.word 0xf9400301
+.word 0xf9000ba1
+.word 0xf9000300
+.word 0xaa1903e0
+.word 0xaa1a03e1
+bl _p_38
+.word 0xaa0003fa
+
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #192]
+.word 0xb9400000
+.word 0x35000180
+.word 0x14000001
+.word 0xf9400ba0
+.word 0xf9000300
+.word 0xaa1a03e0
+.word 0xa94567b8
+.word 0xf94033ba
+.word 0x910003bf
+.word 0xa8c97bfd
+.word 0xd65f03c0
+.word 0xaa1903e0
+bl _p_19
+bl _p_39
+.word 0xaa0003f9
+.word 0xb5ffff80
+.word 0x17fffff3
+
+Lme_3c:
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr:
+.loc 1 1 0
+.word 0xa9b77bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf90013be
+.word 0xa902d3b3
+.word 0xa903dbb5
+.word 0xa904e3b7
+.word 0xa905ebb9
+.word 0xa906f3bb
+.word 0xf9003fbd
+.word 0x910003f1
+.word 0xf90043b1
+.word 0xaa0003f9
+.word 0xaa0103fa
+
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #112]
+.word 0xd63f0000
+.word 0xaa0003f8
+.word 0x910043a0
+.word 0xf9400301
+.word 0xf9000ba1
+.word 0xf9000300
+.word 0xaa1903e0
+.word 0xaa1a03e1
+bl _p_40
+.word 0xaa0003fa
+
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #192]
+.word 0xb9400000
+.word 0x35000180
+.word 0x14000001
+.word 0xf9400ba0
+.word 0xf9000300
+.word 0xaa1a03e0
+.word 0xa94567b8
+.word 0xf94033ba
+.word 0x910003bf
+.word 0xa8c97bfd
+.word 0xd65f03c0
+.word 0xaa1903e0
+bl _p_19
+bl _p_39
+.word 0xaa0003f9
+.word 0xb5ffff80
+.word 0x17fffff3
+
+Lme_3d:
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool:
+.loc 1 1 0
+.word 0xa9b67bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf9001bbe
+.word 0xa903d3b3
+.word 0xa904dbb5
+.word 0xa905e3b7
+.word 0xa906ebb9
+.word 0xa907f3bb
+.word 0xf90047bd
+.word 0x910003f1
+.word 0xf9004bb1
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xaa0203fa
+.word 0xd2800017
+
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #112]
+.word 0xd63f0000
+.word 0xaa0003f6
+.word 0x910083a0
+.word 0xf94002c1
+.word 0xf90013a1
+.word 0xf90002c0
+.word 0x3400005a
+.word 0xd2800037
+.word 0xf9400ba0
+.word 0xf9400fa1
+.word 0xaa1703e2
+bl _p_41
+
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #192]
+.word 0xb9400000
+.word 0x35000120
+.word 0x14000001
+.word 0xf94013a0
+.word 0xf90002c0
+.word 0xa9455fb6
+.word 0xf9403bba
+.word 0x910003bf
+.word 0xa8ca7bfd
+.word 0xd65f03c0
+bl _p_39
+.word 0xaa0003fa
+.word 0xb4fffee0
+.word 0xaa1a03e0
+bl _p_19
+
+Lme_3e:
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0:
+.loc 1 1 0
+.word 0xa9b77bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf90013be
+.word 0xa902d3b3
+.word 0xa903dbb5
+.word 0xa904e3b7
+.word 0xa905ebb9
+.word 0xa906f3bb
+.word 0xf9003fbd
+.word 0x910003f1
+.word 0xf90043b1
+.word 0xaa0003f9
+.word 0xaa0103fa
+
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #112]
+.word 0xd63f0000
+.word 0xaa0003f8
+.word 0x910043a0
+.word 0xf9400301
+.word 0xf9000ba1
+.word 0xf9000300
+.word 0xaa1903e0
+.word 0xaa1a03e1
+bl _p_42
+.word 0x53001c1a
+
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #192]
+.word 0xb9400000
+.word 0x35000180
+.word 0x14000001
+.word 0xf9400ba0
+.word 0xf9000300
+.word 0xaa1a03e0
+.word 0xa94567b8
+.word 0xf94033ba
+.word 0x910003bf
+.word 0xa8c97bfd
+.word 0xd65f03c0
+.word 0xaa1903e0
+bl _p_19
+bl _p_39
+.word 0xaa0003f9
+.word 0xb5ffff80
+.word 0x17fffff3
+
+Lme_3f:
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr:
+.loc 1 1 0
+.word 0xa9b67bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf9001bbe
+.word 0xa903d3b3
+.word 0xa904dbb5
+.word 0xa905e3b7
+.word 0xa906ebb9
+.word 0xa907f3bb
+.word 0xf90047bd
+.word 0x910003f1
+.word 0xf9004bb1
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xaa0203fa
+
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #112]
+.word 0xd63f0000
+.word 0xaa0003f7
+.word 0x910083a0
+.word 0xf94002e1
+.word 0xf90013a1
+.word 0xf90002e0
+.word 0xf9400ba0
+.word 0xf9400fa1
+.word 0xaa1a03e2
+bl _p_43
+
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #192]
+.word 0xb9400000
+.word 0x35000160
+.word 0x14000001
+.word 0xf94013a0
+.word 0xf90002e0
+.word 0xf9402fb7
+.word 0xf9403bba
+.word 0x910003bf
+.word 0xa8ca7bfd
+.word 0xd65f03c0
+.word 0xaa1a03e0
+bl _p_19
+bl _p_39
+.word 0xaa0003fa
+.word 0xb5ffff80
+.word 0x17fffff4
+
+Lme_40:
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr:
+.loc 1 1 0
+.word 0xa9b67bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf9001fbe
+.word 0xa90453b3
+.word 0xa9055bb5
+.word 0xa90663b7
+.word 0xa9076bb9
+.word 0xa90873bb
+.word 0xf9004bbd
+.word 0x910003f1
+.word 0xf9004fb1
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xf90013a2
+.word 0xaa0303fa
+
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #112]
+.word 0xd63f0000
+.word 0xaa0003f6
+.word 0x9100a3a0
+.word 0xf94002c1
+.word 0xf90017a1
+.word 0xf90002c0
+.word 0xf9400ba0
+.word 0xf9400fa1
+.word 0xf94013a2
+.word 0xaa1a03e3
+bl _p_44
+
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #192]
+.word 0xb9400000
+.word 0x35000160
+.word 0x14000001
+.word 0xf94017a0
+.word 0xf90002c0
+.word 0xf9402fb6
+.word 0xf9403fba
+.word 0x910003bf
+.word 0xa8ca7bfd
+.word 0xd65f03c0
+.word 0xaa1a03e0
+bl _p_19
+bl _p_39
+.word 0xaa0003fa
+.word 0xb5ffff80
+.word 0x17fffff4
+
+Lme_41:
+.text
+	.align 3
+jit_code_end:
+_mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindingsjit_code_end:
+	.globl _mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindingsjit_code_end
+
+	.byte 0,0,0,0
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging__cctor
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics_get_ClassHandle
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics__ctor
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics__ctor_Foundation_NSObjectFlag
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics__ctor_intptr
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics_IsEnabled
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics_SetDelegate_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalyticsDelegate
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics_SetEnabled_bool
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics_TrackEvent_string
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics_TrackEvent_string_Foundation_NSDictionary
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics__cctor
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalyticsDelegateWrapper__ctor_intptr_bool
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalyticsDelegate__ctor
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalyticsDelegate__ctor_Foundation_NSObjectFlag
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalyticsDelegate__ctor_intptr
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalyticsDelegate_DidFailSendingEventLog_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog_Foundation_NSError
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalyticsDelegate_DidSucceedSendingEventLog_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalyticsDelegate_WillSendEventLog_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog_get_ClassHandle
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog__ctor
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog__ctor_Foundation_NSObjectFlag
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog__ctor_intptr
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog_get_EventId
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog_set_EventId_string
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog_get_Name
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog_set_Name_string
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog_get_Properties
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog_set_Properties_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog__cctor
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSLogWithProperties_get_ClassHandle
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSLogWithProperties__ctor
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSLogWithProperties__ctor_Foundation_NSObjectFlag
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSLogWithProperties__ctor_intptr
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSLogWithProperties_get_Properties
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSLogWithProperties_set_Properties_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSLogWithProperties__cctor
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSPageLog_get_ClassHandle
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSPageLog__ctor
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSPageLog__ctor_Foundation_NSObjectFlag
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSPageLog__ctor_intptr
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSPageLog_get_Name
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSPageLog_set_Name_string
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSPageLog_get_Properties
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSPageLog_set_Properties_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSPageLog__cctor
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_System_Array_InternalEnumerator_1_T_INST__ctor_System_Array
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_System_Array_InternalEnumerator_1_T_INST_Dispose
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_System_Array_InternalEnumerator_1_T_INST_MoveNext
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_System_Array_InternalEnumerator_1_T_INST_get_Current
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_Reset
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
+.no_dead_strip _Microsoft_AppCenter_Analytics_iOS_Bindings_System_Array_InternalArray__get_Item_T_INST_int
+
+.text
+	.align 3
+method_addresses:
+_mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindingsmethod_addresses:
+	.globl _mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindingsmethod_addresses
+	.no_dead_strip method_addresses
+bl method_addresses
+bl method_addresses
+bl method_addresses
+bl method_addresses
+bl method_addresses
+bl method_addresses
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging__cctor
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics_get_ClassHandle
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics__ctor
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics__ctor_Foundation_NSObjectFlag
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics__ctor_intptr
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics_IsEnabled
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics_SetDelegate_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalyticsDelegate
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics_SetEnabled_bool
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics_TrackEvent_string
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics_TrackEvent_string_Foundation_NSDictionary
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics__cctor
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalyticsDelegateWrapper__ctor_intptr_bool
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalyticsDelegate__ctor
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalyticsDelegate__ctor_Foundation_NSObjectFlag
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalyticsDelegate__ctor_intptr
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalyticsDelegate_DidFailSendingEventLog_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog_Foundation_NSError
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalyticsDelegate_DidSucceedSendingEventLog_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalyticsDelegate_WillSendEventLog_Microsoft_AppCenter_Analytics_iOS_Bindings_MSAnalytics_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog_get_ClassHandle
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog__ctor
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog__ctor_Foundation_NSObjectFlag
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog__ctor_intptr
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog_get_EventId
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog_set_EventId_string
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog_get_Name
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog_set_Name_string
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog_get_Properties
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog_set_Properties_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSEventLog__cctor
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSLogWithProperties_get_ClassHandle
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSLogWithProperties__ctor
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSLogWithProperties__ctor_Foundation_NSObjectFlag
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSLogWithProperties__ctor_intptr
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSLogWithProperties_get_Properties
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSLogWithProperties_set_Properties_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSLogWithProperties__cctor
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSPageLog_get_ClassHandle
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSPageLog__ctor
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSPageLog__ctor_Foundation_NSObjectFlag
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSPageLog__ctor_intptr
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSPageLog_get_Name
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSPageLog_set_Name_string
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSPageLog_get_Properties
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSPageLog_set_Properties_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSPageLog__cctor
+bl method_addresses
+bl method_addresses
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_System_Array_InternalEnumerator_1_T_INST__ctor_System_Array
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_System_Array_InternalEnumerator_1_T_INST_Dispose
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_System_Array_InternalEnumerator_1_T_INST_MoveNext
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_System_Array_InternalEnumerator_1_T_INST_get_Current
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_Reset
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
+bl _Microsoft_AppCenter_Analytics_iOS_Bindings_System_Array_InternalArray__get_Item_T_INST_int
+method_addresses_end:
+
+.section __TEXT, __const
+	.align 3
+unbox_trampolines:
+_mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindingsunbox_trampolines:
+	.globl _mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindingsunbox_trampolines
+
+	.long 53,54,55,56,57,58
+unbox_trampolines_end:
+_mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindingsunbox_trampolines_end:
+	.globl _mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindingsunbox_trampolines_end
+
+	.long 0
+.text
+	.align 3
+unbox_trampoline_addresses:
+_mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindingsunbox_trampoline_addresses:
+	.globl _mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindingsunbox_trampoline_addresses
+bl ut_53
+bl ut_54
+bl ut_55
+bl ut_56
+bl ut_57
+bl ut_58
+
+	.long 0
+.section __TEXT, __const
+	.align 3
+unwind_info:
+_mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindingsunwind_info:
+	.globl _mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindingsunwind_info
+
+	.byte 0,39,12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68
+	.byte 153,7,154,6,68,155,5,156,4,39,12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,13,148,12,68,149,11
+	.byte 150,10,68,151,9,152,8,68,153,7,154,6,68,155,5,156,4,39,12,31,0,68,14,160,1,157,20,158,19,68,13,29
+	.byte 76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6,154,5,68,155,4,156,3
+
+.text
+	.align 4
+plt:
+_mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindingsplt:
+	.globl _mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindingsplt
+mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_plt:
+_p_1_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSObject__ctor_Foundation_NSObjectFlag_llvm:
+	.globl _p_1_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSObject__ctor_Foundation_NSObjectFlag_llvm
+.private_extern _p_1_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSObject__ctor_Foundation_NSObjectFlag_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSObject__ctor_Foundation_NSObjectFlag
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSObject__ctor_Foundation_NSObjectFlag:
+_p_1:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #208]
+br x16
+.word 875
+_p_2_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_System_Reflection_Assembly_op_Equality_System_Reflection_Assembly_System_Reflection_Assembly_llvm:
+	.globl _p_2_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_System_Reflection_Assembly_op_Equality_System_Reflection_Assembly_System_Reflection_Assembly_llvm
+.private_extern _p_2_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_System_Reflection_Assembly_op_Equality_System_Reflection_Assembly_System_Reflection_Assembly_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings_System_Reflection_Assembly_op_Equality_System_Reflection_Assembly_System_Reflection_Assembly
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings_System_Reflection_Assembly_op_Equality_System_Reflection_Assembly_System_Reflection_Assembly:
+_p_2:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #216]
+br x16
+.word 880
+_p_3_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSObject_set_IsDirectBinding_bool_llvm:
+	.globl _p_3_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSObject_set_IsDirectBinding_bool_llvm
+.private_extern _p_3_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSObject_set_IsDirectBinding_bool_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSObject_set_IsDirectBinding_bool
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSObject_set_IsDirectBinding_bool:
+_p_3:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #224]
+br x16
+.word 885
+_p_4_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_llvm:
+	.globl _p_4_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_llvm
+.private_extern _p_4_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr:
+_p_4:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #232]
+br x16
+.word 890
+_p_5_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSObject_InitializeHandle_intptr_string_llvm:
+	.globl _p_5_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSObject_InitializeHandle_intptr_string_llvm
+.private_extern _p_5_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSObject_InitializeHandle_intptr_string_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSObject_InitializeHandle_intptr_string
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSObject_InitializeHandle_intptr_string:
+_p_5:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #240]
+br x16
+.word 892
+_p_6_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSObject__ctor_intptr_llvm:
+	.globl _p_6_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSObject__ctor_intptr_llvm
+.private_extern _p_6_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSObject__ctor_intptr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSObject__ctor_intptr
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSObject__ctor_intptr:
+_p_6:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #248]
+br x16
+.word 897
+_p_7_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0_llvm:
+	.globl _p_7_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0_llvm
+.private_extern _p_7_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0:
+_p_7:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #256]
+br x16
+.word 902
+_p_8_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_llvm:
+	.globl _p_8_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_llvm
+.private_extern _p_8_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr:
+_p_8:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #264]
+br x16
+.word 904
+_p_9_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool_llvm:
+	.globl _p_9_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool_llvm
+.private_extern _p_9_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool:
+_p_9:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #272]
+br x16
+.word 906
+_p_10_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSString_CreateNative_string_llvm:
+	.globl _p_10_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSString_CreateNative_string_llvm
+.private_extern _p_10_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSString_CreateNative_string_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSString_CreateNative_string
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSString_CreateNative_string:
+_p_10:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #280]
+br x16
+.word 908
+_p_11_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSString_ReleaseNative_intptr_llvm:
+	.globl _p_11_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSString_ReleaseNative_intptr_llvm
+.private_extern _p_11_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSString_ReleaseNative_intptr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSString_ReleaseNative_intptr
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSString_ReleaseNative_intptr:
+_p_11:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #288]
+br x16
+.word 913
+_p_12_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_llvm:
+	.globl _p_12_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_llvm
+.private_extern _p_12_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr:
+_p_12:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #296]
+br x16
+.word 918
+_p_13_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ObjCRuntime_Class_GetHandle_string_llvm:
+	.globl _p_13_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ObjCRuntime_Class_GetHandle_string_llvm
+.private_extern _p_13_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ObjCRuntime_Class_GetHandle_string_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ObjCRuntime_Class_GetHandle_string
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ObjCRuntime_Class_GetHandle_string:
+_p_13:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #304]
+br x16
+.word 920
+_p_14_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ObjCRuntime_BaseWrapper__ctor_intptr_bool_llvm:
+	.globl _p_14_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ObjCRuntime_BaseWrapper__ctor_intptr_bool_llvm
+.private_extern _p_14_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ObjCRuntime_BaseWrapper__ctor_intptr_bool_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ObjCRuntime_BaseWrapper__ctor_intptr_bool
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ObjCRuntime_BaseWrapper__ctor_intptr_bool:
+_p_14:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #312]
+br x16
+.word 925
+_p_15_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSObject_get_SuperHandle_llvm:
+	.globl _p_15_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSObject_get_SuperHandle_llvm
+.private_extern _p_15_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSObject_get_SuperHandle_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSObject_get_SuperHandle
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSObject_get_SuperHandle:
+_p_15:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #320]
+br x16
+.word 930
+_p_16_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_llvm:
+	.globl _p_16_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_llvm
+.private_extern _p_16_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr:
+_p_16:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #328]
+br x16
+.word 935
+_p_17_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm:
+	.globl _p_17_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
+.private_extern _p_17_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings_wrapper_alloc_object_AllocSmall_intptr_intptr
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings_wrapper_alloc_object_AllocSmall_intptr_intptr:
+_p_17:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #336]
+br x16
+.word 937
+_p_18_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_You_Should_Not_Call_base_In_This_Method__ctor_llvm:
+	.globl _p_18_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_You_Should_Not_Call_base_In_This_Method__ctor_llvm
+.private_extern _p_18_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_You_Should_Not_Call_base_In_This_Method__ctor_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_You_Should_Not_Call_base_In_This_Method__ctor
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_You_Should_Not_Call_base_In_This_Method__ctor:
+_p_18:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #344]
+br x16
+.word 945
+_p_19_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_arch_throw_exception_llvm:
+	.globl _p_19_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_arch_throw_exception_llvm
+.private_extern _p_19_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_arch_throw_exception_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_arch_throw_exception
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_arch_throw_exception:
+_p_19:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #352]
+br x16
+.word 950
+_p_20_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSLogWithProperties__ctor_Foundation_NSObjectFlag_llvm:
+	.globl _p_20_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSLogWithProperties__ctor_Foundation_NSObjectFlag_llvm
+.private_extern _p_20_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSLogWithProperties__ctor_Foundation_NSObjectFlag_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSLogWithProperties__ctor_Foundation_NSObjectFlag
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSLogWithProperties__ctor_Foundation_NSObjectFlag:
+_p_20:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #360]
+br x16
+.word 978
+_p_21_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSLogWithProperties__ctor_intptr_llvm:
+	.globl _p_21_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSLogWithProperties__ctor_intptr_llvm
+.private_extern _p_21_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSLogWithProperties__ctor_intptr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSLogWithProperties__ctor_intptr
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Microsoft_AppCenter_Analytics_iOS_Bindings_MSLogWithProperties__ctor_intptr:
+_p_21:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #368]
+br x16
+.word 980
+_p_22_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSString_FromHandle_intptr_llvm:
+	.globl _p_22_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSString_FromHandle_intptr_llvm
+.private_extern _p_22_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSString_FromHandle_intptr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSString_FromHandle_intptr
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings_Foundation_NSString_FromHandle_intptr:
+_p_22:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #376]
+br x16
+.word 982
+_p_23_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_helper_ldstr_llvm:
+	.globl _p_23_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_helper_ldstr_llvm
+.private_extern _p_23_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_helper_ldstr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_helper_ldstr
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_helper_ldstr:
+_p_23:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #384]
+br x16
+.word 987
+_p_24_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_create_corlib_exception_1_llvm:
+	.globl _p_24_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_create_corlib_exception_1_llvm
+.private_extern _p_24_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_create_corlib_exception_1_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_create_corlib_exception_1
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_create_corlib_exception_1:
+_p_24:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #392]
+br x16
+.word 1007
+_p_25_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ObjCRuntime_Runtime_GetNSObject_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString_intptr_llvm:
+	.globl _p_25_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ObjCRuntime_Runtime_GetNSObject_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString_intptr_llvm
+.private_extern _p_25_plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ObjCRuntime_Runtime_GetNSObject_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString_intptr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ObjCRuntime_Runtime_GetNSObject_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString_intptr
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings_ObjCRuntime_Runtime_GetNSObject_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString_intptr:
+_p_25:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #400]
+br x16
+.word 1040
+_p_26_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_0_llvm:
+	.globl _p_26_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_0_llvm
+.private_extern _p_26_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_0_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_0
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_0:
+_p_26:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #408]
+br x16
+.word 1070
+_p_27_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_1_llvm:
+	.globl _p_27_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_1_llvm
+.private_extern _p_27_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_1_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_1
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_1:
+_p_27:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #416]
+br x16
+.word 1094
+_p_28_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_helper_ldstr_mscorlib_llvm:
+	.globl _p_28_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_helper_ldstr_mscorlib_llvm
+.private_extern _p_28_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_helper_ldstr_mscorlib_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_helper_ldstr_mscorlib
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_helper_ldstr_mscorlib:
+_p_28:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #424]
+br x16
+.word 1118
+_p_29_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_2_llvm:
+	.globl _p_29_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_2_llvm
+.private_extern _p_29_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_2_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_2
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_2:
+_p_29:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #432]
+br x16
+.word 1165
+_p_30_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_3_llvm:
+	.globl _p_30_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_3_llvm
+.private_extern _p_30_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_3_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_3
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_3:
+_p_30:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #440]
+br x16
+.word 1173
+_p_31_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_4_llvm:
+	.globl _p_31_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_4_llvm
+.private_extern _p_31_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_4_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_4
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_4:
+_p_31:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #448]
+br x16
+.word 1196
+_p_32_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_5_llvm:
+	.globl _p_32_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_5_llvm
+.private_extern _p_32_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_5_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_5
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_5:
+_p_32:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #456]
+br x16
+.word 1232
+_p_33_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_6_llvm:
+	.globl _p_33_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_6_llvm
+.private_extern _p_33_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_6_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_6
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_6:
+_p_33:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #464]
+br x16
+.word 1240
+_p_34_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_7_llvm:
+	.globl _p_34_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_7_llvm
+.private_extern _p_34_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_7_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_7
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_7:
+_p_34:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #472]
+br x16
+.word 1272
+_p_35_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_8_llvm:
+	.globl _p_35_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_8_llvm
+.private_extern _p_35_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_8_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_8
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_8:
+_p_35:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #480]
+br x16
+.word 1280
+_p_36_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_generic_class_init_llvm:
+	.globl _p_36_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_generic_class_init_llvm
+.private_extern _p_36_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_generic_class_init_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_generic_class_init
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_generic_class_init:
+_p_36:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #488]
+br x16
+.word 1288
+_p_37_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_9_llvm:
+	.globl _p_37_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_9_llvm
+.private_extern _p_37_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_9_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_9
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings__rgctx_fetch_9:
+_p_37:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #496]
+br x16
+.word 1333
+_p_38_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_llvm:
+	.globl _p_38_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_llvm
+.private_extern _p_38_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr:
+_p_38:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #504]
+br x16
+.word 1357
+_p_39_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_thread_interruption_checkpoint_llvm:
+	.globl _p_39_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_thread_interruption_checkpoint_llvm
+.private_extern _p_39_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_thread_interruption_checkpoint_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_thread_interruption_checkpoint
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings__jit_icall_mono_thread_interruption_checkpoint:
+_p_39:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #512]
+br x16
+.word 1359
+_p_40_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_llvm:
+	.globl _p_40_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_llvm
+.private_extern _p_40_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr:
+_p_40:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #520]
+br x16
+.word 1397
+_p_41_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool_llvm:
+	.globl _p_41_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool_llvm
+.private_extern _p_41_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool:
+_p_41:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #528]
+br x16
+.word 1399
+_p_42_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0_llvm:
+	.globl _p_42_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0_llvm
+.private_extern _p_42_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0:
+_p_42:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #536]
+br x16
+.word 1401
+_p_43_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_llvm:
+	.globl _p_43_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_llvm
+.private_extern _p_43_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr:
+_p_43:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #544]
+br x16
+.word 1403
+_p_44_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_llvm:
+	.globl _p_44_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_llvm
+.private_extern _p_44_plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
+plt_Microsoft_AppCenter_Analytics_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr:
+_p_44:
+adrp x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #552]
+br x16
+.word 1405
+plt_end:
+_mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindingsplt_end:
+	.globl _mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindingsplt_end
+.section __DATA, __bss
+	.align 3
+jit_got:
+_mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindingsjit_got:
+	.globl _mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindingsjit_got
+.lcomm mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindings_got, 560
+got_end:
+.section __TEXT, __const
+	.align 3
+Lglobals_hash:
+
+	.short 11, 0, 0, 0, 0, 0, 0, 0
+	.short 0, 0, 0, 0, 0, 1, 0, 0
+	.short 0, 0, 0, 0, 0, 0, 0
+.section __TEXT, __const
+	.align 2
+name_0:
+	.asciz "_unbox_trampoline_p"
+.data
+	.align 3
+globals:
+_mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindingsglobals:
+	.globl _mono_aot_Microsoft_AppCenter_Analytics_iOS_Bindingsglobals
+	.align 3
+	.quad Lglobals_hash
+	.align 3
+	.quad name_0
+	.align 3
+	.quad _unbox_trampoline_p
+
+	.long 0,0
+.section __DWARF, __debug_info,regular,debug
+LTDIE_2:
+
+	.byte 17
+	.asciz "System_Object"
+
+	.byte 16,7
+	.asciz "System_Object"
+
+LDIFF_SYM4=LTDIE_2 - Ldebug_info_start
+	.long LDIFF_SYM4
+LTDIE_2_POINTER:
+
+	.byte 13
+LDIFF_SYM5=LTDIE_2 - Ldebug_info_start
+	.long LDIFF_SYM5
+LTDIE_2_REFERENCE:
+
+	.byte 14
+LDIFF_SYM6=LTDIE_2 - Ldebug_info_start
+	.long LDIFF_SYM6
+LTDIE_1:
+
+	.byte 5
+	.asciz "System_ValueType"
+
+	.byte 16,16
+LDIFF_SYM7=LTDIE_2 - Ldebug_info_start
+	.long LDIFF_SYM7
+	.byte 2,35,0,0,7
+	.asciz "System_ValueType"
+
+LDIFF_SYM8=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM8
+LTDIE_1_POINTER:
+
+	.byte 13
+LDIFF_SYM9=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM9
+LTDIE_1_REFERENCE:
+
+	.byte 14
+LDIFF_SYM10=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM10
+LTDIE_0:
+
+	.byte 5
+	.asciz "System_Boolean"
+
+	.byte 17,16
+LDIFF_SYM11=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM11
+	.byte 2,35,0,6
+	.asciz "m_value"
+
+LDIFF_SYM12=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM12
+	.byte 2,35,16,0,7
+	.asciz "System_Boolean"
+
+LDIFF_SYM13=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM13
+LTDIE_0_POINTER:
+
+	.byte 13
+LDIFF_SYM14=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM14
+LTDIE_0_REFERENCE:
+
+	.byte 14
+LDIFF_SYM15=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM15
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
+	.quad Lme_3c
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM16=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM16
+	.byte 1,105,3
+	.asciz "param1"
+
+LDIFF_SYM17=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM17
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM18=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM18
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM19=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM19
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM20=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM20
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM21=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM21
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM22=Lfde0_end - Lfde0_start
+	.long LDIFF_SYM22
+Lfde0_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
+
+LDIFF_SYM23=Lme_3c - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
+	.long LDIFF_SYM23
+	.long 0
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
+	.byte 154,6,68,155,5,156,4
+	.align 3
+Lfde0_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSendSuper"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
+	.quad Lme_3d
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM24=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM24
+	.byte 1,105,3
+	.asciz "param1"
+
+LDIFF_SYM25=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM25
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM26=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM26
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM27=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM27
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM28=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM28
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM29=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM29
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM30=Lfde1_end - Lfde1_start
+	.long LDIFF_SYM30
+Lfde1_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
+
+LDIFF_SYM31=Lme_3d - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
+	.long LDIFF_SYM31
+	.long 0
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
+	.byte 154,6,68,155,5,156,4
+	.align 3
+Lfde1_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_3:
+
+	.byte 5
+	.asciz "System_Int32"
+
+	.byte 20,16
+LDIFF_SYM32=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM32
+	.byte 2,35,0,6
+	.asciz "m_value"
+
+LDIFF_SYM33=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM33
+	.byte 2,35,16,0,7
+	.asciz "System_Int32"
+
+LDIFF_SYM34=LTDIE_3 - Ldebug_info_start
+	.long LDIFF_SYM34
+LTDIE_3_POINTER:
+
+	.byte 13
+LDIFF_SYM35=LTDIE_3 - Ldebug_info_start
+	.long LDIFF_SYM35
+LTDIE_3_REFERENCE:
+
+	.byte 14
+LDIFF_SYM36=LTDIE_3 - Ldebug_info_start
+	.long LDIFF_SYM36
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+	.quad Lme_3e
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM37=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM37
+	.byte 2,141,16,3
+	.asciz "param1"
+
+LDIFF_SYM38=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM38
+	.byte 2,141,24,3
+	.asciz "param2"
+
+LDIFF_SYM39=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM39
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM40=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM40
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM41=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM41
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM42=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM42
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM43=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM43
+	.byte 1,103,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM44=Lfde2_end - Lfde2_start
+	.long LDIFF_SYM44
+Lfde2_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+
+LDIFF_SYM45=Lme_3e - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+	.long LDIFF_SYM45
+	.long 0
+	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
+	.byte 154,6,68,155,5,156,4
+	.align 3
+Lfde2_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+	.quad Lme_3f
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM46=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM46
+	.byte 1,105,3
+	.asciz "param1"
+
+LDIFF_SYM47=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM47
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM48=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM48
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM49=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM49
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM50=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM50
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM51=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM51
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM52=Lfde3_end - Lfde3_start
+	.long LDIFF_SYM52
+Lfde3_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+
+LDIFF_SYM53=Lme_3f - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+	.long LDIFF_SYM53
+	.long 0
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
+	.byte 154,6,68,155,5,156,4
+	.align 3
+Lfde3_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
+	.quad Lme_40
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM54=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM54
+	.byte 2,141,16,3
+	.asciz "param1"
+
+LDIFF_SYM55=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM55
+	.byte 2,141,24,3
+	.asciz "param2"
+
+LDIFF_SYM56=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM56
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM57=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM57
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM58=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM58
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM59=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM59
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM60=Lfde4_end - Lfde4_start
+	.long LDIFF_SYM60
+Lfde4_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
+
+LDIFF_SYM61=Lme_40 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
+	.long LDIFF_SYM61
+	.long 0
+	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
+	.byte 154,6,68,155,5,156,4
+	.align 3
+Lfde4_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
+	.quad Lme_41
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM62=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM62
+	.byte 2,141,16,3
+	.asciz "param1"
+
+LDIFF_SYM63=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM63
+	.byte 2,141,24,3
+	.asciz "param2"
+
+LDIFF_SYM64=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM64
+	.byte 2,141,32,3
+	.asciz "param3"
+
+LDIFF_SYM65=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM65
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM66=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM66
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM67=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM67
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM68=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM68
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM69=Lfde5_end - Lfde5_start
+	.long LDIFF_SYM69
+Lfde5_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
+
+LDIFF_SYM70=Lme_41 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
+	.long LDIFF_SYM70
+	.long 0
+	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
+	.byte 154,5,68,155,4,156,3
+	.align 3
+Lfde5_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 0
+Ldebug_info_end:
+.text
+	.align 3
+mem_end:

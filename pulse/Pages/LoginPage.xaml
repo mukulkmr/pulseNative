@@ -1,61 +1,81 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage
-    Padding="{OnPlatform iOS={StaticResource PageMargin}}"
-    xmlns="http://xamarin.com/schemas/2014/forms" 
-    xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" 
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" NavigationPage.HasNavigationBar="False" x:Class="pulse.LoginPage">
+<ContentPage Padding="{OnPlatform iOS={StaticResource PageMarginiOS}}" 
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" NavigationPage.HasNavigationBar="False" x:Class="pulse.LoginPage">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout> 
-                <Label Text="Registration" Margin="10" HorizontalOptions="Center" FontSize="Large" />
-                
-                <Entry x:Name="userName" HorizontalTextAlignment="Start" Placeholder="Enter Name" />            
-                <Entry  x:Name="userEmail" HorizontalTextAlignment="Start" Placeholder="Enter Email" Keyboard="Email" />         
-                <Entry x:Name="userMobile" Placeholder="Enter Mobile" Keyboard="Telephone" MaxLength="10" HorizontalTextAlignment="Start" />
-                
+            <StackLayout>
                 <Grid Margin="10">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width=".6*" />
+                        <ColumnDefinition Width=".2*" />
                     </Grid.ColumnDefinitions>
-                    <Label Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" Text="Students' Union Invite" />
-                    <Switch x:Name="inviteSwitch" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="End" Toggled="Handle_Toggled"/>
+                    <Label Grid.Column="0" Text="Pulse 2019" VerticalOptions="Center" HorizontalOptions="Center" FontSize="28" />
+                    <Label Grid.Column="1" Text="info" VerticalOptions="Center" FontFamily="{StaticResource MaterialFontFamily}" FontSize="28" HorizontalOptions="Start">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Handle_Tapped" />
+                        </Image.GestureRecognizers>
+                    </Label>
                 </Grid>
+                
+                <Frame Padding="0" CornerRadius="20" Margin="20,20,20,5" HasShadow="true" BackgroundColor="White" Visual="Material">
+                    <Grid>
 
-                <Frame Padding="0" HasShadow="false" BackgroundColor="Transparent" x:Name="CollegeInputCard">
+                        <yummy:PancakeView Grid.Column="0" HasShadow="false" Padding="0"
+                                           x:Name="Tab1" BackgroundColor="{StaticResource AccentColor}" CornerRadius="20">
+                            <Label TextColor="White" x:Name="Tab1Text" HorizontalOptions="CenterAndExpand" Margin="20,12,20,12" VerticalOptions="CenterAndExpand" Text="New User" FontSize="18" />
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer CommandParameter="New" Tapped="SwitchTab" />
+                            </Frame.GestureRecognizers>
+                        </yummy:PancakeView>
+                        
+                        <yummy:PancakeView Grid.Column="1" HasShadow="false" Padding="0"
+                                           x:Name="Tab2" CornerRadius="20">
+                            <Label TextColor="#444" x:Name="Tab2Text" Margin="20,12,20,12" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="Existing User" FontSize="18" />
+                            <yummy:PancakeView.GestureRecognizers>
+                                <TapGestureRecognizer CommandParameter="Existing" Tapped="SwitchTab" />
+                            </yummy:PancakeView.GestureRecognizers>
+                        </yummy:PancakeView>
+                        
+                    </Grid>
+                </Frame>
+                
+                <Frame Visual="Material" IsVisible="false" x:Name="LoginCard" Padding="30" Margin="20,5,20,5" BackgroundColor="White" 
+                                    CornerRadius="4"
+                                   HasShadow="true">
                     <StackLayout>
-                        <Label Text="College" FontSize="Large" HorizontalOptions="CenterAndExpand" />
-                        
-                        <Grid Margin="10">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="*" />
-                            </Grid.ColumnDefinitions>
-                            <Label Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" Text="Medical Student" />
-                            <Switch x:Name="MedicalStudent" IsToggled="true" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="End" Toggled="StudentToggle"/>
-                        </Grid>
-                        
-                        
-                        <Picker SelectedIndexChanged="Handle_SelectedIndexChanged" x:Name="StatesPicker" />
-                        <Picker x:Name="CollegePicker" />
-                        
-                        <Entry x:Name="CollegePickerOther" IsVisible="false" HorizontalTextAlignment="Start" Placeholder="Enter Non MCI Registered College " />            
+                        <Entry x:Name="userGuid" HorizontalTextAlignment="Start" Placeholder="Enter Guid" />
+                        <Button x:Name="LoginButton" Margin="10" Clicked="LoginExisting" Text="Login" />
                     </StackLayout>
                 </Frame>
                 
-                <Button x:Name="Registerbutton" Text="Register" Margin="10" Clicked="Login" />
+                <Frame Visual="Material" x:Name="RegistrationCard" Padding="30" Margin="20,5,20,5" BackgroundColor="White" 
+                                   CornerRadius="4"
+                                   HasShadow="true">
+                    <StackLayout>
+                        <Entry x:Name="userName" HorizontalTextAlignment="Start" Placeholder="Enter Name" />
+                        <Entry x:Name="userEmail" HorizontalTextAlignment="Start" Placeholder="Enter Email" Keyboard="Email" />
+                        <Entry x:Name="userMobile" Placeholder="Enter Mobile" Keyboard="Telephone" MaxLength="10" HorizontalTextAlignment="Start" />
+                        <Frame Padding="0" HasShadow="false" BackgroundColor="Transparent" x:Name="CollegeInputCard">
+                            <StackLayout>
+                                <Label Text="College" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+                                <Grid Margin="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" Text="Medical Student" />
+                                    <Switch x:Name="MedicalStudent" IsToggled="true" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="End" Toggled="StudentToggle" />
+                                </Grid>
+                                <Picker SelectedIndexChanged="Handle_SelectedIndexChanged" x:Name="StatesPicker" />
+                                <Picker x:Name="CollegePicker" />
+                                <Entry x:Name="CollegePickerOther" IsVisible="false" HorizontalTextAlignment="Start" Placeholder="Enter your College " />
+                            </StackLayout>
+                        </Frame>
+                        <Button x:Name="Registerbutton" Margin="10" Clicked="Login" Text="Register" />
+                    </StackLayout>
+                </Frame>
                 <Button x:Name="MainPageButton" IsVisible="false" Text="Go To MainPage" Margin="10" Clicked="Handle_Clicked" />
-                
-                    <forms:AnimationView
-                        Animation="rainbow.json" 
-                        Loop="true"
-                        x:Name="Loading"
-                        AutoPlay="true"
-                        HorizontalOptions="Center"
-                        Margin="10"
-                        IsVisible="false"
-                        HeightRequest="50"/>
-                
+                <forms:AnimationView Animation="rainbow.json" Loop="true" x:Name="Loading" AutoPlay="true" HorizontalOptions="Center" Margin="10" IsVisible="false" HeightRequest="50" />
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

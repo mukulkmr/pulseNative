@@ -1,10 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage Padding="{OnPlatform iOS={StaticResource PageMargin}}"
- NavigationPage.HasNavigationBar="False" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="pulse.NightsPage">
+<ContentPage    
+  BackgroundColor="#fcfcfc"
+  Padding="{OnPlatform iOS={StaticResource PageMarginiOS}}"
+  NavigationPage.HasNavigationBar="False" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="pulse.NightsPage">
     <ContentPage.Content>
         <AbsoluteLayout Margin="0,10,0,10">
-            <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
-                <ListView SelectionMode="None" Margin="0,35,0,0" SeparatorColor="Transparent" HasUnevenRows="true" x:Name="listView" ItemsSource="{Binding Shows}">
+            <StackLayout Margin="0,35,0,0" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+                <Label x:Name="statusText" Margin="8" Text="you're all caught up. Hit the reload button for update" />  
+                <ListView BackgroundColor="Transparent" SelectionMode="None" HeightRequest="600"
+                          VerticalOptions="FillAndExpand" SeparatorColor="Transparent" HasUnevenRows="true" x:Name="listView" ItemsSource="{Binding Shows}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -24,7 +28,7 @@
             </StackLayout>
             <ActivityIndicator AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds=".5,.5,50,50" x:Name="Loading" IsRunning="true" IsVisible="false" />
             <ImageButton Source="refresh" x:Name="ReloadButton" BackgroundColor="Transparent" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.05,0,30,30" Clicked="OnReloadButtonClicked" />
-            <BoxView Color="{StaticResource AccentColor}" CornerRadius="8" AbsoluteLayout.LayoutFlags="PositionProportional" Margin="0,2,0,0" AbsoluteLayout.LayoutBounds=".5,0,30,32">
+            <BoxView Color="{StaticResource AccentColor}" Rotation="45" CornerRadius="8" AbsoluteLayout.LayoutFlags="PositionProportional" Margin="0,2,0,0" AbsoluteLayout.LayoutBounds=".5,0,30,32">
                 <BoxView.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OpenPulsePage" />
                 </BoxView.GestureRecognizers>

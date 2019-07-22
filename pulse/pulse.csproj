@@ -11,14 +11,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />
-    <PackageReference Include="Microsoft.AppCenter" Version="2.0.0" />
-    <PackageReference Include="Microsoft.AppCenter.Push" Version="2.0.0" />
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.581479" />
+    <PackageReference Include="Microsoft.AppCenter" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AppCenter.Push" Version="2.1.1" />
     <PackageReference Include="Xam.Plugins.Notifier" Version="3.0.1" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
     <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="3.0.0" />
-    <PackageReference Include="Plugin.InAppBilling" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="2.1.1" />
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="1.0.21" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Models\Todos.cs" />
@@ -40,6 +42,7 @@
     <None Remove="Models\DelegatesInfo.txt" />
     <None Remove="Models\RegistrationsInfo.txt" />
     <None Remove="Resources\RegistrationsInfo.txt" />
+    <None Remove="Resources\paper-texture.jpg" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\RegistrationsInfo.txt" />

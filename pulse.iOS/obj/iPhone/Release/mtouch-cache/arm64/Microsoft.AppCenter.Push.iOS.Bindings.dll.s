@@ -1,0 +1,1383 @@
+.subsections_via_symbols
+.section __DWARF, __debug_line,regular,debug
+Ldebug_line_section_start:
+Ldebug_line_start:
+.section __DWARF, __debug_abbrev,regular,debug
+
+	.byte 1,17,1,37,8,3,8,27,8,19,11,17,1,18,1,16,6,0,0,2,46,1,3,8,135,64,8,58,15,59,15,17
+	.byte 1,18,1,64,10,0,0,3,5,0,3,8,73,19,2,10,0,0,15,5,0,3,8,73,19,2,6,0,0,4,36,0
+	.byte 11,11,62,11,3,8,0,0,5,2,1,3,8,11,15,0,0,17,2,0,3,8,11,15,0,0,6,13,0,3,8,73
+	.byte 19,56,10,0,0,7,22,0,3,8,73,19,0,0,8,4,1,3,8,11,15,73,19,0,0,9,40,0,3,8,28,13
+	.byte 0,0,10,57,1,3,8,0,0,11,52,0,3,8,73,19,2,10,0,0,12,52,0,3,8,73,19,2,6,0,0,13
+	.byte 15,0,73,19,0,0,14,16,0,73,19,0,0,16,28,0,73,19,56,10,0,0,18,46,0,3,8,17,1,18,1,0
+	.byte 0,0
+.section __DWARF, __debug_info,regular,debug
+Ldebug_info_start:
+
+LDIFF_SYM0=Ldebug_info_end - Ldebug_info_begin
+	.long LDIFF_SYM0
+Ldebug_info_begin:
+
+	.short 2
+	.long 0
+	.byte 8,1
+	.asciz "Mono AOT Compiler 5.18.1 (2018-08/3a07bd426d3 Mon Jun  3 14:53:42 EDT 2019)"
+	.asciz "Microsoft.AppCenter.Push.iOS.Bindings.dll"
+	.asciz ""
+
+	.byte 2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+LDIFF_SYM1=Ldebug_line_start - Ldebug_line_section_start
+	.long LDIFF_SYM1
+LDIE_I1:
+
+	.byte 4,1,5
+	.asciz "sbyte"
+LDIE_U1:
+
+	.byte 4,1,7
+	.asciz "byte"
+LDIE_I2:
+
+	.byte 4,2,5
+	.asciz "short"
+LDIE_U2:
+
+	.byte 4,2,7
+	.asciz "ushort"
+LDIE_I4:
+
+	.byte 4,4,5
+	.asciz "int"
+LDIE_U4:
+
+	.byte 4,4,7
+	.asciz "uint"
+LDIE_I8:
+
+	.byte 4,8,5
+	.asciz "long"
+LDIE_U8:
+
+	.byte 4,8,7
+	.asciz "ulong"
+LDIE_I:
+
+	.byte 4,8,5
+	.asciz "intptr"
+LDIE_U:
+
+	.byte 4,8,7
+	.asciz "uintptr"
+LDIE_R4:
+
+	.byte 4,4,4
+	.asciz "float"
+LDIE_R8:
+
+	.byte 4,8,4
+	.asciz "double"
+LDIE_BOOLEAN:
+
+	.byte 4,1,2
+	.asciz "boolean"
+LDIE_CHAR:
+
+	.byte 4,2,8
+	.asciz "char"
+LDIE_STRING:
+
+	.byte 4,8,1
+	.asciz "string"
+LDIE_OBJECT:
+
+	.byte 4,8,1
+	.asciz "object"
+LDIE_SZARRAY:
+
+	.byte 4,8,1
+	.asciz "object"
+.section __DWARF, __debug_loc,regular,debug
+Ldebug_loc_start:
+.section __DWARF, __debug_frame,regular,debug
+	.align 3
+
+LDIFF_SYM2=Lcie0_end - Lcie0_start
+	.long LDIFF_SYM2
+Lcie0_start:
+
+	.long -1
+	.byte 3
+	.asciz ""
+
+	.byte 1,120,30
+	.align 3
+Lcie0_end:
+.text
+	.align 3
+jit_code_start:
+_mono_aot_Microsoft_AppCenter_Push_iOS_Bindingsjit_code_start:
+	.globl _mono_aot_Microsoft_AppCenter_Push_iOS_Bindingsjit_code_start
+
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr:
+.file 1 "<unknown>"
+.loc 1 1 0
+.word 0xa9b77bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf90013be
+.word 0xa902d3b3
+.word 0xa903dbb5
+.word 0xa904e3b7
+.word 0xa905ebb9
+.word 0xa906f3bb
+.word 0xf9003fbd
+.word 0x910003f1
+.word 0xf90043b1
+.word 0xaa0003f9
+.word 0xaa0103fa
+
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #112]
+.word 0xd63f0000
+.word 0xaa0003f8
+.word 0x910043a0
+.word 0xf9400301
+.word 0xf9000ba1
+.word 0xf9000300
+.word 0xaa1903e0
+.word 0xaa1a03e1
+bl _p_22
+.word 0xaa0003fa
+
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #192]
+.word 0xb9400000
+.word 0x35000180
+.word 0x14000001
+.word 0xf9400ba0
+.word 0xf9000300
+.word 0xaa1a03e0
+.word 0xa94567b8
+.word 0xf94033ba
+.word 0x910003bf
+.word 0xa8c97bfd
+.word 0xd65f03c0
+.word 0xaa1903e0
+bl _p_10
+bl _p_23
+.word 0xaa0003f9
+.word 0xb5ffff80
+.word 0x17fffff3
+
+Lme_20:
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr:
+.loc 1 1 0
+.word 0xa9b77bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf90013be
+.word 0xa902d3b3
+.word 0xa903dbb5
+.word 0xa904e3b7
+.word 0xa905ebb9
+.word 0xa906f3bb
+.word 0xf9003fbd
+.word 0x910003f1
+.word 0xf90043b1
+.word 0xaa0003f9
+.word 0xaa0103fa
+
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #112]
+.word 0xd63f0000
+.word 0xaa0003f8
+.word 0x910043a0
+.word 0xf9400301
+.word 0xf9000ba1
+.word 0xf9000300
+.word 0xaa1903e0
+.word 0xaa1a03e1
+bl _p_24
+.word 0xaa0003fa
+
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #192]
+.word 0xb9400000
+.word 0x35000180
+.word 0x14000001
+.word 0xf9400ba0
+.word 0xf9000300
+.word 0xaa1a03e0
+.word 0xa94567b8
+.word 0xf94033ba
+.word 0x910003bf
+.word 0xa8c97bfd
+.word 0xd65f03c0
+.word 0xaa1903e0
+bl _p_10
+bl _p_23
+.word 0xaa0003f9
+.word 0xb5ffff80
+.word 0x17fffff3
+
+Lme_21:
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr:
+.loc 1 1 0
+.word 0xa9b67bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf9001bbe
+.word 0xa903d3b3
+.word 0xa904dbb5
+.word 0xa905e3b7
+.word 0xa906ebb9
+.word 0xa907f3bb
+.word 0xf90047bd
+.word 0x910003f1
+.word 0xf9004bb1
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xaa0203fa
+
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #112]
+.word 0xd63f0000
+.word 0xaa0003f7
+.word 0x910083a0
+.word 0xf94002e1
+.word 0xf90013a1
+.word 0xf90002e0
+.word 0xf9400ba0
+.word 0xf9400fa1
+.word 0xaa1a03e2
+bl _p_25
+
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #192]
+.word 0xb9400000
+.word 0x35000160
+.word 0x14000001
+.word 0xf94013a0
+.word 0xf90002e0
+.word 0xf9402fb7
+.word 0xf9403bba
+.word 0x910003bf
+.word 0xa8ca7bfd
+.word 0xd65f03c0
+.word 0xaa1a03e0
+bl _p_10
+bl _p_23
+.word 0xaa0003fa
+.word 0xb5ffff80
+.word 0x17fffff4
+
+Lme_22:
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool:
+.loc 1 1 0
+.word 0xa9b67bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf9001bbe
+.word 0xa903d3b3
+.word 0xa904dbb5
+.word 0xa905e3b7
+.word 0xa906ebb9
+.word 0xa907f3bb
+.word 0xf90047bd
+.word 0x910003f1
+.word 0xf9004bb1
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xaa0203fa
+.word 0xd2800017
+
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #112]
+.word 0xd63f0000
+.word 0xaa0003f6
+.word 0x910083a0
+.word 0xf94002c1
+.word 0xf90013a1
+.word 0xf90002c0
+.word 0x3400005a
+.word 0xd2800037
+.word 0xf9400ba0
+.word 0xf9400fa1
+.word 0xaa1703e2
+bl _p_26
+
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #192]
+.word 0xb9400000
+.word 0x35000120
+.word 0x14000001
+.word 0xf94013a0
+.word 0xf90002c0
+.word 0xa9455fb6
+.word 0xf9403bba
+.word 0x910003bf
+.word 0xa8ca7bfd
+.word 0xd65f03c0
+bl _p_23
+.word 0xaa0003fa
+.word 0xb4fffee0
+.word 0xaa1a03e0
+bl _p_10
+
+Lme_23:
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0:
+.loc 1 1 0
+.word 0xa9b77bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf90013be
+.word 0xa902d3b3
+.word 0xa903dbb5
+.word 0xa904e3b7
+.word 0xa905ebb9
+.word 0xa906f3bb
+.word 0xf9003fbd
+.word 0x910003f1
+.word 0xf90043b1
+.word 0xaa0003f9
+.word 0xaa0103fa
+
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #112]
+.word 0xd63f0000
+.word 0xaa0003f8
+.word 0x910043a0
+.word 0xf9400301
+.word 0xf9000ba1
+.word 0xf9000300
+.word 0xaa1903e0
+.word 0xaa1a03e1
+bl _p_27
+.word 0x53001c1a
+
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #192]
+.word 0xb9400000
+.word 0x35000180
+.word 0x14000001
+.word 0xf9400ba0
+.word 0xf9000300
+.word 0xaa1a03e0
+.word 0xa94567b8
+.word 0xf94033ba
+.word 0x910003bf
+.word 0xa8c97bfd
+.word 0xd65f03c0
+.word 0xaa1903e0
+bl _p_10
+bl _p_23
+.word 0xaa0003f9
+.word 0xb5ffff80
+.word 0x17fffff3
+
+Lme_24:
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0:
+.loc 1 1 0
+.word 0xa9b77bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf90017be
+.word 0xa90353b3
+.word 0xa9045bb5
+.word 0xa90563b7
+.word 0xa9066bb9
+.word 0xa90773bb
+.word 0xf90043bd
+.word 0x910003f1
+.word 0xf90047b1
+.word 0xf9000ba0
+.word 0xaa0103f9
+.word 0xaa0203fa
+
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #112]
+.word 0xd63f0000
+.word 0xaa0003f7
+.word 0x910063a0
+.word 0xf94002e1
+.word 0xf9000fa1
+.word 0xf90002e0
+.word 0xf9400ba0
+.word 0xaa1903e1
+.word 0xaa1a03e2
+bl _p_28
+.word 0x53001c1a
+
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #192]
+.word 0xb9400000
+.word 0x35000180
+.word 0x14000001
+.word 0xf9400fa0
+.word 0xf90002e0
+.word 0xaa1a03e0
+.word 0xf9402bb7
+.word 0xa9466bb9
+.word 0x910003bf
+.word 0xa8c97bfd
+.word 0xd65f03c0
+.word 0xaa1903e0
+bl _p_10
+bl _p_23
+.word 0xaa0003f9
+.word 0xb5ffff80
+.word 0x17fffff3
+
+Lme_25:
+.text
+	.align 3
+jit_code_end:
+_mono_aot_Microsoft_AppCenter_Push_iOS_Bindingsjit_code_end:
+	.globl _mono_aot_Microsoft_AppCenter_Push_iOS_Bindingsjit_code_end
+
+	.byte 0,0,0,0
+.no_dead_strip _Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging__cctor
+.no_dead_strip _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPush_get_ClassHandle
+.no_dead_strip _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPush__ctor
+.no_dead_strip _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPush__ctor_Foundation_NSObjectFlag
+.no_dead_strip _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPush__ctor_intptr
+.no_dead_strip _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPush_DidFailToRegisterForRemoteNotificationsWithError_Foundation_NSError
+.no_dead_strip _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPush_DidReceiveRemoteNotification_Foundation_NSDictionary
+.no_dead_strip _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPush_DidRegisterForRemoteNotificationsWithDeviceToken_Foundation_NSData
+.no_dead_strip _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPush_IsEnabled
+.no_dead_strip _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPush_SetDelegate_Microsoft_AppCenter_Push_iOS_Bindings_MSPushDelegate
+.no_dead_strip _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPush_SetEnabled_bool
+.no_dead_strip _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPush__cctor
+.no_dead_strip _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushDelegateWrapper__ctor_intptr_bool
+.no_dead_strip _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushDelegate__ctor
+.no_dead_strip _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushDelegate__ctor_Foundation_NSObjectFlag
+.no_dead_strip _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushDelegate__ctor_intptr
+.no_dead_strip _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushDelegate_ReceivedPushNotification_Microsoft_AppCenter_Push_iOS_Bindings_MSPush_Microsoft_AppCenter_Push_iOS_Bindings_MSPushNotification
+.no_dead_strip _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushNotification_get_ClassHandle
+.no_dead_strip _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushNotification__ctor
+.no_dead_strip _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushNotification__ctor_Foundation_NSObjectFlag
+.no_dead_strip _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushNotification__ctor_intptr
+.no_dead_strip _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushNotification_get_CustomData
+.no_dead_strip _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushNotification_get_Message
+.no_dead_strip _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushNotification_get_Title
+.no_dead_strip _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushNotification__cctor
+
+.text
+	.align 3
+method_addresses:
+_mono_aot_Microsoft_AppCenter_Push_iOS_Bindingsmethod_addresses:
+	.globl _mono_aot_Microsoft_AppCenter_Push_iOS_Bindingsmethod_addresses
+	.no_dead_strip method_addresses
+bl method_addresses
+bl method_addresses
+bl method_addresses
+bl method_addresses
+bl method_addresses
+bl method_addresses
+bl _Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging__cctor
+bl _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPush_get_ClassHandle
+bl _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPush__ctor
+bl _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPush__ctor_Foundation_NSObjectFlag
+bl _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPush__ctor_intptr
+bl _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPush_DidFailToRegisterForRemoteNotificationsWithError_Foundation_NSError
+bl _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPush_DidReceiveRemoteNotification_Foundation_NSDictionary
+bl _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPush_DidRegisterForRemoteNotificationsWithDeviceToken_Foundation_NSData
+bl _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPush_IsEnabled
+bl _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPush_SetDelegate_Microsoft_AppCenter_Push_iOS_Bindings_MSPushDelegate
+bl _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPush_SetEnabled_bool
+bl _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPush__cctor
+bl _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushDelegateWrapper__ctor_intptr_bool
+bl _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushDelegate__ctor
+bl _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushDelegate__ctor_Foundation_NSObjectFlag
+bl _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushDelegate__ctor_intptr
+bl _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushDelegate_ReceivedPushNotification_Microsoft_AppCenter_Push_iOS_Bindings_MSPush_Microsoft_AppCenter_Push_iOS_Bindings_MSPushNotification
+bl _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushNotification_get_ClassHandle
+bl _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushNotification__ctor
+bl _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushNotification__ctor_Foundation_NSObjectFlag
+bl _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushNotification__ctor_intptr
+bl _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushNotification_get_CustomData
+bl _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushNotification_get_Message
+bl _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushNotification_get_Title
+bl _Microsoft_AppCenter_Push_iOS_Bindings_Microsoft_AppCenter_Push_iOS_Bindings_MSPushNotification__cctor
+bl method_addresses
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0
+method_addresses_end:
+
+.section __TEXT, __const
+	.align 3
+unbox_trampolines:
+_mono_aot_Microsoft_AppCenter_Push_iOS_Bindingsunbox_trampolines:
+	.globl _mono_aot_Microsoft_AppCenter_Push_iOS_Bindingsunbox_trampolines
+unbox_trampolines_end:
+_mono_aot_Microsoft_AppCenter_Push_iOS_Bindingsunbox_trampolines_end:
+	.globl _mono_aot_Microsoft_AppCenter_Push_iOS_Bindingsunbox_trampolines_end
+
+	.long 0
+.text
+	.align 3
+unbox_trampoline_addresses:
+_mono_aot_Microsoft_AppCenter_Push_iOS_Bindingsunbox_trampoline_addresses:
+	.globl _mono_aot_Microsoft_AppCenter_Push_iOS_Bindingsunbox_trampoline_addresses
+
+	.long 0
+.section __TEXT, __const
+	.align 3
+unwind_info:
+_mono_aot_Microsoft_AppCenter_Push_iOS_Bindingsunwind_info:
+	.globl _mono_aot_Microsoft_AppCenter_Push_iOS_Bindingsunwind_info
+
+	.byte 39,12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153
+	.byte 7,154,6,68,155,5,156,4,39,12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,13,148,12,68,149,11,150
+	.byte 10,68,151,9,152,8,68,153,7,154,6,68,155,5,156,4,39,12,31,0,68,14,144,1,157,18,158,17,68,13,29,76
+	.byte 147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6,154,5,68,155,4,156,3
+
+.text
+	.align 4
+plt:
+_mono_aot_Microsoft_AppCenter_Push_iOS_Bindingsplt:
+	.globl _mono_aot_Microsoft_AppCenter_Push_iOS_Bindingsplt
+mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_plt:
+_p_1_plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSObject__ctor_Foundation_NSObjectFlag_llvm:
+	.globl _p_1_plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSObject__ctor_Foundation_NSObjectFlag_llvm
+.private_extern _p_1_plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSObject__ctor_Foundation_NSObjectFlag_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSObject__ctor_Foundation_NSObjectFlag
+plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSObject__ctor_Foundation_NSObjectFlag:
+_p_1:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #208]
+br x16
+.word 487
+_p_2_plt_Microsoft_AppCenter_Push_iOS_Bindings_System_Reflection_Assembly_op_Equality_System_Reflection_Assembly_System_Reflection_Assembly_llvm:
+	.globl _p_2_plt_Microsoft_AppCenter_Push_iOS_Bindings_System_Reflection_Assembly_op_Equality_System_Reflection_Assembly_System_Reflection_Assembly_llvm
+.private_extern _p_2_plt_Microsoft_AppCenter_Push_iOS_Bindings_System_Reflection_Assembly_op_Equality_System_Reflection_Assembly_System_Reflection_Assembly_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings_System_Reflection_Assembly_op_Equality_System_Reflection_Assembly_System_Reflection_Assembly
+plt_Microsoft_AppCenter_Push_iOS_Bindings_System_Reflection_Assembly_op_Equality_System_Reflection_Assembly_System_Reflection_Assembly:
+_p_2:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #216]
+br x16
+.word 492
+_p_3_plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSObject_set_IsDirectBinding_bool_llvm:
+	.globl _p_3_plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSObject_set_IsDirectBinding_bool_llvm
+.private_extern _p_3_plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSObject_set_IsDirectBinding_bool_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSObject_set_IsDirectBinding_bool
+plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSObject_set_IsDirectBinding_bool:
+_p_3:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #224]
+br x16
+.word 497
+_p_4_plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_llvm:
+	.globl _p_4_plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_llvm
+.private_extern _p_4_plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
+plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr:
+_p_4:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #232]
+br x16
+.word 502
+_p_5_plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSObject_InitializeHandle_intptr_string_llvm:
+	.globl _p_5_plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSObject_InitializeHandle_intptr_string_llvm
+.private_extern _p_5_plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSObject_InitializeHandle_intptr_string_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSObject_InitializeHandle_intptr_string
+plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSObject_InitializeHandle_intptr_string:
+_p_5:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #240]
+br x16
+.word 504
+_p_6_plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSObject__ctor_intptr_llvm:
+	.globl _p_6_plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSObject__ctor_intptr_llvm
+.private_extern _p_6_plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSObject__ctor_intptr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSObject__ctor_intptr
+plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSObject__ctor_intptr:
+_p_6:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #248]
+br x16
+.word 509
+_p_7_plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_llvm:
+	.globl _p_7_plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_llvm
+.private_extern _p_7_plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
+plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr:
+_p_7:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #256]
+br x16
+.word 514
+_p_8_plt_Microsoft_AppCenter_Push_iOS_Bindings__jit_icall_mono_helper_ldstr_llvm:
+	.globl _p_8_plt_Microsoft_AppCenter_Push_iOS_Bindings__jit_icall_mono_helper_ldstr_llvm
+.private_extern _p_8_plt_Microsoft_AppCenter_Push_iOS_Bindings__jit_icall_mono_helper_ldstr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings__jit_icall_mono_helper_ldstr
+plt_Microsoft_AppCenter_Push_iOS_Bindings__jit_icall_mono_helper_ldstr:
+_p_8:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #264]
+br x16
+.word 516
+_p_9_plt_Microsoft_AppCenter_Push_iOS_Bindings__jit_icall_mono_create_corlib_exception_1_llvm:
+	.globl _p_9_plt_Microsoft_AppCenter_Push_iOS_Bindings__jit_icall_mono_create_corlib_exception_1_llvm
+.private_extern _p_9_plt_Microsoft_AppCenter_Push_iOS_Bindings__jit_icall_mono_create_corlib_exception_1_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings__jit_icall_mono_create_corlib_exception_1
+plt_Microsoft_AppCenter_Push_iOS_Bindings__jit_icall_mono_create_corlib_exception_1:
+_p_9:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #272]
+br x16
+.word 536
+_p_10_plt_Microsoft_AppCenter_Push_iOS_Bindings__jit_icall_mono_arch_throw_exception_llvm:
+	.globl _p_10_plt_Microsoft_AppCenter_Push_iOS_Bindings__jit_icall_mono_arch_throw_exception_llvm
+.private_extern _p_10_plt_Microsoft_AppCenter_Push_iOS_Bindings__jit_icall_mono_arch_throw_exception_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings__jit_icall_mono_arch_throw_exception
+plt_Microsoft_AppCenter_Push_iOS_Bindings__jit_icall_mono_arch_throw_exception:
+_p_10:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #280]
+br x16
+.word 569
+_p_11_plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0_llvm:
+	.globl _p_11_plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0_llvm
+.private_extern _p_11_plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0
+plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0:
+_p_11:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #288]
+br x16
+.word 597
+_p_12_plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0_llvm:
+	.globl _p_12_plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0_llvm
+.private_extern _p_12_plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0:
+_p_12:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #296]
+br x16
+.word 599
+_p_13_plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool_llvm:
+	.globl _p_13_plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool_llvm
+.private_extern _p_13_plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool:
+_p_13:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #304]
+br x16
+.word 601
+_p_14_plt_Microsoft_AppCenter_Push_iOS_Bindings_ObjCRuntime_Class_GetHandle_string_llvm:
+	.globl _p_14_plt_Microsoft_AppCenter_Push_iOS_Bindings_ObjCRuntime_Class_GetHandle_string_llvm
+.private_extern _p_14_plt_Microsoft_AppCenter_Push_iOS_Bindings_ObjCRuntime_Class_GetHandle_string_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings_ObjCRuntime_Class_GetHandle_string
+plt_Microsoft_AppCenter_Push_iOS_Bindings_ObjCRuntime_Class_GetHandle_string:
+_p_14:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #312]
+br x16
+.word 603
+_p_15_plt_Microsoft_AppCenter_Push_iOS_Bindings_ObjCRuntime_BaseWrapper__ctor_intptr_bool_llvm:
+	.globl _p_15_plt_Microsoft_AppCenter_Push_iOS_Bindings_ObjCRuntime_BaseWrapper__ctor_intptr_bool_llvm
+.private_extern _p_15_plt_Microsoft_AppCenter_Push_iOS_Bindings_ObjCRuntime_BaseWrapper__ctor_intptr_bool_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings_ObjCRuntime_BaseWrapper__ctor_intptr_bool
+plt_Microsoft_AppCenter_Push_iOS_Bindings_ObjCRuntime_BaseWrapper__ctor_intptr_bool:
+_p_15:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #320]
+br x16
+.word 608
+_p_16_plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSObject_get_SuperHandle_llvm:
+	.globl _p_16_plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSObject_get_SuperHandle_llvm
+.private_extern _p_16_plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSObject_get_SuperHandle_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSObject_get_SuperHandle
+plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSObject_get_SuperHandle:
+_p_16:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #328]
+br x16
+.word 613
+_p_17_plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_llvm:
+	.globl _p_17_plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_llvm
+.private_extern _p_17_plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
+plt_Microsoft_AppCenter_Push_iOS_Bindings_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr:
+_p_17:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #336]
+br x16
+.word 618
+_p_18_plt_Microsoft_AppCenter_Push_iOS_Bindings_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm:
+	.globl _p_18_plt_Microsoft_AppCenter_Push_iOS_Bindings_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
+.private_extern _p_18_plt_Microsoft_AppCenter_Push_iOS_Bindings_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings_wrapper_alloc_object_AllocSmall_intptr_intptr
+plt_Microsoft_AppCenter_Push_iOS_Bindings_wrapper_alloc_object_AllocSmall_intptr_intptr:
+_p_18:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #344]
+br x16
+.word 620
+_p_19_plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_You_Should_Not_Call_base_In_This_Method__ctor_llvm:
+	.globl _p_19_plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_You_Should_Not_Call_base_In_This_Method__ctor_llvm
+.private_extern _p_19_plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_You_Should_Not_Call_base_In_This_Method__ctor_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_You_Should_Not_Call_base_In_This_Method__ctor
+plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_You_Should_Not_Call_base_In_This_Method__ctor:
+_p_19:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #352]
+br x16
+.word 628
+_p_20_plt_Microsoft_AppCenter_Push_iOS_Bindings_ObjCRuntime_Runtime_GetNSObject_Foundation_NSDictionary_intptr_llvm:
+	.globl _p_20_plt_Microsoft_AppCenter_Push_iOS_Bindings_ObjCRuntime_Runtime_GetNSObject_Foundation_NSDictionary_intptr_llvm
+.private_extern _p_20_plt_Microsoft_AppCenter_Push_iOS_Bindings_ObjCRuntime_Runtime_GetNSObject_Foundation_NSDictionary_intptr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings_ObjCRuntime_Runtime_GetNSObject_Foundation_NSDictionary_intptr
+plt_Microsoft_AppCenter_Push_iOS_Bindings_ObjCRuntime_Runtime_GetNSObject_Foundation_NSDictionary_intptr:
+_p_20:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #360]
+br x16
+.word 633
+_p_21_plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSString_FromHandle_intptr_llvm:
+	.globl _p_21_plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSString_FromHandle_intptr_llvm
+.private_extern _p_21_plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSString_FromHandle_intptr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSString_FromHandle_intptr
+plt_Microsoft_AppCenter_Push_iOS_Bindings_Foundation_NSString_FromHandle_intptr:
+_p_21:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #368]
+br x16
+.word 645
+_p_22_plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_llvm:
+	.globl _p_22_plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_llvm
+.private_extern _p_22_plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
+plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr:
+_p_22:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #376]
+br x16
+.word 650
+_p_23_plt_Microsoft_AppCenter_Push_iOS_Bindings__jit_icall_mono_thread_interruption_checkpoint_llvm:
+	.globl _p_23_plt_Microsoft_AppCenter_Push_iOS_Bindings__jit_icall_mono_thread_interruption_checkpoint_llvm
+.private_extern _p_23_plt_Microsoft_AppCenter_Push_iOS_Bindings__jit_icall_mono_thread_interruption_checkpoint_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings__jit_icall_mono_thread_interruption_checkpoint
+plt_Microsoft_AppCenter_Push_iOS_Bindings__jit_icall_mono_thread_interruption_checkpoint:
+_p_23:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #384]
+br x16
+.word 652
+_p_24_plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_llvm:
+	.globl _p_24_plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_llvm
+.private_extern _p_24_plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
+plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr:
+_p_24:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #392]
+br x16
+.word 690
+_p_25_plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_llvm:
+	.globl _p_25_plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_llvm
+.private_extern _p_25_plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
+plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr:
+_p_25:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #400]
+br x16
+.word 692
+_p_26_plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool_llvm:
+	.globl _p_26_plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool_llvm
+.private_extern _p_26_plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool:
+_p_26:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #408]
+br x16
+.word 694
+_p_27_plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0_llvm:
+	.globl _p_27_plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0_llvm
+.private_extern _p_27_plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0:
+_p_27:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #416]
+br x16
+.word 696
+_p_28_plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0_llvm:
+	.globl _p_28_plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0_llvm
+.private_extern _p_28_plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0_llvm
+	.no_dead_strip plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0
+plt_Microsoft_AppCenter_Push_iOS_Bindings__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0:
+_p_28:
+adrp x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #424]
+br x16
+.word 698
+plt_end:
+_mono_aot_Microsoft_AppCenter_Push_iOS_Bindingsplt_end:
+	.globl _mono_aot_Microsoft_AppCenter_Push_iOS_Bindingsplt_end
+.section __DATA, __bss
+	.align 3
+jit_got:
+_mono_aot_Microsoft_AppCenter_Push_iOS_Bindingsjit_got:
+	.globl _mono_aot_Microsoft_AppCenter_Push_iOS_Bindingsjit_got
+.lcomm mono_aot_Microsoft_AppCenter_Push_iOS_Bindings_got, 432
+got_end:
+.section __TEXT, __const
+	.align 3
+Lglobals_hash:
+
+	.short 11, 0, 0, 0, 0, 0, 0, 0
+	.short 0, 0, 0, 0, 0, 0, 0, 0
+	.short 0, 0, 0, 0, 0, 0, 0
+.data
+	.align 3
+globals:
+_mono_aot_Microsoft_AppCenter_Push_iOS_Bindingsglobals:
+	.globl _mono_aot_Microsoft_AppCenter_Push_iOS_Bindingsglobals
+	.align 3
+	.quad Lglobals_hash
+
+	.long 0,0
+.section __DWARF, __debug_info,regular,debug
+LTDIE_2:
+
+	.byte 17
+	.asciz "System_Object"
+
+	.byte 16,7
+	.asciz "System_Object"
+
+LDIFF_SYM3=LTDIE_2 - Ldebug_info_start
+	.long LDIFF_SYM3
+LTDIE_2_POINTER:
+
+	.byte 13
+LDIFF_SYM4=LTDIE_2 - Ldebug_info_start
+	.long LDIFF_SYM4
+LTDIE_2_REFERENCE:
+
+	.byte 14
+LDIFF_SYM5=LTDIE_2 - Ldebug_info_start
+	.long LDIFF_SYM5
+LTDIE_1:
+
+	.byte 5
+	.asciz "System_ValueType"
+
+	.byte 16,16
+LDIFF_SYM6=LTDIE_2 - Ldebug_info_start
+	.long LDIFF_SYM6
+	.byte 2,35,0,0,7
+	.asciz "System_ValueType"
+
+LDIFF_SYM7=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM7
+LTDIE_1_POINTER:
+
+	.byte 13
+LDIFF_SYM8=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM8
+LTDIE_1_REFERENCE:
+
+	.byte 14
+LDIFF_SYM9=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM9
+LTDIE_0:
+
+	.byte 5
+	.asciz "System_Boolean"
+
+	.byte 17,16
+LDIFF_SYM10=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM10
+	.byte 2,35,0,6
+	.asciz "m_value"
+
+LDIFF_SYM11=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM11
+	.byte 2,35,16,0,7
+	.asciz "System_Boolean"
+
+LDIFF_SYM12=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM12
+LTDIE_0_POINTER:
+
+	.byte 13
+LDIFF_SYM13=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM13
+LTDIE_0_REFERENCE:
+
+	.byte 14
+LDIFF_SYM14=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM14
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
+	.quad Lme_20
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM15=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM15
+	.byte 1,105,3
+	.asciz "param1"
+
+LDIFF_SYM16=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM16
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM17=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM17
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM18=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM18
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM19=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM19
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM20=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM20
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM21=Lfde0_end - Lfde0_start
+	.long LDIFF_SYM21
+Lfde0_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
+
+LDIFF_SYM22=Lme_20 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
+	.long LDIFF_SYM22
+	.long 0
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
+	.byte 154,6,68,155,5,156,4
+	.align 3
+Lfde0_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSendSuper"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
+	.quad Lme_21
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM23=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM23
+	.byte 1,105,3
+	.asciz "param1"
+
+LDIFF_SYM24=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM24
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM25=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM25
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM26=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM26
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM27=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM27
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM28=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM28
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM29=Lfde1_end - Lfde1_start
+	.long LDIFF_SYM29
+Lfde1_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
+
+LDIFF_SYM30=Lme_21 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
+	.long LDIFF_SYM30
+	.long 0
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
+	.byte 154,6,68,155,5,156,4
+	.align 3
+Lfde1_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
+	.quad Lme_22
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM31=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM31
+	.byte 2,141,16,3
+	.asciz "param1"
+
+LDIFF_SYM32=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM32
+	.byte 2,141,24,3
+	.asciz "param2"
+
+LDIFF_SYM33=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM33
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM34=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM34
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM35=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM35
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM36=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM36
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM37=Lfde2_end - Lfde2_start
+	.long LDIFF_SYM37
+Lfde2_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
+
+LDIFF_SYM38=Lme_22 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
+	.long LDIFF_SYM38
+	.long 0
+	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
+	.byte 154,6,68,155,5,156,4
+	.align 3
+Lfde2_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_3:
+
+	.byte 5
+	.asciz "System_Int32"
+
+	.byte 20,16
+LDIFF_SYM39=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM39
+	.byte 2,35,0,6
+	.asciz "m_value"
+
+LDIFF_SYM40=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM40
+	.byte 2,35,16,0,7
+	.asciz "System_Int32"
+
+LDIFF_SYM41=LTDIE_3 - Ldebug_info_start
+	.long LDIFF_SYM41
+LTDIE_3_POINTER:
+
+	.byte 13
+LDIFF_SYM42=LTDIE_3 - Ldebug_info_start
+	.long LDIFF_SYM42
+LTDIE_3_REFERENCE:
+
+	.byte 14
+LDIFF_SYM43=LTDIE_3 - Ldebug_info_start
+	.long LDIFF_SYM43
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+	.quad Lme_23
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM44=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM44
+	.byte 2,141,16,3
+	.asciz "param1"
+
+LDIFF_SYM45=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM45
+	.byte 2,141,24,3
+	.asciz "param2"
+
+LDIFF_SYM46=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM46
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM47=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM47
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM48=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM48
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM49=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM49
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM50=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM50
+	.byte 1,103,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM51=Lfde3_end - Lfde3_start
+	.long LDIFF_SYM51
+Lfde3_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+
+LDIFF_SYM52=Lme_23 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+	.long LDIFF_SYM52
+	.long 0
+	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
+	.byte 154,6,68,155,5,156,4
+	.align 3
+Lfde3_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+	.quad Lme_24
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM53=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM53
+	.byte 1,105,3
+	.asciz "param1"
+
+LDIFF_SYM54=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM54
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM55=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM55
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM56=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM56
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM57=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM57
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM58=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM58
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM59=Lfde4_end - Lfde4_start
+	.long LDIFF_SYM59
+Lfde4_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+
+LDIFF_SYM60=Lme_24 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+	.long LDIFF_SYM60
+	.long 0
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
+	.byte 154,6,68,155,5,156,4
+	.align 3
+Lfde4_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0
+	.quad Lme_25
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM61=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM61
+	.byte 2,141,16,3
+	.asciz "param1"
+
+LDIFF_SYM62=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM62
+	.byte 1,105,3
+	.asciz "param2"
+
+LDIFF_SYM63=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM63
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM64=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM64
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM65=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM65
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM66=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM66
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM67=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM67
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM68=Lfde5_end - Lfde5_start
+	.long LDIFF_SYM68
+Lfde5_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0
+
+LDIFF_SYM69=Lme_25 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0
+	.long LDIFF_SYM69
+	.long 0
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
+	.byte 154,5,68,155,4,156,3
+	.align 3
+Lfde5_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 0
+Ldebug_info_end:
+.text
+	.align 3
+mem_end:

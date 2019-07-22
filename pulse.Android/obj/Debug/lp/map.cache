@@ -6,6 +6,10 @@ Microsoft.AppCenter
 Microsoft.AppCenter.Push.Android.Bindings
 Microsoft.AppCenter.Push
 Newtonsoft.Json
+Plugin.CurrentActivity
+Plugin.InAppBilling.Abstractions
+Plugin.InAppBilling
+Plugin.InAppBilling.VendingLibrary
 Plugin.LocalNotifications.Abstractions
 Plugin.LocalNotifications
 pulse
@@ -61,7 +65,8 @@ Xamarin.Forms.Xaml
 Xamarin.GooglePlayServices.Basement
 Xamarin.GooglePlayServices.Tasks
 netstandard
-Plugin.CurrentActivity
-Plugin.InAppBilling.Abstractions
-Plugin.InAppBilling
-Plugin.InAppBilling.VendingLibrary
+Microsoft.AppCenter.Analytics.Android.Bindings
+Microsoft.AppCenter.Analytics
+Microsoft.AppCenter.Crashes.Android.Bindings
+Microsoft.AppCenter.Crashes
+Xamarin.Forms.PancakeView

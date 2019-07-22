@@ -1,13 +1,16 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage Padding="{OnPlatform iOS={StaticResource PageMargin}}"
- xmlns="http://xamarin.com/schemas/2014/forms" BackgroundColor="White" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="pulse.PulsePage">
+<ContentPage 
+    BackgroundColor="Black"
+ Padding="{OnPlatform iOS={StaticResource PageMarginiOS}}"
+ xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="pulse.PulsePage">
     <ContentPage.Content>
         <AbsoluteLayout Margin="0,10,0,10">
+            
             <ScrollView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
                 <StackLayout Margin="0,30,0,0">
                     <Image Source="pulse_logo" HeightRequest="300"/>
                     
-                    <Label Margin="10" x:Name="pulseDesc" />
+                    <Label TextColor="White" Margin="10" x:Name="pulseDesc" />
                     
                     <Grid  Margin="10">
                         <Grid.ColumnDefinitions>
@@ -23,8 +26,8 @@
                 </StackLayout>
             </ScrollView>
             
-            <BoxView Color="White" AbsoluteLayout.LayoutFlags="WidthProportional" AbsoluteLayout.LayoutBounds="0,0,1,35" />
-            <ImageButton BackgroundColor="Transparent" Clicked="Handle_Clicked" Source="back_button" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds=".05,0,30,30" />
+            <BoxView Color="Black" AbsoluteLayout.LayoutFlags="WidthProportional" AbsoluteLayout.LayoutBounds="0,0,1,35" />
+            <ImageButton BackgroundColor="Transparent" Clicked="Handle_Clicked" Source="back_button_white" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds=".05,0,30,30" />
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

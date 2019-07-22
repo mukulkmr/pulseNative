@@ -1,15 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Net.Http;
-using System.Net.Mail;
+using System.Reflection;
 using Microsoft.AppCenter;
+using Newtonsoft.Json;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+using Xamarin.Essentials;
+using System.Runtime.Serialization;
+using System.Net.Mail;
 
 namespace pulse
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
+    [Serializable]
+    public class User
+    {
+        [DataMember]
+        public string guid { get; set; }
+        [DataMember]
+        public string name { get; set; }
+        [DataMember]
+        public string college { get; set; }
+        [DataMember]
+        public string number { get; set; }
+        [DataMember]
+        public string email { get; set; }
+        [DataMember]
+        public int medical_student { get; set; }
+        [DataMember]
+        public bool delcard { get; set; }
+        [DataMember]
+        public bool accomodations { get; set; }
+    }
+
     public partial class LoginPage : ContentPage
     {
         IList<string> States;
@@ -22,33 +44,33 @@ namespace pulse
             States = new List<string>();
             Colleges = new Dictionary<int, string[]>();
 
-            States.Add("Andaman Nicobar Islands");
-            States.Add("Andhra Pradesh");
-            States.Add("Assam");
-            States.Add("Bihar");
-            States.Add("Chandigarh");
-            States.Add("Dadra and Nagar Haveli");
-            States.Add("Delhi");
-            States.Add("Goa");
-            States.Add("Gujrat");
-            States.Add("Haryana");
-            States.Add("Himachal Pradesh");
-            States.Add("Jammu & Kashmir");
-            States.Add("Jharkhand");
-            States.Add("Karnataka");
-            States.Add("Kerala");
-            States.Add("Madhya Pradesh");
-            States.Add("Maharashtra");
-            States.Add("Odissa");
-            States.Add("Pondicherry");
-            States.Add("Punjab");
-            States.Add("Rajasthan");
-            States.Add("Sikkim");
-            States.Add("Tamil Nadu");
-            States.Add("Telangana");
-            States.Add("Tripura");
-            States.Add("Uttarakhand");
-            States.Add("Uttar Pradesh");
+            States.Add("Andaman Nicobar Islands"); // 0
+            States.Add("Andhra Pradesh"); // 1
+            States.Add("Assam"); // 2
+            States.Add("Bihar"); // 3
+            States.Add("Chandigarh"); // 4
+            States.Add("Dadra and Nagar Haveli"); //5
+            States.Add("Delhi"); // 6
+            States.Add("Goa"); // 7
+            States.Add("Gujrat"); // 8
+            States.Add("Haryana"); // 9
+            States.Add("Himachal Pradesh"); // 10
+            States.Add("Jammu & Kashmir"); // 11
+            States.Add("Jharkhand"); // 12
+            States.Add("Karnataka"); // 13
+            States.Add("Kerala"); // 14
+            States.Add("Madhya Pradesh"); // 15
+            States.Add("Maharashtra"); // 16
+            States.Add("Odissa"); // 17
+            States.Add("Pondicherry"); // 18
+            States.Add("Punjab"); // 19
+            States.Add("Rajasthan"); // 20
+            States.Add("Sikkim"); // 21
+            States.Add("Tamil Nadu"); // 22
+            States.Add("Telangana"); // 23
+            States.Add("Tripura"); // 24
+            States.Add("Uttarakhand"); // 25
+            States.Add("Uttar Pradesh"); // 26
 
             Colleges.Add(0, new string[] { "Not MCI registered College", "Andaman & Nicobar Islands Institute of Medical Sciences, Port Blair" });
             Colleges.Add(1, new string[]{   "Not MCI registered College",
@@ -496,17 +518,17 @@ namespace pulse
                                             "Shadan Institute of Medical Sciences,Research Centre and Teaching Hospital, Peerancheru",
                                             "Surabhi Institute of Medical Sciences, Siddipet, Telangana",
                                             "S V S Medical College, Mehboobnagar"});
-            Colleges.Add(25, new string[] { "Not MCI registered College",
+            Colleges.Add(24, new string[] { "Not MCI registered College",
                                             "Agartala Government Medical College,Agartala",
                                             "Tripura Medical College and Dr. B R A M Teaching Hospital, Agartala"});
-            Colleges.Add(26, new string[] { "Not MCI registered College",
+            Colleges.Add(25, new string[] { "Not MCI registered College",
                                             "All India Institute of Medical Sciences, Rishikesh",
                                             "Doon Medical College, Dehradun, Uttarakhand",
                                             "Government Medical College (Prev.Uttarakhand Forest Hospital Trust Med.Col.), Haldwani",
                                             "Himalayan Institute of Medical Sciences, Dehradun",
                                             "Shri Guru Ram Rai Institute of Medical & Health Sciences, Dehradun",
                                             "Veer Chandra Singh Garhwali Govt. Medical Sc. & Research Instt, Srinagar, Pauri Garhwal"});
-            Colleges.Add(27, new string[] { "Not MCI registered College",
+            Colleges.Add(26, new string[] { "Not MCI registered College",
                                             "BRD Medical College, Gorakhpur",
                                             "Career Instt. Of Medical Sciences & Hospital, Lucknow",
                                             "Dr. Ram Manohar Lohia Institute of Medical Sciences,Lucknow",
@@ -604,12 +626,15 @@ namespace pulse
 
         async void Login(object sender, EventArgs e)
         {
+            var current = Connectivity.NetworkAccess;
+
+            if (current != NetworkAccess.Internet)
+            {
+                await DisplayAlert("Alert", "Cannot connect to the internet", "OK");
+                return;
+            }
 
             var college = CollegePicker.SelectedItem;
-            var id = await AppCenter.GetInstallIdAsync();
-
-            if (inviteSwitch.IsToggled)
-                college = "Students' Union Invite";
 
             if (userName.Text == null || userEmail.Text == null || userMobile.Text == null || college == null)
             {
@@ -617,47 +642,142 @@ namespace pulse
                 return;
             }
 
-            if (!MedicalStudent.IsToggled)
-                college = CollegePickerOther.Text;
-
             Registerbutton.IsVisible = false;
             Loading.IsVisible = true;
 
-            Application.Current.Properties.Add("Name", userName.Text);
-            Application.Current.Properties.Add("Email", userEmail.Text);
-            Application.Current.Properties.Add("Mobile", userMobile.Text);
-            Application.Current.Properties.Add("Id", id.ToString());
-            Application.Current.Properties.Add("MedicalStudent", MedicalStudent.IsToggled);
-            Application.Current.Properties.Add("DelCard", false);
-            Application.Current.Properties.Add("Accomodations", false);
-            Application.Current.Properties.Add("College", college);
+            string id = Guid.NewGuid().ToString();
 
-            AppCenter.SetUserId(id.ToString());
 
-            await Application.Current.SavePropertiesAsync();
+            if (!MedicalStudent.IsToggled)
+                college = CollegePickerOther.Text;
+
+            try
+            {
+                Preferences.Set("Name", userName.Text);
+                Preferences.Set("Email", userEmail.Text);
+                Preferences.Set("Mobile", userMobile.Text);
+                Preferences.Set("Id", id);
+                Preferences.Set("MedicalStudent", MedicalStudent.IsToggled);
+                Preferences.Set("DelCard", false);
+                Preferences.Set("Accomodations", false);
+                Preferences.Set("College", college.ToString());
+
+                AppCenter.SetUserId(id);
+
+                HttpClient httpClient = new HttpClient();
+
+                var formContent = new FormUrlEncodedContent(new[]
+                {
+                    new KeyValuePair<string, string>("guid", id),
+                    new KeyValuePair<string, string>("name", userName.Text),
+                    new KeyValuePair<string, string>("email", userEmail.Text),
+                    new KeyValuePair<string, string>("college", (string)college),
+                    new KeyValuePair<string, string>("number", userMobile.Text),
+                    new KeyValuePair<string, string>("medical_student", MedicalStudent.IsToggled.ToString())
+                });
+
+                string uri = "https://app.aiimspulse.website/scripts/adduser.php";
+                await httpClient.PostAsync(uri, formContent);
+
+                MainPageButton.IsVisible = true;
+                await Navigation.PushAsync(new MainPage());
+
+                /*
+                try
+                {
+                    MailMessage mail = new MailMessage();
+                    SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+
+                    mail.From = new MailAddress("aiims2019su@gmail.com");
+                    mail.To.Add(userEmail.Text);
+                    mail.Subject = "Registration Sucessfull";
+                    mail.IsBodyHtml = true;
+                    mail.Body = $"<p>Registration Sucessfull your guid is {id}</p> " +
+                                $"<center><img src='https://api.qrserver.com/v1/create-qr-code/?size=300x300&data={id}' /></center>";
+
+                    SmtpServer.Port = 587;
+                    SmtpServer.Credentials = new System.Net.NetworkCredential("aiims2019su", "zoXxis-rexjy6-daqkez");
+                    SmtpServer.EnableSsl = true;
+
+                    SmtpServer.Send(mail);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex);
+                }*/
+            }
+            catch (Exception ex)
+            {
+                Registerbutton.IsVisible = true;
+                Console.WriteLine(ex);
+                await DisplayAlert("Alert", "Cannot connect to the internet", "OK");
+            }
+
+            Loading.IsVisible = false;
+        }
+
+        async void LoginExisting(object sender, EventArgs e)
+        {
+            var current = Connectivity.NetworkAccess;
+
+            if (current != NetworkAccess.Internet)
+            {
+                await DisplayAlert("Alert", "Cannot connect to the internet", "OK");
+                return;
+            }
+
+            Loading.IsVisible = true;
+            LoginButton.IsVisible = false;
+
+            if (userGuid == null)
+            {
+                await DisplayAlert("Alert", "Please Enter your Credentials", "OK");
+                return;
+            }
 
 
             HttpClient httpClient = new HttpClient();
+            string uri = $"https://app.aiimspulse.website/scripts/data/userdetails.php?guid={userGuid.Text}";
 
-            var formContent = new FormUrlEncodedContent(new[]
+            try
             {
-                new KeyValuePair<string, string>("guid", id.ToString()),
-                new KeyValuePair<string, string>("name", userName.Text),
-                new KeyValuePair<string, string>("email", userEmail.Text),
-                new KeyValuePair<string, string>("college", (string)college),
-                new KeyValuePair<string, string>("number", userMobile.Text)
-            });
+                HttpResponseMessage responseMessage = await httpClient.GetAsync(uri);
 
-            string uri = "https://app.aiimspulse.website/scripts/adduser.php";
+                if (responseMessage.IsSuccessStatusCode)
+                {
+                    string json = await responseMessage.Content.ReadAsStringAsync();
+                    var user = JsonConvert.DeserializeObject<User>(json);
 
-            await httpClient.PostAsync(uri, formContent);
-            await DisplayAlert("Alert", $"Logged in with {userName.Text}\n{(string)college}" , "OK");
+                    Preferences.Set("Name", user.name);
+                    Preferences.Set("Email", user.email);
+                    Preferences.Set("Mobile", user.number);
+                    Preferences.Set("Id", user.guid);
+                    Preferences.Set("MedicalStudent", user.medical_student == 1);
+                    Preferences.Set("DelCard", user.delcard);
+                    Preferences.Set("Accomodations", user.accomodations);
+
+                    Preferences.Set("College", user.college);
+
+                    AppCenter.SetUserId(user.guid);
+
+                    await Navigation.PushAsync(new MainPage());
+                    MainPageButton.IsVisible = true;
+                }
+                else
+                {
+                    LoginButton.IsVisible = true;
+                    await DisplayAlert("Error", "No User Found", "Retry");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                LoginButton.IsVisible = true;
+                Console.WriteLine(ex);
+                await DisplayAlert("Error", "No User Found", "Retry");
+            }
 
             Loading.IsVisible = false;
-            MainPageButton.IsVisible = true;
-
-            Debug.Write(CollegePicker.SelectedIndex);
-            await Navigation.PushAsync(new MainPage());
         }
 
         void Handle_Toggled(object sender, ToggledEventArgs e)
@@ -676,6 +796,55 @@ namespace pulse
             CollegePicker.IsVisible = e.Value;
 
             CollegePickerOther.IsVisible = !e.Value;
+        }
+
+        void Handle_Toggled_1(object sender, ToggledEventArgs e)
+        {
+            RegistrationCard.IsVisible = e.Value;
+            LoginCard.IsVisible = !e.Value;
+        }
+
+        void Handle_Tapped(object sender, EventArgs e)
+        {
+            var text = ResourceLoader.GetEmbeddedResourceString(Assembly.GetAssembly(typeof(ResourceLoader)), "RegistrationsInfo.txt");
+            DisplayAlert("Alert", text, "OK");
+        }
+
+        void SwitchTab(object sender, EventArgs e)
+        {
+            TappedEventArgs OnTapped = e as TappedEventArgs;
+            string parameter = OnTapped.Parameter as string;
+
+            switch (parameter)
+            {
+                case "New":
+                    RegistrationCard.IsVisible = true;
+                    LoginCard.IsVisible = false;
+
+                    Tab1.BackgroundColor = (Color)Application.Current.Resources["AccentColor"];
+                    Tab1Text.TextColor = Color.White;
+
+                    Tab2.BackgroundColor = Color.Transparent;
+                    Tab2Text.TextColor = Color.FromHex("#666");
+                    break;
+
+                case "Existing":
+                    RegistrationCard.IsVisible = false;
+                    LoginCard.IsVisible = true;
+
+                    Tab2.BackgroundColor = (Color)Application.Current.Resources["AccentColor"];
+                    Tab2Text.TextColor = Color.White;
+
+                    Tab1.BackgroundColor = Color.Transparent;
+                    Tab1Text.TextColor = Color.FromHex("#666");
+
+                    break;
+            }
+        }
+
+        protected override bool OnBackButtonPressed()
+        {
+            return true;
         }
     }
 }

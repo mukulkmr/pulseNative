@@ -14,7 +14,7 @@
           "lib/netstandard2.0/Lottie.Forms.dll": {}
         }
       },
-      "Microsoft.AppCenter/2.0.0": {
+      "Microsoft.AppCenter/2.1.1": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/Microsoft.AppCenter.dll": {}
@@ -23,10 +23,48 @@
           "lib/netstandard1.0/Microsoft.AppCenter.dll": {}
         }
       },
-      "Microsoft.AppCenter.Push/2.0.0": {
+      "Microsoft.AppCenter.Analytics/2.1.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AppCenter": "2.0.0"
+          "Microsoft.AppCenter": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard1.0/Microsoft.AppCenter.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Microsoft.AppCenter.Analytics.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Crashes/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard1.0/Microsoft.AppCenter.Crashes.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Microsoft.AppCenter.Crashes.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win10-arm/native/WatsonRegistrationUtility.dll": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-x64/native/WatsonRegistrationUtility.dll": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x86/native/WatsonRegistrationUtility.dll": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          }
+        }
+      },
+      "Microsoft.AppCenter.Push/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "2.1.1"
         },
         "compile": {
           "lib/netstandard1.0/Microsoft.AppCenter.Push.dll": {}
@@ -68,17 +106,6 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.InAppBilling/2.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard1.0/Plugin.InAppBilling.Abstractions.dll": {},
-          "lib/netstandard1.0/Plugin.InAppBilling.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/Plugin.InAppBilling.Abstractions.dll": {},
-          "lib/netstandard1.0/Plugin.InAppBilling.dll": {}
-        }
-      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -99,7 +126,7 @@
           "lib/netstandard1.0/Plugin.LocalNotifications.dll": {}
         }
       },
-      "Xamarin.Essentials/1.1.0": {
+      "Xamarin.Essentials/1.2.0": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -111,7 +138,7 @@
           "lib/netstandard2.0/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.0.0.425677": {
+      "Xamarin.Forms/4.1.0.581479": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
@@ -127,6 +154,18 @@
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
         }
+      },
+      "Xamarin.Forms.PancakeView/1.0.21": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.5.0.129452"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll": {}
+        }
       }
     }
   },
@@ -141,6 +180,7 @@
         "com.airbnb.xamarin.forms.lottie.3.0.0.nupkg.sha512",
         "com.airbnb.xamarin.forms.lottie.nuspec",
         "lib/monoandroid90/Lottie.Forms.dll",
+        "lib/monoandroid90/Lottie.Forms.dll.mdb",
         "lib/monoandroid90/Lottie.Forms.pdb",
         "lib/monoandroid90/Lottie.Forms.xml",
         "lib/netstandard2.0/Lottie.Forms.dll",
@@ -159,10 +199,10 @@
         "readme.txt"
       ]
     },
-    "Microsoft.AppCenter/2.0.0": {
-      "sha512": "aotwBhk12zF2g4jz6Ruouqe0fEM2EJMzxFVvNK7XQkGZFpAjmHohlGkBBiA2hYyhVSylsxVHTkCiPfwf8Z/abg==",
+    "Microsoft.AppCenter/2.1.1": {
+      "sha512": "gvhXGfZCwXtUXT5SZaYeqR6eGgndMKOCpgVPRc0KQtOw7aI4Rx/sOBwWWDvFcBzP4dXo9FBMH9PJdyub5X79Og==",
       "type": "package",
-      "path": "microsoft.appcenter/2.0.0",
+      "path": "microsoft.appcenter/2.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -178,14 +218,73 @@
         "lib/portable-net45+win8+wpa81+wp8/Microsoft.AppCenter.xml",
         "lib/uap10.0/Microsoft.AppCenter.dll",
         "lib/uap10.0/Microsoft.AppCenter.xml",
-        "microsoft.appcenter.2.0.0.nupkg.sha512",
+        "microsoft.appcenter.2.1.1.nupkg.sha512",
         "microsoft.appcenter.nuspec"
       ]
     },
-    "Microsoft.AppCenter.Push/2.0.0": {
-      "sha512": "+o+fig+j5wkqp12vGvh//uO8oMw7AmxAnSalzKju6h0kWQ8Iib5Vm0I5hIf2crw+a2cSXzBGS5BNFihwAVPiBw==",
+    "Microsoft.AppCenter.Analytics/2.1.1": {
+      "sha512": "cmA+aDgztT1iRKE9HgdRwT3KgzOFMJFrsL4vIf0OP7Ijgud9CZ1XnvM49/JZDKY5qu38UnaZMMpN77uQRI7sow==",
       "type": "package",
-      "path": "microsoft.appcenter.push/2.0.0",
+      "path": "microsoft.appcenter.analytics/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid403/Microsoft.AppCenter.Analytics.Android.Bindings.dll",
+        "lib/MonoAndroid403/Microsoft.AppCenter.Analytics.dll",
+        "lib/MonoAndroid403/Microsoft.AppCenter.Analytics.xml",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.iOS.Bindings.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.xml",
+        "lib/netstandard1.0/Microsoft.AppCenter.Analytics.dll",
+        "lib/netstandard1.0/Microsoft.AppCenter.Analytics.xml",
+        "lib/portable-net45+win8+wpa81+wp8/Microsoft.AppCenter.Analytics.dll",
+        "lib/portable-net45+win8+wpa81+wp8/Microsoft.AppCenter.Analytics.xml",
+        "lib/uap10.0/Microsoft.AppCenter.Analytics.dll",
+        "lib/uap10.0/Microsoft.AppCenter.Analytics.xml",
+        "microsoft.appcenter.analytics.2.1.1.nupkg.sha512",
+        "microsoft.appcenter.analytics.nuspec"
+      ]
+    },
+    "Microsoft.AppCenter.Crashes/2.1.1": {
+      "sha512": "MOyID2QqBFNbt/5tueEwCB4qC9fGFoEy34kUIzy3ai/mo56Xewyxux7hqoW6FjzbU8U9VgJpFOI6KeeAn2tiHA==",
+      "type": "package",
+      "path": "microsoft.appcenter.crashes/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/uap10.0/Microsoft.AppCenter.Crashes.targets",
+        "lib/MonoAndroid403/Microsoft.AppCenter.Crashes.Android.Bindings.dll",
+        "lib/MonoAndroid403/Microsoft.AppCenter.Crashes.dll",
+        "lib/MonoAndroid403/Microsoft.AppCenter.Crashes.xml",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.iOS.Bindings.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.xml",
+        "lib/netstandard1.0/Microsoft.AppCenter.Crashes.dll",
+        "lib/netstandard1.0/Microsoft.AppCenter.Crashes.xml",
+        "lib/portable-net45+win8+wpa81+wp8/Microsoft.AppCenter.Crashes.dll",
+        "lib/portable-net45+win8+wpa81+wp8/Microsoft.AppCenter.Crashes.xml",
+        "microsoft.appcenter.crashes.2.1.1.nupkg.sha512",
+        "microsoft.appcenter.crashes.nuspec",
+        "ref/uap10.0/Microsoft.AppCenter.Crashes.dll",
+        "ref/uap10.0/Microsoft.AppCenter.Crashes.xml",
+        "runtimes/win10-arm/lib/uap10.0/Microsoft.AppCenter.Crashes.dll",
+        "runtimes/win10-arm/lib/uap10.0/Microsoft.AppCenter.Crashes.xml",
+        "runtimes/win10-arm/lib/uap10.0/WatsonRegistrationUtility.winmd",
+        "runtimes/win10-arm/native/WatsonRegistrationUtility.dll",
+        "runtimes/win10-x64/lib/uap10.0/Microsoft.AppCenter.Crashes.dll",
+        "runtimes/win10-x64/lib/uap10.0/Microsoft.AppCenter.Crashes.xml",
+        "runtimes/win10-x64/lib/uap10.0/WatsonRegistrationUtility.winmd",
+        "runtimes/win10-x64/native/WatsonRegistrationUtility.dll",
+        "runtimes/win10-x86/lib/uap10.0/Microsoft.AppCenter.Crashes.dll",
+        "runtimes/win10-x86/lib/uap10.0/Microsoft.AppCenter.Crashes.xml",
+        "runtimes/win10-x86/lib/uap10.0/WatsonRegistrationUtility.winmd",
+        "runtimes/win10-x86/native/WatsonRegistrationUtility.dll"
+      ]
+    },
+    "Microsoft.AppCenter.Push/2.1.1": {
+      "sha512": "V94NN7BEDcnGjRqkny2+VQiuYYG80KyGZzsXSowVA9FfLaZebCJDkSkivMPPepEEa7qAbGdW/nB91isIScB3QQ==",
+      "type": "package",
+      "path": "microsoft.appcenter.push/2.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -201,7 +300,7 @@
         "lib/portable-net45+win8+wpa81+wp8/Microsoft.AppCenter.Push.xml",
         "lib/uap10.0/Microsoft.AppCenter.Push.dll",
         "lib/uap10.0/Microsoft.AppCenter.Push.xml",
-        "microsoft.appcenter.push.2.0.0.nupkg.sha512",
+        "microsoft.appcenter.push.2.1.1.nupkg.sha512",
         "microsoft.appcenter.push.nuspec"
       ]
     },
@@ -378,53 +477,6 @@
         "newtonsoft.json.nuspec"
       ]
     },
-    "Plugin.InAppBilling/2.0.0": {
-      "sha512": "NAuSohkp1QP4Z9WMGi1NhZBDomfKNgKgLCnoheRBJ3NRv+R4qi92LtO3hJWT2rcxl+HvPc/CgIhh4uD6MNNH0A==",
-      "type": "package",
-      "path": "plugin.inappbilling/2.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/MonoAndroid10/Plugin.InAppBilling.Abstractions.dll",
-        "lib/MonoAndroid10/Plugin.InAppBilling.Abstractions.pdb",
-        "lib/MonoAndroid10/Plugin.InAppBilling.Abstractions.xml",
-        "lib/MonoAndroid10/Plugin.InAppBilling.VendingLibrary.dll",
-        "lib/MonoAndroid10/Plugin.InAppBilling.VendingLibrary.pdb",
-        "lib/MonoAndroid10/Plugin.InAppBilling.VendingLibrary.xml",
-        "lib/MonoAndroid10/Plugin.InAppBilling.XML",
-        "lib/MonoAndroid10/Plugin.InAppBilling.dll",
-        "lib/MonoAndroid10/Plugin.InAppBilling.pdb",
-        "lib/UAP10/Plugin.InAppBilling.Abstractions.dll",
-        "lib/UAP10/Plugin.InAppBilling.Abstractions.pdb",
-        "lib/UAP10/Plugin.InAppBilling.Abstractions.xml",
-        "lib/UAP10/Plugin.InAppBilling.XML",
-        "lib/UAP10/Plugin.InAppBilling.dll",
-        "lib/UAP10/Plugin.InAppBilling.pdb",
-        "lib/UAP10/Plugin.InAppBilling.pri",
-        "lib/Xamarin.iOS10/Plugin.InAppBilling.Abstractions.dll",
-        "lib/Xamarin.iOS10/Plugin.InAppBilling.Abstractions.pdb",
-        "lib/Xamarin.iOS10/Plugin.InAppBilling.Abstractions.xml",
-        "lib/Xamarin.iOS10/Plugin.InAppBilling.XML",
-        "lib/Xamarin.iOS10/Plugin.InAppBilling.dll",
-        "lib/Xamarin.iOS10/Plugin.InAppBilling.pdb",
-        "lib/netstandard1.0/Plugin.InAppBilling.Abstractions.dll",
-        "lib/netstandard1.0/Plugin.InAppBilling.Abstractions.pdb",
-        "lib/netstandard1.0/Plugin.InAppBilling.Abstractions.xml",
-        "lib/netstandard1.0/Plugin.InAppBilling.deps.json",
-        "lib/netstandard1.0/Plugin.InAppBilling.dll",
-        "lib/netstandard1.0/Plugin.InAppBilling.pdb",
-        "lib/netstandard1.0/Plugin.InAppBilling.xml",
-        "lib/xamarintvos/Plugin.InAppBilling.Abstractions.dll",
-        "lib/xamarintvos/Plugin.InAppBilling.Abstractions.pdb",
-        "lib/xamarintvos/Plugin.InAppBilling.Abstractions.xml",
-        "lib/xamarintvos/Plugin.InAppBilling.dll",
-        "lib/xamarintvos/Plugin.InAppBilling.pdb",
-        "lib/xamarintvos/Plugin.InAppBilling.xml",
-        "plugin.inappbilling.2.0.0.nupkg.sha512",
-        "plugin.inappbilling.nuspec",
-        "readme.txt"
-      ]
-    },
     "System.Numerics.Vectors/4.5.0": {
       "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
       "type": "package",
@@ -508,10 +560,10 @@
         "xam.plugins.notifier.nuspec"
       ]
     },
-    "Xamarin.Essentials/1.1.0": {
-      "sha512": "W0XOt1dNMAE2POcsVotoKDDy5FdAOnR0qULKl6WI4kQEMxQ1sp84DsSU5iacV7oQUMuPhUBAm/3ywks0HO1QrQ==",
+    "Xamarin.Essentials/1.2.0": {
+      "sha512": "o3i5uAchUpAvAlJX0onYFFiDo6jpKl9vgvrdDtXEuEfum0UDrSx8oGGBUjlFyUoRpvWVumXwo0VS3AbzuwEofg==",
       "type": "package",
-      "path": "xamarin.essentials/1.1.0",
+      "path": "xamarin.essentials/1.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -528,11 +580,9 @@
         "lib/monoandroid80/Xamarin.Essentials.pdb",
         "lib/monoandroid80/Xamarin.Essentials.xml",
         "lib/monoandroid81/Xamarin.Essentials.dll",
-        "lib/monoandroid81/Xamarin.Essentials.dll.mdb",
         "lib/monoandroid81/Xamarin.Essentials.pdb",
         "lib/monoandroid81/Xamarin.Essentials.xml",
         "lib/monoandroid90/Xamarin.Essentials.dll",
-        "lib/monoandroid90/Xamarin.Essentials.dll.mdb",
         "lib/monoandroid90/Xamarin.Essentials.pdb",
         "lib/monoandroid90/Xamarin.Essentials.xml",
         "lib/netstandard1.0/Xamarin.Essentials.dll",
@@ -549,14 +599,14 @@
         "lib/xamarinios10/Xamarin.Essentials.pdb",
         "lib/xamarinios10/Xamarin.Essentials.xml",
         "readme.txt",
-        "xamarin.essentials.1.1.0.nupkg.sha512",
+        "xamarin.essentials.1.2.0.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/4.0.0.425677": {
-      "sha512": "drwO/MimaMUnmvkULASYjU5MRciVIJyiLxD3ihFq8P+DWynQZ2NLNej0Vrs3k2L7UdmqvcgCxEJdfT7uFl2KVg==",
+    "Xamarin.Forms/4.1.0.581479": {
+      "sha512": "wrO8AOW1xsFoGgT1SUvJ9OEeqAduJOm0xezZGNe0rCiAv2N9Qc/n5uywhlSia1s1k+Zy/hOrhZ4b7/EM6z9oog==",
       "type": "package",
-      "path": "xamarin.forms/4.0.0.425677",
+      "path": "xamarin.forms/4.1.0.581479",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -776,6 +826,7 @@
         "lib/uap10.0/Xamarin.Forms.Platform.UAP.pdb",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP.pri",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/AutoSuggestStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsCheckBoxStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsEmbeddedPageWrapper.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsFlyout.xbf",
@@ -794,22 +845,39 @@
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.0.0.425677.nupkg.sha512",
+        "xamarin.forms.4.1.0.581479.nupkg.sha512",
         "xamarin.forms.nuspec"
+      ]
+    },
+    "Xamarin.Forms.PancakeView/1.0.21": {
+      "sha512": "MQkBObAAFw4V/rvIL8e2MigNjSZLse4w6r9mYf89334PznAWSfnfGiQoNModq8+2lGYfVIWjC9kuQy9QXqtpuQ==",
+      "type": "package",
+      "path": "xamarin.forms.pancakeview/1.0.21",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid81/Xamarin.Forms.PancakeView.dll",
+        "lib/monoandroid90/Xamarin.Forms.PancakeView.dll",
+        "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll",
+        "lib/xamarinios10/Xamarin.Forms.PancakeView.dll",
+        "xamarin.forms.pancakeview.1.0.21.nupkg.sha512",
+        "xamarin.forms.pancakeview.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "Com.Airbnb.Xamarin.Forms.Lottie >= 3.0.0",
-      "Microsoft.AppCenter >= 2.0.0",
-      "Microsoft.AppCenter.Push >= 2.0.0",
+      "Microsoft.AppCenter >= 2.1.1",
+      "Microsoft.AppCenter.Analytics >= 2.1.1",
+      "Microsoft.AppCenter.Crashes >= 2.1.1",
+      "Microsoft.AppCenter.Push >= 2.1.1",
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 12.0.2",
-      "Plugin.InAppBilling >= 2.0.0",
       "Xam.Plugins.Notifier >= 3.0.1",
-      "Xamarin.Essentials >= 1.1.0",
-      "Xamarin.Forms >= 4.0.0.425677"
+      "Xamarin.Essentials >= 1.2.0",
+      "Xamarin.Forms >= 4.1.0.581479",
+      "Xamarin.Forms.PancakeView >= 1.0.21"
     ]
   },
   "packageFolders": {
@@ -857,11 +925,19 @@
           },
           "Microsoft.AppCenter": {
             "target": "Package",
-            "version": "[2.0.0, )"
+            "version": "[2.1.1, )"
+          },
+          "Microsoft.AppCenter.Analytics": {
+            "target": "Package",
+            "version": "[2.1.1, )"
+          },
+          "Microsoft.AppCenter.Crashes": {
+            "target": "Package",
+            "version": "[2.1.1, )"
           },
           "Microsoft.AppCenter.Push": {
             "target": "Package",
-            "version": "[2.0.0, )"
+            "version": "[2.1.1, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",
@@ -873,21 +949,21 @@
             "target": "Package",
             "version": "[12.0.2, )"
           },
-          "Plugin.InAppBilling": {
-            "target": "Package",
-            "version": "[2.0.0, )"
-          },
           "Xam.Plugins.Notifier": {
             "target": "Package",
             "version": "[3.0.1, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",
-            "version": "[1.1.0, )"
+            "version": "[1.2.0, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.0.0.425677, )"
+            "version": "[4.1.0.581479, )"
+          },
+          "Xamarin.Forms.PancakeView": {
+            "target": "Package",
+            "version": "[1.0.21, )"
           }
         },
         "imports": [

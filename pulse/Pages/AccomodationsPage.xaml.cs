@@ -1,79 +1,89 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Runtime.Serialization;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Xamarin.Essentials;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace pulse
 {
+    [Serializable]
     public class Accomodations
     {
+        [DataMember]
         public int people;
+        [DataMember]
         public int rooms;
+        [DataMember]
         public int sharewith;
+        [DataMember]
         public int oncampus;
 
+        [DataMember]
         public string status;
+        [DataMember]
         public string checkin;
+        [DataMember]
         public string checkout;
     }
 
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AccomodationsPage : ContentPage
     {
-        readonly string id = (string)Application.Current.Properties["Id"];
+        readonly string id = Preferences.Get("Id", "0");
 
         public AccomodationsPage()
         {
             InitializeComponent();
 
-            _ = UpdateAsync();
+            AccomodationsCard.IsVisible = !Preferences.Get("Accomodations", false);
+            AccomodationSummary.IsVisible = Preferences.Get("Accomodations", false);
 
-            if (Application.Current.Properties.ContainsKey("Accomodations"))
-            {
-                AccomodationsCard.IsVisible = !(bool)Application.Current.Properties["Accomodations"];
-                AccomodationSummary.IsVisible = (bool)Application.Current.Properties["Accomodations"];
+            AccomodationsCard.IsVisible &= Preferences.Get("MedicalStudent", true)
+                && Preferences.Get("College", "All India Institute of Medical Sciences, New Delhi") != "Students' Union Invite";
 
-                if (!(bool)Application.Current.Properties["MedicalStudent"] || (string)Application.Current.Properties["College"] == "Students' Union Invite")
-                {
-                    AccomodationsCard.IsVisible = false;
-                }
-            }
+            if(AccomodationSummary.IsVisible)
+                _ = UpdateAsync();
         }
 
         async Task UpdateAsync()
         {
             HttpClient httpClient = new HttpClient();
-
             HttpResponseMessage responseMessage = await httpClient.GetAsync($"https://app.aiimspulse.website/scripts/data/accomodations.php?guid={id}");
 
             if (responseMessage.IsSuccessStatusCode)
             {
-                string json = await responseMessage.Content.ReadAsStringAsync();
+                try
+                {
+                    string json = await responseMessage.Content.ReadAsStringAsync();
+                    List<Accomodations> accomodations = JsonConvert.DeserializeObject<List<Accomodations>>(json);
 
-                List<Accomodations> accomodations = JsonConvert.DeserializeObject<List<Accomodations>>(json);
+                    if (accomodations[0].status == "PND")
+                        AccomodationStatus.Text = "Accommodation Status is Pending";
+                    else
+                        AccomodationStatus.Text = "Accommodation Status is Confirmed";
 
-                if (accomodations[0].status == "PND")
-                    AccomodationStatus.Text = "Accommodation Status is Pending";
-                else
-                    AccomodationStatus.Text = "Accommodation Status is Confirmed";
-
-                AccomodationRooms.Text = $"Rooms Requested: {accomodations[0].rooms}";
-                AccomodationDates.Text = $"From ({accomodations[0].checkin}) - ({accomodations[0].checkout}) ";
+                    AccomodationRooms.Text = $"Rooms Requested: {accomodations[0].rooms}";
+                    AccomodationDates.Text = $"From ({accomodations[0].checkin}) - ({accomodations[0].checkout})";
+                }
+                catch
+                {
+                    await DisplayAlert("Error", "Cannot fetch accomodations services", "OK");
+                }
             }
         }
 
         async void OnRequestAccomodations(object sender, EventArgs e)
         {
-            if (Application.Current.Properties.ContainsKey("Accomodations"))
+            var current = Connectivity.NetworkAccess;
+
+            if (current == NetworkAccess.Internet)
             {
                 await AccomodationsCard.FadeTo(0, 250, Easing.Linear);
                 AccomodationsCard.IsVisible = false;
 
                 HttpClient httpClient = new HttpClient();
-
                 List<string> TeamMembers = new List<string>();
 
                 foreach (Entry entry in TeamEntries.Children)
@@ -87,7 +97,7 @@ namespace pulse
                         new KeyValuePair<string, string>("rooms", rooms.Value.ToString()),
                         new KeyValuePair<string, string>("sharewith", share.Value.ToString()),
                         new KeyValuePair<string, string>("oncampus", OnCampus.IsToggled.ToString()),
-                       new KeyValuePair<string, string>("team", string.Join(",",TeamMembers)),
+                        new KeyValuePair<string, string>("team", string.Join(",",TeamMembers)),
                         new KeyValuePair<string, string>("checkin", $"{checkin.Date.Year}-{checkin.Date.Month}-{checkin.Date.Day}"),
                         new KeyValuePair<string, string>("checkout", $"{checkout.Date.Year}-{checkout.Date.Month}-{checkout.Date.Day}")
                 });
@@ -95,13 +105,15 @@ namespace pulse
                 string uri = "https://app.aiimspulse.website/scripts/accomodations.php";
                 await httpClient.PostAsync(uri, formContent);
 
-                await UpdateAsync();
                 AccomodationSummary.IsVisible = true;
+                await UpdateAsync();
 
-                Application.Current.Properties["Accomodations"] = true;
-
-                await Application.Current.SavePropertiesAsync();
+                Preferences.Set("Accomodations", true);
                 await DisplayAlert("Alert", "Accomodations Requested", "OK");
+            }
+            else
+            {
+                await DisplayAlert("Error", "Cannot fetch accomodations services", "OK");
             }
         }
 

@@ -5,6 +5,10 @@
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Lottie.Forms.pdb
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Microsoft.AppCenter.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Microsoft.AppCenter.iOS.Bindings.dll
+/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Microsoft.AppCenter.Analytics.dll
+/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Microsoft.AppCenter.Analytics.iOS.Bindings.dll
+/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Microsoft.AppCenter.Crashes.dll
+/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Microsoft.AppCenter.Crashes.iOS.Bindings.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Microsoft.AppCenter.Push.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Microsoft.AppCenter.Push.iOS.Bindings.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Newtonsoft.Json.dll
@@ -53,6 +57,7 @@
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Xamarin.Forms.PancakeView.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Xamarin.Forms.Material.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Xamarin.Forms.Material.pdb
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/MaterialComponents.dll
@@ -64,12 +69,8 @@
 /Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/coremlc/_PartialAppManifest.items
 /Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/coremlc/_BundleResourceWithLogicalName.items
 /Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/optimized/
+/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/pulse.iOS.csprojAssemblyReference.cache
 /Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/pulse.iOS.csproj.CoreCompileInputs.cache
 /Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/XamlC.stamp
 /Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/pulse.iOS.csproj.CopyComplete
 /Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/pulse.iOS.exe
-/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/pulse.iOS.csprojAssemblyReference.cache
-/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Plugin.InAppBilling.Abstractions.dll
-/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Plugin.InAppBilling.Abstractions.pdb
-/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Plugin.InAppBilling.dll
-/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Plugin.InAppBilling.pdb

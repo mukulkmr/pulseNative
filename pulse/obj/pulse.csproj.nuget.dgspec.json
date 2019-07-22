@@ -45,11 +45,19 @@
             },
             "Microsoft.AppCenter": {
               "target": "Package",
-              "version": "[2.0.0, )"
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.AppCenter.Analytics": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.AppCenter.Crashes": {
+              "target": "Package",
+              "version": "[2.1.1, )"
             },
             "Microsoft.AppCenter.Push": {
               "target": "Package",
-              "version": "[2.0.0, )"
+              "version": "[2.1.1, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -61,21 +69,21 @@
               "target": "Package",
               "version": "[12.0.2, )"
             },
-            "Plugin.InAppBilling": {
-              "target": "Package",
-              "version": "[2.0.0, )"
-            },
             "Xam.Plugins.Notifier": {
               "target": "Package",
               "version": "[3.0.1, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.1.0, )"
+              "version": "[1.2.0, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.0.0.425677, )"
+              "version": "[4.1.0.581479, )"
+            },
+            "Xamarin.Forms.PancakeView": {
+              "target": "Package",
+              "version": "[1.0.21, )"
             }
           },
           "imports": [

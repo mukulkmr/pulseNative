@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage Padding="{OnPlatform iOS={StaticResource PageMargin}}"
+<ContentPage 
+ BackgroundColor="#fcfcfc"
+ Padding="{OnPlatform iOS={StaticResource PageMarginiOS}}"
  xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="pulse.CatsPage">
     <ContentPage.Content>
         <AbsoluteLayout Margin="0,10,0,10">

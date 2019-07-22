@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage NavigationPage.HasNavigationBar="False" 
-             Padding="{OnPlatform iOS={StaticResource PageMargin}}"
+             BackgroundColor="#fab1e1"
+             Padding="{OnPlatform iOS={StaticResource PageMarginiOS}}"
              xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" 
              xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             BackgroundColor="#ebd6ff"
              x:Class="pulse.AccountsPage">
     <ContentPage.Content>
         <AbsoluteLayout Margin="0,10,0,10">
@@ -13,40 +13,60 @@
                     <Frame x:Name="QRCard" Style="{StaticResource Card}">
                         <StackLayout>
                             <Label x:Name="QRStatus" Margin="5" FontAttributes="Bold" FontSize="Large" Text="Loading..." />
-                           <Image x:Name="QRImage" HeightRequest="150">
+                            <Image  Source="qr" HeightRequest="150">
                                 <Image.GestureRecognizers>
                                     <TapGestureRecognizer Tapped="QRCodePopUp" />
                                 </Image.GestureRecognizers>
                             </Image>
+                            <Label Text="Click to reveal QR code" TextColor="#666" FontSize="Small" />
                         </StackLayout>
                     </Frame>
+                    
                     <Frame IsVisible="{Binding DelCardRequest}" x:Name="DelCardRequestCard" Style="{StaticResource Card}">
                         <StackLayout>
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width=".5*" />
-                                    <ColumnDefinition Width=".2*" />
-                                </Grid.ColumnDefinitions>
-                                <Label Grid.Column="0" VerticalOptions="CenterAndExpand" Text="Purchase DelCard" FontAttributes="Bold" FontSize="Large" />
-                                <Button Grid.Column="1" Clicked="OnPurchaseDelCard" Text="Purchase" />
-                                
-                                <ImageButton Grid.Column="2" HorizontalOptions="Center" BackgroundColor="Transparent" Clicked="DelCardInfo" Source="info" />
-                            </Grid>
+                            <Button HorizontalOptions="CenterAndExpand" Clicked="OnPurchaseDelCard" Text="Purchase Delcard" />
                         </StackLayout>
                     </Frame>
+                    
                     <Frame Style="{StaticResource Card}">
                         <StackLayout>
-                            <WebView x:Name="userImage" HeightRequest="150" HorizontalOptions="FillAndExpand" />
-                            <Label  Text="{Binding Name}" FontSize="Large" />
+                            <Label Text="{Binding Name}" FontSize="Large" Margin="5" FontAttributes="Bold" />
                             <Label Text="{Binding Email}" />
                             <Label Text="{Binding College}" />
-                            <Button BackgroundColor="#eee" TextColor="Black" Clicked="CopyGuid" Text="{Binding Id}" />
+                            
+                            <Grid Margin="5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width=".2*" />
+                                </Grid.ColumnDefinitions>
+                                
+                                <Label Grid.Column="0" VerticalOptions="Center"
+                                       FontSize="Small"
+                                       Text="{Binding Id}"  HorizontalOptions="EndAndExpand" />
+                                
+                                <Label Grid.Column="1" TextColor="#666"
+                                       FontFamily="{StaticResource MaterialFontFamily}" 
+                                       FontSize="28" HorizontalOptions="Center"
+                                       Text="filter_none">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="CopyGuid" />
+                                    </Label.GestureRecognizers>
+                                </Label>
+                                
+                            </Grid>
+                            
                         </StackLayout>
                     </Frame>
-                    <Frame IsVisible="{Binding DelCardRequest}" Style="{StaticResource Card}">
+                    
+                    <Frame IsVisible="{Binding AccomodationsRequest}" Style="{StaticResource Card}">
                         <StackLayout>
-                            <Button Text="Accomodations Status" Clicked="OpenAccomodations" />
+                            <Button Text="Avail Accommodations Services" Clicked="OpenAccomodations" />
+                        </StackLayout>
+                    </Frame>
+                    
+                    <Frame Style="{StaticResource Card}">
+                        <StackLayout>
+                            <Button Text="Logout" BackgroundColor="Red" Clicked="LogOut" />
                         </StackLayout>
                     </Frame>
                 </StackLayout>
@@ -55,7 +75,6 @@
              <Frame IsVisible="false"
                    x:Name="QRPopUp"
                    AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional" 
-                   BackgroundColor="White" 
                    Padding="0"
                    Margin="5"
                    CornerRadius="2"
@@ -64,7 +83,7 @@
                     
                     <ImageButton HorizontalOptions="Center" BackgroundColor="Transparent" Source="close" Clicked="ClosePopUp"/>
                     <Image x:Name="QRImageLarge"  HorizontalOptions="FillAndExpand"  HeightRequest="300"/>
-                    
+                                       
                      <forms:AnimationView
                         Animation="rainbow.json" 
                         Loop="true" 
@@ -77,10 +96,10 @@
                 </StackLayout>
             </Frame>
             
-            <BoxView Color="#ebd6ff" AbsoluteLayout.LayoutFlags="WidthProportional" AbsoluteLayout.LayoutBounds="0,0,1,35" />
+            <BoxView Color="#fab1e1" AbsoluteLayout.LayoutFlags="WidthProportional" AbsoluteLayout.LayoutBounds="0,0,1,35" />
             <ImageButton Source="refresh" x:Name="ReloadButton" BackgroundColor="Transparent" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.05,0,30,30" Clicked="OnReloadButtonClicked" />
             
-            <BoxView Color="{StaticResource AccentColor}" CornerRadius="8" AbsoluteLayout.LayoutFlags="PositionProportional" Margin="0,2,0,0" AbsoluteLayout.LayoutBounds=".5,0,30,32">
+            <BoxView Color="{StaticResource AccentColor}" Rotation="45" CornerRadius="8" AbsoluteLayout.LayoutFlags="PositionProportional" Margin="0,2,0,0" AbsoluteLayout.LayoutBounds=".5,0,30,32">
                 <BoxView.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OpenPulsePage" />
                 </BoxView.GestureRecognizers>

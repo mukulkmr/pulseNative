@@ -42,8 +42,10 @@
     <ManifestDocument>obj/Release/lp/56/jl/AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj/Release/lp/57/jl/AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj/Release/lp/58/jl/AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj/Release/lp/64/jl/AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj/Release/lp/6/jl/AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj/Release/lp/65/jl/AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj/Release/lp/66/jl/AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj/Release/lp/9/jl/AndroidManifest.xml</ManifestDocument>
   </ManifestDocuments>
   <NativeLibraries />
   <Jars>
@@ -93,7 +95,9 @@
     <Jar>obj/Release/lp/56/jl/classes.jar</Jar>
     <Jar>obj/Release/lp/57/jl/classes.jar</Jar>
     <Jar>obj/Release/lp/58/jl/classes.jar</Jar>
-    <Jar>obj/Release/lp/64/jl/classes.jar</Jar>
+    <Jar>obj/Release/lp/6/jl/bin/classes.jar</Jar>
     <Jar>obj/Release/lp/65/jl/classes.jar</Jar>
+    <Jar>obj/Release/lp/66/jl/classes.jar</Jar>
+    <Jar>obj/Release/lp/9/jl/bin/classes.jar</Jar>
   </Jars>
 </Paths>

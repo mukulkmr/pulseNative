@@ -1,14 +1,17 @@
 ﻿using System.ComponentModel;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+using Xamarin.Essentials;
+using System.Threading.Tasks;
 
 namespace pulse
 {
     [DesignTimeVisible(true)]
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainPage : TabbedPage
     {
-        public MainPage() => InitializeComponent();
+        public MainPage()
+        {
+            InitializeComponent();
+        }
 
         protected override bool OnBackButtonPressed()
         {
