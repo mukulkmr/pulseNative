@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "ff3ca852a2101716d392d1bf16ab7c6d80248d2b"
+    "signature": "aaaec47fcb8e30016b4423c48f99674ce39f09c9"
   },
   "compilationOptions": {},
   "targets": {
@@ -16,10 +16,10 @@
           "Microsoft.AppCenter.Push": "2.1.1",
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "12.0.2",
-          "Plugin.InAppBilling": "2.0.0",
           "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.2.0",
-          "Xamarin.Forms": "4.1.0.581479"
+          "Xamarin.Forms": "4.1.0.581479",
+          "Xamarin.Forms.PancakeView": "1.0.21"
         },
         "runtime": {
           "pulse.dll": {}
@@ -91,18 +91,6 @@
           }
         }
       },
-      "Plugin.InAppBilling/2.0.0": {
-        "runtime": {
-          "lib/netstandard1.0/Plugin.InAppBilling.Abstractions.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.0.0"
-          },
-          "lib/netstandard1.0/Plugin.InAppBilling.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.0.0"
-          }
-        }
-      },
       "System.Numerics.Vectors/4.5.0": {
         "runtime": {
           "lib/netstandard2.0/System.Numerics.Vectors.dll": {
@@ -147,6 +135,17 @@
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "4.1.0.287"
+          }
+        }
+      },
+      "Xamarin.Forms.PancakeView/1.0.21": {
+        "dependencies": {
+          "Xamarin.Forms": "4.1.0.581479"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       }
@@ -214,13 +213,6 @@
       "path": "newtonsoft.json/12.0.2",
       "hashPath": "newtonsoft.json.12.0.2.nupkg.sha512"
     },
-    "Plugin.InAppBilling/2.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-NAuSohkp1QP4Z9WMGi1NhZBDomfKNgKgLCnoheRBJ3NRv+R4qi92LtO3hJWT2rcxl+HvPc/CgIhh4uD6MNNH0A==",
-      "path": "plugin.inappbilling/2.0.0",
-      "hashPath": "plugin.inappbilling.2.0.0.nupkg.sha512"
-    },
     "System.Numerics.Vectors/4.5.0": {
       "type": "package",
       "serviceable": true,
@@ -248,6 +240,13 @@
       "sha512": "sha512-wrO8AOW1xsFoGgT1SUvJ9OEeqAduJOm0xezZGNe0rCiAv2N9Qc/n5uywhlSia1s1k+Zy/hOrhZ4b7/EM6z9oog==",
       "path": "xamarin.forms/4.1.0.581479",
       "hashPath": "xamarin.forms.4.1.0.581479.nupkg.sha512"
+    },
+    "Xamarin.Forms.PancakeView/1.0.21": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MQkBObAAFw4V/rvIL8e2MigNjSZLse4w6r9mYf89334PznAWSfnfGiQoNModq8+2lGYfVIWjC9kuQy9QXqtpuQ==",
+      "path": "xamarin.forms.pancakeview/1.0.21",
+      "hashPath": "xamarin.forms.pancakeview.1.0.21.nupkg.sha512"
     }
   }
 }

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#fcfcfc"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pulse.TutorialsPage"
+             ios:Page.UseSafeArea="true">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame x:Name="SlideShow"
+                   VerticalOptions="FillAndExpand"
+                   Padding="0"
+                   BackgroundColor="#fcfcfc"
+                   HasShadow="false">
+                <StackLayout>
+                    <Label
+                        Text="Learn how to use this app"
+                        FontSize="Title"
+                        Margin="10"
+                        HorizontalOptions="Center" />
+
+                    <Frame VerticalOptions="FillAndExpand"
+                           x:Name="Slide1"
+                           Padding="0"
+                           BackgroundColor="#fcfcfc"
+                           HasShadow="false">
+                        <Grid VerticalOptions="CenterAndExpand"
+                              HorizontalOptions="Center"
+                              ColumnSpacing="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="270" />
+                                <ColumnDefinition Width="28" />
+                            </Grid.ColumnDefinitions>
+
+                            <Image Grid.Column="0"
+                                   Source="tutorial_1" />
+
+                            <ImageButton Grid.Column="1"
+                                         CommandParameter="1"
+                                         Clicked="ChangeSlide"
+                                         Source="arrow_forward" />
+                        </Grid>
+                    </Frame>
+
+                    <Frame VerticalOptions="FillAndExpand"
+                           x:Name="Slide2"
+                           IsVisible="false"
+                           HasShadow="false"
+                           BackgroundColor="#fcfcfc"
+                           Padding="0">
+                        <Grid VerticalOptions="CenterAndExpand"
+                              HorizontalOptions="CenterAndExpand"
+                              ColumnSpacing="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="28" />
+                                <ColumnDefinition Width="270" />
+                                <ColumnDefinition Width="28" />
+                            </Grid.ColumnDefinitions>
+                            <ImageButton Grid.Column="0"
+                                         Source="arrow_back"
+                                         CommandParameter="0"
+                                         Clicked="ChangeSlide" />
+
+                            <Image Grid.Column="1"
+                                   Source="tutorial_3" />
+
+                            <ImageButton Grid.Column="2"
+                                         Source="arrow_forward"
+                                         CommandParameter="2"
+                                         Clicked="ChangeSlide" />
+                        </Grid>
+                    </Frame>
+
+                    <Frame VerticalOptions="FillAndExpand"
+                           x:Name="Slide3"
+                           IsVisible="false"
+                           Padding="0"
+                           BackgroundColor="#fcfcfc"
+                           HasShadow="false">
+                        <Grid VerticalOptions="CenterAndExpand"
+                              HorizontalOptions="CenterAndExpand"
+                              ColumnSpacing="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="28" />
+                                <ColumnDefinition Width="270" />
+                            </Grid.ColumnDefinitions>
+                            <ImageButton Grid.Column="0"
+                                         Source="arrow_back"
+                                         CommandParameter="1"
+                                         Clicked="ChangeSlide" />
+
+                            <Image Grid.Column="1"
+                                   Source="tutorial_6" />
+                        </Grid>
+                    </Frame>
+
+                </StackLayout>
+            </Frame>
+            <Button Margin="20"
+                    Clicked="Handle_Clicked"
+                    Text="Finish Tutorial" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

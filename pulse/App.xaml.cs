@@ -25,10 +25,10 @@ namespace pulse
             if (Preferences.Get("Id", "0") != "0")
             {
                 _ = CheckUser();
-                MainPage = new NavigationPage(new MainPage());
+                MainPage = new MainPage();
             }
             else
-                MainPage = new NavigationPage(new LoginPage());
+                MainPage = new LoginPage();
 
         }
 
@@ -58,7 +58,7 @@ namespace pulse
                 catch
                 {
                     Preferences.Clear();
-                    await Current.MainPage.DisplayAlert("Pulse", "Please register again", "OK");
+                    await Current.MainPage.DisplayAlert("Pulse", "Please Login again", "OK");
                     MainPage = new NavigationPage(new LoginPage());
                 }
             }

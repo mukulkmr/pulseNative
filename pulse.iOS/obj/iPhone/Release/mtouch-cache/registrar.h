@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <CoreGraphics/CoreGraphics.h>
+#import <SafariServices/SafariServices.h>
 #import <UserNotifications/UserNotifications.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import <MapKit/MapKit.h>
@@ -521,6 +522,13 @@
 @class MDCThumbTrack;
 @class MaterialComponents_ThumbView_ThumbViewAppearance;
 @class MDCThumbView;
+@protocol MSPushDelegate;
+@class MSPushDelegate;
+@class Microsoft_AppCenter_Push_iOS_PushDelegate;
+@class MSPush;
+@class MSPushNotification;
+@class Xamarin_Essentials_SingleLocationListener;
+@class Xamarin_Essentials_ShareActivityItemSource;
 @class Lottie_Forms_iOS_Renderers_AnimationViewRenderer;
 @class LOTAnimationCache;
 @class LOTAnimationTransitionController;
@@ -560,14 +568,6 @@
 @class LOTAnimatedControl;
 @class Airbnb_Lottie_LOTAnimatedSwitch_LOTAnimatedSwitchAppearance;
 @class LOTAnimatedSwitch;
-@protocol MSPushDelegate;
-@class MSPushDelegate;
-@class Microsoft_AppCenter_Push_iOS_PushDelegate;
-@class MSPush;
-@class MSPushNotification;
-@class Xamarin_Essentials_SingleLocationListener;
-@class Xamarin_Essentials_ShareActivityItemSource;
-@class Xamarin_Forms_PancakeView_iOS_PancakeViewRenderer;
 @class MSAppCenter;
 @class MSCustomProperties;
 @class MSWrapperSdk;
@@ -5000,6 +5000,39 @@
 	-(id) initWithCoder:(NSCoder *)p0;
 @end
 
+@protocol MSPushDelegate
+	@optional -(void) push:(id)p0 didReceivePushNotification:(id)p1;
+@end
+
+@interface MSPushDelegate : NSObject<MSPushDelegate> {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_AppCenter_Push_iOS_PushDelegate : NSObject<MSPushDelegate> {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) push:(id)p0 didReceivePushNotification:(id)p1;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface MSPush : NSObject {
+}
+	-(id) init;
+@end
+
+@interface MSPushNotification : NSObject {
+}
+	-(NSDictionary *) customData;
+	-(NSString *) message;
+	-(NSString *) title;
+	-(id) init;
+@end
+
 @interface Lottie_Forms_iOS_Renderers_AnimationViewRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
 }
 	-(id) init;
@@ -5322,45 +5355,6 @@
 	-(void) setOn:(BOOL)p0;
 	-(id) init;
 	-(id) initWithCoder:(NSCoder *)p0;
-@end
-
-@protocol MSPushDelegate
-	@optional -(void) push:(id)p0 didReceivePushNotification:(id)p1;
-@end
-
-@interface MSPushDelegate : NSObject<MSPushDelegate> {
-}
-	-(id) init;
-@end
-
-@interface Microsoft_AppCenter_Push_iOS_PushDelegate : NSObject<MSPushDelegate> {
-}
-	-(void) release;
-	-(id) retain;
-	-(int) xamarinGetGCHandle;
-	-(void) xamarinSetGCHandle: (int) gchandle;
-	-(void) push:(id)p0 didReceivePushNotification:(id)p1;
-	-(BOOL) conformsToProtocol:(void *)p0;
-	-(id) init;
-@end
-
-@interface MSPush : NSObject {
-}
-	-(id) init;
-@end
-
-@interface MSPushNotification : NSObject {
-}
-	-(NSDictionary *) customData;
-	-(NSString *) message;
-	-(NSString *) title;
-	-(id) init;
-@end
-
-@interface Xamarin_Forms_PancakeView_iOS_PancakeViewRenderer : Xamarin_Forms_Platform_iOS_VisualElementRenderer_1 {
-}
-	-(void) layoutSubviews;
-	-(id) init;
 @end
 
 @interface MSAppCenter : NSObject {

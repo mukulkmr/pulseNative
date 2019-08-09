@@ -14,9 +14,9 @@
 /Users/mukulkumar/Projects/pulse/pulse/obj/Release/netstandard2.0/pulse.AssemblyInfoInputs.cache
 /Users/mukulkumar/Projects/pulse/pulse/obj/Release/netstandard2.0/pulse.AssemblyInfo.cs
 /Users/mukulkumar/Projects/pulse/pulse/obj/Release/netstandard2.0/pulse.dll
-/Users/mukulkumar/Projects/pulse/pulse/obj/Release/netstandard2.0/pulse.pdb
 /Users/mukulkumar/Projects/pulse/pulse/bin/Release/netstandard2.0/pulse.deps.json
 /Users/mukulkumar/Projects/pulse/pulse/bin/Release/netstandard2.0/pulse.dll
-/Users/mukulkumar/Projects/pulse/pulse/bin/Release/netstandard2.0/pulse.pdb
 /Users/mukulkumar/Projects/pulse/pulse/obj/Release/netstandard2.0/XamlC.stamp
 /Users/mukulkumar/Projects/pulse/pulse/obj/Release/netstandard2.0/pulse.csprojAssemblyReference.cache
+/Users/mukulkumar/Projects/pulse/pulse/obj/Release/netstandard2.0/Pages/TutorialsPage.xaml.g.cs
+/Users/mukulkumar/Projects/pulse/pulse/obj/Release/netstandard2.0/Pages/EventsSchedulePage.xaml.g.cs

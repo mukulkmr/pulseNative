@@ -169,153 +169,169 @@ b _OpenTK_1_0_System_Drawing_Color_op_Equality_System_Drawing_Color_System_Drawi
 .text
 ut_10:
 add x0, x0, 16
-b _OpenTK_1_0_System_Drawing_Color_get_IsEmpty
+b _OpenTK_1_0_System_Drawing_Color_GetBrightness
 .text
 ut_11:
 add x0, x0, 16
-b _OpenTK_1_0_System_Drawing_Color_get_A
+b _OpenTK_1_0_System_Drawing_Color_GetSaturation
 .text
 ut_12:
 add x0, x0, 16
-b _OpenTK_1_0_System_Drawing_Color_get_R
+b _OpenTK_1_0_System_Drawing_Color_GetHue
 .text
 ut_13:
 add x0, x0, 16
-b _OpenTK_1_0_System_Drawing_Color_get_G
+b _OpenTK_1_0_System_Drawing_Color_ToKnownColor
 .text
 ut_14:
 add x0, x0, 16
-b _OpenTK_1_0_System_Drawing_Color_get_B
+b _OpenTK_1_0_System_Drawing_Color_get_IsEmpty
 .text
 ut_15:
 add x0, x0, 16
-b _OpenTK_1_0_System_Drawing_Color_Equals_object
+b _OpenTK_1_0_System_Drawing_Color_get_A
 .text
 ut_16:
 add x0, x0, 16
-b _OpenTK_1_0_System_Drawing_Color_GetHashCode
+b _OpenTK_1_0_System_Drawing_Color_get_R
 .text
 ut_17:
 add x0, x0, 16
-b _OpenTK_1_0_System_Drawing_Color_ToString
+b _OpenTK_1_0_System_Drawing_Color_get_G
 .text
 ut_18:
 add x0, x0, 16
-b _OpenTK_1_0_System_Drawing_Color_CheckRGBValues_int_int_int
+b _OpenTK_1_0_System_Drawing_Color_get_B
 .text
 ut_19:
 add x0, x0, 16
-b _OpenTK_1_0_System_Drawing_Color_CreateColorArgumentException_int_string
+b _OpenTK_1_0_System_Drawing_Color_Equals_object
 .text
 ut_20:
 add x0, x0, 16
+b _OpenTK_1_0_System_Drawing_Color_GetHashCode
+.text
+ut_21:
+add x0, x0, 16
+b _OpenTK_1_0_System_Drawing_Color_ToString
+.text
+ut_22:
+add x0, x0, 16
+b _OpenTK_1_0_System_Drawing_Color_CheckRGBValues_int_int_int
+.text
+ut_23:
+add x0, x0, 16
+b _OpenTK_1_0_System_Drawing_Color_CreateColorArgumentException_int_string
+.text
+ut_24:
+add x0, x0, 16
 b _OpenTK_1_0_System_Drawing_Color_CheckARGBValues_int_int_int_int
-.text
-ut_50:
-add x0, x0, 16
-b _OpenTK_1_0_OpenTK_ContextHandle_get_Handle
-.text
-ut_51:
-add x0, x0, 16
-b _OpenTK_1_0_OpenTK_ContextHandle__ctor_intptr
-.text
-ut_52:
-add x0, x0, 16
-b _OpenTK_1_0_OpenTK_ContextHandle_ToString
-.text
-ut_53:
-add x0, x0, 16
-b _OpenTK_1_0_OpenTK_ContextHandle_Equals_object
 .text
 ut_54:
 add x0, x0, 16
-b _OpenTK_1_0_OpenTK_ContextHandle_GetHashCode
+b _OpenTK_1_0_OpenTK_ContextHandle_get_Handle
 .text
 ut_55:
 add x0, x0, 16
-b _OpenTK_1_0_OpenTK_ContextHandle_op_Equality_OpenTK_ContextHandle_OpenTK_ContextHandle
+b _OpenTK_1_0_OpenTK_ContextHandle__ctor_intptr
 .text
 ut_56:
 add x0, x0, 16
-b _OpenTK_1_0_OpenTK_ContextHandle_CompareTo_OpenTK_ContextHandle
+b _OpenTK_1_0_OpenTK_ContextHandle_ToString
 .text
 ut_57:
 add x0, x0, 16
-b _OpenTK_1_0_OpenTK_ContextHandle_Equals_OpenTK_ContextHandle
+b _OpenTK_1_0_OpenTK_ContextHandle_Equals_object
 .text
 ut_58:
 add x0, x0, 16
+b _OpenTK_1_0_OpenTK_ContextHandle_GetHashCode
+.text
+ut_59:
+add x0, x0, 16
+b _OpenTK_1_0_OpenTK_ContextHandle_op_Equality_OpenTK_ContextHandle_OpenTK_ContextHandle
+.text
+ut_60:
+add x0, x0, 16
+b _OpenTK_1_0_OpenTK_ContextHandle_CompareTo_OpenTK_ContextHandle
+.text
+ut_61:
+add x0, x0, 16
+b _OpenTK_1_0_OpenTK_ContextHandle_Equals_OpenTK_ContextHandle
+.text
+ut_62:
+add x0, x0, 16
 b _OpenTK_1_0_OpenTK_ContextHandle__cctor
-.text
-ut_96:
-add x0, x0, 16
-b _OpenTK_1_0_OpenTK_Graphics_ColorFormat__ctor_int
-.text
-ut_97:
-add x0, x0, 16
-b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_get_Red
-.text
-ut_98:
-add x0, x0, 16
-b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_set_Red_int
-.text
-ut_99:
-add x0, x0, 16
-b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_get_Green
 .text
 ut_100:
 add x0, x0, 16
-b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_set_Green_int
+b _OpenTK_1_0_OpenTK_Graphics_ColorFormat__ctor_int
 .text
 ut_101:
 add x0, x0, 16
-b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_get_Blue
+b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_get_Red
 .text
 ut_102:
 add x0, x0, 16
-b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_set_Blue_int
+b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_set_Red_int
 .text
 ut_103:
 add x0, x0, 16
-b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_get_Alpha
+b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_get_Green
 .text
 ut_104:
 add x0, x0, 16
-b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_set_Alpha_int
+b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_set_Green_int
 .text
 ut_105:
 add x0, x0, 16
-b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_get_IsIndexed
+b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_get_Blue
 .text
 ut_106:
 add x0, x0, 16
-b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_set_IsIndexed_bool
+b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_set_Blue_int
 .text
 ut_107:
 add x0, x0, 16
-b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_get_BitsPerPixel
+b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_get_Alpha
 .text
 ut_108:
 add x0, x0, 16
-b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_CompareTo_OpenTK_Graphics_ColorFormat
+b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_set_Alpha_int
 .text
 ut_109:
 add x0, x0, 16
-b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_Equals_object
+b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_get_IsIndexed
 .text
 ut_110:
 add x0, x0, 16
-b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_op_Equality_OpenTK_Graphics_ColorFormat_OpenTK_Graphics_ColorFormat
+b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_set_IsIndexed_bool
 .text
 ut_111:
 add x0, x0, 16
-b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_GetHashCode
+b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_get_BitsPerPixel
 .text
 ut_112:
 add x0, x0, 16
-b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_ToString
+b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_CompareTo_OpenTK_Graphics_ColorFormat
 .text
 ut_113:
+add x0, x0, 16
+b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_Equals_object
+.text
+ut_114:
+add x0, x0, 16
+b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_op_Equality_OpenTK_Graphics_ColorFormat_OpenTK_Graphics_ColorFormat
+.text
+ut_115:
+add x0, x0, 16
+b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_GetHashCode
+.text
+ut_116:
+add x0, x0, 16
+b _OpenTK_1_0_OpenTK_Graphics_ColorFormat_ToString
+.text
+ut_117:
 add x0, x0, 16
 b _OpenTK_1_0_OpenTK_Graphics_ColorFormat__cctor
 .text
@@ -435,7 +451,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x0, [x16, #216]
 .word 0xd2800021
-bl _p_13
+bl _p_16
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xd2800001
@@ -453,7 +469,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x0, [x16, #216]
 .word 0xd2800021
-bl _p_13
+bl _p_16
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xd2800001
@@ -471,7 +487,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x0, [x16, #216]
 .word 0xd2800021
-bl _p_13
+bl _p_16
 .word 0xf90067a0
 
 adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
@@ -497,7 +513,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x0, [x16, #216]
 .word 0xd2800041
-bl _p_13
+bl _p_16
 .word 0xf90063a0
 .word 0xf9005fa0
 
@@ -736,7 +752,7 @@ bl _p_59
 .word 0xa8cd7bfd
 .word 0xd65f03c0
 
-Lme_72:
+Lme_76:
 .text
 	.align 4
 	.no_dead_strip OpenTK_Platform_iPhoneOS_iPhoneOSGameView_Capture
@@ -798,7 +814,7 @@ OpenTK_Platform_iPhoneOS_iPhoneOSGameView_Capture:
 adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x0, [x16, #320]
-bl _p_13
+bl _p_16
 .word 0xf900aba0
 .loc 2 807 0
 .word 0xf9401b40
@@ -1089,7 +1105,7 @@ ldr x15, [x16, #344]
 .word 0xa8d77bfd
 .word 0xd65f03c0
 
-Lme_1bd:
+Lme_1c1:
 .text
 	.align 4
 	.no_dead_strip OpenTK_Graphics_ES30_GL_ReadPixels_T6_GSHAREDVT_int_int_int_int_OpenTK_Graphics_ES30_PixelFormat_OpenTK_Graphics_ES30_PixelType_T6_GSHAREDVT__
@@ -1150,7 +1166,7 @@ bl _p_101
 .word 0xa8c87bfd
 .word 0xd65f03c0
 
-Lme_1f3:
+Lme_1f7:
 .text
 	.align 4
 	.no_dead_strip OpenTK_Graphics_ES20_GL_ReadPixels_T6_GSHAREDVT_int_int_int_int_OpenTK_Graphics_ES20_PixelFormat_OpenTK_Graphics_ES20_PixelType_T6_GSHAREDVT__
@@ -1211,7 +1227,7 @@ bl _p_101
 .word 0xa8c87bfd
 .word 0xd65f03c0
 
-Lme_1f4:
+Lme_1f8:
 .text
 	.align 4
 	.no_dead_strip OpenTK_Graphics_ES11_GL_ReadPixels_T6_GSHAREDVT_int_int_int_int_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_T6_GSHAREDVT__
@@ -1272,113 +1288,113 @@ bl _p_101
 .word 0xa8c87bfd
 .word 0xd65f03c0
 
-Lme_1f5:
-.text
-ut_522:
-add x0, x0, 16
-b _OpenTK_1_0_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference__ctor_System_Array
-.text
-ut_523:
-add x0, x0, 16
-b _OpenTK_1_0_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_Dispose
-.text
-ut_524:
-add x0, x0, 16
-b _OpenTK_1_0_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_MoveNext
-.text
-ut_525:
-add x0, x0, 16
-b _OpenTK_1_0_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_get_Current
+Lme_1f9:
 .text
 ut_526:
 add x0, x0, 16
-b _OpenTK_1_0_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_System_Collections_IEnumerator_Reset
+b _OpenTK_1_0_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference__ctor_System_Array
 .text
 ut_527:
 add x0, x0, 16
-b _OpenTK_1_0_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_System_Collections_IEnumerator_get_Current
+b _OpenTK_1_0_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_Dispose
+.text
+ut_528:
+add x0, x0, 16
+b _OpenTK_1_0_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_MoveNext
 .text
 ut_529:
 add x0, x0, 16
-b _OpenTK_1_0_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference__ctor_OpenTK_ContextHandle_System_WeakReference
+b _OpenTK_1_0_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_get_Current
 .text
 ut_530:
 add x0, x0, 16
-b _OpenTK_1_0_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_get_Key
+b _OpenTK_1_0_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_System_Collections_IEnumerator_Reset
 .text
 ut_531:
 add x0, x0, 16
+b _OpenTK_1_0_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_System_Collections_IEnumerator_get_Current
+.text
+ut_533:
+add x0, x0, 16
+b _OpenTK_1_0_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference__ctor_OpenTK_ContextHandle_System_WeakReference
+.text
+ut_534:
+add x0, x0, 16
+b _OpenTK_1_0_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_get_Key
+.text
+ut_535:
+add x0, x0, 16
 b _OpenTK_1_0_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_get_Value
 .text
-ut_532:
+ut_536:
 add x0, x0, 16
 b _OpenTK_1_0_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_ToString
 .text
-ut_577:
+ut_581:
 add x0, x0, 16
 b _OpenTK_1_0_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference__ctor_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference
 .text
-ut_578:
+ut_582:
 add x0, x0, 16
 b _OpenTK_1_0_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference_Dispose
 .text
-ut_579:
+ut_583:
 add x0, x0, 16
 b _OpenTK_1_0_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference_MoveNext
 .text
-ut_580:
+ut_584:
 add x0, x0, 16
 b _OpenTK_1_0_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference_get_Current
 .text
-ut_581:
+ut_585:
 add x0, x0, 16
 b _OpenTK_1_0_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference_System_Collections_IEnumerator_get_Current
 .text
-ut_582:
+ut_586:
 add x0, x0, 16
 b _OpenTK_1_0_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference_System_Collections_IEnumerator_Reset
 .text
-ut_583:
+ut_587:
 add x0, x0, 16
 b _OpenTK_1_0_System_Nullable_1_intptr__ctor_intptr
 .text
-ut_584:
+ut_588:
 add x0, x0, 16
 b _OpenTK_1_0_System_Nullable_1_intptr_get_HasValue
 .text
-ut_585:
+ut_589:
 add x0, x0, 16
 b _OpenTK_1_0_System_Nullable_1_intptr_get_Value
 .text
-ut_586:
+ut_590:
 add x0, x0, 16
 b _OpenTK_1_0_System_Nullable_1_intptr_GetValueOrDefault
 .text
-ut_587:
+ut_591:
 add x0, x0, 16
 b _OpenTK_1_0_System_Nullable_1_intptr_GetValueOrDefault_intptr
 .text
-ut_588:
+ut_592:
 add x0, x0, 16
 b _OpenTK_1_0_System_Nullable_1_intptr_Equals_object
 .text
-ut_589:
+ut_593:
 add x0, x0, 16
 b _OpenTK_1_0_System_Nullable_1_intptr_GetHashCode
 .text
-ut_590:
+ut_594:
 add x0, x0, 16
 b _OpenTK_1_0_System_Nullable_1_intptr_ToString
 .text
-ut_591:
+ut_595:
 add x0, x0, 16
 b _OpenTK_1_0_System_Nullable_1_intptr_Box_System_Nullable_1_intptr
 .text
-ut_592:
+ut_596:
 add x0, x0, 16
 b _OpenTK_1_0_System_Nullable_1_intptr_Unbox_object
 .text
-ut_593:
+ut_597:
 add x0, x0, 16
 b _OpenTK_1_0_System_Nullable_1_intptr_UnboxExact_object
 .text
@@ -1433,7 +1449,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff3
 
-Lme_26c:
+Lme_270:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureGetTarget_intptr
@@ -1487,7 +1503,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff3
 
-Lme_26d:
+Lme_271:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureGetName_intptr
@@ -1541,7 +1557,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff3
 
-Lme_26e:
+Lme_272:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureIsFlipped_intptr
@@ -1594,7 +1610,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff3
 
-Lme_26f:
+Lme_273:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureGetCleanTexCoords_intptr_intptr_intptr_intptr_intptr
@@ -1653,7 +1669,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_270:
+Lme_274:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_CoreVideo_CVOpenGLESTextureCache_CVOpenGLESTextureCacheCreate_intptr_intptr_intptr_intptr_intptr_
@@ -1715,7 +1731,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff3
 
-Lme_271:
+Lme_275:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_CoreVideo_CVOpenGLESTextureCache_CVOpenGLESTextureCacheFlush_intptr_CoreVideo_CVOptionFlags
@@ -1768,7 +1784,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_272:
+Lme_276:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_CoreVideo_CVOpenGLESTextureCache_CVOpenGLESTextureCacheCreateTextureFromImage_intptr_intptr_intptr_intptr_int_OpenTK_Graphics_ES20_All_int_int_OpenTK_Graphics_ES20_All_OpenTK_Graphics_ES20_DataType_intptr_intptr_
@@ -1851,7 +1867,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff2
 
-Lme_273:
+Lme_277:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_BindFramebuffer_OpenTK_Graphics_ES30_FramebufferTarget_uint
@@ -1904,7 +1920,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_274:
+Lme_278:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_BindRenderbuffer_OpenTK_Graphics_ES30_RenderbufferTarget_uint
@@ -1957,7 +1973,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_275:
+Lme_279:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_DeleteFramebuffers_int_uint_
@@ -2010,7 +2026,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_276:
+Lme_27a:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_DeleteRenderbuffers_int_uint_
@@ -2063,7 +2079,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_277:
+Lme_27b:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_FramebufferRenderbuffer_OpenTK_Graphics_ES30_FramebufferTarget_OpenTK_Graphics_ES30_FramebufferSlot_OpenTK_Graphics_ES30_RenderbufferTarget_uint
@@ -2120,7 +2136,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_278:
+Lme_27c:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_GenFramebuffers_int_uint_
@@ -2173,7 +2189,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_279:
+Lme_27d:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_GenRenderbuffers_int_uint_
@@ -2226,7 +2242,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_27a:
+Lme_27e:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_GetIntegerv_OpenTK_Graphics_ES30_GetPName_int_
@@ -2279,7 +2295,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_27b:
+Lme_27f:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_GetRenderbufferParameteriv_OpenTK_Graphics_ES30_RenderbufferTarget_OpenTK_Graphics_ES30_RenderbufferParameterName_int_
@@ -2334,7 +2350,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_27c:
+Lme_280:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_PixelStorei_OpenTK_Graphics_ES30_PixelStoreParameter_int
@@ -2387,7 +2403,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_27d:
+Lme_281:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_ReadPixels_int_int_int_int_OpenTK_Graphics_ES30_PixelFormat_OpenTK_Graphics_ES30_PixelType_intptr
@@ -2450,7 +2466,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_27e:
+Lme_282:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_Scissor_int_int_int_int
@@ -2507,7 +2523,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_27f:
+Lme_283:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_Viewport_int_int_int_int
@@ -2564,7 +2580,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_280:
+Lme_284:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_BindFramebuffer_OpenTK_Graphics_ES20_FramebufferTarget_uint
@@ -2617,7 +2633,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_281:
+Lme_285:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_BindRenderbuffer_OpenTK_Graphics_ES20_RenderbufferTarget_uint
@@ -2670,7 +2686,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_282:
+Lme_286:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_DeleteFramebuffers_int_uint_
@@ -2723,7 +2739,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_283:
+Lme_287:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_DeleteRenderbuffers_int_uint_
@@ -2776,7 +2792,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_284:
+Lme_288:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_FramebufferRenderbuffer_OpenTK_Graphics_ES20_FramebufferTarget_OpenTK_Graphics_ES20_FramebufferSlot_OpenTK_Graphics_ES20_RenderbufferTarget_uint
@@ -2833,7 +2849,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_285:
+Lme_289:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_GenFramebuffers_int_uint_
@@ -2886,7 +2902,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_286:
+Lme_28a:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_GenRenderbuffers_int_uint_
@@ -2939,7 +2955,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_287:
+Lme_28b:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_GetIntegerv_OpenTK_Graphics_ES20_GetPName_int_
@@ -2992,7 +3008,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_288:
+Lme_28c:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_GetRenderbufferParameteriv_OpenTK_Graphics_ES20_RenderbufferTarget_OpenTK_Graphics_ES20_RenderbufferParameterName_int_
@@ -3047,7 +3063,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_289:
+Lme_28d:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_PixelStorei_OpenTK_Graphics_ES20_PixelStoreParameter_int
@@ -3100,7 +3116,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_28a:
+Lme_28e:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_ReadPixels_int_int_int_int_OpenTK_Graphics_ES20_PixelFormat_OpenTK_Graphics_ES20_PixelType_intptr
@@ -3163,7 +3179,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_28b:
+Lme_28f:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_Scissor_int_int_int_int
@@ -3220,7 +3236,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_28c:
+Lme_290:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_Viewport_int_int_int_int
@@ -3277,7 +3293,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_28d:
+Lme_291:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_BindFramebufferOES_OpenTK_Graphics_ES11_All_uint
@@ -3330,7 +3346,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_28e:
+Lme_292:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_BindRenderbufferOES_OpenTK_Graphics_ES11_All_uint
@@ -3383,7 +3399,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_28f:
+Lme_293:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_DeleteFramebuffersOES_int_uint_
@@ -3436,7 +3452,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_290:
+Lme_294:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_DeleteRenderbuffersOES_int_uint_
@@ -3489,7 +3505,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_291:
+Lme_295:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_FramebufferRenderbufferOES_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_uint
@@ -3546,7 +3562,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_292:
+Lme_296:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_GenFramebuffersOES_int_uint_
@@ -3599,7 +3615,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_293:
+Lme_297:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_GenRenderbuffersOES_int_uint_
@@ -3652,7 +3668,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_294:
+Lme_298:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_GetIntegerv_OpenTK_Graphics_ES11_All_int_
@@ -3705,7 +3721,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_295:
+Lme_299:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_GetRenderbufferParameterivOES_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_int_
@@ -3760,7 +3776,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_296:
+Lme_29a:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_PixelStorei_OpenTK_Graphics_ES11_All_int
@@ -3813,7 +3829,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_297:
+Lme_29b:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_ReadPixels_int_int_int_int_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_intptr
@@ -3876,7 +3892,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_298:
+Lme_29c:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_Scissor_int_int_int_int
@@ -3933,7 +3949,7 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_299:
+Lme_29d:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_Viewport_int_int_int_int
@@ -3990,53 +4006,53 @@ bl _p_260
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_29a:
-.text
-ut_667:
-add x0, x0, 16
-b _OpenTK_1_0_wrapper_unknown_System_Drawing_Color_StructureToPtr_object_intptr_bool
-.text
-ut_668:
-add x0, x0, 16
-b _OpenTK_1_0_wrapper_unknown_System_Drawing_Color_PtrToStructure_intptr_object
-.text
-ut_669:
-add x0, x0, 16
-b _OpenTK_1_0_wrapper_unknown_OpenTK_ContextHandle_StructureToPtr_object_intptr_bool
-.text
-ut_670:
-add x0, x0, 16
-b _OpenTK_1_0_wrapper_unknown_OpenTK_ContextHandle_PtrToStructure_intptr_object
+Lme_29e:
 .text
 ut_671:
 add x0, x0, 16
-b _OpenTK_1_0_wrapper_unknown_OpenTK_Graphics_ColorFormat_StructureToPtr_object_intptr_bool
+b _OpenTK_1_0_wrapper_unknown_System_Drawing_Color_StructureToPtr_object_intptr_bool
 .text
 ut_672:
 add x0, x0, 16
+b _OpenTK_1_0_wrapper_unknown_System_Drawing_Color_PtrToStructure_intptr_object
+.text
+ut_673:
+add x0, x0, 16
+b _OpenTK_1_0_wrapper_unknown_OpenTK_ContextHandle_StructureToPtr_object_intptr_bool
+.text
+ut_674:
+add x0, x0, 16
+b _OpenTK_1_0_wrapper_unknown_OpenTK_ContextHandle_PtrToStructure_intptr_object
+.text
+ut_675:
+add x0, x0, 16
+b _OpenTK_1_0_wrapper_unknown_OpenTK_Graphics_ColorFormat_StructureToPtr_object_intptr_bool
+.text
+ut_676:
+add x0, x0, 16
 b _OpenTK_1_0_wrapper_unknown_OpenTK_Graphics_ColorFormat_PtrToStructure_intptr_object
-.text
-ut_687:
-add x0, x0, 16
-b _OpenTK_1_0_System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference__ctor_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference
-.text
-ut_688:
-add x0, x0, 16
-b _OpenTK_1_0_System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference_Dispose
-.text
-ut_689:
-add x0, x0, 16
-b _OpenTK_1_0_System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference_MoveNext
-.text
-ut_690:
-add x0, x0, 16
-b _OpenTK_1_0_System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference_get_Current
 .text
 ut_691:
 add x0, x0, 16
-b _OpenTK_1_0_System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference_System_Collections_IEnumerator_get_Current
+b _OpenTK_1_0_System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference__ctor_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference
 .text
 ut_692:
+add x0, x0, 16
+b _OpenTK_1_0_System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference_Dispose
+.text
+ut_693:
+add x0, x0, 16
+b _OpenTK_1_0_System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference_MoveNext
+.text
+ut_694:
+add x0, x0, 16
+b _OpenTK_1_0_System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference_get_Current
+.text
+ut_695:
+add x0, x0, 16
+b _OpenTK_1_0_System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference_System_Collections_IEnumerator_get_Current
+.text
+ut_696:
 add x0, x0, 16
 b _OpenTK_1_0_System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference_System_Collections_IEnumerator_Reset
 .text
@@ -4098,7 +4114,7 @@ bl _p_22
 bl _mono_create_corlib_exception_0
 bl _p_22
 
-Lme_2bb:
+Lme_2bf:
 .text
 	.align 3
 jit_code_end:
@@ -4116,6 +4132,10 @@ _mono_aot_OpenTK_1_0jit_code_end:
 .no_dead_strip _OpenTK_1_0_System_Drawing_Color_ToArgb
 .no_dead_strip _OpenTK_1_0_System_Drawing_Color_FromKnownColor_System_Drawing_KnownColor
 .no_dead_strip _OpenTK_1_0_System_Drawing_Color_op_Equality_System_Drawing_Color_System_Drawing_Color
+.no_dead_strip _OpenTK_1_0_System_Drawing_Color_GetBrightness
+.no_dead_strip _OpenTK_1_0_System_Drawing_Color_GetSaturation
+.no_dead_strip _OpenTK_1_0_System_Drawing_Color_GetHue
+.no_dead_strip _OpenTK_1_0_System_Drawing_Color_ToKnownColor
 .no_dead_strip _OpenTK_1_0_System_Drawing_Color_get_IsEmpty
 .no_dead_strip _OpenTK_1_0_System_Drawing_Color_get_A
 .no_dead_strip _OpenTK_1_0_System_Drawing_Color_get_R
@@ -4616,6 +4636,10 @@ bl _OpenTK_1_0_System_Drawing_Color_FromArgb_int_int_int_int
 bl _OpenTK_1_0_System_Drawing_Color_ToArgb
 bl _OpenTK_1_0_System_Drawing_Color_FromKnownColor_System_Drawing_KnownColor
 bl _OpenTK_1_0_System_Drawing_Color_op_Equality_System_Drawing_Color_System_Drawing_Color
+bl _OpenTK_1_0_System_Drawing_Color_GetBrightness
+bl _OpenTK_1_0_System_Drawing_Color_GetSaturation
+bl _OpenTK_1_0_System_Drawing_Color_GetHue
+bl _OpenTK_1_0_System_Drawing_Color_ToKnownColor
 bl _OpenTK_1_0_System_Drawing_Color_get_IsEmpty
 bl _OpenTK_1_0_System_Drawing_Color_get_A
 bl _OpenTK_1_0_System_Drawing_Color_get_R
@@ -5325,15 +5349,16 @@ _mono_aot_OpenTK_1_0unbox_trampolines:
 
 	.long 0,1,2,3,4,5,6,7
 	.long 8,9,10,11,12,13,14,15
-	.long 16,17,18,19,20,50,51,52
-	.long 53,54,55,56,57,58,96,97
-	.long 98,99,100,101,102,103,104,105
+	.long 16,17,18,19,20,21,22,23
+	.long 24,54,55,56,57,58,59,60
+	.long 61,62,100,101,102,103,104,105
 	.long 106,107,108,109,110,111,112,113
-	.long 522,523,524,525,526,527,529,530
-	.long 531,532,577,578,579,580,581,582
+	.long 114,115,116,117,526,527,528,529
+	.long 530,531,533,534,535,536,581,582
 	.long 583,584,585,586,587,588,589,590
-	.long 591,592,593,667,668,669,670,671
-	.long 672,687,688,689,690,691,692
+	.long 591,592,593,594,595,596,597,671
+	.long 672,673,674,675,676,691,692,693
+	.long 694,695,696
 unbox_trampolines_end:
 _mono_aot_OpenTK_1_0unbox_trampolines_end:
 	.globl _mono_aot_OpenTK_1_0unbox_trampolines_end
@@ -5365,19 +5390,19 @@ bl ut_17
 bl ut_18
 bl ut_19
 bl ut_20
-bl ut_50
-bl ut_51
-bl ut_52
-bl ut_53
+bl ut_21
+bl ut_22
+bl ut_23
+bl ut_24
 bl ut_54
 bl ut_55
 bl ut_56
 bl ut_57
 bl ut_58
-bl ut_96
-bl ut_97
-bl ut_98
-bl ut_99
+bl ut_59
+bl ut_60
+bl ut_61
+bl ut_62
 bl ut_100
 bl ut_101
 bl ut_102
@@ -5392,20 +5417,20 @@ bl ut_110
 bl ut_111
 bl ut_112
 bl ut_113
-bl ut_522
-bl ut_523
-bl ut_524
-bl ut_525
+bl ut_114
+bl ut_115
+bl ut_116
+bl ut_117
 bl ut_526
 bl ut_527
+bl ut_528
 bl ut_529
 bl ut_530
 bl ut_531
-bl ut_532
-bl ut_577
-bl ut_578
-bl ut_579
-bl ut_580
+bl ut_533
+bl ut_534
+bl ut_535
+bl ut_536
 bl ut_581
 bl ut_582
 bl ut_583
@@ -5419,18 +5444,22 @@ bl ut_590
 bl ut_591
 bl ut_592
 bl ut_593
-bl ut_667
-bl ut_668
-bl ut_669
-bl ut_670
+bl ut_594
+bl ut_595
+bl ut_596
+bl ut_597
 bl ut_671
 bl ut_672
-bl ut_687
-bl ut_688
-bl ut_689
-bl ut_690
+bl ut_673
+bl ut_674
+bl ut_675
+bl ut_676
 bl ut_691
 bl ut_692
+bl ut_693
+bl ut_694
+bl ut_695
+bl ut_696
 
 	.long 0
 .section __TEXT, __const
@@ -5468,7 +5497,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #368]
 br x16
-.word 6888
+.word 6896
 _p_2_plt_OpenTK_1_0_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm:
 	.globl _p_2_plt_OpenTK_1_0_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
 .private_extern _p_2_plt_OpenTK_1_0_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
@@ -5479,7 +5508,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #376]
 br x16
-.word 6890
+.word 6898
 _p_3_plt_OpenTK_1_0_string_Format_string_object_llvm:
 	.globl _p_3_plt_OpenTK_1_0_string_Format_string_object_llvm
 .private_extern _p_3_plt_OpenTK_1_0_string_Format_string_object_llvm
@@ -5490,7 +5519,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #384]
 br x16
-.word 6898
+.word 6906
 _p_4_plt_OpenTK_1_0_System_Drawing_KnownColors_GetName_int16_llvm:
 	.globl _p_4_plt_OpenTK_1_0_System_Drawing_KnownColors_GetName_int16_llvm
 .private_extern _p_4_plt_OpenTK_1_0_System_Drawing_KnownColors_GetName_int16_llvm
@@ -5501,7 +5530,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #392]
 br x16
-.word 6903
+.word 6911
 _p_5_plt_OpenTK_1_0_System_Drawing_Color_FromKnownColor_System_Drawing_KnownColor_llvm:
 	.globl _p_5_plt_OpenTK_1_0_System_Drawing_Color_FromKnownColor_System_Drawing_KnownColor_llvm
 .private_extern _p_5_plt_OpenTK_1_0_System_Drawing_Color_FromKnownColor_System_Drawing_KnownColor_llvm
@@ -5512,7 +5541,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #400]
 br x16
-.word 6905
+.word 6913
 _p_6_plt_OpenTK_1_0_System_Drawing_Color_CheckARGBValues_int_int_int_int_llvm:
 	.globl _p_6_plt_OpenTK_1_0_System_Drawing_Color_CheckARGBValues_int_int_int_int_llvm
 .private_extern _p_6_plt_OpenTK_1_0_System_Drawing_Color_CheckARGBValues_int_int_int_int_llvm
@@ -5523,7 +5552,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #408]
 br x16
-.word 6907
+.word 6915
 _p_7_plt_OpenTK_1_0_System_Drawing_Color_get_Value_llvm:
 	.globl _p_7_plt_OpenTK_1_0_System_Drawing_Color_get_Value_llvm
 .private_extern _p_7_plt_OpenTK_1_0_System_Drawing_Color_get_Value_llvm
@@ -5534,7 +5563,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #416]
 br x16
-.word 6909
+.word 6917
 _p_8_plt_OpenTK_1_0_System_Drawing_Color_FromArgb_int_int_int_int_llvm:
 	.globl _p_8_plt_OpenTK_1_0_System_Drawing_Color_FromArgb_int_int_int_int_llvm
 .private_extern _p_8_plt_OpenTK_1_0_System_Drawing_Color_FromArgb_int_int_int_int_llvm
@@ -5545,7 +5574,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #424]
 br x16
-.word 6911
+.word 6919
 _p_9_plt_OpenTK_1_0__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm:
 	.globl _p_9_plt_OpenTK_1_0__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm
 .private_extern _p_9_plt_OpenTK_1_0__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm
@@ -5556,7 +5585,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #432]
 br x16
-.word 6913
+.word 6921
 _p_10_plt_OpenTK_1_0_System_Drawing_Color_get_Name_llvm:
 	.globl _p_10_plt_OpenTK_1_0_System_Drawing_Color_get_Name_llvm
 .private_extern _p_10_plt_OpenTK_1_0_System_Drawing_Color_get_Name_llvm
@@ -5567,7 +5596,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #440]
 br x16
-.word 6958
+.word 6966
 _p_11_plt_OpenTK_1_0_string_op_Inequality_string_string_llvm:
 	.globl _p_11_plt_OpenTK_1_0_string_op_Inequality_string_string_llvm
 .private_extern _p_11_plt_OpenTK_1_0_string_op_Inequality_string_string_llvm
@@ -5578,73 +5607,73 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #448]
 br x16
-.word 6960
-_p_12_plt_OpenTK_1_0_System_Drawing_Color_op_Equality_System_Drawing_Color_System_Drawing_Color_llvm:
-	.globl _p_12_plt_OpenTK_1_0_System_Drawing_Color_op_Equality_System_Drawing_Color_System_Drawing_Color_llvm
-.private_extern _p_12_plt_OpenTK_1_0_System_Drawing_Color_op_Equality_System_Drawing_Color_System_Drawing_Color_llvm
-	.no_dead_strip plt_OpenTK_1_0_System_Drawing_Color_op_Equality_System_Drawing_Color_System_Drawing_Color
-plt_OpenTK_1_0_System_Drawing_Color_op_Equality_System_Drawing_Color_System_Drawing_Color:
+.word 6968
+_p_12_plt_OpenTK_1_0_System_Drawing_Color_get_R_llvm:
+	.globl _p_12_plt_OpenTK_1_0_System_Drawing_Color_get_R_llvm
+.private_extern _p_12_plt_OpenTK_1_0_System_Drawing_Color_get_R_llvm
+	.no_dead_strip plt_OpenTK_1_0_System_Drawing_Color_get_R
+plt_OpenTK_1_0_System_Drawing_Color_get_R:
 _p_12:
 adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #456]
 br x16
-.word 6965
-_p_13_plt_OpenTK_1_0_wrapper_alloc_object_AllocVector_intptr_intptr_llvm:
-	.globl _p_13_plt_OpenTK_1_0_wrapper_alloc_object_AllocVector_intptr_intptr_llvm
-.private_extern _p_13_plt_OpenTK_1_0_wrapper_alloc_object_AllocVector_intptr_intptr_llvm
-	.no_dead_strip plt_OpenTK_1_0_wrapper_alloc_object_AllocVector_intptr_intptr
-plt_OpenTK_1_0_wrapper_alloc_object_AllocVector_intptr_intptr:
+.word 6973
+_p_13_plt_OpenTK_1_0_System_Drawing_Color_get_G_llvm:
+	.globl _p_13_plt_OpenTK_1_0_System_Drawing_Color_get_G_llvm
+.private_extern _p_13_plt_OpenTK_1_0_System_Drawing_Color_get_G_llvm
+	.no_dead_strip plt_OpenTK_1_0_System_Drawing_Color_get_G
+plt_OpenTK_1_0_System_Drawing_Color_get_G:
 _p_13:
 adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #464]
 br x16
-.word 6967
-_p_14_plt_OpenTK_1_0_System_Drawing_Color_get_A_llvm:
-	.globl _p_14_plt_OpenTK_1_0_System_Drawing_Color_get_A_llvm
-.private_extern _p_14_plt_OpenTK_1_0_System_Drawing_Color_get_A_llvm
-	.no_dead_strip plt_OpenTK_1_0_System_Drawing_Color_get_A
-plt_OpenTK_1_0_System_Drawing_Color_get_A:
+.word 6975
+_p_14_plt_OpenTK_1_0_System_Drawing_Color_get_B_llvm:
+	.globl _p_14_plt_OpenTK_1_0_System_Drawing_Color_get_B_llvm
+.private_extern _p_14_plt_OpenTK_1_0_System_Drawing_Color_get_B_llvm
+	.no_dead_strip plt_OpenTK_1_0_System_Drawing_Color_get_B
+plt_OpenTK_1_0_System_Drawing_Color_get_B:
 _p_14:
 adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #472]
 br x16
-.word 6975
-_p_15_plt_OpenTK_1_0_System_Drawing_Color_get_R_llvm:
-	.globl _p_15_plt_OpenTK_1_0_System_Drawing_Color_get_R_llvm
-.private_extern _p_15_plt_OpenTK_1_0_System_Drawing_Color_get_R_llvm
-	.no_dead_strip plt_OpenTK_1_0_System_Drawing_Color_get_R
-plt_OpenTK_1_0_System_Drawing_Color_get_R:
+.word 6977
+_p_15_plt_OpenTK_1_0_System_Drawing_Color_op_Equality_System_Drawing_Color_System_Drawing_Color_llvm:
+	.globl _p_15_plt_OpenTK_1_0_System_Drawing_Color_op_Equality_System_Drawing_Color_System_Drawing_Color_llvm
+.private_extern _p_15_plt_OpenTK_1_0_System_Drawing_Color_op_Equality_System_Drawing_Color_System_Drawing_Color_llvm
+	.no_dead_strip plt_OpenTK_1_0_System_Drawing_Color_op_Equality_System_Drawing_Color_System_Drawing_Color
+plt_OpenTK_1_0_System_Drawing_Color_op_Equality_System_Drawing_Color_System_Drawing_Color:
 _p_15:
 adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #480]
 br x16
-.word 6977
-_p_16_plt_OpenTK_1_0_System_Drawing_Color_get_G_llvm:
-	.globl _p_16_plt_OpenTK_1_0_System_Drawing_Color_get_G_llvm
-.private_extern _p_16_plt_OpenTK_1_0_System_Drawing_Color_get_G_llvm
-	.no_dead_strip plt_OpenTK_1_0_System_Drawing_Color_get_G
-plt_OpenTK_1_0_System_Drawing_Color_get_G:
+.word 6979
+_p_16_plt_OpenTK_1_0_wrapper_alloc_object_AllocVector_intptr_intptr_llvm:
+	.globl _p_16_plt_OpenTK_1_0_wrapper_alloc_object_AllocVector_intptr_intptr_llvm
+.private_extern _p_16_plt_OpenTK_1_0_wrapper_alloc_object_AllocVector_intptr_intptr_llvm
+	.no_dead_strip plt_OpenTK_1_0_wrapper_alloc_object_AllocVector_intptr_intptr
+plt_OpenTK_1_0_wrapper_alloc_object_AllocVector_intptr_intptr:
 _p_16:
 adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #488]
 br x16
-.word 6979
-_p_17_plt_OpenTK_1_0_System_Drawing_Color_get_B_llvm:
-	.globl _p_17_plt_OpenTK_1_0_System_Drawing_Color_get_B_llvm
-.private_extern _p_17_plt_OpenTK_1_0_System_Drawing_Color_get_B_llvm
-	.no_dead_strip plt_OpenTK_1_0_System_Drawing_Color_get_B
-plt_OpenTK_1_0_System_Drawing_Color_get_B:
+.word 6981
+_p_17_plt_OpenTK_1_0_System_Drawing_Color_get_A_llvm:
+	.globl _p_17_plt_OpenTK_1_0_System_Drawing_Color_get_A_llvm
+.private_extern _p_17_plt_OpenTK_1_0_System_Drawing_Color_get_A_llvm
+	.no_dead_strip plt_OpenTK_1_0_System_Drawing_Color_get_A
+plt_OpenTK_1_0_System_Drawing_Color_get_A:
 _p_17:
 adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #496]
 br x16
-.word 6981
+.word 6989
 _p_18_plt_OpenTK_1_0_string_Format_string_object___llvm:
 	.globl _p_18_plt_OpenTK_1_0_string_Format_string_object___llvm
 .private_extern _p_18_plt_OpenTK_1_0_string_Format_string_object___llvm
@@ -5655,7 +5684,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #504]
 br x16
-.word 6983
+.word 6991
 _p_19_plt_OpenTK_1_0_string_Concat_string_string_string_llvm:
 	.globl _p_19_plt_OpenTK_1_0_string_Concat_string_string_string_llvm
 .private_extern _p_19_plt_OpenTK_1_0_string_Concat_string_string_string_llvm
@@ -5666,7 +5695,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #512]
 br x16
-.word 6988
+.word 6996
 _p_20_plt_OpenTK_1_0__jit_icall_mono_helper_ldstr_llvm:
 	.globl _p_20_plt_OpenTK_1_0__jit_icall_mono_helper_ldstr_llvm
 .private_extern _p_20_plt_OpenTK_1_0__jit_icall_mono_helper_ldstr_llvm
@@ -5677,7 +5706,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #520]
 br x16
-.word 6993
+.word 7001
 _p_21_plt_OpenTK_1_0_System_Drawing_Color_CreateColorArgumentException_int_string_llvm:
 	.globl _p_21_plt_OpenTK_1_0_System_Drawing_Color_CreateColorArgumentException_int_string_llvm
 .private_extern _p_21_plt_OpenTK_1_0_System_Drawing_Color_CreateColorArgumentException_int_string_llvm
@@ -5688,7 +5717,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #528]
 br x16
-.word 7013
+.word 7021
 _p_22_plt_OpenTK_1_0__jit_icall_mono_arch_throw_exception_llvm:
 	.globl _p_22_plt_OpenTK_1_0__jit_icall_mono_arch_throw_exception_llvm
 .private_extern _p_22_plt_OpenTK_1_0__jit_icall_mono_arch_throw_exception_llvm
@@ -5699,7 +5728,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #536]
 br x16
-.word 7015
+.word 7023
 _p_23_plt_OpenTK_1_0_string_Format_string_object_object_llvm:
 	.globl _p_23_plt_OpenTK_1_0_string_Format_string_object_object_llvm
 .private_extern _p_23_plt_OpenTK_1_0_string_Format_string_object_object_llvm
@@ -5710,7 +5739,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #544]
 br x16
-.word 7043
+.word 7051
 _p_24_plt_OpenTK_1_0_System_ArgumentException__ctor_string_llvm:
 	.globl _p_24_plt_OpenTK_1_0_System_ArgumentException__ctor_string_llvm
 .private_extern _p_24_plt_OpenTK_1_0_System_ArgumentException__ctor_string_llvm
@@ -5721,7 +5750,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #552]
 br x16
-.word 7048
+.word 7056
 _p_25_plt_OpenTK_1_0_System_Drawing_Color_CheckRGBValues_int_int_int_llvm:
 	.globl _p_25_plt_OpenTK_1_0_System_Drawing_Color_CheckRGBValues_int_int_int_llvm
 .private_extern _p_25_plt_OpenTK_1_0_System_Drawing_Color_CheckRGBValues_int_int_int_llvm
@@ -5732,7 +5761,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #560]
 br x16
-.word 7053
+.word 7061
 _p_26_plt_OpenTK_1_0_string_memcpy_byte__byte__int_llvm:
 	.globl _p_26_plt_OpenTK_1_0_string_memcpy_byte__byte__int_llvm
 .private_extern _p_26_plt_OpenTK_1_0_string_memcpy_byte__byte__int_llvm
@@ -5743,7 +5772,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #568]
 br x16
-.word 7055
+.word 7063
 _p_27_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTexture_Dispose_bool_llvm:
 	.globl _p_27_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTexture_Dispose_bool_llvm
 .private_extern _p_27_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTexture_Dispose_bool_llvm
@@ -5754,7 +5783,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #576]
 br x16
-.word 7060
+.word 7068
 _p_28_plt_OpenTK_1_0__jit_icall_ves_icall_thread_finish_async_abort_llvm:
 	.globl _p_28_plt_OpenTK_1_0__jit_icall_ves_icall_thread_finish_async_abort_llvm
 .private_extern _p_28_plt_OpenTK_1_0__jit_icall_ves_icall_thread_finish_async_abort_llvm
@@ -5765,7 +5794,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #584]
 br x16
-.word 7062
+.word 7070
 _p_29_plt_OpenTK_1_0__jit_icall_llvm_resume_unwind_trampoline_llvm:
 	.globl _p_29_plt_OpenTK_1_0__jit_icall_llvm_resume_unwind_trampoline_llvm
 .private_extern _p_29_plt_OpenTK_1_0__jit_icall_llvm_resume_unwind_trampoline_llvm
@@ -5776,7 +5805,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #592]
 br x16
-.word 7100
+.word 7108
 _p_30_plt_OpenTK_1_0_System_GC_SuppressFinalize_object_llvm:
 	.globl _p_30_plt_OpenTK_1_0_System_GC_SuppressFinalize_object_llvm
 .private_extern _p_30_plt_OpenTK_1_0_System_GC_SuppressFinalize_object_llvm
@@ -5787,7 +5816,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #600]
 br x16
-.word 7132
+.word 7140
 _p_31_plt_OpenTK_1_0_intptr_op_Inequality_intptr_intptr_llvm:
 	.globl _p_31_plt_OpenTK_1_0_intptr_op_Inequality_intptr_intptr_llvm
 .private_extern _p_31_plt_OpenTK_1_0_intptr_op_Inequality_intptr_intptr_llvm
@@ -5798,7 +5827,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #608]
 br x16
-.word 7137
+.word 7145
 _p_32_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTexture_CFRelease_intptr_llvm:
 	.globl _p_32_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTexture_CFRelease_intptr_llvm
 .private_extern _p_32_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTexture_CFRelease_intptr_llvm
@@ -5809,7 +5838,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #616]
 br x16
-.word 7142
+.word 7150
 _p_33_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureGetTarget_intptr_llvm:
 	.globl _p_33_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureGetTarget_intptr_llvm
 .private_extern _p_33_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureGetTarget_intptr_llvm
@@ -5820,7 +5849,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #624]
 br x16
-.word 7144
+.word 7152
 _p_34_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureGetName_intptr_llvm:
 	.globl _p_34_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureGetName_intptr_llvm
 .private_extern _p_34_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureGetName_intptr_llvm
@@ -5831,7 +5860,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #632]
 br x16
-.word 7146
+.word 7154
 _p_35_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureIsFlipped_intptr_llvm:
 	.globl _p_35_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureIsFlipped_intptr_llvm
 .private_extern _p_35_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureIsFlipped_intptr_llvm
@@ -5842,7 +5871,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #640]
 br x16
-.word 7148
+.word 7156
 _p_36_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureGetCleanTexCoords_intptr_intptr_intptr_intptr_intptr_llvm:
 	.globl _p_36_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureGetCleanTexCoords_intptr_intptr_intptr_intptr_intptr_llvm
 .private_extern _p_36_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureGetCleanTexCoords_intptr_intptr_intptr_intptr_intptr_llvm
@@ -5853,7 +5882,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #648]
 br x16
-.word 7150
+.word 7158
 _p_37_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTextureCache_Dispose_bool_llvm:
 	.globl _p_37_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTextureCache_Dispose_bool_llvm
 .private_extern _p_37_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTextureCache_Dispose_bool_llvm
@@ -5864,7 +5893,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #656]
 br x16
-.word 7152
+.word 7160
 _p_38_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTextureCache_CVOpenGLESTextureCacheCreate_intptr_intptr_intptr_intptr_intptr__llvm:
 	.globl _p_38_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTextureCache_CVOpenGLESTextureCacheCreate_intptr_intptr_intptr_intptr_intptr__llvm
 .private_extern _p_38_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTextureCache_CVOpenGLESTextureCacheCreate_intptr_intptr_intptr_intptr_intptr__llvm
@@ -5875,7 +5904,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #664]
 br x16
-.word 7154
+.word 7162
 _p_39_plt_OpenTK_1_0__jit_icall_mono_create_corlib_exception_1_llvm:
 	.globl _p_39_plt_OpenTK_1_0__jit_icall_mono_create_corlib_exception_1_llvm
 .private_extern _p_39_plt_OpenTK_1_0__jit_icall_mono_create_corlib_exception_1_llvm
@@ -5886,7 +5915,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #672]
 br x16
-.word 7156
+.word 7164
 _p_40_plt_OpenTK_1_0__jit_icall_ves_icall_object_new_specific_llvm:
 	.globl _p_40_plt_OpenTK_1_0__jit_icall_ves_icall_object_new_specific_llvm
 .private_extern _p_40_plt_OpenTK_1_0__jit_icall_ves_icall_object_new_specific_llvm
@@ -5897,7 +5926,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #680]
 br x16
-.word 7189
+.word 7197
 _p_41_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTextureCache_CVOpenGLESTextureCacheCreateTextureFromImage_intptr_intptr_intptr_intptr_int_OpenTK_Graphics_ES20_All_int_int_OpenTK_Graphics_ES20_All_OpenTK_Graphics_ES20_DataType_intptr_intptr__llvm:
 	.globl _p_41_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTextureCache_CVOpenGLESTextureCacheCreateTextureFromImage_intptr_intptr_intptr_intptr_int_OpenTK_Graphics_ES20_All_int_int_OpenTK_Graphics_ES20_All_OpenTK_Graphics_ES20_DataType_intptr_intptr__llvm
 .private_extern _p_41_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTextureCache_CVOpenGLESTextureCacheCreateTextureFromImage_intptr_intptr_intptr_intptr_int_OpenTK_Graphics_ES20_All_int_int_OpenTK_Graphics_ES20_All_OpenTK_Graphics_ES20_DataType_intptr_intptr__llvm
@@ -5908,7 +5937,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #688]
 br x16
-.word 7221
+.word 7229
 _p_42_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTextureCache_CVOpenGLESTextureCacheFlush_intptr_CoreVideo_CVOptionFlags_llvm:
 	.globl _p_42_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTextureCache_CVOpenGLESTextureCacheFlush_intptr_CoreVideo_CVOptionFlags_llvm
 .private_extern _p_42_plt_OpenTK_1_0_CoreVideo_CVOpenGLESTextureCache_CVOpenGLESTextureCacheFlush_intptr_CoreVideo_CVOptionFlags_llvm
@@ -5919,7 +5948,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #696]
 br x16
-.word 7223
+.word 7231
 _p_43_plt_OpenTK_1_0_intptr_ToString_llvm:
 	.globl _p_43_plt_OpenTK_1_0_intptr_ToString_llvm
 .private_extern _p_43_plt_OpenTK_1_0_intptr_ToString_llvm
@@ -5930,7 +5959,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #704]
 br x16
-.word 7225
+.word 7233
 _p_44_plt_OpenTK_1_0__jit_icall_mono_create_corlib_exception_0_llvm:
 	.globl _p_44_plt_OpenTK_1_0__jit_icall_mono_create_corlib_exception_0_llvm
 .private_extern _p_44_plt_OpenTK_1_0__jit_icall_mono_create_corlib_exception_0_llvm
@@ -5941,7 +5970,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #712]
 br x16
-.word 7230
+.word 7238
 _p_45_plt_OpenTK_1_0__jit_icall_mono_create_corlib_exception_2_llvm:
 	.globl _p_45_plt_OpenTK_1_0__jit_icall_mono_create_corlib_exception_2_llvm
 .private_extern _p_45_plt_OpenTK_1_0__jit_icall_mono_create_corlib_exception_2_llvm
@@ -5952,7 +5981,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #720]
 br x16
-.word 7263
+.word 7271
 _p_46_plt_OpenTK_1_0_OpenTK_Graphics_ColorFormat_op_Equality_OpenTK_Graphics_ColorFormat_OpenTK_Graphics_ColorFormat_llvm:
 	.globl _p_46_plt_OpenTK_1_0_OpenTK_Graphics_ColorFormat_op_Equality_OpenTK_Graphics_ColorFormat_OpenTK_Graphics_ColorFormat_llvm
 .private_extern _p_46_plt_OpenTK_1_0_OpenTK_Graphics_ColorFormat_op_Equality_OpenTK_Graphics_ColorFormat_OpenTK_Graphics_ColorFormat_llvm
@@ -5963,7 +5992,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 7296
+.word 7304
 _p_47_plt_OpenTK_1_0_int_ToString_llvm:
 	.globl _p_47_plt_OpenTK_1_0_int_ToString_llvm
 .private_extern _p_47_plt_OpenTK_1_0_int_ToString_llvm
@@ -5974,7 +6003,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 7298
+.word 7306
 _p_48_plt_OpenTK_1_0_string_Concat_string_string_string_string_llvm:
 	.globl _p_48_plt_OpenTK_1_0_string_Concat_string_string_string_string_llvm
 .private_extern _p_48_plt_OpenTK_1_0_string_Concat_string_string_string_string_llvm
@@ -5985,7 +6014,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 7303
+.word 7311
 _p_49_plt_OpenTK_1_0_OpenTK_Graphics_ColorFormat__ctor_int_llvm:
 	.globl _p_49_plt_OpenTK_1_0_OpenTK_Graphics_ColorFormat__ctor_int_llvm
 .private_extern _p_49_plt_OpenTK_1_0_OpenTK_Graphics_ColorFormat__ctor_int_llvm
@@ -5996,7 +6025,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 7308
+.word 7316
 _p_50_plt_OpenTK_1_0_OpenTK_ContextHandle_ToString_llvm:
 	.globl _p_50_plt_OpenTK_1_0_OpenTK_ContextHandle_ToString_llvm
 .private_extern _p_50_plt_OpenTK_1_0_OpenTK_ContextHandle_ToString_llvm
@@ -6007,7 +6036,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 7310
+.word 7318
 _p_51_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_get_Values_llvm:
 	.globl _p_51_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_get_Values_llvm
 .private_extern _p_51_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_get_Values_llvm
@@ -6018,7 +6047,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 7312
+.word 7320
 _p_52_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_ValueCollection_OpenTK_ContextHandle_System_WeakReference_GetEnumerator_llvm:
 	.globl _p_52_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_ValueCollection_OpenTK_ContextHandle_System_WeakReference_GetEnumerator_llvm
 .private_extern _p_52_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_ValueCollection_OpenTK_ContextHandle_System_WeakReference_GetEnumerator_llvm
@@ -6029,7 +6058,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 7323
+.word 7331
 _p_53_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference_MoveNext_llvm:
 	.globl _p_53_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference_MoveNext_llvm
 .private_extern _p_53_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference_MoveNext_llvm
@@ -6040,7 +6069,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 7334
+.word 7342
 _p_54_plt_OpenTK_1_0_System_WeakReference_get_Target_llvm:
 	.globl _p_54_plt_OpenTK_1_0_System_WeakReference_get_Target_llvm
 .private_extern _p_54_plt_OpenTK_1_0_System_WeakReference_get_Target_llvm
@@ -6051,7 +6080,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 7345
+.word 7353
 _p_55_plt_OpenTK_1_0__jit_icall_mono_generic_class_init_llvm:
 	.globl _p_55_plt_OpenTK_1_0__jit_icall_mono_generic_class_init_llvm
 .private_extern _p_55_plt_OpenTK_1_0__jit_icall_mono_generic_class_init_llvm
@@ -6062,7 +6091,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 7350
+.word 7358
 _p_56_plt_OpenTK_1_0__jit_icall_mono_monitor_enter_v4_fast_llvm:
 	.globl _p_56_plt_OpenTK_1_0__jit_icall_mono_monitor_enter_v4_fast_llvm
 .private_extern _p_56_plt_OpenTK_1_0__jit_icall_mono_monitor_enter_v4_fast_llvm
@@ -6073,7 +6102,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 7376
+.word 7384
 _p_57_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_get_Item_OpenTK_ContextHandle_llvm:
 	.globl _p_57_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_get_Item_OpenTK_ContextHandle_llvm
 .private_extern _p_57_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_get_Item_OpenTK_ContextHandle_llvm
@@ -6084,7 +6113,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 7405
+.word 7413
 _p_58_plt_OpenTK_1_0__jit_icall_mono_monitor_enter_v4_internal_llvm:
 	.globl _p_58_plt_OpenTK_1_0__jit_icall_mono_monitor_enter_v4_internal_llvm
 .private_extern _p_58_plt_OpenTK_1_0__jit_icall_mono_monitor_enter_v4_internal_llvm
@@ -6095,7 +6124,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 7416
+.word 7424
 _p_59_plt_OpenTK_1_0_System_Threading_Monitor_Exit_object_llvm:
 	.globl _p_59_plt_OpenTK_1_0_System_Threading_Monitor_Exit_object_llvm
 .private_extern _p_59_plt_OpenTK_1_0_System_Threading_Monitor_Exit_object_llvm
@@ -6106,7 +6135,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 7449
+.word 7457
 _p_60_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsContext_get_CurrentContext_llvm:
 	.globl _p_60_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsContext_get_CurrentContext_llvm
 .private_extern _p_60_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsContext_get_CurrentContext_llvm
@@ -6117,7 +6146,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 7454
+.word 7462
 _p_61_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsContextException__ctor_llvm:
 	.globl _p_61_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsContextException__ctor_llvm
 .private_extern _p_61_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsContextException__ctor_llvm
@@ -6128,7 +6157,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 7456
+.word 7464
 _p_62_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsContext_Dispose_bool_llvm:
 	.globl _p_62_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsContext_Dispose_bool_llvm
 .private_extern _p_62_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsContext_Dispose_bool_llvm
@@ -6139,7 +6168,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 7459
+.word 7467
 _p_63_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsContext_get_IsDisposed_llvm:
 	.globl _p_63_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsContext_get_IsDisposed_llvm
 .private_extern _p_63_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsContext_get_IsDisposed_llvm
@@ -6150,7 +6179,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 7462
+.word 7470
 _p_64_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_Remove_OpenTK_ContextHandle_llvm:
 	.globl _p_64_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_Remove_OpenTK_ContextHandle_llvm
 .private_extern _p_64_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_Remove_OpenTK_ContextHandle_llvm
@@ -6161,7 +6190,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 7464
+.word 7473
 _p_65_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference__ctor_llvm:
 	.globl _p_65_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference__ctor_llvm
 .private_extern _p_65_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference__ctor_llvm
@@ -6172,7 +6201,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 7475
+.word 7484
 _p_66_plt_OpenTK_1_0_OpenTK_Platform_Factory_CreateGetCurrentGraphicsContext_llvm:
 	.globl _p_66_plt_OpenTK_1_0_OpenTK_Platform_Factory_CreateGetCurrentGraphicsContext_llvm
 .private_extern _p_66_plt_OpenTK_1_0_OpenTK_Platform_Factory_CreateGetCurrentGraphicsContext_llvm
@@ -6183,7 +6212,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 7486
+.word 7495
 _p_67_plt_OpenTK_1_0_System_Exception__ctor_llvm:
 	.globl _p_67_plt_OpenTK_1_0_System_Exception__ctor_llvm
 .private_extern _p_67_plt_OpenTK_1_0_System_Exception__ctor_llvm
@@ -6194,7 +6223,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 7489
+.word 7498
 _p_68_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_set_Index_System_Nullable_1_intptr_llvm:
 	.globl _p_68_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_set_Index_System_Nullable_1_intptr_llvm
 .private_extern _p_68_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_set_Index_System_Nullable_1_intptr_llvm
@@ -6205,7 +6234,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 7494
+.word 7503
 _p_69_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_set_ColorFormat_OpenTK_Graphics_ColorFormat_llvm:
 	.globl _p_69_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_set_ColorFormat_OpenTK_Graphics_ColorFormat_llvm
 .private_extern _p_69_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_set_ColorFormat_OpenTK_Graphics_ColorFormat_llvm
@@ -6216,7 +6245,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 7497
+.word 7506
 _p_70_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_set_Depth_int_llvm:
 	.globl _p_70_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_set_Depth_int_llvm
 .private_extern _p_70_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_set_Depth_int_llvm
@@ -6227,7 +6256,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 7500
+.word 7509
 _p_71_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_set_Stencil_int_llvm:
 	.globl _p_71_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_set_Stencil_int_llvm
 .private_extern _p_71_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_set_Stencil_int_llvm
@@ -6238,7 +6267,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 7503
+.word 7512
 _p_72_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_set_Samples_int_llvm:
 	.globl _p_72_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_set_Samples_int_llvm
 .private_extern _p_72_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_set_Samples_int_llvm
@@ -6249,7 +6278,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 7506
+.word 7515
 _p_73_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_set_AccumulatorFormat_OpenTK_Graphics_ColorFormat_llvm:
 	.globl _p_73_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_set_AccumulatorFormat_OpenTK_Graphics_ColorFormat_llvm
 .private_extern _p_73_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_set_AccumulatorFormat_OpenTK_Graphics_ColorFormat_llvm
@@ -6260,7 +6289,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 7509
+.word 7518
 _p_74_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_set_Buffers_int_llvm:
 	.globl _p_74_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_set_Buffers_int_llvm
 .private_extern _p_74_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_set_Buffers_int_llvm
@@ -6271,7 +6300,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 7512
+.word 7521
 _p_75_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_set_Stereo_bool_llvm:
 	.globl _p_75_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_set_Stereo_bool_llvm
 .private_extern _p_75_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_set_Stereo_bool_llvm
@@ -6282,7 +6311,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 7515
+.word 7524
 _p_76_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_LazySelectGraphicsMode_llvm:
 	.globl _p_76_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_LazySelectGraphicsMode_llvm
 .private_extern _p_76_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_LazySelectGraphicsMode_llvm
@@ -6293,7 +6322,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 7518
+.word 7527
 _p_77_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_get_Index_llvm:
 	.globl _p_77_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_get_Index_llvm
 .private_extern _p_77_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_get_Index_llvm
@@ -6304,7 +6333,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 7521
+.word 7530
 _p_78_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_get_ColorFormat_llvm:
 	.globl _p_78_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_get_ColorFormat_llvm
 .private_extern _p_78_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_get_ColorFormat_llvm
@@ -6315,7 +6344,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 7524
+.word 7533
 _p_79_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_get_Depth_llvm:
 	.globl _p_79_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_get_Depth_llvm
 .private_extern _p_79_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_get_Depth_llvm
@@ -6326,7 +6355,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 7527
+.word 7536
 _p_80_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_get_Stencil_llvm:
 	.globl _p_80_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_get_Stencil_llvm
 .private_extern _p_80_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_get_Stencil_llvm
@@ -6337,7 +6366,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 7530
+.word 7539
 _p_81_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_get_Samples_llvm:
 	.globl _p_81_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_get_Samples_llvm
 .private_extern _p_81_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_get_Samples_llvm
@@ -6348,7 +6377,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 7533
+.word 7542
 _p_82_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_get_AccumulatorFormat_llvm:
 	.globl _p_82_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_get_AccumulatorFormat_llvm
 .private_extern _p_82_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_get_AccumulatorFormat_llvm
@@ -6359,7 +6388,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 7536
+.word 7545
 _p_83_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_get_Buffers_llvm:
 	.globl _p_83_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_get_Buffers_llvm
 .private_extern _p_83_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_get_Buffers_llvm
@@ -6370,7 +6399,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 7539
+.word 7548
 _p_84_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_get_Stereo_llvm:
 	.globl _p_84_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_get_Stereo_llvm
 .private_extern _p_84_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_get_Stereo_llvm
@@ -6381,7 +6410,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 7542
+.word 7551
 _p_85_plt_OpenTK_1_0_System_Nullable_1_intptr_Box_System_Nullable_1_intptr_llvm:
 	.globl _p_85_plt_OpenTK_1_0_System_Nullable_1_intptr_Box_System_Nullable_1_intptr_llvm
 .private_extern _p_85_plt_OpenTK_1_0_System_Nullable_1_intptr_Box_System_Nullable_1_intptr_llvm
@@ -6392,7 +6421,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 7545
+.word 7554
 _p_86_plt_OpenTK_1_0_System_Nullable_1_intptr_GetHashCode_llvm:
 	.globl _p_86_plt_OpenTK_1_0_System_Nullable_1_intptr_GetHashCode_llvm
 .private_extern _p_86_plt_OpenTK_1_0_System_Nullable_1_intptr_GetHashCode_llvm
@@ -6403,7 +6432,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 7567
+.word 7576
 _p_87_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_Equals_OpenTK_Graphics_GraphicsMode_llvm:
 	.globl _p_87_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_Equals_OpenTK_Graphics_GraphicsMode_llvm
 .private_extern _p_87_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode_Equals_OpenTK_Graphics_GraphicsMode_llvm
@@ -6414,7 +6443,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 7589
+.word 7598
 _p_88_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_BindFramebuffer_OpenTK_Graphics_ES30_FramebufferTarget_uint_llvm:
 	.globl _p_88_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_BindFramebuffer_OpenTK_Graphics_ES30_FramebufferTarget_uint_llvm
 .private_extern _p_88_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_BindFramebuffer_OpenTK_Graphics_ES30_FramebufferTarget_uint_llvm
@@ -6425,7 +6454,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 7592
+.word 7601
 _p_89_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_BindRenderbuffer_OpenTK_Graphics_ES30_RenderbufferTarget_uint_llvm:
 	.globl _p_89_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_BindRenderbuffer_OpenTK_Graphics_ES30_RenderbufferTarget_uint_llvm
 .private_extern _p_89_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_BindRenderbuffer_OpenTK_Graphics_ES30_RenderbufferTarget_uint_llvm
@@ -6436,7 +6465,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 7595
+.word 7604
 _p_90_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_DeleteFramebuffers_int_uint__llvm:
 	.globl _p_90_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_DeleteFramebuffers_int_uint__llvm
 .private_extern _p_90_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_DeleteFramebuffers_int_uint__llvm
@@ -6447,7 +6476,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 7598
+.word 7607
 _p_91_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_DeleteRenderbuffers_int_uint__llvm:
 	.globl _p_91_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_DeleteRenderbuffers_int_uint__llvm
 .private_extern _p_91_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_DeleteRenderbuffers_int_uint__llvm
@@ -6458,7 +6487,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 7601
+.word 7610
 _p_92_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_FramebufferRenderbuffer_OpenTK_Graphics_ES30_FramebufferTarget_OpenTK_Graphics_ES30_FramebufferSlot_OpenTK_Graphics_ES30_RenderbufferTarget_uint_llvm:
 	.globl _p_92_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_FramebufferRenderbuffer_OpenTK_Graphics_ES30_FramebufferTarget_OpenTK_Graphics_ES30_FramebufferSlot_OpenTK_Graphics_ES30_RenderbufferTarget_uint_llvm
 .private_extern _p_92_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_FramebufferRenderbuffer_OpenTK_Graphics_ES30_FramebufferTarget_OpenTK_Graphics_ES30_FramebufferSlot_OpenTK_Graphics_ES30_RenderbufferTarget_uint_llvm
@@ -6469,7 +6498,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 7604
+.word 7613
 _p_93_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_GenFramebuffers_int_uint__llvm:
 	.globl _p_93_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_GenFramebuffers_int_uint__llvm
 .private_extern _p_93_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_GenFramebuffers_int_uint__llvm
@@ -6480,7 +6509,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 7607
+.word 7616
 _p_94_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_GenRenderbuffers_int_uint__llvm:
 	.globl _p_94_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_GenRenderbuffers_int_uint__llvm
 .private_extern _p_94_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_GenRenderbuffers_int_uint__llvm
@@ -6491,7 +6520,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 7610
+.word 7619
 _p_95_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_GetIntegerv_OpenTK_Graphics_ES30_GetPName_int__llvm:
 	.globl _p_95_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_GetIntegerv_OpenTK_Graphics_ES30_GetPName_int__llvm
 .private_extern _p_95_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_GetIntegerv_OpenTK_Graphics_ES30_GetPName_int__llvm
@@ -6502,7 +6531,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 7613
+.word 7622
 _p_96_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_GetRenderbufferParameteriv_OpenTK_Graphics_ES30_RenderbufferTarget_OpenTK_Graphics_ES30_RenderbufferParameterName_int__llvm:
 	.globl _p_96_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_GetRenderbufferParameteriv_OpenTK_Graphics_ES30_RenderbufferTarget_OpenTK_Graphics_ES30_RenderbufferParameterName_int__llvm
 .private_extern _p_96_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_GetRenderbufferParameteriv_OpenTK_Graphics_ES30_RenderbufferTarget_OpenTK_Graphics_ES30_RenderbufferParameterName_int__llvm
@@ -6513,7 +6542,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 7616
+.word 7625
 _p_97_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_PixelStorei_OpenTK_Graphics_ES30_PixelStoreParameter_int_llvm:
 	.globl _p_97_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_PixelStorei_OpenTK_Graphics_ES30_PixelStoreParameter_int_llvm
 .private_extern _p_97_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_PixelStorei_OpenTK_Graphics_ES30_PixelStoreParameter_int_llvm
@@ -6524,7 +6553,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 7619
+.word 7628
 _p_98_plt_OpenTK_1_0_System_Runtime_InteropServices_GCHandle_Alloc_object_System_Runtime_InteropServices_GCHandleType_llvm:
 	.globl _p_98_plt_OpenTK_1_0_System_Runtime_InteropServices_GCHandle_Alloc_object_System_Runtime_InteropServices_GCHandleType_llvm
 .private_extern _p_98_plt_OpenTK_1_0_System_Runtime_InteropServices_GCHandle_Alloc_object_System_Runtime_InteropServices_GCHandleType_llvm
@@ -6535,7 +6564,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 7622
+.word 7631
 _p_99_plt_OpenTK_1_0_System_Runtime_InteropServices_GCHandle_AddrOfPinnedObject_llvm:
 	.globl _p_99_plt_OpenTK_1_0_System_Runtime_InteropServices_GCHandle_AddrOfPinnedObject_llvm
 .private_extern _p_99_plt_OpenTK_1_0_System_Runtime_InteropServices_GCHandle_AddrOfPinnedObject_llvm
@@ -6546,7 +6575,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 7627
+.word 7636
 _p_100_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_ReadPixels_int_int_int_int_OpenTK_Graphics_ES30_PixelFormat_OpenTK_Graphics_ES30_PixelType_intptr_llvm:
 	.globl _p_100_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_ReadPixels_int_int_int_int_OpenTK_Graphics_ES30_PixelFormat_OpenTK_Graphics_ES30_PixelType_intptr_llvm
 .private_extern _p_100_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_ReadPixels_int_int_int_int_OpenTK_Graphics_ES30_PixelFormat_OpenTK_Graphics_ES30_PixelType_intptr_llvm
@@ -6557,7 +6586,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 7632
+.word 7641
 _p_101_plt_OpenTK_1_0_System_Runtime_InteropServices_GCHandle_Free_llvm:
 	.globl _p_101_plt_OpenTK_1_0_System_Runtime_InteropServices_GCHandle_Free_llvm
 .private_extern _p_101_plt_OpenTK_1_0_System_Runtime_InteropServices_GCHandle_Free_llvm
@@ -6568,7 +6597,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 7635
+.word 7644
 _p_102_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_Scissor_int_int_int_int_llvm:
 	.globl _p_102_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_Scissor_int_int_int_int_llvm
 .private_extern _p_102_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_Scissor_int_int_int_int_llvm
@@ -6579,7 +6608,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 7640
+.word 7649
 _p_103_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_Viewport_int_int_int_int_llvm:
 	.globl _p_103_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_Viewport_int_int_int_int_llvm
 .private_extern _p_103_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Core_Viewport_int_int_int_int_llvm
@@ -6590,7 +6619,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 7643
+.word 7652
 _p_104_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_BindFramebuffer_OpenTK_Graphics_ES20_FramebufferTarget_uint_llvm:
 	.globl _p_104_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_BindFramebuffer_OpenTK_Graphics_ES20_FramebufferTarget_uint_llvm
 .private_extern _p_104_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_BindFramebuffer_OpenTK_Graphics_ES20_FramebufferTarget_uint_llvm
@@ -6601,7 +6630,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 7646
+.word 7655
 _p_105_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_BindRenderbuffer_OpenTK_Graphics_ES20_RenderbufferTarget_uint_llvm:
 	.globl _p_105_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_BindRenderbuffer_OpenTK_Graphics_ES20_RenderbufferTarget_uint_llvm
 .private_extern _p_105_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_BindRenderbuffer_OpenTK_Graphics_ES20_RenderbufferTarget_uint_llvm
@@ -6612,7 +6641,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 7649
+.word 7658
 _p_106_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_DeleteFramebuffers_int_uint__llvm:
 	.globl _p_106_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_DeleteFramebuffers_int_uint__llvm
 .private_extern _p_106_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_DeleteFramebuffers_int_uint__llvm
@@ -6623,7 +6652,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 7652
+.word 7661
 _p_107_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_DeleteRenderbuffers_int_uint__llvm:
 	.globl _p_107_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_DeleteRenderbuffers_int_uint__llvm
 .private_extern _p_107_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_DeleteRenderbuffers_int_uint__llvm
@@ -6634,7 +6663,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 7655
+.word 7664
 _p_108_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_FramebufferRenderbuffer_OpenTK_Graphics_ES20_FramebufferTarget_OpenTK_Graphics_ES20_FramebufferSlot_OpenTK_Graphics_ES20_RenderbufferTarget_uint_llvm:
 	.globl _p_108_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_FramebufferRenderbuffer_OpenTK_Graphics_ES20_FramebufferTarget_OpenTK_Graphics_ES20_FramebufferSlot_OpenTK_Graphics_ES20_RenderbufferTarget_uint_llvm
 .private_extern _p_108_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_FramebufferRenderbuffer_OpenTK_Graphics_ES20_FramebufferTarget_OpenTK_Graphics_ES20_FramebufferSlot_OpenTK_Graphics_ES20_RenderbufferTarget_uint_llvm
@@ -6645,7 +6674,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 7658
+.word 7667
 _p_109_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_GenFramebuffers_int_uint__llvm:
 	.globl _p_109_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_GenFramebuffers_int_uint__llvm
 .private_extern _p_109_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_GenFramebuffers_int_uint__llvm
@@ -6656,7 +6685,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 7661
+.word 7670
 _p_110_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_GenRenderbuffers_int_uint__llvm:
 	.globl _p_110_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_GenRenderbuffers_int_uint__llvm
 .private_extern _p_110_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_GenRenderbuffers_int_uint__llvm
@@ -6667,7 +6696,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 7664
+.word 7673
 _p_111_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_GetIntegerv_OpenTK_Graphics_ES20_GetPName_int__llvm:
 	.globl _p_111_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_GetIntegerv_OpenTK_Graphics_ES20_GetPName_int__llvm
 .private_extern _p_111_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_GetIntegerv_OpenTK_Graphics_ES20_GetPName_int__llvm
@@ -6678,7 +6707,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 7667
+.word 7676
 _p_112_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_GetRenderbufferParameteriv_OpenTK_Graphics_ES20_RenderbufferTarget_OpenTK_Graphics_ES20_RenderbufferParameterName_int__llvm:
 	.globl _p_112_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_GetRenderbufferParameteriv_OpenTK_Graphics_ES20_RenderbufferTarget_OpenTK_Graphics_ES20_RenderbufferParameterName_int__llvm
 .private_extern _p_112_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_GetRenderbufferParameteriv_OpenTK_Graphics_ES20_RenderbufferTarget_OpenTK_Graphics_ES20_RenderbufferParameterName_int__llvm
@@ -6689,7 +6718,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 7670
+.word 7679
 _p_113_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_PixelStorei_OpenTK_Graphics_ES20_PixelStoreParameter_int_llvm:
 	.globl _p_113_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_PixelStorei_OpenTK_Graphics_ES20_PixelStoreParameter_int_llvm
 .private_extern _p_113_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_PixelStorei_OpenTK_Graphics_ES20_PixelStoreParameter_int_llvm
@@ -6700,7 +6729,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 7673
+.word 7682
 _p_114_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_ReadPixels_int_int_int_int_OpenTK_Graphics_ES20_PixelFormat_OpenTK_Graphics_ES20_PixelType_intptr_llvm:
 	.globl _p_114_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_ReadPixels_int_int_int_int_OpenTK_Graphics_ES20_PixelFormat_OpenTK_Graphics_ES20_PixelType_intptr_llvm
 .private_extern _p_114_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_ReadPixels_int_int_int_int_OpenTK_Graphics_ES20_PixelFormat_OpenTK_Graphics_ES20_PixelType_intptr_llvm
@@ -6711,7 +6740,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 7676
+.word 7685
 _p_115_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_Scissor_int_int_int_int_llvm:
 	.globl _p_115_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_Scissor_int_int_int_int_llvm
 .private_extern _p_115_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_Scissor_int_int_int_int_llvm
@@ -6722,7 +6751,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 7679
+.word 7688
 _p_116_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_Viewport_int_int_int_int_llvm:
 	.globl _p_116_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_Viewport_int_int_int_int_llvm
 .private_extern _p_116_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Core_Viewport_int_int_int_int_llvm
@@ -6733,7 +6762,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 7682
+.word 7691
 _p_117_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_GetIntegerv_OpenTK_Graphics_ES11_All_int__llvm:
 	.globl _p_117_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_GetIntegerv_OpenTK_Graphics_ES11_All_int__llvm
 .private_extern _p_117_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_GetIntegerv_OpenTK_Graphics_ES11_All_int__llvm
@@ -6744,7 +6773,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 7685
+.word 7694
 _p_118_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_PixelStorei_OpenTK_Graphics_ES11_All_int_llvm:
 	.globl _p_118_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_PixelStorei_OpenTK_Graphics_ES11_All_int_llvm
 .private_extern _p_118_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_PixelStorei_OpenTK_Graphics_ES11_All_int_llvm
@@ -6755,7 +6784,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 7688
+.word 7697
 _p_119_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_ReadPixels_int_int_int_int_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_intptr_llvm:
 	.globl _p_119_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_ReadPixels_int_int_int_int_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_intptr_llvm
 .private_extern _p_119_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_ReadPixels_int_int_int_int_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_intptr_llvm
@@ -6766,7 +6795,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 7691
+.word 7700
 _p_120_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_Scissor_int_int_int_int_llvm:
 	.globl _p_120_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_Scissor_int_int_int_int_llvm
 .private_extern _p_120_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_Scissor_int_int_int_int_llvm
@@ -6777,7 +6806,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 7694
+.word 7703
 _p_121_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_Viewport_int_int_int_int_llvm:
 	.globl _p_121_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_Viewport_int_int_int_int_llvm
 .private_extern _p_121_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_Viewport_int_int_int_int_llvm
@@ -6788,7 +6817,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 7697
+.word 7706
 _p_122_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_BindFramebufferOES_OpenTK_Graphics_ES11_All_uint_llvm:
 	.globl _p_122_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_BindFramebufferOES_OpenTK_Graphics_ES11_All_uint_llvm
 .private_extern _p_122_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_BindFramebufferOES_OpenTK_Graphics_ES11_All_uint_llvm
@@ -6799,7 +6828,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 7700
+.word 7709
 _p_123_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_BindRenderbufferOES_OpenTK_Graphics_ES11_All_uint_llvm:
 	.globl _p_123_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_BindRenderbufferOES_OpenTK_Graphics_ES11_All_uint_llvm
 .private_extern _p_123_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_BindRenderbufferOES_OpenTK_Graphics_ES11_All_uint_llvm
@@ -6810,7 +6839,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 7703
+.word 7712
 _p_124_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_DeleteFramebuffersOES_int_uint__llvm:
 	.globl _p_124_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_DeleteFramebuffersOES_int_uint__llvm
 .private_extern _p_124_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_DeleteFramebuffersOES_int_uint__llvm
@@ -6821,7 +6850,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 7706
+.word 7715
 _p_125_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_DeleteRenderbuffersOES_int_uint__llvm:
 	.globl _p_125_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_DeleteRenderbuffersOES_int_uint__llvm
 .private_extern _p_125_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_DeleteRenderbuffersOES_int_uint__llvm
@@ -6832,7 +6861,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 7709
+.word 7718
 _p_126_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_FramebufferRenderbufferOES_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_uint_llvm:
 	.globl _p_126_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_FramebufferRenderbufferOES_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_uint_llvm
 .private_extern _p_126_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_FramebufferRenderbufferOES_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_uint_llvm
@@ -6843,7 +6872,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 7712
+.word 7721
 _p_127_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_GenFramebuffersOES_int_uint__llvm:
 	.globl _p_127_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_GenFramebuffersOES_int_uint__llvm
 .private_extern _p_127_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_GenFramebuffersOES_int_uint__llvm
@@ -6854,7 +6883,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 7715
+.word 7724
 _p_128_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_GenRenderbuffersOES_int_uint__llvm:
 	.globl _p_128_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_GenRenderbuffersOES_int_uint__llvm
 .private_extern _p_128_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_GenRenderbuffersOES_int_uint__llvm
@@ -6865,7 +6894,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 7718
+.word 7727
 _p_129_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_GetRenderbufferParameterivOES_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_int__llvm:
 	.globl _p_129_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_GetRenderbufferParameterivOES_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_int__llvm
 .private_extern _p_129_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Core_GetRenderbufferParameterivOES_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_int__llvm
@@ -6876,7 +6905,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 7721
+.word 7730
 _p_130_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGraphicsContext__ctor_OpenTK_Graphics_GraphicsMode_OpenTK_Platform_IWindowInfo_OpenTK_Graphics_IGraphicsContext_int_int_OpenTK_Graphics_GraphicsContextFlags_llvm:
 	.globl _p_130_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGraphicsContext__ctor_OpenTK_Graphics_GraphicsMode_OpenTK_Platform_IWindowInfo_OpenTK_Graphics_IGraphicsContext_int_int_OpenTK_Graphics_GraphicsContextFlags_llvm
 .private_extern _p_130_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGraphicsContext__ctor_OpenTK_Graphics_GraphicsMode_OpenTK_Platform_IWindowInfo_OpenTK_Graphics_IGraphicsContext_int_int_OpenTK_Graphics_GraphicsContextFlags_llvm
@@ -6887,7 +6916,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 7724
+.word 7733
 _p_131_plt_OpenTK_1_0_OpenGLES_EAGLContext_get_CurrentContext_llvm:
 	.globl _p_131_plt_OpenTK_1_0_OpenGLES_EAGLContext_get_CurrentContext_llvm
 .private_extern _p_131_plt_OpenTK_1_0_OpenGLES_EAGLContext_get_CurrentContext_llvm
@@ -6898,7 +6927,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 7727
+.word 7736
 _p_132_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsContext__ctor_OpenTK_Graphics_GraphicsMode_OpenTK_Platform_IWindowInfo_int_int_OpenTK_Graphics_GraphicsContextFlags_llvm:
 	.globl _p_132_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsContext__ctor_OpenTK_Graphics_GraphicsMode_OpenTK_Platform_IWindowInfo_int_int_OpenTK_Graphics_GraphicsContextFlags_llvm
 .private_extern _p_132_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsContext__ctor_OpenTK_Graphics_GraphicsMode_OpenTK_Platform_IWindowInfo_int_int_OpenTK_Graphics_GraphicsContextFlags_llvm
@@ -6909,7 +6938,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 7732
+.word 7741
 _p_133_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsContext_MakeCurrent_OpenTK_Platform_IWindowInfo_llvm:
 	.globl _p_133_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsContext_MakeCurrent_OpenTK_Platform_IWindowInfo_llvm
 .private_extern _p_133_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsContext_MakeCurrent_OpenTK_Platform_IWindowInfo_llvm
@@ -6920,7 +6949,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 7734
+.word 7743
 _p_134_plt_OpenTK_1_0_string_Concat_object_object_llvm:
 	.globl _p_134_plt_OpenTK_1_0_string_Concat_object_object_llvm
 .private_extern _p_134_plt_OpenTK_1_0_string_Concat_object_object_llvm
@@ -6931,7 +6960,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 7736
+.word 7745
 _p_135_plt_OpenTK_1_0_OpenTK_Platform_Utilities_CreateGraphicsContext_OpenTK_Graphics_GraphicsMode_OpenTK_Platform_IWindowInfo_int_int_OpenTK_Graphics_GraphicsContextFlags_llvm:
 	.globl _p_135_plt_OpenTK_1_0_OpenTK_Platform_Utilities_CreateGraphicsContext_OpenTK_Graphics_GraphicsMode_OpenTK_Platform_IWindowInfo_int_int_OpenTK_Graphics_GraphicsContextFlags_llvm
 .private_extern _p_135_plt_OpenTK_1_0_OpenTK_Platform_Utilities_CreateGraphicsContext_OpenTK_Graphics_GraphicsMode_OpenTK_Platform_IWindowInfo_int_int_OpenTK_Graphics_GraphicsContextFlags_llvm
@@ -6942,7 +6971,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 7741
+.word 7750
 _p_136_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_GLCalls_CreateES1_llvm:
 	.globl _p_136_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_GLCalls_CreateES1_llvm
 .private_extern _p_136_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_GLCalls_CreateES1_llvm
@@ -6953,7 +6982,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 7744
+.word 7753
 _p_137_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_GLCalls_CreateES2_llvm:
 	.globl _p_137_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_GLCalls_CreateES2_llvm
 .private_extern _p_137_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_GLCalls_CreateES2_llvm
@@ -6964,7 +6993,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 7747
+.word 7756
 _p_138_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_GLCalls_CreateES3_llvm:
 	.globl _p_138_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_GLCalls_CreateES3_llvm
 .private_extern _p_138_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_GLCalls_CreateES3_llvm
@@ -6975,7 +7004,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 7750
+.word 7759
 _p_139_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Oes_BindFramebuffer_OpenTK_Graphics_ES11_All_int_llvm:
 	.globl _p_139_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Oes_BindFramebuffer_OpenTK_Graphics_ES11_All_int_llvm
 .private_extern _p_139_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Oes_BindFramebuffer_OpenTK_Graphics_ES11_All_int_llvm
@@ -6986,7 +7015,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
-.word 7753
+.word 7762
 _p_140_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Oes_BindRenderbuffer_OpenTK_Graphics_ES11_All_int_llvm:
 	.globl _p_140_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Oes_BindRenderbuffer_OpenTK_Graphics_ES11_All_int_llvm
 .private_extern _p_140_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Oes_BindRenderbuffer_OpenTK_Graphics_ES11_All_int_llvm
@@ -6997,7 +7026,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
-.word 7756
+.word 7765
 _p_141_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Oes_DeleteFramebuffers_int_int__llvm:
 	.globl _p_141_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Oes_DeleteFramebuffers_int_int__llvm
 .private_extern _p_141_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Oes_DeleteFramebuffers_int_int__llvm
@@ -7008,7 +7037,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 7759
+.word 7768
 _p_142_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Oes_DeleteRenderbuffers_int_int__llvm:
 	.globl _p_142_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Oes_DeleteRenderbuffers_int_int__llvm
 .private_extern _p_142_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Oes_DeleteRenderbuffers_int_int__llvm
@@ -7019,7 +7048,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 7762
+.word 7771
 _p_143_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Oes_FramebufferRenderbuffer_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_int_llvm:
 	.globl _p_143_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Oes_FramebufferRenderbuffer_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_int_llvm
 .private_extern _p_143_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Oes_FramebufferRenderbuffer_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_int_llvm
@@ -7030,7 +7059,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 7765
+.word 7774
 _p_144_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Oes_GenFramebuffers_int_int__llvm:
 	.globl _p_144_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Oes_GenFramebuffers_int_int__llvm
 .private_extern _p_144_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Oes_GenFramebuffers_int_int__llvm
@@ -7041,7 +7070,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 7768
+.word 7777
 _p_145_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Oes_GenRenderbuffers_int_int__llvm:
 	.globl _p_145_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Oes_GenRenderbuffers_int_int__llvm
 .private_extern _p_145_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Oes_GenRenderbuffers_int_int__llvm
@@ -7052,7 +7081,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 7771
+.word 7780
 _p_146_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_GetInteger_OpenTK_Graphics_ES11_All_int__llvm:
 	.globl _p_146_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_GetInteger_OpenTK_Graphics_ES11_All_int__llvm
 .private_extern _p_146_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_GetInteger_OpenTK_Graphics_ES11_All_int__llvm
@@ -7063,7 +7092,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 7774
+.word 7783
 _p_147_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Scissor_int_int_int_int_llvm:
 	.globl _p_147_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Scissor_int_int_int_int_llvm
 .private_extern _p_147_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Scissor_int_int_int_int_llvm
@@ -7074,7 +7103,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 7777
+.word 7786
 _p_148_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Viewport_int_int_int_int_llvm:
 	.globl _p_148_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Viewport_int_int_int_int_llvm
 .private_extern _p_148_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Viewport_int_int_int_int_llvm
@@ -7085,7 +7114,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 7780
+.word 7789
 _p_149_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Oes_GetRenderbufferParameter_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_int__llvm:
 	.globl _p_149_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Oes_GetRenderbufferParameter_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_int__llvm
 .private_extern _p_149_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_Oes_GetRenderbufferParameter_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_int__llvm
@@ -7096,7 +7125,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 7783
+.word 7792
 _p_150_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_PixelStore_OpenTK_Graphics_ES11_All_int_llvm:
 	.globl _p_150_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_PixelStore_OpenTK_Graphics_ES11_All_int_llvm
 .private_extern _p_150_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_PixelStore_OpenTK_Graphics_ES11_All_int_llvm
@@ -7107,7 +7136,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
-.word 7786
+.word 7795
 _p_151_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_ReadPixels_byte_int_int_int_int_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_byte___llvm:
 	.globl _p_151_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_ReadPixels_byte_int_int_int_int_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_byte___llvm
 .private_extern _p_151_plt_OpenTK_1_0_OpenTK_Graphics_ES11_GL_ReadPixels_byte_int_int_int_int_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_byte___llvm
@@ -7118,7 +7147,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 7789
+.word 7798
 _p_152_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_BindFramebuffer_OpenTK_Graphics_ES20_FramebufferTarget_int_llvm:
 	.globl _p_152_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_BindFramebuffer_OpenTK_Graphics_ES20_FramebufferTarget_int_llvm
 .private_extern _p_152_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_BindFramebuffer_OpenTK_Graphics_ES20_FramebufferTarget_int_llvm
@@ -7129,7 +7158,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
-.word 7801
+.word 7810
 _p_153_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_BindRenderbuffer_OpenTK_Graphics_ES20_RenderbufferTarget_int_llvm:
 	.globl _p_153_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_BindRenderbuffer_OpenTK_Graphics_ES20_RenderbufferTarget_int_llvm
 .private_extern _p_153_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_BindRenderbuffer_OpenTK_Graphics_ES20_RenderbufferTarget_int_llvm
@@ -7140,7 +7169,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 7804
+.word 7813
 _p_154_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_DeleteFramebuffers_int_int__llvm:
 	.globl _p_154_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_DeleteFramebuffers_int_int__llvm
 .private_extern _p_154_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_DeleteFramebuffers_int_int__llvm
@@ -7151,7 +7180,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 7807
+.word 7816
 _p_155_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_DeleteRenderbuffers_int_int__llvm:
 	.globl _p_155_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_DeleteRenderbuffers_int_int__llvm
 .private_extern _p_155_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_DeleteRenderbuffers_int_int__llvm
@@ -7162,7 +7191,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 7810
+.word 7819
 _p_156_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_FramebufferRenderbuffer_OpenTK_Graphics_ES20_FramebufferTarget_OpenTK_Graphics_ES20_FramebufferSlot_OpenTK_Graphics_ES20_RenderbufferTarget_int_llvm:
 	.globl _p_156_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_FramebufferRenderbuffer_OpenTK_Graphics_ES20_FramebufferTarget_OpenTK_Graphics_ES20_FramebufferSlot_OpenTK_Graphics_ES20_RenderbufferTarget_int_llvm
 .private_extern _p_156_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_FramebufferRenderbuffer_OpenTK_Graphics_ES20_FramebufferTarget_OpenTK_Graphics_ES20_FramebufferSlot_OpenTK_Graphics_ES20_RenderbufferTarget_int_llvm
@@ -7173,7 +7202,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 7813
+.word 7822
 _p_157_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_GenFramebuffers_int_int__llvm:
 	.globl _p_157_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_GenFramebuffers_int_int__llvm
 .private_extern _p_157_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_GenFramebuffers_int_int__llvm
@@ -7184,7 +7213,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 7816
+.word 7825
 _p_158_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_GenRenderbuffers_int_int__llvm:
 	.globl _p_158_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_GenRenderbuffers_int_int__llvm
 .private_extern _p_158_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_GenRenderbuffers_int_int__llvm
@@ -7195,7 +7224,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 7819
+.word 7828
 _p_159_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_GetInteger_OpenTK_Graphics_ES20_GetPName_int__llvm:
 	.globl _p_159_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_GetInteger_OpenTK_Graphics_ES20_GetPName_int__llvm
 .private_extern _p_159_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_GetInteger_OpenTK_Graphics_ES20_GetPName_int__llvm
@@ -7206,7 +7235,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 7822
+.word 7831
 _p_160_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Scissor_int_int_int_int_llvm:
 	.globl _p_160_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Scissor_int_int_int_int_llvm
 .private_extern _p_160_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Scissor_int_int_int_int_llvm
@@ -7217,7 +7246,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
-.word 7825
+.word 7834
 _p_161_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Viewport_int_int_int_int_llvm:
 	.globl _p_161_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Viewport_int_int_int_int_llvm
 .private_extern _p_161_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_Viewport_int_int_int_int_llvm
@@ -7228,7 +7257,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 7828
+.word 7837
 _p_162_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_GetRenderbufferParameter_OpenTK_Graphics_ES20_RenderbufferTarget_OpenTK_Graphics_ES20_RenderbufferParameterName_int__llvm:
 	.globl _p_162_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_GetRenderbufferParameter_OpenTK_Graphics_ES20_RenderbufferTarget_OpenTK_Graphics_ES20_RenderbufferParameterName_int__llvm
 .private_extern _p_162_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_GetRenderbufferParameter_OpenTK_Graphics_ES20_RenderbufferTarget_OpenTK_Graphics_ES20_RenderbufferParameterName_int__llvm
@@ -7239,7 +7268,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 7831
+.word 7840
 _p_163_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_PixelStore_OpenTK_Graphics_ES20_PixelStoreParameter_int_llvm:
 	.globl _p_163_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_PixelStore_OpenTK_Graphics_ES20_PixelStoreParameter_int_llvm
 .private_extern _p_163_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_PixelStore_OpenTK_Graphics_ES20_PixelStoreParameter_int_llvm
@@ -7250,7 +7279,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1664]
 br x16
-.word 7834
+.word 7843
 _p_164_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_ReadPixels_byte_int_int_int_int_OpenTK_Graphics_ES20_PixelFormat_OpenTK_Graphics_ES20_PixelType_byte___llvm:
 	.globl _p_164_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_ReadPixels_byte_int_int_int_int_OpenTK_Graphics_ES20_PixelFormat_OpenTK_Graphics_ES20_PixelType_byte___llvm
 .private_extern _p_164_plt_OpenTK_1_0_OpenTK_Graphics_ES20_GL_ReadPixels_byte_int_int_int_int_OpenTK_Graphics_ES20_PixelFormat_OpenTK_Graphics_ES20_PixelType_byte___llvm
@@ -7261,7 +7290,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1672]
 br x16
-.word 7837
+.word 7846
 _p_165_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_BindFramebuffer_OpenTK_Graphics_ES30_FramebufferTarget_int_llvm:
 	.globl _p_165_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_BindFramebuffer_OpenTK_Graphics_ES30_FramebufferTarget_int_llvm
 .private_extern _p_165_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_BindFramebuffer_OpenTK_Graphics_ES30_FramebufferTarget_int_llvm
@@ -7272,7 +7301,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1680]
 br x16
-.word 7849
+.word 7858
 _p_166_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_BindRenderbuffer_OpenTK_Graphics_ES30_RenderbufferTarget_int_llvm:
 	.globl _p_166_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_BindRenderbuffer_OpenTK_Graphics_ES30_RenderbufferTarget_int_llvm
 .private_extern _p_166_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_BindRenderbuffer_OpenTK_Graphics_ES30_RenderbufferTarget_int_llvm
@@ -7283,7 +7312,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1688]
 br x16
-.word 7852
+.word 7861
 _p_167_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_DeleteFramebuffers_int_int__llvm:
 	.globl _p_167_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_DeleteFramebuffers_int_int__llvm
 .private_extern _p_167_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_DeleteFramebuffers_int_int__llvm
@@ -7294,7 +7323,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1696]
 br x16
-.word 7855
+.word 7864
 _p_168_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_DeleteRenderbuffers_int_int__llvm:
 	.globl _p_168_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_DeleteRenderbuffers_int_int__llvm
 .private_extern _p_168_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_DeleteRenderbuffers_int_int__llvm
@@ -7305,7 +7334,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1704]
 br x16
-.word 7858
+.word 7867
 _p_169_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_FramebufferRenderbuffer_OpenTK_Graphics_ES30_FramebufferTarget_OpenTK_Graphics_ES30_FramebufferSlot_OpenTK_Graphics_ES30_RenderbufferTarget_int_llvm:
 	.globl _p_169_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_FramebufferRenderbuffer_OpenTK_Graphics_ES30_FramebufferTarget_OpenTK_Graphics_ES30_FramebufferSlot_OpenTK_Graphics_ES30_RenderbufferTarget_int_llvm
 .private_extern _p_169_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_FramebufferRenderbuffer_OpenTK_Graphics_ES30_FramebufferTarget_OpenTK_Graphics_ES30_FramebufferSlot_OpenTK_Graphics_ES30_RenderbufferTarget_int_llvm
@@ -7316,7 +7345,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1712]
 br x16
-.word 7861
+.word 7870
 _p_170_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_GenFramebuffers_int_int__llvm:
 	.globl _p_170_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_GenFramebuffers_int_int__llvm
 .private_extern _p_170_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_GenFramebuffers_int_int__llvm
@@ -7327,7 +7356,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1720]
 br x16
-.word 7864
+.word 7873
 _p_171_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_GenRenderbuffers_int_int__llvm:
 	.globl _p_171_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_GenRenderbuffers_int_int__llvm
 .private_extern _p_171_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_GenRenderbuffers_int_int__llvm
@@ -7338,7 +7367,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1728]
 br x16
-.word 7867
+.word 7876
 _p_172_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_GetInteger_OpenTK_Graphics_ES30_GetPName_int__llvm:
 	.globl _p_172_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_GetInteger_OpenTK_Graphics_ES30_GetPName_int__llvm
 .private_extern _p_172_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_GetInteger_OpenTK_Graphics_ES30_GetPName_int__llvm
@@ -7349,7 +7378,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1736]
 br x16
-.word 7870
+.word 7879
 _p_173_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Scissor_int_int_int_int_llvm:
 	.globl _p_173_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Scissor_int_int_int_int_llvm
 .private_extern _p_173_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Scissor_int_int_int_int_llvm
@@ -7360,7 +7389,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1744]
 br x16
-.word 7873
+.word 7882
 _p_174_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Viewport_int_int_int_int_llvm:
 	.globl _p_174_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Viewport_int_int_int_int_llvm
 .private_extern _p_174_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_Viewport_int_int_int_int_llvm
@@ -7371,7 +7400,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1752]
 br x16
-.word 7876
+.word 7885
 _p_175_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_GetRenderbufferParameter_OpenTK_Graphics_ES30_RenderbufferTarget_OpenTK_Graphics_ES30_RenderbufferParameterName_int__llvm:
 	.globl _p_175_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_GetRenderbufferParameter_OpenTK_Graphics_ES30_RenderbufferTarget_OpenTK_Graphics_ES30_RenderbufferParameterName_int__llvm
 .private_extern _p_175_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_GetRenderbufferParameter_OpenTK_Graphics_ES30_RenderbufferTarget_OpenTK_Graphics_ES30_RenderbufferParameterName_int__llvm
@@ -7382,7 +7411,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1760]
 br x16
-.word 7879
+.word 7888
 _p_176_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_PixelStore_OpenTK_Graphics_ES30_PixelStoreParameter_int_llvm:
 	.globl _p_176_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_PixelStore_OpenTK_Graphics_ES30_PixelStoreParameter_int_llvm
 .private_extern _p_176_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_PixelStore_OpenTK_Graphics_ES30_PixelStoreParameter_int_llvm
@@ -7393,7 +7422,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1768]
 br x16
-.word 7882
+.word 7891
 _p_177_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_ReadPixels_byte_int_int_int_int_OpenTK_Graphics_ES30_PixelFormat_OpenTK_Graphics_ES30_PixelType_byte___llvm:
 	.globl _p_177_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_ReadPixels_byte_int_int_int_int_OpenTK_Graphics_ES30_PixelFormat_OpenTK_Graphics_ES30_PixelType_byte___llvm
 .private_extern _p_177_plt_OpenTK_1_0_OpenTK_Graphics_ES30_GL_ReadPixels_byte_int_int_int_int_OpenTK_Graphics_ES30_PixelFormat_OpenTK_Graphics_ES30_PixelType_byte___llvm
@@ -7404,7 +7433,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1776]
 br x16
-.word 7885
+.word 7894
 _p_178_plt_OpenTK_1_0_Foundation_NSObject__ctor_llvm:
 	.globl _p_178_plt_OpenTK_1_0_Foundation_NSObject__ctor_llvm
 .private_extern _p_178_plt_OpenTK_1_0_Foundation_NSObject__ctor_llvm
@@ -7415,7 +7444,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1784]
 br x16
-.word 7897
+.word 7906
 _p_179_plt_OpenTK_1_0_CoreAnimation_CADisplayLink_Create_Foundation_NSObject_ObjCRuntime_Selector_llvm:
 	.globl _p_179_plt_OpenTK_1_0_CoreAnimation_CADisplayLink_Create_Foundation_NSObject_ObjCRuntime_Selector_llvm
 .private_extern _p_179_plt_OpenTK_1_0_CoreAnimation_CADisplayLink_Create_Foundation_NSObject_ObjCRuntime_Selector_llvm
@@ -7426,7 +7455,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1792]
 br x16
-.word 7902
+.word 7911
 _p_180_plt_OpenTK_1_0_CoreAnimation_CADisplayLink_set_FrameInterval_System_nint_llvm:
 	.globl _p_180_plt_OpenTK_1_0_CoreAnimation_CADisplayLink_set_FrameInterval_System_nint_llvm
 .private_extern _p_180_plt_OpenTK_1_0_CoreAnimation_CADisplayLink_set_FrameInterval_System_nint_llvm
@@ -7437,7 +7466,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1800]
 br x16
-.word 7907
+.word 7916
 _p_181_plt_OpenTK_1_0_CoreAnimation_CADisplayLink_set_Paused_bool_llvm:
 	.globl _p_181_plt_OpenTK_1_0_CoreAnimation_CADisplayLink_set_Paused_bool_llvm
 .private_extern _p_181_plt_OpenTK_1_0_CoreAnimation_CADisplayLink_set_Paused_bool_llvm
@@ -7448,7 +7477,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1808]
 br x16
-.word 7912
+.word 7921
 _p_182_plt_OpenTK_1_0_CoreAnimation_CADisplayLink_Invalidate_llvm:
 	.globl _p_182_plt_OpenTK_1_0_CoreAnimation_CADisplayLink_Invalidate_llvm
 .private_extern _p_182_plt_OpenTK_1_0_CoreAnimation_CADisplayLink_Invalidate_llvm
@@ -7459,7 +7488,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1816]
 br x16
-.word 7917
+.word 7926
 _p_183_plt_OpenTK_1_0_Foundation_NSRunLoop_get_Main_llvm:
 	.globl _p_183_plt_OpenTK_1_0_Foundation_NSRunLoop_get_Main_llvm
 .private_extern _p_183_plt_OpenTK_1_0_Foundation_NSRunLoop_get_Main_llvm
@@ -7470,7 +7499,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1824]
 br x16
-.word 7922
+.word 7931
 _p_184_plt_OpenTK_1_0_Foundation_NSRunLoop_get_NSDefaultRunLoopMode_llvm:
 	.globl _p_184_plt_OpenTK_1_0_Foundation_NSRunLoop_get_NSDefaultRunLoopMode_llvm
 .private_extern _p_184_plt_OpenTK_1_0_Foundation_NSRunLoop_get_NSDefaultRunLoopMode_llvm
@@ -7481,7 +7510,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1832]
 br x16
-.word 7927
+.word 7936
 _p_185_plt_OpenTK_1_0_CoreAnimation_CADisplayLink_AddToRunLoop_Foundation_NSRunLoop_Foundation_NSString_llvm:
 	.globl _p_185_plt_OpenTK_1_0_CoreAnimation_CADisplayLink_AddToRunLoop_Foundation_NSRunLoop_Foundation_NSString_llvm
 .private_extern _p_185_plt_OpenTK_1_0_CoreAnimation_CADisplayLink_AddToRunLoop_Foundation_NSRunLoop_Foundation_NSString_llvm
@@ -7492,7 +7521,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1840]
 br x16
-.word 7932
+.word 7941
 _p_186_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_RunIteration_Foundation_NSTimer_llvm:
 	.globl _p_186_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_RunIteration_Foundation_NSTimer_llvm
 .private_extern _p_186_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_RunIteration_Foundation_NSTimer_llvm
@@ -7503,7 +7532,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1848]
 br x16
-.word 7937
+.word 7946
 _p_187_plt_OpenTK_1_0_ObjCRuntime_Selector__ctor_string_llvm:
 	.globl _p_187_plt_OpenTK_1_0_ObjCRuntime_Selector__ctor_string_llvm
 .private_extern _p_187_plt_OpenTK_1_0_ObjCRuntime_Selector__ctor_string_llvm
@@ -7514,7 +7543,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1856]
 br x16
-.word 7940
+.word 7949
 _p_188_plt_OpenTK_1_0_Foundation_NSTimer_Invalidate_llvm:
 	.globl _p_188_plt_OpenTK_1_0_Foundation_NSTimer_Invalidate_llvm
 .private_extern _p_188_plt_OpenTK_1_0_Foundation_NSTimer_Invalidate_llvm
@@ -7525,7 +7554,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1864]
 br x16
-.word 7945
+.word 7954
 _p_189_plt_OpenTK_1_0_Foundation_NSTimer_CreateRepeatingScheduledTimer_System_TimeSpan_System_Action_1_Foundation_NSTimer_llvm:
 	.globl _p_189_plt_OpenTK_1_0_Foundation_NSTimer_CreateRepeatingScheduledTimer_System_TimeSpan_System_Action_1_Foundation_NSTimer_llvm
 .private_extern _p_189_plt_OpenTK_1_0_Foundation_NSTimer_CreateRepeatingScheduledTimer_System_TimeSpan_System_Action_1_Foundation_NSTimer_llvm
@@ -7536,7 +7565,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1872]
 br x16
-.word 7950
+.word 7959
 _p_190_plt_OpenTK_1_0_UIKit_UIView__ctor_Foundation_NSCoder_llvm:
 	.globl _p_190_plt_OpenTK_1_0_UIKit_UIView__ctor_Foundation_NSCoder_llvm
 .private_extern _p_190_plt_OpenTK_1_0_UIKit_UIView__ctor_Foundation_NSCoder_llvm
@@ -7547,7 +7576,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1880]
 br x16
-.word 7955
+.word 7964
 _p_191_plt_OpenTK_1_0_UIKit_UIView__ctor_CoreGraphics_CGRect_llvm:
 	.globl _p_191_plt_OpenTK_1_0_UIKit_UIView__ctor_CoreGraphics_CGRect_llvm
 .private_extern _p_191_plt_OpenTK_1_0_UIKit_UIView__ctor_CoreGraphics_CGRect_llvm
@@ -7558,7 +7587,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1888]
 br x16
-.word 7960
+.word 7969
 _p_192_plt_OpenTK_1_0_ObjCRuntime_Class__ctor_System_Type_llvm:
 	.globl _p_192_plt_OpenTK_1_0_ObjCRuntime_Class__ctor_System_Type_llvm
 .private_extern _p_192_plt_OpenTK_1_0_ObjCRuntime_Class__ctor_System_Type_llvm
@@ -7569,7 +7598,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1896]
 br x16
-.word 7965
+.word 7974
 _p_193_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_AssertValid_llvm:
 	.globl _p_193_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_AssertValid_llvm
 .private_extern _p_193_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_AssertValid_llvm
@@ -7580,7 +7609,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1904]
 br x16
-.word 7970
+.word 7979
 _p_194_plt_OpenTK_1_0_UIKit_UIResponder_get_NextResponder_llvm:
 	.globl _p_194_plt_OpenTK_1_0_UIKit_UIResponder_get_NextResponder_llvm
 .private_extern _p_194_plt_OpenTK_1_0_UIKit_UIResponder_get_NextResponder_llvm
@@ -7591,7 +7620,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1912]
 br x16
-.word 7973
+.word 7982
 _p_195_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_GetViewController_llvm:
 	.globl _p_195_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_GetViewController_llvm
 .private_extern _p_195_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_GetViewController_llvm
@@ -7602,7 +7631,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1920]
 br x16
-.word 7978
+.word 7987
 _p_196_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnTitleChanged_System_EventArgs_llvm:
 	.globl _p_196_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnTitleChanged_System_EventArgs_llvm
 .private_extern _p_196_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnTitleChanged_System_EventArgs_llvm
@@ -7613,7 +7642,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1928]
 br x16
-.word 7981
+.word 7990
 _p_197_plt_OpenTK_1_0_UIKit_UIView_get_Hidden_llvm:
 	.globl _p_197_plt_OpenTK_1_0_UIKit_UIView_get_Hidden_llvm
 .private_extern _p_197_plt_OpenTK_1_0_UIKit_UIView_get_Hidden_llvm
@@ -7624,7 +7653,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1936]
 br x16
-.word 7984
+.word 7993
 _p_198_plt_OpenTK_1_0_UIKit_UIView_set_Hidden_bool_llvm:
 	.globl _p_198_plt_OpenTK_1_0_UIKit_UIView_set_Hidden_bool_llvm
 .private_extern _p_198_plt_OpenTK_1_0_UIKit_UIView_set_Hidden_bool_llvm
@@ -7635,7 +7664,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1944]
 br x16
-.word 7989
+.word 7998
 _p_199_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnVisibleChanged_System_EventArgs_llvm:
 	.globl _p_199_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnVisibleChanged_System_EventArgs_llvm
 .private_extern _p_199_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnVisibleChanged_System_EventArgs_llvm
@@ -7646,7 +7675,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1952]
 br x16
-.word 7994
+.word 8003
 _p_200_plt_OpenTK_1_0_UIKit_UIViewController_get_WantsFullScreenLayout_llvm:
 	.globl _p_200_plt_OpenTK_1_0_UIKit_UIViewController_get_WantsFullScreenLayout_llvm
 .private_extern _p_200_plt_OpenTK_1_0_UIKit_UIViewController_get_WantsFullScreenLayout_llvm
@@ -7657,7 +7686,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1960]
 br x16
-.word 7997
+.word 8006
 _p_201_plt_OpenTK_1_0_UIKit_UIViewController_set_WantsFullScreenLayout_bool_llvm:
 	.globl _p_201_plt_OpenTK_1_0_UIKit_UIViewController_set_WantsFullScreenLayout_bool_llvm
 .private_extern _p_201_plt_OpenTK_1_0_UIKit_UIViewController_set_WantsFullScreenLayout_bool_llvm
@@ -7668,7 +7697,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1968]
 br x16
-.word 8002
+.word 8011
 _p_202_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnWindowStateChanged_System_EventArgs_llvm:
 	.globl _p_202_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnWindowStateChanged_System_EventArgs_llvm
 .private_extern _p_202_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnWindowStateChanged_System_EventArgs_llvm
@@ -7679,7 +7708,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1976]
 br x16
-.word 8007
+.word 8016
 _p_203_plt_OpenTK_1_0_System_Drawing_Size_op_Inequality_System_Drawing_Size_System_Drawing_Size_llvm:
 	.globl _p_203_plt_OpenTK_1_0_System_Drawing_Size_op_Inequality_System_Drawing_Size_System_Drawing_Size_llvm
 .private_extern _p_203_plt_OpenTK_1_0_System_Drawing_Size_op_Inequality_System_Drawing_Size_System_Drawing_Size_llvm
@@ -7690,7 +7719,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1984]
 br x16
-.word 8010
+.word 8019
 _p_204_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnResize_System_EventArgs_llvm:
 	.globl _p_204_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnResize_System_EventArgs_llvm
 .private_extern _p_204_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnResize_System_EventArgs_llvm
@@ -7701,7 +7730,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #1992]
 br x16
-.word 8015
+.word 8024
 _p_205_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_get_LayerColorFormat_llvm:
 	.globl _p_205_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_get_LayerColorFormat_llvm
 .private_extern _p_205_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_get_LayerColorFormat_llvm
@@ -7712,7 +7741,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2000]
 br x16
-.word 8018
+.word 8027
 _p_206_plt_OpenTK_1_0_Foundation_NSString_op_Equality_Foundation_NSString_Foundation_NSString_llvm:
 	.globl _p_206_plt_OpenTK_1_0_Foundation_NSString_op_Equality_Foundation_NSString_Foundation_NSString_llvm
 .private_extern _p_206_plt_OpenTK_1_0_Foundation_NSString_op_Equality_Foundation_NSString_Foundation_NSString_llvm
@@ -7723,7 +7752,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2008]
 br x16
-.word 8021
+.word 8030
 _p_207_plt_OpenTK_1_0_UIKit_UIView_get_Layer_llvm:
 	.globl _p_207_plt_OpenTK_1_0_UIKit_UIView_get_Layer_llvm
 .private_extern _p_207_plt_OpenTK_1_0_UIKit_UIView_get_Layer_llvm
@@ -7734,7 +7763,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2016]
 br x16
-.word 8026
+.word 8035
 _p_208_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_get_LayerRetainsBacking_llvm:
 	.globl _p_208_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_get_LayerRetainsBacking_llvm
 .private_extern _p_208_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_get_LayerRetainsBacking_llvm
@@ -7745,7 +7774,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2024]
 br x16
-.word 8031
+.word 8040
 _p_209_plt_OpenTK_1_0_Foundation_NSNumber_FromBoolean_bool_llvm:
 	.globl _p_209_plt_OpenTK_1_0_Foundation_NSNumber_FromBoolean_bool_llvm
 .private_extern _p_209_plt_OpenTK_1_0_Foundation_NSNumber_FromBoolean_bool_llvm
@@ -7756,7 +7785,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2032]
 br x16
-.word 8034
+.word 8043
 _p_210_plt_OpenTK_1_0_Foundation_NSDictionary_FromObjectsAndKeys_Foundation_NSObject___Foundation_NSObject___llvm:
 	.globl _p_210_plt_OpenTK_1_0_Foundation_NSDictionary_FromObjectsAndKeys_Foundation_NSObject___Foundation_NSObject___llvm
 .private_extern _p_210_plt_OpenTK_1_0_Foundation_NSDictionary_FromObjectsAndKeys_Foundation_NSObject___Foundation_NSObject___llvm
@@ -7767,7 +7796,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2040]
 br x16
-.word 8039
+.word 8048
 _p_211_plt_OpenTK_1_0_CoreAnimation_CAEAGLLayer_set_DrawableProperties_Foundation_NSDictionary_llvm:
 	.globl _p_211_plt_OpenTK_1_0_CoreAnimation_CAEAGLLayer_set_DrawableProperties_Foundation_NSDictionary_llvm
 .private_extern _p_211_plt_OpenTK_1_0_CoreAnimation_CAEAGLLayer_set_DrawableProperties_Foundation_NSDictionary_llvm
@@ -7778,7 +7807,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2048]
 br x16
-.word 8044
+.word 8053
 _p_212_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_get_ContextRenderingApi_llvm:
 	.globl _p_212_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_get_ContextRenderingApi_llvm
 .private_extern _p_212_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_get_ContextRenderingApi_llvm
@@ -7789,7 +7818,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2056]
 br x16
-.word 8049
+.word 8058
 _p_213_plt_OpenTK_1_0_OpenTK_Platform_Utilities_CreateGraphicsContext_OpenGLES_EAGLRenderingAPI_llvm:
 	.globl _p_213_plt_OpenTK_1_0_OpenTK_Platform_Utilities_CreateGraphicsContext_OpenGLES_EAGLRenderingAPI_llvm
 .private_extern _p_213_plt_OpenTK_1_0_OpenTK_Platform_Utilities_CreateGraphicsContext_OpenGLES_EAGLRenderingAPI_llvm
@@ -7800,7 +7829,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2064]
 br x16
-.word 8052
+.word 8061
 _p_214_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_GLCalls_GetGLCalls_OpenGLES_EAGLRenderingAPI_llvm:
 	.globl _p_214_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_GLCalls_GetGLCalls_OpenGLES_EAGLRenderingAPI_llvm
 .private_extern _p_214_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_GLCalls_GetGLCalls_OpenGLES_EAGLRenderingAPI_llvm
@@ -7811,7 +7840,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2072]
 br x16
-.word 8055
+.word 8064
 _p_215_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_get_EAGLContext_llvm:
 	.globl _p_215_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_get_EAGLContext_llvm
 .private_extern _p_215_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_get_EAGLContext_llvm
@@ -7822,7 +7851,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2080]
 br x16
-.word 8058
+.word 8067
 _p_216_plt_OpenTK_1_0_OpenGLES_EAGLContext_RenderBufferStorage_System_nuint_CoreAnimation_CAEAGLLayer_llvm:
 	.globl _p_216_plt_OpenTK_1_0_OpenGLES_EAGLContext_RenderBufferStorage_System_nuint_CoreAnimation_CAEAGLLayer_llvm
 .private_extern _p_216_plt_OpenTK_1_0_OpenGLES_EAGLContext_RenderBufferStorage_System_nuint_CoreAnimation_CAEAGLLayer_llvm
@@ -7833,7 +7862,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2088]
 br x16
-.word 8061
+.word 8070
 _p_217_plt_OpenTK_1_0_CoreAnimation_CALayer_get_Bounds_llvm:
 	.globl _p_217_plt_OpenTK_1_0_CoreAnimation_CALayer_get_Bounds_llvm
 .private_extern _p_217_plt_OpenTK_1_0_CoreAnimation_CALayer_get_Bounds_llvm
@@ -7844,7 +7873,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2096]
 br x16
-.word 8066
+.word 8075
 _p_218_plt_OpenTK_1_0_System_Math_Round_double_llvm:
 	.globl _p_218_plt_OpenTK_1_0_System_Math_Round_double_llvm
 .private_extern _p_218_plt_OpenTK_1_0_System_Math_Round_double_llvm
@@ -7855,7 +7884,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2104]
 br x16
-.word 8071
+.word 8080
 _p_219_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_set_Size_System_Drawing_Size_llvm:
 	.globl _p_219_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_set_Size_System_Drawing_Size_llvm
 .private_extern _p_219_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_set_Size_System_Drawing_Size_llvm
@@ -7866,7 +7895,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2112]
 br x16
-.word 8076
+.word 8085
 _p_220_plt_OpenTK_1_0_UIKit_UIView_get_Window_llvm:
 	.globl _p_220_plt_OpenTK_1_0_UIKit_UIView_get_Window_llvm
 .private_extern _p_220_plt_OpenTK_1_0_UIKit_UIView_get_Window_llvm
@@ -7877,7 +7906,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2120]
 br x16
-.word 8079
+.word 8088
 _p_221_plt_OpenTK_1_0_System_WeakReference__ctor_object_llvm:
 	.globl _p_221_plt_OpenTK_1_0_System_WeakReference__ctor_object_llvm
 .private_extern _p_221_plt_OpenTK_1_0_System_WeakReference__ctor_object_llvm
@@ -7888,7 +7917,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2128]
 br x16
-.word 8084
+.word 8093
 _p_222_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_AssertContext_llvm:
 	.globl _p_222_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_AssertContext_llvm
 .private_extern _p_222_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_AssertContext_llvm
@@ -7899,7 +7928,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2136]
 br x16
-.word 8089
+.word 8098
 _p_223_plt_OpenTK_1_0_OpenGLES_EAGLContext_SetCurrentContext_OpenGLES_EAGLContext_llvm:
 	.globl _p_223_plt_OpenTK_1_0_OpenGLES_EAGLContext_SetCurrentContext_OpenGLES_EAGLContext_llvm
 .private_extern _p_223_plt_OpenTK_1_0_OpenGLES_EAGLContext_SetCurrentContext_OpenGLES_EAGLContext_llvm
@@ -7910,7 +7939,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2144]
 br x16
-.word 8092
+.word 8101
 _p_224_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_MakeCurrent_llvm:
 	.globl _p_224_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_MakeCurrent_llvm
 .private_extern _p_224_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_MakeCurrent_llvm
@@ -7921,7 +7950,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2152]
 br x16
-.word 8097
+.word 8106
 _p_225_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnClosed_System_EventArgs_llvm:
 	.globl _p_225_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnClosed_System_EventArgs_llvm
 .private_extern _p_225_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnClosed_System_EventArgs_llvm
@@ -7932,7 +7961,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2160]
 br x16
-.word 8100
+.word 8109
 _p_226_plt_OpenTK_1_0_UIKit_UIView_Dispose_bool_llvm:
 	.globl _p_226_plt_OpenTK_1_0_UIKit_UIView_Dispose_bool_llvm
 .private_extern _p_226_plt_OpenTK_1_0_UIKit_UIView_Dispose_bool_llvm
@@ -7943,7 +7972,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2168]
 br x16
-.word 8103
+.word 8112
 _p_227_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnDisposed_System_EventArgs_llvm:
 	.globl _p_227_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnDisposed_System_EventArgs_llvm
 .private_extern _p_227_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnDisposed_System_EventArgs_llvm
@@ -7954,7 +7983,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2176]
 br x16
-.word 8108
+.word 8117
 _p_228_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_DestroyFrameBuffer_llvm:
 	.globl _p_228_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_DestroyFrameBuffer_llvm
 .private_extern _p_228_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_DestroyFrameBuffer_llvm
@@ -7965,7 +7994,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2184]
 br x16
-.word 8111
+.word 8120
 _p_229_plt_OpenTK_1_0_System_Diagnostics_Stopwatch_Stop_llvm:
 	.globl _p_229_plt_OpenTK_1_0_System_Diagnostics_Stopwatch_Stop_llvm
 .private_extern _p_229_plt_OpenTK_1_0_System_Diagnostics_Stopwatch_Stop_llvm
@@ -7976,7 +8005,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2192]
 br x16
-.word 8114
+.word 8123
 _p_230_plt_OpenTK_1_0_UIKit_UIView_LayoutSubviews_llvm:
 	.globl _p_230_plt_OpenTK_1_0_UIKit_UIView_LayoutSubviews_llvm
 .private_extern _p_230_plt_OpenTK_1_0_UIKit_UIView_LayoutSubviews_llvm
@@ -7987,7 +8016,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2200]
 br x16
-.word 8119
+.word 8128
 _p_231_plt_OpenTK_1_0_UIKit_UIView_get_Bounds_llvm:
 	.globl _p_231_plt_OpenTK_1_0_UIKit_UIView_get_Bounds_llvm
 .private_extern _p_231_plt_OpenTK_1_0_UIKit_UIView_get_Bounds_llvm
@@ -7998,7 +8027,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2208]
 br x16
-.word 8124
+.word 8133
 _p_232_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_get_Size_llvm:
 	.globl _p_232_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_get_Size_llvm
 .private_extern _p_232_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_get_Size_llvm
@@ -8009,7 +8038,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2216]
 br x16
-.word 8129
+.word 8138
 _p_233_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_CreateFrameBuffer_llvm:
 	.globl _p_233_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_CreateFrameBuffer_llvm
 .private_extern _p_233_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_CreateFrameBuffer_llvm
@@ -8020,7 +8049,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2224]
 br x16
-.word 8132
+.word 8141
 _p_234_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_get_WindowInfo_llvm:
 	.globl _p_234_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_get_WindowInfo_llvm
 .private_extern _p_234_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_get_WindowInfo_llvm
@@ -8031,7 +8060,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2232]
 br x16
-.word 8135
+.word 8144
 _p_235_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_RunWithFrameInterval_int_llvm:
 	.globl _p_235_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_RunWithFrameInterval_int_llvm
 .private_extern _p_235_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_RunWithFrameInterval_int_llvm
@@ -8042,7 +8071,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2240]
 br x16
-.word 8138
+.word 8147
 _p_236_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_NSTimerTimeSource__ctor_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_double_llvm:
 	.globl _p_236_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_NSTimerTimeSource__ctor_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_double_llvm
 .private_extern _p_236_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_NSTimerTimeSource__ctor_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_double_llvm
@@ -8053,7 +8082,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2248]
 br x16
-.word 8141
+.word 8150
 _p_237_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnLoad_System_EventArgs_llvm:
 	.globl _p_237_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnLoad_System_EventArgs_llvm
 .private_extern _p_237_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnLoad_System_EventArgs_llvm
@@ -8064,7 +8093,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2256]
 br x16
-.word 8144
+.word 8153
 _p_238_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_Start_llvm:
 	.globl _p_238_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_Start_llvm
 .private_extern _p_238_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_Start_llvm
@@ -8075,7 +8104,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2264]
 br x16
-.word 8147
+.word 8156
 _p_239_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_CADisplayLinkTimeSource__ctor_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_int_llvm:
 	.globl _p_239_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_CADisplayLinkTimeSource__ctor_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_int_llvm
 .private_extern _p_239_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_CADisplayLinkTimeSource__ctor_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_int_llvm
@@ -8086,7 +8115,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2272]
 br x16
-.word 8150
+.word 8159
 _p_240_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_Resume_llvm:
 	.globl _p_240_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_Resume_llvm
 .private_extern _p_240_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_Resume_llvm
@@ -8097,7 +8126,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2280]
 br x16
-.word 8153
+.word 8162
 _p_241_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnUnload_System_EventArgs_llvm:
 	.globl _p_241_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnUnload_System_EventArgs_llvm
 .private_extern _p_241_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnUnload_System_EventArgs_llvm
@@ -8108,7 +8137,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2288]
 br x16
-.word 8156
+.word 8165
 _p_242_plt_OpenTK_1_0_System_Diagnostics_Stopwatch_Start_llvm:
 	.globl _p_242_plt_OpenTK_1_0_System_Diagnostics_Stopwatch_Start_llvm
 .private_extern _p_242_plt_OpenTK_1_0_System_Diagnostics_Stopwatch_Start_llvm
@@ -8119,7 +8148,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2296]
 br x16
-.word 8159
+.word 8168
 _p_243_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_Suspend_llvm:
 	.globl _p_243_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_Suspend_llvm
 .private_extern _p_243_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_Suspend_llvm
@@ -8130,7 +8159,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2304]
 br x16
-.word 8164
+.word 8173
 _p_244_plt_OpenTK_1_0_System_Diagnostics_Stopwatch_get_Elapsed_llvm:
 	.globl _p_244_plt_OpenTK_1_0_System_Diagnostics_Stopwatch_get_Elapsed_llvm
 .private_extern _p_244_plt_OpenTK_1_0_System_Diagnostics_Stopwatch_get_Elapsed_llvm
@@ -8141,7 +8170,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2312]
 br x16
-.word 8167
+.word 8176
 _p_245_plt_OpenTK_1_0_System_TimeSpan_op_Subtraction_System_TimeSpan_System_TimeSpan_llvm:
 	.globl _p_245_plt_OpenTK_1_0_System_TimeSpan_op_Subtraction_System_TimeSpan_System_TimeSpan_llvm
 .private_extern _p_245_plt_OpenTK_1_0_System_TimeSpan_op_Subtraction_System_TimeSpan_System_TimeSpan_llvm
@@ -8152,7 +8181,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2320]
 br x16
-.word 8172
+.word 8181
 _p_246_plt_OpenTK_1_0_OpenTK_FrameEventArgs_set_Time_double_llvm:
 	.globl _p_246_plt_OpenTK_1_0_OpenTK_FrameEventArgs_set_Time_double_llvm
 .private_extern _p_246_plt_OpenTK_1_0_OpenTK_FrameEventArgs_set_Time_double_llvm
@@ -8163,7 +8192,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2328]
 br x16
-.word 8177
+.word 8186
 _p_247_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnUpdateFrame_OpenTK_FrameEventArgs_llvm:
 	.globl _p_247_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnUpdateFrame_OpenTK_FrameEventArgs_llvm
 .private_extern _p_247_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnUpdateFrame_OpenTK_FrameEventArgs_llvm
@@ -8174,7 +8203,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2336]
 br x16
-.word 8179
+.word 8188
 _p_248_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnRenderFrame_OpenTK_FrameEventArgs_llvm:
 	.globl _p_248_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnRenderFrame_OpenTK_FrameEventArgs_llvm
 .private_extern _p_248_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnRenderFrame_OpenTK_FrameEventArgs_llvm
@@ -8185,7 +8214,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2344]
 br x16
-.word 8182
+.word 8191
 _p_249_plt_OpenTK_1_0_System_Delegate_Combine_System_Delegate_System_Delegate_llvm:
 	.globl _p_249_plt_OpenTK_1_0_System_Delegate_Combine_System_Delegate_System_Delegate_llvm
 .private_extern _p_249_plt_OpenTK_1_0_System_Delegate_Combine_System_Delegate_System_Delegate_llvm
@@ -8196,7 +8225,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2352]
 br x16
-.word 8185
+.word 8194
 _p_250_plt_OpenTK_1_0_System_Delegate_Remove_System_Delegate_System_Delegate_llvm:
 	.globl _p_250_plt_OpenTK_1_0_System_Delegate_Remove_System_Delegate_System_Delegate_llvm
 .private_extern _p_250_plt_OpenTK_1_0_System_Delegate_Remove_System_Delegate_System_Delegate_llvm
@@ -8207,7 +8236,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2360]
 br x16
-.word 8190
+.word 8199
 _p_251_plt_OpenTK_1_0__jit_icall_mono_helper_newobj_mscorlib_llvm:
 	.globl _p_251_plt_OpenTK_1_0__jit_icall_mono_helper_newobj_mscorlib_llvm
 .private_extern _p_251_plt_OpenTK_1_0__jit_icall_mono_helper_newobj_mscorlib_llvm
@@ -8218,7 +8247,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2368]
 br x16
-.word 8195
+.word 8204
 _p_252_plt_OpenTK_1_0_OpenGLES_EAGLContext__ctor_OpenGLES_EAGLRenderingAPI_llvm:
 	.globl _p_252_plt_OpenTK_1_0_OpenGLES_EAGLContext__ctor_OpenGLES_EAGLRenderingAPI_llvm
 .private_extern _p_252_plt_OpenTK_1_0_OpenGLES_EAGLContext__ctor_OpenGLES_EAGLRenderingAPI_llvm
@@ -8229,7 +8258,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2376]
 br x16
-.word 8225
+.word 8234
 _p_253_plt_OpenTK_1_0_OpenGLES_EAGLContext_get_ShareGroup_llvm:
 	.globl _p_253_plt_OpenTK_1_0_OpenGLES_EAGLContext_get_ShareGroup_llvm
 .private_extern _p_253_plt_OpenTK_1_0_OpenGLES_EAGLContext_get_ShareGroup_llvm
@@ -8240,7 +8269,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2384]
 br x16
-.word 8230
+.word 8239
 _p_254_plt_OpenTK_1_0_OpenGLES_EAGLContext__ctor_OpenGLES_EAGLRenderingAPI_OpenGLES_EAGLSharegroup_llvm:
 	.globl _p_254_plt_OpenTK_1_0_OpenGLES_EAGLContext__ctor_OpenGLES_EAGLRenderingAPI_OpenGLES_EAGLSharegroup_llvm
 .private_extern _p_254_plt_OpenTK_1_0_OpenGLES_EAGLContext__ctor_OpenGLES_EAGLRenderingAPI_OpenGLES_EAGLSharegroup_llvm
@@ -8251,7 +8280,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2392]
 br x16
-.word 8235
+.word 8244
 _p_255_plt_OpenTK_1_0_OpenGLES_EAGLContext_PresentRenderBuffer_System_nuint_llvm:
 	.globl _p_255_plt_OpenTK_1_0_OpenGLES_EAGLContext_PresentRenderBuffer_System_nuint_llvm
 .private_extern _p_255_plt_OpenTK_1_0_OpenGLES_EAGLContext_PresentRenderBuffer_System_nuint_llvm
@@ -8262,7 +8291,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2400]
 br x16
-.word 8240
+.word 8249
 _p_256_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGraphicsContext_Dispose_bool_llvm:
 	.globl _p_256_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGraphicsContext_Dispose_bool_llvm
 .private_extern _p_256_plt_OpenTK_1_0_OpenTK_Platform_iPhoneOS_iPhoneOSGraphicsContext_Dispose_bool_llvm
@@ -8273,7 +8302,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2408]
 br x16
-.word 8245
+.word 8254
 _p_257_plt_OpenTK_1_0_Foundation_NSObject_Dispose_llvm:
 	.globl _p_257_plt_OpenTK_1_0_Foundation_NSObject_Dispose_llvm
 .private_extern _p_257_plt_OpenTK_1_0_Foundation_NSObject_Dispose_llvm
@@ -8284,7 +8313,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2416]
 br x16
-.word 8248
+.word 8257
 _p_258_plt_OpenTK_1_0_System_Nullable_1_intptr__ctor_intptr_llvm:
 	.globl _p_258_plt_OpenTK_1_0_System_Nullable_1_intptr__ctor_intptr_llvm
 .private_extern _p_258_plt_OpenTK_1_0_System_Nullable_1_intptr__ctor_intptr_llvm
@@ -8295,7 +8324,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2424]
 br x16
-.word 8253
+.word 8262
 _p_259_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode__ctor_System_Nullable_1_intptr_OpenTK_Graphics_ColorFormat_int_int_int_OpenTK_Graphics_ColorFormat_int_bool_llvm:
 	.globl _p_259_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode__ctor_System_Nullable_1_intptr_OpenTK_Graphics_ColorFormat_int_int_int_OpenTK_Graphics_ColorFormat_int_bool_llvm
 .private_extern _p_259_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsMode__ctor_System_Nullable_1_intptr_OpenTK_Graphics_ColorFormat_int_int_int_OpenTK_Graphics_ColorFormat_int_bool_llvm
@@ -8306,7 +8335,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2432]
 br x16
-.word 8264
+.word 8273
 _p_260_plt_OpenTK_1_0__jit_icall_mono_thread_interruption_checkpoint_llvm:
 	.globl _p_260_plt_OpenTK_1_0__jit_icall_mono_thread_interruption_checkpoint_llvm
 .private_extern _p_260_plt_OpenTK_1_0__jit_icall_mono_thread_interruption_checkpoint_llvm
@@ -8317,7 +8346,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2440]
 br x16
-.word 8267
+.word 8276
 _p_261_plt_OpenTK_1_0_System_Array_InternalArray__get_Item_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_int_llvm:
 	.globl _p_261_plt_OpenTK_1_0_System_Array_InternalArray__get_Item_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_int_llvm
 .private_extern _p_261_plt_OpenTK_1_0_System_Array_InternalArray__get_Item_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_int_llvm
@@ -8328,7 +8357,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2448]
 br x16
-.word 8305
+.word 8314
 _p_262_plt_OpenTK_1_0__jit_icall_mono_helper_ldstr_mscorlib_llvm:
 	.globl _p_262_plt_OpenTK_1_0__jit_icall_mono_helper_ldstr_mscorlib_llvm
 .private_extern _p_262_plt_OpenTK_1_0__jit_icall_mono_helper_ldstr_mscorlib_llvm
@@ -8339,7 +8368,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2456]
 br x16
-.word 8325
+.word 8334
 _p_263_plt_OpenTK_1_0_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_get_Current_llvm:
 	.globl _p_263_plt_OpenTK_1_0_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_get_Current_llvm
 .private_extern _p_263_plt_OpenTK_1_0_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_get_Current_llvm
@@ -8350,7 +8379,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2464]
 br x16
-.word 8354
+.word 8363
 _p_264_plt_OpenTK_1_0_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference__ctor_System_Array_llvm:
 	.globl _p_264_plt_OpenTK_1_0_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference__ctor_System_Array_llvm
 .private_extern _p_264_plt_OpenTK_1_0_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference__ctor_System_Array_llvm
@@ -8361,7 +8390,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2472]
 br x16
-.word 8373
+.word 8382
 _p_265_plt_OpenTK_1_0_System_Collections_Generic_KeyValuePair_PairToString_object_object_llvm:
 	.globl _p_265_plt_OpenTK_1_0_System_Collections_Generic_KeyValuePair_PairToString_object_object_llvm
 .private_extern _p_265_plt_OpenTK_1_0_System_Collections_Generic_KeyValuePair_PairToString_object_object_llvm
@@ -8372,7 +8401,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2480]
 br x16
-.word 8392
+.word 8401
 _p_266_plt_OpenTK_1_0_System_Collections_Generic_EqualityComparer_1_OpenTK_ContextHandle_CreateComparer_llvm:
 	.globl _p_266_plt_OpenTK_1_0_System_Collections_Generic_EqualityComparer_1_OpenTK_ContextHandle_CreateComparer_llvm
 .private_extern _p_266_plt_OpenTK_1_0_System_Collections_Generic_EqualityComparer_1_OpenTK_ContextHandle_CreateComparer_llvm
@@ -8383,7 +8412,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2488]
 br x16
-.word 8397
+.word 8406
 _p_267_plt_OpenTK_1_0_System_Enum_GetUnderlyingType_System_Type_llvm:
 	.globl _p_267_plt_OpenTK_1_0_System_Enum_GetUnderlyingType_System_Type_llvm
 .private_extern _p_267_plt_OpenTK_1_0_System_Enum_GetUnderlyingType_System_Type_llvm
@@ -8394,7 +8423,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2496]
 br x16
-.word 8415
+.word 8424
 _p_268_plt_OpenTK_1_0_System_Type_GetTypeCode_System_Type_llvm:
 	.globl _p_268_plt_OpenTK_1_0_System_Type_GetTypeCode_System_Type_llvm
 .private_extern _p_268_plt_OpenTK_1_0_System_Type_GetTypeCode_System_Type_llvm
@@ -8405,7 +8434,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2504]
 br x16
-.word 8420
+.word 8429
 _p_269_plt_OpenTK_1_0_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType_llvm:
 	.globl _p_269_plt_OpenTK_1_0_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType_llvm
 .private_extern _p_269_plt_OpenTK_1_0_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType_llvm
@@ -8416,7 +8445,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2512]
 br x16
-.word 8425
+.word 8434
 _p_270_plt_OpenTK_1_0_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource_llvm:
 	.globl _p_270_plt_OpenTK_1_0_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource_llvm
 .private_extern _p_270_plt_OpenTK_1_0_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource_llvm
@@ -8427,7 +8456,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2520]
 br x16
-.word 8430
+.word 8439
 _p_271_plt_OpenTK_1_0_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument_llvm:
 	.globl _p_271_plt_OpenTK_1_0_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument_llvm
 .private_extern _p_271_plt_OpenTK_1_0_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument_llvm
@@ -8438,7 +8467,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2528]
 br x16
-.word 8435
+.word 8444
 _p_272_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference__ctor_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_llvm:
 	.globl _p_272_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference__ctor_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_llvm
 .private_extern _p_272_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference__ctor_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_llvm
@@ -8449,7 +8478,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2536]
 br x16
-.word 8440
+.word 8449
 _p_273_plt_OpenTK_1_0_System_ThrowHelper_ThrowIndexArgumentOutOfRange_NeedNonNegNumException_llvm:
 	.globl _p_273_plt_OpenTK_1_0_System_ThrowHelper_ThrowIndexArgumentOutOfRange_NeedNonNegNumException_llvm
 .private_extern _p_273_plt_OpenTK_1_0_System_ThrowHelper_ThrowIndexArgumentOutOfRange_NeedNonNegNumException_llvm
@@ -8460,7 +8489,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2544]
 br x16
-.word 8462
+.word 8471
 _p_274_plt_OpenTK_1_0_System_ThrowHelper_ThrowNotSupportedException_System_ExceptionResource_llvm:
 	.globl _p_274_plt_OpenTK_1_0_System_ThrowHelper_ThrowNotSupportedException_System_ExceptionResource_llvm
 .private_extern _p_274_plt_OpenTK_1_0_System_ThrowHelper_ThrowNotSupportedException_System_ExceptionResource_llvm
@@ -8471,7 +8500,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2552]
 br x16
-.word 8467
+.word 8476
 _p_275_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_ContainsKey_OpenTK_ContextHandle_llvm:
 	.globl _p_275_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_ContainsKey_OpenTK_ContextHandle_llvm
 .private_extern _p_275_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_ContainsKey_OpenTK_ContextHandle_llvm
@@ -8482,7 +8511,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2560]
 br x16
-.word 8472
+.word 8481
 _p_276_plt_OpenTK_1_0_System_ThrowHelper_ThrowArgumentException_Argument_InvalidArrayType_llvm:
 	.globl _p_276_plt_OpenTK_1_0_System_ThrowHelper_ThrowArgumentException_Argument_InvalidArrayType_llvm
 .private_extern _p_276_plt_OpenTK_1_0_System_ThrowHelper_ThrowArgumentException_Argument_InvalidArrayType_llvm
@@ -8493,7 +8522,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2568]
 br x16
-.word 8496
+.word 8505
 _p_277_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_KeyCollection_OpenTK_ContextHandle_System_WeakReference_CopyTo_OpenTK_ContextHandle___int_llvm:
 	.globl _p_277_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_KeyCollection_OpenTK_ContextHandle_System_WeakReference_CopyTo_OpenTK_ContextHandle___int_llvm
 .private_extern _p_277_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_KeyCollection_OpenTK_ContextHandle_System_WeakReference_CopyTo_OpenTK_ContextHandle___int_llvm
@@ -8504,7 +8533,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2576]
 br x16
-.word 8501
+.word 8510
 _p_278_plt_OpenTK_1_0__jit_icall_mono_thread_get_undeniable_exception_llvm:
 	.globl _p_278_plt_OpenTK_1_0__jit_icall_mono_thread_get_undeniable_exception_llvm
 .private_extern _p_278_plt_OpenTK_1_0__jit_icall_mono_thread_get_undeniable_exception_llvm
@@ -8515,7 +8544,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2584]
 br x16
-.word 8523
+.word 8532
 _p_279_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference__ctor_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_llvm:
 	.globl _p_279_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference__ctor_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_llvm
 .private_extern _p_279_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_OpenTK_ContextHandle_System_WeakReference__ctor_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_llvm
@@ -8526,7 +8555,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2592]
 br x16
-.word 8562
+.word 8571
 _p_280_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_ContainsValue_System_WeakReference_llvm:
 	.globl _p_280_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_ContainsValue_System_WeakReference_llvm
 .private_extern _p_280_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_ContainsValue_System_WeakReference_llvm
@@ -8537,7 +8566,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2600]
 br x16
-.word 8586
+.word 8595
 _p_281_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_ValueCollection_OpenTK_ContextHandle_System_WeakReference_CopyTo_System_WeakReference___int_llvm:
 	.globl _p_281_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_ValueCollection_OpenTK_ContextHandle_System_WeakReference_CopyTo_System_WeakReference___int_llvm
 .private_extern _p_281_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_ValueCollection_OpenTK_ContextHandle_System_WeakReference_CopyTo_System_WeakReference___int_llvm
@@ -8548,7 +8577,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2608]
 br x16
-.word 8610
+.word 8619
 _p_282_plt_OpenTK_1_0_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_EnumFailedVersion_llvm:
 	.globl _p_282_plt_OpenTK_1_0_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_EnumFailedVersion_llvm
 .private_extern _p_282_plt_OpenTK_1_0_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_EnumFailedVersion_llvm
@@ -8559,7 +8588,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2616]
 br x16
-.word 8634
+.word 8643
 _p_283_plt_OpenTK_1_0_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_EnumOpCantHappen_llvm:
 	.globl _p_283_plt_OpenTK_1_0_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_EnumOpCantHappen_llvm
 .private_extern _p_283_plt_OpenTK_1_0_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_EnumOpCantHappen_llvm
@@ -8570,7 +8599,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2624]
 br x16
-.word 8639
+.word 8648
 _p_284_plt_OpenTK_1_0_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue_llvm:
 	.globl _p_284_plt_OpenTK_1_0_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue_llvm
 .private_extern _p_284_plt_OpenTK_1_0_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue_llvm
@@ -8581,7 +8610,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2632]
 br x16
-.word 8644
+.word 8653
 _p_285_plt_OpenTK_1_0_intptr_Equals_object_llvm:
 	.globl _p_285_plt_OpenTK_1_0_intptr_Equals_object_llvm
 .private_extern _p_285_plt_OpenTK_1_0_intptr_Equals_object_llvm
@@ -8592,7 +8621,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2640]
 br x16
-.word 8649
+.word 8658
 _p_286_plt_OpenTK_1_0_System_Nullable_1_intptr_Unbox_object_llvm:
 	.globl _p_286_plt_OpenTK_1_0_System_Nullable_1_intptr_Unbox_object_llvm
 .private_extern _p_286_plt_OpenTK_1_0_System_Nullable_1_intptr_Unbox_object_llvm
@@ -8603,7 +8632,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2648]
 br x16
-.word 8654
+.word 8663
 _p_287_plt_OpenTK_1_0__jit_icall_mono_thread_force_interruption_checkpoint_noraise_llvm:
 	.globl _p_287_plt_OpenTK_1_0__jit_icall_mono_thread_force_interruption_checkpoint_noraise_llvm
 .private_extern _p_287_plt_OpenTK_1_0__jit_icall_mono_thread_force_interruption_checkpoint_noraise_llvm
@@ -8614,7 +8643,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2656]
 br x16
-.word 8676
+.word 8685
 _p_288_plt_OpenTK_1_0__jit_icall_mono_delegate_begin_invoke_llvm:
 	.globl _p_288_plt_OpenTK_1_0__jit_icall_mono_delegate_begin_invoke_llvm
 .private_extern _p_288_plt_OpenTK_1_0__jit_icall_mono_delegate_begin_invoke_llvm
@@ -8625,7 +8654,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2664]
 br x16
-.word 8728
+.word 8737
 _p_289_plt_OpenTK_1_0__jit_icall_mono_delegate_end_invoke_llvm:
 	.globl _p_289_plt_OpenTK_1_0__jit_icall_mono_delegate_end_invoke_llvm
 .private_extern _p_289_plt_OpenTK_1_0__jit_icall_mono_delegate_end_invoke_llvm
@@ -8636,7 +8665,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2672]
 br x16
-.word 8757
+.word 8766
 _p_290_plt_OpenTK_1_0__jit_icall_mono_string_to_utf8str_llvm:
 	.globl _p_290_plt_OpenTK_1_0__jit_icall_mono_string_to_utf8str_llvm
 .private_extern _p_290_plt_OpenTK_1_0__jit_icall_mono_string_to_utf8str_llvm
@@ -8647,7 +8676,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2680]
 br x16
-.word 8784
+.word 8793
 _p_291_plt_OpenTK_1_0__jit_icall_g_free_llvm:
 	.globl _p_291_plt_OpenTK_1_0__jit_icall_g_free_llvm
 .private_extern _p_291_plt_OpenTK_1_0__jit_icall_g_free_llvm
@@ -8658,7 +8687,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2688]
 br x16
-.word 8809
+.word 8818
 _p_292_plt_OpenTK_1_0__jit_icall_ves_icall_string_new_wrapper_llvm:
 	.globl _p_292_plt_OpenTK_1_0__jit_icall_ves_icall_string_new_wrapper_llvm
 .private_extern _p_292_plt_OpenTK_1_0__jit_icall_ves_icall_string_new_wrapper_llvm
@@ -8669,7 +8698,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2696]
 br x16
-.word 8818
+.word 8827
 _p_293_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_TryInsert_OpenTK_ContextHandle_System_WeakReference_System_Collections_Generic_InsertionBehavior_llvm:
 	.globl _p_293_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_TryInsert_OpenTK_ContextHandle_System_WeakReference_System_Collections_Generic_InsertionBehavior_llvm
 .private_extern _p_293_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_TryInsert_OpenTK_ContextHandle_System_WeakReference_System_Collections_Generic_InsertionBehavior_llvm
@@ -8680,7 +8709,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2704]
 br x16
-.word 8849
+.word 8858
 _p_294_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_ValueCollection_OpenTK_ContextHandle_System_WeakReference__ctor_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_llvm:
 	.globl _p_294_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_ValueCollection_OpenTK_ContextHandle_System_WeakReference__ctor_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_llvm
 .private_extern _p_294_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_ValueCollection_OpenTK_ContextHandle_System_WeakReference__ctor_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_llvm
@@ -8691,7 +8720,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2712]
 br x16
-.word 8873
+.word 8882
 _p_295_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_FindEntry_OpenTK_ContextHandle_llvm:
 	.globl _p_295_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_FindEntry_OpenTK_ContextHandle_llvm
 .private_extern _p_295_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_FindEntry_OpenTK_ContextHandle_llvm
@@ -8702,7 +8731,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2720]
 br x16
-.word 8897
+.word 8906
 _p_296_plt_OpenTK_1_0_System_ThrowHelper_ThrowKeyNotFoundException_object_llvm:
 	.globl _p_296_plt_OpenTK_1_0_System_ThrowHelper_ThrowKeyNotFoundException_object_llvm
 .private_extern _p_296_plt_OpenTK_1_0_System_ThrowHelper_ThrowKeyNotFoundException_object_llvm
@@ -8713,7 +8742,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2728]
 br x16
-.word 8921
+.word 8930
 _p_297_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference__ctor_int_System_Collections_Generic_IEqualityComparer_1_OpenTK_ContextHandle_llvm:
 	.globl _p_297_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference__ctor_int_System_Collections_Generic_IEqualityComparer_1_OpenTK_ContextHandle_llvm
 .private_extern _p_297_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference__ctor_int_System_Collections_Generic_IEqualityComparer_1_OpenTK_ContextHandle_llvm
@@ -8724,7 +8753,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2736]
 br x16
-.word 8926
+.word 8935
 _p_298_plt_OpenTK_1_0_OpenTK_ContextHandle_Equals_object_llvm:
 	.globl _p_298_plt_OpenTK_1_0_OpenTK_ContextHandle_Equals_object_llvm
 .private_extern _p_298_plt_OpenTK_1_0_OpenTK_ContextHandle_Equals_object_llvm
@@ -8735,7 +8764,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2744]
 br x16
-.word 8950
+.word 8959
 _p_299_plt_OpenTK_1_0_System_Collections_Generic_EqualityComparer_1_System_WeakReference_CreateComparer_llvm:
 	.globl _p_299_plt_OpenTK_1_0_System_Collections_Generic_EqualityComparer_1_System_WeakReference_CreateComparer_llvm
 .private_extern _p_299_plt_OpenTK_1_0_System_Collections_Generic_EqualityComparer_1_System_WeakReference_CreateComparer_llvm
@@ -8746,7 +8775,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2752]
 br x16
-.word 8962
+.word 8971
 _p_300_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_Resize_llvm:
 	.globl _p_300_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_Resize_llvm
 .private_extern _p_300_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_Resize_llvm
@@ -8757,7 +8786,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2760]
 br x16
-.word 8982
+.word 8991
 _p_301_plt_OpenTK_1_0_System_ThrowHelper_ThrowInvalidOperationException_ConcurrentOperationsNotSupported_llvm:
 	.globl _p_301_plt_OpenTK_1_0_System_ThrowHelper_ThrowInvalidOperationException_ConcurrentOperationsNotSupported_llvm
 .private_extern _p_301_plt_OpenTK_1_0_System_ThrowHelper_ThrowInvalidOperationException_ConcurrentOperationsNotSupported_llvm
@@ -8768,7 +8797,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2768]
 br x16
-.word 9006
+.word 9015
 _p_302_plt_OpenTK_1_0_System_ThrowHelper_ThrowAddingDuplicateWithKeyArgumentException_object_llvm:
 	.globl _p_302_plt_OpenTK_1_0_System_ThrowHelper_ThrowAddingDuplicateWithKeyArgumentException_object_llvm
 .private_extern _p_302_plt_OpenTK_1_0_System_ThrowHelper_ThrowAddingDuplicateWithKeyArgumentException_object_llvm
@@ -8779,7 +8808,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2776]
 br x16
-.word 9011
+.word 9020
 _p_303_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_Initialize_int_llvm:
 	.globl _p_303_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_Initialize_int_llvm
 .private_extern _p_303_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_Initialize_int_llvm
@@ -8790,7 +8819,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2784]
 br x16
-.word 9016
+.word 9025
 _p_304_plt_OpenTK_1_0_System_Type_get_IsValueType_llvm:
 	.globl _p_304_plt_OpenTK_1_0_System_Type_get_IsValueType_llvm
 .private_extern _p_304_plt_OpenTK_1_0_System_Type_get_IsValueType_llvm
@@ -8801,7 +8830,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2792]
 br x16
-.word 9040
+.word 9049
 _p_305_plt_OpenTK_1_0_System_RuntimeTypeHandle_HasReferences_System_RuntimeType_llvm:
 	.globl _p_305_plt_OpenTK_1_0_System_RuntimeTypeHandle_HasReferences_System_RuntimeType_llvm
 .private_extern _p_305_plt_OpenTK_1_0_System_RuntimeTypeHandle_HasReferences_System_RuntimeType_llvm
@@ -8812,7 +8841,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2800]
 br x16
-.word 9045
+.word 9054
 _p_306_plt_OpenTK_1_0_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_llvm:
 	.globl _p_306_plt_OpenTK_1_0_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_llvm
 .private_extern _p_306_plt_OpenTK_1_0_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_llvm
@@ -8823,7 +8852,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2808]
 br x16
-.word 9050
+.word 9059
 _p_307_plt_OpenTK_1_0_System_Array_EmptyInternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_get_Current_llvm:
 	.globl _p_307_plt_OpenTK_1_0_System_Array_EmptyInternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_get_Current_llvm
 .private_extern _p_307_plt_OpenTK_1_0_System_Array_EmptyInternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_get_Current_llvm
@@ -8834,7 +8863,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2816]
 br x16
-.word 9055
+.word 9064
 _p_308_plt_OpenTK_1_0_System_Collections_HashHelpers_GetPrime_int_llvm:
 	.globl _p_308_plt_OpenTK_1_0_System_Collections_HashHelpers_GetPrime_int_llvm
 .private_extern _p_308_plt_OpenTK_1_0_System_Collections_HashHelpers_GetPrime_int_llvm
@@ -8845,7 +8874,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2824]
 br x16
-.word 9074
+.word 9083
 _p_309_plt_OpenTK_1_0_System_Collections_HashHelpers_ExpandPrime_int_llvm:
 	.globl _p_309_plt_OpenTK_1_0_System_Collections_HashHelpers_ExpandPrime_int_llvm
 .private_extern _p_309_plt_OpenTK_1_0_System_Collections_HashHelpers_ExpandPrime_int_llvm
@@ -8856,7 +8885,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2832]
 br x16
-.word 9079
+.word 9088
 _p_310_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_Resize_int_bool_llvm:
 	.globl _p_310_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_Resize_int_bool_llvm
 .private_extern _p_310_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_Resize_int_bool_llvm
@@ -8867,7 +8896,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2840]
 br x16
-.word 9084
+.word 9093
 _p_311_plt_OpenTK_1_0_System_Array_Copy_System_Array_int_System_Array_int_int_llvm:
 	.globl _p_311_plt_OpenTK_1_0_System_Array_Copy_System_Array_int_System_Array_int_int_llvm
 .private_extern _p_311_plt_OpenTK_1_0_System_Array_Copy_System_Array_int_System_Array_int_int_llvm
@@ -8878,7 +8907,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2848]
 br x16
-.word 9108
+.word 9117
 _p_312_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsContext_FindSharedContext_llvm:
 	.globl _p_312_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsContext_FindSharedContext_llvm
 .private_extern _p_312_plt_OpenTK_1_0_OpenTK_Graphics_GraphicsContext_FindSharedContext_llvm
@@ -8889,7 +8918,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2856]
 br x16
-.word 9113
+.word 9122
 _p_313_plt_OpenTK_1_0_OpenTK_Platform_Factory_CreateGLContext_OpenTK_Graphics_GraphicsMode_OpenTK_Platform_IWindowInfo_OpenTK_Graphics_IGraphicsContext_bool_int_int_OpenTK_Graphics_GraphicsContextFlags_llvm:
 	.globl _p_313_plt_OpenTK_1_0_OpenTK_Platform_Factory_CreateGLContext_OpenTK_Graphics_GraphicsMode_OpenTK_Platform_IWindowInfo_OpenTK_Graphics_IGraphicsContext_bool_int_int_OpenTK_Graphics_GraphicsContextFlags_llvm
 .private_extern _p_313_plt_OpenTK_1_0_OpenTK_Platform_Factory_CreateGLContext_OpenTK_Graphics_GraphicsMode_OpenTK_Platform_IWindowInfo_OpenTK_Graphics_IGraphicsContext_bool_int_int_OpenTK_Graphics_GraphicsContextFlags_llvm
@@ -8900,7 +8929,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2864]
 br x16
-.word 9115
+.word 9124
 _p_314_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_Add_OpenTK_ContextHandle_System_WeakReference_llvm:
 	.globl _p_314_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_Add_OpenTK_ContextHandle_System_WeakReference_llvm
 .private_extern _p_314_plt_OpenTK_1_0_System_Collections_Generic_Dictionary_2_OpenTK_ContextHandle_System_WeakReference_Add_OpenTK_ContextHandle_System_WeakReference_llvm
@@ -8911,7 +8940,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2872]
 br x16
-.word 9118
+.word 9127
 _p_315_plt_OpenTK_1_0_CoreGraphics_CGDataProvider__ctor_byte___int_int_llvm:
 	.globl _p_315_plt_OpenTK_1_0_CoreGraphics_CGDataProvider__ctor_byte___int_int_llvm
 .private_extern _p_315_plt_OpenTK_1_0_CoreGraphics_CGDataProvider__ctor_byte___int_int_llvm
@@ -8922,7 +8951,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2880]
 br x16
-.word 9129
+.word 9138
 _p_316_plt_OpenTK_1_0_CoreGraphics_CGColorSpace_CreateDeviceRGB_llvm:
 	.globl _p_316_plt_OpenTK_1_0_CoreGraphics_CGColorSpace_CreateDeviceRGB_llvm
 .private_extern _p_316_plt_OpenTK_1_0_CoreGraphics_CGColorSpace_CreateDeviceRGB_llvm
@@ -8933,7 +8962,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2888]
 br x16
-.word 9134
+.word 9143
 _p_317_plt_OpenTK_1_0_CoreGraphics_CGImage__ctor_int_int_int_int_int_CoreGraphics_CGColorSpace_CoreGraphics_CGImageAlphaInfo_CoreGraphics_CGDataProvider_System_nfloat___bool_CoreGraphics_CGColorRenderingIntent_llvm:
 	.globl _p_317_plt_OpenTK_1_0_CoreGraphics_CGImage__ctor_int_int_int_int_int_CoreGraphics_CGColorSpace_CoreGraphics_CGImageAlphaInfo_CoreGraphics_CGDataProvider_System_nfloat___bool_CoreGraphics_CGColorRenderingIntent_llvm
 .private_extern _p_317_plt_OpenTK_1_0_CoreGraphics_CGImage__ctor_int_int_int_int_int_CoreGraphics_CGColorSpace_CoreGraphics_CGImageAlphaInfo_CoreGraphics_CGDataProvider_System_nfloat___bool_CoreGraphics_CGColorRenderingIntent_llvm
@@ -8944,7 +8973,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2896]
 br x16
-.word 9139
+.word 9148
 _p_318_plt_OpenTK_1_0_UIKit_UIView_get_ContentScaleFactor_llvm:
 	.globl _p_318_plt_OpenTK_1_0_UIKit_UIView_get_ContentScaleFactor_llvm
 .private_extern _p_318_plt_OpenTK_1_0_UIKit_UIView_get_ContentScaleFactor_llvm
@@ -8955,7 +8984,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2904]
 br x16
-.word 9144
+.word 9153
 _p_319_plt_OpenTK_1_0_CoreGraphics_CGSize__ctor_single_single_llvm:
 	.globl _p_319_plt_OpenTK_1_0_CoreGraphics_CGSize__ctor_single_single_llvm
 .private_extern _p_319_plt_OpenTK_1_0_CoreGraphics_CGSize__ctor_single_single_llvm
@@ -8966,7 +8995,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2912]
 br x16
-.word 9149
+.word 9158
 _p_320_plt_OpenTK_1_0_UIKit_UIGraphics_BeginImageContextWithOptions_CoreGraphics_CGSize_bool_System_nfloat_llvm:
 	.globl _p_320_plt_OpenTK_1_0_UIKit_UIGraphics_BeginImageContextWithOptions_CoreGraphics_CGSize_bool_System_nfloat_llvm
 .private_extern _p_320_plt_OpenTK_1_0_UIKit_UIGraphics_BeginImageContextWithOptions_CoreGraphics_CGSize_bool_System_nfloat_llvm
@@ -8977,7 +9006,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2920]
 br x16
-.word 9154
+.word 9163
 _p_321_plt_OpenTK_1_0_UIKit_UIGraphics_GetCurrentContext_llvm:
 	.globl _p_321_plt_OpenTK_1_0_UIKit_UIGraphics_GetCurrentContext_llvm
 .private_extern _p_321_plt_OpenTK_1_0_UIKit_UIGraphics_GetCurrentContext_llvm
@@ -8988,7 +9017,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2928]
 br x16
-.word 9159
+.word 9168
 _p_322_plt_OpenTK_1_0_CoreGraphics_CGContext_SetBlendMode_CoreGraphics_CGBlendMode_llvm:
 	.globl _p_322_plt_OpenTK_1_0_CoreGraphics_CGContext_SetBlendMode_CoreGraphics_CGBlendMode_llvm
 .private_extern _p_322_plt_OpenTK_1_0_CoreGraphics_CGContext_SetBlendMode_CoreGraphics_CGBlendMode_llvm
@@ -8999,7 +9028,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2936]
 br x16
-.word 9164
+.word 9173
 _p_323_plt_OpenTK_1_0_CoreGraphics_CGRect__ctor_single_single_single_single_llvm:
 	.globl _p_323_plt_OpenTK_1_0_CoreGraphics_CGRect__ctor_single_single_single_single_llvm
 .private_extern _p_323_plt_OpenTK_1_0_CoreGraphics_CGRect__ctor_single_single_single_single_llvm
@@ -9010,7 +9039,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2944]
 br x16
-.word 9169
+.word 9178
 _p_324_plt_OpenTK_1_0_CoreGraphics_CGContext_DrawImage_CoreGraphics_CGRect_CoreGraphics_CGImage_llvm:
 	.globl _p_324_plt_OpenTK_1_0_CoreGraphics_CGContext_DrawImage_CoreGraphics_CGRect_CoreGraphics_CGImage_llvm
 .private_extern _p_324_plt_OpenTK_1_0_CoreGraphics_CGContext_DrawImage_CoreGraphics_CGRect_CoreGraphics_CGImage_llvm
@@ -9021,7 +9050,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2952]
 br x16
-.word 9174
+.word 9183
 _p_325_plt_OpenTK_1_0_UIKit_UIGraphics_GetImageFromCurrentImageContext_llvm:
 	.globl _p_325_plt_OpenTK_1_0_UIKit_UIGraphics_GetImageFromCurrentImageContext_llvm
 .private_extern _p_325_plt_OpenTK_1_0_UIKit_UIGraphics_GetImageFromCurrentImageContext_llvm
@@ -9032,7 +9061,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2960]
 br x16
-.word 9179
+.word 9188
 _p_326_plt_OpenTK_1_0_UIKit_UIGraphics_EndImageContext_llvm:
 	.globl _p_326_plt_OpenTK_1_0_UIKit_UIGraphics_EndImageContext_llvm
 .private_extern _p_326_plt_OpenTK_1_0_UIKit_UIGraphics_EndImageContext_llvm
@@ -9043,7 +9072,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2968]
 br x16
-.word 9184
+.word 9193
 _p_327_plt_OpenTK_1_0__rgctx_fetch_0_llvm:
 	.globl _p_327_plt_OpenTK_1_0__rgctx_fetch_0_llvm
 .private_extern _p_327_plt_OpenTK_1_0__rgctx_fetch_0_llvm
@@ -9054,7 +9083,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2976]
 br x16
-.word 9206
+.word 9215
 _p_328_plt_OpenTK_1_0__rgctx_fetch_1_llvm:
 	.globl _p_328_plt_OpenTK_1_0__rgctx_fetch_1_llvm
 .private_extern _p_328_plt_OpenTK_1_0__rgctx_fetch_1_llvm
@@ -9065,7 +9094,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2984]
 br x16
-.word 9248
+.word 9257
 _p_329_plt_OpenTK_1_0__rgctx_fetch_2_llvm:
 	.globl _p_329_plt_OpenTK_1_0__rgctx_fetch_2_llvm
 .private_extern _p_329_plt_OpenTK_1_0__rgctx_fetch_2_llvm
@@ -9076,7 +9105,7 @@ adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x16, [x16, #2992]
 br x16
-.word 9290
+.word 9299
 plt_end:
 _mono_aot_OpenTK_1_0plt_end:
 	.globl _mono_aot_OpenTK_1_0plt_end
@@ -9695,7 +9724,7 @@ LDIFF_SYM104=LTDIE_10 - Ldebug_info_start
 
 	.byte 1,51
 	.quad OpenTK_Graphics_GraphicsContext__ctor_OpenTK_Graphics_GraphicsMode_OpenTK_Platform_IWindowInfo_int_int_OpenTK_Graphics_GraphicsContextFlags
-	.quad Lme_72
+	.quad Lme_76
 
 	.byte 2,118,16,3
 	.asciz "this"
@@ -9774,7 +9803,7 @@ Lfde0_start:
 	.align 3
 	.quad OpenTK_Graphics_GraphicsContext__ctor_OpenTK_Graphics_GraphicsMode_OpenTK_Platform_IWindowInfo_int_int_OpenTK_Graphics_GraphicsContextFlags
 
-LDIFF_SYM119=Lme_72 - OpenTK_Graphics_GraphicsContext__ctor_OpenTK_Graphics_GraphicsMode_OpenTK_Platform_IWindowInfo_int_int_OpenTK_Graphics_GraphicsContextFlags
+LDIFF_SYM119=Lme_76 - OpenTK_Graphics_GraphicsContext__ctor_OpenTK_Graphics_GraphicsMode_OpenTK_Platform_IWindowInfo_int_int_OpenTK_Graphics_GraphicsContextFlags
 	.long LDIFF_SYM119
 	.long 0
 	.byte 12,31,0,68,14,208,1,157,26,158,25,68,13,29,68,147,24,148,23,68,149,22,150,21,68,151,20,152,19,68,153,18
@@ -10911,7 +10940,7 @@ LDIFF_SYM316=LTDIE_52 - Ldebug_info_start
 
 	.byte 2,156,6
 	.quad OpenTK_Platform_iPhoneOS_iPhoneOSGameView_Capture
-	.quad Lme_1bd
+	.quad Lme_1c1
 
 	.byte 2,118,16,3
 	.asciz "this"
@@ -10990,7 +11019,7 @@ Lfde1_start:
 	.align 3
 	.quad OpenTK_Platform_iPhoneOS_iPhoneOSGameView_Capture
 
-LDIFF_SYM331=Lme_1bd - OpenTK_Platform_iPhoneOS_iPhoneOSGameView_Capture
+LDIFF_SYM331=Lme_1c1 - OpenTK_Platform_iPhoneOS_iPhoneOSGameView_Capture
 	.long LDIFF_SYM331
 	.long 0
 	.byte 12,31,0,68,14,240,2,157,46,158,45,68,13,29,84,152,44,153,43,68,154,42
@@ -11137,7 +11166,7 @@ LDIFF_SYM339=LTDIE_54 - Ldebug_info_start
 
 	.byte 3,214,78
 	.quad OpenTK_Graphics_ES30_GL_ReadPixels_T6_GSHAREDVT_int_int_int_int_OpenTK_Graphics_ES30_PixelFormat_OpenTK_Graphics_ES30_PixelType_T6_GSHAREDVT__
-	.quad Lme_1f3
+	.quad Lme_1f7
 
 	.byte 2,118,16,3
 	.asciz "x"
@@ -11191,7 +11220,7 @@ Lfde2_start:
 	.align 3
 	.quad OpenTK_Graphics_ES30_GL_ReadPixels_T6_GSHAREDVT_int_int_int_int_OpenTK_Graphics_ES30_PixelFormat_OpenTK_Graphics_ES30_PixelType_T6_GSHAREDVT__
 
-LDIFF_SYM349=Lme_1f3 - OpenTK_Graphics_ES30_GL_ReadPixels_T6_GSHAREDVT_int_int_int_int_OpenTK_Graphics_ES30_PixelFormat_OpenTK_Graphics_ES30_PixelType_T6_GSHAREDVT__
+LDIFF_SYM349=Lme_1f7 - OpenTK_Graphics_ES30_GL_ReadPixels_T6_GSHAREDVT_int_int_int_int_OpenTK_Graphics_ES30_PixelFormat_OpenTK_Graphics_ES30_PixelType_T6_GSHAREDVT__
 	.long LDIFF_SYM349
 	.long 0
 	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29
@@ -11281,7 +11310,7 @@ LDIFF_SYM357=LTDIE_56 - Ldebug_info_start
 
 	.byte 4,193,39
 	.quad OpenTK_Graphics_ES20_GL_ReadPixels_T6_GSHAREDVT_int_int_int_int_OpenTK_Graphics_ES20_PixelFormat_OpenTK_Graphics_ES20_PixelType_T6_GSHAREDVT__
-	.quad Lme_1f4
+	.quad Lme_1f8
 
 	.byte 2,118,16,3
 	.asciz "x"
@@ -11335,7 +11364,7 @@ Lfde3_start:
 	.align 3
 	.quad OpenTK_Graphics_ES20_GL_ReadPixels_T6_GSHAREDVT_int_int_int_int_OpenTK_Graphics_ES20_PixelFormat_OpenTK_Graphics_ES20_PixelType_T6_GSHAREDVT__
 
-LDIFF_SYM367=Lme_1f4 - OpenTK_Graphics_ES20_GL_ReadPixels_T6_GSHAREDVT_int_int_int_int_OpenTK_Graphics_ES20_PixelFormat_OpenTK_Graphics_ES20_PixelType_T6_GSHAREDVT__
+LDIFF_SYM367=Lme_1f8 - OpenTK_Graphics_ES20_GL_ReadPixels_T6_GSHAREDVT_int_int_int_int_OpenTK_Graphics_ES20_PixelFormat_OpenTK_Graphics_ES20_PixelType_T6_GSHAREDVT__
 	.long LDIFF_SYM367
 	.long 0
 	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29
@@ -12923,7 +12952,7 @@ LDIFF_SYM371=LTDIE_57 - Ldebug_info_start
 
 	.byte 5,232,31
 	.quad OpenTK_Graphics_ES11_GL_ReadPixels_T6_GSHAREDVT_int_int_int_int_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_T6_GSHAREDVT__
-	.quad Lme_1f5
+	.quad Lme_1f9
 
 	.byte 2,118,16,3
 	.asciz "x"
@@ -12977,7 +13006,7 @@ Lfde4_start:
 	.align 3
 	.quad OpenTK_Graphics_ES11_GL_ReadPixels_T6_GSHAREDVT_int_int_int_int_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_T6_GSHAREDVT__
 
-LDIFF_SYM381=Lme_1f5 - OpenTK_Graphics_ES11_GL_ReadPixels_T6_GSHAREDVT_int_int_int_int_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_T6_GSHAREDVT__
+LDIFF_SYM381=Lme_1f9 - OpenTK_Graphics_ES11_GL_ReadPixels_T6_GSHAREDVT_int_int_int_int_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_T6_GSHAREDVT__
 	.long LDIFF_SYM381
 	.long 0
 	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29
@@ -12992,7 +13021,7 @@ Lfde4_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_CoreVideo_CVOpenGLESTexture_CFRelease_intptr
-	.quad Lme_26c
+	.quad Lme_270
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -13031,7 +13060,7 @@ Lfde5_start:
 	.align 3
 	.quad wrapper_managed_to_native_CoreVideo_CVOpenGLESTexture_CFRelease_intptr
 
-LDIFF_SYM388=Lme_26c - wrapper_managed_to_native_CoreVideo_CVOpenGLESTexture_CFRelease_intptr
+LDIFF_SYM388=Lme_270 - wrapper_managed_to_native_CoreVideo_CVOpenGLESTexture_CFRelease_intptr
 	.long LDIFF_SYM388
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
@@ -13102,7 +13131,7 @@ LDIFF_SYM392=LTDIE_58 - Ldebug_info_start
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureGetTarget_intptr
-	.quad Lme_26d
+	.quad Lme_271
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -13141,7 +13170,7 @@ Lfde6_start:
 	.align 3
 	.quad wrapper_managed_to_native_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureGetTarget_intptr
 
-LDIFF_SYM399=Lme_26d - wrapper_managed_to_native_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureGetTarget_intptr
+LDIFF_SYM399=Lme_271 - wrapper_managed_to_native_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureGetTarget_intptr
 	.long LDIFF_SYM399
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
@@ -13157,7 +13186,7 @@ Lfde6_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureGetName_intptr
-	.quad Lme_26e
+	.quad Lme_272
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -13196,7 +13225,7 @@ Lfde7_start:
 	.align 3
 	.quad wrapper_managed_to_native_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureGetName_intptr
 
-LDIFF_SYM406=Lme_26e - wrapper_managed_to_native_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureGetName_intptr
+LDIFF_SYM406=Lme_272 - wrapper_managed_to_native_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureGetName_intptr
 	.long LDIFF_SYM406
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
@@ -13212,7 +13241,7 @@ Lfde7_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureIsFlipped_intptr
-	.quad Lme_26f
+	.quad Lme_273
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -13251,7 +13280,7 @@ Lfde8_start:
 	.align 3
 	.quad wrapper_managed_to_native_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureIsFlipped_intptr
 
-LDIFF_SYM413=Lme_26f - wrapper_managed_to_native_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureIsFlipped_intptr
+LDIFF_SYM413=Lme_273 - wrapper_managed_to_native_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureIsFlipped_intptr
 	.long LDIFF_SYM413
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
@@ -13267,7 +13296,7 @@ Lfde8_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureGetCleanTexCoords_intptr_intptr_intptr_intptr_intptr
-	.quad Lme_270
+	.quad Lme_274
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -13321,7 +13350,7 @@ Lfde9_start:
 	.align 3
 	.quad wrapper_managed_to_native_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureGetCleanTexCoords_intptr_intptr_intptr_intptr_intptr
 
-LDIFF_SYM423=Lme_270 - wrapper_managed_to_native_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureGetCleanTexCoords_intptr_intptr_intptr_intptr_intptr
+LDIFF_SYM423=Lme_274 - wrapper_managed_to_native_CoreVideo_CVOpenGLESTexture_CVOpenGLESTextureGetCleanTexCoords_intptr_intptr_intptr_intptr_intptr
 	.long LDIFF_SYM423
 	.long 0
 	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
@@ -13337,7 +13366,7 @@ Lfde9_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_CoreVideo_CVOpenGLESTextureCache_CVOpenGLESTextureCacheCreate_intptr_intptr_intptr_intptr_intptr_
-	.quad Lme_271
+	.quad Lme_275
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -13396,7 +13425,7 @@ Lfde10_start:
 	.align 3
 	.quad wrapper_managed_to_native_CoreVideo_CVOpenGLESTextureCache_CVOpenGLESTextureCacheCreate_intptr_intptr_intptr_intptr_intptr_
 
-LDIFF_SYM434=Lme_271 - wrapper_managed_to_native_CoreVideo_CVOpenGLESTextureCache_CVOpenGLESTextureCacheCreate_intptr_intptr_intptr_intptr_intptr_
+LDIFF_SYM434=Lme_275 - wrapper_managed_to_native_CoreVideo_CVOpenGLESTextureCache_CVOpenGLESTextureCacheCreate_intptr_intptr_intptr_intptr_intptr_
 	.long LDIFF_SYM434
 	.long 0
 	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -13437,7 +13466,7 @@ LDIFF_SYM438=LTDIE_59 - Ldebug_info_start
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_CoreVideo_CVOpenGLESTextureCache_CVOpenGLESTextureCacheFlush_intptr_CoreVideo_CVOptionFlags
-	.quad Lme_272
+	.quad Lme_276
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -13476,7 +13505,7 @@ Lfde11_start:
 	.align 3
 	.quad wrapper_managed_to_native_CoreVideo_CVOpenGLESTextureCache_CVOpenGLESTextureCacheFlush_intptr_CoreVideo_CVOptionFlags
 
-LDIFF_SYM445=Lme_272 - wrapper_managed_to_native_CoreVideo_CVOpenGLESTextureCache_CVOpenGLESTextureCacheFlush_intptr_CoreVideo_CVOptionFlags
+LDIFF_SYM445=Lme_276 - wrapper_managed_to_native_CoreVideo_CVOpenGLESTextureCache_CVOpenGLESTextureCacheFlush_intptr_CoreVideo_CVOptionFlags
 	.long LDIFF_SYM445
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -15042,7 +15071,7 @@ LDIFF_SYM457=LTDIE_62 - Ldebug_info_start
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_CoreVideo_CVOpenGLESTextureCache_CVOpenGLESTextureCacheCreateTextureFromImage_intptr_intptr_intptr_intptr_int_OpenTK_Graphics_ES20_All_int_int_OpenTK_Graphics_ES20_All_OpenTK_Graphics_ES20_DataType_intptr_intptr_
-	.quad Lme_273
+	.quad Lme_277
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -15136,7 +15165,7 @@ Lfde12_start:
 	.align 3
 	.quad wrapper_managed_to_native_CoreVideo_CVOpenGLESTextureCache_CVOpenGLESTextureCacheCreateTextureFromImage_intptr_intptr_intptr_intptr_int_OpenTK_Graphics_ES20_All_int_int_OpenTK_Graphics_ES20_All_OpenTK_Graphics_ES20_DataType_intptr_intptr_
 
-LDIFF_SYM475=Lme_273 - wrapper_managed_to_native_CoreVideo_CVOpenGLESTextureCache_CVOpenGLESTextureCacheCreateTextureFromImage_intptr_intptr_intptr_intptr_int_OpenTK_Graphics_ES20_All_int_int_OpenTK_Graphics_ES20_All_OpenTK_Graphics_ES20_DataType_intptr_intptr_
+LDIFF_SYM475=Lme_277 - wrapper_managed_to_native_CoreVideo_CVOpenGLESTextureCache_CVOpenGLESTextureCacheCreateTextureFromImage_intptr_intptr_intptr_intptr_int_OpenTK_Graphics_ES20_All_int_int_OpenTK_Graphics_ES20_All_OpenTK_Graphics_ES20_DataType_intptr_intptr_
 	.long LDIFF_SYM475
 	.long 0
 	.byte 12,31,0,68,14,208,1,157,26,158,25,68,13,29,92,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
@@ -15211,7 +15240,7 @@ LDIFF_SYM484=LTDIE_64 - Ldebug_info_start
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_BindFramebuffer_OpenTK_Graphics_ES30_FramebufferTarget_uint
-	.quad Lme_274
+	.quad Lme_278
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -15250,7 +15279,7 @@ Lfde13_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_BindFramebuffer_OpenTK_Graphics_ES30_FramebufferTarget_uint
 
-LDIFF_SYM491=Lme_274 - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_BindFramebuffer_OpenTK_Graphics_ES30_FramebufferTarget_uint
+LDIFF_SYM491=Lme_278 - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_BindFramebuffer_OpenTK_Graphics_ES30_FramebufferTarget_uint
 	.long LDIFF_SYM491
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -15291,7 +15320,7 @@ LDIFF_SYM495=LTDIE_65 - Ldebug_info_start
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_BindRenderbuffer_OpenTK_Graphics_ES30_RenderbufferTarget_uint
-	.quad Lme_275
+	.quad Lme_279
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -15330,7 +15359,7 @@ Lfde14_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_BindRenderbuffer_OpenTK_Graphics_ES30_RenderbufferTarget_uint
 
-LDIFF_SYM502=Lme_275 - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_BindRenderbuffer_OpenTK_Graphics_ES30_RenderbufferTarget_uint
+LDIFF_SYM502=Lme_279 - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_BindRenderbuffer_OpenTK_Graphics_ES30_RenderbufferTarget_uint
 	.long LDIFF_SYM502
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -15346,7 +15375,7 @@ Lfde14_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_DeleteFramebuffers_int_uint_
-	.quad Lme_276
+	.quad Lme_27a
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -15385,7 +15414,7 @@ Lfde15_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_DeleteFramebuffers_int_uint_
 
-LDIFF_SYM509=Lme_276 - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_DeleteFramebuffers_int_uint_
+LDIFF_SYM509=Lme_27a - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_DeleteFramebuffers_int_uint_
 	.long LDIFF_SYM509
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -15401,7 +15430,7 @@ Lfde15_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_DeleteRenderbuffers_int_uint_
-	.quad Lme_277
+	.quad Lme_27b
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -15440,7 +15469,7 @@ Lfde16_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_DeleteRenderbuffers_int_uint_
 
-LDIFF_SYM516=Lme_277 - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_DeleteRenderbuffers_int_uint_
+LDIFF_SYM516=Lme_27b - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_DeleteRenderbuffers_int_uint_
 	.long LDIFF_SYM516
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -15535,7 +15564,7 @@ LDIFF_SYM520=LTDIE_66 - Ldebug_info_start
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_FramebufferRenderbuffer_OpenTK_Graphics_ES30_FramebufferTarget_OpenTK_Graphics_ES30_FramebufferSlot_OpenTK_Graphics_ES30_RenderbufferTarget_uint
-	.quad Lme_278
+	.quad Lme_27c
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -15584,7 +15613,7 @@ Lfde17_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_FramebufferRenderbuffer_OpenTK_Graphics_ES30_FramebufferTarget_OpenTK_Graphics_ES30_FramebufferSlot_OpenTK_Graphics_ES30_RenderbufferTarget_uint
 
-LDIFF_SYM529=Lme_278 - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_FramebufferRenderbuffer_OpenTK_Graphics_ES30_FramebufferTarget_OpenTK_Graphics_ES30_FramebufferSlot_OpenTK_Graphics_ES30_RenderbufferTarget_uint
+LDIFF_SYM529=Lme_27c - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_FramebufferRenderbuffer_OpenTK_Graphics_ES30_FramebufferTarget_OpenTK_Graphics_ES30_FramebufferSlot_OpenTK_Graphics_ES30_RenderbufferTarget_uint
 	.long LDIFF_SYM529
 	.long 0
 	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -15600,7 +15629,7 @@ Lfde17_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_GenFramebuffers_int_uint_
-	.quad Lme_279
+	.quad Lme_27d
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -15639,7 +15668,7 @@ Lfde18_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_GenFramebuffers_int_uint_
 
-LDIFF_SYM536=Lme_279 - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_GenFramebuffers_int_uint_
+LDIFF_SYM536=Lme_27d - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_GenFramebuffers_int_uint_
 	.long LDIFF_SYM536
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -15655,7 +15684,7 @@ Lfde18_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_GenRenderbuffers_int_uint_
-	.quad Lme_27a
+	.quad Lme_27e
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -15694,7 +15723,7 @@ Lfde19_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_GenRenderbuffers_int_uint_
 
-LDIFF_SYM543=Lme_27a - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_GenRenderbuffers_int_uint_
+LDIFF_SYM543=Lme_27e - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_GenRenderbuffers_int_uint_
 	.long LDIFF_SYM543
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -16227,7 +16256,7 @@ LDIFF_SYM547=LTDIE_67 - Ldebug_info_start
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_GetIntegerv_OpenTK_Graphics_ES30_GetPName_int_
-	.quad Lme_27b
+	.quad Lme_27f
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -16266,7 +16295,7 @@ Lfde20_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_GetIntegerv_OpenTK_Graphics_ES30_GetPName_int_
 
-LDIFF_SYM554=Lme_27b - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_GetIntegerv_OpenTK_Graphics_ES30_GetPName_int_
+LDIFF_SYM554=Lme_27f - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_GetIntegerv_OpenTK_Graphics_ES30_GetPName_int_
 	.long LDIFF_SYM554
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -16334,7 +16363,7 @@ LDIFF_SYM558=LTDIE_68 - Ldebug_info_start
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_GetRenderbufferParameteriv_OpenTK_Graphics_ES30_RenderbufferTarget_OpenTK_Graphics_ES30_RenderbufferParameterName_int_
-	.quad Lme_27c
+	.quad Lme_280
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -16378,7 +16407,7 @@ Lfde21_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_GetRenderbufferParameteriv_OpenTK_Graphics_ES30_RenderbufferTarget_OpenTK_Graphics_ES30_RenderbufferParameterName_int_
 
-LDIFF_SYM566=Lme_27c - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_GetRenderbufferParameteriv_OpenTK_Graphics_ES30_RenderbufferTarget_OpenTK_Graphics_ES30_RenderbufferParameterName_int_
+LDIFF_SYM566=Lme_280 - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_GetRenderbufferParameteriv_OpenTK_Graphics_ES30_RenderbufferTarget_OpenTK_Graphics_ES30_RenderbufferParameterName_int_
 	.long LDIFF_SYM566
 	.long 0
 	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
@@ -16446,7 +16475,7 @@ LDIFF_SYM570=LTDIE_69 - Ldebug_info_start
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_PixelStorei_OpenTK_Graphics_ES30_PixelStoreParameter_int
-	.quad Lme_27d
+	.quad Lme_281
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -16485,7 +16514,7 @@ Lfde22_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_PixelStorei_OpenTK_Graphics_ES30_PixelStoreParameter_int
 
-LDIFF_SYM577=Lme_27d - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_PixelStorei_OpenTK_Graphics_ES30_PixelStoreParameter_int
+LDIFF_SYM577=Lme_281 - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_PixelStorei_OpenTK_Graphics_ES30_PixelStoreParameter_int
 	.long LDIFF_SYM577
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -16501,7 +16530,7 @@ Lfde22_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_ReadPixels_int_int_int_int_OpenTK_Graphics_ES30_PixelFormat_OpenTK_Graphics_ES30_PixelType_intptr
-	.quad Lme_27e
+	.quad Lme_282
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -16565,7 +16594,7 @@ Lfde23_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_ReadPixels_int_int_int_int_OpenTK_Graphics_ES30_PixelFormat_OpenTK_Graphics_ES30_PixelType_intptr
 
-LDIFF_SYM589=Lme_27e - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_ReadPixels_int_int_int_int_OpenTK_Graphics_ES30_PixelFormat_OpenTK_Graphics_ES30_PixelType_intptr
+LDIFF_SYM589=Lme_282 - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_ReadPixels_int_int_int_int_OpenTK_Graphics_ES30_PixelFormat_OpenTK_Graphics_ES30_PixelType_intptr
 	.long LDIFF_SYM589
 	.long 0
 	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
@@ -16581,7 +16610,7 @@ Lfde23_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_Scissor_int_int_int_int
-	.quad Lme_27f
+	.quad Lme_283
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -16630,7 +16659,7 @@ Lfde24_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_Scissor_int_int_int_int
 
-LDIFF_SYM598=Lme_27f - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_Scissor_int_int_int_int
+LDIFF_SYM598=Lme_283 - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_Scissor_int_int_int_int
 	.long LDIFF_SYM598
 	.long 0
 	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -16646,7 +16675,7 @@ Lfde24_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_Viewport_int_int_int_int
-	.quad Lme_280
+	.quad Lme_284
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -16695,7 +16724,7 @@ Lfde25_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_Viewport_int_int_int_int
 
-LDIFF_SYM607=Lme_280 - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_Viewport_int_int_int_int
+LDIFF_SYM607=Lme_284 - wrapper_managed_to_native_OpenTK_Graphics_ES30_GL_Core_Viewport_int_int_int_int
 	.long LDIFF_SYM607
 	.long 0
 	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -16736,7 +16765,7 @@ LDIFF_SYM611=LTDIE_70 - Ldebug_info_start
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_BindFramebuffer_OpenTK_Graphics_ES20_FramebufferTarget_uint
-	.quad Lme_281
+	.quad Lme_285
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -16775,7 +16804,7 @@ Lfde26_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_BindFramebuffer_OpenTK_Graphics_ES20_FramebufferTarget_uint
 
-LDIFF_SYM618=Lme_281 - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_BindFramebuffer_OpenTK_Graphics_ES20_FramebufferTarget_uint
+LDIFF_SYM618=Lme_285 - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_BindFramebuffer_OpenTK_Graphics_ES20_FramebufferTarget_uint
 	.long LDIFF_SYM618
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -16816,7 +16845,7 @@ LDIFF_SYM622=LTDIE_71 - Ldebug_info_start
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_BindRenderbuffer_OpenTK_Graphics_ES20_RenderbufferTarget_uint
-	.quad Lme_282
+	.quad Lme_286
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -16855,7 +16884,7 @@ Lfde27_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_BindRenderbuffer_OpenTK_Graphics_ES20_RenderbufferTarget_uint
 
-LDIFF_SYM629=Lme_282 - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_BindRenderbuffer_OpenTK_Graphics_ES20_RenderbufferTarget_uint
+LDIFF_SYM629=Lme_286 - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_BindRenderbuffer_OpenTK_Graphics_ES20_RenderbufferTarget_uint
 	.long LDIFF_SYM629
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -16871,7 +16900,7 @@ Lfde27_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_DeleteFramebuffers_int_uint_
-	.quad Lme_283
+	.quad Lme_287
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -16910,7 +16939,7 @@ Lfde28_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_DeleteFramebuffers_int_uint_
 
-LDIFF_SYM636=Lme_283 - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_DeleteFramebuffers_int_uint_
+LDIFF_SYM636=Lme_287 - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_DeleteFramebuffers_int_uint_
 	.long LDIFF_SYM636
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -16926,7 +16955,7 @@ Lfde28_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_DeleteRenderbuffers_int_uint_
-	.quad Lme_284
+	.quad Lme_288
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -16965,7 +16994,7 @@ Lfde29_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_DeleteRenderbuffers_int_uint_
 
-LDIFF_SYM643=Lme_284 - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_DeleteRenderbuffers_int_uint_
+LDIFF_SYM643=Lme_288 - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_DeleteRenderbuffers_int_uint_
 	.long LDIFF_SYM643
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -17012,7 +17041,7 @@ LDIFF_SYM647=LTDIE_72 - Ldebug_info_start
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_FramebufferRenderbuffer_OpenTK_Graphics_ES20_FramebufferTarget_OpenTK_Graphics_ES20_FramebufferSlot_OpenTK_Graphics_ES20_RenderbufferTarget_uint
-	.quad Lme_285
+	.quad Lme_289
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -17061,7 +17090,7 @@ Lfde30_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_FramebufferRenderbuffer_OpenTK_Graphics_ES20_FramebufferTarget_OpenTK_Graphics_ES20_FramebufferSlot_OpenTK_Graphics_ES20_RenderbufferTarget_uint
 
-LDIFF_SYM656=Lme_285 - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_FramebufferRenderbuffer_OpenTK_Graphics_ES20_FramebufferTarget_OpenTK_Graphics_ES20_FramebufferSlot_OpenTK_Graphics_ES20_RenderbufferTarget_uint
+LDIFF_SYM656=Lme_289 - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_FramebufferRenderbuffer_OpenTK_Graphics_ES20_FramebufferTarget_OpenTK_Graphics_ES20_FramebufferSlot_OpenTK_Graphics_ES20_RenderbufferTarget_uint
 	.long LDIFF_SYM656
 	.long 0
 	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -17077,7 +17106,7 @@ Lfde30_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_GenFramebuffers_int_uint_
-	.quad Lme_286
+	.quad Lme_28a
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -17116,7 +17145,7 @@ Lfde31_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_GenFramebuffers_int_uint_
 
-LDIFF_SYM663=Lme_286 - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_GenFramebuffers_int_uint_
+LDIFF_SYM663=Lme_28a - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_GenFramebuffers_int_uint_
 	.long LDIFF_SYM663
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -17132,7 +17161,7 @@ Lfde31_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_GenRenderbuffers_int_uint_
-	.quad Lme_287
+	.quad Lme_28b
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -17171,7 +17200,7 @@ Lfde32_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_GenRenderbuffers_int_uint_
 
-LDIFF_SYM670=Lme_287 - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_GenRenderbuffers_int_uint_
+LDIFF_SYM670=Lme_28b - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_GenRenderbuffers_int_uint_
 	.long LDIFF_SYM670
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -17473,7 +17502,7 @@ LDIFF_SYM674=LTDIE_73 - Ldebug_info_start
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_GetIntegerv_OpenTK_Graphics_ES20_GetPName_int_
-	.quad Lme_288
+	.quad Lme_28c
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -17512,7 +17541,7 @@ Lfde33_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_GetIntegerv_OpenTK_Graphics_ES20_GetPName_int_
 
-LDIFF_SYM681=Lme_288 - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_GetIntegerv_OpenTK_Graphics_ES20_GetPName_int_
+LDIFF_SYM681=Lme_28c - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_GetIntegerv_OpenTK_Graphics_ES20_GetPName_int_
 	.long LDIFF_SYM681
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -17577,7 +17606,7 @@ LDIFF_SYM685=LTDIE_74 - Ldebug_info_start
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_GetRenderbufferParameteriv_OpenTK_Graphics_ES20_RenderbufferTarget_OpenTK_Graphics_ES20_RenderbufferParameterName_int_
-	.quad Lme_289
+	.quad Lme_28d
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -17621,7 +17650,7 @@ Lfde34_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_GetRenderbufferParameteriv_OpenTK_Graphics_ES20_RenderbufferTarget_OpenTK_Graphics_ES20_RenderbufferParameterName_int_
 
-LDIFF_SYM693=Lme_289 - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_GetRenderbufferParameteriv_OpenTK_Graphics_ES20_RenderbufferTarget_OpenTK_Graphics_ES20_RenderbufferParameterName_int_
+LDIFF_SYM693=Lme_28d - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_GetRenderbufferParameteriv_OpenTK_Graphics_ES20_RenderbufferTarget_OpenTK_Graphics_ES20_RenderbufferParameterName_int_
 	.long LDIFF_SYM693
 	.long 0
 	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
@@ -17665,7 +17694,7 @@ LDIFF_SYM697=LTDIE_75 - Ldebug_info_start
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_PixelStorei_OpenTK_Graphics_ES20_PixelStoreParameter_int
-	.quad Lme_28a
+	.quad Lme_28e
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -17704,7 +17733,7 @@ Lfde35_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_PixelStorei_OpenTK_Graphics_ES20_PixelStoreParameter_int
 
-LDIFF_SYM704=Lme_28a - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_PixelStorei_OpenTK_Graphics_ES20_PixelStoreParameter_int
+LDIFF_SYM704=Lme_28e - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_PixelStorei_OpenTK_Graphics_ES20_PixelStoreParameter_int
 	.long LDIFF_SYM704
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -17720,7 +17749,7 @@ Lfde35_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_ReadPixels_int_int_int_int_OpenTK_Graphics_ES20_PixelFormat_OpenTK_Graphics_ES20_PixelType_intptr
-	.quad Lme_28b
+	.quad Lme_28f
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -17784,7 +17813,7 @@ Lfde36_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_ReadPixels_int_int_int_int_OpenTK_Graphics_ES20_PixelFormat_OpenTK_Graphics_ES20_PixelType_intptr
 
-LDIFF_SYM716=Lme_28b - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_ReadPixels_int_int_int_int_OpenTK_Graphics_ES20_PixelFormat_OpenTK_Graphics_ES20_PixelType_intptr
+LDIFF_SYM716=Lme_28f - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_ReadPixels_int_int_int_int_OpenTK_Graphics_ES20_PixelFormat_OpenTK_Graphics_ES20_PixelType_intptr
 	.long LDIFF_SYM716
 	.long 0
 	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
@@ -17800,7 +17829,7 @@ Lfde36_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_Scissor_int_int_int_int
-	.quad Lme_28c
+	.quad Lme_290
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -17849,7 +17878,7 @@ Lfde37_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_Scissor_int_int_int_int
 
-LDIFF_SYM725=Lme_28c - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_Scissor_int_int_int_int
+LDIFF_SYM725=Lme_290 - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_Scissor_int_int_int_int
 	.long LDIFF_SYM725
 	.long 0
 	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -17865,7 +17894,7 @@ Lfde37_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_Viewport_int_int_int_int
-	.quad Lme_28d
+	.quad Lme_291
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -17914,7 +17943,7 @@ Lfde38_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_Viewport_int_int_int_int
 
-LDIFF_SYM734=Lme_28d - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_Viewport_int_int_int_int
+LDIFF_SYM734=Lme_291 - wrapper_managed_to_native_OpenTK_Graphics_ES20_GL_Core_Viewport_int_int_int_int
 	.long LDIFF_SYM734
 	.long 0
 	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -17930,7 +17959,7 @@ Lfde38_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_BindFramebufferOES_OpenTK_Graphics_ES11_All_uint
-	.quad Lme_28e
+	.quad Lme_292
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -17969,7 +17998,7 @@ Lfde39_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_BindFramebufferOES_OpenTK_Graphics_ES11_All_uint
 
-LDIFF_SYM741=Lme_28e - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_BindFramebufferOES_OpenTK_Graphics_ES11_All_uint
+LDIFF_SYM741=Lme_292 - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_BindFramebufferOES_OpenTK_Graphics_ES11_All_uint
 	.long LDIFF_SYM741
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -17985,7 +18014,7 @@ Lfde39_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_BindRenderbufferOES_OpenTK_Graphics_ES11_All_uint
-	.quad Lme_28f
+	.quad Lme_293
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -18024,7 +18053,7 @@ Lfde40_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_BindRenderbufferOES_OpenTK_Graphics_ES11_All_uint
 
-LDIFF_SYM748=Lme_28f - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_BindRenderbufferOES_OpenTK_Graphics_ES11_All_uint
+LDIFF_SYM748=Lme_293 - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_BindRenderbufferOES_OpenTK_Graphics_ES11_All_uint
 	.long LDIFF_SYM748
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -18040,7 +18069,7 @@ Lfde40_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_DeleteFramebuffersOES_int_uint_
-	.quad Lme_290
+	.quad Lme_294
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -18079,7 +18108,7 @@ Lfde41_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_DeleteFramebuffersOES_int_uint_
 
-LDIFF_SYM755=Lme_290 - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_DeleteFramebuffersOES_int_uint_
+LDIFF_SYM755=Lme_294 - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_DeleteFramebuffersOES_int_uint_
 	.long LDIFF_SYM755
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -18095,7 +18124,7 @@ Lfde41_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_DeleteRenderbuffersOES_int_uint_
-	.quad Lme_291
+	.quad Lme_295
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -18134,7 +18163,7 @@ Lfde42_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_DeleteRenderbuffersOES_int_uint_
 
-LDIFF_SYM762=Lme_291 - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_DeleteRenderbuffersOES_int_uint_
+LDIFF_SYM762=Lme_295 - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_DeleteRenderbuffersOES_int_uint_
 	.long LDIFF_SYM762
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -18150,7 +18179,7 @@ Lfde42_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_FramebufferRenderbufferOES_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_uint
-	.quad Lme_292
+	.quad Lme_296
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -18199,7 +18228,7 @@ Lfde43_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_FramebufferRenderbufferOES_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_uint
 
-LDIFF_SYM771=Lme_292 - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_FramebufferRenderbufferOES_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_uint
+LDIFF_SYM771=Lme_296 - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_FramebufferRenderbufferOES_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_uint
 	.long LDIFF_SYM771
 	.long 0
 	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -18215,7 +18244,7 @@ Lfde43_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_GenFramebuffersOES_int_uint_
-	.quad Lme_293
+	.quad Lme_297
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -18254,7 +18283,7 @@ Lfde44_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_GenFramebuffersOES_int_uint_
 
-LDIFF_SYM778=Lme_293 - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_GenFramebuffersOES_int_uint_
+LDIFF_SYM778=Lme_297 - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_GenFramebuffersOES_int_uint_
 	.long LDIFF_SYM778
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -18270,7 +18299,7 @@ Lfde44_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_GenRenderbuffersOES_int_uint_
-	.quad Lme_294
+	.quad Lme_298
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -18309,7 +18338,7 @@ Lfde45_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_GenRenderbuffersOES_int_uint_
 
-LDIFF_SYM785=Lme_294 - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_GenRenderbuffersOES_int_uint_
+LDIFF_SYM785=Lme_298 - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_GenRenderbuffersOES_int_uint_
 	.long LDIFF_SYM785
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -18325,7 +18354,7 @@ Lfde45_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_GetIntegerv_OpenTK_Graphics_ES11_All_int_
-	.quad Lme_295
+	.quad Lme_299
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -18364,7 +18393,7 @@ Lfde46_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_GetIntegerv_OpenTK_Graphics_ES11_All_int_
 
-LDIFF_SYM792=Lme_295 - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_GetIntegerv_OpenTK_Graphics_ES11_All_int_
+LDIFF_SYM792=Lme_299 - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_GetIntegerv_OpenTK_Graphics_ES11_All_int_
 	.long LDIFF_SYM792
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -18380,7 +18409,7 @@ Lfde46_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_GetRenderbufferParameterivOES_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_int_
-	.quad Lme_296
+	.quad Lme_29a
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -18424,7 +18453,7 @@ Lfde47_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_GetRenderbufferParameterivOES_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_int_
 
-LDIFF_SYM800=Lme_296 - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_GetRenderbufferParameterivOES_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_int_
+LDIFF_SYM800=Lme_29a - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_GetRenderbufferParameterivOES_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_int_
 	.long LDIFF_SYM800
 	.long 0
 	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
@@ -18440,7 +18469,7 @@ Lfde47_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_PixelStorei_OpenTK_Graphics_ES11_All_int
-	.quad Lme_297
+	.quad Lme_29b
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -18479,7 +18508,7 @@ Lfde48_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_PixelStorei_OpenTK_Graphics_ES11_All_int
 
-LDIFF_SYM807=Lme_297 - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_PixelStorei_OpenTK_Graphics_ES11_All_int
+LDIFF_SYM807=Lme_29b - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_PixelStorei_OpenTK_Graphics_ES11_All_int
 	.long LDIFF_SYM807
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -18495,7 +18524,7 @@ Lfde48_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_ReadPixels_int_int_int_int_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_intptr
-	.quad Lme_298
+	.quad Lme_29c
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -18559,7 +18588,7 @@ Lfde49_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_ReadPixels_int_int_int_int_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_intptr
 
-LDIFF_SYM819=Lme_298 - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_ReadPixels_int_int_int_int_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_intptr
+LDIFF_SYM819=Lme_29c - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_ReadPixels_int_int_int_int_OpenTK_Graphics_ES11_All_OpenTK_Graphics_ES11_All_intptr
 	.long LDIFF_SYM819
 	.long 0
 	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
@@ -18575,7 +18604,7 @@ Lfde49_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_Scissor_int_int_int_int
-	.quad Lme_299
+	.quad Lme_29d
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -18624,7 +18653,7 @@ Lfde50_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_Scissor_int_int_int_int
 
-LDIFF_SYM828=Lme_299 - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_Scissor_int_int_int_int
+LDIFF_SYM828=Lme_29d - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_Scissor_int_int_int_int
 	.long LDIFF_SYM828
 	.long 0
 	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -18640,7 +18669,7 @@ Lfde50_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_Viewport_int_int_int_int
-	.quad Lme_29a
+	.quad Lme_29e
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -18689,7 +18718,7 @@ Lfde51_start:
 	.align 3
 	.quad wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_Viewport_int_int_int_int
 
-LDIFF_SYM837=Lme_29a - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_Viewport_int_int_int_int
+LDIFF_SYM837=Lme_29e - wrapper_managed_to_native_OpenTK_Graphics_ES11_GL_Core_Viewport_int_int_int_int
 	.long LDIFF_SYM837
 	.long 0
 	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
@@ -18760,7 +18789,7 @@ LDIFF_SYM847=LTDIE_77 - Ldebug_info_start
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_System_Array_GetGenericValueImpl_System_Array_int_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_
-	.quad Lme_2bb
+	.quad Lme_2bf
 
 	.byte 2,118,16,3
 	.asciz "param0"
@@ -18789,7 +18818,7 @@ Lfde52_start:
 	.align 3
 	.quad wrapper_managed_to_native_System_Array_GetGenericValueImpl_System_Array_int_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_
 
-LDIFF_SYM852=Lme_2bb - wrapper_managed_to_native_System_Array_GetGenericValueImpl_System_Array_int_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_
+LDIFF_SYM852=Lme_2bf - wrapper_managed_to_native_System_Array_GetGenericValueImpl_System_Array_int_System_Collections_Generic_KeyValuePair_2_OpenTK_ContextHandle_System_WeakReference_
 	.long LDIFF_SYM852
 	.long 0
 	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7

@@ -1,42 +1,70 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
-            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-            xmlns:local="clr-namespace:pulse"
-            x:Class="pulse.MainPage"
-            NavigationPage.HasNavigationBar="False"
-            android:TabbedPage.BarSelectedItemColor="{StaticResource AccentColor}"
-            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
-            android:TabbedPage.ToolbarPlacement="Bottom"
-            >
-    
-    <NavigationPage Title="Events" IconImageSource="event">
-        <x:Arguments>
-            <local:EventsPage />
-        </x:Arguments>
-    </NavigationPage>
-    
-    <NavigationPage Title="Payments" IconImageSource="payment">
-        <x:Arguments>
-            <local:RegistrationsPage />
-        </x:Arguments>
-    </NavigationPage>
-    
-    <NavigationPage Title="Star Shows" IconImageSource="stars">
-        <x:Arguments>
-            <local:NightsPage />
-        </x:Arguments>
-    </NavigationPage>
-    
-    <NavigationPage Title="Notifications" IconImageSource="notifications_active">
-        <x:Arguments>
-            <local:NotificationsPage />
-        </x:Arguments>
-    </NavigationPage>
-    
-    <NavigationPage Title="Accounts" IconImageSource="account_box">
-        <x:Arguments>
-            <local:AccountsPage />
-        </x:Arguments>
-    </NavigationPage>
 
-</TabbedPage>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:pulse"
+       Shell.ForegroundColor="{StaticResource AccentColor}"
+       Shell.UnselectedColor="#888"
+       Shell.TabBarBackgroundColor="#eee"
+       Shell.BackgroundColor="#eee"
+       Shell.TitleColor="Black"
+       x:Class="pulse.MainPage">
+
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <Grid BackgroundColor="Black"
+                  HeightRequest="200">
+                <Image Aspect="AspectFill"
+                       Source="pulse_logo" />
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="PushPulsePage" />
+                </Grid.GestureRecognizers>
+            </Grid>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+
+        <Tab Title="Events"
+             Icon="event">
+            <ShellContent Title="Department">
+                <local:EventsPage />
+            </ShellContent>
+            <ShellContent Title="Schdedule">
+                <local:EventsSchedulePage />
+            </ShellContent>
+            <ShellContent Title="Star shows">
+                <local:NightsPage />
+            </ShellContent>
+        </Tab>
+
+        <Tab Title="Payments"
+             Icon="payment">
+            <ShellContent>
+                <local:RegistrationsPage />
+            </ShellContent>
+        </Tab>
+
+        <Tab Title="Notifications"
+             Icon="notifications_active">
+            <ShellContent>
+                <local:NotificationsPage />
+            </ShellContent>
+        </Tab>
+
+        <Tab Title="Account"
+             Icon="account_box">
+            <ShellContent>
+                <local:AccountsPage />
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+
+    <MenuItem Text="About Pulse"
+              IconImageSource="info"
+              Clicked="PushPulsePage" />
+
+    <MenuItem Text="About Us"
+              IconImageSource="pawprint"
+              Clicked="PushDevPage" />
+</Shell>

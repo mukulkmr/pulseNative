@@ -1,31 +1,32 @@
 ﻿<Properties StartupConfiguration="{D592D262-83E9-4942-A1ED-D176AC32BDE5}|Default">
-  <MonoDevelop.Ide.ItemProperties.pulse.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
+  <MonoDevelop.Ide.ItemProperties.pulse.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F14C94B5-B3D0-4ADA-BD4C-FE9B4072489B" />
   <MonoDevelop.Ide.ItemProperties.pulse HideGettingStarted="True" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="pulse/Pages/RegistrationsPage.xaml">
     <Files>
-      <File FileName="pulse/App.xaml.cs" Line="37" Column="1" />
-      <File FileName="pulse/Pages/EventDescriptionPage.xaml.cs" Line="69" Column="14" />
-      <File FileName="pulse.iOS/Info.plist" />
+      <File FileName="pulse/Pages/EventsPage.xaml" Line="33" Column="52" />
+      <File FileName="pulse/Pages/AccountsPage.xaml" Line="34" Column="11" />
+      <File FileName="pulse/App.xaml" Line="33" Column="52" />
+      <File FileName="pulse/Pages/NotificationsPage.xaml" Line="38" Column="1" />
+      <File FileName="pulse/Pages/EventsSchedulePage.xaml" Line="163" Column="75" />
+      <File FileName="pulse/Pages/RegistrationsPage.xaml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="pulse" expanded="True">
             <Node name="pulse" expanded="True">
-              <Node name="Pages" expanded="True" />
-              <Node name="App.xaml" expanded="True">
-                <Node name="App.xaml.cs" selected="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="RegistrationsPage.xaml" selected="True" />
               </Node>
             </Node>
-            <Node name="pulse.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.pulse.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.420030a096dc740b" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" />
+  <MonoDevelop.Ide.ItemProperties.pulse.Android PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

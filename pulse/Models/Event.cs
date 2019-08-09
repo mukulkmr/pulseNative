@@ -53,6 +53,14 @@ namespace pulse
             }
         }
 
+        [DataMember]
+        public string time_string
+        {
+            get => time + " hrs";
+        }
+
+
+
         public override string ToString()
         {
             return name;

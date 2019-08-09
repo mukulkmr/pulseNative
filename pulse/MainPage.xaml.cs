@@ -1,12 +1,12 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using Xamarin.Forms;
-using Xamarin.Essentials;
-using System.Threading.Tasks;
+using Xamarin.Forms.Xaml;
 
 namespace pulse
 {
     [DesignTimeVisible(true)]
-    public partial class MainPage : TabbedPage
+    public partial class MainPage : Shell
     {
         public MainPage()
         {
@@ -17,5 +17,8 @@ namespace pulse
         {
             return true;
         }
+
+        async void PushPulsePage(object sender, EventArgs e) => await Navigation.PushModalAsync(new PulsePage());
+        async void PushDevPage(object sender, EventArgs e) => await Navigation.PushModalAsync(new CatsPage());
     }
 }

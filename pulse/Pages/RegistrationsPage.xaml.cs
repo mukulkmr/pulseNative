@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
 using System.Net.Http;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Newtonsoft.Json;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace pulse
 {
@@ -35,6 +36,8 @@ namespace pulse
         [DataMember]
         public string team { get; set; }
         [DataMember]
+        public string transaction_id { get; set; }
+        [DataMember]
         public bool delcard_paid { get; set; }
 
         [DataMember]
@@ -44,6 +47,9 @@ namespace pulse
             {
                 if (status == "CNF")
                     return "PaidTicketSummary";
+                if (status == "EXP")
+                    return "ExpiredTicketSummary";
+
                 return "UnpaidTicketSummary";
             }
         }
@@ -118,8 +124,6 @@ namespace pulse
 
     public partial class RegistrationsPage : ContentPage
     {
-
-        // public IList<ObservableGroupCollection<string, Registration>> GroupedEvents { get; private set; }
         public ObservableCollection<Registration> Registrations { get; set; }
 
         readonly string id = Preferences.Get("Id", "0");
@@ -127,7 +131,7 @@ namespace pulse
         public RegistrationsPage()
         {
             InitializeComponent();
-            _ = UpdateAsync();
+            Task.Run(UpdateAsync);
             BindingContext = this;
         }
 
@@ -139,8 +143,6 @@ namespace pulse
             {
                 try
                 {
-                    Loading.IsVisible = true;
-
                     HttpClient httpClient = new HttpClient();
                     HttpResponseMessage responseMessage = await httpClient.GetAsync($"https://app.aiimspulse.website/scripts/data/registrations.php?guid={id}");
 
@@ -154,33 +156,20 @@ namespace pulse
                         {
                             statusText.IsVisible = false;
                             listView.ItemsSource = Registrations;
+                            ReceiptCard.IsVisible = true;
                         }
-
-                        Loading.IsVisible = false;
                     }
                 }
                 catch
                 {
-                    statusText.Text = "Could not connect to the network, Please reload";
+                    statusText.Text = "Could not connect to the network, hit reload to refres";
                 }
             }
             else
             {
-                statusText.Text = "Could not connect to the network, Please reload";
+                statusText.Text = "Could not connect to the network, hit reload to refres";
             }
         }
-
-        async void OnReloadButtonClicked(object sender, EventArgs e)
-        {
-            await ReloadButton.RotateTo(360, 1000, Easing.Linear);
-            ReloadButton.Rotation = 0;
-
-            await UpdateAsync();
-        }
-
-        void Handle_Clicked(object sender, EventArgs e) => Navigation.PushModalAsync(new CatsPage());
-
-        void OpenPulsePage(object sender, EventArgs e) => Navigation.PushModalAsync(new PulsePage());
 
         async void RemoveButtonPressedAsync(object sender, EventArgs e)
         {
@@ -191,12 +180,14 @@ namespace pulse
             string uri = $"https://app.aiimspulse.website/scripts/unregister.php?id={regid}";
             await httpClient.GetAsync(uri);
 
+            await DisplayAlert("Alert", "Ticket Removed", "OK");
+
             await UpdateAsync();
         }
 
-        void TicketInfo(object sender, EventArgs e)
+        async void PrintReceipt(object sender, EventArgs e)
         {
-            DisplayAlert("Info", "Lorem Ispum Dorel", "OK");
+            await Browser.OpenAsync($"https://app.aiimspulse.website/views/admin/bill.php?guid={id}&name=${Preferences.Get("Name", "Cannot fetch name")}&college={Preferences.Get("College", "All India Institute of Medical Sciences, New Delhi")}", BrowserLaunchMode.SystemPreferred);
         }
 
         async void TicketTapped(object sender, EventArgs e)
@@ -215,19 +206,27 @@ namespace pulse
         {
             await DetailsCard.TranslateTo(0, Height, 250, Easing.SinOut);
             DetailsCard.IsVisible = false;
+            Loading.IsVisible = false;
         }
 
-        async void Handle_Navigating(object sender, WebNavigatingEventArgs e)
+        void Handle_Navigating(object sender, WebNavigatingEventArgs e)
         {
-            await webview.FadeTo(0);
             webview.IsVisible = false;
+            Loading.IsVisible = true;
         }
 
         void Handle_Navigated(object sender, WebNavigatedEventArgs e)
         {
             webview.IsVisible = true;
-            webview.FadeTo(1);
+            Loading.IsVisible = false;
         }
 
+        async void OnReloadButtonClicked(object sender, EventArgs e)
+        {
+            await ReloadButton.RotateTo(360, 1000, Easing.Linear);
+            ReloadButton.Rotation = 0;
+
+            await UpdateAsync();
+        }
     }
 }

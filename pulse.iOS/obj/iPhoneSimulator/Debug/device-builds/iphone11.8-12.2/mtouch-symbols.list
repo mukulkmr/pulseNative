@@ -701,6 +701,8 @@ _OBJC_CLASS_$_MDCTonalPalette
 _OBJC_CLASS_$_MDCTriangleEdgeTreatment
 _OBJC_CLASS_$_MDCTypography
 _OBJC_CLASS_$_MDCTypographyScheme
+_OBJC_CLASS_$_MSPush
+_OBJC_CLASS_$_MSPushNotification
 _OBJC_CLASS_$_LOTAnimationView
 _OBJC_CLASS_$_LOTAnimatedControl
 _OBJC_CLASS_$_LOTAnimatedSwitch
@@ -722,8 +724,6 @@ _OBJC_CLASS_$_LOTPointValueCallback
 _OBJC_CLASS_$_LOTSizeBlockCallback
 _OBJC_CLASS_$_LOTSizeInterpolatorCallback
 _OBJC_CLASS_$_LOTSizeValueCallback
-_OBJC_CLASS_$_MSPush
-_OBJC_CLASS_$_MSPushNotification
 _OBJC_CLASS_$_MSAppCenter
 _OBJC_CLASS_$_MSCustomProperties
 _OBJC_CLASS_$_MSDevice

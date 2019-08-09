@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace pulse
@@ -7,8 +8,6 @@ namespace pulse
     {
         public CatsPage() => InitializeComponent();
 
-        void OnReloadButtonClicked(object sender, System.EventArgs e) => CatWebview.Reload();
-
-        void Handle_Clicked(object sender, System.EventArgs e) =>  Navigation.PopModalAsync();
+        async void Handle_Clicked(object sender, EventArgs e) => await Navigation.PopModalAsync();
     }
 }

@@ -19,14 +19,13 @@ RemoveDynamicRegistrar:false
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/pulse.iOS.app:/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/mtouch-cache/1-Link/Xamarin.Forms.Platform.iOS.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/pulse.iOS.app:/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/mtouch-cache/1-Link/Xamarin.Forms.Material.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/pulse.iOS.app:/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/mtouch-cache/1-Link/MaterialComponents.dll
-/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/pulse.iOS.app:/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/mtouch-cache/1-Link/Lottie.Forms.dll
-/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/pulse.iOS.app:/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/mtouch-cache/1-Link/Lottie.iOS.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/pulse.iOS.app:/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/mtouch-cache/1-Link/pulse.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/pulse.iOS.app:/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/mtouch-cache/1-Link/Xamarin.Forms.Xaml.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/pulse.iOS.app:/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/mtouch-cache/1-Link/Microsoft.AppCenter.Push.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/pulse.iOS.app:/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/mtouch-cache/1-Link/Microsoft.AppCenter.Push.iOS.Bindings.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/pulse.iOS.app:/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/mtouch-cache/1-Link/Xamarin.Essentials.dll
-/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/pulse.iOS.app:/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/mtouch-cache/1-Link/Xamarin.Forms.PancakeView.dll
+/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/pulse.iOS.app:/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/mtouch-cache/1-Link/Lottie.Forms.dll
+/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/pulse.iOS.app:/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/mtouch-cache/1-Link/Lottie.iOS.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/pulse.iOS.app:/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/mtouch-cache/1-Link/Microsoft.AppCenter.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/pulse.iOS.app:/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/mtouch-cache/1-Link/Microsoft.AppCenter.iOS.Bindings.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/pulse.iOS.app:/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/mtouch-cache/1-Link/Microsoft.AppCenter.Crashes.dll

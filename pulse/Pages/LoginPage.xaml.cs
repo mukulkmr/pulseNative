@@ -8,6 +8,7 @@ using Xamarin.Forms;
 using Xamarin.Essentials;
 using System.Runtime.Serialization;
 using System.Net.Mail;
+using Xamarin.Forms.Xaml;
 
 namespace pulse
 {
@@ -36,6 +37,10 @@ namespace pulse
     {
         IList<string> States;
         IDictionary<int, string[]> Colleges;
+
+        string _id;
+        string _name;
+        string _college;
 
         public LoginPage()
         {
@@ -624,6 +629,49 @@ namespace pulse
             CollegePicker.ItemsSource = Colleges[StatesPicker.SelectedIndex];
         }
 
+        void SendMail(string id, string name, string college)
+        {
+            MailMessage mail = new MailMessage();
+            SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+
+            mail.From = new MailAddress("aiims2019su@gmail.com");
+            mail.To.Add(userEmail.Text);
+            mail.Subject = "Welcome to pulse 2019";
+            mail.IsBodyHtml = true;
+            mail.Body = $"<h3>Welcome to Pulse 2019 at AIIMS Delhi</h3>" +
+                    $"You have successfully registered at Pulse Mobile App. " +
+                    $"<center>" +
+                    $"<h2> Your GUID : {id}</h2>" +
+                    $"<p>{name}<br>" +
+                    $"{college}</p>" +
+                    $"<img src='https://api.qrserver.com/v1/create-qr-code/?size=300x300&data={id}' alt='qr-code' />" +
+                    $"</center>" +
+                    $"<p>Use this GUID to log in the Pulse 2019 app. </p>" +
+                    $"<p> Registering through this application will give you a chance to take part in one of the largest fest hosted by a Medical School in South Asia. " +
+                    $"Whether registering for some of the events / programs or becoming a delegate at Pulse, this app will cater all your needs as we are going paper - less in terms of registering and handling data.Why not use your smart phones as an access key to anywhere and everywhere.All suggestions and Feedbacks welcome.Hope you have a great time ahead.</ p >" +
+                    $"Stay connected to us on " +
+                    $"<ul>" +
+                    $"<li><a href='https://www.facebook.com/PulseAnnualFestAiims/app/190322544333196/'>Facebook</a></li>" +
+                    $"<li><a href='https://www.instagram.com/pulse.aiims/'>Instagram</a></li>" +
+                    $"<li><a href='https://www.youtube.com/channel/UCDIHSW7GgqLS05X2xG8wRow-'>Youtube</a></li>" +
+                    $"<li><a href='https://aiimspulse.website'>Website</a> </li>" +
+                    $"</ul>" +
+                    $"<b>Note- We advice you to keep a print out of this registration slip for contingencies.</b>" +
+                    $"<b>In case you lose the access to your phone(your phone being dead/broken/stolen-by-aliens), you will be able to take part in the events by using your QR code and valid ID card.</b>";
+
+
+            SmtpServer.Port = 587;
+            SmtpServer.Credentials = new System.Net.NetworkCredential("aiims2019su", "zoXxis-rexjy6-daqkez");
+            SmtpServer.EnableSsl = true;
+
+            SmtpServer.Send(mail);
+        }
+
+        void ResendMail(object sender, EventArgs e)
+        {
+            SendMail(_id, _name, _college);
+        }
+
         async void Login(object sender, EventArgs e)
         {
             var current = Connectivity.NetworkAccess;
@@ -636,7 +684,11 @@ namespace pulse
 
             var college = CollegePicker.SelectedItem;
 
-            if (userName.Text == null || userEmail.Text == null || userMobile.Text == null || college == null)
+            if (!MedicalStudent.IsToggled)
+                college = CollegePickerOther.Text;
+
+
+            if (userName.Text == null || userEmail.Text == null || college == null)
             {
                 await DisplayAlert("Alert", "Please Enter your Credentials", "OK");
                 return;
@@ -648,22 +700,8 @@ namespace pulse
             string id = Guid.NewGuid().ToString();
 
 
-            if (!MedicalStudent.IsToggled)
-                college = CollegePickerOther.Text;
-
             try
             {
-                Preferences.Set("Name", userName.Text);
-                Preferences.Set("Email", userEmail.Text);
-                Preferences.Set("Mobile", userMobile.Text);
-                Preferences.Set("Id", id);
-                Preferences.Set("MedicalStudent", MedicalStudent.IsToggled);
-                Preferences.Set("DelCard", false);
-                Preferences.Set("Accomodations", false);
-                Preferences.Set("College", college.ToString());
-
-                AppCenter.SetUserId(id);
-
                 HttpClient httpClient = new HttpClient();
 
                 var formContent = new FormUrlEncodedContent(new[]
@@ -679,38 +717,22 @@ namespace pulse
                 string uri = "https://app.aiimspulse.website/scripts/adduser.php";
                 await httpClient.PostAsync(uri, formContent);
 
-                MainPageButton.IsVisible = true;
-                await Navigation.PushAsync(new MainPage());
+                SendMail(id, userName.Text, (string)college);
 
-                /*
-                try
-                {
-                    MailMessage mail = new MailMessage();
-                    SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+                _id = id;
+                _name = userName.Text;
+                _college = (string)college;
 
-                    mail.From = new MailAddress("aiims2019su@gmail.com");
-                    mail.To.Add(userEmail.Text);
-                    mail.Subject = "Registration Sucessfull";
-                    mail.IsBodyHtml = true;
-                    mail.Body = $"<p>Registration Sucessfull your guid is {id}</p> " +
-                                $"<center><img src='https://api.qrserver.com/v1/create-qr-code/?size=300x300&data={id}' /></center>";
 
-                    SmtpServer.Port = 587;
-                    SmtpServer.Credentials = new System.Net.NetworkCredential("aiims2019su", "zoXxis-rexjy6-daqkez");
-                    SmtpServer.EnableSsl = true;
-
-                    SmtpServer.Send(mail);
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex);
-                }*/
+                await DisplayAlert("Alert", "Check your inbox for your  unique id for login", "OK");
+                ResendMailButton.IsVisible = true;
             }
             catch (Exception ex)
             {
                 Registerbutton.IsVisible = true;
+
                 Console.WriteLine(ex);
-                await DisplayAlert("Alert", "Cannot connect to the internet", "OK");
+                await DisplayAlert("Alert", "Something went wrong", "OK");
             }
 
             Loading.IsVisible = false;
@@ -759,9 +781,7 @@ namespace pulse
                     Preferences.Set("College", user.college);
 
                     AppCenter.SetUserId(user.guid);
-
-                    await Navigation.PushAsync(new MainPage());
-                    MainPageButton.IsVisible = true;
+                    await Navigation.PushModalAsync(new TutorialsPage());
                 }
                 else
                 {
@@ -785,11 +805,6 @@ namespace pulse
             CollegeInputCard.IsVisible = !e.Value;
         }
 
-        void Handle_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new MainPage());
-        }
-
         void StudentToggle(object sender, ToggledEventArgs e)
         {
             StatesPicker.IsVisible = e.Value;
@@ -810,6 +825,16 @@ namespace pulse
             DisplayAlert("Alert", text, "OK");
         }
 
+        void EmailInfo(object sender, EventArgs e)
+        {
+            DisplayAlert("Why do we need this?", "We will send acknowledgement slips on successful registrations. We'll keep you updated.", "OK");
+        }
+
+        void MobileInfo(object sender, EventArgs e)
+        {
+            DisplayAlert("Why do we need this?", "We are collecting your phone number so that event organisers may coordinate with you. We ensure your privacy.", "OK");
+        }
+
         void SwitchTab(object sender, EventArgs e)
         {
             TappedEventArgs OnTapped = e as TappedEventArgs;
@@ -821,22 +846,22 @@ namespace pulse
                     RegistrationCard.IsVisible = true;
                     LoginCard.IsVisible = false;
 
-                    Tab1.BackgroundColor = (Color)Application.Current.Resources["AccentColor"];
-                    Tab1Text.TextColor = Color.White;
+                    Tab2.BackgroundColor = (Color)Application.Current.Resources["AccentColor"];
+                    Tab2Text.TextColor = Color.White;
 
-                    Tab2.BackgroundColor = Color.Transparent;
-                    Tab2Text.TextColor = Color.FromHex("#666");
+                    Tab1.BackgroundColor = Color.Transparent;
+                    Tab1Text.TextColor = Color.FromHex("#666");
                     break;
 
                 case "Existing":
                     RegistrationCard.IsVisible = false;
                     LoginCard.IsVisible = true;
 
-                    Tab2.BackgroundColor = (Color)Application.Current.Resources["AccentColor"];
-                    Tab2Text.TextColor = Color.White;
+                    Tab1.BackgroundColor = (Color)Application.Current.Resources["AccentColor"];
+                    Tab1Text.TextColor = Color.White;
 
-                    Tab1.BackgroundColor = Color.Transparent;
-                    Tab1Text.TextColor = Color.FromHex("#666");
+                    Tab2.BackgroundColor = Color.Transparent;
+                    Tab2Text.TextColor = Color.FromHex("#666");
 
                     break;
             }

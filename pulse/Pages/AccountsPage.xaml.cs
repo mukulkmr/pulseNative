@@ -8,6 +8,7 @@ using Newtonsoft.Json;
 using System.Reflection;
 using System;
 using System.Runtime.Serialization;
+using Xamarin.Forms.Xaml;
 
 namespace pulse
 {
@@ -20,7 +21,7 @@ namespace pulse
 
     public partial class AccountsPage : ContentPage
     {
-        readonly int cost = 2000;
+        readonly int cost = 1999;
         readonly string id = Preferences.Get("Id", "0");
 
         public AccountsPage()
@@ -125,13 +126,12 @@ namespace pulse
             await UpdateAsync();
         }
 
-        void Handle_Clicked(object sender, EventArgs e) => Navigation.PushModalAsync(new CatsPage());
-        void OpenAccomodations(object sender, EventArgs e) => Navigation.PushModalAsync(new AccomodationsPage());
+        async void OpenAccomodations(object sender, EventArgs e) => await Navigation.PushModalAsync(new AccomodationsPage());
 
-        async void LogOut(object sender, EventArgs e)
+        void LogOut(object sender, EventArgs e)
         {
             Preferences.Clear();
-            await Navigation.PushModalAsync(new NavigationPage(new LoginPage()));
+            Application.Current.MainPage = new LoginPage();
         }
 
         async void CopyGuid(object sender, EventArgs e)
@@ -158,7 +158,5 @@ namespace pulse
             await QRPopUp.TranslateTo(0, Height, 250, Easing.Linear);
             QRPopUp.IsVisible = false;
         }
-
-        void OpenPulsePage(object sender, EventArgs e) => Navigation.PushModalAsync(new PulsePage());
     }
 }

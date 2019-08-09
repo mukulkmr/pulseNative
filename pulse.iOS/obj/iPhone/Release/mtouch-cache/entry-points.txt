@@ -442,6 +442,10 @@ ObjectiveCClass=OBJC_CLASS_$_MDCTypography
 	/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhone/Release/mtouch-cache/1-Link/MaterialComponents.dll
 ObjectiveCClass=OBJC_CLASS_$_MDCTypographyScheme
 	/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhone/Release/mtouch-cache/1-Link/MaterialComponents.dll
+ObjectiveCClass=OBJC_CLASS_$_MSPush
+	/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhone/Release/mtouch-cache/1-Link/Microsoft.AppCenter.Push.iOS.Bindings.dll
+ObjectiveCClass=OBJC_CLASS_$_MSPushNotification
+	/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhone/Release/mtouch-cache/1-Link/Microsoft.AppCenter.Push.iOS.Bindings.dll
 ObjectiveCClass=OBJC_CLASS_$_LOTAnimationView
 	/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhone/Release/mtouch-cache/1-Link/Lottie.iOS.dll
 ObjectiveCClass=OBJC_CLASS_$_LOTAnimatedControl
@@ -484,10 +488,6 @@ ObjectiveCClass=OBJC_CLASS_$_LOTSizeInterpolatorCallback
 	/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhone/Release/mtouch-cache/1-Link/Lottie.iOS.dll
 ObjectiveCClass=OBJC_CLASS_$_LOTSizeValueCallback
 	/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhone/Release/mtouch-cache/1-Link/Lottie.iOS.dll
-ObjectiveCClass=OBJC_CLASS_$_MSPush
-	/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhone/Release/mtouch-cache/1-Link/Microsoft.AppCenter.Push.iOS.Bindings.dll
-ObjectiveCClass=OBJC_CLASS_$_MSPushNotification
-	/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhone/Release/mtouch-cache/1-Link/Microsoft.AppCenter.Push.iOS.Bindings.dll
 ObjectiveCClass=OBJC_CLASS_$_MSAppCenter
 	/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhone/Release/mtouch-cache/1-Link/Microsoft.AppCenter.iOS.Bindings.dll
 ObjectiveCClass=OBJC_CLASS_$_MSCustomProperties

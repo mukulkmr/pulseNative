@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace pulse
 {
@@ -43,7 +44,7 @@ namespace pulse
             AccomodationsCard.IsVisible &= Preferences.Get("MedicalStudent", true)
                 && Preferences.Get("College", "All India Institute of Medical Sciences, New Delhi") != "Students' Union Invite";
 
-            if(AccomodationSummary.IsVisible)
+            if (AccomodationSummary.IsVisible)
                 _ = UpdateAsync();
         }
 
@@ -84,20 +85,14 @@ namespace pulse
                 AccomodationsCard.IsVisible = false;
 
                 HttpClient httpClient = new HttpClient();
-                List<string> TeamMembers = new List<string>();
-
-                foreach (Entry entry in TeamEntries.Children)
-                {
-                    TeamMembers.Add(entry.Text);
-                }
 
                 var formContent = new FormUrlEncodedContent(new[] {
                         new KeyValuePair<string, string>("guid", id),
-                        new KeyValuePair<string, string>("people", people.Value.ToString()),
+                        new KeyValuePair<string, string>("people", "0"),
                         new KeyValuePair<string, string>("rooms", rooms.Value.ToString()),
                         new KeyValuePair<string, string>("sharewith", share.Value.ToString()),
                         new KeyValuePair<string, string>("oncampus", OnCampus.IsToggled.ToString()),
-                        new KeyValuePair<string, string>("team", string.Join(",",TeamMembers)),
+                        new KeyValuePair<string, string>("team", "NaN"),
                         new KeyValuePair<string, string>("checkin", $"{checkin.Date.Year}-{checkin.Date.Month}-{checkin.Date.Day}"),
                         new KeyValuePair<string, string>("checkout", $"{checkout.Date.Year}-{checkout.Date.Month}-{checkout.Date.Day}")
                 });
@@ -122,27 +117,11 @@ namespace pulse
             roomText.Text = e.NewValue.ToString();
         }
 
-        void People_ValueChanged(object sender, ValueChangedEventArgs e)
-        {
-            TeamEntries.Children.Clear();
-
-            for (int i = 0; i < e.NewValue; i++)
-            {
-                TeamEntries.Children.Add(new Entry
-                {
-                    Placeholder = $"Enter Delcard ID  #{i}",
-                    HorizontalOptions = LayoutOptions.FillAndExpand
-                });
-            }
-
-            peopleText.Text = e.NewValue.ToString();
-        }
-
         void Share_ValueChanged(object sender, ValueChangedEventArgs e)
         {
             shareText.Text = e.NewValue.ToString();
         }
 
-        void Handle_Clicked(object sender, EventArgs e) => Navigation.PopModalAsync();
+        async void Handle_Clicked(object sender, EventArgs e) => await Navigation.PopModalAsync();
     }
 }

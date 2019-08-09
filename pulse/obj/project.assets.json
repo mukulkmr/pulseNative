@@ -154,18 +154,6 @@
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
         }
-      },
-      "Xamarin.Forms.PancakeView/1.0.21": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Forms": "3.5.0.129452"
-        },
-        "compile": {
-          "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll": {}
-        }
       }
     }
   },
@@ -848,21 +836,6 @@
         "xamarin.forms.4.1.0.581479.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
-    },
-    "Xamarin.Forms.PancakeView/1.0.21": {
-      "sha512": "MQkBObAAFw4V/rvIL8e2MigNjSZLse4w6r9mYf89334PznAWSfnfGiQoNModq8+2lGYfVIWjC9kuQy9QXqtpuQ==",
-      "type": "package",
-      "path": "xamarin.forms.pancakeview/1.0.21",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/monoandroid81/Xamarin.Forms.PancakeView.dll",
-        "lib/monoandroid90/Xamarin.Forms.PancakeView.dll",
-        "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll",
-        "lib/xamarinios10/Xamarin.Forms.PancakeView.dll",
-        "xamarin.forms.pancakeview.1.0.21.nupkg.sha512",
-        "xamarin.forms.pancakeview.nuspec"
-      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -876,8 +849,7 @@
       "Newtonsoft.Json >= 12.0.2",
       "Xam.Plugins.Notifier >= 3.0.1",
       "Xamarin.Essentials >= 1.2.0",
-      "Xamarin.Forms >= 4.1.0.581479",
-      "Xamarin.Forms.PancakeView >= 1.0.21"
+      "Xamarin.Forms >= 4.1.0.581479"
     ]
   },
   "packageFolders": {
@@ -960,10 +932,6 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[4.1.0.581479, )"
-          },
-          "Xamarin.Forms.PancakeView": {
-            "target": "Package",
-            "version": "[1.0.21, )"
           }
         },
         "imports": [

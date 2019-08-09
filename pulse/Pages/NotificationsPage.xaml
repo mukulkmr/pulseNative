@@ -1,52 +1,76 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage 
+<ContentPage
     BackgroundColor="#fcfcfc"
-    Padding="{OnPlatform iOS={StaticResource PageMarginiOS}}"
-    xmlns="http://xamarin.com/schemas/2014/forms" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" NavigationPage.HasNavigationBar="False" x:Class="pulse.NotificationsPage">
-    <ContentPage.Content>
-        <AbsoluteLayout Margin="0,10,0,10">
-            <StackLayout Margin="0,35,0,0" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
-                <Label x:Name="statusText" Margin="8" Text="you're all caught up. Hit the reload button for update" />  
-                <ListView Margin="0,8,0,0" VerticalOptions="FillAndExpand" HeightRequest="600" BackgroundColor="Transparent"
-                          SelectionMode="None" SeparatorColor="Transparent" HasUnevenRows="true" x:Name="listView" ItemsSource="{Binding Notifications}">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ViewCell>
-                                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Vertical">
-                                    <Frame BackgroundColor="{Binding background}" Margin="5" Style="{StaticResource Card}">
-                                        <StackLayout HorizontalOptions="FillAndExpand">
-                                            <Label HorizontalOptions="Start" Text="{Binding name}" FontSize="Large" />
-                                            
-                                            <Grid>
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition Width="*" />
-                                                    <ColumnDefinition Width="*" />
-                                                </Grid.ColumnDefinitions>
-                                                
-                                                <Label Grid.Column="0" HorizontalOptions="Start" 
-                                                       Text="{Binding time}" FontSize="Small" />
-                                                <Label Grid.Column="1" HorizontalOptions="End" Text="{Binding icon}"
-                                                       FontFamily="{StaticResource MaterialFontFamily}" FontSize="Large" />         
-                                            </Grid>
-                                        </StackLayout>
-                                    </Frame>
-                                </StackLayout>
-                            </ViewCell>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-            </StackLayout>
-            
-            <ActivityIndicator AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds=".5,.5,50,50" x:Name="Loading" IsRunning="true" IsVisible="false" />
-            <ImageButton Source="refresh" x:Name="ReloadButton" BackgroundColor="Transparent" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.05,0,30,30" Clicked="OnReloadButtonClicked" />
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    NavigationPage.HasNavigationBar="False"
+    x:Class="pulse.NotificationsPage"
+    Title="Pulse"
+    ios:Page.UseSafeArea="true">
 
-            <BoxView Color="{StaticResource AccentColor}" Rotation="45" CornerRadius="8" AbsoluteLayout.LayoutFlags="PositionProportional" Margin="0,2,0,0" AbsoluteLayout.LayoutBounds=".5,0,30,32">
-                <BoxView.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OpenPulsePage" />
-                </BoxView.GestureRecognizers>
-            </BoxView>
-           
-            <ImageButton BackgroundColor="Transparent" Clicked="Handle_Clicked" Source="pawprint" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds=".95,0,30,30" />
-        </AbsoluteLayout>
+    <ContentPage.Content>
+        <StackLayout>
+            <ImageButton Source="refresh"
+                         x:Name="ReloadButton"
+                         BackgroundColor="Transparent"
+                         WidthRequest="30"
+                         Margin="0,10,0,0"
+                         HorizontalOptions="Center"
+                         Clicked="OnReloadButtonClicked" />
+
+            <Label x:Name="statusText"
+                   Margin="8"
+                   HorizontalTextAlignment="Center"
+                   Text="you're all caught up. hit reload to refresh" />
+
+            <ListView Margin="0,8,0,0"
+                      VerticalOptions="FillAndExpand"
+                      BackgroundColor="Transparent"
+                      SelectionMode="None"
+                      SeparatorColor="Transparent"
+                      HasUnevenRows="true"
+                      x:Name="listView"
+                      CachingStrategy="RecycleElement"
+                      ItemsSource="{Binding Notifications}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame BackgroundColor="{Binding background}"
+                                   Margin="5"
+                                   Style="{StaticResource Card}">
+                                <StackLayout HorizontalOptions="FillAndExpand">
+                                    <Label HorizontalOptions="Start"
+                                           Text="{Binding name}"
+                                           TextColor="White"
+                                           FontSize="Body" />
+
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Label Grid.Column="0"
+                                               HorizontalOptions="Start"
+                                               Text="{Binding time}"
+                                               TextColor="White"
+                                               FontSize="Caption" />
+
+                                        <Label Grid.Column="1"
+                                               HorizontalOptions="End"
+                                               Text="{Binding icon}"
+                                               FontFamily="{StaticResource MaterialFontFamily}"
+                                               TextColor="White"
+                                               FontSize="Body" />
+                                    </Grid>
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

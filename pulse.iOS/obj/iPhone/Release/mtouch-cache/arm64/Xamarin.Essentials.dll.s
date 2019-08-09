@@ -120,6 +120,21 @@ _mono_aot_Xamarin_Essentialsjit_code_start:
 
 	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 .text
+ut_12:
+add x0, x0, 16
+b _Xamarin_Essentials_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_MoveNext
+ut_end:
+.section __TEXT, __const
+_unbox_trampoline_p:
+
+	.long 0
+LDIFF_SYM3=ut_end - ut_12
+	.long LDIFF_SYM3
+.text
+ut_13:
+add x0, x0, 16
+b _Xamarin_Essentials_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
+.text
 	.align 4
 	.no_dead_strip Xamarin_Essentials_Preferences_PlatformClear_string
 Xamarin_Essentials_Preferences_PlatformClear_string:
@@ -149,21 +164,21 @@ bl _mono_monitor_enter_v4_fast
 .word 0x35000080
 .word 0xaa1903e0
 .word 0xaa1803e1
-bl _p_46
+bl _p_97
 .loc 1 35 0
 .word 0xaa1a03e0
-bl _p_42
+bl _p_94
 .word 0xf90023a0
 .loc 1 37 0
 .word 0xf94023a1
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_252
+bl _p_445
 .word 0xaa0003e1
 .loc 1 39 0
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_253
+bl _p_446
 .word 0xaa0003fa
 .word 0xd2800019
 .word 0x14000024
@@ -198,12 +213,12 @@ ldr x1, [x16, #200]
 .word 0xf94023a0
 .word 0xf90043a0
 .word 0xaa1803e0
-bl _p_254
+bl _p_447
 .word 0xaa0003e1
 .word 0xf94043a2
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_255
+bl _p_448
 .word 0x11000739
 .loc 1 39 0
 .word 0xb9801b40
@@ -214,12 +229,12 @@ bl _p_255
 .word 0x9400000a
 .word 0xf94027a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf9002bbf
 .word 0x94000014
 .word 0xf9402ba0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000017
 .word 0xf9002fbe
 .word 0xf94023a0
@@ -241,7 +256,7 @@ ldr x15, [x16, #208]
 .word 0x3940e3a0
 .word 0x34000060
 .word 0xf9401ba0
-bl _p_47
+bl _p_98
 .word 0xf94037be
 .word 0xd61f03c0
 .loc 1 46 0
@@ -252,9 +267,9 @@ bl _p_47
 .word 0xd65f03c0
 .word 0xd2801480
 .word 0xaa1103e1
-bl _p_256
+bl _p_449
 
-Lme_1f:
+Lme_31:
 .text
 	.align 4
 	.no_dead_strip Xamarin_Essentials_Preferences_PlatformSet_T_REF_string_T_REF_string
@@ -288,10 +303,10 @@ bl _mono_monitor_enter_v4_fast
 .word 0x35000080
 .word 0xaa1703e0
 .word 0xaa1603e1
-bl _p_46
+bl _p_97
 .loc 1 52 0
 .word 0xaa1a03e0
-bl _p_42
+bl _p_94
 .word 0xf90027a0
 .loc 1 54 0
 .word 0xb50002f9
@@ -300,25 +315,25 @@ bl _p_42
 .word 0xaa0203e0
 .word 0xaa1803e1
 .word 0x3940005e
-bl _p_44
+bl _p_95
 .word 0xb40000c0
 .loc 1 57 0
 .word 0xf94027a2
 .word 0xaa0203e0
 .word 0xaa1803e1
 .word 0x3940005e
-bl _p_255
+bl _p_448
 .loc 1 58 0
 .word 0xf9002bbf
 .word 0x94000145
 .word 0xf9402ba0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf9002fbf
 .word 0x9400014f
 .word 0xf9402fa0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000152
 .loc 1 61 0
 .word 0xaa1903fa
@@ -327,12 +342,12 @@ bl _p_45
 .word 0x94000138
 .word 0xf9402ba0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf9002fbf
 .word 0x94000142
 .word 0xf9402fa0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000145
 .word 0xaa1a03f7
 .word 0xeb1f035f
@@ -527,18 +542,18 @@ ldr x1, [x16, #256]
 .word 0xaa1703e1
 .word 0xaa1803e2
 .word 0x3940007e
-bl _p_257
+bl _p_450
 .loc 1 65 0
 .word 0xf9002bbf
 .word 0x94000077
 .word 0xf9402ba0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf9002fbf
 .word 0x94000081
 .word 0xf9402fa0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000084
 .word 0xaa1a03f9
 .loc 1 67 0
@@ -547,18 +562,18 @@ bl _p_45
 .word 0xaa0303e0
 .word 0xaa1803e2
 .word 0x3940007e
-bl _p_258
+bl _p_451
 .loc 1 68 0
 .word 0xf9002bbf
 .word 0x94000065
 .word 0xf9402ba0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf9002fbf
 .word 0x9400006f
 .word 0xf9402fa0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000072
 .word 0x53001f59
 .loc 1 70 0
@@ -567,18 +582,18 @@ bl _p_45
 .word 0xaa1903e1
 .word 0xaa1803e2
 .word 0x3940007e
-bl _p_259
+bl _p_452
 .loc 1 71 0
 .word 0xf9002bbf
 .word 0x94000053
 .word 0xf9402ba0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf9002fbf
 .word 0x9400005d
 .word 0xf9402fa0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000060
 .loc 1 73 0
 
@@ -587,7 +602,7 @@ add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x0, [x16, #264]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_10
+bl _p_58
 
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
@@ -595,7 +610,7 @@ ldr x0, [x16, #272]
 .word 0xf9400001
 .word 0xd5033bbf
 .word 0xaa1903e0
-bl _p_260
+bl _p_453
 .word 0xaa0003fa
 .loc 1 74 0
 .word 0xf94027a3
@@ -603,18 +618,18 @@ bl _p_260
 .word 0xaa1a03e1
 .word 0xaa1803e2
 .word 0x3940007e
-bl _p_257
+bl _p_450
 .loc 1 75 0
 .word 0xf9002bbf
 .word 0x94000034
 .word 0xf9402ba0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf9002fbf
 .word 0x9400003e
 .word 0xf9402fa0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000041
 .word 0xfd4037a0
 .word 0xfd0037a0
@@ -624,18 +639,18 @@ bl _p_45
 .word 0xaa0203e0
 .word 0xaa1803e1
 .word 0x3940005e
-bl _p_261
+bl _p_454
 .loc 1 78 0
 .word 0xf9002bbf
 .word 0x94000021
 .word 0xf9402ba0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf9002fbf
 .word 0x9400002b
 .word 0xf9402fa0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x1400002e
 .word 0xbd4063b0
 .word 0x1e22c200
@@ -649,18 +664,18 @@ bl _p_45
 .word 0x1e624000
 .word 0xaa1803e1
 .word 0x3940005e
-bl _p_262
+bl _p_455
 .loc 1 83 0
 .word 0xf9002bbf
 .word 0x9400000a
 .word 0xf9402ba0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf9002fbf
 .word 0x94000014
 .word 0xf9402fa0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000017
 .word 0xf9003fbe
 .word 0xf94027a0
@@ -682,7 +697,7 @@ ldr x15, [x16, #208]
 .word 0x394103a0
 .word 0x34000060
 .word 0xf9401fa0
-bl _p_47
+bl _p_98
 .word 0xf94047be
 .word 0xd61f03c0
 .loc 1 85 0
@@ -694,9 +709,9 @@ bl _p_47
 .word 0xd65f03c0
 .word 0xd2801520
 .word 0xaa1103e1
-bl _p_256
+bl _p_449
 
-Lme_20:
+Lme_32:
 .text
 	.align 4
 	.no_dead_strip Xamarin_Essentials_Preferences_PlatformGet_T_REF_string_T_REF_string
@@ -733,17 +748,17 @@ bl _mono_monitor_enter_v4_fast
 .word 0x35000080
 .word 0xaa1603e0
 .word 0xf9402fa1
-bl _p_46
+bl _p_97
 .loc 1 93 0
 .word 0xaa1a03e0
-bl _p_42
+bl _p_94
 .word 0xf9002ba0
 .loc 1 95 0
 .word 0xf9402ba2
 .word 0xaa0203e0
 .word 0xaa1803e1
 .word 0x3940005e
-bl _p_44
+bl _p_95
 .word 0xb50001a0
 .loc 1 96 0
 .word 0xaa1903fa
@@ -751,12 +766,12 @@ bl _p_44
 .word 0x94000175
 .word 0xf94033a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90037bf
 .word 0x9400017f
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000189
 .loc 1 98 0
 .word 0xaa1903fa
@@ -954,7 +969,7 @@ ldr x1, [x16, #216]
 .word 0xaa0203e0
 .word 0xaa1803e1
 .word 0x3940005e
-bl _p_263
+bl _p_456
 .word 0x93407c00
 .word 0xf90053a0
 
@@ -962,7 +977,7 @@ adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x0, [x16, #280]
 .word 0xd2800281
-bl _p_26
+bl _p_7
 .word 0xf94053a1
 .word 0xb9001001
 .word 0xaa0003f7
@@ -971,26 +986,26 @@ bl _p_26
 .word 0x940000a8
 .word 0xf94033a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90037bf
 .word 0x940000b2
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x140000b5
 .loc 1 104 0
 .word 0xf9402ba2
 .word 0xaa0203e0
 .word 0xaa1803e1
 .word 0x3940005e
-bl _p_264
+bl _p_457
 .word 0xf90053a0
 
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x0, [x16, #288]
 .word 0xd2800221
-bl _p_26
+bl _p_7
 .word 0xf94053a1
 .word 0x39004001
 .word 0xaa0003f7
@@ -999,19 +1014,19 @@ bl _p_26
 .word 0x9400008f
 .word 0xf94033a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90037bf
 .word 0x94000099
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x1400009c
 .loc 1 107 0
 .word 0xf9402ba2
 .word 0xaa0203e0
 .word 0xaa1803e1
 .word 0x3940005e
-bl _p_265
+bl _p_458
 .word 0xf90057a0
 
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
@@ -1019,7 +1034,7 @@ add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x0, [x16, #264]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_10
+bl _p_58
 
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
@@ -1028,14 +1043,14 @@ ldr x0, [x16, #272]
 .word 0xd5033bbf
 .word 0xf94057a0
 .loc 1 108 0
-bl _p_266
+bl _p_459
 .word 0xf90053a0
 
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x0, [x16, #296]
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0xf94053a1
 .word 0xf9000801
 .word 0xaa0003f7
@@ -1044,26 +1059,26 @@ bl _p_26
 .word 0x94000068
 .word 0xf94033a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90037bf
 .word 0x94000072
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000075
 .loc 1 111 0
 .word 0xf9402ba2
 .word 0xaa0203e0
 .word 0xaa1803e1
 .word 0x3940005e
-bl _p_267
+bl _p_460
 .word 0xfd005ba0
 
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x0, [x16, #304]
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0xfd405ba0
 .word 0xfd000800
 .word 0xaa0003f7
@@ -1072,19 +1087,19 @@ bl _p_26
 .word 0x9400004f
 .word 0xf94033a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90037bf
 .word 0x94000059
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x1400005c
 .loc 1 114 0
 .word 0xf9402ba2
 .word 0xaa0203e0
 .word 0xaa1803e1
 .word 0x3940005e
-bl _p_268
+bl _p_461
 .word 0x1e22c000
 .word 0xfd005ba0
 
@@ -1092,7 +1107,7 @@ adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x0, [x16, #312]
 .word 0xd2800281
-bl _p_26
+bl _p_7
 .word 0xfd405ba0
 .word 0x1e624010
 .word 0xbd001010
@@ -1102,35 +1117,35 @@ bl _p_26
 .word 0x94000034
 .word 0xf94033a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90037bf
 .word 0x9400003e
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000041
 .loc 1 118 0
 .word 0xf9402ba2
 .word 0xaa0203e0
 .word 0xaa1803e1
 .word 0x3940005e
-bl _p_265
+bl _p_458
 .word 0xaa0003f7
 .loc 1 119 0
 .word 0xf90033bf
 .word 0x94000023
 .word 0xf94033a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90037bf
 .word 0x9400002d
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000030
 .loc 1 122 0
 .word 0xf9401fa0
-bl _p_269
+bl _p_462
 
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
@@ -1143,19 +1158,19 @@ ldr x1, [x16, #320]
 .word 0xaa0203e0
 .word 0xaa1803e1
 .word 0x3940005e
-bl _p_265
+bl _p_458
 .word 0xaa0003f7
 .loc 1 126 0
 .word 0xf90033bf
 .word 0x9400000a
 .word 0xf94033a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90037bf
 .word 0x94000014
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000017
 .word 0xf90043be
 .word 0xf9402ba0
@@ -1177,16 +1192,16 @@ ldr x15, [x16, #208]
 .word 0x394123a0
 .word 0x34000060
 .word 0xf94023a0
-bl _p_47
+bl _p_98
 .word 0xf9404bbe
 .word 0xd61f03c0
 .loc 1 129 0
 .word 0xf9401fa0
-bl _p_270
+bl _p_463
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xaa1703e0
-bl _p_271
+bl _p_464
 .word 0x14000002
 .loc 1 130 0
 .word 0xaa1a03e0
@@ -1198,62 +1213,55 @@ bl _p_271
 .word 0xd65f03c0
 .word 0xd2801520
 .word 0xaa1103e1
-bl _p_256
+bl _p_449
 
-Lme_21:
+Lme_33:
 .text
-ut_36:
+ut_54:
 add x0, x0, 16
 b _Xamarin_Essentials_Xamarin_Essentials_DisplayInfo__ctor_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation
-ut_end:
-.section __TEXT, __const
-_unbox_trampoline_p:
-
-	.long 0
-LDIFF_SYM3=ut_end - ut_36
-	.long LDIFF_SYM3
 .text
-ut_37:
+ut_55:
 add x0, x0, 16
 b _Xamarin_Essentials_Xamarin_Essentials_DisplayInfo_get_Width
 .text
-ut_38:
+ut_56:
 add x0, x0, 16
 b _Xamarin_Essentials_Xamarin_Essentials_DisplayInfo_get_Height
 .text
-ut_39:
+ut_57:
 add x0, x0, 16
 b _Xamarin_Essentials_Xamarin_Essentials_DisplayInfo_get_Density
 .text
-ut_40:
+ut_58:
 add x0, x0, 16
 b _Xamarin_Essentials_Xamarin_Essentials_DisplayInfo_get_Orientation
 .text
-ut_41:
+ut_59:
 add x0, x0, 16
 b _Xamarin_Essentials_Xamarin_Essentials_DisplayInfo_get_Rotation
 .text
-ut_42:
+ut_60:
 add x0, x0, 16
 b _Xamarin_Essentials_Xamarin_Essentials_DisplayInfo_op_Equality_Xamarin_Essentials_DisplayInfo_Xamarin_Essentials_DisplayInfo
 .text
-ut_43:
+ut_61:
 add x0, x0, 16
 b _Xamarin_Essentials_Xamarin_Essentials_DisplayInfo_op_Inequality_Xamarin_Essentials_DisplayInfo_Xamarin_Essentials_DisplayInfo
 .text
-ut_44:
+ut_62:
 add x0, x0, 16
 b _Xamarin_Essentials_Xamarin_Essentials_DisplayInfo_Equals_object
 .text
-ut_45:
+ut_63:
 add x0, x0, 16
 b _Xamarin_Essentials_Xamarin_Essentials_DisplayInfo_Equals_Xamarin_Essentials_DisplayInfo
 .text
-ut_46:
+ut_64:
 add x0, x0, 16
 b _Xamarin_Essentials_Xamarin_Essentials_DisplayInfo_GetHashCode
 .text
-ut_47:
+ut_65:
 add x0, x0, 16
 b _Xamarin_Essentials_Xamarin_Essentials_DisplayInfo_ToString
 .text
@@ -1271,7 +1279,7 @@ Xamarin_Essentials_Preferences_PlatformSet_T_GSHAREDVT_string_T_GSHAREDVT_string
 .word 0xf9001fa1
 .word 0xaa0203fa
 .word 0xf94023a0
-bl _p_272
+bl _p_465
 .word 0xaa0003f8
 .word 0xb9800300
 .word 0x91003c10
@@ -1319,10 +1327,10 @@ bl _mono_monitor_enter_v4_fast
 .word 0x35000080
 .word 0xaa1603e0
 .word 0xf94033a1
-bl _p_46
+bl _p_97
 .loc 1 52 0
 .word 0xaa1a03e0
-bl _p_42
+bl _p_94
 .word 0xf9002fa0
 .loc 1 54 0
 .word 0xf9401fa1
@@ -1339,8 +1347,8 @@ bl _p_42
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf94023a0
-bl _p_273
-bl _p_274
+bl _p_466
+bl _p_467
 .word 0xb9804301
 .word 0x8b0102e1
 .word 0xf90063a1
@@ -1350,7 +1358,7 @@ bl _p_274
 .word 0xf9400f00
 .word 0xf9401700
 .word 0xf94023a0
-bl _p_275
+bl _p_468
 .word 0xaa0003e2
 .word 0xf9405fa0
 .word 0xf94063a1
@@ -1374,25 +1382,25 @@ bl _mono_gsharedvt_value_copy
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0x3940005e
-bl _p_44
+bl _p_95
 .word 0xb40000c0
 .loc 1 57 0
 .word 0xf9402fa2
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0x3940005e
-bl _p_255
+bl _p_448
 .loc 1 58 0
 .word 0xf90037bf
 .word 0x9400039a
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf9003bbf
 .word 0x940003a4
 .word 0xf9403ba0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x140003a7
 .loc 1 61 0
 .word 0xf9401fa1
@@ -1415,8 +1423,8 @@ bl _p_45
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf94023a0
-bl _p_273
-bl _p_274
+bl _p_466
+bl _p_467
 .word 0xb9804b01
 .word 0x8b0102e1
 .word 0xf90063a1
@@ -1426,7 +1434,7 @@ bl _p_274
 .word 0xf9400f00
 .word 0xf9401700
 .word 0xf94023a0
-bl _p_275
+bl _p_468
 .word 0xaa0003e2
 .word 0xf9405fa0
 .word 0xf94063a1
@@ -1449,12 +1457,12 @@ bl _mono_gsharedvt_value_copy
 .word 0x9400035d
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf9003bbf
 .word 0x94000367
 .word 0xf9403ba0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x1400036a
 .word 0xb9803300
 .word 0x8b0002e1
@@ -1471,8 +1479,8 @@ bl _p_45
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf94023a0
-bl _p_273
-bl _p_274
+bl _p_466
+bl _p_467
 .word 0xb9805301
 .word 0x8b0102e1
 .word 0xf90063a1
@@ -1482,7 +1490,7 @@ bl _p_274
 .word 0xf9400f00
 .word 0xf9401700
 .word 0xf94023a0
-bl _p_275
+bl _p_468
 .word 0xaa0003e2
 .word 0xf9405fa0
 .word 0xf94063a1
@@ -1539,8 +1547,8 @@ ldr x1, [x16, #216]
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf94023a0
-bl _p_273
-bl _p_274
+bl _p_466
+bl _p_467
 .word 0xb9805b01
 .word 0x8b0102e1
 .word 0xf90063a1
@@ -1550,7 +1558,7 @@ bl _p_274
 .word 0xf9400f00
 .word 0xf9401700
 .word 0xf94023a0
-bl _p_275
+bl _p_468
 .word 0xaa0003e2
 .word 0xf9405fa0
 .word 0xf94063a1
@@ -1599,8 +1607,8 @@ ldr x1, [x16, #224]
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf94023a0
-bl _p_273
-bl _p_274
+bl _p_466
+bl _p_467
 .word 0xb9806301
 .word 0x8b0102e1
 .word 0xf90063a1
@@ -1610,7 +1618,7 @@ bl _p_274
 .word 0xf9400f00
 .word 0xf9401700
 .word 0xf94023a0
-bl _p_275
+bl _p_468
 .word 0xaa0003e2
 .word 0xf9405fa0
 .word 0xf94063a1
@@ -1666,8 +1674,8 @@ ldr x1, [x16, #224]
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf94023a0
-bl _p_273
-bl _p_274
+bl _p_466
+bl _p_467
 .word 0xb9806b01
 .word 0x8b0102e1
 .word 0xf90063a1
@@ -1677,7 +1685,7 @@ bl _p_274
 .word 0xf9400f00
 .word 0xf9401700
 .word 0xf94023a0
-bl _p_275
+bl _p_468
 .word 0xaa0003e2
 .word 0xf9405fa0
 .word 0xf94063a1
@@ -1726,8 +1734,8 @@ ldr x1, [x16, #232]
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf94023a0
-bl _p_273
-bl _p_274
+bl _p_466
+bl _p_467
 .word 0xb9807301
 .word 0x8b0102e1
 .word 0xf90063a1
@@ -1737,7 +1745,7 @@ bl _p_274
 .word 0xf9400f00
 .word 0xf9401700
 .word 0xf94023a0
-bl _p_275
+bl _p_468
 .word 0xaa0003e2
 .word 0xf9405fa0
 .word 0xf94063a1
@@ -1794,8 +1802,8 @@ ldr x1, [x16, #232]
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf94023a0
-bl _p_273
-bl _p_274
+bl _p_466
+bl _p_467
 .word 0xb9807b01
 .word 0x8b0102e1
 .word 0xf90063a1
@@ -1805,7 +1813,7 @@ bl _p_274
 .word 0xf9400f00
 .word 0xf9401700
 .word 0xf94023a0
-bl _p_275
+bl _p_468
 .word 0xaa0003e2
 .word 0xf9405fa0
 .word 0xf94063a1
@@ -1854,8 +1862,8 @@ ldr x1, [x16, #240]
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf94023a0
-bl _p_273
-bl _p_274
+bl _p_466
+bl _p_467
 .word 0xb9808301
 .word 0x8b0102e1
 .word 0xf90063a1
@@ -1865,7 +1873,7 @@ bl _p_274
 .word 0xf9400f00
 .word 0xf9401700
 .word 0xf94023a0
-bl _p_275
+bl _p_468
 .word 0xaa0003e2
 .word 0xf9405fa0
 .word 0xf94063a1
@@ -1921,8 +1929,8 @@ ldr x1, [x16, #240]
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf94023a0
-bl _p_273
-bl _p_274
+bl _p_466
+bl _p_467
 .word 0xb9808b01
 .word 0x8b0102e1
 .word 0xf90063a1
@@ -1932,7 +1940,7 @@ bl _p_274
 .word 0xf9400f00
 .word 0xf9401700
 .word 0xf94023a0
-bl _p_275
+bl _p_468
 .word 0xaa0003e2
 .word 0xf9405fa0
 .word 0xf94063a1
@@ -1981,8 +1989,8 @@ ldr x1, [x16, #248]
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf94023a0
-bl _p_273
-bl _p_274
+bl _p_466
+bl _p_467
 .word 0xb9809301
 .word 0x8b0102e1
 .word 0xf90063a1
@@ -1992,7 +2000,7 @@ bl _p_274
 .word 0xf9400f00
 .word 0xf9401700
 .word 0xf94023a0
-bl _p_275
+bl _p_468
 .word 0xaa0003e2
 .word 0xf9405fa0
 .word 0xf94063a1
@@ -2049,8 +2057,8 @@ ldr x1, [x16, #248]
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf94023a0
-bl _p_273
-bl _p_274
+bl _p_466
+bl _p_467
 .word 0xb9809b01
 .word 0x8b0102e1
 .word 0xf90063a1
@@ -2060,7 +2068,7 @@ bl _p_274
 .word 0xf9400f00
 .word 0xf9401700
 .word 0xf94023a0
-bl _p_275
+bl _p_468
 .word 0xaa0003e2
 .word 0xf9405fa0
 .word 0xf94063a1
@@ -2109,8 +2117,8 @@ ldr x1, [x16, #256]
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf94023a0
-bl _p_273
-bl _p_274
+bl _p_466
+bl _p_467
 .word 0xb980a301
 .word 0x8b0102e1
 .word 0xf90063a1
@@ -2120,7 +2128,7 @@ bl _p_274
 .word 0xf9400f00
 .word 0xf9401700
 .word 0xf94023a0
-bl _p_275
+bl _p_468
 .word 0xaa0003e2
 .word 0xf9405fa0
 .word 0xf94063a1
@@ -2164,18 +2172,18 @@ ldr x1, [x16, #256]
 .word 0xaa1a03e1
 .word 0xaa1903e2
 .word 0x3940007e
-bl _p_257
+bl _p_450
 .loc 1 65 0
 .word 0xf90037bf
 .word 0x94000099
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf9003bbf
 .word 0x940000a3
 .word 0xf9403ba0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x140000a6
 .word 0xaa1803fa
 .loc 1 67 0
@@ -2184,18 +2192,18 @@ bl _p_45
 .word 0xaa0303e0
 .word 0xaa1903e2
 .word 0x3940007e
-bl _p_258
+bl _p_451
 .loc 1 68 0
 .word 0xf90037bf
 .word 0x94000087
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf9003bbf
 .word 0x94000091
 .word 0xf9403ba0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000094
 .word 0x53001f58
 .loc 1 70 0
@@ -2204,18 +2212,18 @@ bl _p_45
 .word 0xaa1803e1
 .word 0xaa1903e2
 .word 0x3940007e
-bl _p_259
+bl _p_452
 .loc 1 71 0
 .word 0xf90037bf
 .word 0x94000075
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf9003bbf
 .word 0x9400007f
 .word 0xf9403ba0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000082
 .loc 1 73 0
 .word 0xf9401fa1
@@ -2232,8 +2240,8 @@ bl _p_45
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf94023a0
-bl _p_273
-bl _p_274
+bl _p_466
+bl _p_467
 .word 0xb980ab01
 .word 0x8b0102e1
 .word 0xf90063a1
@@ -2243,7 +2251,7 @@ bl _p_274
 .word 0xf9400f00
 .word 0xf9401700
 .word 0xf94023a0
-bl _p_275
+bl _p_468
 .word 0xaa0003e2
 .word 0xf9405fa0
 .word 0xf94063a1
@@ -2261,10 +2269,10 @@ bl _mono_gsharedvt_value_copy
 .word 0xd63f0020
 .word 0xaa0003fa
 .word 0x14000001
-bl _p_276
+bl _p_469
 .word 0xaa0003e1
 .word 0xaa1a03e0
-bl _p_260
+bl _p_453
 .word 0xaa0003fa
 .loc 1 74 0
 .word 0xf9402fa3
@@ -2272,18 +2280,18 @@ bl _p_260
 .word 0xaa1a03e1
 .word 0xaa1903e2
 .word 0x3940007e
-bl _p_257
+bl _p_450
 .loc 1 75 0
 .word 0xf90037bf
 .word 0x94000034
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf9003bbf
 .word 0x9400003e
 .word 0xf9403ba0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000041
 .word 0xfd4043a0
 .word 0xfd0043a0
@@ -2293,18 +2301,18 @@ bl _p_45
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0x3940005e
-bl _p_261
+bl _p_454
 .loc 1 78 0
 .word 0xf90037bf
 .word 0x94000021
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf9003bbf
 .word 0x9400002b
 .word 0xf9403ba0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x1400002e
 .word 0xbd407bb0
 .word 0x1e22c200
@@ -2318,18 +2326,18 @@ bl _p_45
 .word 0x1e624000
 .word 0xaa1903e1
 .word 0x3940005e
-bl _p_262
+bl _p_455
 .loc 1 83 0
 .word 0xf90037bf
 .word 0x9400000a
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf9003bbf
 .word 0x94000014
 .word 0xf9403ba0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000017
 .word 0xf90047be
 .word 0xf9402fa0
@@ -2351,7 +2359,7 @@ ldr x15, [x16, #208]
 .word 0x394143a0
 .word 0x34000060
 .word 0xf94027a0
-bl _p_47
+bl _p_98
 .word 0xf9404fbe
 .word 0xd61f03c0
 .loc 1 85 0
@@ -2363,9 +2371,9 @@ bl _p_47
 .word 0xd65f03c0
 .word 0xd2801520
 .word 0xaa1103e1
-bl _p_256
+bl _p_449
 
-Lme_56:
+Lme_69:
 .text
 	.align 4
 	.no_dead_strip Xamarin_Essentials_Preferences_PlatformGet_T_GSHAREDVT_string_T_GSHAREDVT_string
@@ -2382,7 +2390,7 @@ Xamarin_Essentials_Preferences_PlatformGet_T_GSHAREDVT_string_T_GSHAREDVT_string
 .word 0xf90027a1
 .word 0xaa0203fa
 .word 0xf9402ba0
-bl _p_277
+bl _p_470
 .word 0xaa0003f8
 .word 0xb9800300
 .word 0x91003c10
@@ -2438,17 +2446,17 @@ bl _mono_monitor_enter_v4_fast
 .word 0x35000080
 .word 0xaa1503e0
 .word 0xf9403ba1
-bl _p_46
+bl _p_97
 .loc 1 93 0
 .word 0xaa1a03e0
-bl _p_42
+bl _p_94
 .word 0xf90037a0
 .loc 1 95 0
 .word 0xf94037a2
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0x3940005e
-bl _p_44
+bl _p_95
 .word 0xb5000240
 .loc 1 96 0
 .word 0xf94027a1
@@ -2461,12 +2469,12 @@ bl _p_44
 .word 0x9400039e
 .word 0xf9403fa0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90043bf
 .word 0x940003a8
 .word 0xf94043a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x140003d7
 .loc 1 98 0
 .word 0xf94027a1
@@ -2489,8 +2497,8 @@ bl _p_45
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf9402ba0
-bl _p_278
-bl _p_274
+bl _p_471
+bl _p_467
 .word 0xb9805b01
 .word 0x8b0102e1
 .word 0xf9006ba1
@@ -2500,7 +2508,7 @@ bl _p_274
 .word 0xf9401700
 .word 0xf9401f00
 .word 0xf9402ba0
-bl _p_279
+bl _p_472
 .word 0xaa0003e2
 .word 0xf94067a0
 .word 0xf9406ba1
@@ -2541,8 +2549,8 @@ bl _mono_gsharedvt_value_copy
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf9402ba0
-bl _p_278
-bl _p_274
+bl _p_471
+bl _p_467
 .word 0xb9806301
 .word 0x8b0102e1
 .word 0xf9006ba1
@@ -2552,7 +2560,7 @@ bl _p_274
 .word 0xf9401700
 .word 0xf9401f00
 .word 0xf9402ba0
-bl _p_279
+bl _p_472
 .word 0xaa0003e2
 .word 0xf94067a0
 .word 0xf9406ba1
@@ -2601,8 +2609,8 @@ ldr x1, [x16, #224]
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf9402ba0
-bl _p_278
-bl _p_274
+bl _p_471
+bl _p_467
 .word 0xb9806b01
 .word 0x8b0102e1
 .word 0xf9006ba1
@@ -2612,7 +2620,7 @@ bl _p_274
 .word 0xf9401700
 .word 0xf9401f00
 .word 0xf9402ba0
-bl _p_279
+bl _p_472
 .word 0xaa0003e2
 .word 0xf94067a0
 .word 0xf9406ba1
@@ -2668,8 +2676,8 @@ ldr x1, [x16, #224]
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf9402ba0
-bl _p_278
-bl _p_274
+bl _p_471
+bl _p_467
 .word 0xb9807301
 .word 0x8b0102e1
 .word 0xf9006ba1
@@ -2679,7 +2687,7 @@ bl _p_274
 .word 0xf9401700
 .word 0xf9401f00
 .word 0xf9402ba0
-bl _p_279
+bl _p_472
 .word 0xaa0003e2
 .word 0xf94067a0
 .word 0xf9406ba1
@@ -2728,8 +2736,8 @@ ldr x1, [x16, #232]
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf9402ba0
-bl _p_278
-bl _p_274
+bl _p_471
+bl _p_467
 .word 0xb9807b01
 .word 0x8b0102e1
 .word 0xf9006ba1
@@ -2739,7 +2747,7 @@ bl _p_274
 .word 0xf9401700
 .word 0xf9401f00
 .word 0xf9402ba0
-bl _p_279
+bl _p_472
 .word 0xaa0003e2
 .word 0xf94067a0
 .word 0xf9406ba1
@@ -2796,8 +2804,8 @@ ldr x1, [x16, #232]
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf9402ba0
-bl _p_278
-bl _p_274
+bl _p_471
+bl _p_467
 .word 0xb9808301
 .word 0x8b0102e1
 .word 0xf9006ba1
@@ -2807,7 +2815,7 @@ bl _p_274
 .word 0xf9401700
 .word 0xf9401f00
 .word 0xf9402ba0
-bl _p_279
+bl _p_472
 .word 0xaa0003e2
 .word 0xf94067a0
 .word 0xf9406ba1
@@ -2856,8 +2864,8 @@ ldr x1, [x16, #240]
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf9402ba0
-bl _p_278
-bl _p_274
+bl _p_471
+bl _p_467
 .word 0xb9808b01
 .word 0x8b0102e1
 .word 0xf9006ba1
@@ -2867,7 +2875,7 @@ bl _p_274
 .word 0xf9401700
 .word 0xf9401f00
 .word 0xf9402ba0
-bl _p_279
+bl _p_472
 .word 0xaa0003e2
 .word 0xf94067a0
 .word 0xf9406ba1
@@ -2923,8 +2931,8 @@ ldr x1, [x16, #240]
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf9402ba0
-bl _p_278
-bl _p_274
+bl _p_471
+bl _p_467
 .word 0xb9809301
 .word 0x8b0102e1
 .word 0xf9006ba1
@@ -2934,7 +2942,7 @@ bl _p_274
 .word 0xf9401700
 .word 0xf9401f00
 .word 0xf9402ba0
-bl _p_279
+bl _p_472
 .word 0xaa0003e2
 .word 0xf94067a0
 .word 0xf9406ba1
@@ -2983,8 +2991,8 @@ ldr x1, [x16, #248]
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf9402ba0
-bl _p_278
-bl _p_274
+bl _p_471
+bl _p_467
 .word 0xb9809b01
 .word 0x8b0102e1
 .word 0xf9006ba1
@@ -2994,7 +3002,7 @@ bl _p_274
 .word 0xf9401700
 .word 0xf9401f00
 .word 0xf9402ba0
-bl _p_279
+bl _p_472
 .word 0xaa0003e2
 .word 0xf94067a0
 .word 0xf9406ba1
@@ -3051,8 +3059,8 @@ ldr x1, [x16, #248]
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf9402ba0
-bl _p_278
-bl _p_274
+bl _p_471
+bl _p_467
 .word 0xb980a301
 .word 0x8b0102e1
 .word 0xf9006ba1
@@ -3062,7 +3070,7 @@ bl _p_274
 .word 0xf9401700
 .word 0xf9401f00
 .word 0xf9402ba0
-bl _p_279
+bl _p_472
 .word 0xaa0003e2
 .word 0xf94067a0
 .word 0xf9406ba1
@@ -3111,8 +3119,8 @@ ldr x1, [x16, #256]
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf9402ba0
-bl _p_278
-bl _p_274
+bl _p_471
+bl _p_467
 .word 0xb980ab01
 .word 0x8b0102e1
 .word 0xf9006ba1
@@ -3122,7 +3130,7 @@ bl _p_274
 .word 0xf9401700
 .word 0xf9401f00
 .word 0xf9402ba0
-bl _p_279
+bl _p_472
 .word 0xaa0003e2
 .word 0xf94067a0
 .word 0xf9406ba1
@@ -3174,8 +3182,8 @@ ldr x1, [x16, #256]
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf9402ba0
-bl _p_278
-bl _p_274
+bl _p_471
+bl _p_467
 .word 0xb980b301
 .word 0x8b0102e1
 .word 0xf9006ba1
@@ -3185,7 +3193,7 @@ bl _p_274
 .word 0xf9401700
 .word 0xf9401f00
 .word 0xf9402ba0
-bl _p_279
+bl _p_472
 .word 0xaa0003e2
 .word 0xf94067a0
 .word 0xf9406ba1
@@ -3226,7 +3234,7 @@ ldr x1, [x16, #216]
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0x3940005e
-bl _p_263
+bl _p_456
 .word 0x93407c00
 .word 0xf90063a0
 
@@ -3234,7 +3242,7 @@ adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x0, [x16, #280]
 .word 0xd2800281
-bl _p_26
+bl _p_7
 .word 0xf94063a1
 .word 0xb9001001
 .word 0xaa0003f6
@@ -3243,26 +3251,26 @@ bl _p_26
 .word 0x9400009f
 .word 0xf9403fa0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90043bf
 .word 0x940000a9
 .word 0xf94043a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x140000ac
 .loc 1 104 0
 .word 0xf94037a2
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0x3940005e
-bl _p_264
+bl _p_457
 .word 0xf90063a0
 
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x0, [x16, #288]
 .word 0xd2800221
-bl _p_26
+bl _p_7
 .word 0xf94063a1
 .word 0x39004001
 .word 0xaa0003f6
@@ -3271,32 +3279,32 @@ bl _p_26
 .word 0x94000086
 .word 0xf9403fa0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90043bf
 .word 0x94000090
 .word 0xf94043a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000093
 .loc 1 107 0
 .word 0xf94037a2
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0x3940005e
-bl _p_265
+bl _p_458
 .word 0xf90067a0
 .loc 1 108 0
-bl _p_276
+bl _p_469
 .word 0xaa0003e1
 .word 0xf94067a0
-bl _p_266
+bl _p_459
 .word 0xf90063a0
 
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x0, [x16, #296]
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0xf94063a1
 .word 0xf9000801
 .word 0xaa0003f6
@@ -3305,26 +3313,26 @@ bl _p_26
 .word 0x94000068
 .word 0xf9403fa0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90043bf
 .word 0x94000072
 .word 0xf94043a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000075
 .loc 1 111 0
 .word 0xf94037a2
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0x3940005e
-bl _p_267
+bl _p_460
 .word 0xfd006fa0
 
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x0, [x16, #304]
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0xfd406fa0
 .word 0xfd000800
 .word 0xaa0003f6
@@ -3333,19 +3341,19 @@ bl _p_26
 .word 0x9400004f
 .word 0xf9403fa0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90043bf
 .word 0x94000059
 .word 0xf94043a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x1400005c
 .loc 1 114 0
 .word 0xf94037a2
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0x3940005e
-bl _p_268
+bl _p_461
 .word 0x1e22c000
 .word 0xfd006fa0
 
@@ -3353,7 +3361,7 @@ adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x0, [x16, #312]
 .word 0xd2800281
-bl _p_26
+bl _p_7
 .word 0xfd406fa0
 .word 0x1e624010
 .word 0xbd001010
@@ -3363,35 +3371,35 @@ bl _p_26
 .word 0x94000034
 .word 0xf9403fa0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90043bf
 .word 0x9400003e
 .word 0xf94043a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000041
 .loc 1 118 0
 .word 0xf94037a2
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0x3940005e
-bl _p_265
+bl _p_458
 .word 0xaa0003f6
 .loc 1 119 0
 .word 0xf9003fbf
 .word 0x94000023
 .word 0xf9403fa0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90043bf
 .word 0x9400002d
 .word 0xf94043a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000030
 .loc 1 122 0
 .word 0xf9402ba0
-bl _p_280
+bl _p_473
 
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
@@ -3404,19 +3412,19 @@ ldr x1, [x16, #328]
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0x3940005e
-bl _p_265
+bl _p_458
 .word 0xaa0003f6
 .loc 1 126 0
 .word 0xf9003fbf
 .word 0x9400000a
 .word 0xf9403fa0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90043bf
 .word 0x94000014
 .word 0xf94043a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000017
 .word 0xf9004fbe
 .word 0xf94037a0
@@ -3438,13 +3446,13 @@ ldr x15, [x16, #208]
 .word 0x394183a0
 .word 0x34000060
 .word 0xf9402fa0
-bl _p_47
+bl _p_98
 .word 0xf94057be
 .word 0xd61f03c0
 .loc 1 129 0
 .word 0xf9400f01
 .word 0xaa1603e0
-bl _p_281
+bl _p_474
 .word 0xaa0003fa
 .word 0xf9400719
 .word 0xd280005e
@@ -3480,7 +3488,7 @@ bl _p_281
 .word 0xf9401700
 .word 0xf9401f00
 .word 0xf9402ba0
-bl _p_279
+bl _p_472
 .word 0xaa0003e2
 .word 0xf94063a0
 .word 0xf94067a1
@@ -3495,7 +3503,7 @@ bl _mono_gsharedvt_value_copy
 .word 0xf9401700
 .word 0xf9401f00
 .word 0xf9402ba0
-bl _p_279
+bl _p_472
 .word 0xaa0003e2
 .word 0xf94063a0
 .word 0xf94067a1
@@ -3508,9 +3516,9 @@ bl _mono_gsharedvt_value_copy
 .word 0xd65f03c0
 .word 0xd2801520
 .word 0xaa1103e1
-bl _p_256
+bl _p_449
 
-Lme_57:
+Lme_6a:
 .text
 	.align 4
 	.no_dead_strip Xamarin_Essentials_Preferences_PlatformGet_T_BOOL_string_T_BOOL_string
@@ -3546,17 +3554,17 @@ bl _mono_monitor_enter_v4_fast
 .word 0x35000080
 .word 0xaa1603e0
 .word 0xaa1503e1
-bl _p_46
+bl _p_97
 .loc 1 93 0
 .word 0xaa1a03e0
-bl _p_42
+bl _p_94
 .word 0xf9002fa0
 .loc 1 95 0
 .word 0xf9402fa2
 .word 0xaa0203e0
 .word 0xaa1803e1
 .word 0x3940005e
-bl _p_44
+bl _p_95
 .word 0xb50001a0
 .loc 1 96 0
 .word 0x53001f3a
@@ -3564,21 +3572,21 @@ bl _p_44
 .word 0x940001b1
 .word 0xf94033a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90037bf
 .word 0x940001bb
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x140001cf
 .loc 1 98 0
 .word 0x53001f3a
 .word 0x14000001
 .word 0x53001f59
 .word 0xf94023a0
-bl _p_282
+bl _p_475
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0xaa0003f6
 .word 0x390042da
 .word 0xaa1603f5
@@ -3598,9 +3606,9 @@ ldr x1, [x16, #224]
 .word 0x14000001
 .word 0xb40002b5
 .word 0xf94023a0
-bl _p_282
+bl _p_475
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0x39004019
 .word 0xf9400001
 .word 0x3940b022
@@ -3620,9 +3628,9 @@ ldr x2, [x16, #224]
 .word 0x140000c4
 .word 0x53001f59
 .word 0xf94023a0
-bl _p_282
+bl _p_475
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0xaa0003f6
 .word 0x390042da
 .word 0xaa1603f5
@@ -3642,9 +3650,9 @@ ldr x1, [x16, #232]
 .word 0x14000001
 .word 0xb40002d5
 .word 0xf94023a0
-bl _p_282
+bl _p_475
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0x39004019
 .word 0xf9400001
 .word 0x3940b022
@@ -3665,9 +3673,9 @@ ldr x2, [x16, #232]
 .word 0x140000b3
 .word 0x53001f59
 .word 0xf94023a0
-bl _p_282
+bl _p_475
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0xaa0003f6
 .word 0x390042da
 .word 0xaa1603f5
@@ -3687,9 +3695,9 @@ ldr x1, [x16, #240]
 .word 0x14000001
 .word 0xb40002b5
 .word 0xf94023a0
-bl _p_282
+bl _p_475
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0x39004019
 .word 0xf9400001
 .word 0x3940b022
@@ -3709,9 +3717,9 @@ ldr x2, [x16, #240]
 .word 0x140000a2
 .word 0x53001f59
 .word 0xf94023a0
-bl _p_282
+bl _p_475
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0xaa0003f6
 .word 0x390042da
 .word 0xaa1603f5
@@ -3731,9 +3739,9 @@ ldr x1, [x16, #248]
 .word 0x14000001
 .word 0xb40002d5
 .word 0xf94023a0
-bl _p_282
+bl _p_475
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0x39004019
 .word 0xf9400001
 .word 0x3940b022
@@ -3754,9 +3762,9 @@ ldr x2, [x16, #248]
 .word 0x1400009e
 .word 0x53001f59
 .word 0xf94023a0
-bl _p_282
+bl _p_475
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0xaa0003f6
 .word 0x390042da
 .word 0xaa1603f5
@@ -3776,9 +3784,9 @@ ldr x1, [x16, #256]
 .word 0x14000001
 .word 0xb4000315
 .word 0xf94023a0
-bl _p_282
+bl _p_475
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0x39004019
 .word 0xf9400001
 .word 0x3940b022
@@ -3800,9 +3808,9 @@ ldr x2, [x16, #256]
 .word 0xbd0073b0
 .word 0x1400008a
 .word 0xf94023a0
-bl _p_282
+bl _p_475
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0xaa0003f9
 .word 0x3900433a
 .word 0xaa1903fa
@@ -3827,7 +3835,7 @@ ldr x1, [x16, #216]
 .word 0xaa0203e0
 .word 0xaa1803e1
 .word 0x3940005e
-bl _p_263
+bl _p_456
 .word 0x93407c00
 .word 0xf90053a0
 
@@ -3835,7 +3843,7 @@ adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x0, [x16, #280]
 .word 0xd2800281
-bl _p_26
+bl _p_7
 .word 0xf94053a1
 .word 0xb9001001
 .word 0xaa0003f7
@@ -3844,26 +3852,26 @@ bl _p_26
 .word 0x940000a8
 .word 0xf94033a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90037bf
 .word 0x940000b2
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x140000b5
 .loc 1 104 0
 .word 0xf9402fa2
 .word 0xaa0203e0
 .word 0xaa1803e1
 .word 0x3940005e
-bl _p_264
+bl _p_457
 .word 0xf90053a0
 
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x0, [x16, #288]
 .word 0xd2800221
-bl _p_26
+bl _p_7
 .word 0xf94053a1
 .word 0x39004001
 .word 0xaa0003f7
@@ -3872,19 +3880,19 @@ bl _p_26
 .word 0x9400008f
 .word 0xf94033a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90037bf
 .word 0x94000099
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x1400009c
 .loc 1 107 0
 .word 0xf9402fa2
 .word 0xaa0203e0
 .word 0xaa1803e1
 .word 0x3940005e
-bl _p_265
+bl _p_458
 .word 0xf90057a0
 
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
@@ -3892,7 +3900,7 @@ add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x0, [x16, #264]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_10
+bl _p_58
 
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
@@ -3901,14 +3909,14 @@ ldr x0, [x16, #272]
 .word 0xd5033bbf
 .word 0xf94057a0
 .loc 1 108 0
-bl _p_266
+bl _p_459
 .word 0xf90053a0
 
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x0, [x16, #296]
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0xf94053a1
 .word 0xf9000801
 .word 0xaa0003f7
@@ -3917,26 +3925,26 @@ bl _p_26
 .word 0x94000068
 .word 0xf94033a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90037bf
 .word 0x94000072
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000075
 .loc 1 111 0
 .word 0xf9402fa2
 .word 0xaa0203e0
 .word 0xaa1803e1
 .word 0x3940005e
-bl _p_267
+bl _p_460
 .word 0xfd005ba0
 
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x0, [x16, #304]
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0xfd405ba0
 .word 0xfd000800
 .word 0xaa0003f7
@@ -3945,19 +3953,19 @@ bl _p_26
 .word 0x9400004f
 .word 0xf94033a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90037bf
 .word 0x94000059
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x1400005c
 .loc 1 114 0
 .word 0xf9402fa2
 .word 0xaa0203e0
 .word 0xaa1803e1
 .word 0x3940005e
-bl _p_268
+bl _p_461
 .word 0x1e22c000
 .word 0xfd005ba0
 
@@ -3965,7 +3973,7 @@ adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x0, [x16, #312]
 .word 0xd2800281
-bl _p_26
+bl _p_7
 .word 0xfd405ba0
 .word 0x1e624010
 .word 0xbd001010
@@ -3975,35 +3983,35 @@ bl _p_26
 .word 0x94000034
 .word 0xf94033a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90037bf
 .word 0x9400003e
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000041
 .loc 1 118 0
 .word 0xf9402fa2
 .word 0xaa0203e0
 .word 0xaa1803e1
 .word 0x3940005e
-bl _p_265
+bl _p_458
 .word 0xaa0003f7
 .loc 1 119 0
 .word 0xf90033bf
 .word 0x94000023
 .word 0xf94033a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90037bf
 .word 0x9400002d
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000030
 .loc 1 122 0
 .word 0xf94023a0
-bl _p_283
+bl _p_476
 
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
@@ -4016,19 +4024,19 @@ ldr x1, [x16, #336]
 .word 0xaa0203e0
 .word 0xaa1803e1
 .word 0x3940005e
-bl _p_265
+bl _p_458
 .word 0xaa0003f7
 .loc 1 126 0
 .word 0xf90033bf
 .word 0x9400000a
 .word 0xf94033a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90037bf
 .word 0x94000014
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000017
 .word 0xf90043be
 .word 0xf9402fa0
@@ -4050,7 +4058,7 @@ ldr x15, [x16, #208]
 .word 0x394143a0
 .word 0x34000060
 .word 0xf94027a0
-bl _p_47
+bl _p_98
 .word 0xf9404bbe
 .word 0xd61f03c0
 .loc 1 129 0
@@ -4063,7 +4071,7 @@ bl _p_47
 .word 0xf9400000
 .word 0xf90053a0
 .word 0xf94023a0
-bl _p_284
+bl _p_477
 .word 0xaa0003e1
 .word 0xf94053a0
 .word 0xeb01001f
@@ -4081,9 +4089,9 @@ bl _p_284
 .word 0xd65f03c0
 .word 0xd2801520
 .word 0xaa1103e1
-bl _p_256
+bl _p_449
 
-Lme_58:
+Lme_6b:
 .text
 	.align 4
 	.no_dead_strip Xamarin_Essentials_Preferences_PlatformSet_T_BOOL_string_T_BOOL_string
@@ -4117,10 +4125,10 @@ bl _mono_monitor_enter_v4_fast
 .word 0x35000080
 .word 0xaa1703e0
 .word 0xaa1603e1
-bl _p_46
+bl _p_97
 .loc 1 52 0
 .word 0xaa1a03e0
-bl _p_42
+bl _p_94
 .word 0xf9002fa0
 .loc 1 54 0
 .word 0x14000017
@@ -4129,25 +4137,25 @@ bl _p_42
 .word 0xaa0203e0
 .word 0xaa1803e1
 .word 0x3940005e
-bl _p_44
+bl _p_95
 .word 0xb40000c0
 .loc 1 57 0
 .word 0xf9402fa2
 .word 0xaa0203e0
 .word 0xaa1803e1
 .word 0x3940005e
-bl _p_255
+bl _p_448
 .loc 1 58 0
 .word 0xf90033bf
 .word 0x94000189
 .word 0xf94033a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90037bf
 .word 0x94000193
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000196
 .loc 1 61 0
 .word 0x53001f3a
@@ -4156,17 +4164,17 @@ bl _p_45
 .word 0x9400017c
 .word 0xf94033a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90037bf
 .word 0x94000186
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000189
 .word 0xf94023a0
-bl _p_285
+bl _p_478
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0xaa0003f7
 .word 0x390042fa
 .word 0xaa1703f6
@@ -4188,9 +4196,9 @@ ldr x1, [x16, #216]
 .word 0xb5001b16
 .word 0x53001f57
 .word 0xf94023a0
-bl _p_285
+bl _p_478
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0xaa0003f6
 .word 0x390042da
 .word 0xaa1603f5
@@ -4210,9 +4218,9 @@ ldr x1, [x16, #224]
 .word 0x14000001
 .word 0xb40002b5
 .word 0xf94023a0
-bl _p_285
+bl _p_478
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0x39004017
 .word 0xf9400001
 .word 0x3940b022
@@ -4232,9 +4240,9 @@ ldr x2, [x16, #224]
 .word 0x140000c0
 .word 0x53001f57
 .word 0xf94023a0
-bl _p_285
+bl _p_478
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0xaa0003f6
 .word 0x390042da
 .word 0xaa1603f5
@@ -4254,9 +4262,9 @@ ldr x1, [x16, #232]
 .word 0x14000001
 .word 0xb40002d5
 .word 0xf94023a0
-bl _p_285
+bl _p_478
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0x39004017
 .word 0xf9400001
 .word 0x3940b022
@@ -4277,9 +4285,9 @@ ldr x2, [x16, #232]
 .word 0x140000a7
 .word 0x53001f57
 .word 0xf94023a0
-bl _p_285
+bl _p_478
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0xaa0003f6
 .word 0x390042da
 .word 0xaa1603f5
@@ -4299,9 +4307,9 @@ ldr x1, [x16, #240]
 .word 0x14000001
 .word 0xb40002b5
 .word 0xf94023a0
-bl _p_285
+bl _p_478
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0x39004017
 .word 0xf9400001
 .word 0x3940b022
@@ -4321,9 +4329,9 @@ ldr x2, [x16, #240]
 .word 0x1400008f
 .word 0x53001f57
 .word 0xf94023a0
-bl _p_285
+bl _p_478
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0xaa0003f9
 .word 0x3900433a
 .word 0xaa1903f6
@@ -4343,9 +4351,9 @@ ldr x1, [x16, #248]
 .word 0x14000001
 .word 0xb40002d6
 .word 0xf94023a0
-bl _p_285
+bl _p_478
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0x39004017
 .word 0xf9400001
 .word 0x3940b022
@@ -4366,9 +4374,9 @@ ldr x2, [x16, #248]
 .word 0x14000089
 .word 0x53001f57
 .word 0xf94023a0
-bl _p_285
+bl _p_478
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0xaa0003f9
 .word 0x3900433a
 .word 0xaa1903fa
@@ -4388,9 +4396,9 @@ ldr x1, [x16, #256]
 .word 0x14000001
 .word 0xb400125a
 .word 0xf94023a0
-bl _p_285
+bl _p_478
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0x39004017
 .word 0xf9400001
 .word 0x3940b022
@@ -4418,18 +4426,18 @@ ldr x2, [x16, #256]
 .word 0xaa1703e1
 .word 0xaa1803e2
 .word 0x3940007e
-bl _p_257
+bl _p_450
 .loc 1 65 0
 .word 0xf90033bf
 .word 0x9400007d
 .word 0xf94033a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90037bf
 .word 0x94000087
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x1400008a
 .word 0xaa1a03f9
 .loc 1 67 0
@@ -4438,18 +4446,18 @@ bl _p_45
 .word 0xaa0303e0
 .word 0xaa1803e2
 .word 0x3940007e
-bl _p_258
+bl _p_451
 .loc 1 68 0
 .word 0xf90033bf
 .word 0x9400006b
 .word 0xf94033a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90037bf
 .word 0x94000075
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000078
 .word 0x53001f59
 .loc 1 70 0
@@ -4458,24 +4466,24 @@ bl _p_45
 .word 0xaa1903e1
 .word 0xaa1803e2
 .word 0x3940007e
-bl _p_259
+bl _p_452
 .loc 1 71 0
 .word 0xf90033bf
 .word 0x94000059
 .word 0xf94033a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90037bf
 .word 0x94000063
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000066
 .loc 1 73 0
 .word 0xf94023a0
-bl _p_285
+bl _p_478
 .word 0xd2800301
-bl _p_26
+bl _p_7
 .word 0x39004019
 .word 0xf90053a0
 
@@ -4484,7 +4492,7 @@ add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x0, [x16, #264]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_10
+bl _p_58
 
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
@@ -4492,7 +4500,7 @@ ldr x0, [x16, #272]
 .word 0xf9400001
 .word 0xd5033bbf
 .word 0xf94053a0
-bl _p_260
+bl _p_453
 .word 0xaa0003fa
 .loc 1 74 0
 .word 0xf9402fa3
@@ -4500,18 +4508,18 @@ bl _p_260
 .word 0xaa1a03e1
 .word 0xaa1803e2
 .word 0x3940007e
-bl _p_257
+bl _p_450
 .loc 1 75 0
 .word 0xf90033bf
 .word 0x94000034
 .word 0xf94033a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90037bf
 .word 0x9400003e
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000041
 .word 0xfd403fa0
 .word 0xfd003fa0
@@ -4521,18 +4529,18 @@ bl _p_45
 .word 0xaa0203e0
 .word 0xaa1803e1
 .word 0x3940005e
-bl _p_261
+bl _p_454
 .loc 1 78 0
 .word 0xf90033bf
 .word 0x94000021
 .word 0xf94033a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90037bf
 .word 0x9400002b
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x1400002e
 .word 0xbd4073b0
 .word 0x1e22c200
@@ -4546,18 +4554,18 @@ bl _p_45
 .word 0x1e624000
 .word 0xaa1803e1
 .word 0x3940005e
-bl _p_262
+bl _p_455
 .loc 1 83 0
 .word 0xf90033bf
 .word 0x9400000a
 .word 0xf94033a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0xf90037bf
 .word 0x94000014
 .word 0xf94037a0
 .word 0xb4000040
-bl _p_45
+bl _p_96
 .word 0x14000017
 .word 0xf90043be
 .word 0xf9402fa0
@@ -4579,7 +4587,7 @@ ldr x15, [x16, #208]
 .word 0x394143a0
 .word 0x34000060
 .word 0xf94027a0
-bl _p_47
+bl _p_98
 .word 0xf9404bbe
 .word 0xd61f03c0
 .loc 1 85 0
@@ -4591,189 +4599,585 @@ bl _p_47
 .word 0xd65f03c0
 .word 0xd2801520
 .word 0xaa1103e1
-bl _p_256
+bl _p_449
 
-Lme_59:
-.text
-ut_90:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode__ctor_MapKit_MKDirectionsMode
-.text
-ut_91:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_get_HasValue
-.text
-ut_92:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_get_Value
-.text
-ut_93:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_GetValueOrDefault
-.text
-ut_94:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_GetValueOrDefault_MapKit_MKDirectionsMode
-.text
-ut_95:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_Equals_object
-.text
-ut_96:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_GetHashCode
-.text
-ut_97:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_ToString
-.text
-ut_98:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_Box_System_Nullable_1_MapKit_MKDirectionsMode
-.text
-ut_99:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_Unbox_object
-.text
-ut_100:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_UnboxExact_object
-.text
-ut_102:
-add x0, x0, 16
-b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT__ctor_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT
-.text
-ut_103:
-add x0, x0, 16
-b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_Equals_object
-.text
-ut_104:
-add x0, x0, 16
-b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_Equals_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT
-.text
-ut_105:
-add x0, x0, 16
-b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_System_Collections_IStructuralEquatable_Equals_object_System_Collections_IEqualityComparer
-.text
-ut_106:
-add x0, x0, 16
-b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_System_IComparable_CompareTo_object
-.text
-ut_107:
-add x0, x0, 16
-b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_CompareTo_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT
-.text
-ut_108:
-add x0, x0, 16
-b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_System_Collections_IStructuralComparable_CompareTo_object_System_Collections_IComparer
+Lme_6c:
 .text
 ut_109:
 add x0, x0, 16
-b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_GetHashCode
+b _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_Create
 .text
 ut_110:
 add x0, x0, 16
-b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_System_Collections_IStructuralEquatable_GetHashCode_System_Collections_IEqualityComparer
+b _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 .text
 ut_111:
 add x0, x0, 16
-b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_GetHashCodeCore_System_Collections_IEqualityComparer
+b _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_get_Task
 .text
 ut_112:
 add x0, x0, 16
-b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_System_IValueTupleInternal_GetHashCode_System_Collections_IEqualityComparer
+b _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_SetResult_TResult_BOOL
 .text
 ut_113:
 add x0, x0, 16
-b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_ToString
+b _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_SetResult_System_Threading_Tasks_Task_1_TResult_BOOL
 .text
 ut_114:
 add x0, x0, 16
-b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_System_IValueTupleInternal_ToStringEnd
+b _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_SetException_System_Exception
 .text
 ut_115:
 add x0, x0, 16
-b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_System_Runtime_CompilerServices_ITuple_get_Length
+b _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_GetTaskForResult_TResult_BOOL
 .text
 ut_116:
 add x0, x0, 16
-b _Xamarin_Essentials_System_Nullable_1_double__ctor_double
+b _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL__cctor
 .text
-ut_117:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Nullable_1_double_get_HasValue
-.text
-ut_118:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Nullable_1_double_get_Value
-.text
-ut_119:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Nullable_1_double_GetValueOrDefault
-.text
-ut_120:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Nullable_1_double_GetValueOrDefault_double
-.text
-ut_121:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Nullable_1_double_Equals_object
-.text
-ut_122:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Nullable_1_double_GetHashCode
-.text
-ut_123:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Nullable_1_double_ToString
-.text
-ut_124:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Nullable_1_double_Box_System_Nullable_1_double
-.text
-ut_125:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Nullable_1_double_Unbox_object
-.text
-ut_126:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Nullable_1_double_UnboxExact_object
-.text
-ut_139:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Array_InternalEnumerator_1_T_INST__ctor_System_Array
-.text
-ut_140:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Array_InternalEnumerator_1_T_INST_Dispose
-.text
-ut_141:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Array_InternalEnumerator_1_T_INST_MoveNext
-.text
-ut_142:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Array_InternalEnumerator_1_T_INST_get_Current
-.text
-ut_143:
-add x0, x0, 16
-b _Xamarin_Essentials_System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_Reset
+	.align 4
+	.no_dead_strip System_Threading_Tasks_TaskFactory_1_TResult_BOOL_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_TResult_BOOL_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_TResult_BOOL_bool
+System_Threading_Tasks_TaskFactory_1_TResult_BOOL_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_TResult_BOOL_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_TResult_BOOL_bool:
+.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/12.10.0.157/src/Xamarin.iOS/external/corert/src/System.Private.CoreLib/src/System/Threading/Tasks/FutureFactory.cs"
+.loc 2 526 0 prologue_end
+.word 0xa9b07bfd
+.word 0x910003fd
+.word 0xf9000bb9
+.word 0xf90027af
+.word 0xf9000fa0
+.word 0xaa0103f9
+.word 0xf90013a2
+.word 0xf90017a3
+.word 0xf9001ba4
+.word 0xf9002bbf
+.word 0xf9002fbf
+.word 0x390183bf
+.word 0xf9002bbf
+.loc 2 527 0
+.word 0xf9002fbf
+.loc 2 528 0
+.word 0x390183bf
+.loc 2 532 0
+.word 0xb4000119
+.loc 2 534 0
+.word 0xaa1903e0
+.word 0xf9400fa1
+.word 0xf9400f30
+.word 0xd63f0200
+.word 0x53001c00
+.word 0x390183a0
+.loc 2 535 0
+.word 0x14000007
+.loc 2 538 0
+.word 0xf94013a0
+.word 0xf9400fa1
+.word 0xf94013a2
+.word 0xf9400c50
+.word 0xd63f0200
+.word 0xf94013a0
+.loc 2 540 0
+.word 0xf90037bf
+.word 0x94000023
+.word 0xf94037a0
+.word 0xb4000040
+bl _p_96
+.word 0x1400006e
+.word 0xf90053a0
+.word 0xf94053a0
+.loc 2 541 0
+.word 0xf9002fa0
+bl _p_53
+.word 0xf90073a0
+.word 0xf94073a0
+.word 0xb4000060
+.word 0xf94073a0
+bl _p_14
+.word 0xf90037bf
+.word 0x94000014
+.word 0xf94037a0
+.word 0xb4000040
+bl _p_96
+.word 0x1400005f
+.word 0xf90057a0
+.word 0xf94057a0
+.loc 2 542 0
+.word 0xf9002ba0
+bl _p_53
+.word 0xf90077a0
+.word 0xf94077a0
+.word 0xb4000060
+.word 0xf94077a0
+bl _p_14
+.word 0xf90037bf
+.word 0x94000005
+.word 0xf94037a0
+.word 0xb4000040
+bl _p_96
+.word 0x14000050
+.word 0xf9006bbe
+.loc 2 545 0
+.word 0xf9402fa0
+.word 0xb4000240
+.loc 2 547 0
+.word 0xf94017a3
+.word 0xf9402fa0
+.word 0xf9004fa0
+.word 0xf9404fa0
+.word 0x3940001e
+.word 0xf9404fa0
+.word 0x91022000
+.word 0xf9400000
+.word 0xf90023a0
+.word 0xf94023a0
+.word 0xf9001fa0
+.word 0xf9402fa2
+.word 0xaa0303e0
+.word 0xf9401fa1
+.word 0x3940007e
+bl _p_160
+.loc 2 548 0
+.word 0x1400003a
+.loc 2 549 0
+.word 0xf9402ba0
+.word 0xb40000e0
+.loc 2 551 0
+.word 0xf94017a2
+.word 0xf9402ba1
+.word 0xaa0203e0
+.word 0x3940005e
+bl _p_161
+.loc 2 556 0
+.word 0x14000032
+.loc 2 559 0
+.word 0x3901c3bf
+.word 0x3941c3a0
+.word 0x53001c00
+.word 0x340000c0
+.loc 2 560 0
+.word 0xf94017a0
+.word 0xb90083bf
+.word 0xf90047a0
+.word 0xd280003e
+.word 0xb90093be
+.loc 2 561 0
+.word 0xf94017a0
+.word 0xf9003fa0
+
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x0, [x16, #344]
+.word 0x3980b410
+.word 0xb5000050
+bl _p_58
+
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x0, [x16, #352]
+.word 0x39400000
+.word 0x34000060
+.word 0xf9403fa0
+bl _p_229
+.loc 2 563 0
+.word 0x3940c3a0
+.word 0x340001a0
+.loc 2 565 0
+.word 0xf94017a0
+.word 0x394183a1
+.word 0xf9007fa1
+.word 0x3940001e
+.word 0xf9007ba0
+.word 0xf94027a0
+bl _p_479
+.word 0xaa0003e2
+.word 0xf9407ba0
+.word 0xf9407fa1
+.word 0xd63f0040
+.loc 2 566 0
+.word 0x1400000c
+.loc 2 569 0
+.word 0xf94017a0
+.word 0x394183a1
+.word 0xf9007fa1
+.word 0x3940001e
+.word 0xf9007ba0
+.word 0xf94027a0
+bl _p_480
+.word 0xaa0003e2
+.word 0xf9407ba0
+.word 0xf9407fa1
+.word 0xd63f0040
+.loc 2 572 0
+.word 0xf9406bbe
+.word 0xd61f03c0
+.loc 2 573 0
+.word 0xf9400bb9
+.word 0x910003bf
+.word 0xa8d07bfd
+.word 0xd65f03c0
+
+Lme_8d:
 .text
 ut_144:
 add x0, x0, 16
-b _Xamarin_Essentials_System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
+b _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color__ctor_System_Drawing_Color
+.text
+ut_145:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_get_HasValue
+.text
+ut_146:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_get_Value
 .text
 ut_147:
 add x0, x0, 16
-b _Xamarin_Essentials_wrapper_unknown_Xamarin_Essentials_DisplayInfo_StructureToPtr_object_intptr_bool
+b _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_GetValueOrDefault
 .text
 ut_148:
 add x0, x0, 16
-b _Xamarin_Essentials_wrapper_unknown_Xamarin_Essentials_DisplayInfo_PtrToStructure_intptr_object
+b _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_GetValueOrDefault_System_Drawing_Color
+.text
+ut_149:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_Equals_object
+.text
+ut_150:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_GetHashCode
+.text
+ut_151:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_ToString
+.text
+ut_152:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_Box_System_Nullable_1_System_Drawing_Color
+.text
+ut_153:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_Unbox_object
 .text
 ut_154:
 add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_UnboxExact_object
+.text
+ut_155:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL__ctor_System_Threading_Tasks_Task_1_TResult_BOOL
+.text
+ut_156:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL_get_IsCompleted
+.text
+ut_157:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL_OnCompleted_System_Action
+.text
+ut_158:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL_UnsafeOnCompleted_System_Action
+.text
+ut_159:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL_GetResult
+.text
+ut_160:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode__ctor_MapKit_MKDirectionsMode
+.text
+ut_161:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_get_HasValue
+.text
+ut_162:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_get_Value
+.text
+ut_163:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_GetValueOrDefault
+.text
+ut_164:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_GetValueOrDefault_MapKit_MKDirectionsMode
+.text
+ut_165:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_Equals_object
+.text
+ut_166:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_GetHashCode
+.text
+ut_167:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_ToString
+.text
+ut_168:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_Box_System_Nullable_1_MapKit_MKDirectionsMode
+.text
+ut_169:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_Unbox_object
+.text
+ut_170:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_UnboxExact_object
+.text
+ut_182:
+add x0, x0, 16
+b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT__ctor_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT
+.text
+ut_183:
+add x0, x0, 16
+b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_Equals_object
+.text
+ut_184:
+add x0, x0, 16
+b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_Equals_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT
+.text
+ut_185:
+add x0, x0, 16
+b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_System_Collections_IStructuralEquatable_Equals_object_System_Collections_IEqualityComparer
+.text
+ut_186:
+add x0, x0, 16
+b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_System_IComparable_CompareTo_object
+.text
+ut_187:
+add x0, x0, 16
+b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_CompareTo_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT
+.text
+ut_188:
+add x0, x0, 16
+b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_System_Collections_IStructuralComparable_CompareTo_object_System_Collections_IComparer
+.text
+ut_189:
+add x0, x0, 16
+b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_GetHashCode
+.text
+ut_190:
+add x0, x0, 16
+b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_System_Collections_IStructuralEquatable_GetHashCode_System_Collections_IEqualityComparer
+.text
+ut_191:
+add x0, x0, 16
+b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_GetHashCodeCore_System_Collections_IEqualityComparer
+.text
+ut_192:
+add x0, x0, 16
+b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_System_IValueTupleInternal_GetHashCode_System_Collections_IEqualityComparer
+.text
+ut_193:
+add x0, x0, 16
+b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_ToString
+.text
+ut_194:
+add x0, x0, 16
+b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_System_IValueTupleInternal_ToStringEnd
+.text
+ut_195:
+add x0, x0, 16
+b _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_System_Runtime_CompilerServices_ITuple_get_Length
+.text
+ut_196:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_double__ctor_double
+.text
+ut_197:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_double_get_HasValue
+.text
+ut_198:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_double_get_Value
+.text
+ut_199:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_double_GetValueOrDefault
+.text
+ut_200:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_double_GetValueOrDefault_double
+.text
+ut_201:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_double_Equals_object
+.text
+ut_202:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_double_GetHashCode
+.text
+ut_203:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_double_ToString
+.text
+ut_204:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_double_Box_System_Nullable_1_double
+.text
+ut_205:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_double_Unbox_object
+.text
+ut_206:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Nullable_1_double_UnboxExact_object
+.text
+ut_219:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Array_InternalEnumerator_1_T_INST__ctor_System_Array
+.text
+ut_220:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Array_InternalEnumerator_1_T_INST_Dispose
+.text
+ut_221:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Array_InternalEnumerator_1_T_INST_MoveNext
+.text
+ut_222:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Array_InternalEnumerator_1_T_INST_get_Current
+.text
+ut_223:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_Reset
+.text
+ut_224:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
+.text
+ut_229:
+add x0, x0, 16
+b _Xamarin_Essentials_wrapper_unknown_Xamarin_Essentials_DisplayInfo_StructureToPtr_object_intptr_bool
+.text
+ut_230:
+add x0, x0, 16
+b _Xamarin_Essentials_wrapper_unknown_Xamarin_Essentials_DisplayInfo_PtrToStructure_intptr_object
+.text
+ut_231:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_Start_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_
+.text
+ut_232:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_System_Runtime_CompilerServices_TaskAwaiter_1_bool__Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_
+.text
+ut_233:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_System_Runtime_CompilerServices_TaskAwaiter__Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_
+.text
+ut_236:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_TResult_BOOL__ctor_System_Threading_Tasks_Task_1_TResult_BOOL_bool
+.text
+ut_244:
+add x0, x0, 16
 b _Xamarin_Essentials_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
+.text
+ut_253:
+add x0, x0, 16
+b _Xamarin_Essentials_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_TResult_BOOL__ctor_System_Threading_Tasks_Task_1_TResult_BOOL_bool
+.text
+	.align 4
+	.no_dead_strip System_Collections_Generic_ArraySortHelper_1_T_INT_Sort_T_INT___int_int_System_Collections_Generic_IComparer_1_T_INT
+System_Collections_Generic_ArraySortHelper_1_T_INT_Sort_T_INT___int_int_System_Collections_Generic_IComparer_1_T_INT:
+.file 3 "/Library/Frameworks/Xamarin.iOS.framework/Versions/12.10.0.157/src/Xamarin.iOS/external/corert/src/System.Private.CoreLib/src/System/Collections/Generic/ArraySortHelper.cs"
+.loc 3 50 0 prologue_end
+.word 0xa9b37bfd
+.word 0x910003fd
+.word 0xf9001baf
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xf90013a2
+.word 0xf90017a3
+.word 0xf9001fbf
+.word 0xf94017a0
+.word 0xb5000120
+.loc 3 52 0
+.word 0xf9401ba0
+bl _p_481
+.word 0xf90053a0
+.word 0xf9401ba0
+bl _p_482
+.word 0xf94053af
+.word 0xd63f0000
+.word 0xf90017a0
+.loc 3 55 0
+.word 0xf94017a0
+.word 0xf90067a0
+.word 0xf9005fa0
+.word 0xf9401ba0
+bl _p_483
+.word 0xaa0003e1
+.word 0xf94067a0
+bl _p_484
+.word 0xf90063a0
+.word 0xf9401ba0
+bl _p_485
+.word 0xd2801001
+bl _p_7
+.word 0xf9005ba0
+.word 0xf9401ba0
+bl _p_486
+.word 0xaa0003e3
+.word 0xf9405ba0
+.word 0xf9405fa1
+.word 0xf94063a2
+.word 0xf90053a0
+.word 0xd63f0060
+.word 0xf9401ba0
+bl _p_487
+.word 0xf90057a0
+.word 0xf9401ba0
+bl _p_488
+.word 0xaa0003e4
+.word 0xf94053a3
+.word 0xf94057af
+.word 0xf9400ba0
+.word 0xb9801ba1
+.word 0xb98023a2
+.word 0xd63f0080
+.loc 3 56 0
+.word 0x1400001b
+.word 0xf90023a0
+.loc 3 59 0
+.word 0xf94017a0
+bl _p_489
+.loc 3 60 0
+bl _p_53
+.word 0xf9004ba0
+.word 0xf9404ba0
+.word 0xb4000060
+.word 0xf9404ba0
+bl _p_14
+.word 0x14000011
+.word 0xf90027a0
+.word 0xf94027a0
+.loc 3 61 0
+.word 0xf9001fa0
+.loc 3 63 0
+.word 0xd28caac0
+bl _p_152
+.word 0xf90057a0
+.word 0xf9401fa0
+.word 0xf9005ba0
+.word 0xd2801540
+bl _p_490
+.word 0xf94057a1
+.word 0xf9405ba2
+.word 0xf90053a0
+bl _p_491
+.word 0xf94053a0
+bl _p_14
+.loc 3 65 0
+.word 0x910003bf
+.word 0xa8cd7bfd
+.word 0xd65f03c0
+
+Lme_137:
 .text
 	.align 3
 jit_code_end:
@@ -4788,6 +5192,18 @@ _mono_aot_Xamarin_Essentialsjit_code_end:
 .no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_AppInfo_PlatformGetVersionString
 .no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_AppInfo_PlatformGetBuild
 .no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_AppInfo_GetBundleValue_string
+.no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_Browser_OpenAsync_string_Xamarin_Essentials_BrowserLaunchMode
+.no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_Browser_OpenAsync_string_Xamarin_Essentials_BrowserLaunchOptions
+.no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_Browser_OpenAsync_System_Uri_Xamarin_Essentials_BrowserLaunchOptions
+.no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_Browser_EscapeUri_System_Uri
+.no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_Browser_PlatformOpenAsync_System_Uri_Xamarin_Essentials_BrowserLaunchOptions
+.no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_MoveNext
+.no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
+.no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_BrowserLaunchOptions_get_PreferredToolbarColor
+.no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_BrowserLaunchOptions_get_PreferredControlColor
+.no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_BrowserLaunchOptions_get_LaunchMode
+.no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_BrowserLaunchOptions_set_LaunchMode_Xamarin_Essentials_BrowserLaunchMode
+.no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_BrowserLaunchOptions__ctor
 .no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_Clipboard_SetTextAsync_string
 .no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_Clipboard_PlatformSetTextAsync_string
 .no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_Connectivity_get_NetworkAccess
@@ -4799,6 +5215,12 @@ _mono_aot_Xamarin_Essentialsjit_code_end:
 .no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_MapLaunchOptions_get_Name
 .no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_MapLaunchOptions_set_Name_string
 .no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_MapLaunchOptions__ctor
+.no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_Platform_HasOSVersion_int_int
+.no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_Platform_GetCurrentViewController_bool
+.no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_Platform__c__cctor
+.no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_Platform__c__ctor
+.no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_Platform__c__GetCurrentViewControllerb__3_0_UIKit_UIWindow
+.no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_Platform__c__GetCurrentViewControllerb__3_1_UIKit_UIWindow
 .no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_Preferences_GetPrivatePreferencesSharedName_string
 .no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_Preferences_Clear
 .no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_Preferences_Get_string_string
@@ -4838,6 +5260,7 @@ _mono_aot_Xamarin_Essentialsjit_code_end:
 .no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_Location_get_Speed
 .no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_Location_get_Course
 .no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_Location_ToString
+.no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_ColorExtensions_ToPlatformColor_System_Drawing_Color
 .no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_VersionTracking__cctor
 .no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_VersionTracking_Track
 .no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchEver
@@ -4863,6 +5286,56 @@ _mono_aot_Xamarin_Essentialsjit_code_end:
 .no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_Reachability_InternetConnectionStatus
 .no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_Reachability_IsNetworkAvailable_SystemConfiguration_NetworkReachabilityFlags_
 .no_dead_strip _Xamarin_Essentials_Xamarin_Essentials_Reachability_IsReachableWithoutRequiringConnection_SystemConfiguration_NetworkReachabilityFlags
+.no_dead_strip _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_Create
+.no_dead_strip _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
+.no_dead_strip _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_get_Task
+.no_dead_strip _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_SetResult_TResult_BOOL
+.no_dead_strip _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_SetResult_System_Threading_Tasks_Task_1_TResult_BOOL
+.no_dead_strip _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_SetException_System_Exception
+.no_dead_strip _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_GetTaskForResult_TResult_BOOL
+.no_dead_strip _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL__cctor
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL__ctor
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_object_System_Threading_Tasks_TaskCreationOptions
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_TResult_BOOL
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_bool_TResult_BOOL_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_System_Func_2_object_TResult_BOOL_object_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_System_Func_1_TResult_BOOL_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_StartNew_System_Threading_Tasks_Task_System_Func_1_TResult_BOOL_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_StartNew_System_Threading_Tasks_Task_System_Func_2_object_TResult_BOOL_object_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_TrySetResult_TResult_BOOL
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_DangerousSetResult_TResult_BOOL
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_get_Result
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_get_ResultOnSuccess
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_GetResultCore_bool
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_get_Factory
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_InnerInvoke
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_GetAwaiter
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_ConfigureAwait_bool
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_TResult_BOOL
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_TResult_BOOL_System_Threading_Tasks_TaskScheduler
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_TResult_BOOL_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskScheduler
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_TResult_BOOL_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_TaskFactory_1_TResult_BOOL__ctor
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_TaskFactory_1_TResult_BOOL__ctor_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskScheduler
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_TaskFactory_1_TResult_BOOL_FromAsync_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_System_Func_2_System_IAsyncResult_TResult_BOOL_object
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_TaskFactory_1_TResult_BOOL_FromAsyncImpl_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_System_Func_2_System_IAsyncResult_TResult_BOOL_System_Action_1_System_IAsyncResult_object_System_Threading_Tasks_TaskCreationOptions
+.no_dead_strip _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color__ctor_System_Drawing_Color
+.no_dead_strip _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_get_HasValue
+.no_dead_strip _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_get_Value
+.no_dead_strip _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_GetValueOrDefault
+.no_dead_strip _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_GetValueOrDefault_System_Drawing_Color
+.no_dead_strip _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_Equals_object
+.no_dead_strip _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_GetHashCode
+.no_dead_strip _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_ToString
+.no_dead_strip _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_Box_System_Nullable_1_System_Drawing_Color
+.no_dead_strip _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_Unbox_object
+.no_dead_strip _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_UnboxExact_object
+.no_dead_strip _Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL__ctor_System_Threading_Tasks_Task_1_TResult_BOOL
+.no_dead_strip _Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL_get_IsCompleted
+.no_dead_strip _Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL_OnCompleted_System_Action
+.no_dead_strip _Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL_UnsafeOnCompleted_System_Action
+.no_dead_strip _Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL_GetResult
 .no_dead_strip _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode__ctor_MapKit_MKDirectionsMode
 .no_dead_strip _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_get_HasValue
 .no_dead_strip _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_get_Value
@@ -4874,6 +5347,8 @@ _mono_aot_Xamarin_Essentialsjit_code_end:
 .no_dead_strip _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_Box_System_Nullable_1_MapKit_MKDirectionsMode
 .no_dead_strip _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_Unbox_object
 .no_dead_strip _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_UnboxExact_object
+.no_dead_strip _Xamarin_Essentials_wrapper_delegate_invoke_System_Func_2_UIKit_UIWindow_System_nfloat_invoke_TResult_T_UIKit_UIWindow
+.no_dead_strip _Xamarin_Essentials_wrapper_delegate_invoke_System_Func_2_UIKit_UIWindow_bool_invoke_TResult_T_UIKit_UIWindow
 .no_dead_strip _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT__ctor_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT
 .no_dead_strip _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_Equals_object
 .no_dead_strip _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_Equals_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT
@@ -4918,8 +5393,18 @@ _mono_aot_Xamarin_Essentialsjit_code_end:
 .no_dead_strip _Xamarin_Essentials_System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
 .no_dead_strip _Xamarin_Essentials_System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
 .no_dead_strip _Xamarin_Essentials_wrapper_delegate_invoke_System_Action_1_CoreLocation_CLLocation_invoke_void_T_CoreLocation_CLLocation
+.no_dead_strip _Xamarin_Essentials_wrapper_delegate_invoke_System_Action_1_System_IAsyncResult_invoke_void_T_System_IAsyncResult
+.no_dead_strip _Xamarin_Essentials_wrapper_delegate_invoke_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_invoke_TResult_T1_T2_System_AsyncCallback_object
 .no_dead_strip _Xamarin_Essentials_wrapper_unknown_Xamarin_Essentials_DisplayInfo_StructureToPtr_object_intptr_bool
 .no_dead_strip _Xamarin_Essentials_wrapper_unknown_Xamarin_Essentials_DisplayInfo_PtrToStructure_intptr_object
+.no_dead_strip _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_Start_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_
+.no_dead_strip _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_System_Runtime_CompilerServices_TaskAwaiter_1_bool__Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_
+.no_dead_strip _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_System_Runtime_CompilerServices_TaskAwaiter__Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_
+.no_dead_strip _Xamarin_Essentials_System_Linq_Enumerable_OrderByDescending_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IEnumerable_1_UIKit_UIWindow_System_Func_2_UIKit_UIWindow_System_nfloat
+.no_dead_strip _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskCache_CreateCacheableTask_TResult_BOOL_TResult_BOOL
+.no_dead_strip _Xamarin_Essentials_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_TResult_BOOL__ctor_System_Threading_Tasks_Task_1_TResult_BOOL_bool
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_ContinuationTaskFromResultTask_1_TAntecedentResult_BOOL__ctor_System_Threading_Tasks_Task_1_TAntecedentResult_BOOL_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions
+.no_dead_strip _Xamarin_Essentials_System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_BOOL__ctor
 .no_dead_strip _Xamarin_Essentials_System_Collections_Generic_EqualityComparer_1_T_INT_get_Default
 .no_dead_strip _Xamarin_Essentials_System_Collections_Generic_EqualityComparer_1_T_DOUBLE_get_Default
 .no_dead_strip _Xamarin_Essentials_System_Collections_Generic_Comparer_1_T_INT_get_Default
@@ -4927,14 +5412,68 @@ _mono_aot_Xamarin_Essentialsjit_code_end:
 .no_dead_strip _Xamarin_Essentials_System_Runtime_CompilerServices_Unsafe_As_TFrom_DOUBLE_TTo_LONG_TFrom_DOUBLE_
 .no_dead_strip _Xamarin_Essentials_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
 .no_dead_strip _Xamarin_Essentials_System_Array_InternalArray__get_Item_T_INST_int
+.no_dead_strip _Xamarin_Essentials_System_Linq_OrderedEnumerable_2_UIKit_UIWindow_System_nfloat__ctor_System_Collections_Generic_IEnumerable_1_UIKit_UIWindow_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool_System_Linq_OrderedEnumerable_1_UIKit_UIWindow
+.no_dead_strip _Xamarin_Essentials_wrapper_delegate_invoke_System_Predicate_1_UIKit_UIWindow_invoke_bool_T_UIKit_UIWindow
+.no_dead_strip _Xamarin_Essentials_wrapper_delegate_invoke_System_Action_1_UIKit_UIWindow_invoke_void_T_UIKit_UIWindow
+.no_dead_strip _Xamarin_Essentials_wrapper_delegate_invoke_System_Comparison_1_UIKit_UIWindow_invoke_int_T_T_UIKit_UIWindow_UIKit_UIWindow
+.no_dead_strip _Xamarin_Essentials_System_Linq_OrderedEnumerable_2_UIKit_UIWindow_System_nfloat_GetEnumerableSorter_System_Linq_EnumerableSorter_1_UIKit_UIWindow
+.no_dead_strip _Xamarin_Essentials_System_Linq_OrderedEnumerable_2_UIKit_UIWindow_System_nfloat_GetComparer_System_Linq_CachingComparer_1_UIKit_UIWindow
+.no_dead_strip _Xamarin_Essentials_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_TResult_BOOL__ctor_System_Threading_Tasks_Task_1_TResult_BOOL_bool
 .no_dead_strip _Xamarin_Essentials_System_Collections_Generic_EqualityComparer_1_T_INT_CreateComparer
 .no_dead_strip _Xamarin_Essentials_System_Collections_Generic_EqualityComparer_1_T_DOUBLE_CreateComparer
 .no_dead_strip _Xamarin_Essentials_System_Collections_Generic_Comparer_1_T_INT_CreateComparer
 .no_dead_strip _Xamarin_Essentials_System_Collections_Generic_Comparer_1_T_DOUBLE_CreateComparer
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_Comparer_1_System_nfloat_get_Default
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_Comparer_1_System_nfloat_Create_System_Comparison_1_System_nfloat
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_Comparer_1_System_nfloat_CreateComparer
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_Comparer_1_System_nfloat_System_Collections_IComparer_Compare_object_object
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_Comparer_1_System_nfloat__ctor
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_GenericComparer_1_System_nfloat_Compare_System_nfloat_System_nfloat
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_GenericComparer_1_System_nfloat_Equals_object
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_GenericComparer_1_System_nfloat_GetHashCode
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_GenericComparer_1_System_nfloat__ctor
+.no_dead_strip _Xamarin_Essentials_System_Linq_EnumerableSorter_2_UIKit_UIWindow_System_nfloat__ctor_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool_System_Linq_EnumerableSorter_1_UIKit_UIWindow
+.no_dead_strip _Xamarin_Essentials_System_Linq_EnumerableSorter_2_UIKit_UIWindow_System_nfloat_ComputeKeys_UIKit_UIWindow___int
+.no_dead_strip _Xamarin_Essentials_System_Linq_EnumerableSorter_2_UIKit_UIWindow_System_nfloat_CompareAnyKeys_int_int
+.no_dead_strip _Xamarin_Essentials_System_Linq_EnumerableSorter_2_UIKit_UIWindow_System_nfloat_CompareKeys_int_int
+.no_dead_strip _Xamarin_Essentials_System_Linq_EnumerableSorter_2_UIKit_UIWindow_System_nfloat_QuickSort_int___int_int
+.no_dead_strip _Xamarin_Essentials_System_Linq_EnumerableSorter_2_UIKit_UIWindow_System_nfloat_PartialQuickSort_int___int_int_int_int
+.no_dead_strip _Xamarin_Essentials_System_Linq_EnumerableSorter_2_UIKit_UIWindow_System_nfloat_QuickSelect_int___int_int
+.no_dead_strip _Xamarin_Essentials_System_Linq_CachingComparerWithChild_2_UIKit_UIWindow_System_nfloat__ctor_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool_System_Linq_CachingComparer_1_UIKit_UIWindow
+.no_dead_strip _Xamarin_Essentials_System_Linq_CachingComparerWithChild_2_UIKit_UIWindow_System_nfloat_Compare_UIKit_UIWindow_bool
+.no_dead_strip _Xamarin_Essentials_System_Linq_CachingComparerWithChild_2_UIKit_UIWindow_System_nfloat_SetElement_UIKit_UIWindow
+.no_dead_strip _Xamarin_Essentials_System_Linq_CachingComparer_2_UIKit_UIWindow_System_nfloat__ctor_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool
+.no_dead_strip _Xamarin_Essentials_System_Linq_CachingComparer_2_UIKit_UIWindow_System_nfloat_Compare_UIKit_UIWindow_bool
+.no_dead_strip _Xamarin_Essentials_System_Linq_CachingComparer_2_UIKit_UIWindow_System_nfloat_SetElement_UIKit_UIWindow
 .no_dead_strip _Xamarin_Essentials_System_Collections_Generic_ObjectEqualityComparer_1_T_INT__ctor
 .no_dead_strip _Xamarin_Essentials_System_Collections_Generic_ObjectEqualityComparer_1_T_DOUBLE__ctor
 .no_dead_strip _Xamarin_Essentials_System_Collections_Generic_ObjectComparer_1_T_INT__ctor
 .no_dead_strip _Xamarin_Essentials_System_Collections_Generic_ObjectComparer_1_T_DOUBLE__ctor
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_ComparisonComparer_1_System_nfloat__ctor_System_Comparison_1_System_nfloat
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_ComparisonComparer_1_System_nfloat_Compare_System_nfloat_System_nfloat
+.no_dead_strip _Xamarin_Essentials_wrapper_delegate_invoke_System_Comparison_1_System_nfloat_invoke_int_T_T_System_nfloat_System_nfloat
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_ObjectComparer_1_System_nfloat_Compare_System_nfloat_System_nfloat
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_ObjectComparer_1_System_nfloat_Equals_object
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_ObjectComparer_1_System_nfloat_GetHashCode
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_ObjectComparer_1_System_nfloat__ctor
+.no_dead_strip _Xamarin_Essentials_System_Array_Sort_T_INT_T_INT___int_int_System_Collections_Generic_IComparer_1_T_INT
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_Comparer_1_T_INT_Create_System_Comparison_1_T_INT
+.no_dead_strip _Xamarin_Essentials_wrapper_delegate_invoke_System_Comparison_1_int_invoke_int_T_T_int_int
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_Comparer_1_T_INT_System_Collections_IComparer_Compare_object_object
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_Comparer_1_T_INT__ctor
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_GenericComparer_1_T_INT_Compare_T_INT_T_INT
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_GenericComparer_1_T_INT_Equals_object
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_GenericComparer_1_T_INT_GetHashCode
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_GenericComparer_1_T_INT__ctor
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_ComparisonComparer_1_T_INT__ctor_System_Comparison_1_T_INT
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_ArraySortHelper_1_T_INT_IntrospectiveSort_T_INT___int_int_System_Comparison_1_T_INT
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_ArraySortHelper_1_T_INT_IntroSort_T_INT___int_int_int_System_Comparison_1_T_INT
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_ArraySortHelper_1_T_INT_SwapIfGreater_T_INT___System_Comparison_1_T_INT_int_int
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_ArraySortHelper_1_T_INT_InsertionSort_T_INT___int_int_System_Comparison_1_T_INT
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_ArraySortHelper_1_T_INT_Heapsort_T_INT___int_int_System_Comparison_1_T_INT
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_ArraySortHelper_1_T_INT_PickPivotAndPartition_T_INT___int_int_System_Comparison_1_T_INT
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_ArraySortHelper_1_T_INT_DownHeap_T_INT___int_int_int_System_Comparison_1_T_INT
+.no_dead_strip _Xamarin_Essentials_System_Collections_Generic_ArraySortHelper_1_T_INT_Swap_T_INT___int_int
 
 .text
 	.align 3
@@ -4949,6 +5488,18 @@ bl _Xamarin_Essentials_Xamarin_Essentials_AppInfo_PlatformGetPackageName
 bl _Xamarin_Essentials_Xamarin_Essentials_AppInfo_PlatformGetVersionString
 bl _Xamarin_Essentials_Xamarin_Essentials_AppInfo_PlatformGetBuild
 bl _Xamarin_Essentials_Xamarin_Essentials_AppInfo_GetBundleValue_string
+bl _Xamarin_Essentials_Xamarin_Essentials_Browser_OpenAsync_string_Xamarin_Essentials_BrowserLaunchMode
+bl _Xamarin_Essentials_Xamarin_Essentials_Browser_OpenAsync_string_Xamarin_Essentials_BrowserLaunchOptions
+bl _Xamarin_Essentials_Xamarin_Essentials_Browser_OpenAsync_System_Uri_Xamarin_Essentials_BrowserLaunchOptions
+bl _Xamarin_Essentials_Xamarin_Essentials_Browser_EscapeUri_System_Uri
+bl _Xamarin_Essentials_Xamarin_Essentials_Browser_PlatformOpenAsync_System_Uri_Xamarin_Essentials_BrowserLaunchOptions
+bl _Xamarin_Essentials_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_MoveNext
+bl _Xamarin_Essentials_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
+bl _Xamarin_Essentials_Xamarin_Essentials_BrowserLaunchOptions_get_PreferredToolbarColor
+bl _Xamarin_Essentials_Xamarin_Essentials_BrowserLaunchOptions_get_PreferredControlColor
+bl _Xamarin_Essentials_Xamarin_Essentials_BrowserLaunchOptions_get_LaunchMode
+bl _Xamarin_Essentials_Xamarin_Essentials_BrowserLaunchOptions_set_LaunchMode_Xamarin_Essentials_BrowserLaunchMode
+bl _Xamarin_Essentials_Xamarin_Essentials_BrowserLaunchOptions__ctor
 bl _Xamarin_Essentials_Xamarin_Essentials_Clipboard_SetTextAsync_string
 bl _Xamarin_Essentials_Xamarin_Essentials_Clipboard_PlatformSetTextAsync_string
 bl _Xamarin_Essentials_Xamarin_Essentials_Connectivity_get_NetworkAccess
@@ -4960,6 +5511,12 @@ bl _Xamarin_Essentials_Xamarin_Essentials_MapLaunchOptions_get_NavigationMode
 bl _Xamarin_Essentials_Xamarin_Essentials_MapLaunchOptions_get_Name
 bl _Xamarin_Essentials_Xamarin_Essentials_MapLaunchOptions_set_Name_string
 bl _Xamarin_Essentials_Xamarin_Essentials_MapLaunchOptions__ctor
+bl _Xamarin_Essentials_Xamarin_Essentials_Platform_HasOSVersion_int_int
+bl _Xamarin_Essentials_Xamarin_Essentials_Platform_GetCurrentViewController_bool
+bl _Xamarin_Essentials_Xamarin_Essentials_Platform__c__cctor
+bl _Xamarin_Essentials_Xamarin_Essentials_Platform__c__ctor
+bl _Xamarin_Essentials_Xamarin_Essentials_Platform__c__GetCurrentViewControllerb__3_0_UIKit_UIWindow
+bl _Xamarin_Essentials_Xamarin_Essentials_Platform__c__GetCurrentViewControllerb__3_1_UIKit_UIWindow
 bl _Xamarin_Essentials_Xamarin_Essentials_Preferences_GetPrivatePreferencesSharedName_string
 bl _Xamarin_Essentials_Xamarin_Essentials_Preferences_Clear
 bl _Xamarin_Essentials_Xamarin_Essentials_Preferences_Get_string_string
@@ -5002,6 +5559,7 @@ bl _Xamarin_Essentials_Xamarin_Essentials_Location_get_Accuracy
 bl _Xamarin_Essentials_Xamarin_Essentials_Location_get_Speed
 bl _Xamarin_Essentials_Xamarin_Essentials_Location_get_Course
 bl _Xamarin_Essentials_Xamarin_Essentials_Location_ToString
+bl _Xamarin_Essentials_Xamarin_Essentials_ColorExtensions_ToPlatformColor_System_Drawing_Color
 bl _Xamarin_Essentials_Xamarin_Essentials_VersionTracking__cctor
 bl _Xamarin_Essentials_Xamarin_Essentials_VersionTracking_Track
 bl _Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchEver
@@ -5032,6 +5590,57 @@ bl Xamarin_Essentials_Preferences_PlatformSet_T_GSHAREDVT_string_T_GSHAREDVT_str
 bl Xamarin_Essentials_Preferences_PlatformGet_T_GSHAREDVT_string_T_GSHAREDVT_string
 bl Xamarin_Essentials_Preferences_PlatformGet_T_BOOL_string_T_BOOL_string
 bl Xamarin_Essentials_Preferences_PlatformSet_T_BOOL_string_T_BOOL_string
+bl _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_Create
+bl _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
+bl _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_get_Task
+bl _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_SetResult_TResult_BOOL
+bl _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_SetResult_System_Threading_Tasks_Task_1_TResult_BOOL
+bl _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_SetException_System_Exception
+bl _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_GetTaskForResult_TResult_BOOL
+bl _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL__cctor
+bl _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL__ctor
+bl _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_object_System_Threading_Tasks_TaskCreationOptions
+bl _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_TResult_BOOL
+bl _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_bool_TResult_BOOL_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
+bl _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_System_Func_2_object_TResult_BOOL_object_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions
+bl _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_System_Func_1_TResult_BOOL_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
+bl _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
+bl _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_StartNew_System_Threading_Tasks_Task_System_Func_1_TResult_BOOL_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
+bl _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_StartNew_System_Threading_Tasks_Task_System_Func_2_object_TResult_BOOL_object_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
+bl _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_TrySetResult_TResult_BOOL
+bl _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_DangerousSetResult_TResult_BOOL
+bl _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_get_Result
+bl _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_get_ResultOnSuccess
+bl _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_GetResultCore_bool
+bl _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_get_Factory
+bl _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_InnerInvoke
+bl _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_GetAwaiter
+bl _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_ConfigureAwait_bool
+bl _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_TResult_BOOL
+bl _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_TResult_BOOL_System_Threading_Tasks_TaskScheduler
+bl _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_TResult_BOOL_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskScheduler
+bl _Xamarin_Essentials_System_Threading_Tasks_Task_1_TResult_BOOL_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_TResult_BOOL_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
+bl _Xamarin_Essentials_System_Threading_Tasks_TaskFactory_1_TResult_BOOL__ctor
+bl _Xamarin_Essentials_System_Threading_Tasks_TaskFactory_1_TResult_BOOL__ctor_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskScheduler
+bl System_Threading_Tasks_TaskFactory_1_TResult_BOOL_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_TResult_BOOL_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_TResult_BOOL_bool
+bl _Xamarin_Essentials_System_Threading_Tasks_TaskFactory_1_TResult_BOOL_FromAsync_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_System_Func_2_System_IAsyncResult_TResult_BOOL_object
+bl _Xamarin_Essentials_System_Threading_Tasks_TaskFactory_1_TResult_BOOL_FromAsyncImpl_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_System_Func_2_System_IAsyncResult_TResult_BOOL_System_Action_1_System_IAsyncResult_object_System_Threading_Tasks_TaskCreationOptions
+bl _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color__ctor_System_Drawing_Color
+bl _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_get_HasValue
+bl _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_get_Value
+bl _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_GetValueOrDefault
+bl _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_GetValueOrDefault_System_Drawing_Color
+bl _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_Equals_object
+bl _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_GetHashCode
+bl _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_ToString
+bl _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_Box_System_Nullable_1_System_Drawing_Color
+bl _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_Unbox_object
+bl _Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_UnboxExact_object
+bl _Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL__ctor_System_Threading_Tasks_Task_1_TResult_BOOL
+bl _Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL_get_IsCompleted
+bl _Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL_OnCompleted_System_Action
+bl _Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL_UnsafeOnCompleted_System_Action
+bl _Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL_GetResult
 bl _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode__ctor_MapKit_MKDirectionsMode
 bl _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_get_HasValue
 bl _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_get_Value
@@ -5043,6 +5652,16 @@ bl _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_ToString
 bl _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_Box_System_Nullable_1_MapKit_MKDirectionsMode
 bl _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_Unbox_object
 bl _Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode_UnboxExact_object
+bl method_addresses
+bl method_addresses
+bl method_addresses
+bl method_addresses
+bl _Xamarin_Essentials_wrapper_delegate_invoke_System_Func_2_UIKit_UIWindow_System_nfloat_invoke_TResult_T_UIKit_UIWindow
+bl method_addresses
+bl method_addresses
+bl method_addresses
+bl method_addresses
+bl _Xamarin_Essentials_wrapper_delegate_invoke_System_Func_2_UIKit_UIWindow_bool_invoke_TResult_T_UIKit_UIWindow
 bl method_addresses
 bl _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT__ctor_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT
 bl _Xamarin_Essentials_System_ValueTuple_5_T1_DOUBLE_T2_DOUBLE_T3_DOUBLE_T4_INT_T5_INT_Equals_object
@@ -5089,8 +5708,18 @@ bl _Xamarin_Essentials_System_Array_InternalEnumerator_1_T_INST_System_Collectio
 bl _Xamarin_Essentials_System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
 bl _Xamarin_Essentials_System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
 bl _Xamarin_Essentials_wrapper_delegate_invoke_System_Action_1_CoreLocation_CLLocation_invoke_void_T_CoreLocation_CLLocation
+bl _Xamarin_Essentials_wrapper_delegate_invoke_System_Action_1_System_IAsyncResult_invoke_void_T_System_IAsyncResult
+bl _Xamarin_Essentials_wrapper_delegate_invoke_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_invoke_TResult_T1_T2_System_AsyncCallback_object
 bl _Xamarin_Essentials_wrapper_unknown_Xamarin_Essentials_DisplayInfo_StructureToPtr_object_intptr_bool
 bl _Xamarin_Essentials_wrapper_unknown_Xamarin_Essentials_DisplayInfo_PtrToStructure_intptr_object
+bl _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_Start_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_
+bl _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_System_Runtime_CompilerServices_TaskAwaiter_1_bool__Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_
+bl _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_System_Runtime_CompilerServices_TaskAwaiter__Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_
+bl _Xamarin_Essentials_System_Linq_Enumerable_OrderByDescending_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IEnumerable_1_UIKit_UIWindow_System_Func_2_UIKit_UIWindow_System_nfloat
+bl _Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskCache_CreateCacheableTask_TResult_BOOL_TResult_BOOL
+bl _Xamarin_Essentials_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_TResult_BOOL__ctor_System_Threading_Tasks_Task_1_TResult_BOOL_bool
+bl _Xamarin_Essentials_System_Threading_Tasks_ContinuationTaskFromResultTask_1_TAntecedentResult_BOOL__ctor_System_Threading_Tasks_Task_1_TAntecedentResult_BOOL_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions
+bl _Xamarin_Essentials_System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_BOOL__ctor
 bl _Xamarin_Essentials_System_Collections_Generic_EqualityComparer_1_T_INT_get_Default
 bl _Xamarin_Essentials_System_Collections_Generic_EqualityComparer_1_T_DOUBLE_get_Default
 bl _Xamarin_Essentials_System_Collections_Generic_Comparer_1_T_INT_get_Default
@@ -5098,14 +5727,81 @@ bl _Xamarin_Essentials_System_Collections_Generic_Comparer_1_T_DOUBLE_get_Defaul
 bl _Xamarin_Essentials_System_Runtime_CompilerServices_Unsafe_As_TFrom_DOUBLE_TTo_LONG_TFrom_DOUBLE_
 bl _Xamarin_Essentials_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
 bl _Xamarin_Essentials_System_Array_InternalArray__get_Item_T_INST_int
+bl _Xamarin_Essentials_System_Linq_OrderedEnumerable_2_UIKit_UIWindow_System_nfloat__ctor_System_Collections_Generic_IEnumerable_1_UIKit_UIWindow_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool_System_Linq_OrderedEnumerable_1_UIKit_UIWindow
+bl method_addresses
+bl _Xamarin_Essentials_wrapper_delegate_invoke_System_Predicate_1_UIKit_UIWindow_invoke_bool_T_UIKit_UIWindow
+bl _Xamarin_Essentials_wrapper_delegate_invoke_System_Action_1_UIKit_UIWindow_invoke_void_T_UIKit_UIWindow
+bl _Xamarin_Essentials_wrapper_delegate_invoke_System_Comparison_1_UIKit_UIWindow_invoke_int_T_T_UIKit_UIWindow_UIKit_UIWindow
+bl _Xamarin_Essentials_System_Linq_OrderedEnumerable_2_UIKit_UIWindow_System_nfloat_GetEnumerableSorter_System_Linq_EnumerableSorter_1_UIKit_UIWindow
+bl _Xamarin_Essentials_System_Linq_OrderedEnumerable_2_UIKit_UIWindow_System_nfloat_GetComparer_System_Linq_CachingComparer_1_UIKit_UIWindow
+bl _Xamarin_Essentials_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_TResult_BOOL__ctor_System_Threading_Tasks_Task_1_TResult_BOOL_bool
 bl _Xamarin_Essentials_System_Collections_Generic_EqualityComparer_1_T_INT_CreateComparer
 bl _Xamarin_Essentials_System_Collections_Generic_EqualityComparer_1_T_DOUBLE_CreateComparer
 bl _Xamarin_Essentials_System_Collections_Generic_Comparer_1_T_INT_CreateComparer
 bl _Xamarin_Essentials_System_Collections_Generic_Comparer_1_T_DOUBLE_CreateComparer
+bl _Xamarin_Essentials_System_Collections_Generic_Comparer_1_System_nfloat_get_Default
+bl _Xamarin_Essentials_System_Collections_Generic_Comparer_1_System_nfloat_Create_System_Comparison_1_System_nfloat
+bl _Xamarin_Essentials_System_Collections_Generic_Comparer_1_System_nfloat_CreateComparer
+bl method_addresses
+bl _Xamarin_Essentials_System_Collections_Generic_Comparer_1_System_nfloat_System_Collections_IComparer_Compare_object_object
+bl _Xamarin_Essentials_System_Collections_Generic_Comparer_1_System_nfloat__ctor
+bl _Xamarin_Essentials_System_Collections_Generic_GenericComparer_1_System_nfloat_Compare_System_nfloat_System_nfloat
+bl _Xamarin_Essentials_System_Collections_Generic_GenericComparer_1_System_nfloat_Equals_object
+bl _Xamarin_Essentials_System_Collections_Generic_GenericComparer_1_System_nfloat_GetHashCode
+bl _Xamarin_Essentials_System_Collections_Generic_GenericComparer_1_System_nfloat__ctor
+bl _Xamarin_Essentials_System_Linq_EnumerableSorter_2_UIKit_UIWindow_System_nfloat__ctor_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool_System_Linq_EnumerableSorter_1_UIKit_UIWindow
+bl _Xamarin_Essentials_System_Linq_EnumerableSorter_2_UIKit_UIWindow_System_nfloat_ComputeKeys_UIKit_UIWindow___int
+bl _Xamarin_Essentials_System_Linq_EnumerableSorter_2_UIKit_UIWindow_System_nfloat_CompareAnyKeys_int_int
+bl _Xamarin_Essentials_System_Linq_EnumerableSorter_2_UIKit_UIWindow_System_nfloat_CompareKeys_int_int
+bl _Xamarin_Essentials_System_Linq_EnumerableSorter_2_UIKit_UIWindow_System_nfloat_QuickSort_int___int_int
+bl _Xamarin_Essentials_System_Linq_EnumerableSorter_2_UIKit_UIWindow_System_nfloat_PartialQuickSort_int___int_int_int_int
+bl _Xamarin_Essentials_System_Linq_EnumerableSorter_2_UIKit_UIWindow_System_nfloat_QuickSelect_int___int_int
+bl _Xamarin_Essentials_System_Linq_CachingComparerWithChild_2_UIKit_UIWindow_System_nfloat__ctor_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool_System_Linq_CachingComparer_1_UIKit_UIWindow
+bl _Xamarin_Essentials_System_Linq_CachingComparerWithChild_2_UIKit_UIWindow_System_nfloat_Compare_UIKit_UIWindow_bool
+bl _Xamarin_Essentials_System_Linq_CachingComparerWithChild_2_UIKit_UIWindow_System_nfloat_SetElement_UIKit_UIWindow
+bl _Xamarin_Essentials_System_Linq_CachingComparer_2_UIKit_UIWindow_System_nfloat__ctor_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool
+bl _Xamarin_Essentials_System_Linq_CachingComparer_2_UIKit_UIWindow_System_nfloat_Compare_UIKit_UIWindow_bool
+bl _Xamarin_Essentials_System_Linq_CachingComparer_2_UIKit_UIWindow_System_nfloat_SetElement_UIKit_UIWindow
 bl _Xamarin_Essentials_System_Collections_Generic_ObjectEqualityComparer_1_T_INT__ctor
 bl _Xamarin_Essentials_System_Collections_Generic_ObjectEqualityComparer_1_T_DOUBLE__ctor
 bl _Xamarin_Essentials_System_Collections_Generic_ObjectComparer_1_T_INT__ctor
 bl _Xamarin_Essentials_System_Collections_Generic_ObjectComparer_1_T_DOUBLE__ctor
+bl _Xamarin_Essentials_System_Collections_Generic_ComparisonComparer_1_System_nfloat__ctor_System_Comparison_1_System_nfloat
+bl _Xamarin_Essentials_System_Collections_Generic_ComparisonComparer_1_System_nfloat_Compare_System_nfloat_System_nfloat
+bl method_addresses
+bl method_addresses
+bl method_addresses
+bl method_addresses
+bl _Xamarin_Essentials_wrapper_delegate_invoke_System_Comparison_1_System_nfloat_invoke_int_T_T_System_nfloat_System_nfloat
+bl _Xamarin_Essentials_System_Collections_Generic_ObjectComparer_1_System_nfloat_Compare_System_nfloat_System_nfloat
+bl _Xamarin_Essentials_System_Collections_Generic_ObjectComparer_1_System_nfloat_Equals_object
+bl _Xamarin_Essentials_System_Collections_Generic_ObjectComparer_1_System_nfloat_GetHashCode
+bl _Xamarin_Essentials_System_Collections_Generic_ObjectComparer_1_System_nfloat__ctor
+bl _Xamarin_Essentials_System_Array_Sort_T_INT_T_INT___int_int_System_Collections_Generic_IComparer_1_T_INT
+bl method_addresses
+bl _Xamarin_Essentials_System_Collections_Generic_Comparer_1_T_INT_Create_System_Comparison_1_T_INT
+bl method_addresses
+bl method_addresses
+bl method_addresses
+bl method_addresses
+bl _Xamarin_Essentials_wrapper_delegate_invoke_System_Comparison_1_int_invoke_int_T_T_int_int
+bl method_addresses
+bl _Xamarin_Essentials_System_Collections_Generic_Comparer_1_T_INT_System_Collections_IComparer_Compare_object_object
+bl _Xamarin_Essentials_System_Collections_Generic_Comparer_1_T_INT__ctor
+bl _Xamarin_Essentials_System_Collections_Generic_GenericComparer_1_T_INT_Compare_T_INT_T_INT
+bl _Xamarin_Essentials_System_Collections_Generic_GenericComparer_1_T_INT_Equals_object
+bl _Xamarin_Essentials_System_Collections_Generic_GenericComparer_1_T_INT_GetHashCode
+bl _Xamarin_Essentials_System_Collections_Generic_GenericComparer_1_T_INT__ctor
+bl System_Collections_Generic_ArraySortHelper_1_T_INT_Sort_T_INT___int_int_System_Collections_Generic_IComparer_1_T_INT
+bl _Xamarin_Essentials_System_Collections_Generic_ComparisonComparer_1_T_INT__ctor_System_Comparison_1_T_INT
+bl _Xamarin_Essentials_System_Collections_Generic_ArraySortHelper_1_T_INT_IntrospectiveSort_T_INT___int_int_System_Comparison_1_T_INT
+bl _Xamarin_Essentials_System_Collections_Generic_ArraySortHelper_1_T_INT_IntroSort_T_INT___int_int_int_System_Comparison_1_T_INT
+bl _Xamarin_Essentials_System_Collections_Generic_ArraySortHelper_1_T_INT_SwapIfGreater_T_INT___System_Comparison_1_T_INT_int_int
+bl _Xamarin_Essentials_System_Collections_Generic_ArraySortHelper_1_T_INT_InsertionSort_T_INT___int_int_System_Comparison_1_T_INT
+bl _Xamarin_Essentials_System_Collections_Generic_ArraySortHelper_1_T_INT_Heapsort_T_INT___int_int_System_Comparison_1_T_INT
+bl _Xamarin_Essentials_System_Collections_Generic_ArraySortHelper_1_T_INT_PickPivotAndPartition_T_INT___int_int_System_Comparison_1_T_INT
+bl _Xamarin_Essentials_System_Collections_Generic_ArraySortHelper_1_T_INT_DownHeap_T_INT___int_int_int_System_Comparison_1_T_INT
+bl _Xamarin_Essentials_System_Collections_Generic_ArraySortHelper_1_T_INT_Swap_T_INT___int_int
 method_addresses_end:
 
 .section __TEXT, __const
@@ -5114,14 +5810,17 @@ unbox_trampolines:
 _mono_aot_Xamarin_Essentialsunbox_trampolines:
 	.globl _mono_aot_Xamarin_Essentialsunbox_trampolines
 
-	.long 36,37,38,39,40,41,42,43
-	.long 44,45,46,47,90,91,92,93
-	.long 94,95,96,97,98,99,100,102
-	.long 103,104,105,106,107,108,109,110
-	.long 111,112,113,114,115,116,117,118
-	.long 119,120,121,122,123,124,125,126
-	.long 139,140,141,142,143,144,147,148
-	.long 154
+	.long 12,13,54,55,56,57,58,59
+	.long 60,61,62,63,64,65,109,110
+	.long 111,112,113,114,115,116,144,145
+	.long 146,147,148,149,150,151,152,153
+	.long 154,155,156,157,158,159,160,161
+	.long 162,163,164,165,166,167,168,169
+	.long 170,182,183,184,185,186,187,188
+	.long 189,190,191,192,193,194,195,196
+	.long 197,198,199,200,201,202,203,204
+	.long 205,206,219,220,221,222,223,224
+	.long 229,230,231,232,233,236,244,253
 unbox_trampolines_end:
 _mono_aot_Xamarin_Essentialsunbox_trampolines_end:
 	.globl _mono_aot_Xamarin_Essentialsunbox_trampolines_end
@@ -5132,36 +5831,20 @@ _mono_aot_Xamarin_Essentialsunbox_trampolines_end:
 unbox_trampoline_addresses:
 _mono_aot_Xamarin_Essentialsunbox_trampoline_addresses:
 	.globl _mono_aot_Xamarin_Essentialsunbox_trampoline_addresses
-bl ut_36
-bl ut_37
-bl ut_38
-bl ut_39
-bl ut_40
-bl ut_41
-bl ut_42
-bl ut_43
-bl ut_44
-bl ut_45
-bl ut_46
-bl ut_47
-bl ut_90
-bl ut_91
-bl ut_92
-bl ut_93
-bl ut_94
-bl ut_95
-bl ut_96
-bl ut_97
-bl ut_98
-bl ut_99
-bl ut_100
-bl ut_102
-bl ut_103
-bl ut_104
-bl ut_105
-bl ut_106
-bl ut_107
-bl ut_108
+bl ut_12
+bl ut_13
+bl ut_54
+bl ut_55
+bl ut_56
+bl ut_57
+bl ut_58
+bl ut_59
+bl ut_60
+bl ut_61
+bl ut_62
+bl ut_63
+bl ut_64
+bl ut_65
 bl ut_109
 bl ut_110
 bl ut_111
@@ -5170,25 +5853,72 @@ bl ut_113
 bl ut_114
 bl ut_115
 bl ut_116
-bl ut_117
-bl ut_118
-bl ut_119
-bl ut_120
-bl ut_121
-bl ut_122
-bl ut_123
-bl ut_124
-bl ut_125
-bl ut_126
-bl ut_139
-bl ut_140
-bl ut_141
-bl ut_142
-bl ut_143
 bl ut_144
+bl ut_145
+bl ut_146
 bl ut_147
 bl ut_148
+bl ut_149
+bl ut_150
+bl ut_151
+bl ut_152
+bl ut_153
 bl ut_154
+bl ut_155
+bl ut_156
+bl ut_157
+bl ut_158
+bl ut_159
+bl ut_160
+bl ut_161
+bl ut_162
+bl ut_163
+bl ut_164
+bl ut_165
+bl ut_166
+bl ut_167
+bl ut_168
+bl ut_169
+bl ut_170
+bl ut_182
+bl ut_183
+bl ut_184
+bl ut_185
+bl ut_186
+bl ut_187
+bl ut_188
+bl ut_189
+bl ut_190
+bl ut_191
+bl ut_192
+bl ut_193
+bl ut_194
+bl ut_195
+bl ut_196
+bl ut_197
+bl ut_198
+bl ut_199
+bl ut_200
+bl ut_201
+bl ut_202
+bl ut_203
+bl ut_204
+bl ut_205
+bl ut_206
+bl ut_219
+bl ut_220
+bl ut_221
+bl ut_222
+bl ut_223
+bl ut_224
+bl ut_229
+bl ut_230
+bl ut_231
+bl ut_232
+bl ut_233
+bl ut_236
+bl ut_244
+bl ut_253
 
 	.long 0
 .section __TEXT, __const
@@ -5203,7 +5933,8 @@ _mono_aot_Xamarin_Essentialsunwind_info:
 	.byte 29,68,150,24,151,23,68,152,22,153,21,68,154,20,29,12,31,0,68,14,224,1,157,28,158,27,68,13,29,68,149,26
 	.byte 150,25,68,151,24,152,23,68,153,22,154,21,29,12,31,0,68,14,192,1,157,24,158,23,68,13,29,68,149,22,150,21
 	.byte 68,151,20,152,19,68,153,18,154,17,29,12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,149,20,150,19,68,151
-	.byte 18,152,17,68,153,16,154,15
+	.byte 18,152,17,68,153,16,154,15,17,12,31,0,68,14,128,2,157,32,158,31,68,13,29,68,153,30,14,12,31,0,68,14
+	.byte 208,1,157,26,158,25,68,13,29
 
 .text
 	.align 4
@@ -5219,9 +5950,9 @@ plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_PlatformGetPackageName:
 _p_1:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
-ldr x16, [x16, #352]
+ldr x16, [x16, #368]
 br x16
-.word 3246
+.word 6462
 _p_2_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_PlatformGetVersionString_llvm:
 	.globl _p_2_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_PlatformGetVersionString_llvm
 .private_extern _p_2_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_PlatformGetVersionString_llvm
@@ -5230,9 +5961,9 @@ plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_PlatformGetVersionString:
 _p_2:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
-ldr x16, [x16, #360]
+ldr x16, [x16, #376]
 br x16
-.word 3248
+.word 6464
 _p_3_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_PlatformGetBuild_llvm:
 	.globl _p_3_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_PlatformGetBuild_llvm
 .private_extern _p_3_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_PlatformGetBuild_llvm
@@ -5241,9 +5972,9 @@ plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_PlatformGetBuild:
 _p_3:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
-ldr x16, [x16, #368]
+ldr x16, [x16, #384]
 br x16
-.word 3250
+.word 6466
 _p_4_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_GetBundleValue_string_llvm:
 	.globl _p_4_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_GetBundleValue_string_llvm
 .private_extern _p_4_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_GetBundleValue_string_llvm
@@ -5252,9 +5983,9 @@ plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_GetBundleValue_string:
 _p_4:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
-ldr x16, [x16, #376]
+ldr x16, [x16, #392]
 br x16
-.word 3252
+.word 6468
 _p_5_plt_Xamarin_Essentials_Foundation_NSBundle_get_MainBundle_llvm:
 	.globl _p_5_plt_Xamarin_Essentials_Foundation_NSBundle_get_MainBundle_llvm
 .private_extern _p_5_plt_Xamarin_Essentials_Foundation_NSBundle_get_MainBundle_llvm
@@ -5263,9 +5994,9 @@ plt_Xamarin_Essentials_Foundation_NSBundle_get_MainBundle:
 _p_5:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
-ldr x16, [x16, #384]
+ldr x16, [x16, #400]
 br x16
-.word 3254
+.word 6470
 _p_6_plt_Xamarin_Essentials_Foundation_NSBundle_ObjectForInfoDictionary_string_llvm:
 	.globl _p_6_plt_Xamarin_Essentials_Foundation_NSBundle_ObjectForInfoDictionary_string_llvm
 .private_extern _p_6_plt_Xamarin_Essentials_Foundation_NSBundle_ObjectForInfoDictionary_string_llvm
@@ -5274,3078 +6005,5344 @@ plt_Xamarin_Essentials_Foundation_NSBundle_ObjectForInfoDictionary_string:
 _p_6:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
-ldr x16, [x16, #392]
-br x16
-.word 3259
-_p_7_plt_Xamarin_Essentials_Xamarin_Essentials_Clipboard_PlatformSetTextAsync_string_llvm:
-	.globl _p_7_plt_Xamarin_Essentials_Xamarin_Essentials_Clipboard_PlatformSetTextAsync_string_llvm
-.private_extern _p_7_plt_Xamarin_Essentials_Xamarin_Essentials_Clipboard_PlatformSetTextAsync_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Clipboard_PlatformSetTextAsync_string
-plt_Xamarin_Essentials_Xamarin_Essentials_Clipboard_PlatformSetTextAsync_string:
-_p_7:
-adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
-ldr x16, [x16, #400]
-br x16
-.word 3264
-_p_8_plt_Xamarin_Essentials_UIKit_UIPasteboard_get_General_llvm:
-	.globl _p_8_plt_Xamarin_Essentials_UIKit_UIPasteboard_get_General_llvm
-.private_extern _p_8_plt_Xamarin_Essentials_UIKit_UIPasteboard_get_General_llvm
-	.no_dead_strip plt_Xamarin_Essentials_UIKit_UIPasteboard_get_General
-plt_Xamarin_Essentials_UIKit_UIPasteboard_get_General:
-_p_8:
-adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #408]
 br x16
-.word 3266
-_p_9_plt_Xamarin_Essentials_UIKit_UIPasteboard_set_String_string_llvm:
-	.globl _p_9_plt_Xamarin_Essentials_UIKit_UIPasteboard_set_String_string_llvm
-.private_extern _p_9_plt_Xamarin_Essentials_UIKit_UIPasteboard_set_String_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_UIKit_UIPasteboard_set_String_string
-plt_Xamarin_Essentials_UIKit_UIPasteboard_set_String_string:
-_p_9:
+.word 6475
+_p_7_plt_Xamarin_Essentials_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm:
+	.globl _p_7_plt_Xamarin_Essentials_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
+.private_extern _p_7_plt_Xamarin_Essentials_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
+	.no_dead_strip plt_Xamarin_Essentials_wrapper_alloc_object_AllocSmall_intptr_intptr
+plt_Xamarin_Essentials_wrapper_alloc_object_AllocSmall_intptr_intptr:
+_p_7:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #416]
 br x16
-.word 3271
-_p_10_plt_Xamarin_Essentials__jit_icall_mono_generic_class_init_llvm:
-	.globl _p_10_plt_Xamarin_Essentials__jit_icall_mono_generic_class_init_llvm
-.private_extern _p_10_plt_Xamarin_Essentials__jit_icall_mono_generic_class_init_llvm
-	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_generic_class_init
-plt_Xamarin_Essentials__jit_icall_mono_generic_class_init:
-_p_10:
+.word 6480
+_p_8_plt_Xamarin_Essentials_Xamarin_Essentials_Browser_OpenAsync_string_Xamarin_Essentials_BrowserLaunchOptions_llvm:
+	.globl _p_8_plt_Xamarin_Essentials_Xamarin_Essentials_Browser_OpenAsync_string_Xamarin_Essentials_BrowserLaunchOptions_llvm
+.private_extern _p_8_plt_Xamarin_Essentials_Xamarin_Essentials_Browser_OpenAsync_string_Xamarin_Essentials_BrowserLaunchOptions_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Browser_OpenAsync_string_Xamarin_Essentials_BrowserLaunchOptions
+plt_Xamarin_Essentials_Xamarin_Essentials_Browser_OpenAsync_string_Xamarin_Essentials_BrowserLaunchOptions:
+_p_8:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #424]
 br x16
-.word 3276
-_p_11_plt_Xamarin_Essentials_Xamarin_Essentials_Connectivity_get_PlatformNetworkAccess_llvm:
-	.globl _p_11_plt_Xamarin_Essentials_Xamarin_Essentials_Connectivity_get_PlatformNetworkAccess_llvm
-.private_extern _p_11_plt_Xamarin_Essentials_Xamarin_Essentials_Connectivity_get_PlatformNetworkAccess_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Connectivity_get_PlatformNetworkAccess
-plt_Xamarin_Essentials_Xamarin_Essentials_Connectivity_get_PlatformNetworkAccess:
-_p_11:
+.word 6488
+_p_9_plt_Xamarin_Essentials_string_IsNullOrWhiteSpace_string_llvm:
+	.globl _p_9_plt_Xamarin_Essentials_string_IsNullOrWhiteSpace_string_llvm
+.private_extern _p_9_plt_Xamarin_Essentials_string_IsNullOrWhiteSpace_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_string_IsNullOrWhiteSpace_string
+plt_Xamarin_Essentials_string_IsNullOrWhiteSpace_string:
+_p_9:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #432]
 br x16
-.word 3302
-_p_12_plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_InternetConnectionStatus_llvm:
-	.globl _p_12_plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_InternetConnectionStatus_llvm
-.private_extern _p_12_plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_InternetConnectionStatus_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_InternetConnectionStatus
-plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_InternetConnectionStatus:
-_p_12:
+.word 6490
+_p_10_plt_Xamarin_Essentials_System_Uri__ctor_string_llvm:
+	.globl _p_10_plt_Xamarin_Essentials_System_Uri__ctor_string_llvm
+.private_extern _p_10_plt_Xamarin_Essentials_System_Uri__ctor_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Uri__ctor_string
+plt_Xamarin_Essentials_System_Uri__ctor_string:
+_p_10:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #440]
 br x16
-.word 3304
-_p_13_plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_RemoteHostStatus_llvm:
-	.globl _p_13_plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_RemoteHostStatus_llvm
-.private_extern _p_13_plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_RemoteHostStatus_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_RemoteHostStatus
-plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_RemoteHostStatus:
-_p_13:
+.word 6495
+_p_11_plt_Xamarin_Essentials_Xamarin_Essentials_Browser_OpenAsync_System_Uri_Xamarin_Essentials_BrowserLaunchOptions_llvm:
+	.globl _p_11_plt_Xamarin_Essentials_Xamarin_Essentials_Browser_OpenAsync_System_Uri_Xamarin_Essentials_BrowserLaunchOptions_llvm
+.private_extern _p_11_plt_Xamarin_Essentials_Xamarin_Essentials_Browser_OpenAsync_System_Uri_Xamarin_Essentials_BrowserLaunchOptions_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Browser_OpenAsync_System_Uri_Xamarin_Essentials_BrowserLaunchOptions
+plt_Xamarin_Essentials_Xamarin_Essentials_Browser_OpenAsync_System_Uri_Xamarin_Essentials_BrowserLaunchOptions:
+_p_11:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #448]
 br x16
-.word 3306
-_p_14_plt_Xamarin_Essentials_Xamarin_Essentials_Map_PlatformOpenMapsAsync_double_double_Xamarin_Essentials_MapLaunchOptions_llvm:
-	.globl _p_14_plt_Xamarin_Essentials_Xamarin_Essentials_Map_PlatformOpenMapsAsync_double_double_Xamarin_Essentials_MapLaunchOptions_llvm
-.private_extern _p_14_plt_Xamarin_Essentials_Xamarin_Essentials_Map_PlatformOpenMapsAsync_double_double_Xamarin_Essentials_MapLaunchOptions_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Map_PlatformOpenMapsAsync_double_double_Xamarin_Essentials_MapLaunchOptions
-plt_Xamarin_Essentials_Xamarin_Essentials_Map_PlatformOpenMapsAsync_double_double_Xamarin_Essentials_MapLaunchOptions:
-_p_14:
+.word 6500
+_p_12_plt_Xamarin_Essentials__jit_icall_mono_helper_ldstr_llvm:
+	.globl _p_12_plt_Xamarin_Essentials__jit_icall_mono_helper_ldstr_llvm
+.private_extern _p_12_plt_Xamarin_Essentials__jit_icall_mono_helper_ldstr_llvm
+	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_helper_ldstr
+plt_Xamarin_Essentials__jit_icall_mono_helper_ldstr:
+_p_12:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #456]
 br x16
-.word 3308
-_p_15_plt_Xamarin_Essentials__jit_icall_mono_helper_ldstr_llvm:
-	.globl _p_15_plt_Xamarin_Essentials__jit_icall_mono_helper_ldstr_llvm
-.private_extern _p_15_plt_Xamarin_Essentials__jit_icall_mono_helper_ldstr_llvm
-	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_helper_ldstr
-plt_Xamarin_Essentials__jit_icall_mono_helper_ldstr:
-_p_15:
+.word 6502
+_p_13_plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_2_llvm:
+	.globl _p_13_plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_2_llvm
+.private_extern _p_13_plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_2_llvm
+	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_2
+plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_2:
+_p_13:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #464]
 br x16
-.word 3310
-_p_16_plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_1_llvm:
-	.globl _p_16_plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_1_llvm
-.private_extern _p_16_plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_1_llvm
-	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_1
-plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_1:
-_p_16:
+.word 6522
+_p_14_plt_Xamarin_Essentials__jit_icall_mono_arch_throw_exception_llvm:
+	.globl _p_14_plt_Xamarin_Essentials__jit_icall_mono_arch_throw_exception_llvm
+.private_extern _p_14_plt_Xamarin_Essentials__jit_icall_mono_arch_throw_exception_llvm
+	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_arch_throw_exception
+plt_Xamarin_Essentials__jit_icall_mono_arch_throw_exception:
+_p_14:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #472]
 br x16
-.word 3330
-_p_17_plt_Xamarin_Essentials__jit_icall_mono_arch_throw_exception_llvm:
-	.globl _p_17_plt_Xamarin_Essentials__jit_icall_mono_arch_throw_exception_llvm
-.private_extern _p_17_plt_Xamarin_Essentials__jit_icall_mono_arch_throw_exception_llvm
-	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_arch_throw_exception
-plt_Xamarin_Essentials__jit_icall_mono_arch_throw_exception:
-_p_17:
+.word 6555
+_p_15_plt_Xamarin_Essentials_Xamarin_Essentials_Browser_EscapeUri_System_Uri_llvm:
+	.globl _p_15_plt_Xamarin_Essentials_Xamarin_Essentials_Browser_EscapeUri_System_Uri_llvm
+.private_extern _p_15_plt_Xamarin_Essentials_Xamarin_Essentials_Browser_EscapeUri_System_Uri_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Browser_EscapeUri_System_Uri
+plt_Xamarin_Essentials_Xamarin_Essentials_Browser_EscapeUri_System_Uri:
+_p_15:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #480]
 br x16
-.word 3363
-_p_18_plt_Xamarin_Essentials_string_IsNullOrWhiteSpace_string_llvm:
-	.globl _p_18_plt_Xamarin_Essentials_string_IsNullOrWhiteSpace_string_llvm
-.private_extern _p_18_plt_Xamarin_Essentials_string_IsNullOrWhiteSpace_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_string_IsNullOrWhiteSpace_string
-plt_Xamarin_Essentials_string_IsNullOrWhiteSpace_string:
-_p_18:
+.word 6583
+_p_16_plt_Xamarin_Essentials_Xamarin_Essentials_Browser_PlatformOpenAsync_System_Uri_Xamarin_Essentials_BrowserLaunchOptions_llvm:
+	.globl _p_16_plt_Xamarin_Essentials_Xamarin_Essentials_Browser_PlatformOpenAsync_System_Uri_Xamarin_Essentials_BrowserLaunchOptions_llvm
+.private_extern _p_16_plt_Xamarin_Essentials_Xamarin_Essentials_Browser_PlatformOpenAsync_System_Uri_Xamarin_Essentials_BrowserLaunchOptions_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Browser_PlatformOpenAsync_System_Uri_Xamarin_Essentials_BrowserLaunchOptions
+plt_Xamarin_Essentials_Xamarin_Essentials_Browser_PlatformOpenAsync_System_Uri_Xamarin_Essentials_BrowserLaunchOptions:
+_p_16:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #488]
 br x16
-.word 3391
-_p_19_plt_Xamarin_Essentials__jit_icall_ves_icall_object_new_specific_llvm:
-	.globl _p_19_plt_Xamarin_Essentials__jit_icall_ves_icall_object_new_specific_llvm
-.private_extern _p_19_plt_Xamarin_Essentials__jit_icall_ves_icall_object_new_specific_llvm
-	.no_dead_strip plt_Xamarin_Essentials__jit_icall_ves_icall_object_new_specific
-plt_Xamarin_Essentials__jit_icall_ves_icall_object_new_specific:
-_p_19:
+.word 6585
+_p_17_plt_Xamarin_Essentials_System_Globalization_IdnMapping__ctor_llvm:
+	.globl _p_17_plt_Xamarin_Essentials_System_Globalization_IdnMapping__ctor_llvm
+.private_extern _p_17_plt_Xamarin_Essentials_System_Globalization_IdnMapping__ctor_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Globalization_IdnMapping__ctor
+plt_Xamarin_Essentials_System_Globalization_IdnMapping__ctor:
+_p_17:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #496]
 br x16
-.word 3396
-_p_20_plt_Xamarin_Essentials_MapKit_MKPlacemark__ctor_CoreLocation_CLLocationCoordinate2D_Foundation_NSDictionary_llvm:
-	.globl _p_20_plt_Xamarin_Essentials_MapKit_MKPlacemark__ctor_CoreLocation_CLLocationCoordinate2D_Foundation_NSDictionary_llvm
-.private_extern _p_20_plt_Xamarin_Essentials_MapKit_MKPlacemark__ctor_CoreLocation_CLLocationCoordinate2D_Foundation_NSDictionary_llvm
-	.no_dead_strip plt_Xamarin_Essentials_MapKit_MKPlacemark__ctor_CoreLocation_CLLocationCoordinate2D_Foundation_NSDictionary
-plt_Xamarin_Essentials_MapKit_MKPlacemark__ctor_CoreLocation_CLLocationCoordinate2D_Foundation_NSDictionary:
-_p_20:
+.word 6587
+_p_18_plt_Xamarin_Essentials_wrapper_alloc_object_AllocVector_intptr_intptr_llvm:
+	.globl _p_18_plt_Xamarin_Essentials_wrapper_alloc_object_AllocVector_intptr_intptr_llvm
+.private_extern _p_18_plt_Xamarin_Essentials_wrapper_alloc_object_AllocVector_intptr_intptr_llvm
+	.no_dead_strip plt_Xamarin_Essentials_wrapper_alloc_object_AllocVector_intptr_intptr
+plt_Xamarin_Essentials_wrapper_alloc_object_AllocVector_intptr_intptr:
+_p_18:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #504]
 br x16
-.word 3428
-_p_21_plt_Xamarin_Essentials_Xamarin_Essentials_Map_OpenPlacemark_MapKit_MKPlacemark_Xamarin_Essentials_MapLaunchOptions_llvm:
-	.globl _p_21_plt_Xamarin_Essentials_Xamarin_Essentials_Map_OpenPlacemark_MapKit_MKPlacemark_Xamarin_Essentials_MapLaunchOptions_llvm
-.private_extern _p_21_plt_Xamarin_Essentials_Xamarin_Essentials_Map_OpenPlacemark_MapKit_MKPlacemark_Xamarin_Essentials_MapLaunchOptions_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Map_OpenPlacemark_MapKit_MKPlacemark_Xamarin_Essentials_MapLaunchOptions
-plt_Xamarin_Essentials_Xamarin_Essentials_Map_OpenPlacemark_MapKit_MKPlacemark_Xamarin_Essentials_MapLaunchOptions:
-_p_21:
+.word 6592
+_p_19_plt_Xamarin_Essentials_System_Uri_get_Scheme_llvm:
+	.globl _p_19_plt_Xamarin_Essentials_System_Uri_get_Scheme_llvm
+.private_extern _p_19_plt_Xamarin_Essentials_System_Uri_get_Scheme_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Uri_get_Scheme
+plt_Xamarin_Essentials_System_Uri_get_Scheme:
+_p_19:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #512]
 br x16
-.word 3433
-_p_22_plt_Xamarin_Essentials_MapKit_MKMapItem__ctor_MapKit_MKPlacemark_llvm:
-	.globl _p_22_plt_Xamarin_Essentials_MapKit_MKMapItem__ctor_MapKit_MKPlacemark_llvm
-.private_extern _p_22_plt_Xamarin_Essentials_MapKit_MKMapItem__ctor_MapKit_MKPlacemark_llvm
-	.no_dead_strip plt_Xamarin_Essentials_MapKit_MKMapItem__ctor_MapKit_MKPlacemark
-plt_Xamarin_Essentials_MapKit_MKMapItem__ctor_MapKit_MKPlacemark:
-_p_22:
+.word 6600
+_p_20_plt_Xamarin_Essentials_System_Uri_get_Authority_llvm:
+	.globl _p_20_plt_Xamarin_Essentials_System_Uri_get_Authority_llvm
+.private_extern _p_20_plt_Xamarin_Essentials_System_Uri_get_Authority_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Uri_get_Authority
+plt_Xamarin_Essentials_System_Uri_get_Authority:
+_p_20:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #520]
 br x16
-.word 3435
-_p_23_plt_Xamarin_Essentials_MapKit_MKMapItem_set_Name_string_llvm:
-	.globl _p_23_plt_Xamarin_Essentials_MapKit_MKMapItem_set_Name_string_llvm
-.private_extern _p_23_plt_Xamarin_Essentials_MapKit_MKMapItem_set_Name_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_MapKit_MKMapItem_set_Name_string
-plt_Xamarin_Essentials_MapKit_MKMapItem_set_Name_string:
-_p_23:
+.word 6605
+_p_21_plt_Xamarin_Essentials_System_Globalization_IdnMapping_GetAscii_string_llvm:
+	.globl _p_21_plt_Xamarin_Essentials_System_Globalization_IdnMapping_GetAscii_string_llvm
+.private_extern _p_21_plt_Xamarin_Essentials_System_Globalization_IdnMapping_GetAscii_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Globalization_IdnMapping_GetAscii_string
+plt_Xamarin_Essentials_System_Globalization_IdnMapping_GetAscii_string:
+_p_21:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #528]
 br x16
-.word 3440
-_p_24_plt_Xamarin_Essentials_wrapper_alloc_object_AllocVector_intptr_intptr_llvm:
-	.globl _p_24_plt_Xamarin_Essentials_wrapper_alloc_object_AllocVector_intptr_intptr_llvm
-.private_extern _p_24_plt_Xamarin_Essentials_wrapper_alloc_object_AllocVector_intptr_intptr_llvm
-	.no_dead_strip plt_Xamarin_Essentials_wrapper_alloc_object_AllocVector_intptr_intptr
-plt_Xamarin_Essentials_wrapper_alloc_object_AllocVector_intptr_intptr:
-_p_24:
+.word 6610
+_p_22_plt_Xamarin_Essentials_System_Uri_get_PathAndQuery_llvm:
+	.globl _p_22_plt_Xamarin_Essentials_System_Uri_get_PathAndQuery_llvm
+.private_extern _p_22_plt_Xamarin_Essentials_System_Uri_get_PathAndQuery_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Uri_get_PathAndQuery
+plt_Xamarin_Essentials_System_Uri_get_PathAndQuery:
+_p_22:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #536]
 br x16
-.word 3445
-_p_25_plt_Xamarin_Essentials_MapKit_MKMapItem_OpenMaps_MapKit_MKMapItem___MapKit_MKLaunchOptions_llvm:
-	.globl _p_25_plt_Xamarin_Essentials_MapKit_MKMapItem_OpenMaps_MapKit_MKMapItem___MapKit_MKLaunchOptions_llvm
-.private_extern _p_25_plt_Xamarin_Essentials_MapKit_MKMapItem_OpenMaps_MapKit_MKMapItem___MapKit_MKLaunchOptions_llvm
-	.no_dead_strip plt_Xamarin_Essentials_MapKit_MKMapItem_OpenMaps_MapKit_MKMapItem___MapKit_MKLaunchOptions
-plt_Xamarin_Essentials_MapKit_MKMapItem_OpenMaps_MapKit_MKMapItem___MapKit_MKLaunchOptions:
-_p_25:
+.word 6615
+_p_23_plt_Xamarin_Essentials_System_Uri_get_Fragment_llvm:
+	.globl _p_23_plt_Xamarin_Essentials_System_Uri_get_Fragment_llvm
+.private_extern _p_23_plt_Xamarin_Essentials_System_Uri_get_Fragment_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Uri_get_Fragment
+plt_Xamarin_Essentials_System_Uri_get_Fragment:
+_p_23:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #544]
 br x16
-.word 3453
-_p_26_plt_Xamarin_Essentials_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm:
-	.globl _p_26_plt_Xamarin_Essentials_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
-.private_extern _p_26_plt_Xamarin_Essentials_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
-	.no_dead_strip plt_Xamarin_Essentials_wrapper_alloc_object_AllocSmall_intptr_intptr
-plt_Xamarin_Essentials_wrapper_alloc_object_AllocSmall_intptr_intptr:
-_p_26:
+.word 6620
+_p_24_plt_Xamarin_Essentials_string_Concat_string___llvm:
+	.globl _p_24_plt_Xamarin_Essentials_string_Concat_string___llvm
+.private_extern _p_24_plt_Xamarin_Essentials_string_Concat_string___llvm
+	.no_dead_strip plt_Xamarin_Essentials_string_Concat_string__
+plt_Xamarin_Essentials_string_Concat_string__:
+_p_24:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #552]
 br x16
-.word 3458
-_p_27_plt_Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode__ctor_MapKit_MKDirectionsMode_llvm:
-	.globl _p_27_plt_Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode__ctor_MapKit_MKDirectionsMode_llvm
-.private_extern _p_27_plt_Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode__ctor_MapKit_MKDirectionsMode_llvm
-	.no_dead_strip plt_Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode__ctor_MapKit_MKDirectionsMode
-plt_Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode__ctor_MapKit_MKDirectionsMode:
-_p_27:
+.word 6625
+_p_25_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_Start_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7__llvm:
+	.globl _p_25_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_Start_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7__llvm
+.private_extern _p_25_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_Start_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7__llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_Start_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_
+plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_Start_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_:
+_p_25:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #560]
 br x16
-.word 3466
-_p_28_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_PackageName_llvm:
-	.globl _p_28_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_PackageName_llvm
-.private_extern _p_28_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_PackageName_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_PackageName
-plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_PackageName:
-_p_28:
+.word 6630
+_p_26_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_get_Task_llvm:
+	.globl _p_26_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_get_Task_llvm
+.private_extern _p_26_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_get_Task_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_get_Task
+plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_get_Task:
+_p_26:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #568]
 br x16
-.word 3477
-_p_29_plt_Xamarin_Essentials_string_Concat_string_string_string_llvm:
-	.globl _p_29_plt_Xamarin_Essentials_string_Concat_string_string_string_llvm
-.private_extern _p_29_plt_Xamarin_Essentials_string_Concat_string_string_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_string_Concat_string_string_string
-plt_Xamarin_Essentials_string_Concat_string_string_string:
-_p_29:
+.word 6642
+_p_27_plt_Xamarin_Essentials__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm:
+	.globl _p_27_plt_Xamarin_Essentials__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm
+.private_extern _p_27_plt_Xamarin_Essentials__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm
+	.no_dead_strip plt_Xamarin_Essentials__jit_icall_llvm_throw_corlib_exception_abs_trampoline
+plt_Xamarin_Essentials__jit_icall_llvm_throw_corlib_exception_abs_trampoline:
+_p_27:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #576]
 br x16
-.word 3479
-_p_30_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Clear_string_llvm:
-	.globl _p_30_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Clear_string_llvm
-.private_extern _p_30_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Clear_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Clear_string
-plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Clear_string:
-_p_30:
+.word 6653
+_p_28_plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_GetResult_llvm:
+	.globl _p_28_plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_GetResult_llvm
+.private_extern _p_28_plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_GetResult_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_GetResult
+plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_GetResult:
+_p_28:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #584]
 br x16
-.word 3484
-_p_31_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Get_string_string_string_llvm:
-	.globl _p_31_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Get_string_string_string_llvm
-.private_extern _p_31_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Get_string_string_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Get_string_string_string
-plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Get_string_string_string:
-_p_31:
+.word 6698
+_p_29_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetResult_bool_llvm:
+	.globl _p_29_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetResult_bool_llvm
+.private_extern _p_29_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetResult_bool_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetResult_bool
+plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetResult_bool:
+_p_29:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #592]
 br x16
-.word 3486
-_p_32_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Get_string_bool_string_llvm:
-	.globl _p_32_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Get_string_bool_string_llvm
-.private_extern _p_32_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Get_string_bool_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Get_string_bool_string
-plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Get_string_bool_string:
-_p_32:
+.word 6703
+_p_30_plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_1_bool_GetResult_llvm:
+	.globl _p_30_plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_1_bool_GetResult_llvm
+.private_extern _p_30_plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_1_bool_GetResult_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_1_bool_GetResult
+plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_1_bool_GetResult:
+_p_30:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #600]
 br x16
-.word 3488
-_p_33_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Set_string_string_string_llvm:
-	.globl _p_33_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Set_string_string_string_llvm
-.private_extern _p_33_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Set_string_string_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Set_string_string_string
-plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Set_string_string_string:
-_p_33:
+.word 6714
+_p_31_plt_Xamarin_Essentials_System_Uri_get_AbsoluteUri_llvm:
+	.globl _p_31_plt_Xamarin_Essentials_System_Uri_get_AbsoluteUri_llvm
+.private_extern _p_31_plt_Xamarin_Essentials_System_Uri_get_AbsoluteUri_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Uri_get_AbsoluteUri
+plt_Xamarin_Essentials_System_Uri_get_AbsoluteUri:
+_p_31:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #608]
 br x16
-.word 3490
-_p_34_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Set_string_bool_string_llvm:
-	.globl _p_34_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Set_string_bool_string_llvm
-.private_extern _p_34_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Set_string_bool_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Set_string_bool_string
-plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Set_string_bool_string:
-_p_34:
+.word 6725
+_p_32_plt_Xamarin_Essentials__jit_icall_ves_icall_object_new_specific_llvm:
+	.globl _p_32_plt_Xamarin_Essentials__jit_icall_ves_icall_object_new_specific_llvm
+.private_extern _p_32_plt_Xamarin_Essentials__jit_icall_ves_icall_object_new_specific_llvm
+	.no_dead_strip plt_Xamarin_Essentials__jit_icall_ves_icall_object_new_specific
+plt_Xamarin_Essentials__jit_icall_ves_icall_object_new_specific:
+_p_32:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #616]
 br x16
-.word 3492
-_p_35_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformContainsKey_string_string_llvm:
-	.globl _p_35_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformContainsKey_string_string_llvm
-.private_extern _p_35_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformContainsKey_string_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformContainsKey_string_string
-plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformContainsKey_string_string:
-_p_35:
+.word 6730
+_p_33_plt_Xamarin_Essentials_Foundation_NSUrl__ctor_string_llvm:
+	.globl _p_33_plt_Xamarin_Essentials_Foundation_NSUrl__ctor_string_llvm
+.private_extern _p_33_plt_Xamarin_Essentials_Foundation_NSUrl__ctor_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUrl__ctor_string
+plt_Xamarin_Essentials_Foundation_NSUrl__ctor_string:
+_p_33:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #624]
 br x16
-.word 3494
-_p_36_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformClear_string_llvm:
-	.globl _p_36_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformClear_string_llvm
-.private_extern _p_36_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformClear_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformClear_string
-plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformClear_string:
-_p_36:
+.word 6762
+_p_34_plt_Xamarin_Essentials_SafariServices_SFSafariViewController__ctor_Foundation_NSUrl_bool_llvm:
+	.globl _p_34_plt_Xamarin_Essentials_SafariServices_SFSafariViewController__ctor_Foundation_NSUrl_bool_llvm
+.private_extern _p_34_plt_Xamarin_Essentials_SafariServices_SFSafariViewController__ctor_Foundation_NSUrl_bool_llvm
+	.no_dead_strip plt_Xamarin_Essentials_SafariServices_SFSafariViewController__ctor_Foundation_NSUrl_bool
+plt_Xamarin_Essentials_SafariServices_SFSafariViewController__ctor_Foundation_NSUrl_bool:
+_p_34:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #632]
 br x16
-.word 3496
-_p_37_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformGet_string_string_string_string_llvm:
-	.globl _p_37_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformGet_string_string_string_string_llvm
-.private_extern _p_37_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformGet_string_string_string_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformGet_string_string_string_string
-plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformGet_string_string_string_string:
-_p_37:
+.word 6767
+_p_35_plt_Xamarin_Essentials_Xamarin_Essentials_Platform_GetCurrentViewController_bool_llvm:
+	.globl _p_35_plt_Xamarin_Essentials_Xamarin_Essentials_Platform_GetCurrentViewController_bool_llvm
+.private_extern _p_35_plt_Xamarin_Essentials_Xamarin_Essentials_Platform_GetCurrentViewController_bool_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Platform_GetCurrentViewController_bool
+plt_Xamarin_Essentials_Xamarin_Essentials_Platform_GetCurrentViewController_bool:
+_p_35:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #640]
 br x16
-.word 3498
-_p_38_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformGet_bool_string_bool_string_llvm:
-	.globl _p_38_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformGet_bool_string_bool_string_llvm
-.private_extern _p_38_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformGet_bool_string_bool_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformGet_bool_string_bool_string
-plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformGet_bool_string_bool_string:
-_p_38:
+.word 6772
+_p_36_plt_Xamarin_Essentials_UIKit_UIViewController_get_PopoverPresentationController_llvm:
+	.globl _p_36_plt_Xamarin_Essentials_UIKit_UIViewController_get_PopoverPresentationController_llvm
+.private_extern _p_36_plt_Xamarin_Essentials_UIKit_UIViewController_get_PopoverPresentationController_llvm
+	.no_dead_strip plt_Xamarin_Essentials_UIKit_UIViewController_get_PopoverPresentationController
+plt_Xamarin_Essentials_UIKit_UIViewController_get_PopoverPresentationController:
+_p_36:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #648]
 br x16
-.word 3510
-_p_39_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformSet_string_string_string_string_llvm:
-	.globl _p_39_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformSet_string_string_string_string_llvm
-.private_extern _p_39_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformSet_string_string_string_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformSet_string_string_string_string
-plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformSet_string_string_string_string:
-_p_39:
+.word 6774
+_p_37_plt_Xamarin_Essentials_UIKit_UIViewController_PresentViewControllerAsync_UIKit_UIViewController_bool_llvm:
+	.globl _p_37_plt_Xamarin_Essentials_UIKit_UIViewController_PresentViewControllerAsync_UIKit_UIViewController_bool_llvm
+.private_extern _p_37_plt_Xamarin_Essentials_UIKit_UIViewController_PresentViewControllerAsync_UIKit_UIViewController_bool_llvm
+	.no_dead_strip plt_Xamarin_Essentials_UIKit_UIViewController_PresentViewControllerAsync_UIKit_UIViewController_bool
+plt_Xamarin_Essentials_UIKit_UIViewController_PresentViewControllerAsync_UIKit_UIViewController_bool:
+_p_37:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #656]
 br x16
-.word 3522
-_p_40_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformSet_bool_string_bool_string_llvm:
-	.globl _p_40_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformSet_bool_string_bool_string_llvm
-.private_extern _p_40_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformSet_bool_string_bool_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformSet_bool_string_bool_string
-plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformSet_bool_string_bool_string:
-_p_40:
+.word 6779
+_p_38_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_System_Runtime_CompilerServices_TaskAwaiter__Xamarin_Essentials_Browser__PlatformOpenAsyncd__7__llvm:
+	.globl _p_38_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_System_Runtime_CompilerServices_TaskAwaiter__Xamarin_Essentials_Browser__PlatformOpenAsyncd__7__llvm
+.private_extern _p_38_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_System_Runtime_CompilerServices_TaskAwaiter__Xamarin_Essentials_Browser__PlatformOpenAsyncd__7__llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_System_Runtime_CompilerServices_TaskAwaiter__Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_
+plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_System_Runtime_CompilerServices_TaskAwaiter__Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_:
+_p_38:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #664]
 br x16
-.word 3534
-_p_41_plt_Xamarin_Essentials__jit_icall_mono_monitor_enter_v4_fast_llvm:
-	.globl _p_41_plt_Xamarin_Essentials__jit_icall_mono_monitor_enter_v4_fast_llvm
-.private_extern _p_41_plt_Xamarin_Essentials__jit_icall_mono_monitor_enter_v4_fast_llvm
-	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_monitor_enter_v4_fast
-plt_Xamarin_Essentials__jit_icall_mono_monitor_enter_v4_fast:
-_p_41:
+.word 6784
+_p_39_plt_Xamarin_Essentials_UIKit_UIViewController_get_View_llvm:
+	.globl _p_39_plt_Xamarin_Essentials_UIKit_UIViewController_get_View_llvm
+.private_extern _p_39_plt_Xamarin_Essentials_UIKit_UIViewController_get_View_llvm
+	.no_dead_strip plt_Xamarin_Essentials_UIKit_UIViewController_get_View
+plt_Xamarin_Essentials_UIKit_UIViewController_get_View:
+_p_39:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #672]
 br x16
-.word 3546
-_p_42_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_GetUserDefaults_string_llvm:
-	.globl _p_42_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_GetUserDefaults_string_llvm
-.private_extern _p_42_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_GetUserDefaults_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_GetUserDefaults_string
-plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_GetUserDefaults_string:
-_p_42:
+.word 6796
+_p_40_plt_Xamarin_Essentials_UIKit_UIPopoverPresentationController_set_SourceView_UIKit_UIView_llvm:
+	.globl _p_40_plt_Xamarin_Essentials_UIKit_UIPopoverPresentationController_set_SourceView_UIKit_UIView_llvm
+.private_extern _p_40_plt_Xamarin_Essentials_UIKit_UIPopoverPresentationController_set_SourceView_UIKit_UIView_llvm
+	.no_dead_strip plt_Xamarin_Essentials_UIKit_UIPopoverPresentationController_set_SourceView_UIKit_UIView
+plt_Xamarin_Essentials_UIKit_UIPopoverPresentationController_set_SourceView_UIKit_UIView:
+_p_40:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #680]
 br x16
-.word 3575
-_p_43_plt_Xamarin_Essentials__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm:
-	.globl _p_43_plt_Xamarin_Essentials__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm
-.private_extern _p_43_plt_Xamarin_Essentials__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm
-	.no_dead_strip plt_Xamarin_Essentials__jit_icall_llvm_throw_corlib_exception_abs_trampoline
-plt_Xamarin_Essentials__jit_icall_llvm_throw_corlib_exception_abs_trampoline:
-_p_43:
+.word 6801
+_p_41_plt_Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_get_Value_llvm:
+	.globl _p_41_plt_Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_get_Value_llvm
+.private_extern _p_41_plt_Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_get_Value_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_get_Value
+plt_Xamarin_Essentials_System_Nullable_1_System_Drawing_Color_get_Value:
+_p_41:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #688]
 br x16
-.word 3577
-_p_44_plt_Xamarin_Essentials_Foundation_NSUserDefaults_get_Item_string_llvm:
-	.globl _p_44_plt_Xamarin_Essentials_Foundation_NSUserDefaults_get_Item_string_llvm
-.private_extern _p_44_plt_Xamarin_Essentials_Foundation_NSUserDefaults_get_Item_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_get_Item_string
-plt_Xamarin_Essentials_Foundation_NSUserDefaults_get_Item_string:
-_p_44:
+.word 6806
+_p_42_plt_Xamarin_Essentials_Xamarin_Essentials_ColorExtensions_ToPlatformColor_System_Drawing_Color_llvm:
+	.globl _p_42_plt_Xamarin_Essentials_Xamarin_Essentials_ColorExtensions_ToPlatformColor_System_Drawing_Color_llvm
+.private_extern _p_42_plt_Xamarin_Essentials_Xamarin_Essentials_ColorExtensions_ToPlatformColor_System_Drawing_Color_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_ColorExtensions_ToPlatformColor_System_Drawing_Color
+plt_Xamarin_Essentials_Xamarin_Essentials_ColorExtensions_ToPlatformColor_System_Drawing_Color:
+_p_42:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #696]
 br x16
-.word 3622
-_p_45_plt_Xamarin_Essentials__jit_icall_ves_icall_thread_finish_async_abort_llvm:
-	.globl _p_45_plt_Xamarin_Essentials__jit_icall_ves_icall_thread_finish_async_abort_llvm
-.private_extern _p_45_plt_Xamarin_Essentials__jit_icall_ves_icall_thread_finish_async_abort_llvm
-	.no_dead_strip plt_Xamarin_Essentials__jit_icall_ves_icall_thread_finish_async_abort
-plt_Xamarin_Essentials__jit_icall_ves_icall_thread_finish_async_abort:
-_p_45:
+.word 6817
+_p_43_plt_Xamarin_Essentials_SafariServices_SFSafariViewController_set_PreferredControlTintColor_UIKit_UIColor_llvm:
+	.globl _p_43_plt_Xamarin_Essentials_SafariServices_SFSafariViewController_set_PreferredControlTintColor_UIKit_UIColor_llvm
+.private_extern _p_43_plt_Xamarin_Essentials_SafariServices_SFSafariViewController_set_PreferredControlTintColor_UIKit_UIColor_llvm
+	.no_dead_strip plt_Xamarin_Essentials_SafariServices_SFSafariViewController_set_PreferredControlTintColor_UIKit_UIColor
+plt_Xamarin_Essentials_SafariServices_SFSafariViewController_set_PreferredControlTintColor_UIKit_UIColor:
+_p_43:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #704]
 br x16
-.word 3627
-_p_46_plt_Xamarin_Essentials__jit_icall_mono_monitor_enter_v4_internal_llvm:
-	.globl _p_46_plt_Xamarin_Essentials__jit_icall_mono_monitor_enter_v4_internal_llvm
-.private_extern _p_46_plt_Xamarin_Essentials__jit_icall_mono_monitor_enter_v4_internal_llvm
-	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_monitor_enter_v4_internal
-plt_Xamarin_Essentials__jit_icall_mono_monitor_enter_v4_internal:
-_p_46:
+.word 6819
+_p_44_plt_Xamarin_Essentials_SafariServices_SFSafariViewController_set_PreferredBarTintColor_UIKit_UIColor_llvm:
+	.globl _p_44_plt_Xamarin_Essentials_SafariServices_SFSafariViewController_set_PreferredBarTintColor_UIKit_UIColor_llvm
+.private_extern _p_44_plt_Xamarin_Essentials_SafariServices_SFSafariViewController_set_PreferredBarTintColor_UIKit_UIColor_llvm
+	.no_dead_strip plt_Xamarin_Essentials_SafariServices_SFSafariViewController_set_PreferredBarTintColor_UIKit_UIColor
+plt_Xamarin_Essentials_SafariServices_SFSafariViewController_set_PreferredBarTintColor_UIKit_UIColor:
+_p_44:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #712]
 br x16
-.word 3665
-_p_47_plt_Xamarin_Essentials_System_Threading_Monitor_Exit_object_llvm:
-	.globl _p_47_plt_Xamarin_Essentials_System_Threading_Monitor_Exit_object_llvm
-.private_extern _p_47_plt_Xamarin_Essentials_System_Threading_Monitor_Exit_object_llvm
-	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Monitor_Exit_object
-plt_Xamarin_Essentials_System_Threading_Monitor_Exit_object:
-_p_47:
+.word 6824
+_p_45_plt_Xamarin_Essentials_Xamarin_Essentials_Platform_HasOSVersion_int_int_llvm:
+	.globl _p_45_plt_Xamarin_Essentials_Xamarin_Essentials_Platform_HasOSVersion_int_int_llvm
+.private_extern _p_45_plt_Xamarin_Essentials_Xamarin_Essentials_Platform_HasOSVersion_int_int_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Platform_HasOSVersion_int_int
+plt_Xamarin_Essentials_Xamarin_Essentials_Platform_HasOSVersion_int_int:
+_p_45:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #720]
 br x16
-.word 3698
-_p_48_plt_Xamarin_Essentials__jit_icall_llvm_resume_unwind_trampoline_llvm:
-	.globl _p_48_plt_Xamarin_Essentials__jit_icall_llvm_resume_unwind_trampoline_llvm
-.private_extern _p_48_plt_Xamarin_Essentials__jit_icall_llvm_resume_unwind_trampoline_llvm
-	.no_dead_strip plt_Xamarin_Essentials__jit_icall_llvm_resume_unwind_trampoline
-plt_Xamarin_Essentials__jit_icall_llvm_resume_unwind_trampoline:
-_p_48:
+.word 6829
+_p_46_plt_Xamarin_Essentials_UIKit_UIApplication_get_SharedApplication_llvm:
+	.globl _p_46_plt_Xamarin_Essentials_UIKit_UIApplication_get_SharedApplication_llvm
+.private_extern _p_46_plt_Xamarin_Essentials_UIKit_UIApplication_get_SharedApplication_llvm
+	.no_dead_strip plt_Xamarin_Essentials_UIKit_UIApplication_get_SharedApplication
+plt_Xamarin_Essentials_UIKit_UIApplication_get_SharedApplication:
+_p_46:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 3703
-_p_49_plt_Xamarin_Essentials_Foundation_NSUserDefaults_get_StandardUserDefaults_llvm:
-	.globl _p_49_plt_Xamarin_Essentials_Foundation_NSUserDefaults_get_StandardUserDefaults_llvm
-.private_extern _p_49_plt_Xamarin_Essentials_Foundation_NSUserDefaults_get_StandardUserDefaults_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_get_StandardUserDefaults
-plt_Xamarin_Essentials_Foundation_NSUserDefaults_get_StandardUserDefaults:
-_p_49:
+.word 6831
+_p_47_plt_Xamarin_Essentials_UIKit_UIApplication_OpenUrl_Foundation_NSUrl_llvm:
+	.globl _p_47_plt_Xamarin_Essentials_UIKit_UIApplication_OpenUrl_Foundation_NSUrl_llvm
+.private_extern _p_47_plt_Xamarin_Essentials_UIKit_UIApplication_OpenUrl_Foundation_NSUrl_llvm
+	.no_dead_strip plt_Xamarin_Essentials_UIKit_UIApplication_OpenUrl_Foundation_NSUrl
+plt_Xamarin_Essentials_UIKit_UIApplication_OpenUrl_Foundation_NSUrl:
+_p_47:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 3735
-_p_50_plt_Xamarin_Essentials_Foundation_NSUserDefaults__ctor_string_Foundation_NSUserDefaultsType_llvm:
-	.globl _p_50_plt_Xamarin_Essentials_Foundation_NSUserDefaults__ctor_string_Foundation_NSUserDefaultsType_llvm
-.private_extern _p_50_plt_Xamarin_Essentials_Foundation_NSUserDefaults__ctor_string_Foundation_NSUserDefaultsType_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults__ctor_string_Foundation_NSUserDefaultsType
-plt_Xamarin_Essentials_Foundation_NSUserDefaults__ctor_string_Foundation_NSUserDefaultsType:
-_p_50:
+.word 6836
+_p_48_plt_Xamarin_Essentials_UIKit_UIApplicationOpenUrlOptions__ctor_llvm:
+	.globl _p_48_plt_Xamarin_Essentials_UIKit_UIApplicationOpenUrlOptions__ctor_llvm
+.private_extern _p_48_plt_Xamarin_Essentials_UIKit_UIApplicationOpenUrlOptions__ctor_llvm
+	.no_dead_strip plt_Xamarin_Essentials_UIKit_UIApplicationOpenUrlOptions__ctor
+plt_Xamarin_Essentials_UIKit_UIApplicationOpenUrlOptions__ctor:
+_p_48:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 3740
-_p_51_plt_Xamarin_Essentials_object_Equals_object_object_llvm:
-	.globl _p_51_plt_Xamarin_Essentials_object_Equals_object_object_llvm
-.private_extern _p_51_plt_Xamarin_Essentials_object_Equals_object_object_llvm
-	.no_dead_strip plt_Xamarin_Essentials_object_Equals_object_object
-plt_Xamarin_Essentials_object_Equals_object_object:
-_p_51:
+.word 6841
+_p_49_plt_Xamarin_Essentials_UIKit_UIApplication_OpenUrlAsync_Foundation_NSUrl_UIKit_UIApplicationOpenUrlOptions_llvm:
+	.globl _p_49_plt_Xamarin_Essentials_UIKit_UIApplication_OpenUrlAsync_Foundation_NSUrl_UIKit_UIApplicationOpenUrlOptions_llvm
+.private_extern _p_49_plt_Xamarin_Essentials_UIKit_UIApplication_OpenUrlAsync_Foundation_NSUrl_UIKit_UIApplicationOpenUrlOptions_llvm
+	.no_dead_strip plt_Xamarin_Essentials_UIKit_UIApplication_OpenUrlAsync_Foundation_NSUrl_UIKit_UIApplicationOpenUrlOptions
+plt_Xamarin_Essentials_UIKit_UIApplication_OpenUrlAsync_Foundation_NSUrl_UIKit_UIApplicationOpenUrlOptions:
+_p_49:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 3745
-_p_52_plt_Xamarin_Essentials_Xamarin_Essentials_DisplayInfo_Equals_Xamarin_Essentials_DisplayInfo_llvm:
-	.globl _p_52_plt_Xamarin_Essentials_Xamarin_Essentials_DisplayInfo_Equals_Xamarin_Essentials_DisplayInfo_llvm
-.private_extern _p_52_plt_Xamarin_Essentials_Xamarin_Essentials_DisplayInfo_Equals_Xamarin_Essentials_DisplayInfo_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_DisplayInfo_Equals_Xamarin_Essentials_DisplayInfo
-plt_Xamarin_Essentials_Xamarin_Essentials_DisplayInfo_Equals_Xamarin_Essentials_DisplayInfo:
-_p_52:
+.word 6846
+_p_50_plt_Xamarin_Essentials_System_Threading_Tasks_Task_1_bool_GetAwaiter_llvm:
+	.globl _p_50_plt_Xamarin_Essentials_System_Threading_Tasks_Task_1_bool_GetAwaiter_llvm
+.private_extern _p_50_plt_Xamarin_Essentials_System_Threading_Tasks_Task_1_bool_GetAwaiter_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_Task_1_bool_GetAwaiter
+plt_Xamarin_Essentials_System_Threading_Tasks_Task_1_bool_GetAwaiter:
+_p_50:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 3750
-_p_53_plt_Xamarin_Essentials_double_Equals_double_llvm:
-	.globl _p_53_plt_Xamarin_Essentials_double_Equals_double_llvm
-.private_extern _p_53_plt_Xamarin_Essentials_double_Equals_double_llvm
-	.no_dead_strip plt_Xamarin_Essentials_double_Equals_double
-plt_Xamarin_Essentials_double_Equals_double:
-_p_53:
+.word 6851
+_p_51_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_System_Runtime_CompilerServices_TaskAwaiter_1_bool__Xamarin_Essentials_Browser__PlatformOpenAsyncd__7__llvm:
+	.globl _p_51_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_System_Runtime_CompilerServices_TaskAwaiter_1_bool__Xamarin_Essentials_Browser__PlatformOpenAsyncd__7__llvm
+.private_extern _p_51_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_System_Runtime_CompilerServices_TaskAwaiter_1_bool__Xamarin_Essentials_Browser__PlatformOpenAsyncd__7__llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_System_Runtime_CompilerServices_TaskAwaiter_1_bool__Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_
+plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_System_Runtime_CompilerServices_TaskAwaiter_1_bool__Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_:
+_p_51:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 3752
-_p_54_plt_Xamarin_Essentials_System_Enum_Equals_object_llvm:
-	.globl _p_54_plt_Xamarin_Essentials_System_Enum_Equals_object_llvm
-.private_extern _p_54_plt_Xamarin_Essentials_System_Enum_Equals_object_llvm
-	.no_dead_strip plt_Xamarin_Essentials_System_Enum_Equals_object
-plt_Xamarin_Essentials_System_Enum_Equals_object:
-_p_54:
+.word 6862
+_p_52_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetException_System_Exception_llvm:
+	.globl _p_52_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetException_System_Exception_llvm
+.private_extern _p_52_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetException_System_Exception_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetException_System_Exception
+plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetException_System_Exception:
+_p_52:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 3757
-_p_55_plt_Xamarin_Essentials_System_ValueTuple_5_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation__ctor_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation_llvm:
-	.globl _p_55_plt_Xamarin_Essentials_System_ValueTuple_5_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation__ctor_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation_llvm
-.private_extern _p_55_plt_Xamarin_Essentials_System_ValueTuple_5_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation__ctor_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation_llvm
-	.no_dead_strip plt_Xamarin_Essentials_System_ValueTuple_5_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation__ctor_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation
-plt_Xamarin_Essentials_System_ValueTuple_5_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation__ctor_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation:
-_p_55:
+.word 6874
+_p_53_plt_Xamarin_Essentials__jit_icall_mono_thread_get_undeniable_exception_llvm:
+	.globl _p_53_plt_Xamarin_Essentials__jit_icall_mono_thread_get_undeniable_exception_llvm
+.private_extern _p_53_plt_Xamarin_Essentials__jit_icall_mono_thread_get_undeniable_exception_llvm
+	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_thread_get_undeniable_exception
+plt_Xamarin_Essentials__jit_icall_mono_thread_get_undeniable_exception:
+_p_53:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 3762
-_p_56_plt_Xamarin_Essentials_System_ValueTuple_5_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation_GetHashCode_llvm:
-	.globl _p_56_plt_Xamarin_Essentials_System_ValueTuple_5_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation_GetHashCode_llvm
-.private_extern _p_56_plt_Xamarin_Essentials_System_ValueTuple_5_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation_GetHashCode_llvm
-	.no_dead_strip plt_Xamarin_Essentials_System_ValueTuple_5_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation_GetHashCode
-plt_Xamarin_Essentials_System_ValueTuple_5_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation_GetHashCode:
-_p_56:
+.word 6885
+_p_54_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm:
+	.globl _p_54_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm
+.private_extern _p_54_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
+plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
+_p_54:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 3773
-_p_57_plt_Xamarin_Essentials_string_Format_string_object___llvm:
-	.globl _p_57_plt_Xamarin_Essentials_string_Format_string_object___llvm
-.private_extern _p_57_plt_Xamarin_Essentials_string_Format_string_object___llvm
-	.no_dead_strip plt_Xamarin_Essentials_string_Format_string_object__
-plt_Xamarin_Essentials_string_Format_string_object__:
-_p_57:
+.word 6924
+_p_55_plt_Xamarin_Essentials_Xamarin_Essentials_Clipboard_PlatformSetTextAsync_string_llvm:
+	.globl _p_55_plt_Xamarin_Essentials_Xamarin_Essentials_Clipboard_PlatformSetTextAsync_string_llvm
+.private_extern _p_55_plt_Xamarin_Essentials_Xamarin_Essentials_Clipboard_PlatformSetTextAsync_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Clipboard_PlatformSetTextAsync_string
+plt_Xamarin_Essentials_Xamarin_Essentials_Clipboard_PlatformSetTextAsync_string:
+_p_55:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 3807
-_p_58_plt_Xamarin_Essentials_string_Format_string_object_object_llvm:
-	.globl _p_58_plt_Xamarin_Essentials_string_Format_string_object_object_llvm
-.private_extern _p_58_plt_Xamarin_Essentials_string_Format_string_object_object_llvm
-	.no_dead_strip plt_Xamarin_Essentials_string_Format_string_object_object
-plt_Xamarin_Essentials_string_Format_string_object_object:
-_p_58:
+.word 6935
+_p_56_plt_Xamarin_Essentials_UIKit_UIPasteboard_get_General_llvm:
+	.globl _p_56_plt_Xamarin_Essentials_UIKit_UIPasteboard_get_General_llvm
+.private_extern _p_56_plt_Xamarin_Essentials_UIKit_UIPasteboard_get_General_llvm
+	.no_dead_strip plt_Xamarin_Essentials_UIKit_UIPasteboard_get_General
+plt_Xamarin_Essentials_UIKit_UIPasteboard_get_General:
+_p_56:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 3812
-_p_59_plt_Xamarin_Essentials_System_DateTimeOffset_get_UtcNow_llvm:
-	.globl _p_59_plt_Xamarin_Essentials_System_DateTimeOffset_get_UtcNow_llvm
-.private_extern _p_59_plt_Xamarin_Essentials_System_DateTimeOffset_get_UtcNow_llvm
-	.no_dead_strip plt_Xamarin_Essentials_System_DateTimeOffset_get_UtcNow
-plt_Xamarin_Essentials_System_DateTimeOffset_get_UtcNow:
-_p_59:
+.word 6937
+_p_57_plt_Xamarin_Essentials_UIKit_UIPasteboard_set_String_string_llvm:
+	.globl _p_57_plt_Xamarin_Essentials_UIKit_UIPasteboard_set_String_string_llvm
+.private_extern _p_57_plt_Xamarin_Essentials_UIKit_UIPasteboard_set_String_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_UIKit_UIPasteboard_set_String_string
+plt_Xamarin_Essentials_UIKit_UIPasteboard_set_String_string:
+_p_57:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 3817
-_p_60_plt_Xamarin_Essentials_string_Concat_string_string_string_string_llvm:
-	.globl _p_60_plt_Xamarin_Essentials_string_Concat_string_string_string_string_llvm
-.private_extern _p_60_plt_Xamarin_Essentials_string_Concat_string_string_string_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_string_Concat_string_string_string_string
-plt_Xamarin_Essentials_string_Concat_string_string_string_string:
-_p_60:
+.word 6942
+_p_58_plt_Xamarin_Essentials__jit_icall_mono_generic_class_init_llvm:
+	.globl _p_58_plt_Xamarin_Essentials__jit_icall_mono_generic_class_init_llvm
+.private_extern _p_58_plt_Xamarin_Essentials__jit_icall_mono_generic_class_init_llvm
+	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_generic_class_init
+plt_Xamarin_Essentials__jit_icall_mono_generic_class_init:
+_p_58:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 3822
-_p_61_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_GetPrivatePreferencesSharedName_string_llvm:
-	.globl _p_61_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_GetPrivatePreferencesSharedName_string_llvm
-.private_extern _p_61_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_GetPrivatePreferencesSharedName_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_GetPrivatePreferencesSharedName_string
-plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_GetPrivatePreferencesSharedName_string:
-_p_61:
+.word 6947
+_p_59_plt_Xamarin_Essentials_Xamarin_Essentials_Connectivity_get_PlatformNetworkAccess_llvm:
+	.globl _p_59_plt_Xamarin_Essentials_Xamarin_Essentials_Connectivity_get_PlatformNetworkAccess_llvm
+.private_extern _p_59_plt_Xamarin_Essentials_Xamarin_Essentials_Connectivity_get_PlatformNetworkAccess_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Connectivity_get_PlatformNetworkAccess
+plt_Xamarin_Essentials_Xamarin_Essentials_Connectivity_get_PlatformNetworkAccess:
+_p_59:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 3827
-_p_62_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_ContainsKey_string_string_llvm:
-	.globl _p_62_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_ContainsKey_string_string_llvm
-.private_extern _p_62_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_ContainsKey_string_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_ContainsKey_string_string
-plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_ContainsKey_string_string:
-_p_62:
+.word 6973
+_p_60_plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_InternetConnectionStatus_llvm:
+	.globl _p_60_plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_InternetConnectionStatus_llvm
+.private_extern _p_60_plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_InternetConnectionStatus_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_InternetConnectionStatus
+plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_InternetConnectionStatus:
+_p_60:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 3829
-_p_63_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchEver_bool_llvm:
-	.globl _p_63_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchEver_bool_llvm
-.private_extern _p_63_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchEver_bool_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchEver_bool
-plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchEver_bool:
-_p_63:
+.word 6975
+_p_61_plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_RemoteHostStatus_llvm:
+	.globl _p_61_plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_RemoteHostStatus_llvm
+.private_extern _p_61_plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_RemoteHostStatus_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_RemoteHostStatus
+plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_RemoteHostStatus:
+_p_61:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 3831
-_p_64_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchEver_llvm:
-	.globl _p_64_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchEver_llvm
-.private_extern _p_64_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchEver_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchEver
-plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchEver:
-_p_64:
+.word 6977
+_p_62_plt_Xamarin_Essentials_Xamarin_Essentials_Map_PlatformOpenMapsAsync_double_double_Xamarin_Essentials_MapLaunchOptions_llvm:
+	.globl _p_62_plt_Xamarin_Essentials_Xamarin_Essentials_Map_PlatformOpenMapsAsync_double_double_Xamarin_Essentials_MapLaunchOptions_llvm
+.private_extern _p_62_plt_Xamarin_Essentials_Xamarin_Essentials_Map_PlatformOpenMapsAsync_double_double_Xamarin_Essentials_MapLaunchOptions_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Map_PlatformOpenMapsAsync_double_double_Xamarin_Essentials_MapLaunchOptions
+plt_Xamarin_Essentials_Xamarin_Essentials_Map_PlatformOpenMapsAsync_double_double_Xamarin_Essentials_MapLaunchOptions:
+_p_62:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 3833
-_p_65_plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string__ctor_llvm:
-	.globl _p_65_plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string__ctor_llvm
-.private_extern _p_65_plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string__ctor_llvm
-	.no_dead_strip plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string__ctor
-plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string__ctor:
-_p_65:
+.word 6979
+_p_63_plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_1_llvm:
+	.globl _p_63_plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_1_llvm
+.private_extern _p_63_plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_1_llvm
+	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_1
+plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_1:
+_p_63:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 3835
-_p_66_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_ReadHistory_string_llvm:
-	.globl _p_66_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_ReadHistory_string_llvm
-.private_extern _p_66_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_ReadHistory_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_ReadHistory_string
-plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_ReadHistory_string:
-_p_66:
+.word 6981
+_p_64_plt_Xamarin_Essentials_MapKit_MKPlacemark__ctor_CoreLocation_CLLocationCoordinate2D_Foundation_NSDictionary_llvm:
+	.globl _p_64_plt_Xamarin_Essentials_MapKit_MKPlacemark__ctor_CoreLocation_CLLocationCoordinate2D_Foundation_NSDictionary_llvm
+.private_extern _p_64_plt_Xamarin_Essentials_MapKit_MKPlacemark__ctor_CoreLocation_CLLocationCoordinate2D_Foundation_NSDictionary_llvm
+	.no_dead_strip plt_Xamarin_Essentials_MapKit_MKPlacemark__ctor_CoreLocation_CLLocationCoordinate2D_Foundation_NSDictionary
+plt_Xamarin_Essentials_MapKit_MKPlacemark__ctor_CoreLocation_CLLocationCoordinate2D_Foundation_NSDictionary:
+_p_64:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 3846
-_p_67_plt_Xamarin_Essentials_System_Linq_Enumerable_ToList_string_System_Collections_Generic_IEnumerable_1_string_llvm:
-	.globl _p_67_plt_Xamarin_Essentials_System_Linq_Enumerable_ToList_string_System_Collections_Generic_IEnumerable_1_string_llvm
-.private_extern _p_67_plt_Xamarin_Essentials_System_Linq_Enumerable_ToList_string_System_Collections_Generic_IEnumerable_1_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_System_Linq_Enumerable_ToList_string_System_Collections_Generic_IEnumerable_1_string
-plt_Xamarin_Essentials_System_Linq_Enumerable_ToList_string_System_Collections_Generic_IEnumerable_1_string:
-_p_67:
+.word 7014
+_p_65_plt_Xamarin_Essentials_Xamarin_Essentials_Map_OpenPlacemark_MapKit_MKPlacemark_Xamarin_Essentials_MapLaunchOptions_llvm:
+	.globl _p_65_plt_Xamarin_Essentials_Xamarin_Essentials_Map_OpenPlacemark_MapKit_MKPlacemark_Xamarin_Essentials_MapLaunchOptions_llvm
+.private_extern _p_65_plt_Xamarin_Essentials_Xamarin_Essentials_Map_OpenPlacemark_MapKit_MKPlacemark_Xamarin_Essentials_MapLaunchOptions_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Map_OpenPlacemark_MapKit_MKPlacemark_Xamarin_Essentials_MapLaunchOptions
+plt_Xamarin_Essentials_Xamarin_Essentials_Map_OpenPlacemark_MapKit_MKPlacemark_Xamarin_Essentials_MapLaunchOptions:
+_p_65:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 3848
-_p_68_plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string_Add_string_System_Collections_Generic_List_1_string_llvm:
-	.globl _p_68_plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string_Add_string_System_Collections_Generic_List_1_string_llvm
-.private_extern _p_68_plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string_Add_string_System_Collections_Generic_List_1_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string_Add_string_System_Collections_Generic_List_1_string
-plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string_Add_string_System_Collections_Generic_List_1_string:
-_p_68:
+.word 7019
+_p_66_plt_Xamarin_Essentials_MapKit_MKMapItem__ctor_MapKit_MKPlacemark_llvm:
+	.globl _p_66_plt_Xamarin_Essentials_MapKit_MKMapItem__ctor_MapKit_MKPlacemark_llvm
+.private_extern _p_66_plt_Xamarin_Essentials_MapKit_MKMapItem__ctor_MapKit_MKPlacemark_llvm
+	.no_dead_strip plt_Xamarin_Essentials_MapKit_MKMapItem__ctor_MapKit_MKPlacemark
+plt_Xamarin_Essentials_MapKit_MKMapItem__ctor_MapKit_MKPlacemark:
+_p_66:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 3860
-_p_69_plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string_get_Item_string_llvm:
-	.globl _p_69_plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string_get_Item_string_llvm
-.private_extern _p_69_plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string_get_Item_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string_get_Item_string
-plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string_get_Item_string:
-_p_69:
+.word 7021
+_p_67_plt_Xamarin_Essentials_MapKit_MKMapItem_set_Name_string_llvm:
+	.globl _p_67_plt_Xamarin_Essentials_MapKit_MKMapItem_set_Name_string_llvm
+.private_extern _p_67_plt_Xamarin_Essentials_MapKit_MKMapItem_set_Name_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_MapKit_MKMapItem_set_Name_string
+plt_Xamarin_Essentials_MapKit_MKMapItem_set_Name_string:
+_p_67:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 3871
-_p_70_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_CurrentVersion_llvm:
-	.globl _p_70_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_CurrentVersion_llvm
-.private_extern _p_70_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_CurrentVersion_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_CurrentVersion
-plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_CurrentVersion:
-_p_70:
+.word 7026
+_p_68_plt_Xamarin_Essentials_MapKit_MKMapItem_OpenMaps_MapKit_MKMapItem___MapKit_MKLaunchOptions_llvm:
+	.globl _p_68_plt_Xamarin_Essentials_MapKit_MKMapItem_OpenMaps_MapKit_MKMapItem___MapKit_MKLaunchOptions_llvm
+.private_extern _p_68_plt_Xamarin_Essentials_MapKit_MKMapItem_OpenMaps_MapKit_MKMapItem___MapKit_MKLaunchOptions_llvm
+	.no_dead_strip plt_Xamarin_Essentials_MapKit_MKMapItem_OpenMaps_MapKit_MKMapItem___MapKit_MKLaunchOptions
+plt_Xamarin_Essentials_MapKit_MKMapItem_OpenMaps_MapKit_MKMapItem___MapKit_MKLaunchOptions:
+_p_68:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 3882
-_p_71_plt_Xamarin_Essentials_System_Collections_Generic_List_1_string_Contains_string_llvm:
-	.globl _p_71_plt_Xamarin_Essentials_System_Collections_Generic_List_1_string_Contains_string_llvm
-.private_extern _p_71_plt_Xamarin_Essentials_System_Collections_Generic_List_1_string_Contains_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_System_Collections_Generic_List_1_string_Contains_string
-plt_Xamarin_Essentials_System_Collections_Generic_List_1_string_Contains_string:
-_p_71:
+.word 7031
+_p_69_plt_Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode__ctor_MapKit_MKDirectionsMode_llvm:
+	.globl _p_69_plt_Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode__ctor_MapKit_MKDirectionsMode_llvm
+.private_extern _p_69_plt_Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode__ctor_MapKit_MKDirectionsMode_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode__ctor_MapKit_MKDirectionsMode
+plt_Xamarin_Essentials_System_Nullable_1_MapKit_MKDirectionsMode__ctor_MapKit_MKDirectionsMode:
+_p_69:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 3884
-_p_72_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchForCurrentVersion_bool_llvm:
-	.globl _p_72_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchForCurrentVersion_bool_llvm
-.private_extern _p_72_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchForCurrentVersion_bool_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchForCurrentVersion_bool
-plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchForCurrentVersion_bool:
-_p_72:
+.word 7036
+_p_70_plt_Xamarin_Essentials_UIKit_UIDevice_get_CurrentDevice_llvm:
+	.globl _p_70_plt_Xamarin_Essentials_UIKit_UIDevice_get_CurrentDevice_llvm
+.private_extern _p_70_plt_Xamarin_Essentials_UIKit_UIDevice_get_CurrentDevice_llvm
+	.no_dead_strip plt_Xamarin_Essentials_UIKit_UIDevice_get_CurrentDevice
+plt_Xamarin_Essentials_UIKit_UIDevice_get_CurrentDevice:
+_p_70:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 3895
-_p_73_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchForCurrentVersion_llvm:
-	.globl _p_73_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchForCurrentVersion_llvm
-.private_extern _p_73_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchForCurrentVersion_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchForCurrentVersion
-plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchForCurrentVersion:
-_p_73:
+.word 7047
+_p_71_plt_Xamarin_Essentials_UIKit_UIDevice_CheckSystemVersion_int_int_llvm:
+	.globl _p_71_plt_Xamarin_Essentials_UIKit_UIDevice_CheckSystemVersion_int_int_llvm
+.private_extern _p_71_plt_Xamarin_Essentials_UIKit_UIDevice_CheckSystemVersion_int_int_llvm
+	.no_dead_strip plt_Xamarin_Essentials_UIKit_UIDevice_CheckSystemVersion_int_int
+plt_Xamarin_Essentials_UIKit_UIDevice_CheckSystemVersion_int_int:
+_p_71:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 3897
-_p_74_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_CurrentBuild_llvm:
-	.globl _p_74_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_CurrentBuild_llvm
-.private_extern _p_74_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_CurrentBuild_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_CurrentBuild
-plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_CurrentBuild:
-_p_74:
+.word 7052
+_p_72_plt_Xamarin_Essentials_UIKit_UIApplication_get_KeyWindow_llvm:
+	.globl _p_72_plt_Xamarin_Essentials_UIKit_UIApplication_get_KeyWindow_llvm
+.private_extern _p_72_plt_Xamarin_Essentials_UIKit_UIApplication_get_KeyWindow_llvm
+	.no_dead_strip plt_Xamarin_Essentials_UIKit_UIApplication_get_KeyWindow
+plt_Xamarin_Essentials_UIKit_UIApplication_get_KeyWindow:
+_p_72:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 3899
-_p_75_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchForCurrentBuild_bool_llvm:
-	.globl _p_75_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchForCurrentBuild_bool_llvm
-.private_extern _p_75_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchForCurrentBuild_bool_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchForCurrentBuild_bool
-plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchForCurrentBuild_bool:
-_p_75:
+.word 7057
+_p_73_plt_Xamarin_Essentials_UIKit_UIWindow_get_WindowLevel_llvm:
+	.globl _p_73_plt_Xamarin_Essentials_UIKit_UIWindow_get_WindowLevel_llvm
+.private_extern _p_73_plt_Xamarin_Essentials_UIKit_UIWindow_get_WindowLevel_llvm
+	.no_dead_strip plt_Xamarin_Essentials_UIKit_UIWindow_get_WindowLevel
+plt_Xamarin_Essentials_UIKit_UIWindow_get_WindowLevel:
+_p_73:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 3901
-_p_76_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchForCurrentBuild_llvm:
-	.globl _p_76_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchForCurrentBuild_llvm
-.private_extern _p_76_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchForCurrentBuild_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchForCurrentBuild
-plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchForCurrentBuild:
-_p_76:
+.word 7062
+_p_74_plt_Xamarin_Essentials_UIKit_UIWindowLevel_get_Normal_llvm:
+	.globl _p_74_plt_Xamarin_Essentials_UIKit_UIWindowLevel_get_Normal_llvm
+.private_extern _p_74_plt_Xamarin_Essentials_UIKit_UIWindowLevel_get_Normal_llvm
+	.no_dead_strip plt_Xamarin_Essentials_UIKit_UIWindowLevel_get_Normal
+plt_Xamarin_Essentials_UIKit_UIWindowLevel_get_Normal:
+_p_74:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 3903
-_p_77_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_WriteHistory_string_System_Collections_Generic_IEnumerable_1_string_llvm:
-	.globl _p_77_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_WriteHistory_string_System_Collections_Generic_IEnumerable_1_string_llvm
-.private_extern _p_77_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_WriteHistory_string_System_Collections_Generic_IEnumerable_1_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_WriteHistory_string_System_Collections_Generic_IEnumerable_1_string
-plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_WriteHistory_string_System_Collections_Generic_IEnumerable_1_string:
-_p_77:
+.word 7067
+_p_75_plt_Xamarin_Essentials_UIKit_UIViewController_get_PresentedViewController_llvm:
+	.globl _p_75_plt_Xamarin_Essentials_UIKit_UIViewController_get_PresentedViewController_llvm
+.private_extern _p_75_plt_Xamarin_Essentials_UIKit_UIViewController_get_PresentedViewController_llvm
+	.no_dead_strip plt_Xamarin_Essentials_UIKit_UIViewController_get_PresentedViewController
+plt_Xamarin_Essentials_UIKit_UIViewController_get_PresentedViewController:
+_p_75:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 3905
-_p_78_plt_Xamarin_Essentials_System_Collections_Generic_List_1_string_AddWithResize_string_llvm:
-	.globl _p_78_plt_Xamarin_Essentials_System_Collections_Generic_List_1_string_AddWithResize_string_llvm
-.private_extern _p_78_plt_Xamarin_Essentials_System_Collections_Generic_List_1_string_AddWithResize_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_System_Collections_Generic_List_1_string_AddWithResize_string
-plt_Xamarin_Essentials_System_Collections_Generic_List_1_string_AddWithResize_string:
-_p_78:
+.word 7072
+_p_76_plt_Xamarin_Essentials_UIKit_UIApplication_get_Windows_llvm:
+	.globl _p_76_plt_Xamarin_Essentials_UIKit_UIApplication_get_Windows_llvm
+.private_extern _p_76_plt_Xamarin_Essentials_UIKit_UIApplication_get_Windows_llvm
+	.no_dead_strip plt_Xamarin_Essentials_UIKit_UIApplication_get_Windows
+plt_Xamarin_Essentials_UIKit_UIApplication_get_Windows:
+_p_76:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 3907
-_p_79_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_VersionString_llvm:
-	.globl _p_79_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_VersionString_llvm
-.private_extern _p_79_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_VersionString_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_VersionString
-plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_VersionString:
-_p_79:
+.word 7077
+_p_77_plt_Xamarin_Essentials_System_Linq_Enumerable_OrderByDescending_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IEnumerable_1_UIKit_UIWindow_System_Func_2_UIKit_UIWindow_System_nfloat_llvm:
+	.globl _p_77_plt_Xamarin_Essentials_System_Linq_Enumerable_OrderByDescending_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IEnumerable_1_UIKit_UIWindow_System_Func_2_UIKit_UIWindow_System_nfloat_llvm
+.private_extern _p_77_plt_Xamarin_Essentials_System_Linq_Enumerable_OrderByDescending_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IEnumerable_1_UIKit_UIWindow_System_Func_2_UIKit_UIWindow_System_nfloat_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Linq_Enumerable_OrderByDescending_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IEnumerable_1_UIKit_UIWindow_System_Func_2_UIKit_UIWindow_System_nfloat
+plt_Xamarin_Essentials_System_Linq_Enumerable_OrderByDescending_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IEnumerable_1_UIKit_UIWindow_System_Func_2_UIKit_UIWindow_System_nfloat:
+_p_77:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 3929
-_p_80_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_BuildString_llvm:
-	.globl _p_80_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_BuildString_llvm
-.private_extern _p_80_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_BuildString_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_BuildString
-plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_BuildString:
-_p_80:
+.word 7082
+_p_78_plt_Xamarin_Essentials_System_Linq_Enumerable_FirstOrDefault_UIKit_UIWindow_System_Collections_Generic_IEnumerable_1_UIKit_UIWindow_System_Func_2_UIKit_UIWindow_bool_llvm:
+	.globl _p_78_plt_Xamarin_Essentials_System_Linq_Enumerable_FirstOrDefault_UIKit_UIWindow_System_Collections_Generic_IEnumerable_1_UIKit_UIWindow_System_Func_2_UIKit_UIWindow_bool_llvm
+.private_extern _p_78_plt_Xamarin_Essentials_System_Linq_Enumerable_FirstOrDefault_UIKit_UIWindow_System_Collections_Generic_IEnumerable_1_UIKit_UIWindow_System_Func_2_UIKit_UIWindow_bool_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Linq_Enumerable_FirstOrDefault_UIKit_UIWindow_System_Collections_Generic_IEnumerable_1_UIKit_UIWindow_System_Func_2_UIKit_UIWindow_bool
+plt_Xamarin_Essentials_System_Linq_Enumerable_FirstOrDefault_UIKit_UIWindow_System_Collections_Generic_IEnumerable_1_UIKit_UIWindow_System_Func_2_UIKit_UIWindow_bool:
+_p_78:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 3931
-_p_81_plt_Xamarin_Essentials_string_Split_char___System_StringSplitOptions_llvm:
-	.globl _p_81_plt_Xamarin_Essentials_string_Split_char___System_StringSplitOptions_llvm
-.private_extern _p_81_plt_Xamarin_Essentials_string_Split_char___System_StringSplitOptions_llvm
-	.no_dead_strip plt_Xamarin_Essentials_string_Split_char___System_StringSplitOptions
-plt_Xamarin_Essentials_string_Split_char___System_StringSplitOptions:
-_p_81:
+.word 7094
+_p_79_plt_Xamarin_Essentials_UIKit_UIWindow_get_RootViewController_llvm:
+	.globl _p_79_plt_Xamarin_Essentials_UIKit_UIWindow_get_RootViewController_llvm
+.private_extern _p_79_plt_Xamarin_Essentials_UIKit_UIWindow_get_RootViewController_llvm
+	.no_dead_strip plt_Xamarin_Essentials_UIKit_UIWindow_get_RootViewController
+plt_Xamarin_Essentials_UIKit_UIWindow_get_RootViewController:
+_p_79:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 3933
-_p_82_plt_Xamarin_Essentials_string_Join_string_System_Collections_Generic_IEnumerable_1_string_llvm:
-	.globl _p_82_plt_Xamarin_Essentials_string_Join_string_System_Collections_Generic_IEnumerable_1_string_llvm
-.private_extern _p_82_plt_Xamarin_Essentials_string_Join_string_System_Collections_Generic_IEnumerable_1_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_string_Join_string_System_Collections_Generic_IEnumerable_1_string
-plt_Xamarin_Essentials_string_Join_string_System_Collections_Generic_IEnumerable_1_string:
-_p_82:
+.word 7106
+_p_80_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_PackageName_llvm:
+	.globl _p_80_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_PackageName_llvm
+.private_extern _p_80_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_PackageName_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_PackageName
+plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_PackageName:
+_p_80:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 3938
-_p_83_plt_Xamarin_Essentials_System_Linq_Enumerable_LastOrDefault_CoreLocation_CLLocation_System_Collections_Generic_IEnumerable_1_CoreLocation_CLLocation_llvm:
-	.globl _p_83_plt_Xamarin_Essentials_System_Linq_Enumerable_LastOrDefault_CoreLocation_CLLocation_System_Collections_Generic_IEnumerable_1_CoreLocation_CLLocation_llvm
-.private_extern _p_83_plt_Xamarin_Essentials_System_Linq_Enumerable_LastOrDefault_CoreLocation_CLLocation_System_Collections_Generic_IEnumerable_1_CoreLocation_CLLocation_llvm
-	.no_dead_strip plt_Xamarin_Essentials_System_Linq_Enumerable_LastOrDefault_CoreLocation_CLLocation_System_Collections_Generic_IEnumerable_1_CoreLocation_CLLocation
-plt_Xamarin_Essentials_System_Linq_Enumerable_LastOrDefault_CoreLocation_CLLocation_System_Collections_Generic_IEnumerable_1_CoreLocation_CLLocation:
-_p_83:
+.word 7111
+_p_81_plt_Xamarin_Essentials_string_Concat_string_string_string_llvm:
+	.globl _p_81_plt_Xamarin_Essentials_string_Concat_string_string_string_llvm
+.private_extern _p_81_plt_Xamarin_Essentials_string_Concat_string_string_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_string_Concat_string_string_string
+plt_Xamarin_Essentials_string_Concat_string_string_string:
+_p_81:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 3943
-_p_84_plt_Xamarin_Essentials_CoreLocation_CLLocationManagerDelegate__ctor_llvm:
-	.globl _p_84_plt_Xamarin_Essentials_CoreLocation_CLLocationManagerDelegate__ctor_llvm
-.private_extern _p_84_plt_Xamarin_Essentials_CoreLocation_CLLocationManagerDelegate__ctor_llvm
-	.no_dead_strip plt_Xamarin_Essentials_CoreLocation_CLLocationManagerDelegate__ctor
-plt_Xamarin_Essentials_CoreLocation_CLLocationManagerDelegate__ctor:
-_p_84:
+.word 7113
+_p_82_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Clear_string_llvm:
+	.globl _p_82_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Clear_string_llvm
+.private_extern _p_82_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Clear_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Clear_string
+plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Clear_string:
+_p_82:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 3955
-_p_85_plt_Xamarin_Essentials_UIKit_UIActivityItemSource__ctor_llvm:
-	.globl _p_85_plt_Xamarin_Essentials_UIKit_UIActivityItemSource__ctor_llvm
-.private_extern _p_85_plt_Xamarin_Essentials_UIKit_UIActivityItemSource__ctor_llvm
-	.no_dead_strip plt_Xamarin_Essentials_UIKit_UIActivityItemSource__ctor
-plt_Xamarin_Essentials_UIKit_UIActivityItemSource__ctor:
-_p_85:
+.word 7118
+_p_83_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Get_string_string_string_llvm:
+	.globl _p_83_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Get_string_string_string_llvm
+.private_extern _p_83_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Get_string_string_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Get_string_string_string
+plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Get_string_string_string:
+_p_83:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 3960
-_p_86_plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability__ctor_string_llvm:
-	.globl _p_86_plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability__ctor_string_llvm
-.private_extern _p_86_plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability__ctor_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability__ctor_string
-plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability__ctor_string:
-_p_86:
+.word 7120
+_p_84_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Get_string_bool_string_llvm:
+	.globl _p_84_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Get_string_bool_string_llvm
+.private_extern _p_84_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Get_string_bool_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Get_string_bool_string
+plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Get_string_bool_string:
+_p_84:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 3965
-_p_87_plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability_TryGetFlags_SystemConfiguration_NetworkReachabilityFlags__llvm:
-	.globl _p_87_plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability_TryGetFlags_SystemConfiguration_NetworkReachabilityFlags__llvm
-.private_extern _p_87_plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability_TryGetFlags_SystemConfiguration_NetworkReachabilityFlags__llvm
-	.no_dead_strip plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability_TryGetFlags_SystemConfiguration_NetworkReachabilityFlags_
-plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability_TryGetFlags_SystemConfiguration_NetworkReachabilityFlags_:
-_p_87:
+.word 7122
+_p_85_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Set_string_string_string_llvm:
+	.globl _p_85_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Set_string_string_string_llvm
+.private_extern _p_85_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Set_string_string_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Set_string_string_string
+plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Set_string_string_string:
+_p_85:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 3970
-_p_88_plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_IsReachableWithoutRequiringConnection_SystemConfiguration_NetworkReachabilityFlags_llvm:
-	.globl _p_88_plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_IsReachableWithoutRequiringConnection_SystemConfiguration_NetworkReachabilityFlags_llvm
-.private_extern _p_88_plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_IsReachableWithoutRequiringConnection_SystemConfiguration_NetworkReachabilityFlags_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_IsReachableWithoutRequiringConnection_SystemConfiguration_NetworkReachabilityFlags
-plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_IsReachableWithoutRequiringConnection_SystemConfiguration_NetworkReachabilityFlags:
-_p_88:
+.word 7124
+_p_86_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Set_string_bool_string_llvm:
+	.globl _p_86_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Set_string_bool_string_llvm
+.private_extern _p_86_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Set_string_bool_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Set_string_bool_string
+plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_Set_string_bool_string:
+_p_86:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 3975
-_p_89_plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_IsNetworkAvailable_SystemConfiguration_NetworkReachabilityFlags__llvm:
-	.globl _p_89_plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_IsNetworkAvailable_SystemConfiguration_NetworkReachabilityFlags__llvm
-.private_extern _p_89_plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_IsNetworkAvailable_SystemConfiguration_NetworkReachabilityFlags__llvm
-	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_IsNetworkAvailable_SystemConfiguration_NetworkReachabilityFlags_
-plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_IsNetworkAvailable_SystemConfiguration_NetworkReachabilityFlags_:
-_p_89:
+.word 7126
+_p_87_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformContainsKey_string_string_llvm:
+	.globl _p_87_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformContainsKey_string_string_llvm
+.private_extern _p_87_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformContainsKey_string_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformContainsKey_string_string
+plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformContainsKey_string_string:
+_p_87:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 3977
-_p_90_plt_Xamarin_Essentials_System_Net_IPAddress__ctor_long_llvm:
-	.globl _p_90_plt_Xamarin_Essentials_System_Net_IPAddress__ctor_long_llvm
-.private_extern _p_90_plt_Xamarin_Essentials_System_Net_IPAddress__ctor_long_llvm
-	.no_dead_strip plt_Xamarin_Essentials_System_Net_IPAddress__ctor_long
-plt_Xamarin_Essentials_System_Net_IPAddress__ctor_long:
-_p_90:
+.word 7128
+_p_88_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformClear_string_llvm:
+	.globl _p_88_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformClear_string_llvm
+.private_extern _p_88_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformClear_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformClear_string
+plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformClear_string:
+_p_88:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 3979
-_p_91_plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability__ctor_System_Net_IPAddress_llvm:
-	.globl _p_91_plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability__ctor_System_Net_IPAddress_llvm
-.private_extern _p_91_plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability__ctor_System_Net_IPAddress_llvm
-	.no_dead_strip plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability__ctor_System_Net_IPAddress
-plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability__ctor_System_Net_IPAddress:
-_p_91:
+.word 7130
+_p_89_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformGet_string_string_string_string_llvm:
+	.globl _p_89_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformGet_string_string_string_string_llvm
+.private_extern _p_89_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformGet_string_string_string_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformGet_string_string_string_string
+plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformGet_string_string_string_string:
+_p_89:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 3984
-_p_92_plt_Xamarin_Essentials_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue_llvm:
-	.globl _p_92_plt_Xamarin_Essentials_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue_llvm
-.private_extern _p_92_plt_Xamarin_Essentials_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue_llvm
-	.no_dead_strip plt_Xamarin_Essentials_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue
-plt_Xamarin_Essentials_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue:
-_p_92:
+.word 7132
+_p_90_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformGet_bool_string_bool_string_llvm:
+	.globl _p_90_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformGet_bool_string_bool_string_llvm
+.private_extern _p_90_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformGet_bool_string_bool_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformGet_bool_string_bool_string
+plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformGet_bool_string_bool_string:
+_p_90:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 3989
-_p_93_plt_Xamarin_Essentials_System_Enum_ToString_llvm:
-	.globl _p_93_plt_Xamarin_Essentials_System_Enum_ToString_llvm
-.private_extern _p_93_plt_Xamarin_Essentials_System_Enum_ToString_llvm
-	.no_dead_strip plt_Xamarin_Essentials_System_Enum_ToString
-plt_Xamarin_Essentials_System_Enum_ToString:
-_p_93:
+.word 7144
+_p_91_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformSet_string_string_string_string_llvm:
+	.globl _p_91_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformSet_string_string_string_string_llvm
+.private_extern _p_91_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformSet_string_string_string_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformSet_string_string_string_string
+plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformSet_string_string_string_string:
+_p_91:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 3994
-_p_94_plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_0_llvm:
-	.globl _p_94_plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_0_llvm
-.private_extern _p_94_plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_0_llvm
-	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_0
-plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_0:
-_p_94:
+.word 7156
+_p_92_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformSet_bool_string_bool_string_llvm:
+	.globl _p_92_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformSet_bool_string_bool_string_llvm
+.private_extern _p_92_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformSet_bool_string_bool_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformSet_bool_string_bool_string
+plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_PlatformSet_bool_string_bool_string:
+_p_92:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 3999
-_p_95_plt_Xamarin_Essentials__rgctx_fetch_0_llvm:
-	.globl _p_95_plt_Xamarin_Essentials__rgctx_fetch_0_llvm
-.private_extern _p_95_plt_Xamarin_Essentials__rgctx_fetch_0_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_0
-plt_Xamarin_Essentials__rgctx_fetch_0:
-_p_95:
+.word 7168
+_p_93_plt_Xamarin_Essentials__jit_icall_mono_monitor_enter_v4_fast_llvm:
+	.globl _p_93_plt_Xamarin_Essentials__jit_icall_mono_monitor_enter_v4_fast_llvm
+.private_extern _p_93_plt_Xamarin_Essentials__jit_icall_mono_monitor_enter_v4_fast_llvm
+	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_monitor_enter_v4_fast
+plt_Xamarin_Essentials__jit_icall_mono_monitor_enter_v4_fast:
+_p_93:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 4062
-_p_96_plt_Xamarin_Essentials_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm:
-	.globl _p_96_plt_Xamarin_Essentials_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm
-.private_extern _p_96_plt_Xamarin_Essentials_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm
-	.no_dead_strip plt_Xamarin_Essentials_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
-plt_Xamarin_Essentials_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
-_p_96:
+.word 7180
+_p_94_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_GetUserDefaults_string_llvm:
+	.globl _p_94_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_GetUserDefaults_string_llvm
+.private_extern _p_94_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_GetUserDefaults_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_GetUserDefaults_string
+plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_GetUserDefaults_string:
+_p_94:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 4070
-_p_97_plt_Xamarin_Essentials__rgctx_fetch_1_llvm:
-	.globl _p_97_plt_Xamarin_Essentials__rgctx_fetch_1_llvm
-.private_extern _p_97_plt_Xamarin_Essentials__rgctx_fetch_1_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_1
-plt_Xamarin_Essentials__rgctx_fetch_1:
-_p_97:
+.word 7209
+_p_95_plt_Xamarin_Essentials_Foundation_NSUserDefaults_get_Item_string_llvm:
+	.globl _p_95_plt_Xamarin_Essentials_Foundation_NSUserDefaults_get_Item_string_llvm
+.private_extern _p_95_plt_Xamarin_Essentials_Foundation_NSUserDefaults_get_Item_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_get_Item_string
+plt_Xamarin_Essentials_Foundation_NSUserDefaults_get_Item_string:
+_p_95:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 4078
-_p_98_plt_Xamarin_Essentials__rgctx_fetch_2_llvm:
-	.globl _p_98_plt_Xamarin_Essentials__rgctx_fetch_2_llvm
-.private_extern _p_98_plt_Xamarin_Essentials__rgctx_fetch_2_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_2
-plt_Xamarin_Essentials__rgctx_fetch_2:
-_p_98:
+.word 7211
+_p_96_plt_Xamarin_Essentials__jit_icall_ves_icall_thread_finish_async_abort_llvm:
+	.globl _p_96_plt_Xamarin_Essentials__jit_icall_ves_icall_thread_finish_async_abort_llvm
+.private_extern _p_96_plt_Xamarin_Essentials__jit_icall_ves_icall_thread_finish_async_abort_llvm
+	.no_dead_strip plt_Xamarin_Essentials__jit_icall_ves_icall_thread_finish_async_abort
+plt_Xamarin_Essentials__jit_icall_ves_icall_thread_finish_async_abort:
+_p_96:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 4086
-_p_99_plt_Xamarin_Essentials__rgctx_fetch_3_llvm:
-	.globl _p_99_plt_Xamarin_Essentials__rgctx_fetch_3_llvm
-.private_extern _p_99_plt_Xamarin_Essentials__rgctx_fetch_3_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_3
-plt_Xamarin_Essentials__rgctx_fetch_3:
-_p_99:
+.word 7216
+_p_97_plt_Xamarin_Essentials__jit_icall_mono_monitor_enter_v4_internal_llvm:
+	.globl _p_97_plt_Xamarin_Essentials__jit_icall_mono_monitor_enter_v4_internal_llvm
+.private_extern _p_97_plt_Xamarin_Essentials__jit_icall_mono_monitor_enter_v4_internal_llvm
+	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_monitor_enter_v4_internal
+plt_Xamarin_Essentials__jit_icall_mono_monitor_enter_v4_internal:
+_p_97:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 4094
-_p_100_plt_Xamarin_Essentials__rgctx_fetch_4_llvm:
-	.globl _p_100_plt_Xamarin_Essentials__rgctx_fetch_4_llvm
-.private_extern _p_100_plt_Xamarin_Essentials__rgctx_fetch_4_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_4
-plt_Xamarin_Essentials__rgctx_fetch_4:
-_p_100:
+.word 7254
+_p_98_plt_Xamarin_Essentials_System_Threading_Monitor_Exit_object_llvm:
+	.globl _p_98_plt_Xamarin_Essentials_System_Threading_Monitor_Exit_object_llvm
+.private_extern _p_98_plt_Xamarin_Essentials_System_Threading_Monitor_Exit_object_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Monitor_Exit_object
+plt_Xamarin_Essentials_System_Threading_Monitor_Exit_object:
+_p_98:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 4168
-_p_101_plt_Xamarin_Essentials__rgctx_fetch_5_llvm:
-	.globl _p_101_plt_Xamarin_Essentials__rgctx_fetch_5_llvm
-.private_extern _p_101_plt_Xamarin_Essentials__rgctx_fetch_5_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_5
-plt_Xamarin_Essentials__rgctx_fetch_5:
-_p_101:
+.word 7287
+_p_99_plt_Xamarin_Essentials__jit_icall_llvm_resume_unwind_trampoline_llvm:
+	.globl _p_99_plt_Xamarin_Essentials__jit_icall_llvm_resume_unwind_trampoline_llvm
+.private_extern _p_99_plt_Xamarin_Essentials__jit_icall_llvm_resume_unwind_trampoline_llvm
+	.no_dead_strip plt_Xamarin_Essentials__jit_icall_llvm_resume_unwind_trampoline
+plt_Xamarin_Essentials__jit_icall_llvm_resume_unwind_trampoline:
+_p_99:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 4176
-_p_102_plt_Xamarin_Essentials__rgctx_fetch_6_llvm:
-	.globl _p_102_plt_Xamarin_Essentials__rgctx_fetch_6_llvm
-.private_extern _p_102_plt_Xamarin_Essentials__rgctx_fetch_6_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_6
-plt_Xamarin_Essentials__rgctx_fetch_6:
-_p_102:
+.word 7292
+_p_100_plt_Xamarin_Essentials_Foundation_NSUserDefaults_get_StandardUserDefaults_llvm:
+	.globl _p_100_plt_Xamarin_Essentials_Foundation_NSUserDefaults_get_StandardUserDefaults_llvm
+.private_extern _p_100_plt_Xamarin_Essentials_Foundation_NSUserDefaults_get_StandardUserDefaults_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_get_StandardUserDefaults
+plt_Xamarin_Essentials_Foundation_NSUserDefaults_get_StandardUserDefaults:
+_p_100:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 4208
-_p_103_plt_Xamarin_Essentials__rgctx_fetch_7_llvm:
-	.globl _p_103_plt_Xamarin_Essentials__rgctx_fetch_7_llvm
-.private_extern _p_103_plt_Xamarin_Essentials__rgctx_fetch_7_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_7
-plt_Xamarin_Essentials__rgctx_fetch_7:
-_p_103:
+.word 7324
+_p_101_plt_Xamarin_Essentials_Foundation_NSUserDefaults__ctor_string_Foundation_NSUserDefaultsType_llvm:
+	.globl _p_101_plt_Xamarin_Essentials_Foundation_NSUserDefaults__ctor_string_Foundation_NSUserDefaultsType_llvm
+.private_extern _p_101_plt_Xamarin_Essentials_Foundation_NSUserDefaults__ctor_string_Foundation_NSUserDefaultsType_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults__ctor_string_Foundation_NSUserDefaultsType
+plt_Xamarin_Essentials_Foundation_NSUserDefaults__ctor_string_Foundation_NSUserDefaultsType:
+_p_101:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 4216
-_p_104_plt_Xamarin_Essentials__rgctx_fetch_8_llvm:
-	.globl _p_104_plt_Xamarin_Essentials__rgctx_fetch_8_llvm
-.private_extern _p_104_plt_Xamarin_Essentials__rgctx_fetch_8_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_8
-plt_Xamarin_Essentials__rgctx_fetch_8:
-_p_104:
+.word 7329
+_p_102_plt_Xamarin_Essentials_object_Equals_object_object_llvm:
+	.globl _p_102_plt_Xamarin_Essentials_object_Equals_object_object_llvm
+.private_extern _p_102_plt_Xamarin_Essentials_object_Equals_object_object_llvm
+	.no_dead_strip plt_Xamarin_Essentials_object_Equals_object_object
+plt_Xamarin_Essentials_object_Equals_object_object:
+_p_102:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 4248
-_p_105_plt_Xamarin_Essentials__rgctx_fetch_9_llvm:
-	.globl _p_105_plt_Xamarin_Essentials__rgctx_fetch_9_llvm
-.private_extern _p_105_plt_Xamarin_Essentials__rgctx_fetch_9_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_9
-plt_Xamarin_Essentials__rgctx_fetch_9:
-_p_105:
+.word 7334
+_p_103_plt_Xamarin_Essentials_Xamarin_Essentials_DisplayInfo_Equals_Xamarin_Essentials_DisplayInfo_llvm:
+	.globl _p_103_plt_Xamarin_Essentials_Xamarin_Essentials_DisplayInfo_Equals_Xamarin_Essentials_DisplayInfo_llvm
+.private_extern _p_103_plt_Xamarin_Essentials_Xamarin_Essentials_DisplayInfo_Equals_Xamarin_Essentials_DisplayInfo_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_DisplayInfo_Equals_Xamarin_Essentials_DisplayInfo
+plt_Xamarin_Essentials_Xamarin_Essentials_DisplayInfo_Equals_Xamarin_Essentials_DisplayInfo:
+_p_103:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 4256
-_p_106_plt_Xamarin_Essentials__rgctx_fetch_10_llvm:
-	.globl _p_106_plt_Xamarin_Essentials__rgctx_fetch_10_llvm
-.private_extern _p_106_plt_Xamarin_Essentials__rgctx_fetch_10_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_10
-plt_Xamarin_Essentials__rgctx_fetch_10:
-_p_106:
+.word 7339
+_p_104_plt_Xamarin_Essentials_double_Equals_double_llvm:
+	.globl _p_104_plt_Xamarin_Essentials_double_Equals_double_llvm
+.private_extern _p_104_plt_Xamarin_Essentials_double_Equals_double_llvm
+	.no_dead_strip plt_Xamarin_Essentials_double_Equals_double
+plt_Xamarin_Essentials_double_Equals_double:
+_p_104:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 4288
-_p_107_plt_Xamarin_Essentials__rgctx_fetch_11_llvm:
-	.globl _p_107_plt_Xamarin_Essentials__rgctx_fetch_11_llvm
-.private_extern _p_107_plt_Xamarin_Essentials__rgctx_fetch_11_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_11
-plt_Xamarin_Essentials__rgctx_fetch_11:
-_p_107:
+.word 7341
+_p_105_plt_Xamarin_Essentials_System_Enum_Equals_object_llvm:
+	.globl _p_105_plt_Xamarin_Essentials_System_Enum_Equals_object_llvm
+.private_extern _p_105_plt_Xamarin_Essentials_System_Enum_Equals_object_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Enum_Equals_object
+plt_Xamarin_Essentials_System_Enum_Equals_object:
+_p_105:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 4296
-_p_108_plt_Xamarin_Essentials__rgctx_fetch_12_llvm:
-	.globl _p_108_plt_Xamarin_Essentials__rgctx_fetch_12_llvm
-.private_extern _p_108_plt_Xamarin_Essentials__rgctx_fetch_12_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_12
-plt_Xamarin_Essentials__rgctx_fetch_12:
-_p_108:
+.word 7346
+_p_106_plt_Xamarin_Essentials_System_ValueTuple_5_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation__ctor_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation_llvm:
+	.globl _p_106_plt_Xamarin_Essentials_System_ValueTuple_5_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation__ctor_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation_llvm
+.private_extern _p_106_plt_Xamarin_Essentials_System_ValueTuple_5_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation__ctor_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_ValueTuple_5_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation__ctor_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation
+plt_Xamarin_Essentials_System_ValueTuple_5_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation__ctor_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation:
+_p_106:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 4328
-_p_109_plt_Xamarin_Essentials__rgctx_fetch_13_llvm:
-	.globl _p_109_plt_Xamarin_Essentials__rgctx_fetch_13_llvm
-.private_extern _p_109_plt_Xamarin_Essentials__rgctx_fetch_13_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_13
-plt_Xamarin_Essentials__rgctx_fetch_13:
-_p_109:
+.word 7351
+_p_107_plt_Xamarin_Essentials_System_ValueTuple_5_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation_GetHashCode_llvm:
+	.globl _p_107_plt_Xamarin_Essentials_System_ValueTuple_5_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation_GetHashCode_llvm
+.private_extern _p_107_plt_Xamarin_Essentials_System_ValueTuple_5_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation_GetHashCode_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_ValueTuple_5_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation_GetHashCode
+plt_Xamarin_Essentials_System_ValueTuple_5_double_double_double_Xamarin_Essentials_DisplayOrientation_Xamarin_Essentials_DisplayRotation_GetHashCode:
+_p_107:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 4336
-_p_110_plt_Xamarin_Essentials__rgctx_fetch_14_llvm:
-	.globl _p_110_plt_Xamarin_Essentials__rgctx_fetch_14_llvm
-.private_extern _p_110_plt_Xamarin_Essentials__rgctx_fetch_14_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_14
-plt_Xamarin_Essentials__rgctx_fetch_14:
-_p_110:
+.word 7362
+_p_108_plt_Xamarin_Essentials_string_Format_string_object___llvm:
+	.globl _p_108_plt_Xamarin_Essentials_string_Format_string_object___llvm
+.private_extern _p_108_plt_Xamarin_Essentials_string_Format_string_object___llvm
+	.no_dead_strip plt_Xamarin_Essentials_string_Format_string_object__
+plt_Xamarin_Essentials_string_Format_string_object__:
+_p_108:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 4389
-_p_111_plt_Xamarin_Essentials__rgctx_fetch_15_llvm:
-	.globl _p_111_plt_Xamarin_Essentials__rgctx_fetch_15_llvm
-.private_extern _p_111_plt_Xamarin_Essentials__rgctx_fetch_15_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_15
-plt_Xamarin_Essentials__rgctx_fetch_15:
-_p_111:
+.word 7396
+_p_109_plt_Xamarin_Essentials_string_Format_string_object_object_llvm:
+	.globl _p_109_plt_Xamarin_Essentials_string_Format_string_object_object_llvm
+.private_extern _p_109_plt_Xamarin_Essentials_string_Format_string_object_object_llvm
+	.no_dead_strip plt_Xamarin_Essentials_string_Format_string_object_object
+plt_Xamarin_Essentials_string_Format_string_object_object:
+_p_109:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 4397
-_p_112_plt_Xamarin_Essentials__rgctx_fetch_16_llvm:
-	.globl _p_112_plt_Xamarin_Essentials__rgctx_fetch_16_llvm
-.private_extern _p_112_plt_Xamarin_Essentials__rgctx_fetch_16_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_16
-plt_Xamarin_Essentials__rgctx_fetch_16:
-_p_112:
+.word 7401
+_p_110_plt_Xamarin_Essentials_System_DateTimeOffset_get_UtcNow_llvm:
+	.globl _p_110_plt_Xamarin_Essentials_System_DateTimeOffset_get_UtcNow_llvm
+.private_extern _p_110_plt_Xamarin_Essentials_System_DateTimeOffset_get_UtcNow_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_DateTimeOffset_get_UtcNow
+plt_Xamarin_Essentials_System_DateTimeOffset_get_UtcNow:
+_p_110:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 4405
-_p_113_plt_Xamarin_Essentials__rgctx_fetch_17_llvm:
-	.globl _p_113_plt_Xamarin_Essentials__rgctx_fetch_17_llvm
-.private_extern _p_113_plt_Xamarin_Essentials__rgctx_fetch_17_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_17
-plt_Xamarin_Essentials__rgctx_fetch_17:
-_p_113:
+.word 7406
+_p_111_plt_Xamarin_Essentials_string_Concat_string_string_string_string_llvm:
+	.globl _p_111_plt_Xamarin_Essentials_string_Concat_string_string_string_string_llvm
+.private_extern _p_111_plt_Xamarin_Essentials_string_Concat_string_string_string_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_string_Concat_string_string_string_string
+plt_Xamarin_Essentials_string_Concat_string_string_string_string:
+_p_111:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 4413
-_p_114_plt_Xamarin_Essentials__rgctx_fetch_18_llvm:
-	.globl _p_114_plt_Xamarin_Essentials__rgctx_fetch_18_llvm
-.private_extern _p_114_plt_Xamarin_Essentials__rgctx_fetch_18_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_18
-plt_Xamarin_Essentials__rgctx_fetch_18:
-_p_114:
+.word 7411
+_p_112_plt_Xamarin_Essentials_System_Drawing_Color_get_R_llvm:
+	.globl _p_112_plt_Xamarin_Essentials_System_Drawing_Color_get_R_llvm
+.private_extern _p_112_plt_Xamarin_Essentials_System_Drawing_Color_get_R_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Drawing_Color_get_R
+plt_Xamarin_Essentials_System_Drawing_Color_get_R:
+_p_112:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 4421
-_p_115_plt_Xamarin_Essentials__rgctx_fetch_19_llvm:
-	.globl _p_115_plt_Xamarin_Essentials__rgctx_fetch_19_llvm
-.private_extern _p_115_plt_Xamarin_Essentials__rgctx_fetch_19_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_19
-plt_Xamarin_Essentials__rgctx_fetch_19:
-_p_115:
+.word 7416
+_p_113_plt_Xamarin_Essentials_System_Drawing_Color_get_G_llvm:
+	.globl _p_113_plt_Xamarin_Essentials_System_Drawing_Color_get_G_llvm
+.private_extern _p_113_plt_Xamarin_Essentials_System_Drawing_Color_get_G_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Drawing_Color_get_G
+plt_Xamarin_Essentials_System_Drawing_Color_get_G:
+_p_113:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 4429
-_p_116_plt_Xamarin_Essentials__rgctx_fetch_20_llvm:
-	.globl _p_116_plt_Xamarin_Essentials__rgctx_fetch_20_llvm
-.private_extern _p_116_plt_Xamarin_Essentials__rgctx_fetch_20_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_20
-plt_Xamarin_Essentials__rgctx_fetch_20:
-_p_116:
+.word 7421
+_p_114_plt_Xamarin_Essentials_System_Drawing_Color_get_B_llvm:
+	.globl _p_114_plt_Xamarin_Essentials_System_Drawing_Color_get_B_llvm
+.private_extern _p_114_plt_Xamarin_Essentials_System_Drawing_Color_get_B_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Drawing_Color_get_B
+plt_Xamarin_Essentials_System_Drawing_Color_get_B:
+_p_114:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 4437
-_p_117_plt_Xamarin_Essentials__rgctx_fetch_21_llvm:
-	.globl _p_117_plt_Xamarin_Essentials__rgctx_fetch_21_llvm
-.private_extern _p_117_plt_Xamarin_Essentials__rgctx_fetch_21_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_21
-plt_Xamarin_Essentials__rgctx_fetch_21:
-_p_117:
+.word 7426
+_p_115_plt_Xamarin_Essentials_System_Drawing_Color_get_A_llvm:
+	.globl _p_115_plt_Xamarin_Essentials_System_Drawing_Color_get_A_llvm
+.private_extern _p_115_plt_Xamarin_Essentials_System_Drawing_Color_get_A_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Drawing_Color_get_A
+plt_Xamarin_Essentials_System_Drawing_Color_get_A:
+_p_115:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 4475
-_p_118_plt_Xamarin_Essentials__rgctx_fetch_22_llvm:
-	.globl _p_118_plt_Xamarin_Essentials__rgctx_fetch_22_llvm
-.private_extern _p_118_plt_Xamarin_Essentials__rgctx_fetch_22_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_22
-plt_Xamarin_Essentials__rgctx_fetch_22:
-_p_118:
+.word 7431
+_p_116_plt_Xamarin_Essentials_UIKit_UIColor__ctor_System_nfloat_System_nfloat_System_nfloat_System_nfloat_llvm:
+	.globl _p_116_plt_Xamarin_Essentials_UIKit_UIColor__ctor_System_nfloat_System_nfloat_System_nfloat_System_nfloat_llvm
+.private_extern _p_116_plt_Xamarin_Essentials_UIKit_UIColor__ctor_System_nfloat_System_nfloat_System_nfloat_System_nfloat_llvm
+	.no_dead_strip plt_Xamarin_Essentials_UIKit_UIColor__ctor_System_nfloat_System_nfloat_System_nfloat_System_nfloat
+plt_Xamarin_Essentials_UIKit_UIColor__ctor_System_nfloat_System_nfloat_System_nfloat_System_nfloat:
+_p_116:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 4483
-_p_119_plt_Xamarin_Essentials__rgctx_fetch_23_llvm:
-	.globl _p_119_plt_Xamarin_Essentials__rgctx_fetch_23_llvm
-.private_extern _p_119_plt_Xamarin_Essentials__rgctx_fetch_23_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_23
-plt_Xamarin_Essentials__rgctx_fetch_23:
-_p_119:
+.word 7436
+_p_117_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_GetPrivatePreferencesSharedName_string_llvm:
+	.globl _p_117_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_GetPrivatePreferencesSharedName_string_llvm
+.private_extern _p_117_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_GetPrivatePreferencesSharedName_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_GetPrivatePreferencesSharedName_string
+plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_GetPrivatePreferencesSharedName_string:
+_p_117:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 4491
-_p_120_plt_Xamarin_Essentials__rgctx_fetch_24_llvm:
-	.globl _p_120_plt_Xamarin_Essentials__rgctx_fetch_24_llvm
-.private_extern _p_120_plt_Xamarin_Essentials__rgctx_fetch_24_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_24
-plt_Xamarin_Essentials__rgctx_fetch_24:
-_p_120:
+.word 7441
+_p_118_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_ContainsKey_string_string_llvm:
+	.globl _p_118_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_ContainsKey_string_string_llvm
+.private_extern _p_118_plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_ContainsKey_string_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_ContainsKey_string_string
+plt_Xamarin_Essentials_Xamarin_Essentials_Preferences_ContainsKey_string_string:
+_p_118:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 4499
-_p_121_plt_Xamarin_Essentials__jit_icall_mono_helper_ldstr_mscorlib_llvm:
-	.globl _p_121_plt_Xamarin_Essentials__jit_icall_mono_helper_ldstr_mscorlib_llvm
-.private_extern _p_121_plt_Xamarin_Essentials__jit_icall_mono_helper_ldstr_mscorlib_llvm
-	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_helper_ldstr_mscorlib
-plt_Xamarin_Essentials__jit_icall_mono_helper_ldstr_mscorlib:
-_p_121:
+.word 7443
+_p_119_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchEver_bool_llvm:
+	.globl _p_119_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchEver_bool_llvm
+.private_extern _p_119_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchEver_bool_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchEver_bool
+plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchEver_bool:
+_p_119:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 4534
-_p_122_plt_Xamarin_Essentials_SR_Format_string_object_llvm:
-	.globl _p_122_plt_Xamarin_Essentials_SR_Format_string_object_llvm
-.private_extern _p_122_plt_Xamarin_Essentials_SR_Format_string_object_llvm
-	.no_dead_strip plt_Xamarin_Essentials_SR_Format_string_object
-plt_Xamarin_Essentials_SR_Format_string_object:
-_p_122:
+.word 7445
+_p_120_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchEver_llvm:
+	.globl _p_120_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchEver_llvm
+.private_extern _p_120_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchEver_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchEver
+plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchEver:
+_p_120:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 4563
-_p_123_plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_2_llvm:
-	.globl _p_123_plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_2_llvm
-.private_extern _p_123_plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_2_llvm
-	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_2
-plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_2:
-_p_123:
+.word 7447
+_p_121_plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string__ctor_llvm:
+	.globl _p_121_plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string__ctor_llvm
+.private_extern _p_121_plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string__ctor_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string__ctor
+plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string__ctor:
+_p_121:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 4568
-_p_124_plt_Xamarin_Essentials__rgctx_fetch_25_llvm:
-	.globl _p_124_plt_Xamarin_Essentials__rgctx_fetch_25_llvm
-.private_extern _p_124_plt_Xamarin_Essentials__rgctx_fetch_25_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_25
-plt_Xamarin_Essentials__rgctx_fetch_25:
-_p_124:
+.word 7449
+_p_122_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_ReadHistory_string_llvm:
+	.globl _p_122_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_ReadHistory_string_llvm
+.private_extern _p_122_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_ReadHistory_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_ReadHistory_string
+plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_ReadHistory_string:
+_p_122:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 4640
-_p_125_plt_Xamarin_Essentials__rgctx_fetch_26_llvm:
-	.globl _p_125_plt_Xamarin_Essentials__rgctx_fetch_26_llvm
-.private_extern _p_125_plt_Xamarin_Essentials__rgctx_fetch_26_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_26
-plt_Xamarin_Essentials__rgctx_fetch_26:
-_p_125:
+.word 7460
+_p_123_plt_Xamarin_Essentials_System_Linq_Enumerable_ToList_string_System_Collections_Generic_IEnumerable_1_string_llvm:
+	.globl _p_123_plt_Xamarin_Essentials_System_Linq_Enumerable_ToList_string_System_Collections_Generic_IEnumerable_1_string_llvm
+.private_extern _p_123_plt_Xamarin_Essentials_System_Linq_Enumerable_ToList_string_System_Collections_Generic_IEnumerable_1_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Linq_Enumerable_ToList_string_System_Collections_Generic_IEnumerable_1_string
+plt_Xamarin_Essentials_System_Linq_Enumerable_ToList_string_System_Collections_Generic_IEnumerable_1_string:
+_p_123:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 4648
-_p_126_plt_Xamarin_Essentials__rgctx_fetch_27_llvm:
-	.globl _p_126_plt_Xamarin_Essentials__rgctx_fetch_27_llvm
-.private_extern _p_126_plt_Xamarin_Essentials__rgctx_fetch_27_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_27
-plt_Xamarin_Essentials__rgctx_fetch_27:
-_p_126:
+.word 7462
+_p_124_plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string_Add_string_System_Collections_Generic_List_1_string_llvm:
+	.globl _p_124_plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string_Add_string_System_Collections_Generic_List_1_string_llvm
+.private_extern _p_124_plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string_Add_string_System_Collections_Generic_List_1_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string_Add_string_System_Collections_Generic_List_1_string
+plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string_Add_string_System_Collections_Generic_List_1_string:
+_p_124:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 4680
-_p_127_plt_Xamarin_Essentials__rgctx_fetch_28_llvm:
-	.globl _p_127_plt_Xamarin_Essentials__rgctx_fetch_28_llvm
-.private_extern _p_127_plt_Xamarin_Essentials__rgctx_fetch_28_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_28
-plt_Xamarin_Essentials__rgctx_fetch_28:
-_p_127:
+.word 7474
+_p_125_plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string_get_Item_string_llvm:
+	.globl _p_125_plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string_get_Item_string_llvm
+.private_extern _p_125_plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string_get_Item_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string_get_Item_string
+plt_Xamarin_Essentials_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_string_get_Item_string:
+_p_125:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 4688
-_p_128_plt_Xamarin_Essentials__rgctx_fetch_29_llvm:
-	.globl _p_128_plt_Xamarin_Essentials__rgctx_fetch_29_llvm
-.private_extern _p_128_plt_Xamarin_Essentials__rgctx_fetch_29_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_29
-plt_Xamarin_Essentials__rgctx_fetch_29:
-_p_128:
+.word 7485
+_p_126_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_CurrentVersion_llvm:
+	.globl _p_126_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_CurrentVersion_llvm
+.private_extern _p_126_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_CurrentVersion_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_CurrentVersion
+plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_CurrentVersion:
+_p_126:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 4720
-_p_129_plt_Xamarin_Essentials__rgctx_fetch_30_llvm:
-	.globl _p_129_plt_Xamarin_Essentials__rgctx_fetch_30_llvm
-.private_extern _p_129_plt_Xamarin_Essentials__rgctx_fetch_30_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_30
-plt_Xamarin_Essentials__rgctx_fetch_30:
-_p_129:
+.word 7496
+_p_127_plt_Xamarin_Essentials_System_Collections_Generic_List_1_string_Contains_string_llvm:
+	.globl _p_127_plt_Xamarin_Essentials_System_Collections_Generic_List_1_string_Contains_string_llvm
+.private_extern _p_127_plt_Xamarin_Essentials_System_Collections_Generic_List_1_string_Contains_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Collections_Generic_List_1_string_Contains_string
+plt_Xamarin_Essentials_System_Collections_Generic_List_1_string_Contains_string:
+_p_127:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 4728
-_p_130_plt_Xamarin_Essentials__rgctx_fetch_31_llvm:
-	.globl _p_130_plt_Xamarin_Essentials__rgctx_fetch_31_llvm
-.private_extern _p_130_plt_Xamarin_Essentials__rgctx_fetch_31_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_31
-plt_Xamarin_Essentials__rgctx_fetch_31:
-_p_130:
+.word 7498
+_p_128_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchForCurrentVersion_bool_llvm:
+	.globl _p_128_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchForCurrentVersion_bool_llvm
+.private_extern _p_128_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchForCurrentVersion_bool_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchForCurrentVersion_bool
+plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchForCurrentVersion_bool:
+_p_128:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 4760
-_p_131_plt_Xamarin_Essentials__rgctx_fetch_32_llvm:
-	.globl _p_131_plt_Xamarin_Essentials__rgctx_fetch_32_llvm
-.private_extern _p_131_plt_Xamarin_Essentials__rgctx_fetch_32_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_32
-plt_Xamarin_Essentials__rgctx_fetch_32:
-_p_131:
+.word 7509
+_p_129_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchForCurrentVersion_llvm:
+	.globl _p_129_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchForCurrentVersion_llvm
+.private_extern _p_129_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchForCurrentVersion_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchForCurrentVersion
+plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchForCurrentVersion:
+_p_129:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 4768
-_p_132_plt_Xamarin_Essentials__rgctx_fetch_33_llvm:
-	.globl _p_132_plt_Xamarin_Essentials__rgctx_fetch_33_llvm
-.private_extern _p_132_plt_Xamarin_Essentials__rgctx_fetch_33_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_33
-plt_Xamarin_Essentials__rgctx_fetch_33:
-_p_132:
+.word 7511
+_p_130_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_CurrentBuild_llvm:
+	.globl _p_130_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_CurrentBuild_llvm
+.private_extern _p_130_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_CurrentBuild_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_CurrentBuild
+plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_CurrentBuild:
+_p_130:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 4800
-_p_133_plt_Xamarin_Essentials__rgctx_fetch_34_llvm:
-	.globl _p_133_plt_Xamarin_Essentials__rgctx_fetch_34_llvm
-.private_extern _p_133_plt_Xamarin_Essentials__rgctx_fetch_34_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_34
-plt_Xamarin_Essentials__rgctx_fetch_34:
-_p_133:
+.word 7513
+_p_131_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchForCurrentBuild_bool_llvm:
+	.globl _p_131_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchForCurrentBuild_bool_llvm
+.private_extern _p_131_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchForCurrentBuild_bool_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchForCurrentBuild_bool
+plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_set_IsFirstLaunchForCurrentBuild_bool:
+_p_131:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 4808
-_p_134_plt_Xamarin_Essentials__rgctx_fetch_35_llvm:
-	.globl _p_134_plt_Xamarin_Essentials__rgctx_fetch_35_llvm
-.private_extern _p_134_plt_Xamarin_Essentials__rgctx_fetch_35_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_35
-plt_Xamarin_Essentials__rgctx_fetch_35:
-_p_134:
+.word 7515
+_p_132_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchForCurrentBuild_llvm:
+	.globl _p_132_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchForCurrentBuild_llvm
+.private_extern _p_132_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchForCurrentBuild_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchForCurrentBuild
+plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_get_IsFirstLaunchForCurrentBuild:
+_p_132:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 4861
-_p_135_plt_Xamarin_Essentials__rgctx_fetch_36_llvm:
-	.globl _p_135_plt_Xamarin_Essentials__rgctx_fetch_36_llvm
-.private_extern _p_135_plt_Xamarin_Essentials__rgctx_fetch_36_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_36
-plt_Xamarin_Essentials__rgctx_fetch_36:
-_p_135:
+.word 7517
+_p_133_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_WriteHistory_string_System_Collections_Generic_IEnumerable_1_string_llvm:
+	.globl _p_133_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_WriteHistory_string_System_Collections_Generic_IEnumerable_1_string_llvm
+.private_extern _p_133_plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_WriteHistory_string_System_Collections_Generic_IEnumerable_1_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_WriteHistory_string_System_Collections_Generic_IEnumerable_1_string
+plt_Xamarin_Essentials_Xamarin_Essentials_VersionTracking_WriteHistory_string_System_Collections_Generic_IEnumerable_1_string:
+_p_133:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 4869
-_p_136_plt_Xamarin_Essentials__rgctx_fetch_37_llvm:
-	.globl _p_136_plt_Xamarin_Essentials__rgctx_fetch_37_llvm
-.private_extern _p_136_plt_Xamarin_Essentials__rgctx_fetch_37_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_37
-plt_Xamarin_Essentials__rgctx_fetch_37:
-_p_136:
+.word 7519
+_p_134_plt_Xamarin_Essentials_System_Collections_Generic_List_1_string_AddWithResize_string_llvm:
+	.globl _p_134_plt_Xamarin_Essentials_System_Collections_Generic_List_1_string_AddWithResize_string_llvm
+.private_extern _p_134_plt_Xamarin_Essentials_System_Collections_Generic_List_1_string_AddWithResize_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Collections_Generic_List_1_string_AddWithResize_string
+plt_Xamarin_Essentials_System_Collections_Generic_List_1_string_AddWithResize_string:
+_p_134:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 4877
-_p_137_plt_Xamarin_Essentials__rgctx_fetch_38_llvm:
-	.globl _p_137_plt_Xamarin_Essentials__rgctx_fetch_38_llvm
-.private_extern _p_137_plt_Xamarin_Essentials__rgctx_fetch_38_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_38
-plt_Xamarin_Essentials__rgctx_fetch_38:
-_p_137:
+.word 7521
+_p_135_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_VersionString_llvm:
+	.globl _p_135_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_VersionString_llvm
+.private_extern _p_135_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_VersionString_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_VersionString
+plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_VersionString:
+_p_135:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 4885
-_p_138_plt_Xamarin_Essentials__rgctx_fetch_39_llvm:
-	.globl _p_138_plt_Xamarin_Essentials__rgctx_fetch_39_llvm
-.private_extern _p_138_plt_Xamarin_Essentials__rgctx_fetch_39_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_39
-plt_Xamarin_Essentials__rgctx_fetch_39:
-_p_138:
+.word 7543
+_p_136_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_BuildString_llvm:
+	.globl _p_136_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_BuildString_llvm
+.private_extern _p_136_plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_BuildString_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_BuildString
+plt_Xamarin_Essentials_Xamarin_Essentials_AppInfo_get_BuildString:
+_p_136:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 4893
-_p_139_plt_Xamarin_Essentials__rgctx_fetch_40_llvm:
-	.globl _p_139_plt_Xamarin_Essentials__rgctx_fetch_40_llvm
-.private_extern _p_139_plt_Xamarin_Essentials__rgctx_fetch_40_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_40
-plt_Xamarin_Essentials__rgctx_fetch_40:
-_p_139:
+.word 7545
+_p_137_plt_Xamarin_Essentials_string_Split_char___System_StringSplitOptions_llvm:
+	.globl _p_137_plt_Xamarin_Essentials_string_Split_char___System_StringSplitOptions_llvm
+.private_extern _p_137_plt_Xamarin_Essentials_string_Split_char___System_StringSplitOptions_llvm
+	.no_dead_strip plt_Xamarin_Essentials_string_Split_char___System_StringSplitOptions
+plt_Xamarin_Essentials_string_Split_char___System_StringSplitOptions:
+_p_137:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 4901
-_p_140_plt_Xamarin_Essentials__rgctx_fetch_41_llvm:
-	.globl _p_140_plt_Xamarin_Essentials__rgctx_fetch_41_llvm
-.private_extern _p_140_plt_Xamarin_Essentials__rgctx_fetch_41_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_41
-plt_Xamarin_Essentials__rgctx_fetch_41:
-_p_140:
+.word 7547
+_p_138_plt_Xamarin_Essentials_string_Join_string_System_Collections_Generic_IEnumerable_1_string_llvm:
+	.globl _p_138_plt_Xamarin_Essentials_string_Join_string_System_Collections_Generic_IEnumerable_1_string_llvm
+.private_extern _p_138_plt_Xamarin_Essentials_string_Join_string_System_Collections_Generic_IEnumerable_1_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_string_Join_string_System_Collections_Generic_IEnumerable_1_string
+plt_Xamarin_Essentials_string_Join_string_System_Collections_Generic_IEnumerable_1_string:
+_p_138:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 4909
-_p_141_plt_Xamarin_Essentials__rgctx_fetch_42_llvm:
-	.globl _p_141_plt_Xamarin_Essentials__rgctx_fetch_42_llvm
-.private_extern _p_141_plt_Xamarin_Essentials__rgctx_fetch_42_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_42
-plt_Xamarin_Essentials__rgctx_fetch_42:
-_p_141:
+.word 7552
+_p_139_plt_Xamarin_Essentials_System_Linq_Enumerable_LastOrDefault_CoreLocation_CLLocation_System_Collections_Generic_IEnumerable_1_CoreLocation_CLLocation_llvm:
+	.globl _p_139_plt_Xamarin_Essentials_System_Linq_Enumerable_LastOrDefault_CoreLocation_CLLocation_System_Collections_Generic_IEnumerable_1_CoreLocation_CLLocation_llvm
+.private_extern _p_139_plt_Xamarin_Essentials_System_Linq_Enumerable_LastOrDefault_CoreLocation_CLLocation_System_Collections_Generic_IEnumerable_1_CoreLocation_CLLocation_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Linq_Enumerable_LastOrDefault_CoreLocation_CLLocation_System_Collections_Generic_IEnumerable_1_CoreLocation_CLLocation
+plt_Xamarin_Essentials_System_Linq_Enumerable_LastOrDefault_CoreLocation_CLLocation_System_Collections_Generic_IEnumerable_1_CoreLocation_CLLocation:
+_p_139:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
-.word 4917
-_p_142_plt_Xamarin_Essentials__rgctx_fetch_43_llvm:
-	.globl _p_142_plt_Xamarin_Essentials__rgctx_fetch_43_llvm
-.private_extern _p_142_plt_Xamarin_Essentials__rgctx_fetch_43_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_43
-plt_Xamarin_Essentials__rgctx_fetch_43:
-_p_142:
+.word 7557
+_p_140_plt_Xamarin_Essentials_CoreLocation_CLLocationManagerDelegate__ctor_llvm:
+	.globl _p_140_plt_Xamarin_Essentials_CoreLocation_CLLocationManagerDelegate__ctor_llvm
+.private_extern _p_140_plt_Xamarin_Essentials_CoreLocation_CLLocationManagerDelegate__ctor_llvm
+	.no_dead_strip plt_Xamarin_Essentials_CoreLocation_CLLocationManagerDelegate__ctor
+plt_Xamarin_Essentials_CoreLocation_CLLocationManagerDelegate__ctor:
+_p_140:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
-.word 4955
-_p_143_plt_Xamarin_Essentials__rgctx_fetch_44_llvm:
-	.globl _p_143_plt_Xamarin_Essentials__rgctx_fetch_44_llvm
-.private_extern _p_143_plt_Xamarin_Essentials__rgctx_fetch_44_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_44
-plt_Xamarin_Essentials__rgctx_fetch_44:
-_p_143:
+.word 7569
+_p_141_plt_Xamarin_Essentials_UIKit_UIActivityItemSource__ctor_llvm:
+	.globl _p_141_plt_Xamarin_Essentials_UIKit_UIActivityItemSource__ctor_llvm
+.private_extern _p_141_plt_Xamarin_Essentials_UIKit_UIActivityItemSource__ctor_llvm
+	.no_dead_strip plt_Xamarin_Essentials_UIKit_UIActivityItemSource__ctor
+plt_Xamarin_Essentials_UIKit_UIActivityItemSource__ctor:
+_p_141:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 4969
-_p_144_plt_Xamarin_Essentials__rgctx_fetch_45_llvm:
-	.globl _p_144_plt_Xamarin_Essentials__rgctx_fetch_45_llvm
-.private_extern _p_144_plt_Xamarin_Essentials__rgctx_fetch_45_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_45
-plt_Xamarin_Essentials__rgctx_fetch_45:
-_p_144:
+.word 7574
+_p_142_plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability__ctor_string_llvm:
+	.globl _p_142_plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability__ctor_string_llvm
+.private_extern _p_142_plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability__ctor_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability__ctor_string
+plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability__ctor_string:
+_p_142:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 4983
-_p_145_plt_Xamarin_Essentials__rgctx_fetch_46_llvm:
-	.globl _p_145_plt_Xamarin_Essentials__rgctx_fetch_46_llvm
-.private_extern _p_145_plt_Xamarin_Essentials__rgctx_fetch_46_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_46
-plt_Xamarin_Essentials__rgctx_fetch_46:
-_p_145:
+.word 7579
+_p_143_plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability_TryGetFlags_SystemConfiguration_NetworkReachabilityFlags__llvm:
+	.globl _p_143_plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability_TryGetFlags_SystemConfiguration_NetworkReachabilityFlags__llvm
+.private_extern _p_143_plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability_TryGetFlags_SystemConfiguration_NetworkReachabilityFlags__llvm
+	.no_dead_strip plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability_TryGetFlags_SystemConfiguration_NetworkReachabilityFlags_
+plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability_TryGetFlags_SystemConfiguration_NetworkReachabilityFlags_:
+_p_143:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 4991
-_p_146_plt_Xamarin_Essentials__rgctx_fetch_47_llvm:
-	.globl _p_146_plt_Xamarin_Essentials__rgctx_fetch_47_llvm
-.private_extern _p_146_plt_Xamarin_Essentials__rgctx_fetch_47_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_47
-plt_Xamarin_Essentials__rgctx_fetch_47:
-_p_146:
+.word 7584
+_p_144_plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_IsReachableWithoutRequiringConnection_SystemConfiguration_NetworkReachabilityFlags_llvm:
+	.globl _p_144_plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_IsReachableWithoutRequiringConnection_SystemConfiguration_NetworkReachabilityFlags_llvm
+.private_extern _p_144_plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_IsReachableWithoutRequiringConnection_SystemConfiguration_NetworkReachabilityFlags_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_IsReachableWithoutRequiringConnection_SystemConfiguration_NetworkReachabilityFlags
+plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_IsReachableWithoutRequiringConnection_SystemConfiguration_NetworkReachabilityFlags:
+_p_144:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 5005
-_p_147_plt_Xamarin_Essentials__rgctx_fetch_48_llvm:
-	.globl _p_147_plt_Xamarin_Essentials__rgctx_fetch_48_llvm
-.private_extern _p_147_plt_Xamarin_Essentials__rgctx_fetch_48_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_48
-plt_Xamarin_Essentials__rgctx_fetch_48:
-_p_147:
+.word 7589
+_p_145_plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_IsNetworkAvailable_SystemConfiguration_NetworkReachabilityFlags__llvm:
+	.globl _p_145_plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_IsNetworkAvailable_SystemConfiguration_NetworkReachabilityFlags__llvm
+.private_extern _p_145_plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_IsNetworkAvailable_SystemConfiguration_NetworkReachabilityFlags__llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_IsNetworkAvailable_SystemConfiguration_NetworkReachabilityFlags_
+plt_Xamarin_Essentials_Xamarin_Essentials_Reachability_IsNetworkAvailable_SystemConfiguration_NetworkReachabilityFlags_:
+_p_145:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 5019
-_p_148_plt_Xamarin_Essentials__rgctx_fetch_49_llvm:
-	.globl _p_148_plt_Xamarin_Essentials__rgctx_fetch_49_llvm
-.private_extern _p_148_plt_Xamarin_Essentials__rgctx_fetch_49_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_49
-plt_Xamarin_Essentials__rgctx_fetch_49:
-_p_148:
+.word 7591
+_p_146_plt_Xamarin_Essentials_System_Net_IPAddress__ctor_long_llvm:
+	.globl _p_146_plt_Xamarin_Essentials_System_Net_IPAddress__ctor_long_llvm
+.private_extern _p_146_plt_Xamarin_Essentials_System_Net_IPAddress__ctor_long_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Net_IPAddress__ctor_long
+plt_Xamarin_Essentials_System_Net_IPAddress__ctor_long:
+_p_146:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 5027
-_p_149_plt_Xamarin_Essentials__rgctx_fetch_50_llvm:
-	.globl _p_149_plt_Xamarin_Essentials__rgctx_fetch_50_llvm
-.private_extern _p_149_plt_Xamarin_Essentials__rgctx_fetch_50_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_50
-plt_Xamarin_Essentials__rgctx_fetch_50:
-_p_149:
+.word 7593
+_p_147_plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability__ctor_System_Net_IPAddress_llvm:
+	.globl _p_147_plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability__ctor_System_Net_IPAddress_llvm
+.private_extern _p_147_plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability__ctor_System_Net_IPAddress_llvm
+	.no_dead_strip plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability__ctor_System_Net_IPAddress
+plt_Xamarin_Essentials_SystemConfiguration_NetworkReachability__ctor_System_Net_IPAddress:
+_p_147:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 5041
-_p_150_plt_Xamarin_Essentials__rgctx_fetch_51_llvm:
-	.globl _p_150_plt_Xamarin_Essentials__rgctx_fetch_51_llvm
-.private_extern _p_150_plt_Xamarin_Essentials__rgctx_fetch_51_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_51
-plt_Xamarin_Essentials__rgctx_fetch_51:
-_p_150:
+.word 7598
+_p_148_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm:
+	.globl _p_148_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm
+.private_extern _p_148_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
+plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
+_p_148:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 5055
-_p_151_plt_Xamarin_Essentials__rgctx_fetch_52_llvm:
-	.globl _p_151_plt_Xamarin_Essentials__rgctx_fetch_52_llvm
-.private_extern _p_151_plt_Xamarin_Essentials__rgctx_fetch_52_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_52
-plt_Xamarin_Essentials__rgctx_fetch_52:
-_p_151:
+.word 7603
+_p_149_plt_Xamarin_Essentials__rgctx_fetch_0_llvm:
+	.globl _p_149_plt_Xamarin_Essentials__rgctx_fetch_0_llvm
+.private_extern _p_149_plt_Xamarin_Essentials__rgctx_fetch_0_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_0
+plt_Xamarin_Essentials__rgctx_fetch_0:
+_p_149:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 5063
-_p_152_plt_Xamarin_Essentials__rgctx_fetch_53_llvm:
-	.globl _p_152_plt_Xamarin_Essentials__rgctx_fetch_53_llvm
-.private_extern _p_152_plt_Xamarin_Essentials__rgctx_fetch_53_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_53
-plt_Xamarin_Essentials__rgctx_fetch_53:
-_p_152:
+.word 7635
+_p_150_plt_Xamarin_Essentials__rgctx_fetch_1_llvm:
+	.globl _p_150_plt_Xamarin_Essentials__rgctx_fetch_1_llvm
+.private_extern _p_150_plt_Xamarin_Essentials__rgctx_fetch_1_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_1
+plt_Xamarin_Essentials__rgctx_fetch_1:
+_p_150:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
-.word 5077
-_p_153_plt_Xamarin_Essentials__rgctx_fetch_54_llvm:
-	.globl _p_153_plt_Xamarin_Essentials__rgctx_fetch_54_llvm
-.private_extern _p_153_plt_Xamarin_Essentials__rgctx_fetch_54_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_54
-plt_Xamarin_Essentials__rgctx_fetch_54:
-_p_153:
+.word 7643
+_p_151_plt_Xamarin_Essentials__rgctx_fetch_2_llvm:
+	.globl _p_151_plt_Xamarin_Essentials__rgctx_fetch_2_llvm
+.private_extern _p_151_plt_Xamarin_Essentials__rgctx_fetch_2_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_2
+plt_Xamarin_Essentials__rgctx_fetch_2:
+_p_151:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 5091
-_p_154_plt_Xamarin_Essentials__rgctx_fetch_55_llvm:
-	.globl _p_154_plt_Xamarin_Essentials__rgctx_fetch_55_llvm
-.private_extern _p_154_plt_Xamarin_Essentials__rgctx_fetch_55_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_55
-plt_Xamarin_Essentials__rgctx_fetch_55:
-_p_154:
+.word 7684
+_p_152_plt_Xamarin_Essentials__jit_icall_mono_helper_ldstr_mscorlib_llvm:
+	.globl _p_152_plt_Xamarin_Essentials__jit_icall_mono_helper_ldstr_mscorlib_llvm
+.private_extern _p_152_plt_Xamarin_Essentials__jit_icall_mono_helper_ldstr_mscorlib_llvm
+	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_helper_ldstr_mscorlib
+plt_Xamarin_Essentials__jit_icall_mono_helper_ldstr_mscorlib:
+_p_152:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
-.word 5099
-_p_155_plt_Xamarin_Essentials__rgctx_fetch_56_llvm:
-	.globl _p_155_plt_Xamarin_Essentials__rgctx_fetch_56_llvm
-.private_extern _p_155_plt_Xamarin_Essentials__rgctx_fetch_56_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_56
-plt_Xamarin_Essentials__rgctx_fetch_56:
-_p_155:
+.word 7707
+_p_153_plt_Xamarin_Essentials_System_Threading_Tasks_Task_get_Id_llvm:
+	.globl _p_153_plt_Xamarin_Essentials_System_Threading_Tasks_Task_get_Id_llvm
+.private_extern _p_153_plt_Xamarin_Essentials_System_Threading_Tasks_Task_get_Id_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_Task_get_Id
+plt_Xamarin_Essentials_System_Threading_Tasks_Task_get_Id:
+_p_153:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 5113
-_p_156_plt_Xamarin_Essentials__rgctx_fetch_57_llvm:
-	.globl _p_156_plt_Xamarin_Essentials__rgctx_fetch_57_llvm
-.private_extern _p_156_plt_Xamarin_Essentials__rgctx_fetch_57_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_57
-plt_Xamarin_Essentials__rgctx_fetch_57:
-_p_156:
+.word 7736
+_p_154_plt_Xamarin_Essentials_System_Threading_Tasks_Task_RemoveFromActiveTasks_int_llvm:
+	.globl _p_154_plt_Xamarin_Essentials_System_Threading_Tasks_Task_RemoveFromActiveTasks_int_llvm
+.private_extern _p_154_plt_Xamarin_Essentials_System_Threading_Tasks_Task_RemoveFromActiveTasks_int_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_Task_RemoveFromActiveTasks_int
+plt_Xamarin_Essentials_System_Threading_Tasks_Task_RemoveFromActiveTasks_int:
+_p_154:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 5127
-_p_157_plt_Xamarin_Essentials__rgctx_fetch_58_llvm:
-	.globl _p_157_plt_Xamarin_Essentials__rgctx_fetch_58_llvm
-.private_extern _p_157_plt_Xamarin_Essentials__rgctx_fetch_58_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_58
-plt_Xamarin_Essentials__rgctx_fetch_58:
-_p_157:
+.word 7741
+_p_155_plt_Xamarin_Essentials_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCompletion_System_Threading_Tasks_CausalityTraceLevel_int_System_Threading_Tasks_AsyncCausalityStatus_llvm:
+	.globl _p_155_plt_Xamarin_Essentials_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCompletion_System_Threading_Tasks_CausalityTraceLevel_int_System_Threading_Tasks_AsyncCausalityStatus_llvm
+.private_extern _p_155_plt_Xamarin_Essentials_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCompletion_System_Threading_Tasks_CausalityTraceLevel_int_System_Threading_Tasks_AsyncCausalityStatus_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCompletion_System_Threading_Tasks_CausalityTraceLevel_int_System_Threading_Tasks_AsyncCausalityStatus
+plt_Xamarin_Essentials_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCompletion_System_Threading_Tasks_CausalityTraceLevel_int_System_Threading_Tasks_AsyncCausalityStatus:
+_p_155:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 5165
-_p_158_plt_Xamarin_Essentials__rgctx_fetch_59_llvm:
-	.globl _p_158_plt_Xamarin_Essentials__rgctx_fetch_59_llvm
-.private_extern _p_158_plt_Xamarin_Essentials__rgctx_fetch_59_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_59
-plt_Xamarin_Essentials__rgctx_fetch_59:
-_p_158:
+.word 7746
+_p_156_plt_Xamarin_Essentials__rgctx_fetch_3_llvm:
+	.globl _p_156_plt_Xamarin_Essentials__rgctx_fetch_3_llvm
+.private_extern _p_156_plt_Xamarin_Essentials__rgctx_fetch_3_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_3
+plt_Xamarin_Essentials__rgctx_fetch_3:
+_p_156:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 5173
-_p_159_plt_Xamarin_Essentials__rgctx_fetch_60_llvm:
-	.globl _p_159_plt_Xamarin_Essentials__rgctx_fetch_60_llvm
-.private_extern _p_159_plt_Xamarin_Essentials__rgctx_fetch_60_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_60
-plt_Xamarin_Essentials__rgctx_fetch_60:
-_p_159:
+.word 7751
+_p_157_plt_Xamarin_Essentials__rgctx_fetch_4_llvm:
+	.globl _p_157_plt_Xamarin_Essentials__rgctx_fetch_4_llvm
+.private_extern _p_157_plt_Xamarin_Essentials__rgctx_fetch_4_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_4
+plt_Xamarin_Essentials__rgctx_fetch_4:
+_p_157:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 5238
-_p_160_plt_Xamarin_Essentials__rgctx_fetch_61_llvm:
-	.globl _p_160_plt_Xamarin_Essentials__rgctx_fetch_61_llvm
-.private_extern _p_160_plt_Xamarin_Essentials__rgctx_fetch_61_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_61
-plt_Xamarin_Essentials__rgctx_fetch_61:
-_p_160:
+.word 7759
+_p_158_plt_Xamarin_Essentials__rgctx_fetch_5_llvm:
+	.globl _p_158_plt_Xamarin_Essentials__rgctx_fetch_5_llvm
+.private_extern _p_158_plt_Xamarin_Essentials__rgctx_fetch_5_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_5
+plt_Xamarin_Essentials__rgctx_fetch_5:
+_p_158:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 5246
-_p_161_plt_Xamarin_Essentials__rgctx_fetch_62_llvm:
-	.globl _p_161_plt_Xamarin_Essentials__rgctx_fetch_62_llvm
-.private_extern _p_161_plt_Xamarin_Essentials__rgctx_fetch_62_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_62
-plt_Xamarin_Essentials__rgctx_fetch_62:
-_p_161:
+.word 7800
+_p_159_plt_Xamarin_Essentials__rgctx_fetch_6_llvm:
+	.globl _p_159_plt_Xamarin_Essentials__rgctx_fetch_6_llvm
+.private_extern _p_159_plt_Xamarin_Essentials__rgctx_fetch_6_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_6
+plt_Xamarin_Essentials__rgctx_fetch_6:
+_p_159:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 5254
-_p_162_plt_Xamarin_Essentials__rgctx_fetch_63_llvm:
-	.globl _p_162_plt_Xamarin_Essentials__rgctx_fetch_63_llvm
-.private_extern _p_162_plt_Xamarin_Essentials__rgctx_fetch_63_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_63
-plt_Xamarin_Essentials__rgctx_fetch_63:
-_p_162:
+.word 7808
+_p_160_plt_Xamarin_Essentials_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken_object_llvm:
+	.globl _p_160_plt_Xamarin_Essentials_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken_object_llvm
+.private_extern _p_160_plt_Xamarin_Essentials_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken_object_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken_object
+plt_Xamarin_Essentials_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken_object:
+_p_160:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
-.word 5262
-_p_163_plt_Xamarin_Essentials__rgctx_fetch_64_llvm:
-	.globl _p_163_plt_Xamarin_Essentials__rgctx_fetch_64_llvm
-.private_extern _p_163_plt_Xamarin_Essentials__rgctx_fetch_64_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_64
-plt_Xamarin_Essentials__rgctx_fetch_64:
-_p_163:
+.word 7831
+_p_161_plt_Xamarin_Essentials_System_Threading_Tasks_Task_TrySetException_object_llvm:
+	.globl _p_161_plt_Xamarin_Essentials_System_Threading_Tasks_Task_TrySetException_object_llvm
+.private_extern _p_161_plt_Xamarin_Essentials_System_Threading_Tasks_Task_TrySetException_object_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_Task_TrySetException_object
+plt_Xamarin_Essentials_System_Threading_Tasks_Task_TrySetException_object:
+_p_161:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 5270
-_p_164_plt_Xamarin_Essentials__rgctx_fetch_65_llvm:
-	.globl _p_164_plt_Xamarin_Essentials__rgctx_fetch_65_llvm
-.private_extern _p_164_plt_Xamarin_Essentials__rgctx_fetch_65_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_65
-plt_Xamarin_Essentials__rgctx_fetch_65:
-_p_164:
+.word 7836
+_p_162_plt_Xamarin_Essentials__rgctx_fetch_7_llvm:
+	.globl _p_162_plt_Xamarin_Essentials__rgctx_fetch_7_llvm
+.private_extern _p_162_plt_Xamarin_Essentials__rgctx_fetch_7_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_7
+plt_Xamarin_Essentials__rgctx_fetch_7:
+_p_162:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 5308
-_p_165_plt_Xamarin_Essentials__rgctx_fetch_66_llvm:
-	.globl _p_165_plt_Xamarin_Essentials__rgctx_fetch_66_llvm
-.private_extern _p_165_plt_Xamarin_Essentials__rgctx_fetch_66_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_66
-plt_Xamarin_Essentials__rgctx_fetch_66:
-_p_165:
+.word 7859
+_p_163_plt_Xamarin_Essentials__rgctx_fetch_8_llvm:
+	.globl _p_163_plt_Xamarin_Essentials__rgctx_fetch_8_llvm
+.private_extern _p_163_plt_Xamarin_Essentials__rgctx_fetch_8_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_8
+plt_Xamarin_Essentials__rgctx_fetch_8:
+_p_163:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1664]
 br x16
-.word 5316
-_p_166_plt_Xamarin_Essentials__rgctx_fetch_67_llvm:
-	.globl _p_166_plt_Xamarin_Essentials__rgctx_fetch_67_llvm
-.private_extern _p_166_plt_Xamarin_Essentials__rgctx_fetch_67_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_67
-plt_Xamarin_Essentials__rgctx_fetch_67:
-_p_166:
+.word 7867
+_p_164_plt_Xamarin_Essentials__rgctx_fetch_9_llvm:
+	.globl _p_164_plt_Xamarin_Essentials__rgctx_fetch_9_llvm
+.private_extern _p_164_plt_Xamarin_Essentials__rgctx_fetch_9_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_9
+plt_Xamarin_Essentials__rgctx_fetch_9:
+_p_164:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1672]
 br x16
-.word 5381
-_p_167_plt_Xamarin_Essentials__rgctx_fetch_68_llvm:
-	.globl _p_167_plt_Xamarin_Essentials__rgctx_fetch_68_llvm
-.private_extern _p_167_plt_Xamarin_Essentials__rgctx_fetch_68_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_68
-plt_Xamarin_Essentials__rgctx_fetch_68:
-_p_167:
+.word 7908
+_p_165_plt_Xamarin_Essentials__rgctx_fetch_10_llvm:
+	.globl _p_165_plt_Xamarin_Essentials__rgctx_fetch_10_llvm
+.private_extern _p_165_plt_Xamarin_Essentials__rgctx_fetch_10_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_10
+plt_Xamarin_Essentials__rgctx_fetch_10:
+_p_165:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1680]
 br x16
-.word 5395
-_p_168_plt_Xamarin_Essentials__rgctx_fetch_69_llvm:
-	.globl _p_168_plt_Xamarin_Essentials__rgctx_fetch_69_llvm
-.private_extern _p_168_plt_Xamarin_Essentials__rgctx_fetch_69_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_69
-plt_Xamarin_Essentials__rgctx_fetch_69:
-_p_168:
+.word 7916
+_p_166_plt_Xamarin_Essentials__rgctx_fetch_11_llvm:
+	.globl _p_166_plt_Xamarin_Essentials__rgctx_fetch_11_llvm
+.private_extern _p_166_plt_Xamarin_Essentials__rgctx_fetch_11_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_11
+plt_Xamarin_Essentials__rgctx_fetch_11:
+_p_166:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1688]
 br x16
-.word 5409
-_p_169_plt_Xamarin_Essentials__rgctx_fetch_70_llvm:
-	.globl _p_169_plt_Xamarin_Essentials__rgctx_fetch_70_llvm
-.private_extern _p_169_plt_Xamarin_Essentials__rgctx_fetch_70_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_70
-plt_Xamarin_Essentials__rgctx_fetch_70:
-_p_169:
+.word 7939
+_p_167_plt_Xamarin_Essentials__rgctx_fetch_12_llvm:
+	.globl _p_167_plt_Xamarin_Essentials__rgctx_fetch_12_llvm
+.private_extern _p_167_plt_Xamarin_Essentials__rgctx_fetch_12_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_12
+plt_Xamarin_Essentials__rgctx_fetch_12:
+_p_167:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1696]
 br x16
-.word 5417
-_p_170_plt_Xamarin_Essentials__rgctx_fetch_71_llvm:
-	.globl _p_170_plt_Xamarin_Essentials__rgctx_fetch_71_llvm
-.private_extern _p_170_plt_Xamarin_Essentials__rgctx_fetch_71_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_71
-plt_Xamarin_Essentials__rgctx_fetch_71:
-_p_170:
+.word 7947
+_p_168_plt_Xamarin_Essentials__rgctx_fetch_13_llvm:
+	.globl _p_168_plt_Xamarin_Essentials__rgctx_fetch_13_llvm
+.private_extern _p_168_plt_Xamarin_Essentials__rgctx_fetch_13_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_13
+plt_Xamarin_Essentials__rgctx_fetch_13:
+_p_168:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1704]
 br x16
-.word 5431
-_p_171_plt_Xamarin_Essentials__rgctx_fetch_72_llvm:
-	.globl _p_171_plt_Xamarin_Essentials__rgctx_fetch_72_llvm
-.private_extern _p_171_plt_Xamarin_Essentials__rgctx_fetch_72_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_72
-plt_Xamarin_Essentials__rgctx_fetch_72:
-_p_171:
+.word 7955
+_p_169_plt_Xamarin_Essentials__rgctx_fetch_14_llvm:
+	.globl _p_169_plt_Xamarin_Essentials__rgctx_fetch_14_llvm
+.private_extern _p_169_plt_Xamarin_Essentials__rgctx_fetch_14_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_14
+plt_Xamarin_Essentials__rgctx_fetch_14:
+_p_169:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1712]
 br x16
-.word 5445
-_p_172_plt_Xamarin_Essentials__rgctx_fetch_73_llvm:
-	.globl _p_172_plt_Xamarin_Essentials__rgctx_fetch_73_llvm
-.private_extern _p_172_plt_Xamarin_Essentials__rgctx_fetch_73_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_73
-plt_Xamarin_Essentials__rgctx_fetch_73:
-_p_172:
+.word 7963
+_p_170_plt_Xamarin_Essentials__rgctx_fetch_15_llvm:
+	.globl _p_170_plt_Xamarin_Essentials__rgctx_fetch_15_llvm
+.private_extern _p_170_plt_Xamarin_Essentials__rgctx_fetch_15_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_15
+plt_Xamarin_Essentials__rgctx_fetch_15:
+_p_170:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1720]
 br x16
-.word 5453
-_p_173_plt_Xamarin_Essentials__rgctx_fetch_74_llvm:
-	.globl _p_173_plt_Xamarin_Essentials__rgctx_fetch_74_llvm
-.private_extern _p_173_plt_Xamarin_Essentials__rgctx_fetch_74_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_74
-plt_Xamarin_Essentials__rgctx_fetch_74:
-_p_173:
+.word 7971
+_p_171_plt_Xamarin_Essentials__rgctx_fetch_16_llvm:
+	.globl _p_171_plt_Xamarin_Essentials__rgctx_fetch_16_llvm
+.private_extern _p_171_plt_Xamarin_Essentials__rgctx_fetch_16_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_16
+plt_Xamarin_Essentials__rgctx_fetch_16:
+_p_171:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1728]
 br x16
-.word 5467
-_p_174_plt_Xamarin_Essentials__rgctx_fetch_75_llvm:
-	.globl _p_174_plt_Xamarin_Essentials__rgctx_fetch_75_llvm
-.private_extern _p_174_plt_Xamarin_Essentials__rgctx_fetch_75_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_75
-plt_Xamarin_Essentials__rgctx_fetch_75:
-_p_174:
+.word 8013
+_p_172_plt_Xamarin_Essentials__rgctx_fetch_17_llvm:
+	.globl _p_172_plt_Xamarin_Essentials__rgctx_fetch_17_llvm
+.private_extern _p_172_plt_Xamarin_Essentials__rgctx_fetch_17_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_17
+plt_Xamarin_Essentials__rgctx_fetch_17:
+_p_172:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1736]
 br x16
-.word 5481
-_p_175_plt_Xamarin_Essentials__rgctx_fetch_76_llvm:
-	.globl _p_175_plt_Xamarin_Essentials__rgctx_fetch_76_llvm
-.private_extern _p_175_plt_Xamarin_Essentials__rgctx_fetch_76_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_76
-plt_Xamarin_Essentials__rgctx_fetch_76:
-_p_175:
+.word 8037
+_p_173_plt_Xamarin_Essentials__rgctx_fetch_18_llvm:
+	.globl _p_173_plt_Xamarin_Essentials__rgctx_fetch_18_llvm
+.private_extern _p_173_plt_Xamarin_Essentials__rgctx_fetch_18_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_18
+plt_Xamarin_Essentials__rgctx_fetch_18:
+_p_173:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1744]
 br x16
-.word 5489
-_p_176_plt_Xamarin_Essentials__rgctx_fetch_77_llvm:
-	.globl _p_176_plt_Xamarin_Essentials__rgctx_fetch_77_llvm
-.private_extern _p_176_plt_Xamarin_Essentials__rgctx_fetch_77_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_77
-plt_Xamarin_Essentials__rgctx_fetch_77:
-_p_176:
+.word 8061
+_p_174_plt_Xamarin_Essentials_System_Threading_Tasks_Task__ctor_llvm:
+	.globl _p_174_plt_Xamarin_Essentials_System_Threading_Tasks_Task__ctor_llvm
+.private_extern _p_174_plt_Xamarin_Essentials_System_Threading_Tasks_Task__ctor_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_Task__ctor
+plt_Xamarin_Essentials_System_Threading_Tasks_Task__ctor:
+_p_174:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1752]
 br x16
-.word 5503
-_p_177_plt_Xamarin_Essentials__rgctx_fetch_78_llvm:
-	.globl _p_177_plt_Xamarin_Essentials__rgctx_fetch_78_llvm
-.private_extern _p_177_plt_Xamarin_Essentials__rgctx_fetch_78_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_78
-plt_Xamarin_Essentials__rgctx_fetch_78:
-_p_177:
+.word 8069
+_p_175_plt_Xamarin_Essentials_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool_llvm:
+	.globl _p_175_plt_Xamarin_Essentials_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool_llvm
+.private_extern _p_175_plt_Xamarin_Essentials_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool
+plt_Xamarin_Essentials_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool:
+_p_175:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1760]
 br x16
-.word 5517
-_p_178_plt_Xamarin_Essentials__rgctx_fetch_79_llvm:
-	.globl _p_178_plt_Xamarin_Essentials__rgctx_fetch_79_llvm
-.private_extern _p_178_plt_Xamarin_Essentials__rgctx_fetch_79_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_79
-plt_Xamarin_Essentials__rgctx_fetch_79:
-_p_178:
+.word 8074
+_p_176_plt_Xamarin_Essentials_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken_llvm:
+	.globl _p_176_plt_Xamarin_Essentials_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken_llvm
+.private_extern _p_176_plt_Xamarin_Essentials_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
+plt_Xamarin_Essentials_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
+_p_176:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1768]
 br x16
-.word 5525
-_p_179_plt_Xamarin_Essentials__rgctx_fetch_80_llvm:
-	.globl _p_179_plt_Xamarin_Essentials__rgctx_fetch_80_llvm
-.private_extern _p_179_plt_Xamarin_Essentials__rgctx_fetch_80_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_80
-plt_Xamarin_Essentials__rgctx_fetch_80:
-_p_179:
+.word 8079
+_p_177_plt_Xamarin_Essentials__rgctx_fetch_19_llvm:
+	.globl _p_177_plt_Xamarin_Essentials__rgctx_fetch_19_llvm
+.private_extern _p_177_plt_Xamarin_Essentials__rgctx_fetch_19_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_19
+plt_Xamarin_Essentials__rgctx_fetch_19:
+_p_177:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1776]
 br x16
-.word 5539
-_p_180_plt_Xamarin_Essentials__rgctx_fetch_81_llvm:
-	.globl _p_180_plt_Xamarin_Essentials__rgctx_fetch_81_llvm
-.private_extern _p_180_plt_Xamarin_Essentials__rgctx_fetch_81_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_81
-plt_Xamarin_Essentials__rgctx_fetch_81:
-_p_180:
+.word 8102
+_p_178_plt_Xamarin_Essentials_System_Threading_Tasks_Task_PossiblyCaptureContext_llvm:
+	.globl _p_178_plt_Xamarin_Essentials_System_Threading_Tasks_Task_PossiblyCaptureContext_llvm
+.private_extern _p_178_plt_Xamarin_Essentials_System_Threading_Tasks_Task_PossiblyCaptureContext_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_Task_PossiblyCaptureContext
+plt_Xamarin_Essentials_System_Threading_Tasks_Task_PossiblyCaptureContext:
+_p_178:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1784]
 br x16
-.word 5553
-_p_181_plt_Xamarin_Essentials_string_Concat_string___llvm:
-	.globl _p_181_plt_Xamarin_Essentials_string_Concat_string___llvm
-.private_extern _p_181_plt_Xamarin_Essentials_string_Concat_string___llvm
-	.no_dead_strip plt_Xamarin_Essentials_string_Concat_string__
-plt_Xamarin_Essentials_string_Concat_string__:
-_p_181:
+.word 8125
+_p_179_plt_Xamarin_Essentials_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm:
+	.globl _p_179_plt_Xamarin_Essentials_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm
+.private_extern _p_179_plt_Xamarin_Essentials_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
+plt_Xamarin_Essentials_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
+_p_179:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1792]
 br x16
-.word 5561
-_p_182_plt_Xamarin_Essentials__rgctx_fetch_82_llvm:
-	.globl _p_182_plt_Xamarin_Essentials__rgctx_fetch_82_llvm
-.private_extern _p_182_plt_Xamarin_Essentials__rgctx_fetch_82_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_82
-plt_Xamarin_Essentials__rgctx_fetch_82:
-_p_182:
+.word 8130
+_p_180_plt_Xamarin_Essentials__rgctx_fetch_20_llvm:
+	.globl _p_180_plt_Xamarin_Essentials__rgctx_fetch_20_llvm
+.private_extern _p_180_plt_Xamarin_Essentials__rgctx_fetch_20_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_20
+plt_Xamarin_Essentials__rgctx_fetch_20:
+_p_180:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1800]
 br x16
-.word 5596
-_p_183_plt_Xamarin_Essentials__rgctx_fetch_83_llvm:
-	.globl _p_183_plt_Xamarin_Essentials__rgctx_fetch_83_llvm
-.private_extern _p_183_plt_Xamarin_Essentials__rgctx_fetch_83_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_83
-plt_Xamarin_Essentials__rgctx_fetch_83:
-_p_183:
+.word 8153
+_p_181_plt_Xamarin_Essentials__rgctx_fetch_21_llvm:
+	.globl _p_181_plt_Xamarin_Essentials__rgctx_fetch_21_llvm
+.private_extern _p_181_plt_Xamarin_Essentials__rgctx_fetch_21_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_21
+plt_Xamarin_Essentials__rgctx_fetch_21:
+_p_181:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1808]
 br x16
-.word 5610
-_p_184_plt_Xamarin_Essentials__rgctx_fetch_84_llvm:
-	.globl _p_184_plt_Xamarin_Essentials__rgctx_fetch_84_llvm
-.private_extern _p_184_plt_Xamarin_Essentials__rgctx_fetch_84_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_84
-plt_Xamarin_Essentials__rgctx_fetch_84:
-_p_184:
+.word 8161
+_p_182_plt_Xamarin_Essentials_System_Threading_Tasks_Task_ScheduleAndStart_bool_llvm:
+	.globl _p_182_plt_Xamarin_Essentials_System_Threading_Tasks_Task_ScheduleAndStart_bool_llvm
+.private_extern _p_182_plt_Xamarin_Essentials_System_Threading_Tasks_Task_ScheduleAndStart_bool_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_Task_ScheduleAndStart_bool
+plt_Xamarin_Essentials_System_Threading_Tasks_Task_ScheduleAndStart_bool:
+_p_182:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1816]
 br x16
-.word 5624
-_p_185_plt_Xamarin_Essentials__rgctx_fetch_85_llvm:
-	.globl _p_185_plt_Xamarin_Essentials__rgctx_fetch_85_llvm
-.private_extern _p_185_plt_Xamarin_Essentials__rgctx_fetch_85_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_85
-plt_Xamarin_Essentials__rgctx_fetch_85:
-_p_185:
+.word 8184
+_p_183_plt_Xamarin_Essentials__rgctx_fetch_22_llvm:
+	.globl _p_183_plt_Xamarin_Essentials__rgctx_fetch_22_llvm
+.private_extern _p_183_plt_Xamarin_Essentials__rgctx_fetch_22_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_22
+plt_Xamarin_Essentials__rgctx_fetch_22:
+_p_183:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1824]
 br x16
-.word 5632
-_p_186_plt_Xamarin_Essentials__rgctx_fetch_86_llvm:
-	.globl _p_186_plt_Xamarin_Essentials__rgctx_fetch_86_llvm
-.private_extern _p_186_plt_Xamarin_Essentials__rgctx_fetch_86_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_86
-plt_Xamarin_Essentials__rgctx_fetch_86:
-_p_186:
+.word 8207
+_p_184_plt_Xamarin_Essentials__rgctx_fetch_23_llvm:
+	.globl _p_184_plt_Xamarin_Essentials__rgctx_fetch_23_llvm
+.private_extern _p_184_plt_Xamarin_Essentials__rgctx_fetch_23_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_23
+plt_Xamarin_Essentials__rgctx_fetch_23:
+_p_184:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1832]
 br x16
-.word 5646
-_p_187_plt_Xamarin_Essentials__rgctx_fetch_87_llvm:
-	.globl _p_187_plt_Xamarin_Essentials__rgctx_fetch_87_llvm
-.private_extern _p_187_plt_Xamarin_Essentials__rgctx_fetch_87_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_87
-plt_Xamarin_Essentials__rgctx_fetch_87:
-_p_187:
+.word 8215
+_p_185_plt_Xamarin_Essentials_System_Threading_Tasks_Task_AtomicStateUpdate_int_int_llvm:
+	.globl _p_185_plt_Xamarin_Essentials_System_Threading_Tasks_Task_AtomicStateUpdate_int_int_llvm
+.private_extern _p_185_plt_Xamarin_Essentials_System_Threading_Tasks_Task_AtomicStateUpdate_int_int_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_Task_AtomicStateUpdate_int_int
+plt_Xamarin_Essentials_System_Threading_Tasks_Task_AtomicStateUpdate_int_int:
+_p_185:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1840]
 br x16
-.word 5660
-_p_188_plt_Xamarin_Essentials__rgctx_fetch_88_llvm:
-	.globl _p_188_plt_Xamarin_Essentials__rgctx_fetch_88_llvm
-.private_extern _p_188_plt_Xamarin_Essentials__rgctx_fetch_88_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_88
-plt_Xamarin_Essentials__rgctx_fetch_88:
-_p_188:
+.word 8238
+_p_186_plt_Xamarin_Essentials_System_Threading_Tasks_Task_FinishStageThree_llvm:
+	.globl _p_186_plt_Xamarin_Essentials_System_Threading_Tasks_Task_FinishStageThree_llvm
+.private_extern _p_186_plt_Xamarin_Essentials_System_Threading_Tasks_Task_FinishStageThree_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_Task_FinishStageThree
+plt_Xamarin_Essentials_System_Threading_Tasks_Task_FinishStageThree:
+_p_186:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1848]
 br x16
-.word 5668
-_p_189_plt_Xamarin_Essentials__rgctx_fetch_89_llvm:
-	.globl _p_189_plt_Xamarin_Essentials__rgctx_fetch_89_llvm
-.private_extern _p_189_plt_Xamarin_Essentials__rgctx_fetch_89_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_89
-plt_Xamarin_Essentials__rgctx_fetch_89:
-_p_189:
+.word 8243
+_p_187_plt_Xamarin_Essentials_System_Threading_Tasks_Task_ContingentProperties_SetCompleted_llvm:
+	.globl _p_187_plt_Xamarin_Essentials_System_Threading_Tasks_Task_ContingentProperties_SetCompleted_llvm
+.private_extern _p_187_plt_Xamarin_Essentials_System_Threading_Tasks_Task_ContingentProperties_SetCompleted_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_Task_ContingentProperties_SetCompleted
+plt_Xamarin_Essentials_System_Threading_Tasks_Task_ContingentProperties_SetCompleted:
+_p_187:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1856]
 br x16
-.word 5682
-_p_190_plt_Xamarin_Essentials__rgctx_fetch_90_llvm:
-	.globl _p_190_plt_Xamarin_Essentials__rgctx_fetch_90_llvm
-.private_extern _p_190_plt_Xamarin_Essentials__rgctx_fetch_90_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_90
-plt_Xamarin_Essentials__rgctx_fetch_90:
-_p_190:
+.word 8248
+_p_188_plt_Xamarin_Essentials__rgctx_fetch_24_llvm:
+	.globl _p_188_plt_Xamarin_Essentials__rgctx_fetch_24_llvm
+.private_extern _p_188_plt_Xamarin_Essentials__rgctx_fetch_24_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_24
+plt_Xamarin_Essentials__rgctx_fetch_24:
+_p_188:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1864]
 br x16
-.word 5696
-_p_191_plt_Xamarin_Essentials__rgctx_fetch_91_llvm:
-	.globl _p_191_plt_Xamarin_Essentials__rgctx_fetch_91_llvm
-.private_extern _p_191_plt_Xamarin_Essentials__rgctx_fetch_91_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_91
-plt_Xamarin_Essentials__rgctx_fetch_91:
-_p_191:
+.word 8271
+_p_189_plt_Xamarin_Essentials__rgctx_fetch_25_llvm:
+	.globl _p_189_plt_Xamarin_Essentials__rgctx_fetch_25_llvm
+.private_extern _p_189_plt_Xamarin_Essentials__rgctx_fetch_25_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_25
+plt_Xamarin_Essentials__rgctx_fetch_25:
+_p_189:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1872]
 br x16
-.word 5704
-_p_192_plt_Xamarin_Essentials__rgctx_fetch_92_llvm:
-	.globl _p_192_plt_Xamarin_Essentials__rgctx_fetch_92_llvm
-.private_extern _p_192_plt_Xamarin_Essentials__rgctx_fetch_92_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_92
-plt_Xamarin_Essentials__rgctx_fetch_92:
-_p_192:
+.word 8312
+_p_190_plt_Xamarin_Essentials_System_Threading_Tasks_Task_get_IsCompletedSuccessfully_llvm:
+	.globl _p_190_plt_Xamarin_Essentials_System_Threading_Tasks_Task_get_IsCompletedSuccessfully_llvm
+.private_extern _p_190_plt_Xamarin_Essentials_System_Threading_Tasks_Task_get_IsCompletedSuccessfully_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_Task_get_IsCompletedSuccessfully
+plt_Xamarin_Essentials_System_Threading_Tasks_Task_get_IsCompletedSuccessfully:
+_p_190:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1880]
 br x16
-.word 5718
-_p_193_plt_Xamarin_Essentials__rgctx_fetch_93_llvm:
-	.globl _p_193_plt_Xamarin_Essentials__rgctx_fetch_93_llvm
-.private_extern _p_193_plt_Xamarin_Essentials__rgctx_fetch_93_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_93
-plt_Xamarin_Essentials__rgctx_fetch_93:
-_p_193:
+.word 8335
+_p_191_plt_Xamarin_Essentials_System_Threading_Tasks_Task_ThrowIfExceptional_bool_llvm:
+	.globl _p_191_plt_Xamarin_Essentials_System_Threading_Tasks_Task_ThrowIfExceptional_bool_llvm
+.private_extern _p_191_plt_Xamarin_Essentials_System_Threading_Tasks_Task_ThrowIfExceptional_bool_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_Task_ThrowIfExceptional_bool
+plt_Xamarin_Essentials_System_Threading_Tasks_Task_ThrowIfExceptional_bool:
+_p_191:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1888]
 br x16
-.word 5732
-_p_194_plt_Xamarin_Essentials__rgctx_fetch_94_llvm:
-	.globl _p_194_plt_Xamarin_Essentials__rgctx_fetch_94_llvm
-.private_extern _p_194_plt_Xamarin_Essentials__rgctx_fetch_94_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_94
-plt_Xamarin_Essentials__rgctx_fetch_94:
-_p_194:
+.word 8340
+_p_192_plt_Xamarin_Essentials_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary_llvm:
+	.globl _p_192_plt_Xamarin_Essentials_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary_llvm
+.private_extern _p_192_plt_Xamarin_Essentials_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary
+plt_Xamarin_Essentials_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary:
+_p_192:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1896]
 br x16
-.word 5740
-_p_195_plt_Xamarin_Essentials__rgctx_fetch_95_llvm:
-	.globl _p_195_plt_Xamarin_Essentials__rgctx_fetch_95_llvm
-.private_extern _p_195_plt_Xamarin_Essentials__rgctx_fetch_95_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_95
-plt_Xamarin_Essentials__rgctx_fetch_95:
-_p_195:
+.word 8345
+_p_193_plt_Xamarin_Essentials_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken_llvm:
+	.globl _p_193_plt_Xamarin_Essentials_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken_llvm
+.private_extern _p_193_plt_Xamarin_Essentials_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken
+plt_Xamarin_Essentials_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken:
+_p_193:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1904]
 br x16
-.word 5754
-_p_196_plt_Xamarin_Essentials__rgctx_fetch_96_llvm:
-	.globl _p_196_plt_Xamarin_Essentials__rgctx_fetch_96_llvm
-.private_extern _p_196_plt_Xamarin_Essentials__rgctx_fetch_96_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_96
-plt_Xamarin_Essentials__rgctx_fetch_96:
-_p_196:
+.word 8350
+_p_194_plt_Xamarin_Essentials__rgctx_fetch_26_llvm:
+	.globl _p_194_plt_Xamarin_Essentials__rgctx_fetch_26_llvm
+.private_extern _p_194_plt_Xamarin_Essentials__rgctx_fetch_26_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_26
+plt_Xamarin_Essentials__rgctx_fetch_26:
+_p_194:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1912]
 br x16
-.word 5768
-_p_197_plt_Xamarin_Essentials_double_Equals_object_llvm:
-	.globl _p_197_plt_Xamarin_Essentials_double_Equals_object_llvm
-.private_extern _p_197_plt_Xamarin_Essentials_double_Equals_object_llvm
-	.no_dead_strip plt_Xamarin_Essentials_double_Equals_object
-plt_Xamarin_Essentials_double_Equals_object:
-_p_197:
+.word 8373
+_p_195_plt_Xamarin_Essentials__rgctx_fetch_27_llvm:
+	.globl _p_195_plt_Xamarin_Essentials__rgctx_fetch_27_llvm
+.private_extern _p_195_plt_Xamarin_Essentials__rgctx_fetch_27_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_27
+plt_Xamarin_Essentials__rgctx_fetch_27:
+_p_195:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1920]
 br x16
-.word 5776
-_p_198_plt_Xamarin_Essentials_double_ToString_llvm:
-	.globl _p_198_plt_Xamarin_Essentials_double_ToString_llvm
-.private_extern _p_198_plt_Xamarin_Essentials_double_ToString_llvm
-	.no_dead_strip plt_Xamarin_Essentials_double_ToString
-plt_Xamarin_Essentials_double_ToString:
-_p_198:
+.word 8390
+_p_196_plt_Xamarin_Essentials__rgctx_fetch_28_llvm:
+	.globl _p_196_plt_Xamarin_Essentials__rgctx_fetch_28_llvm
+.private_extern _p_196_plt_Xamarin_Essentials__rgctx_fetch_28_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_28
+plt_Xamarin_Essentials__rgctx_fetch_28:
+_p_196:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1928]
 br x16
-.word 5781
-_p_199_plt_Xamarin_Essentials_System_Nullable_1_double__ctor_double_llvm:
-	.globl _p_199_plt_Xamarin_Essentials_System_Nullable_1_double__ctor_double_llvm
-.private_extern _p_199_plt_Xamarin_Essentials_System_Nullable_1_double__ctor_double_llvm
-	.no_dead_strip plt_Xamarin_Essentials_System_Nullable_1_double__ctor_double
-plt_Xamarin_Essentials_System_Nullable_1_double__ctor_double:
-_p_199:
+.word 8398
+_p_197_plt_Xamarin_Essentials__rgctx_fetch_29_llvm:
+	.globl _p_197_plt_Xamarin_Essentials__rgctx_fetch_29_llvm
+.private_extern _p_197_plt_Xamarin_Essentials__rgctx_fetch_29_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_29
+plt_Xamarin_Essentials__rgctx_fetch_29:
+_p_197:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1936]
 br x16
-.word 5786
-_p_200_plt_Xamarin_Essentials__rgctx_fetch_97_llvm:
-	.globl _p_200_plt_Xamarin_Essentials__rgctx_fetch_97_llvm
-.private_extern _p_200_plt_Xamarin_Essentials__rgctx_fetch_97_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_97
-plt_Xamarin_Essentials__rgctx_fetch_97:
-_p_200:
+.word 8421
+_p_198_plt_Xamarin_Essentials__rgctx_fetch_30_llvm:
+	.globl _p_198_plt_Xamarin_Essentials__rgctx_fetch_30_llvm
+.private_extern _p_198_plt_Xamarin_Essentials__rgctx_fetch_30_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_30
+plt_Xamarin_Essentials__rgctx_fetch_30:
+_p_198:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1944]
 br x16
-.word 5836
-_p_201_plt_Xamarin_Essentials_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array_llvm:
-	.globl _p_201_plt_Xamarin_Essentials_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array_llvm
-.private_extern _p_201_plt_Xamarin_Essentials_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array_llvm
-	.no_dead_strip plt_Xamarin_Essentials_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
-plt_Xamarin_Essentials_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
-_p_201:
+.word 8471
+_p_199_plt_Xamarin_Essentials_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm:
+	.globl _p_199_plt_Xamarin_Essentials_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm
+.private_extern _p_199_plt_Xamarin_Essentials_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm
+	.no_dead_strip plt_Xamarin_Essentials_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
+plt_Xamarin_Essentials_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
+_p_199:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1952]
 br x16
-.word 5844
-_p_202_plt_Xamarin_Essentials__rgctx_fetch_98_llvm:
-	.globl _p_202_plt_Xamarin_Essentials__rgctx_fetch_98_llvm
-.private_extern _p_202_plt_Xamarin_Essentials__rgctx_fetch_98_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_98
-plt_Xamarin_Essentials__rgctx_fetch_98:
-_p_202:
+.word 8479
+_p_200_plt_Xamarin_Essentials__rgctx_fetch_31_llvm:
+	.globl _p_200_plt_Xamarin_Essentials__rgctx_fetch_31_llvm
+.private_extern _p_200_plt_Xamarin_Essentials__rgctx_fetch_31_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_31
+plt_Xamarin_Essentials__rgctx_fetch_31:
+_p_200:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1960]
 br x16
-.word 5872
-_p_203_plt_Xamarin_Essentials__rgctx_fetch_99_llvm:
-	.globl _p_203_plt_Xamarin_Essentials__rgctx_fetch_99_llvm
-.private_extern _p_203_plt_Xamarin_Essentials__rgctx_fetch_99_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_99
-plt_Xamarin_Essentials__rgctx_fetch_99:
-_p_203:
+.word 8499
+_p_201_plt_Xamarin_Essentials__rgctx_fetch_32_llvm:
+	.globl _p_201_plt_Xamarin_Essentials__rgctx_fetch_32_llvm
+.private_extern _p_201_plt_Xamarin_Essentials__rgctx_fetch_32_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_32
+plt_Xamarin_Essentials__rgctx_fetch_32:
+_p_201:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1968]
 br x16
-.word 5880
-_p_204_plt_Xamarin_Essentials__rgctx_fetch_100_llvm:
-	.globl _p_204_plt_Xamarin_Essentials__rgctx_fetch_100_llvm
-.private_extern _p_204_plt_Xamarin_Essentials__rgctx_fetch_100_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_100
-plt_Xamarin_Essentials__rgctx_fetch_100:
-_p_204:
+.word 8534
+_p_202_plt_Xamarin_Essentials__rgctx_fetch_33_llvm:
+	.globl _p_202_plt_Xamarin_Essentials__rgctx_fetch_33_llvm
+.private_extern _p_202_plt_Xamarin_Essentials__rgctx_fetch_33_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_33
+plt_Xamarin_Essentials__rgctx_fetch_33:
+_p_202:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1976]
 br x16
-.word 5907
-_p_205_plt_Xamarin_Essentials_System_Array_Copy_System_Array_int_System_Array_int_int_llvm:
-	.globl _p_205_plt_Xamarin_Essentials_System_Array_Copy_System_Array_int_System_Array_int_int_llvm
-.private_extern _p_205_plt_Xamarin_Essentials_System_Array_Copy_System_Array_int_System_Array_int_int_llvm
-	.no_dead_strip plt_Xamarin_Essentials_System_Array_Copy_System_Array_int_System_Array_int_int
-plt_Xamarin_Essentials_System_Array_Copy_System_Array_int_System_Array_int_int:
-_p_205:
+.word 8542
+_p_203_plt_Xamarin_Essentials__rgctx_fetch_34_llvm:
+	.globl _p_203_plt_Xamarin_Essentials__rgctx_fetch_34_llvm
+.private_extern _p_203_plt_Xamarin_Essentials__rgctx_fetch_34_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_34
+plt_Xamarin_Essentials__rgctx_fetch_34:
+_p_203:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1984]
 br x16
-.word 5931
-_p_206_plt_Xamarin_Essentials__jit_icall_mono_thread_interruption_checkpoint_llvm:
-	.globl _p_206_plt_Xamarin_Essentials__jit_icall_mono_thread_interruption_checkpoint_llvm
-.private_extern _p_206_plt_Xamarin_Essentials__jit_icall_mono_thread_interruption_checkpoint_llvm
-	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_thread_interruption_checkpoint
-plt_Xamarin_Essentials__jit_icall_mono_thread_interruption_checkpoint:
-_p_206:
+.word 8592
+_p_204_plt_Xamarin_Essentials__rgctx_fetch_35_llvm:
+	.globl _p_204_plt_Xamarin_Essentials__rgctx_fetch_35_llvm
+.private_extern _p_204_plt_Xamarin_Essentials__rgctx_fetch_35_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_35
+plt_Xamarin_Essentials__rgctx_fetch_35:
+_p_204:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #1992]
 br x16
-.word 5936
-_p_207_plt_Xamarin_Essentials__rgctx_fetch_101_llvm:
-	.globl _p_207_plt_Xamarin_Essentials__rgctx_fetch_101_llvm
-.private_extern _p_207_plt_Xamarin_Essentials__rgctx_fetch_101_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_101
-plt_Xamarin_Essentials__rgctx_fetch_101:
-_p_207:
+.word 8600
+_p_205_plt_Xamarin_Essentials_System_Threading_Tasks_TaskScheduler_get_Current_llvm:
+	.globl _p_205_plt_Xamarin_Essentials_System_Threading_Tasks_TaskScheduler_get_Current_llvm
+.private_extern _p_205_plt_Xamarin_Essentials_System_Threading_Tasks_TaskScheduler_get_Current_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_TaskScheduler_get_Current
+plt_Xamarin_Essentials_System_Threading_Tasks_TaskScheduler_get_Current:
+_p_205:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2000]
 br x16
-.word 5992
-_p_208_plt_Xamarin_Essentials__rgctx_fetch_102_llvm:
-	.globl _p_208_plt_Xamarin_Essentials__rgctx_fetch_102_llvm
-.private_extern _p_208_plt_Xamarin_Essentials__rgctx_fetch_102_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_102
-plt_Xamarin_Essentials__rgctx_fetch_102:
-_p_208:
+.word 8623
+_p_206_plt_Xamarin_Essentials__rgctx_fetch_36_llvm:
+	.globl _p_206_plt_Xamarin_Essentials__rgctx_fetch_36_llvm
+.private_extern _p_206_plt_Xamarin_Essentials__rgctx_fetch_36_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_36
+plt_Xamarin_Essentials__rgctx_fetch_36:
+_p_206:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2008]
 br x16
-.word 6016
-_p_209_plt_Xamarin_Essentials__rgctx_fetch_103_llvm:
-	.globl _p_209_plt_Xamarin_Essentials__rgctx_fetch_103_llvm
-.private_extern _p_209_plt_Xamarin_Essentials__rgctx_fetch_103_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_103
-plt_Xamarin_Essentials__rgctx_fetch_103:
-_p_209:
+.word 8646
+_p_207_plt_Xamarin_Essentials__rgctx_fetch_37_llvm:
+	.globl _p_207_plt_Xamarin_Essentials__rgctx_fetch_37_llvm
+.private_extern _p_207_plt_Xamarin_Essentials__rgctx_fetch_37_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_37
+plt_Xamarin_Essentials__rgctx_fetch_37:
+_p_207:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2016]
 br x16
-.word 6058
-_p_210_plt_Xamarin_Essentials__rgctx_fetch_104_llvm:
-	.globl _p_210_plt_Xamarin_Essentials__rgctx_fetch_104_llvm
-.private_extern _p_210_plt_Xamarin_Essentials__rgctx_fetch_104_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_104
-plt_Xamarin_Essentials__rgctx_fetch_104:
-_p_210:
+.word 8687
+_p_208_plt_Xamarin_Essentials__rgctx_fetch_38_llvm:
+	.globl _p_208_plt_Xamarin_Essentials__rgctx_fetch_38_llvm
+.private_extern _p_208_plt_Xamarin_Essentials__rgctx_fetch_38_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_38
+plt_Xamarin_Essentials__rgctx_fetch_38:
+_p_208:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2024]
 br x16
-.word 6066
-_p_211_plt_Xamarin_Essentials__rgctx_fetch_105_llvm:
-	.globl _p_211_plt_Xamarin_Essentials__rgctx_fetch_105_llvm
-.private_extern _p_211_plt_Xamarin_Essentials__rgctx_fetch_105_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_105
-plt_Xamarin_Essentials__rgctx_fetch_105:
-_p_211:
+.word 8728
+_p_209_plt_Xamarin_Essentials_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions__llvm:
+	.globl _p_209_plt_Xamarin_Essentials_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions__llvm
+.private_extern _p_209_plt_Xamarin_Essentials_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions__llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_
+plt_Xamarin_Essentials_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_:
+_p_209:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2032]
 br x16
-.word 6089
-_p_212_plt_Xamarin_Essentials__rgctx_fetch_106_llvm:
-	.globl _p_212_plt_Xamarin_Essentials__rgctx_fetch_106_llvm
-.private_extern _p_212_plt_Xamarin_Essentials__rgctx_fetch_106_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_106
-plt_Xamarin_Essentials__rgctx_fetch_106:
-_p_212:
+.word 8751
+_p_210_plt_Xamarin_Essentials__rgctx_fetch_39_llvm:
+	.globl _p_210_plt_Xamarin_Essentials__rgctx_fetch_39_llvm
+.private_extern _p_210_plt_Xamarin_Essentials__rgctx_fetch_39_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_39
+plt_Xamarin_Essentials__rgctx_fetch_39:
+_p_210:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2040]
 br x16
-.word 6125
-_p_213_plt_Xamarin_Essentials__rgctx_fetch_107_llvm:
-	.globl _p_213_plt_Xamarin_Essentials__rgctx_fetch_107_llvm
-.private_extern _p_213_plt_Xamarin_Essentials__rgctx_fetch_107_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_107
-plt_Xamarin_Essentials__rgctx_fetch_107:
-_p_213:
+.word 8783
+_p_211_plt_Xamarin_Essentials__rgctx_fetch_40_llvm:
+	.globl _p_211_plt_Xamarin_Essentials__rgctx_fetch_40_llvm
+.private_extern _p_211_plt_Xamarin_Essentials__rgctx_fetch_40_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_40
+plt_Xamarin_Essentials__rgctx_fetch_40:
+_p_211:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2048]
 br x16
-.word 6133
-_p_214_plt_Xamarin_Essentials__rgctx_fetch_108_llvm:
-	.globl _p_214_plt_Xamarin_Essentials__rgctx_fetch_108_llvm
-.private_extern _p_214_plt_Xamarin_Essentials__rgctx_fetch_108_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_108
-plt_Xamarin_Essentials__rgctx_fetch_108:
-_p_214:
+.word 8791
+_p_212_plt_Xamarin_Essentials_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions_llvm:
+	.globl _p_212_plt_Xamarin_Essentials_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions_llvm
+.private_extern _p_212_plt_Xamarin_Essentials_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
+plt_Xamarin_Essentials_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
+_p_212:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2056]
 br x16
-.word 6165
-_p_215_plt_Xamarin_Essentials__rgctx_fetch_109_llvm:
-	.globl _p_215_plt_Xamarin_Essentials__rgctx_fetch_109_llvm
-.private_extern _p_215_plt_Xamarin_Essentials__rgctx_fetch_109_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_109
-plt_Xamarin_Essentials__rgctx_fetch_109:
-_p_215:
+.word 8814
+_p_213_plt_Xamarin_Essentials__rgctx_fetch_41_llvm:
+	.globl _p_213_plt_Xamarin_Essentials__rgctx_fetch_41_llvm
+.private_extern _p_213_plt_Xamarin_Essentials__rgctx_fetch_41_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_41
+plt_Xamarin_Essentials__rgctx_fetch_41:
+_p_213:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2064]
 br x16
-.word 6173
-_p_216_plt_Xamarin_Essentials__rgctx_fetch_110_llvm:
-	.globl _p_216_plt_Xamarin_Essentials__rgctx_fetch_110_llvm
-.private_extern _p_216_plt_Xamarin_Essentials__rgctx_fetch_110_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_110
-plt_Xamarin_Essentials__rgctx_fetch_110:
-_p_216:
+.word 8837
+_p_214_plt_Xamarin_Essentials_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_llvm:
+	.globl _p_214_plt_Xamarin_Essentials_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_llvm
+.private_extern _p_214_plt_Xamarin_Essentials_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions
+plt_Xamarin_Essentials_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions:
+_p_214:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2072]
 br x16
-.word 6199
-_p_217_plt_Xamarin_Essentials__rgctx_fetch_111_llvm:
-	.globl _p_217_plt_Xamarin_Essentials__rgctx_fetch_111_llvm
-.private_extern _p_217_plt_Xamarin_Essentials__rgctx_fetch_111_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_111
-plt_Xamarin_Essentials__rgctx_fetch_111:
-_p_217:
+.word 8860
+_p_215_plt_Xamarin_Essentials_System_Threading_Tasks_TaskFactory_CheckCreationOptions_System_Threading_Tasks_TaskCreationOptions_llvm:
+	.globl _p_215_plt_Xamarin_Essentials_System_Threading_Tasks_TaskFactory_CheckCreationOptions_System_Threading_Tasks_TaskCreationOptions_llvm
+.private_extern _p_215_plt_Xamarin_Essentials_System_Threading_Tasks_TaskFactory_CheckCreationOptions_System_Threading_Tasks_TaskCreationOptions_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_TaskFactory_CheckCreationOptions_System_Threading_Tasks_TaskCreationOptions
+plt_Xamarin_Essentials_System_Threading_Tasks_TaskFactory_CheckCreationOptions_System_Threading_Tasks_TaskCreationOptions:
+_p_215:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2080]
 br x16
-.word 6207
-_p_218_plt_Xamarin_Essentials__rgctx_fetch_112_llvm:
-	.globl _p_218_plt_Xamarin_Essentials__rgctx_fetch_112_llvm
-.private_extern _p_218_plt_Xamarin_Essentials__rgctx_fetch_112_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_112
-plt_Xamarin_Essentials__rgctx_fetch_112:
-_p_218:
+.word 8865
+_p_216_plt_Xamarin_Essentials__rgctx_fetch_42_llvm:
+	.globl _p_216_plt_Xamarin_Essentials__rgctx_fetch_42_llvm
+.private_extern _p_216_plt_Xamarin_Essentials__rgctx_fetch_42_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_42
+plt_Xamarin_Essentials__rgctx_fetch_42:
+_p_216:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2088]
 br x16
-.word 6215
-_p_219_plt_Xamarin_Essentials__rgctx_fetch_113_llvm:
-	.globl _p_219_plt_Xamarin_Essentials__rgctx_fetch_113_llvm
-.private_extern _p_219_plt_Xamarin_Essentials__rgctx_fetch_113_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_113
-plt_Xamarin_Essentials__rgctx_fetch_113:
-_p_219:
+.word 8888
+_p_217_plt_Xamarin_Essentials__rgctx_fetch_43_llvm:
+	.globl _p_217_plt_Xamarin_Essentials__rgctx_fetch_43_llvm
+.private_extern _p_217_plt_Xamarin_Essentials__rgctx_fetch_43_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_43
+plt_Xamarin_Essentials__rgctx_fetch_43:
+_p_217:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2096]
 br x16
-.word 6256
-_p_220_plt_Xamarin_Essentials__rgctx_fetch_114_llvm:
-	.globl _p_220_plt_Xamarin_Essentials__rgctx_fetch_114_llvm
-.private_extern _p_220_plt_Xamarin_Essentials__rgctx_fetch_114_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_114
-plt_Xamarin_Essentials__rgctx_fetch_114:
-_p_220:
+.word 8896
+_p_218_plt_Xamarin_Essentials__rgctx_fetch_44_llvm:
+	.globl _p_218_plt_Xamarin_Essentials__rgctx_fetch_44_llvm
+.private_extern _p_218_plt_Xamarin_Essentials__rgctx_fetch_44_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_44
+plt_Xamarin_Essentials__rgctx_fetch_44:
+_p_218:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2104]
 br x16
-.word 6264
-_p_221_plt_Xamarin_Essentials__rgctx_fetch_115_llvm:
-	.globl _p_221_plt_Xamarin_Essentials__rgctx_fetch_115_llvm
-.private_extern _p_221_plt_Xamarin_Essentials__rgctx_fetch_115_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_115
-plt_Xamarin_Essentials__rgctx_fetch_115:
-_p_221:
+.word 8946
+_p_219_plt_Xamarin_Essentials__rgctx_fetch_45_llvm:
+	.globl _p_219_plt_Xamarin_Essentials__rgctx_fetch_45_llvm
+.private_extern _p_219_plt_Xamarin_Essentials__rgctx_fetch_45_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_45
+plt_Xamarin_Essentials__rgctx_fetch_45:
+_p_219:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2112]
 br x16
-.word 6272
-_p_222_plt_Xamarin_Essentials__rgctx_fetch_116_llvm:
-	.globl _p_222_plt_Xamarin_Essentials__rgctx_fetch_116_llvm
-.private_extern _p_222_plt_Xamarin_Essentials__rgctx_fetch_116_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_116
-plt_Xamarin_Essentials__rgctx_fetch_116:
-_p_222:
+.word 8954
+_p_220_plt_Xamarin_Essentials_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool_llvm:
+	.globl _p_220_plt_Xamarin_Essentials_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool_llvm
+.private_extern _p_220_plt_Xamarin_Essentials_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool
+plt_Xamarin_Essentials_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool:
+_p_220:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2120]
 br x16
-.word 6313
-_p_223_plt_Xamarin_Essentials__rgctx_fetch_117_llvm:
-	.globl _p_223_plt_Xamarin_Essentials__rgctx_fetch_117_llvm
-.private_extern _p_223_plt_Xamarin_Essentials__rgctx_fetch_117_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_117
-plt_Xamarin_Essentials__rgctx_fetch_117:
-_p_223:
+.word 8977
+_p_221_plt_Xamarin_Essentials__rgctx_fetch_46_llvm:
+	.globl _p_221_plt_Xamarin_Essentials__rgctx_fetch_46_llvm
+.private_extern _p_221_plt_Xamarin_Essentials__rgctx_fetch_46_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_46
+plt_Xamarin_Essentials__rgctx_fetch_46:
+_p_221:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2128]
 br x16
-.word 6321
-_p_224_plt_Xamarin_Essentials__rgctx_fetch_118_llvm:
-	.globl _p_224_plt_Xamarin_Essentials__rgctx_fetch_118_llvm
-.private_extern _p_224_plt_Xamarin_Essentials__rgctx_fetch_118_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_118
-plt_Xamarin_Essentials__rgctx_fetch_118:
-_p_224:
+.word 8991
+_p_222_plt_Xamarin_Essentials__rgctx_fetch_47_llvm:
+	.globl _p_222_plt_Xamarin_Essentials__rgctx_fetch_47_llvm
+.private_extern _p_222_plt_Xamarin_Essentials__rgctx_fetch_47_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_47
+plt_Xamarin_Essentials__rgctx_fetch_47:
+_p_222:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2136]
 br x16
-.word 6329
-_p_225_plt_Xamarin_Essentials__rgctx_fetch_119_llvm:
-	.globl _p_225_plt_Xamarin_Essentials__rgctx_fetch_119_llvm
-.private_extern _p_225_plt_Xamarin_Essentials__rgctx_fetch_119_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_119
-plt_Xamarin_Essentials__rgctx_fetch_119:
-_p_225:
+.word 8999
+_p_223_plt_Xamarin_Essentials__rgctx_fetch_48_llvm:
+	.globl _p_223_plt_Xamarin_Essentials__rgctx_fetch_48_llvm
+.private_extern _p_223_plt_Xamarin_Essentials__rgctx_fetch_48_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_48
+plt_Xamarin_Essentials__rgctx_fetch_48:
+_p_223:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2144]
 br x16
-.word 6370
-_p_226_plt_Xamarin_Essentials__rgctx_fetch_120_llvm:
-	.globl _p_226_plt_Xamarin_Essentials__rgctx_fetch_120_llvm
-.private_extern _p_226_plt_Xamarin_Essentials__rgctx_fetch_120_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_120
-plt_Xamarin_Essentials__rgctx_fetch_120:
-_p_226:
+.word 9022
+_p_224_plt_Xamarin_Essentials__rgctx_fetch_49_llvm:
+	.globl _p_224_plt_Xamarin_Essentials__rgctx_fetch_49_llvm
+.private_extern _p_224_plt_Xamarin_Essentials__rgctx_fetch_49_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_49
+plt_Xamarin_Essentials__rgctx_fetch_49:
+_p_224:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2152]
 br x16
-.word 6378
-_p_227_plt_Xamarin_Essentials__rgctx_fetch_121_llvm:
-	.globl _p_227_plt_Xamarin_Essentials__rgctx_fetch_121_llvm
-.private_extern _p_227_plt_Xamarin_Essentials__rgctx_fetch_121_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_121
-plt_Xamarin_Essentials__rgctx_fetch_121:
-_p_227:
+.word 9045
+_p_225_plt_Xamarin_Essentials__rgctx_fetch_50_llvm:
+	.globl _p_225_plt_Xamarin_Essentials__rgctx_fetch_50_llvm
+.private_extern _p_225_plt_Xamarin_Essentials__rgctx_fetch_50_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_50
+plt_Xamarin_Essentials__rgctx_fetch_50:
+_p_225:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2160]
 br x16
-.word 6386
-_p_228_plt_Xamarin_Essentials__rgctx_fetch_122_llvm:
-	.globl _p_228_plt_Xamarin_Essentials__rgctx_fetch_122_llvm
-.private_extern _p_228_plt_Xamarin_Essentials__rgctx_fetch_122_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_122
-plt_Xamarin_Essentials__rgctx_fetch_122:
-_p_228:
+.word 9073
+_p_226_plt_Xamarin_Essentials__rgctx_fetch_51_llvm:
+	.globl _p_226_plt_Xamarin_Essentials__rgctx_fetch_51_llvm
+.private_extern _p_226_plt_Xamarin_Essentials__rgctx_fetch_51_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_51
+plt_Xamarin_Essentials__rgctx_fetch_51:
+_p_226:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2168]
 br x16
-.word 6428
-_p_229_plt_Xamarin_Essentials__rgctx_fetch_123_llvm:
-	.globl _p_229_plt_Xamarin_Essentials__rgctx_fetch_123_llvm
-.private_extern _p_229_plt_Xamarin_Essentials__rgctx_fetch_123_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_123
-plt_Xamarin_Essentials__rgctx_fetch_123:
-_p_229:
+.word 9081
+_p_227_plt_Xamarin_Essentials_System_Threading_Tasks_DebuggerSupport_AddToActiveTasksNonInlined_System_Threading_Tasks_Task_llvm:
+	.globl _p_227_plt_Xamarin_Essentials_System_Threading_Tasks_DebuggerSupport_AddToActiveTasksNonInlined_System_Threading_Tasks_Task_llvm
+.private_extern _p_227_plt_Xamarin_Essentials_System_Threading_Tasks_DebuggerSupport_AddToActiveTasksNonInlined_System_Threading_Tasks_Task_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_DebuggerSupport_AddToActiveTasksNonInlined_System_Threading_Tasks_Task
+plt_Xamarin_Essentials_System_Threading_Tasks_DebuggerSupport_AddToActiveTasksNonInlined_System_Threading_Tasks_Task:
+_p_227:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2176]
 br x16
-.word 6470
-_p_230_plt_Xamarin_Essentials__rgctx_fetch_124_llvm:
-	.globl _p_230_plt_Xamarin_Essentials__rgctx_fetch_124_llvm
-.private_extern _p_230_plt_Xamarin_Essentials__rgctx_fetch_124_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_124
-plt_Xamarin_Essentials__rgctx_fetch_124:
-_p_230:
+.word 9104
+_p_228_plt_Xamarin_Essentials_string_Concat_object_object_llvm:
+	.globl _p_228_plt_Xamarin_Essentials_string_Concat_object_object_llvm
+.private_extern _p_228_plt_Xamarin_Essentials_string_Concat_object_object_llvm
+	.no_dead_strip plt_Xamarin_Essentials_string_Concat_object_object
+plt_Xamarin_Essentials_string_Concat_object_object:
+_p_228:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2184]
 br x16
-.word 6487
-_p_231_plt_Xamarin_Essentials__rgctx_fetch_125_llvm:
-	.globl _p_231_plt_Xamarin_Essentials__rgctx_fetch_125_llvm
-.private_extern _p_231_plt_Xamarin_Essentials__rgctx_fetch_125_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_125
-plt_Xamarin_Essentials__rgctx_fetch_125:
-_p_231:
+.word 9109
+_p_229_plt_Xamarin_Essentials_System_Threading_Tasks_DebuggerSupport_RemoveFromActiveTasksNonInlined_System_Threading_Tasks_Task_llvm:
+	.globl _p_229_plt_Xamarin_Essentials_System_Threading_Tasks_DebuggerSupport_RemoveFromActiveTasksNonInlined_System_Threading_Tasks_Task_llvm
+.private_extern _p_229_plt_Xamarin_Essentials_System_Threading_Tasks_DebuggerSupport_RemoveFromActiveTasksNonInlined_System_Threading_Tasks_Task_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_Tasks_DebuggerSupport_RemoveFromActiveTasksNonInlined_System_Threading_Tasks_Task
+plt_Xamarin_Essentials_System_Threading_Tasks_DebuggerSupport_RemoveFromActiveTasksNonInlined_System_Threading_Tasks_Task:
+_p_229:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2192]
 br x16
-.word 6504
-_p_232_plt_Xamarin_Essentials__rgctx_fetch_126_llvm:
-	.globl _p_232_plt_Xamarin_Essentials__rgctx_fetch_126_llvm
-.private_extern _p_232_plt_Xamarin_Essentials__rgctx_fetch_126_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_126
-plt_Xamarin_Essentials__rgctx_fetch_126:
-_p_232:
+.word 9114
+_p_230_plt_Xamarin_Essentials__rgctx_fetch_52_llvm:
+	.globl _p_230_plt_Xamarin_Essentials__rgctx_fetch_52_llvm
+.private_extern _p_230_plt_Xamarin_Essentials__rgctx_fetch_52_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_52
+plt_Xamarin_Essentials__rgctx_fetch_52:
+_p_230:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2200]
 br x16
-.word 6512
-_p_233_plt_Xamarin_Essentials_System_Enum_GetUnderlyingType_System_Type_llvm:
-	.globl _p_233_plt_Xamarin_Essentials_System_Enum_GetUnderlyingType_System_Type_llvm
-.private_extern _p_233_plt_Xamarin_Essentials_System_Enum_GetUnderlyingType_System_Type_llvm
-	.no_dead_strip plt_Xamarin_Essentials_System_Enum_GetUnderlyingType_System_Type
-plt_Xamarin_Essentials_System_Enum_GetUnderlyingType_System_Type:
-_p_233:
+.word 9119
+_p_231_plt_Xamarin_Essentials__jit_icall_mono_arch_rethrow_exception_llvm:
+	.globl _p_231_plt_Xamarin_Essentials__jit_icall_mono_arch_rethrow_exception_llvm
+.private_extern _p_231_plt_Xamarin_Essentials__jit_icall_mono_arch_rethrow_exception_llvm
+	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_arch_rethrow_exception
+plt_Xamarin_Essentials__jit_icall_mono_arch_rethrow_exception:
+_p_231:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2208]
 br x16
-.word 6535
-_p_234_plt_Xamarin_Essentials_System_Type_GetTypeCode_System_Type_llvm:
-	.globl _p_234_plt_Xamarin_Essentials_System_Type_GetTypeCode_System_Type_llvm
-.private_extern _p_234_plt_Xamarin_Essentials_System_Type_GetTypeCode_System_Type_llvm
-	.no_dead_strip plt_Xamarin_Essentials_System_Type_GetTypeCode_System_Type
-plt_Xamarin_Essentials_System_Type_GetTypeCode_System_Type:
-_p_234:
+.word 9142
+_p_232_plt_Xamarin_Essentials_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue_llvm:
+	.globl _p_232_plt_Xamarin_Essentials_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue_llvm
+.private_extern _p_232_plt_Xamarin_Essentials_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue
+plt_Xamarin_Essentials_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue:
+_p_232:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2216]
 br x16
-.word 6540
-_p_235_plt_Xamarin_Essentials_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType_llvm:
-	.globl _p_235_plt_Xamarin_Essentials_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType_llvm
-.private_extern _p_235_plt_Xamarin_Essentials_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType_llvm
-	.no_dead_strip plt_Xamarin_Essentials_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType
-plt_Xamarin_Essentials_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType:
-_p_235:
+.word 9172
+_p_233_plt_Xamarin_Essentials_System_Drawing_Color_Equals_object_llvm:
+	.globl _p_233_plt_Xamarin_Essentials_System_Drawing_Color_Equals_object_llvm
+.private_extern _p_233_plt_Xamarin_Essentials_System_Drawing_Color_Equals_object_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Drawing_Color_Equals_object
+plt_Xamarin_Essentials_System_Drawing_Color_Equals_object:
+_p_233:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2224]
 br x16
-.word 6545
-_p_236_plt_Xamarin_Essentials__rgctx_fetch_127_llvm:
-	.globl _p_236_plt_Xamarin_Essentials__rgctx_fetch_127_llvm
-.private_extern _p_236_plt_Xamarin_Essentials__rgctx_fetch_127_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_127
-plt_Xamarin_Essentials__rgctx_fetch_127:
-_p_236:
+.word 9177
+_p_234_plt_Xamarin_Essentials_System_Drawing_Color_GetHashCode_llvm:
+	.globl _p_234_plt_Xamarin_Essentials_System_Drawing_Color_GetHashCode_llvm
+.private_extern _p_234_plt_Xamarin_Essentials_System_Drawing_Color_GetHashCode_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Drawing_Color_GetHashCode
+plt_Xamarin_Essentials_System_Drawing_Color_GetHashCode:
+_p_234:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2232]
 br x16
-.word 6550
-_p_237_plt_Xamarin_Essentials__rgctx_fetch_128_llvm:
-	.globl _p_237_plt_Xamarin_Essentials__rgctx_fetch_128_llvm
-.private_extern _p_237_plt_Xamarin_Essentials__rgctx_fetch_128_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_128
-plt_Xamarin_Essentials__rgctx_fetch_128:
-_p_237:
+.word 9182
+_p_235_plt_Xamarin_Essentials_System_Drawing_Color_ToString_llvm:
+	.globl _p_235_plt_Xamarin_Essentials_System_Drawing_Color_ToString_llvm
+.private_extern _p_235_plt_Xamarin_Essentials_System_Drawing_Color_ToString_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Drawing_Color_ToString
+plt_Xamarin_Essentials_System_Drawing_Color_ToString:
+_p_235:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2240]
 br x16
-.word 6576
-_p_238_plt_Xamarin_Essentials__rgctx_fetch_129_llvm:
-	.globl _p_238_plt_Xamarin_Essentials__rgctx_fetch_129_llvm
-.private_extern _p_238_plt_Xamarin_Essentials__rgctx_fetch_129_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_129
-plt_Xamarin_Essentials__rgctx_fetch_129:
-_p_238:
+.word 9187
+_p_236_plt_Xamarin_Essentials_System_Nullable_1_System_Drawing_Color__ctor_System_Drawing_Color_llvm:
+	.globl _p_236_plt_Xamarin_Essentials_System_Nullable_1_System_Drawing_Color__ctor_System_Drawing_Color_llvm
+.private_extern _p_236_plt_Xamarin_Essentials_System_Nullable_1_System_Drawing_Color__ctor_System_Drawing_Color_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Nullable_1_System_Drawing_Color__ctor_System_Drawing_Color
+plt_Xamarin_Essentials_System_Nullable_1_System_Drawing_Color__ctor_System_Drawing_Color:
+_p_236:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2248]
 br x16
-.word 6593
-_p_239_plt_Xamarin_Essentials__rgctx_fetch_130_llvm:
-	.globl _p_239_plt_Xamarin_Essentials__rgctx_fetch_130_llvm
-.private_extern _p_239_plt_Xamarin_Essentials__rgctx_fetch_130_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_130
-plt_Xamarin_Essentials__rgctx_fetch_130:
-_p_239:
+.word 9192
+_p_237_plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_0_llvm:
+	.globl _p_237_plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_0_llvm
+.private_extern _p_237_plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_0_llvm
+	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_0
+plt_Xamarin_Essentials__jit_icall_mono_create_corlib_exception_0:
+_p_237:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2256]
 br x16
-.word 6610
-_p_240_plt_Xamarin_Essentials__rgctx_fetch_131_llvm:
-	.globl _p_240_plt_Xamarin_Essentials__rgctx_fetch_131_llvm
-.private_extern _p_240_plt_Xamarin_Essentials__rgctx_fetch_131_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_131
-plt_Xamarin_Essentials__rgctx_fetch_131:
-_p_240:
+.word 9213
+_p_238_plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_OnCompletedInternal_System_Threading_Tasks_Task_System_Action_bool_bool_llvm:
+	.globl _p_238_plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_OnCompletedInternal_System_Threading_Tasks_Task_System_Action_bool_bool_llvm
+.private_extern _p_238_plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_OnCompletedInternal_System_Threading_Tasks_Task_System_Action_bool_bool_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_OnCompletedInternal_System_Threading_Tasks_Task_System_Action_bool_bool
+plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_OnCompletedInternal_System_Threading_Tasks_Task_System_Action_bool_bool:
+_p_238:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2264]
 br x16
-.word 6618
-_p_241_plt_Xamarin_Essentials__rgctx_fetch_132_llvm:
-	.globl _p_241_plt_Xamarin_Essentials__rgctx_fetch_132_llvm
-.private_extern _p_241_plt_Xamarin_Essentials__rgctx_fetch_132_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_132
-plt_Xamarin_Essentials__rgctx_fetch_132:
-_p_241:
+.word 9246
+_p_239_plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_ValidateEnd_System_Threading_Tasks_Task_llvm:
+	.globl _p_239_plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_ValidateEnd_System_Threading_Tasks_Task_llvm
+.private_extern _p_239_plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_ValidateEnd_System_Threading_Tasks_Task_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_ValidateEnd_System_Threading_Tasks_Task
+plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_ValidateEnd_System_Threading_Tasks_Task:
+_p_239:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2272]
 br x16
-.word 6641
-_p_242_plt_Xamarin_Essentials__rgctx_fetch_133_llvm:
-	.globl _p_242_plt_Xamarin_Essentials__rgctx_fetch_133_llvm
-.private_extern _p_242_plt_Xamarin_Essentials__rgctx_fetch_133_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_133
-plt_Xamarin_Essentials__rgctx_fetch_133:
-_p_242:
+.word 9251
+_p_240_plt_Xamarin_Essentials_System_Enum_ToString_llvm:
+	.globl _p_240_plt_Xamarin_Essentials_System_Enum_ToString_llvm
+.private_extern _p_240_plt_Xamarin_Essentials_System_Enum_ToString_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Enum_ToString
+plt_Xamarin_Essentials_System_Enum_ToString:
+_p_240:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2280]
 br x16
-.word 6667
-_p_243_plt_Xamarin_Essentials__rgctx_fetch_134_llvm:
-	.globl _p_243_plt_Xamarin_Essentials__rgctx_fetch_134_llvm
-.private_extern _p_243_plt_Xamarin_Essentials__rgctx_fetch_134_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_134
-plt_Xamarin_Essentials__rgctx_fetch_134:
-_p_243:
+.word 9256
+_p_241_plt_Xamarin_Essentials__jit_icall_mono_thread_interruption_checkpoint_llvm:
+	.globl _p_241_plt_Xamarin_Essentials__jit_icall_mono_thread_interruption_checkpoint_llvm
+.private_extern _p_241_plt_Xamarin_Essentials__jit_icall_mono_thread_interruption_checkpoint_llvm
+	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_thread_interruption_checkpoint
+plt_Xamarin_Essentials__jit_icall_mono_thread_interruption_checkpoint:
+_p_241:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2288]
 br x16
-.word 6684
-_p_244_plt_Xamarin_Essentials__rgctx_fetch_135_llvm:
-	.globl _p_244_plt_Xamarin_Essentials__rgctx_fetch_135_llvm
-.private_extern _p_244_plt_Xamarin_Essentials__rgctx_fetch_135_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_135
-plt_Xamarin_Essentials__rgctx_fetch_135:
-_p_244:
+.word 9261
+_p_242_plt_Xamarin_Essentials__rgctx_fetch_53_llvm:
+	.globl _p_242_plt_Xamarin_Essentials__rgctx_fetch_53_llvm
+.private_extern _p_242_plt_Xamarin_Essentials__rgctx_fetch_53_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_53
+plt_Xamarin_Essentials__rgctx_fetch_53:
+_p_242:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2296]
 br x16
-.word 6701
-_p_245_plt_Xamarin_Essentials__rgctx_fetch_136_llvm:
-	.globl _p_245_plt_Xamarin_Essentials__rgctx_fetch_136_llvm
-.private_extern _p_245_plt_Xamarin_Essentials__rgctx_fetch_136_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_136
-plt_Xamarin_Essentials__rgctx_fetch_136:
-_p_245:
+.word 9329
+_p_243_plt_Xamarin_Essentials__rgctx_fetch_54_llvm:
+	.globl _p_243_plt_Xamarin_Essentials__rgctx_fetch_54_llvm
+.private_extern _p_243_plt_Xamarin_Essentials__rgctx_fetch_54_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_54
+plt_Xamarin_Essentials__rgctx_fetch_54:
+_p_243:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2304]
 br x16
-.word 6709
-_p_246_plt_Xamarin_Essentials__rgctx_fetch_137_llvm:
-	.globl _p_246_plt_Xamarin_Essentials__rgctx_fetch_137_llvm
-.private_extern _p_246_plt_Xamarin_Essentials__rgctx_fetch_137_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_137
-plt_Xamarin_Essentials__rgctx_fetch_137:
-_p_246:
+.word 9337
+_p_244_plt_Xamarin_Essentials__rgctx_fetch_55_llvm:
+	.globl _p_244_plt_Xamarin_Essentials__rgctx_fetch_55_llvm
+.private_extern _p_244_plt_Xamarin_Essentials__rgctx_fetch_55_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_55
+plt_Xamarin_Essentials__rgctx_fetch_55:
+_p_244:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2312]
 br x16
-.word 6732
-_p_247_plt_Xamarin_Essentials__rgctx_fetch_138_llvm:
-	.globl _p_247_plt_Xamarin_Essentials__rgctx_fetch_138_llvm
-.private_extern _p_247_plt_Xamarin_Essentials__rgctx_fetch_138_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_138
-plt_Xamarin_Essentials__rgctx_fetch_138:
-_p_247:
+.word 9345
+_p_245_plt_Xamarin_Essentials__rgctx_fetch_56_llvm:
+	.globl _p_245_plt_Xamarin_Essentials__rgctx_fetch_56_llvm
+.private_extern _p_245_plt_Xamarin_Essentials__rgctx_fetch_56_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_56
+plt_Xamarin_Essentials__rgctx_fetch_56:
+_p_245:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2320]
 br x16
-.word 6758
-_p_248_plt_Xamarin_Essentials__rgctx_fetch_139_llvm:
-	.globl _p_248_plt_Xamarin_Essentials__rgctx_fetch_139_llvm
-.private_extern _p_248_plt_Xamarin_Essentials__rgctx_fetch_139_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_139
-plt_Xamarin_Essentials__rgctx_fetch_139:
-_p_248:
+.word 9353
+_p_246_plt_Xamarin_Essentials__rgctx_fetch_57_llvm:
+	.globl _p_246_plt_Xamarin_Essentials__rgctx_fetch_57_llvm
+.private_extern _p_246_plt_Xamarin_Essentials__rgctx_fetch_57_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_57
+plt_Xamarin_Essentials__rgctx_fetch_57:
+_p_246:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2328]
 br x16
-.word 6775
-_p_249_plt_Xamarin_Essentials__rgctx_fetch_140_llvm:
-	.globl _p_249_plt_Xamarin_Essentials__rgctx_fetch_140_llvm
-.private_extern _p_249_plt_Xamarin_Essentials__rgctx_fetch_140_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_140
-plt_Xamarin_Essentials__rgctx_fetch_140:
-_p_249:
+.word 9427
+_p_247_plt_Xamarin_Essentials__rgctx_fetch_58_llvm:
+	.globl _p_247_plt_Xamarin_Essentials__rgctx_fetch_58_llvm
+.private_extern _p_247_plt_Xamarin_Essentials__rgctx_fetch_58_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_58
+plt_Xamarin_Essentials__rgctx_fetch_58:
+_p_247:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2336]
 br x16
-.word 6792
-_p_250_plt_Xamarin_Essentials__rgctx_fetch_141_llvm:
-	.globl _p_250_plt_Xamarin_Essentials__rgctx_fetch_141_llvm
-.private_extern _p_250_plt_Xamarin_Essentials__rgctx_fetch_141_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_141
-plt_Xamarin_Essentials__rgctx_fetch_141:
-_p_250:
+.word 9435
+_p_248_plt_Xamarin_Essentials__rgctx_fetch_59_llvm:
+	.globl _p_248_plt_Xamarin_Essentials__rgctx_fetch_59_llvm
+.private_extern _p_248_plt_Xamarin_Essentials__rgctx_fetch_59_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_59
+plt_Xamarin_Essentials__rgctx_fetch_59:
+_p_248:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2344]
 br x16
-.word 6800
-_p_251_plt_Xamarin_Essentials__rgctx_fetch_142_llvm:
-	.globl _p_251_plt_Xamarin_Essentials__rgctx_fetch_142_llvm
-.private_extern _p_251_plt_Xamarin_Essentials__rgctx_fetch_142_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_142
-plt_Xamarin_Essentials__rgctx_fetch_142:
-_p_251:
+.word 9467
+_p_249_plt_Xamarin_Essentials__rgctx_fetch_60_llvm:
+	.globl _p_249_plt_Xamarin_Essentials__rgctx_fetch_60_llvm
+.private_extern _p_249_plt_Xamarin_Essentials__rgctx_fetch_60_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_60
+plt_Xamarin_Essentials__rgctx_fetch_60:
+_p_249:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2352]
 br x16
-.word 6823
-_p_252_plt_Xamarin_Essentials_Foundation_NSUserDefaults_ToDictionary_llvm:
-	.globl _p_252_plt_Xamarin_Essentials_Foundation_NSUserDefaults_ToDictionary_llvm
-.private_extern _p_252_plt_Xamarin_Essentials_Foundation_NSUserDefaults_ToDictionary_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_ToDictionary
-plt_Xamarin_Essentials_Foundation_NSUserDefaults_ToDictionary:
-_p_252:
+.word 9475
+_p_250_plt_Xamarin_Essentials__rgctx_fetch_61_llvm:
+	.globl _p_250_plt_Xamarin_Essentials__rgctx_fetch_61_llvm
+.private_extern _p_250_plt_Xamarin_Essentials__rgctx_fetch_61_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_61
+plt_Xamarin_Essentials__rgctx_fetch_61:
+_p_250:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2360]
 br x16
-.word 6831
-_p_253_plt_Xamarin_Essentials_Foundation_NSDictionary_get_Keys_llvm:
-	.globl _p_253_plt_Xamarin_Essentials_Foundation_NSDictionary_get_Keys_llvm
-.private_extern _p_253_plt_Xamarin_Essentials_Foundation_NSDictionary_get_Keys_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSDictionary_get_Keys
-plt_Xamarin_Essentials_Foundation_NSDictionary_get_Keys:
-_p_253:
+.word 9507
+_p_251_plt_Xamarin_Essentials__rgctx_fetch_62_llvm:
+	.globl _p_251_plt_Xamarin_Essentials__rgctx_fetch_62_llvm
+.private_extern _p_251_plt_Xamarin_Essentials__rgctx_fetch_62_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_62
+plt_Xamarin_Essentials__rgctx_fetch_62:
+_p_251:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2368]
 br x16
-.word 6836
-_p_254_plt_Xamarin_Essentials_Foundation_NSString_op_Implicit_Foundation_NSString_llvm:
-	.globl _p_254_plt_Xamarin_Essentials_Foundation_NSString_op_Implicit_Foundation_NSString_llvm
-.private_extern _p_254_plt_Xamarin_Essentials_Foundation_NSString_op_Implicit_Foundation_NSString_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSString_op_Implicit_Foundation_NSString
-plt_Xamarin_Essentials_Foundation_NSString_op_Implicit_Foundation_NSString:
-_p_254:
+.word 9515
+_p_252_plt_Xamarin_Essentials__rgctx_fetch_63_llvm:
+	.globl _p_252_plt_Xamarin_Essentials__rgctx_fetch_63_llvm
+.private_extern _p_252_plt_Xamarin_Essentials__rgctx_fetch_63_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_63
+plt_Xamarin_Essentials__rgctx_fetch_63:
+_p_252:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2376]
 br x16
-.word 6841
-_p_255_plt_Xamarin_Essentials_Foundation_NSUserDefaults_RemoveObject_string_llvm:
-	.globl _p_255_plt_Xamarin_Essentials_Foundation_NSUserDefaults_RemoveObject_string_llvm
-.private_extern _p_255_plt_Xamarin_Essentials_Foundation_NSUserDefaults_RemoveObject_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_RemoveObject_string
-plt_Xamarin_Essentials_Foundation_NSUserDefaults_RemoveObject_string:
-_p_255:
+.word 9547
+_p_253_plt_Xamarin_Essentials__rgctx_fetch_64_llvm:
+	.globl _p_253_plt_Xamarin_Essentials__rgctx_fetch_64_llvm
+.private_extern _p_253_plt_Xamarin_Essentials__rgctx_fetch_64_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_64
+plt_Xamarin_Essentials__rgctx_fetch_64:
+_p_253:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2384]
 br x16
-.word 6846
-_p_256_plt_Xamarin_Essentials__jit_icall_mono_arch_throw_corlib_exception_llvm:
-	.globl _p_256_plt_Xamarin_Essentials__jit_icall_mono_arch_throw_corlib_exception_llvm
-.private_extern _p_256_plt_Xamarin_Essentials__jit_icall_mono_arch_throw_corlib_exception_llvm
-	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_arch_throw_corlib_exception
-plt_Xamarin_Essentials__jit_icall_mono_arch_throw_corlib_exception:
-_p_256:
+.word 9555
+_p_254_plt_Xamarin_Essentials__rgctx_fetch_65_llvm:
+	.globl _p_254_plt_Xamarin_Essentials__rgctx_fetch_65_llvm
+.private_extern _p_254_plt_Xamarin_Essentials__rgctx_fetch_65_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_65
+plt_Xamarin_Essentials__rgctx_fetch_65:
+_p_254:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2392]
 br x16
-.word 6851
-_p_257_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetString_string_string_llvm:
-	.globl _p_257_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetString_string_string_llvm
-.private_extern _p_257_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetString_string_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetString_string_string
-plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetString_string_string:
-_p_257:
+.word 9587
+_p_255_plt_Xamarin_Essentials__rgctx_fetch_66_llvm:
+	.globl _p_255_plt_Xamarin_Essentials__rgctx_fetch_66_llvm
+.private_extern _p_255_plt_Xamarin_Essentials__rgctx_fetch_66_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_66
+plt_Xamarin_Essentials__rgctx_fetch_66:
+_p_255:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2400]
 br x16
-.word 6886
-_p_258_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetInt_System_nint_string_llvm:
-	.globl _p_258_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetInt_System_nint_string_llvm
-.private_extern _p_258_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetInt_System_nint_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetInt_System_nint_string
-plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetInt_System_nint_string:
-_p_258:
+.word 9595
+_p_256_plt_Xamarin_Essentials__rgctx_fetch_67_llvm:
+	.globl _p_256_plt_Xamarin_Essentials__rgctx_fetch_67_llvm
+.private_extern _p_256_plt_Xamarin_Essentials__rgctx_fetch_67_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_67
+plt_Xamarin_Essentials__rgctx_fetch_67:
+_p_256:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2408]
 br x16
-.word 6891
-_p_259_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetBool_bool_string_llvm:
-	.globl _p_259_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetBool_bool_string_llvm
-.private_extern _p_259_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetBool_bool_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetBool_bool_string
-plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetBool_bool_string:
-_p_259:
+.word 9648
+_p_257_plt_Xamarin_Essentials__rgctx_fetch_68_llvm:
+	.globl _p_257_plt_Xamarin_Essentials__rgctx_fetch_68_llvm
+.private_extern _p_257_plt_Xamarin_Essentials__rgctx_fetch_68_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_68
+plt_Xamarin_Essentials__rgctx_fetch_68:
+_p_257:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2416]
 br x16
-.word 6896
-_p_260_plt_Xamarin_Essentials_System_Convert_ToString_object_System_IFormatProvider_llvm:
-	.globl _p_260_plt_Xamarin_Essentials_System_Convert_ToString_object_System_IFormatProvider_llvm
-.private_extern _p_260_plt_Xamarin_Essentials_System_Convert_ToString_object_System_IFormatProvider_llvm
-	.no_dead_strip plt_Xamarin_Essentials_System_Convert_ToString_object_System_IFormatProvider
-plt_Xamarin_Essentials_System_Convert_ToString_object_System_IFormatProvider:
-_p_260:
+.word 9656
+_p_258_plt_Xamarin_Essentials__rgctx_fetch_69_llvm:
+	.globl _p_258_plt_Xamarin_Essentials__rgctx_fetch_69_llvm
+.private_extern _p_258_plt_Xamarin_Essentials__rgctx_fetch_69_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_69
+plt_Xamarin_Essentials__rgctx_fetch_69:
+_p_258:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2424]
 br x16
-.word 6901
-_p_261_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetDouble_double_string_llvm:
-	.globl _p_261_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetDouble_double_string_llvm
-.private_extern _p_261_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetDouble_double_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetDouble_double_string
-plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetDouble_double_string:
-_p_261:
+.word 9664
+_p_259_plt_Xamarin_Essentials__rgctx_fetch_70_llvm:
+	.globl _p_259_plt_Xamarin_Essentials__rgctx_fetch_70_llvm
+.private_extern _p_259_plt_Xamarin_Essentials__rgctx_fetch_70_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_70
+plt_Xamarin_Essentials__rgctx_fetch_70:
+_p_259:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2432]
 br x16
-.word 6906
-_p_262_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetFloat_single_string_llvm:
-	.globl _p_262_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetFloat_single_string_llvm
-.private_extern _p_262_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetFloat_single_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetFloat_single_string
-plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetFloat_single_string:
-_p_262:
+.word 9672
+_p_260_plt_Xamarin_Essentials__rgctx_fetch_71_llvm:
+	.globl _p_260_plt_Xamarin_Essentials__rgctx_fetch_71_llvm
+.private_extern _p_260_plt_Xamarin_Essentials__rgctx_fetch_71_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_71
+plt_Xamarin_Essentials__rgctx_fetch_71:
+_p_260:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2440]
 br x16
-.word 6911
-_p_263_plt_Xamarin_Essentials_Foundation_NSUserDefaults_IntForKey_string_llvm:
-	.globl _p_263_plt_Xamarin_Essentials_Foundation_NSUserDefaults_IntForKey_string_llvm
-.private_extern _p_263_plt_Xamarin_Essentials_Foundation_NSUserDefaults_IntForKey_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_IntForKey_string
-plt_Xamarin_Essentials_Foundation_NSUserDefaults_IntForKey_string:
-_p_263:
+.word 9680
+_p_261_plt_Xamarin_Essentials__rgctx_fetch_72_llvm:
+	.globl _p_261_plt_Xamarin_Essentials__rgctx_fetch_72_llvm
+.private_extern _p_261_plt_Xamarin_Essentials__rgctx_fetch_72_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_72
+plt_Xamarin_Essentials__rgctx_fetch_72:
+_p_261:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2448]
 br x16
-.word 6916
-_p_264_plt_Xamarin_Essentials_Foundation_NSUserDefaults_BoolForKey_string_llvm:
-	.globl _p_264_plt_Xamarin_Essentials_Foundation_NSUserDefaults_BoolForKey_string_llvm
-.private_extern _p_264_plt_Xamarin_Essentials_Foundation_NSUserDefaults_BoolForKey_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_BoolForKey_string
-plt_Xamarin_Essentials_Foundation_NSUserDefaults_BoolForKey_string:
-_p_264:
+.word 9688
+_p_262_plt_Xamarin_Essentials__rgctx_fetch_73_llvm:
+	.globl _p_262_plt_Xamarin_Essentials__rgctx_fetch_73_llvm
+.private_extern _p_262_plt_Xamarin_Essentials__rgctx_fetch_73_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_73
+plt_Xamarin_Essentials__rgctx_fetch_73:
+_p_262:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2456]
 br x16
-.word 6921
-_p_265_plt_Xamarin_Essentials_Foundation_NSUserDefaults_StringForKey_string_llvm:
-	.globl _p_265_plt_Xamarin_Essentials_Foundation_NSUserDefaults_StringForKey_string_llvm
-.private_extern _p_265_plt_Xamarin_Essentials_Foundation_NSUserDefaults_StringForKey_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_StringForKey_string
-plt_Xamarin_Essentials_Foundation_NSUserDefaults_StringForKey_string:
-_p_265:
+.word 9696
+_p_263_plt_Xamarin_Essentials__rgctx_fetch_74_llvm:
+	.globl _p_263_plt_Xamarin_Essentials__rgctx_fetch_74_llvm
+.private_extern _p_263_plt_Xamarin_Essentials__rgctx_fetch_74_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_74
+plt_Xamarin_Essentials__rgctx_fetch_74:
+_p_263:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2464]
 br x16
-.word 6926
-_p_266_plt_Xamarin_Essentials_System_Convert_ToInt64_string_System_IFormatProvider_llvm:
-	.globl _p_266_plt_Xamarin_Essentials_System_Convert_ToInt64_string_System_IFormatProvider_llvm
-.private_extern _p_266_plt_Xamarin_Essentials_System_Convert_ToInt64_string_System_IFormatProvider_llvm
-	.no_dead_strip plt_Xamarin_Essentials_System_Convert_ToInt64_string_System_IFormatProvider
-plt_Xamarin_Essentials_System_Convert_ToInt64_string_System_IFormatProvider:
-_p_266:
+.word 9734
+_p_264_plt_Xamarin_Essentials__rgctx_fetch_75_llvm:
+	.globl _p_264_plt_Xamarin_Essentials__rgctx_fetch_75_llvm
+.private_extern _p_264_plt_Xamarin_Essentials__rgctx_fetch_75_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_75
+plt_Xamarin_Essentials__rgctx_fetch_75:
+_p_264:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2472]
 br x16
-.word 6931
-_p_267_plt_Xamarin_Essentials_Foundation_NSUserDefaults_DoubleForKey_string_llvm:
-	.globl _p_267_plt_Xamarin_Essentials_Foundation_NSUserDefaults_DoubleForKey_string_llvm
-.private_extern _p_267_plt_Xamarin_Essentials_Foundation_NSUserDefaults_DoubleForKey_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_DoubleForKey_string
-plt_Xamarin_Essentials_Foundation_NSUserDefaults_DoubleForKey_string:
-_p_267:
+.word 9742
+_p_265_plt_Xamarin_Essentials__rgctx_fetch_76_llvm:
+	.globl _p_265_plt_Xamarin_Essentials__rgctx_fetch_76_llvm
+.private_extern _p_265_plt_Xamarin_Essentials__rgctx_fetch_76_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_76
+plt_Xamarin_Essentials__rgctx_fetch_76:
+_p_265:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2480]
 br x16
-.word 6936
-_p_268_plt_Xamarin_Essentials_Foundation_NSUserDefaults_FloatForKey_string_llvm:
-	.globl _p_268_plt_Xamarin_Essentials_Foundation_NSUserDefaults_FloatForKey_string_llvm
-.private_extern _p_268_plt_Xamarin_Essentials_Foundation_NSUserDefaults_FloatForKey_string_llvm
-	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_FloatForKey_string
-plt_Xamarin_Essentials_Foundation_NSUserDefaults_FloatForKey_string:
-_p_268:
+.word 9750
+_p_266_plt_Xamarin_Essentials__rgctx_fetch_77_llvm:
+	.globl _p_266_plt_Xamarin_Essentials__rgctx_fetch_77_llvm
+.private_extern _p_266_plt_Xamarin_Essentials__rgctx_fetch_77_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_77
+plt_Xamarin_Essentials__rgctx_fetch_77:
+_p_266:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2488]
 br x16
-.word 6941
-_p_269_plt_Xamarin_Essentials__rgctx_fetch_143_llvm:
-	.globl _p_269_plt_Xamarin_Essentials__rgctx_fetch_143_llvm
-.private_extern _p_269_plt_Xamarin_Essentials__rgctx_fetch_143_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_143
-plt_Xamarin_Essentials__rgctx_fetch_143:
-_p_269:
+.word 9758
+_p_267_plt_Xamarin_Essentials_SR_Format_string_object_llvm:
+	.globl _p_267_plt_Xamarin_Essentials_SR_Format_string_object_llvm
+.private_extern _p_267_plt_Xamarin_Essentials_SR_Format_string_object_llvm
+	.no_dead_strip plt_Xamarin_Essentials_SR_Format_string_object
+plt_Xamarin_Essentials_SR_Format_string_object:
+_p_267:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2496]
 br x16
-.word 6963
-_p_270_plt_Xamarin_Essentials__rgctx_fetch_144_llvm:
-	.globl _p_270_plt_Xamarin_Essentials__rgctx_fetch_144_llvm
-.private_extern _p_270_plt_Xamarin_Essentials__rgctx_fetch_144_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_144
-plt_Xamarin_Essentials__rgctx_fetch_144:
-_p_270:
+.word 9793
+_p_268_plt_Xamarin_Essentials__rgctx_fetch_78_llvm:
+	.globl _p_268_plt_Xamarin_Essentials__rgctx_fetch_78_llvm
+.private_extern _p_268_plt_Xamarin_Essentials__rgctx_fetch_78_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_78
+plt_Xamarin_Essentials__rgctx_fetch_78:
+_p_268:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2504]
 br x16
-.word 6971
-_p_271_plt_Xamarin_Essentials_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr_llvm:
-	.globl _p_271_plt_Xamarin_Essentials_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr_llvm
-.private_extern _p_271_plt_Xamarin_Essentials_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr_llvm
-	.no_dead_strip plt_Xamarin_Essentials_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr
-plt_Xamarin_Essentials_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr:
-_p_271:
+.word 9837
+_p_269_plt_Xamarin_Essentials__rgctx_fetch_79_llvm:
+	.globl _p_269_plt_Xamarin_Essentials__rgctx_fetch_79_llvm
+.private_extern _p_269_plt_Xamarin_Essentials__rgctx_fetch_79_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_79
+plt_Xamarin_Essentials__rgctx_fetch_79:
+_p_269:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2512]
 br x16
-.word 6979
-_p_272_plt_Xamarin_Essentials__rgctx_fetch_145_llvm:
-	.globl _p_272_plt_Xamarin_Essentials__rgctx_fetch_145_llvm
-.private_extern _p_272_plt_Xamarin_Essentials__rgctx_fetch_145_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_145
-plt_Xamarin_Essentials__rgctx_fetch_145:
-_p_272:
+.word 9845
+_p_270_plt_Xamarin_Essentials__rgctx_fetch_80_llvm:
+	.globl _p_270_plt_Xamarin_Essentials__rgctx_fetch_80_llvm
+.private_extern _p_270_plt_Xamarin_Essentials__rgctx_fetch_80_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_80
+plt_Xamarin_Essentials__rgctx_fetch_80:
+_p_270:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2520]
 br x16
-.word 7004
-_p_273_plt_Xamarin_Essentials__rgctx_fetch_146_llvm:
-	.globl _p_273_plt_Xamarin_Essentials__rgctx_fetch_146_llvm
-.private_extern _p_273_plt_Xamarin_Essentials__rgctx_fetch_146_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_146
-plt_Xamarin_Essentials__rgctx_fetch_146:
-_p_273:
+.word 9877
+_p_271_plt_Xamarin_Essentials__rgctx_fetch_81_llvm:
+	.globl _p_271_plt_Xamarin_Essentials__rgctx_fetch_81_llvm
+.private_extern _p_271_plt_Xamarin_Essentials__rgctx_fetch_81_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_81
+plt_Xamarin_Essentials__rgctx_fetch_81:
+_p_271:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2528]
 br x16
-.word 7113
-_p_274_plt_Xamarin_Essentials_wrapper_alloc_object_Alloc_intptr_llvm:
-	.globl _p_274_plt_Xamarin_Essentials_wrapper_alloc_object_Alloc_intptr_llvm
-.private_extern _p_274_plt_Xamarin_Essentials_wrapper_alloc_object_Alloc_intptr_llvm
-	.no_dead_strip plt_Xamarin_Essentials_wrapper_alloc_object_Alloc_intptr
-plt_Xamarin_Essentials_wrapper_alloc_object_Alloc_intptr:
-_p_274:
+.word 9885
+_p_272_plt_Xamarin_Essentials__rgctx_fetch_82_llvm:
+	.globl _p_272_plt_Xamarin_Essentials__rgctx_fetch_82_llvm
+.private_extern _p_272_plt_Xamarin_Essentials__rgctx_fetch_82_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_82
+plt_Xamarin_Essentials__rgctx_fetch_82:
+_p_272:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2536]
 br x16
-.word 7121
-_p_275_plt_Xamarin_Essentials__rgctx_fetch_147_llvm:
-	.globl _p_275_plt_Xamarin_Essentials__rgctx_fetch_147_llvm
-.private_extern _p_275_plt_Xamarin_Essentials__rgctx_fetch_147_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_147
-plt_Xamarin_Essentials__rgctx_fetch_147:
-_p_275:
+.word 9917
+_p_273_plt_Xamarin_Essentials__rgctx_fetch_83_llvm:
+	.globl _p_273_plt_Xamarin_Essentials__rgctx_fetch_83_llvm
+.private_extern _p_273_plt_Xamarin_Essentials__rgctx_fetch_83_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_83
+plt_Xamarin_Essentials__rgctx_fetch_83:
+_p_273:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2544]
 br x16
-.word 7129
-_p_276_plt_Xamarin_Essentials_System_Globalization_CultureInfo_get_InvariantCulture_llvm:
-	.globl _p_276_plt_Xamarin_Essentials_System_Globalization_CultureInfo_get_InvariantCulture_llvm
-.private_extern _p_276_plt_Xamarin_Essentials_System_Globalization_CultureInfo_get_InvariantCulture_llvm
-	.no_dead_strip plt_Xamarin_Essentials_System_Globalization_CultureInfo_get_InvariantCulture
-plt_Xamarin_Essentials_System_Globalization_CultureInfo_get_InvariantCulture:
-_p_276:
+.word 9925
+_p_274_plt_Xamarin_Essentials__rgctx_fetch_84_llvm:
+	.globl _p_274_plt_Xamarin_Essentials__rgctx_fetch_84_llvm
+.private_extern _p_274_plt_Xamarin_Essentials__rgctx_fetch_84_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_84
+plt_Xamarin_Essentials__rgctx_fetch_84:
+_p_274:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2552]
 br x16
-.word 7137
-_p_277_plt_Xamarin_Essentials__rgctx_fetch_148_llvm:
-	.globl _p_277_plt_Xamarin_Essentials__rgctx_fetch_148_llvm
-.private_extern _p_277_plt_Xamarin_Essentials__rgctx_fetch_148_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_148
-plt_Xamarin_Essentials__rgctx_fetch_148:
-_p_277:
+.word 9957
+_p_275_plt_Xamarin_Essentials__rgctx_fetch_85_llvm:
+	.globl _p_275_plt_Xamarin_Essentials__rgctx_fetch_85_llvm
+.private_extern _p_275_plt_Xamarin_Essentials__rgctx_fetch_85_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_85
+plt_Xamarin_Essentials__rgctx_fetch_85:
+_p_275:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2560]
 br x16
-.word 7159
-_p_278_plt_Xamarin_Essentials__rgctx_fetch_149_llvm:
-	.globl _p_278_plt_Xamarin_Essentials__rgctx_fetch_149_llvm
-.private_extern _p_278_plt_Xamarin_Essentials__rgctx_fetch_149_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_149
-plt_Xamarin_Essentials__rgctx_fetch_149:
-_p_278:
+.word 9965
+_p_276_plt_Xamarin_Essentials__rgctx_fetch_86_llvm:
+	.globl _p_276_plt_Xamarin_Essentials__rgctx_fetch_86_llvm
+.private_extern _p_276_plt_Xamarin_Essentials__rgctx_fetch_86_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_86
+plt_Xamarin_Essentials__rgctx_fetch_86:
+_p_276:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2568]
 br x16
-.word 7284
-_p_279_plt_Xamarin_Essentials__rgctx_fetch_150_llvm:
-	.globl _p_279_plt_Xamarin_Essentials__rgctx_fetch_150_llvm
-.private_extern _p_279_plt_Xamarin_Essentials__rgctx_fetch_150_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_150
-plt_Xamarin_Essentials__rgctx_fetch_150:
-_p_279:
+.word 9997
+_p_277_plt_Xamarin_Essentials__rgctx_fetch_87_llvm:
+	.globl _p_277_plt_Xamarin_Essentials__rgctx_fetch_87_llvm
+.private_extern _p_277_plt_Xamarin_Essentials__rgctx_fetch_87_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_87
+plt_Xamarin_Essentials__rgctx_fetch_87:
+_p_277:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2576]
 br x16
-.word 7292
-_p_280_plt_Xamarin_Essentials__rgctx_fetch_151_llvm:
-	.globl _p_280_plt_Xamarin_Essentials__rgctx_fetch_151_llvm
-.private_extern _p_280_plt_Xamarin_Essentials__rgctx_fetch_151_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_151
-plt_Xamarin_Essentials__rgctx_fetch_151:
-_p_280:
+.word 10005
+_p_278_plt_Xamarin_Essentials__rgctx_fetch_88_llvm:
+	.globl _p_278_plt_Xamarin_Essentials__rgctx_fetch_88_llvm
+.private_extern _p_278_plt_Xamarin_Essentials__rgctx_fetch_88_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_88
+plt_Xamarin_Essentials__rgctx_fetch_88:
+_p_278:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2584]
 br x16
-.word 7300
-_p_281_plt_Xamarin_Essentials__jit_icall_mono_object_castclass_unbox_llvm:
-	.globl _p_281_plt_Xamarin_Essentials__jit_icall_mono_object_castclass_unbox_llvm
-.private_extern _p_281_plt_Xamarin_Essentials__jit_icall_mono_object_castclass_unbox_llvm
-	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_object_castclass_unbox
-plt_Xamarin_Essentials__jit_icall_mono_object_castclass_unbox:
-_p_281:
+.word 10058
+_p_279_plt_Xamarin_Essentials__rgctx_fetch_89_llvm:
+	.globl _p_279_plt_Xamarin_Essentials__rgctx_fetch_89_llvm
+.private_extern _p_279_plt_Xamarin_Essentials__rgctx_fetch_89_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_89
+plt_Xamarin_Essentials__rgctx_fetch_89:
+_p_279:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2592]
 br x16
-.word 7308
-_p_282_plt_Xamarin_Essentials__rgctx_fetch_152_llvm:
-	.globl _p_282_plt_Xamarin_Essentials__rgctx_fetch_152_llvm
-.private_extern _p_282_plt_Xamarin_Essentials__rgctx_fetch_152_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_152
-plt_Xamarin_Essentials__rgctx_fetch_152:
-_p_282:
+.word 10066
+_p_280_plt_Xamarin_Essentials__rgctx_fetch_90_llvm:
+	.globl _p_280_plt_Xamarin_Essentials__rgctx_fetch_90_llvm
+.private_extern _p_280_plt_Xamarin_Essentials__rgctx_fetch_90_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_90
+plt_Xamarin_Essentials__rgctx_fetch_90:
+_p_280:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2600]
 br x16
-.word 7355
-_p_283_plt_Xamarin_Essentials__rgctx_fetch_153_llvm:
-	.globl _p_283_plt_Xamarin_Essentials__rgctx_fetch_153_llvm
-.private_extern _p_283_plt_Xamarin_Essentials__rgctx_fetch_153_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_153
-plt_Xamarin_Essentials__rgctx_fetch_153:
-_p_283:
+.word 10074
+_p_281_plt_Xamarin_Essentials__rgctx_fetch_91_llvm:
+	.globl _p_281_plt_Xamarin_Essentials__rgctx_fetch_91_llvm
+.private_extern _p_281_plt_Xamarin_Essentials__rgctx_fetch_91_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_91
+plt_Xamarin_Essentials__rgctx_fetch_91:
+_p_281:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2608]
 br x16
-.word 7363
-_p_284_plt_Xamarin_Essentials__rgctx_fetch_154_llvm:
-	.globl _p_284_plt_Xamarin_Essentials__rgctx_fetch_154_llvm
-.private_extern _p_284_plt_Xamarin_Essentials__rgctx_fetch_154_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_154
-plt_Xamarin_Essentials__rgctx_fetch_154:
-_p_284:
+.word 10082
+_p_282_plt_Xamarin_Essentials__rgctx_fetch_92_llvm:
+	.globl _p_282_plt_Xamarin_Essentials__rgctx_fetch_92_llvm
+.private_extern _p_282_plt_Xamarin_Essentials__rgctx_fetch_92_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_92
+plt_Xamarin_Essentials__rgctx_fetch_92:
+_p_282:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2616]
 br x16
-.word 7371
-_p_285_plt_Xamarin_Essentials__rgctx_fetch_155_llvm:
-	.globl _p_285_plt_Xamarin_Essentials__rgctx_fetch_155_llvm
-.private_extern _p_285_plt_Xamarin_Essentials__rgctx_fetch_155_llvm
-	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_155
-plt_Xamarin_Essentials__rgctx_fetch_155:
-_p_285:
+.word 10090
+_p_283_plt_Xamarin_Essentials__rgctx_fetch_93_llvm:
+	.globl _p_283_plt_Xamarin_Essentials__rgctx_fetch_93_llvm
+.private_extern _p_283_plt_Xamarin_Essentials__rgctx_fetch_93_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_93
+plt_Xamarin_Essentials__rgctx_fetch_93:
+_p_283:
 adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
 ldr x16, [x16, #2624]
 br x16
-.word 7396
+.word 10098
+_p_284_plt_Xamarin_Essentials__rgctx_fetch_94_llvm:
+	.globl _p_284_plt_Xamarin_Essentials__rgctx_fetch_94_llvm
+.private_extern _p_284_plt_Xamarin_Essentials__rgctx_fetch_94_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_94
+plt_Xamarin_Essentials__rgctx_fetch_94:
+_p_284:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2632]
+br x16
+.word 10106
+_p_285_plt_Xamarin_Essentials__rgctx_fetch_95_llvm:
+	.globl _p_285_plt_Xamarin_Essentials__rgctx_fetch_95_llvm
+.private_extern _p_285_plt_Xamarin_Essentials__rgctx_fetch_95_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_95
+plt_Xamarin_Essentials__rgctx_fetch_95:
+_p_285:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2640]
+br x16
+.word 10114
+_p_286_plt_Xamarin_Essentials__rgctx_fetch_96_llvm:
+	.globl _p_286_plt_Xamarin_Essentials__rgctx_fetch_96_llvm
+.private_extern _p_286_plt_Xamarin_Essentials__rgctx_fetch_96_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_96
+plt_Xamarin_Essentials__rgctx_fetch_96:
+_p_286:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2648]
+br x16
+.word 10152
+_p_287_plt_Xamarin_Essentials__rgctx_fetch_97_llvm:
+	.globl _p_287_plt_Xamarin_Essentials__rgctx_fetch_97_llvm
+.private_extern _p_287_plt_Xamarin_Essentials__rgctx_fetch_97_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_97
+plt_Xamarin_Essentials__rgctx_fetch_97:
+_p_287:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2656]
+br x16
+.word 10166
+_p_288_plt_Xamarin_Essentials__rgctx_fetch_98_llvm:
+	.globl _p_288_plt_Xamarin_Essentials__rgctx_fetch_98_llvm
+.private_extern _p_288_plt_Xamarin_Essentials__rgctx_fetch_98_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_98
+plt_Xamarin_Essentials__rgctx_fetch_98:
+_p_288:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2664]
+br x16
+.word 10180
+_p_289_plt_Xamarin_Essentials__rgctx_fetch_99_llvm:
+	.globl _p_289_plt_Xamarin_Essentials__rgctx_fetch_99_llvm
+.private_extern _p_289_plt_Xamarin_Essentials__rgctx_fetch_99_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_99
+plt_Xamarin_Essentials__rgctx_fetch_99:
+_p_289:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2672]
+br x16
+.word 10188
+_p_290_plt_Xamarin_Essentials__rgctx_fetch_100_llvm:
+	.globl _p_290_plt_Xamarin_Essentials__rgctx_fetch_100_llvm
+.private_extern _p_290_plt_Xamarin_Essentials__rgctx_fetch_100_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_100
+plt_Xamarin_Essentials__rgctx_fetch_100:
+_p_290:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2680]
+br x16
+.word 10202
+_p_291_plt_Xamarin_Essentials__rgctx_fetch_101_llvm:
+	.globl _p_291_plt_Xamarin_Essentials__rgctx_fetch_101_llvm
+.private_extern _p_291_plt_Xamarin_Essentials__rgctx_fetch_101_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_101
+plt_Xamarin_Essentials__rgctx_fetch_101:
+_p_291:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2688]
+br x16
+.word 10216
+_p_292_plt_Xamarin_Essentials__rgctx_fetch_102_llvm:
+	.globl _p_292_plt_Xamarin_Essentials__rgctx_fetch_102_llvm
+.private_extern _p_292_plt_Xamarin_Essentials__rgctx_fetch_102_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_102
+plt_Xamarin_Essentials__rgctx_fetch_102:
+_p_292:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2696]
+br x16
+.word 10224
+_p_293_plt_Xamarin_Essentials__rgctx_fetch_103_llvm:
+	.globl _p_293_plt_Xamarin_Essentials__rgctx_fetch_103_llvm
+.private_extern _p_293_plt_Xamarin_Essentials__rgctx_fetch_103_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_103
+plt_Xamarin_Essentials__rgctx_fetch_103:
+_p_293:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2704]
+br x16
+.word 10238
+_p_294_plt_Xamarin_Essentials__rgctx_fetch_104_llvm:
+	.globl _p_294_plt_Xamarin_Essentials__rgctx_fetch_104_llvm
+.private_extern _p_294_plt_Xamarin_Essentials__rgctx_fetch_104_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_104
+plt_Xamarin_Essentials__rgctx_fetch_104:
+_p_294:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2712]
+br x16
+.word 10252
+_p_295_plt_Xamarin_Essentials__rgctx_fetch_105_llvm:
+	.globl _p_295_plt_Xamarin_Essentials__rgctx_fetch_105_llvm
+.private_extern _p_295_plt_Xamarin_Essentials__rgctx_fetch_105_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_105
+plt_Xamarin_Essentials__rgctx_fetch_105:
+_p_295:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2720]
+br x16
+.word 10260
+_p_296_plt_Xamarin_Essentials__rgctx_fetch_106_llvm:
+	.globl _p_296_plt_Xamarin_Essentials__rgctx_fetch_106_llvm
+.private_extern _p_296_plt_Xamarin_Essentials__rgctx_fetch_106_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_106
+plt_Xamarin_Essentials__rgctx_fetch_106:
+_p_296:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2728]
+br x16
+.word 10274
+_p_297_plt_Xamarin_Essentials__rgctx_fetch_107_llvm:
+	.globl _p_297_plt_Xamarin_Essentials__rgctx_fetch_107_llvm
+.private_extern _p_297_plt_Xamarin_Essentials__rgctx_fetch_107_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_107
+plt_Xamarin_Essentials__rgctx_fetch_107:
+_p_297:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2736]
+br x16
+.word 10288
+_p_298_plt_Xamarin_Essentials__rgctx_fetch_108_llvm:
+	.globl _p_298_plt_Xamarin_Essentials__rgctx_fetch_108_llvm
+.private_extern _p_298_plt_Xamarin_Essentials__rgctx_fetch_108_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_108
+plt_Xamarin_Essentials__rgctx_fetch_108:
+_p_298:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2744]
+br x16
+.word 10296
+_p_299_plt_Xamarin_Essentials__rgctx_fetch_109_llvm:
+	.globl _p_299_plt_Xamarin_Essentials__rgctx_fetch_109_llvm
+.private_extern _p_299_plt_Xamarin_Essentials__rgctx_fetch_109_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_109
+plt_Xamarin_Essentials__rgctx_fetch_109:
+_p_299:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2752]
+br x16
+.word 10310
+_p_300_plt_Xamarin_Essentials__rgctx_fetch_110_llvm:
+	.globl _p_300_plt_Xamarin_Essentials__rgctx_fetch_110_llvm
+.private_extern _p_300_plt_Xamarin_Essentials__rgctx_fetch_110_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_110
+plt_Xamarin_Essentials__rgctx_fetch_110:
+_p_300:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2760]
+br x16
+.word 10324
+_p_301_plt_Xamarin_Essentials__rgctx_fetch_111_llvm:
+	.globl _p_301_plt_Xamarin_Essentials__rgctx_fetch_111_llvm
+.private_extern _p_301_plt_Xamarin_Essentials__rgctx_fetch_111_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_111
+plt_Xamarin_Essentials__rgctx_fetch_111:
+_p_301:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2768]
+br x16
+.word 10362
+_p_302_plt_Xamarin_Essentials__rgctx_fetch_112_llvm:
+	.globl _p_302_plt_Xamarin_Essentials__rgctx_fetch_112_llvm
+.private_extern _p_302_plt_Xamarin_Essentials__rgctx_fetch_112_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_112
+plt_Xamarin_Essentials__rgctx_fetch_112:
+_p_302:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2776]
+br x16
+.word 10370
+_p_303_plt_Xamarin_Essentials__rgctx_fetch_113_llvm:
+	.globl _p_303_plt_Xamarin_Essentials__rgctx_fetch_113_llvm
+.private_extern _p_303_plt_Xamarin_Essentials__rgctx_fetch_113_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_113
+plt_Xamarin_Essentials__rgctx_fetch_113:
+_p_303:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2784]
+br x16
+.word 10435
+_p_304_plt_Xamarin_Essentials__rgctx_fetch_114_llvm:
+	.globl _p_304_plt_Xamarin_Essentials__rgctx_fetch_114_llvm
+.private_extern _p_304_plt_Xamarin_Essentials__rgctx_fetch_114_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_114
+plt_Xamarin_Essentials__rgctx_fetch_114:
+_p_304:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2792]
+br x16
+.word 10443
+_p_305_plt_Xamarin_Essentials__rgctx_fetch_115_llvm:
+	.globl _p_305_plt_Xamarin_Essentials__rgctx_fetch_115_llvm
+.private_extern _p_305_plt_Xamarin_Essentials__rgctx_fetch_115_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_115
+plt_Xamarin_Essentials__rgctx_fetch_115:
+_p_305:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2800]
+br x16
+.word 10451
+_p_306_plt_Xamarin_Essentials__rgctx_fetch_116_llvm:
+	.globl _p_306_plt_Xamarin_Essentials__rgctx_fetch_116_llvm
+.private_extern _p_306_plt_Xamarin_Essentials__rgctx_fetch_116_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_116
+plt_Xamarin_Essentials__rgctx_fetch_116:
+_p_306:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2808]
+br x16
+.word 10459
+_p_307_plt_Xamarin_Essentials__rgctx_fetch_117_llvm:
+	.globl _p_307_plt_Xamarin_Essentials__rgctx_fetch_117_llvm
+.private_extern _p_307_plt_Xamarin_Essentials__rgctx_fetch_117_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_117
+plt_Xamarin_Essentials__rgctx_fetch_117:
+_p_307:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2816]
+br x16
+.word 10467
+_p_308_plt_Xamarin_Essentials__rgctx_fetch_118_llvm:
+	.globl _p_308_plt_Xamarin_Essentials__rgctx_fetch_118_llvm
+.private_extern _p_308_plt_Xamarin_Essentials__rgctx_fetch_118_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_118
+plt_Xamarin_Essentials__rgctx_fetch_118:
+_p_308:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2824]
+br x16
+.word 10505
+_p_309_plt_Xamarin_Essentials__rgctx_fetch_119_llvm:
+	.globl _p_309_plt_Xamarin_Essentials__rgctx_fetch_119_llvm
+.private_extern _p_309_plt_Xamarin_Essentials__rgctx_fetch_119_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_119
+plt_Xamarin_Essentials__rgctx_fetch_119:
+_p_309:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2832]
+br x16
+.word 10513
+_p_310_plt_Xamarin_Essentials__rgctx_fetch_120_llvm:
+	.globl _p_310_plt_Xamarin_Essentials__rgctx_fetch_120_llvm
+.private_extern _p_310_plt_Xamarin_Essentials__rgctx_fetch_120_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_120
+plt_Xamarin_Essentials__rgctx_fetch_120:
+_p_310:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2840]
+br x16
+.word 10578
+_p_311_plt_Xamarin_Essentials__rgctx_fetch_121_llvm:
+	.globl _p_311_plt_Xamarin_Essentials__rgctx_fetch_121_llvm
+.private_extern _p_311_plt_Xamarin_Essentials__rgctx_fetch_121_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_121
+plt_Xamarin_Essentials__rgctx_fetch_121:
+_p_311:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2848]
+br x16
+.word 10592
+_p_312_plt_Xamarin_Essentials__rgctx_fetch_122_llvm:
+	.globl _p_312_plt_Xamarin_Essentials__rgctx_fetch_122_llvm
+.private_extern _p_312_plt_Xamarin_Essentials__rgctx_fetch_122_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_122
+plt_Xamarin_Essentials__rgctx_fetch_122:
+_p_312:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2856]
+br x16
+.word 10606
+_p_313_plt_Xamarin_Essentials__rgctx_fetch_123_llvm:
+	.globl _p_313_plt_Xamarin_Essentials__rgctx_fetch_123_llvm
+.private_extern _p_313_plt_Xamarin_Essentials__rgctx_fetch_123_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_123
+plt_Xamarin_Essentials__rgctx_fetch_123:
+_p_313:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2864]
+br x16
+.word 10614
+_p_314_plt_Xamarin_Essentials__rgctx_fetch_124_llvm:
+	.globl _p_314_plt_Xamarin_Essentials__rgctx_fetch_124_llvm
+.private_extern _p_314_plt_Xamarin_Essentials__rgctx_fetch_124_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_124
+plt_Xamarin_Essentials__rgctx_fetch_124:
+_p_314:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2872]
+br x16
+.word 10628
+_p_315_plt_Xamarin_Essentials__rgctx_fetch_125_llvm:
+	.globl _p_315_plt_Xamarin_Essentials__rgctx_fetch_125_llvm
+.private_extern _p_315_plt_Xamarin_Essentials__rgctx_fetch_125_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_125
+plt_Xamarin_Essentials__rgctx_fetch_125:
+_p_315:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2880]
+br x16
+.word 10642
+_p_316_plt_Xamarin_Essentials__rgctx_fetch_126_llvm:
+	.globl _p_316_plt_Xamarin_Essentials__rgctx_fetch_126_llvm
+.private_extern _p_316_plt_Xamarin_Essentials__rgctx_fetch_126_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_126
+plt_Xamarin_Essentials__rgctx_fetch_126:
+_p_316:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2888]
+br x16
+.word 10650
+_p_317_plt_Xamarin_Essentials__rgctx_fetch_127_llvm:
+	.globl _p_317_plt_Xamarin_Essentials__rgctx_fetch_127_llvm
+.private_extern _p_317_plt_Xamarin_Essentials__rgctx_fetch_127_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_127
+plt_Xamarin_Essentials__rgctx_fetch_127:
+_p_317:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2896]
+br x16
+.word 10664
+_p_318_plt_Xamarin_Essentials__rgctx_fetch_128_llvm:
+	.globl _p_318_plt_Xamarin_Essentials__rgctx_fetch_128_llvm
+.private_extern _p_318_plt_Xamarin_Essentials__rgctx_fetch_128_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_128
+plt_Xamarin_Essentials__rgctx_fetch_128:
+_p_318:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2904]
+br x16
+.word 10678
+_p_319_plt_Xamarin_Essentials__rgctx_fetch_129_llvm:
+	.globl _p_319_plt_Xamarin_Essentials__rgctx_fetch_129_llvm
+.private_extern _p_319_plt_Xamarin_Essentials__rgctx_fetch_129_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_129
+plt_Xamarin_Essentials__rgctx_fetch_129:
+_p_319:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2912]
+br x16
+.word 10686
+_p_320_plt_Xamarin_Essentials__rgctx_fetch_130_llvm:
+	.globl _p_320_plt_Xamarin_Essentials__rgctx_fetch_130_llvm
+.private_extern _p_320_plt_Xamarin_Essentials__rgctx_fetch_130_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_130
+plt_Xamarin_Essentials__rgctx_fetch_130:
+_p_320:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2920]
+br x16
+.word 10700
+_p_321_plt_Xamarin_Essentials__rgctx_fetch_131_llvm:
+	.globl _p_321_plt_Xamarin_Essentials__rgctx_fetch_131_llvm
+.private_extern _p_321_plt_Xamarin_Essentials__rgctx_fetch_131_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_131
+plt_Xamarin_Essentials__rgctx_fetch_131:
+_p_321:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2928]
+br x16
+.word 10714
+_p_322_plt_Xamarin_Essentials__rgctx_fetch_132_llvm:
+	.globl _p_322_plt_Xamarin_Essentials__rgctx_fetch_132_llvm
+.private_extern _p_322_plt_Xamarin_Essentials__rgctx_fetch_132_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_132
+plt_Xamarin_Essentials__rgctx_fetch_132:
+_p_322:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2936]
+br x16
+.word 10722
+_p_323_plt_Xamarin_Essentials__rgctx_fetch_133_llvm:
+	.globl _p_323_plt_Xamarin_Essentials__rgctx_fetch_133_llvm
+.private_extern _p_323_plt_Xamarin_Essentials__rgctx_fetch_133_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_133
+plt_Xamarin_Essentials__rgctx_fetch_133:
+_p_323:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2944]
+br x16
+.word 10736
+_p_324_plt_Xamarin_Essentials__rgctx_fetch_134_llvm:
+	.globl _p_324_plt_Xamarin_Essentials__rgctx_fetch_134_llvm
+.private_extern _p_324_plt_Xamarin_Essentials__rgctx_fetch_134_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_134
+plt_Xamarin_Essentials__rgctx_fetch_134:
+_p_324:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2952]
+br x16
+.word 10750
+_p_325_plt_Xamarin_Essentials__rgctx_fetch_135_llvm:
+	.globl _p_325_plt_Xamarin_Essentials__rgctx_fetch_135_llvm
+.private_extern _p_325_plt_Xamarin_Essentials__rgctx_fetch_135_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_135
+plt_Xamarin_Essentials__rgctx_fetch_135:
+_p_325:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2960]
+br x16
+.word 10788
+_p_326_plt_Xamarin_Essentials__rgctx_fetch_136_llvm:
+	.globl _p_326_plt_Xamarin_Essentials__rgctx_fetch_136_llvm
+.private_extern _p_326_plt_Xamarin_Essentials__rgctx_fetch_136_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_136
+plt_Xamarin_Essentials__rgctx_fetch_136:
+_p_326:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2968]
+br x16
+.word 10802
+_p_327_plt_Xamarin_Essentials__rgctx_fetch_137_llvm:
+	.globl _p_327_plt_Xamarin_Essentials__rgctx_fetch_137_llvm
+.private_extern _p_327_plt_Xamarin_Essentials__rgctx_fetch_137_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_137
+plt_Xamarin_Essentials__rgctx_fetch_137:
+_p_327:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2976]
+br x16
+.word 10816
+_p_328_plt_Xamarin_Essentials__rgctx_fetch_138_llvm:
+	.globl _p_328_plt_Xamarin_Essentials__rgctx_fetch_138_llvm
+.private_extern _p_328_plt_Xamarin_Essentials__rgctx_fetch_138_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_138
+plt_Xamarin_Essentials__rgctx_fetch_138:
+_p_328:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2984]
+br x16
+.word 10824
+_p_329_plt_Xamarin_Essentials__rgctx_fetch_139_llvm:
+	.globl _p_329_plt_Xamarin_Essentials__rgctx_fetch_139_llvm
+.private_extern _p_329_plt_Xamarin_Essentials__rgctx_fetch_139_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_139
+plt_Xamarin_Essentials__rgctx_fetch_139:
+_p_329:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #2992]
+br x16
+.word 10838
+_p_330_plt_Xamarin_Essentials__rgctx_fetch_140_llvm:
+	.globl _p_330_plt_Xamarin_Essentials__rgctx_fetch_140_llvm
+.private_extern _p_330_plt_Xamarin_Essentials__rgctx_fetch_140_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_140
+plt_Xamarin_Essentials__rgctx_fetch_140:
+_p_330:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3000]
+br x16
+.word 10852
+_p_331_plt_Xamarin_Essentials__rgctx_fetch_141_llvm:
+	.globl _p_331_plt_Xamarin_Essentials__rgctx_fetch_141_llvm
+.private_extern _p_331_plt_Xamarin_Essentials__rgctx_fetch_141_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_141
+plt_Xamarin_Essentials__rgctx_fetch_141:
+_p_331:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3008]
+br x16
+.word 10860
+_p_332_plt_Xamarin_Essentials__rgctx_fetch_142_llvm:
+	.globl _p_332_plt_Xamarin_Essentials__rgctx_fetch_142_llvm
+.private_extern _p_332_plt_Xamarin_Essentials__rgctx_fetch_142_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_142
+plt_Xamarin_Essentials__rgctx_fetch_142:
+_p_332:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3016]
+br x16
+.word 10874
+_p_333_plt_Xamarin_Essentials__rgctx_fetch_143_llvm:
+	.globl _p_333_plt_Xamarin_Essentials__rgctx_fetch_143_llvm
+.private_extern _p_333_plt_Xamarin_Essentials__rgctx_fetch_143_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_143
+plt_Xamarin_Essentials__rgctx_fetch_143:
+_p_333:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3024]
+br x16
+.word 10888
+_p_334_plt_Xamarin_Essentials__rgctx_fetch_144_llvm:
+	.globl _p_334_plt_Xamarin_Essentials__rgctx_fetch_144_llvm
+.private_extern _p_334_plt_Xamarin_Essentials__rgctx_fetch_144_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_144
+plt_Xamarin_Essentials__rgctx_fetch_144:
+_p_334:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3032]
+br x16
+.word 10896
+_p_335_plt_Xamarin_Essentials__rgctx_fetch_145_llvm:
+	.globl _p_335_plt_Xamarin_Essentials__rgctx_fetch_145_llvm
+.private_extern _p_335_plt_Xamarin_Essentials__rgctx_fetch_145_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_145
+plt_Xamarin_Essentials__rgctx_fetch_145:
+_p_335:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3040]
+br x16
+.word 10910
+_p_336_plt_Xamarin_Essentials__rgctx_fetch_146_llvm:
+	.globl _p_336_plt_Xamarin_Essentials__rgctx_fetch_146_llvm
+.private_extern _p_336_plt_Xamarin_Essentials__rgctx_fetch_146_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_146
+plt_Xamarin_Essentials__rgctx_fetch_146:
+_p_336:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3048]
+br x16
+.word 10924
+_p_337_plt_Xamarin_Essentials__rgctx_fetch_147_llvm:
+	.globl _p_337_plt_Xamarin_Essentials__rgctx_fetch_147_llvm
+.private_extern _p_337_plt_Xamarin_Essentials__rgctx_fetch_147_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_147
+plt_Xamarin_Essentials__rgctx_fetch_147:
+_p_337:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3056]
+br x16
+.word 10932
+_p_338_plt_Xamarin_Essentials__rgctx_fetch_148_llvm:
+	.globl _p_338_plt_Xamarin_Essentials__rgctx_fetch_148_llvm
+.private_extern _p_338_plt_Xamarin_Essentials__rgctx_fetch_148_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_148
+plt_Xamarin_Essentials__rgctx_fetch_148:
+_p_338:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3064]
+br x16
+.word 10946
+_p_339_plt_Xamarin_Essentials__rgctx_fetch_149_llvm:
+	.globl _p_339_plt_Xamarin_Essentials__rgctx_fetch_149_llvm
+.private_extern _p_339_plt_Xamarin_Essentials__rgctx_fetch_149_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_149
+plt_Xamarin_Essentials__rgctx_fetch_149:
+_p_339:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3072]
+br x16
+.word 10960
+_p_340_plt_Xamarin_Essentials_double_Equals_object_llvm:
+	.globl _p_340_plt_Xamarin_Essentials_double_Equals_object_llvm
+.private_extern _p_340_plt_Xamarin_Essentials_double_Equals_object_llvm
+	.no_dead_strip plt_Xamarin_Essentials_double_Equals_object
+plt_Xamarin_Essentials_double_Equals_object:
+_p_340:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3080]
+br x16
+.word 10968
+_p_341_plt_Xamarin_Essentials_double_ToString_llvm:
+	.globl _p_341_plt_Xamarin_Essentials_double_ToString_llvm
+.private_extern _p_341_plt_Xamarin_Essentials_double_ToString_llvm
+	.no_dead_strip plt_Xamarin_Essentials_double_ToString
+plt_Xamarin_Essentials_double_ToString:
+_p_341:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3088]
+br x16
+.word 10973
+_p_342_plt_Xamarin_Essentials_System_Nullable_1_double__ctor_double_llvm:
+	.globl _p_342_plt_Xamarin_Essentials_System_Nullable_1_double__ctor_double_llvm
+.private_extern _p_342_plt_Xamarin_Essentials_System_Nullable_1_double__ctor_double_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Nullable_1_double__ctor_double
+plt_Xamarin_Essentials_System_Nullable_1_double__ctor_double:
+_p_342:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3096]
+br x16
+.word 10978
+_p_343_plt_Xamarin_Essentials__rgctx_fetch_150_llvm:
+	.globl _p_343_plt_Xamarin_Essentials__rgctx_fetch_150_llvm
+.private_extern _p_343_plt_Xamarin_Essentials__rgctx_fetch_150_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_150
+plt_Xamarin_Essentials__rgctx_fetch_150:
+_p_343:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3104]
+br x16
+.word 11028
+_p_344_plt_Xamarin_Essentials_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array_llvm:
+	.globl _p_344_plt_Xamarin_Essentials_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array_llvm
+.private_extern _p_344_plt_Xamarin_Essentials_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
+plt_Xamarin_Essentials_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
+_p_344:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3112]
+br x16
+.word 11036
+_p_345_plt_Xamarin_Essentials__rgctx_fetch_151_llvm:
+	.globl _p_345_plt_Xamarin_Essentials__rgctx_fetch_151_llvm
+.private_extern _p_345_plt_Xamarin_Essentials__rgctx_fetch_151_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_151
+plt_Xamarin_Essentials__rgctx_fetch_151:
+_p_345:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3120]
+br x16
+.word 11064
+_p_346_plt_Xamarin_Essentials__rgctx_fetch_152_llvm:
+	.globl _p_346_plt_Xamarin_Essentials__rgctx_fetch_152_llvm
+.private_extern _p_346_plt_Xamarin_Essentials__rgctx_fetch_152_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_152
+plt_Xamarin_Essentials__rgctx_fetch_152:
+_p_346:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3128]
+br x16
+.word 11072
+_p_347_plt_Xamarin_Essentials__rgctx_fetch_153_llvm:
+	.globl _p_347_plt_Xamarin_Essentials__rgctx_fetch_153_llvm
+.private_extern _p_347_plt_Xamarin_Essentials__rgctx_fetch_153_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_153
+plt_Xamarin_Essentials__rgctx_fetch_153:
+_p_347:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3136]
+br x16
+.word 11099
+_p_348_plt_Xamarin_Essentials_System_Array_Copy_System_Array_int_System_Array_int_int_llvm:
+	.globl _p_348_plt_Xamarin_Essentials_System_Array_Copy_System_Array_int_System_Array_int_int_llvm
+.private_extern _p_348_plt_Xamarin_Essentials_System_Array_Copy_System_Array_int_System_Array_int_int_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Array_Copy_System_Array_int_System_Array_int_int
+plt_Xamarin_Essentials_System_Array_Copy_System_Array_int_System_Array_int_int:
+_p_348:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3144]
+br x16
+.word 11123
+_p_349_plt_Xamarin_Essentials__rgctx_fetch_154_llvm:
+	.globl _p_349_plt_Xamarin_Essentials__rgctx_fetch_154_llvm
+.private_extern _p_349_plt_Xamarin_Essentials__rgctx_fetch_154_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_154
+plt_Xamarin_Essentials__rgctx_fetch_154:
+_p_349:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3152]
+br x16
+.word 11146
+_p_350_plt_Xamarin_Essentials__rgctx_fetch_155_llvm:
+	.globl _p_350_plt_Xamarin_Essentials__rgctx_fetch_155_llvm
+.private_extern _p_350_plt_Xamarin_Essentials__rgctx_fetch_155_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_155
+plt_Xamarin_Essentials__rgctx_fetch_155:
+_p_350:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3160]
+br x16
+.word 11170
+_p_351_plt_Xamarin_Essentials__rgctx_fetch_156_llvm:
+	.globl _p_351_plt_Xamarin_Essentials__rgctx_fetch_156_llvm
+.private_extern _p_351_plt_Xamarin_Essentials__rgctx_fetch_156_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_156
+plt_Xamarin_Essentials__rgctx_fetch_156:
+_p_351:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3168]
+br x16
+.word 11212
+_p_352_plt_Xamarin_Essentials__rgctx_fetch_157_llvm:
+	.globl _p_352_plt_Xamarin_Essentials__rgctx_fetch_157_llvm
+.private_extern _p_352_plt_Xamarin_Essentials__rgctx_fetch_157_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_157
+plt_Xamarin_Essentials__rgctx_fetch_157:
+_p_352:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3176]
+br x16
+.word 11220
+_p_353_plt_Xamarin_Essentials__rgctx_fetch_158_llvm:
+	.globl _p_353_plt_Xamarin_Essentials__rgctx_fetch_158_llvm
+.private_extern _p_353_plt_Xamarin_Essentials__rgctx_fetch_158_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_158
+plt_Xamarin_Essentials__rgctx_fetch_158:
+_p_353:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3184]
+br x16
+.word 11243
+_p_354_plt_Xamarin_Essentials__rgctx_fetch_159_llvm:
+	.globl _p_354_plt_Xamarin_Essentials__rgctx_fetch_159_llvm
+.private_extern _p_354_plt_Xamarin_Essentials__rgctx_fetch_159_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_159
+plt_Xamarin_Essentials__rgctx_fetch_159:
+_p_354:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3192]
+br x16
+.word 11279
+_p_355_plt_Xamarin_Essentials__rgctx_fetch_160_llvm:
+	.globl _p_355_plt_Xamarin_Essentials__rgctx_fetch_160_llvm
+.private_extern _p_355_plt_Xamarin_Essentials__rgctx_fetch_160_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_160
+plt_Xamarin_Essentials__rgctx_fetch_160:
+_p_355:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3200]
+br x16
+.word 11287
+_p_356_plt_Xamarin_Essentials__rgctx_fetch_161_llvm:
+	.globl _p_356_plt_Xamarin_Essentials__rgctx_fetch_161_llvm
+.private_extern _p_356_plt_Xamarin_Essentials__rgctx_fetch_161_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_161
+plt_Xamarin_Essentials__rgctx_fetch_161:
+_p_356:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3208]
+br x16
+.word 11319
+_p_357_plt_Xamarin_Essentials__rgctx_fetch_162_llvm:
+	.globl _p_357_plt_Xamarin_Essentials__rgctx_fetch_162_llvm
+.private_extern _p_357_plt_Xamarin_Essentials__rgctx_fetch_162_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_162
+plt_Xamarin_Essentials__rgctx_fetch_162:
+_p_357:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3216]
+br x16
+.word 11327
+_p_358_plt_Xamarin_Essentials_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher__llvm:
+	.globl _p_358_plt_Xamarin_Essentials_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher__llvm
+.private_extern _p_358_plt_Xamarin_Essentials_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher__llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_
+plt_Xamarin_Essentials_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_:
+_p_358:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3224]
+br x16
+.word 11335
+_p_359_plt_Xamarin_Essentials_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_MoveNext_llvm:
+	.globl _p_359_plt_Xamarin_Essentials_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_MoveNext_llvm
+.private_extern _p_359_plt_Xamarin_Essentials_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_MoveNext_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_MoveNext
+plt_Xamarin_Essentials_Xamarin_Essentials_Browser__PlatformOpenAsyncd__7_MoveNext:
+_p_359:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3232]
+br x16
+.word 11340
+_p_360_plt_Xamarin_Essentials_System_Threading_ExecutionContextSwitcher_Undo_llvm:
+	.globl _p_360_plt_Xamarin_Essentials_System_Threading_ExecutionContextSwitcher_Undo_llvm
+.private_extern _p_360_plt_Xamarin_Essentials_System_Threading_ExecutionContextSwitcher_Undo_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Threading_ExecutionContextSwitcher_Undo
+plt_Xamarin_Essentials_System_Threading_ExecutionContextSwitcher_Undo:
+_p_360:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3240]
+br x16
+.word 11342
+_p_361_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner__llvm:
+	.globl _p_361_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner__llvm
+.private_extern _p_361_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner__llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_
+plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_:
+_p_361:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3248]
+br x16
+.word 11347
+_p_362_plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_1_bool_UnsafeOnCompleted_System_Action_llvm:
+	.globl _p_362_plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_1_bool_UnsafeOnCompleted_System_Action_llvm
+.private_extern _p_362_plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_1_bool_UnsafeOnCompleted_System_Action_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_1_bool_UnsafeOnCompleted_System_Action
+plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_1_bool_UnsafeOnCompleted_System_Action:
+_p_362:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3256]
+br x16
+.word 11352
+_p_363_plt_Xamarin_Essentials__jit_icall_mono_gc_wbarrier_range_copy_llvm:
+	.globl _p_363_plt_Xamarin_Essentials__jit_icall_mono_gc_wbarrier_range_copy_llvm
+.private_extern _p_363_plt_Xamarin_Essentials__jit_icall_mono_gc_wbarrier_range_copy_llvm
+	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_gc_wbarrier_range_copy
+plt_Xamarin_Essentials__jit_icall_mono_gc_wbarrier_range_copy:
+_p_363:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3264]
+br x16
+.word 11373
+_p_364_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task_llvm:
+	.globl _p_364_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task_llvm
+.private_extern _p_364_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task
+plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task:
+_p_364:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3272]
+br x16
+.word 11403
+_p_365_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext_llvm:
+	.globl _p_365_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext_llvm
+.private_extern _p_365_plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext
+plt_Xamarin_Essentials_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext:
+_p_365:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3280]
+br x16
+.word 11408
+_p_366_plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompleted_System_Action_llvm:
+	.globl _p_366_plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompleted_System_Action_llvm
+.private_extern _p_366_plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompleted_System_Action_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompleted_System_Action
+plt_Xamarin_Essentials_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompleted_System_Action:
+_p_366:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3288]
+br x16
+.word 11413
+_p_367_plt_Xamarin_Essentials_System_Linq_OrderedEnumerable_2_UIKit_UIWindow_System_nfloat__ctor_System_Collections_Generic_IEnumerable_1_UIKit_UIWindow_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool_System_Linq_OrderedEnumerable_1_UIKit_UIWindow_llvm:
+	.globl _p_367_plt_Xamarin_Essentials_System_Linq_OrderedEnumerable_2_UIKit_UIWindow_System_nfloat__ctor_System_Collections_Generic_IEnumerable_1_UIKit_UIWindow_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool_System_Linq_OrderedEnumerable_1_UIKit_UIWindow_llvm
+.private_extern _p_367_plt_Xamarin_Essentials_System_Linq_OrderedEnumerable_2_UIKit_UIWindow_System_nfloat__ctor_System_Collections_Generic_IEnumerable_1_UIKit_UIWindow_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool_System_Linq_OrderedEnumerable_1_UIKit_UIWindow_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Linq_OrderedEnumerable_2_UIKit_UIWindow_System_nfloat__ctor_System_Collections_Generic_IEnumerable_1_UIKit_UIWindow_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool_System_Linq_OrderedEnumerable_1_UIKit_UIWindow
+plt_Xamarin_Essentials_System_Linq_OrderedEnumerable_2_UIKit_UIWindow_System_nfloat__ctor_System_Collections_Generic_IEnumerable_1_UIKit_UIWindow_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool_System_Linq_OrderedEnumerable_1_UIKit_UIWindow:
+_p_367:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3296]
+br x16
+.word 11418
+_p_368_plt_Xamarin_Essentials__rgctx_fetch_163_llvm:
+	.globl _p_368_plt_Xamarin_Essentials__rgctx_fetch_163_llvm
+.private_extern _p_368_plt_Xamarin_Essentials__rgctx_fetch_163_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_163
+plt_Xamarin_Essentials__rgctx_fetch_163:
+_p_368:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3304]
+br x16
+.word 11469
+_p_369_plt_Xamarin_Essentials__rgctx_fetch_164_llvm:
+	.globl _p_369_plt_Xamarin_Essentials__rgctx_fetch_164_llvm
+.private_extern _p_369_plt_Xamarin_Essentials__rgctx_fetch_164_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_164
+plt_Xamarin_Essentials__rgctx_fetch_164:
+_p_369:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3312]
+br x16
+.word 11477
+_p_370_plt_Xamarin_Essentials__rgctx_fetch_165_llvm:
+	.globl _p_370_plt_Xamarin_Essentials__rgctx_fetch_165_llvm
+.private_extern _p_370_plt_Xamarin_Essentials__rgctx_fetch_165_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_165
+plt_Xamarin_Essentials__rgctx_fetch_165:
+_p_370:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3320]
+br x16
+.word 11527
+_p_371_plt_Xamarin_Essentials__rgctx_fetch_166_llvm:
+	.globl _p_371_plt_Xamarin_Essentials__rgctx_fetch_166_llvm
+.private_extern _p_371_plt_Xamarin_Essentials__rgctx_fetch_166_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_166
+plt_Xamarin_Essentials__rgctx_fetch_166:
+_p_371:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3328]
+br x16
+.word 11535
+_p_372_plt_Xamarin_Essentials__rgctx_fetch_167_llvm:
+	.globl _p_372_plt_Xamarin_Essentials__rgctx_fetch_167_llvm
+.private_extern _p_372_plt_Xamarin_Essentials__rgctx_fetch_167_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_167
+plt_Xamarin_Essentials__rgctx_fetch_167:
+_p_372:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3336]
+br x16
+.word 11576
+_p_373_plt_Xamarin_Essentials__rgctx_fetch_168_llvm:
+	.globl _p_373_plt_Xamarin_Essentials__rgctx_fetch_168_llvm
+.private_extern _p_373_plt_Xamarin_Essentials__rgctx_fetch_168_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_168
+plt_Xamarin_Essentials__rgctx_fetch_168:
+_p_373:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3344]
+br x16
+.word 11584
+_p_374_plt_Xamarin_Essentials__rgctx_fetch_169_llvm:
+	.globl _p_374_plt_Xamarin_Essentials__rgctx_fetch_169_llvm
+.private_extern _p_374_plt_Xamarin_Essentials__rgctx_fetch_169_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_169
+plt_Xamarin_Essentials__rgctx_fetch_169:
+_p_374:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3352]
+br x16
+.word 11592
+_p_375_plt_Xamarin_Essentials__rgctx_fetch_170_llvm:
+	.globl _p_375_plt_Xamarin_Essentials__rgctx_fetch_170_llvm
+.private_extern _p_375_plt_Xamarin_Essentials__rgctx_fetch_170_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_170
+plt_Xamarin_Essentials__rgctx_fetch_170:
+_p_375:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3360]
+br x16
+.word 11633
+_p_376_plt_Xamarin_Essentials__rgctx_fetch_171_llvm:
+	.globl _p_376_plt_Xamarin_Essentials__rgctx_fetch_171_llvm
+.private_extern _p_376_plt_Xamarin_Essentials__rgctx_fetch_171_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_171
+plt_Xamarin_Essentials__rgctx_fetch_171:
+_p_376:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3368]
+br x16
+.word 11641
+_p_377_plt_Xamarin_Essentials__rgctx_fetch_172_llvm:
+	.globl _p_377_plt_Xamarin_Essentials__rgctx_fetch_172_llvm
+.private_extern _p_377_plt_Xamarin_Essentials__rgctx_fetch_172_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_172
+plt_Xamarin_Essentials__rgctx_fetch_172:
+_p_377:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3376]
+br x16
+.word 11649
+_p_378_plt_Xamarin_Essentials__rgctx_fetch_173_llvm:
+	.globl _p_378_plt_Xamarin_Essentials__rgctx_fetch_173_llvm
+.private_extern _p_378_plt_Xamarin_Essentials__rgctx_fetch_173_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_173
+plt_Xamarin_Essentials__rgctx_fetch_173:
+_p_378:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3384]
+br x16
+.word 11690
+_p_379_plt_Xamarin_Essentials__rgctx_fetch_174_llvm:
+	.globl _p_379_plt_Xamarin_Essentials__rgctx_fetch_174_llvm
+.private_extern _p_379_plt_Xamarin_Essentials__rgctx_fetch_174_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_174
+plt_Xamarin_Essentials__rgctx_fetch_174:
+_p_379:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3392]
+br x16
+.word 11698
+_p_380_plt_Xamarin_Essentials__rgctx_fetch_175_llvm:
+	.globl _p_380_plt_Xamarin_Essentials__rgctx_fetch_175_llvm
+.private_extern _p_380_plt_Xamarin_Essentials__rgctx_fetch_175_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_175
+plt_Xamarin_Essentials__rgctx_fetch_175:
+_p_380:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3400]
+br x16
+.word 11706
+_p_381_plt_Xamarin_Essentials__rgctx_fetch_176_llvm:
+	.globl _p_381_plt_Xamarin_Essentials__rgctx_fetch_176_llvm
+.private_extern _p_381_plt_Xamarin_Essentials__rgctx_fetch_176_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_176
+plt_Xamarin_Essentials__rgctx_fetch_176:
+_p_381:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3408]
+br x16
+.word 11747
+_p_382_plt_Xamarin_Essentials__rgctx_fetch_177_llvm:
+	.globl _p_382_plt_Xamarin_Essentials__rgctx_fetch_177_llvm
+.private_extern _p_382_plt_Xamarin_Essentials__rgctx_fetch_177_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_177
+plt_Xamarin_Essentials__rgctx_fetch_177:
+_p_382:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3416]
+br x16
+.word 11755
+_p_383_plt_Xamarin_Essentials__rgctx_fetch_178_llvm:
+	.globl _p_383_plt_Xamarin_Essentials__rgctx_fetch_178_llvm
+.private_extern _p_383_plt_Xamarin_Essentials__rgctx_fetch_178_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_178
+plt_Xamarin_Essentials__rgctx_fetch_178:
+_p_383:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3424]
+br x16
+.word 11763
+_p_384_plt_Xamarin_Essentials__rgctx_fetch_179_llvm:
+	.globl _p_384_plt_Xamarin_Essentials__rgctx_fetch_179_llvm
+.private_extern _p_384_plt_Xamarin_Essentials__rgctx_fetch_179_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_179
+plt_Xamarin_Essentials__rgctx_fetch_179:
+_p_384:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3432]
+br x16
+.word 11805
+_p_385_plt_Xamarin_Essentials_System_Collections_Generic_Comparer_1_System_nfloat_get_Default_llvm:
+	.globl _p_385_plt_Xamarin_Essentials_System_Collections_Generic_Comparer_1_System_nfloat_get_Default_llvm
+.private_extern _p_385_plt_Xamarin_Essentials_System_Collections_Generic_Comparer_1_System_nfloat_get_Default_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Collections_Generic_Comparer_1_System_nfloat_get_Default
+plt_Xamarin_Essentials_System_Collections_Generic_Comparer_1_System_nfloat_get_Default:
+_p_385:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3440]
+br x16
+.word 11829
+_p_386_plt_Xamarin_Essentials_System_Linq_Error_ArgumentNull_string_llvm:
+	.globl _p_386_plt_Xamarin_Essentials_System_Linq_Error_ArgumentNull_string_llvm
+.private_extern _p_386_plt_Xamarin_Essentials_System_Linq_Error_ArgumentNull_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Linq_Error_ArgumentNull_string
+plt_Xamarin_Essentials_System_Linq_Error_ArgumentNull_string:
+_p_386:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3448]
+br x16
+.word 11848
+_p_387_plt_Xamarin_Essentials_System_Linq_EnumerableSorter_2_UIKit_UIWindow_System_nfloat__ctor_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool_System_Linq_EnumerableSorter_1_UIKit_UIWindow_llvm:
+	.globl _p_387_plt_Xamarin_Essentials_System_Linq_EnumerableSorter_2_UIKit_UIWindow_System_nfloat__ctor_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool_System_Linq_EnumerableSorter_1_UIKit_UIWindow_llvm
+.private_extern _p_387_plt_Xamarin_Essentials_System_Linq_EnumerableSorter_2_UIKit_UIWindow_System_nfloat__ctor_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool_System_Linq_EnumerableSorter_1_UIKit_UIWindow_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Linq_EnumerableSorter_2_UIKit_UIWindow_System_nfloat__ctor_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool_System_Linq_EnumerableSorter_1_UIKit_UIWindow
+plt_Xamarin_Essentials_System_Linq_EnumerableSorter_2_UIKit_UIWindow_System_nfloat__ctor_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool_System_Linq_EnumerableSorter_1_UIKit_UIWindow:
+_p_387:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3456]
+br x16
+.word 11853
+_p_388_plt_Xamarin_Essentials_System_Linq_CachingComparer_2_UIKit_UIWindow_System_nfloat__ctor_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool_llvm:
+	.globl _p_388_plt_Xamarin_Essentials_System_Linq_CachingComparer_2_UIKit_UIWindow_System_nfloat__ctor_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool_llvm
+.private_extern _p_388_plt_Xamarin_Essentials_System_Linq_CachingComparer_2_UIKit_UIWindow_System_nfloat__ctor_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Linq_CachingComparer_2_UIKit_UIWindow_System_nfloat__ctor_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool
+plt_Xamarin_Essentials_System_Linq_CachingComparer_2_UIKit_UIWindow_System_nfloat__ctor_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool:
+_p_388:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3464]
+br x16
+.word 11876
+_p_389_plt_Xamarin_Essentials_System_Linq_CachingComparerWithChild_2_UIKit_UIWindow_System_nfloat__ctor_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool_System_Linq_CachingComparer_1_UIKit_UIWindow_llvm:
+	.globl _p_389_plt_Xamarin_Essentials_System_Linq_CachingComparerWithChild_2_UIKit_UIWindow_System_nfloat__ctor_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool_System_Linq_CachingComparer_1_UIKit_UIWindow_llvm
+.private_extern _p_389_plt_Xamarin_Essentials_System_Linq_CachingComparerWithChild_2_UIKit_UIWindow_System_nfloat__ctor_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool_System_Linq_CachingComparer_1_UIKit_UIWindow_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Linq_CachingComparerWithChild_2_UIKit_UIWindow_System_nfloat__ctor_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool_System_Linq_CachingComparer_1_UIKit_UIWindow
+plt_Xamarin_Essentials_System_Linq_CachingComparerWithChild_2_UIKit_UIWindow_System_nfloat__ctor_System_Func_2_UIKit_UIWindow_System_nfloat_System_Collections_Generic_IComparer_1_System_nfloat_bool_System_Linq_CachingComparer_1_UIKit_UIWindow:
+_p_389:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3472]
+br x16
+.word 11899
+_p_390_plt_Xamarin_Essentials__rgctx_fetch_180_llvm:
+	.globl _p_390_plt_Xamarin_Essentials__rgctx_fetch_180_llvm
+.private_extern _p_390_plt_Xamarin_Essentials__rgctx_fetch_180_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_180
+plt_Xamarin_Essentials__rgctx_fetch_180:
+_p_390:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3480]
+br x16
+.word 11940
+_p_391_plt_Xamarin_Essentials__rgctx_fetch_181_llvm:
+	.globl _p_391_plt_Xamarin_Essentials__rgctx_fetch_181_llvm
+.private_extern _p_391_plt_Xamarin_Essentials__rgctx_fetch_181_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_181
+plt_Xamarin_Essentials__rgctx_fetch_181:
+_p_391:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3488]
+br x16
+.word 11957
+_p_392_plt_Xamarin_Essentials__rgctx_fetch_182_llvm:
+	.globl _p_392_plt_Xamarin_Essentials__rgctx_fetch_182_llvm
+.private_extern _p_392_plt_Xamarin_Essentials__rgctx_fetch_182_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_182
+plt_Xamarin_Essentials__rgctx_fetch_182:
+_p_392:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3496]
+br x16
+.word 11974
+_p_393_plt_Xamarin_Essentials__rgctx_fetch_183_llvm:
+	.globl _p_393_plt_Xamarin_Essentials__rgctx_fetch_183_llvm
+.private_extern _p_393_plt_Xamarin_Essentials__rgctx_fetch_183_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_183
+plt_Xamarin_Essentials__rgctx_fetch_183:
+_p_393:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3504]
+br x16
+.word 11982
+_p_394_plt_Xamarin_Essentials_System_Enum_GetUnderlyingType_System_Type_llvm:
+	.globl _p_394_plt_Xamarin_Essentials_System_Enum_GetUnderlyingType_System_Type_llvm
+.private_extern _p_394_plt_Xamarin_Essentials_System_Enum_GetUnderlyingType_System_Type_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Enum_GetUnderlyingType_System_Type
+plt_Xamarin_Essentials_System_Enum_GetUnderlyingType_System_Type:
+_p_394:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3512]
+br x16
+.word 12005
+_p_395_plt_Xamarin_Essentials_System_Type_GetTypeCode_System_Type_llvm:
+	.globl _p_395_plt_Xamarin_Essentials_System_Type_GetTypeCode_System_Type_llvm
+.private_extern _p_395_plt_Xamarin_Essentials_System_Type_GetTypeCode_System_Type_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Type_GetTypeCode_System_Type
+plt_Xamarin_Essentials_System_Type_GetTypeCode_System_Type:
+_p_395:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3520]
+br x16
+.word 12010
+_p_396_plt_Xamarin_Essentials_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType_llvm:
+	.globl _p_396_plt_Xamarin_Essentials_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType_llvm
+.private_extern _p_396_plt_Xamarin_Essentials_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType
+plt_Xamarin_Essentials_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType:
+_p_396:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3528]
+br x16
+.word 12015
+_p_397_plt_Xamarin_Essentials__rgctx_fetch_184_llvm:
+	.globl _p_397_plt_Xamarin_Essentials__rgctx_fetch_184_llvm
+.private_extern _p_397_plt_Xamarin_Essentials__rgctx_fetch_184_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_184
+plt_Xamarin_Essentials__rgctx_fetch_184:
+_p_397:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3536]
+br x16
+.word 12020
+_p_398_plt_Xamarin_Essentials__rgctx_fetch_185_llvm:
+	.globl _p_398_plt_Xamarin_Essentials__rgctx_fetch_185_llvm
+.private_extern _p_398_plt_Xamarin_Essentials__rgctx_fetch_185_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_185
+plt_Xamarin_Essentials__rgctx_fetch_185:
+_p_398:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3544]
+br x16
+.word 12046
+_p_399_plt_Xamarin_Essentials__rgctx_fetch_186_llvm:
+	.globl _p_399_plt_Xamarin_Essentials__rgctx_fetch_186_llvm
+.private_extern _p_399_plt_Xamarin_Essentials__rgctx_fetch_186_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_186
+plt_Xamarin_Essentials__rgctx_fetch_186:
+_p_399:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3552]
+br x16
+.word 12063
+_p_400_plt_Xamarin_Essentials__rgctx_fetch_187_llvm:
+	.globl _p_400_plt_Xamarin_Essentials__rgctx_fetch_187_llvm
+.private_extern _p_400_plt_Xamarin_Essentials__rgctx_fetch_187_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_187
+plt_Xamarin_Essentials__rgctx_fetch_187:
+_p_400:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3560]
+br x16
+.word 12080
+_p_401_plt_Xamarin_Essentials__rgctx_fetch_188_llvm:
+	.globl _p_401_plt_Xamarin_Essentials__rgctx_fetch_188_llvm
+.private_extern _p_401_plt_Xamarin_Essentials__rgctx_fetch_188_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_188
+plt_Xamarin_Essentials__rgctx_fetch_188:
+_p_401:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3568]
+br x16
+.word 12088
+_p_402_plt_Xamarin_Essentials__rgctx_fetch_189_llvm:
+	.globl _p_402_plt_Xamarin_Essentials__rgctx_fetch_189_llvm
+.private_extern _p_402_plt_Xamarin_Essentials__rgctx_fetch_189_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_189
+plt_Xamarin_Essentials__rgctx_fetch_189:
+_p_402:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3576]
+br x16
+.word 12111
+_p_403_plt_Xamarin_Essentials__rgctx_fetch_190_llvm:
+	.globl _p_403_plt_Xamarin_Essentials__rgctx_fetch_190_llvm
+.private_extern _p_403_plt_Xamarin_Essentials__rgctx_fetch_190_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_190
+plt_Xamarin_Essentials__rgctx_fetch_190:
+_p_403:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3584]
+br x16
+.word 12137
+_p_404_plt_Xamarin_Essentials__rgctx_fetch_191_llvm:
+	.globl _p_404_plt_Xamarin_Essentials__rgctx_fetch_191_llvm
+.private_extern _p_404_plt_Xamarin_Essentials__rgctx_fetch_191_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_191
+plt_Xamarin_Essentials__rgctx_fetch_191:
+_p_404:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3592]
+br x16
+.word 12154
+_p_405_plt_Xamarin_Essentials__rgctx_fetch_192_llvm:
+	.globl _p_405_plt_Xamarin_Essentials__rgctx_fetch_192_llvm
+.private_extern _p_405_plt_Xamarin_Essentials__rgctx_fetch_192_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_192
+plt_Xamarin_Essentials__rgctx_fetch_192:
+_p_405:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3600]
+br x16
+.word 12171
+_p_406_plt_Xamarin_Essentials__rgctx_fetch_193_llvm:
+	.globl _p_406_plt_Xamarin_Essentials__rgctx_fetch_193_llvm
+.private_extern _p_406_plt_Xamarin_Essentials__rgctx_fetch_193_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_193
+plt_Xamarin_Essentials__rgctx_fetch_193:
+_p_406:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3608]
+br x16
+.word 12179
+_p_407_plt_Xamarin_Essentials__rgctx_fetch_194_llvm:
+	.globl _p_407_plt_Xamarin_Essentials__rgctx_fetch_194_llvm
+.private_extern _p_407_plt_Xamarin_Essentials__rgctx_fetch_194_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_194
+plt_Xamarin_Essentials__rgctx_fetch_194:
+_p_407:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3616]
+br x16
+.word 12202
+_p_408_plt_Xamarin_Essentials__rgctx_fetch_195_llvm:
+	.globl _p_408_plt_Xamarin_Essentials__rgctx_fetch_195_llvm
+.private_extern _p_408_plt_Xamarin_Essentials__rgctx_fetch_195_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_195
+plt_Xamarin_Essentials__rgctx_fetch_195:
+_p_408:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3624]
+br x16
+.word 12228
+_p_409_plt_Xamarin_Essentials__rgctx_fetch_196_llvm:
+	.globl _p_409_plt_Xamarin_Essentials__rgctx_fetch_196_llvm
+.private_extern _p_409_plt_Xamarin_Essentials__rgctx_fetch_196_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_196
+plt_Xamarin_Essentials__rgctx_fetch_196:
+_p_409:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3632]
+br x16
+.word 12245
+_p_410_plt_Xamarin_Essentials__rgctx_fetch_197_llvm:
+	.globl _p_410_plt_Xamarin_Essentials__rgctx_fetch_197_llvm
+.private_extern _p_410_plt_Xamarin_Essentials__rgctx_fetch_197_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_197
+plt_Xamarin_Essentials__rgctx_fetch_197:
+_p_410:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3640]
+br x16
+.word 12262
+_p_411_plt_Xamarin_Essentials__rgctx_fetch_198_llvm:
+	.globl _p_411_plt_Xamarin_Essentials__rgctx_fetch_198_llvm
+.private_extern _p_411_plt_Xamarin_Essentials__rgctx_fetch_198_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_198
+plt_Xamarin_Essentials__rgctx_fetch_198:
+_p_411:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3648]
+br x16
+.word 12270
+_p_412_plt_Xamarin_Essentials__rgctx_fetch_199_llvm:
+	.globl _p_412_plt_Xamarin_Essentials__rgctx_fetch_199_llvm
+.private_extern _p_412_plt_Xamarin_Essentials__rgctx_fetch_199_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_199
+plt_Xamarin_Essentials__rgctx_fetch_199:
+_p_412:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3656]
+br x16
+.word 12293
+_p_413_plt_Xamarin_Essentials_System_Collections_Generic_Comparer_1_System_nfloat_CreateComparer_llvm:
+	.globl _p_413_plt_Xamarin_Essentials_System_Collections_Generic_Comparer_1_System_nfloat_CreateComparer_llvm
+.private_extern _p_413_plt_Xamarin_Essentials_System_Collections_Generic_Comparer_1_System_nfloat_CreateComparer_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Collections_Generic_Comparer_1_System_nfloat_CreateComparer
+plt_Xamarin_Essentials_System_Collections_Generic_Comparer_1_System_nfloat_CreateComparer:
+_p_413:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3664]
+br x16
+.word 12301
+_p_414_plt_Xamarin_Essentials_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource_llvm:
+	.globl _p_414_plt_Xamarin_Essentials_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource_llvm
+.private_extern _p_414_plt_Xamarin_Essentials_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource
+plt_Xamarin_Essentials_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource:
+_p_414:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3672]
+br x16
+.word 12320
+_p_415_plt_Xamarin_Essentials_System_nfloat_CompareTo_System_nfloat_llvm:
+	.globl _p_415_plt_Xamarin_Essentials_System_nfloat_CompareTo_System_nfloat_llvm
+.private_extern _p_415_plt_Xamarin_Essentials_System_nfloat_CompareTo_System_nfloat_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_nfloat_CompareTo_System_nfloat
+plt_Xamarin_Essentials_System_nfloat_CompareTo_System_nfloat:
+_p_415:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3680]
+br x16
+.word 12325
+_p_416_plt_Xamarin_Essentials__jit_icall_mono_ldvirtfn_llvm:
+	.globl _p_416_plt_Xamarin_Essentials__jit_icall_mono_ldvirtfn_llvm
+.private_extern _p_416_plt_Xamarin_Essentials__jit_icall_mono_ldvirtfn_llvm
+	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_ldvirtfn
+plt_Xamarin_Essentials__jit_icall_mono_ldvirtfn:
+_p_416:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3688]
+br x16
+.word 12330
+_p_417_plt_Xamarin_Essentials_System_Comparison_1_int__ctor_object_intptr_llvm:
+	.globl _p_417_plt_Xamarin_Essentials_System_Comparison_1_int__ctor_object_intptr_llvm
+.private_extern _p_417_plt_Xamarin_Essentials_System_Comparison_1_int__ctor_object_intptr_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Comparison_1_int__ctor_object_intptr
+plt_Xamarin_Essentials_System_Comparison_1_int__ctor_object_intptr:
+_p_417:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3696]
+br x16
+.word 12346
+_p_418_plt_Xamarin_Essentials_System_Collections_Generic_Comparer_1_int_Create_System_Comparison_1_int_llvm:
+	.globl _p_418_plt_Xamarin_Essentials_System_Collections_Generic_Comparer_1_int_Create_System_Comparison_1_int_llvm
+.private_extern _p_418_plt_Xamarin_Essentials_System_Collections_Generic_Comparer_1_int_Create_System_Comparison_1_int_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Collections_Generic_Comparer_1_int_Create_System_Comparison_1_int
+plt_Xamarin_Essentials_System_Collections_Generic_Comparer_1_int_Create_System_Comparison_1_int:
+_p_418:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3704]
+br x16
+.word 12376
+_p_419_plt_Xamarin_Essentials_System_Array_Sort_int_int___int_int_System_Collections_Generic_IComparer_1_int_llvm:
+	.globl _p_419_plt_Xamarin_Essentials_System_Array_Sort_int_int___int_int_System_Collections_Generic_IComparer_1_int_llvm
+.private_extern _p_419_plt_Xamarin_Essentials_System_Array_Sort_int_int___int_int_System_Collections_Generic_IComparer_1_int_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Array_Sort_int_int___int_int_System_Collections_Generic_IComparer_1_int
+plt_Xamarin_Essentials_System_Array_Sort_int_int___int_int_System_Collections_Generic_IComparer_1_int:
+_p_419:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3712]
+br x16
+.word 12396
+_p_420_plt_Xamarin_Essentials_System_Linq_EnumerableSorter_2_UIKit_UIWindow_System_nfloat_CompareKeys_int_int_llvm:
+	.globl _p_420_plt_Xamarin_Essentials_System_Linq_EnumerableSorter_2_UIKit_UIWindow_System_nfloat_CompareKeys_int_int_llvm
+.private_extern _p_420_plt_Xamarin_Essentials_System_Linq_EnumerableSorter_2_UIKit_UIWindow_System_nfloat_CompareKeys_int_int_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Linq_EnumerableSorter_2_UIKit_UIWindow_System_nfloat_CompareKeys_int_int
+plt_Xamarin_Essentials_System_Linq_EnumerableSorter_2_UIKit_UIWindow_System_nfloat_CompareKeys_int_int:
+_p_420:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3720]
+br x16
+.word 12417
+_p_421_plt_Xamarin_Essentials_System_Linq_CachingComparer_2_UIKit_UIWindow_System_nfloat_SetElement_UIKit_UIWindow_llvm:
+	.globl _p_421_plt_Xamarin_Essentials_System_Linq_CachingComparer_2_UIKit_UIWindow_System_nfloat_SetElement_UIKit_UIWindow_llvm
+.private_extern _p_421_plt_Xamarin_Essentials_System_Linq_CachingComparer_2_UIKit_UIWindow_System_nfloat_SetElement_UIKit_UIWindow_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Linq_CachingComparer_2_UIKit_UIWindow_System_nfloat_SetElement_UIKit_UIWindow
+plt_Xamarin_Essentials_System_Linq_CachingComparer_2_UIKit_UIWindow_System_nfloat_SetElement_UIKit_UIWindow:
+_p_421:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3728]
+br x16
+.word 12440
+_p_422_plt_Xamarin_Essentials_System_Collections_Comparer_Compare_object_object_llvm:
+	.globl _p_422_plt_Xamarin_Essentials_System_Collections_Comparer_Compare_object_object_llvm
+.private_extern _p_422_plt_Xamarin_Essentials_System_Collections_Comparer_Compare_object_object_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Collections_Comparer_Compare_object_object
+plt_Xamarin_Essentials_System_Collections_Comparer_Compare_object_object:
+_p_422:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3736]
+br x16
+.word 12463
+_p_423_plt_Xamarin_Essentials__rgctx_fetch_200_llvm:
+	.globl _p_423_plt_Xamarin_Essentials__rgctx_fetch_200_llvm
+.private_extern _p_423_plt_Xamarin_Essentials__rgctx_fetch_200_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_200
+plt_Xamarin_Essentials__rgctx_fetch_200:
+_p_423:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3744]
+br x16
+.word 12496
+_p_424_plt_Xamarin_Essentials__rgctx_fetch_201_llvm:
+	.globl _p_424_plt_Xamarin_Essentials__rgctx_fetch_201_llvm
+.private_extern _p_424_plt_Xamarin_Essentials__rgctx_fetch_201_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_201
+plt_Xamarin_Essentials__rgctx_fetch_201:
+_p_424:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3752]
+br x16
+.word 12504
+_p_425_plt_Xamarin_Essentials__rgctx_fetch_202_llvm:
+	.globl _p_425_plt_Xamarin_Essentials__rgctx_fetch_202_llvm
+.private_extern _p_425_plt_Xamarin_Essentials__rgctx_fetch_202_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_202
+plt_Xamarin_Essentials__rgctx_fetch_202:
+_p_425:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3760]
+br x16
+.word 12554
+_p_426_plt_Xamarin_Essentials__rgctx_fetch_203_llvm:
+	.globl _p_426_plt_Xamarin_Essentials__rgctx_fetch_203_llvm
+.private_extern _p_426_plt_Xamarin_Essentials__rgctx_fetch_203_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_203
+plt_Xamarin_Essentials__rgctx_fetch_203:
+_p_426:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3768]
+br x16
+.word 12562
+_p_427_plt_Xamarin_Essentials__rgctx_fetch_204_llvm:
+	.globl _p_427_plt_Xamarin_Essentials__rgctx_fetch_204_llvm
+.private_extern _p_427_plt_Xamarin_Essentials__rgctx_fetch_204_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_204
+plt_Xamarin_Essentials__rgctx_fetch_204:
+_p_427:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3776]
+br x16
+.word 12603
+_p_428_plt_Xamarin_Essentials__rgctx_fetch_205_llvm:
+	.globl _p_428_plt_Xamarin_Essentials__rgctx_fetch_205_llvm
+.private_extern _p_428_plt_Xamarin_Essentials__rgctx_fetch_205_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_205
+plt_Xamarin_Essentials__rgctx_fetch_205:
+_p_428:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3784]
+br x16
+.word 12611
+_p_429_plt_Xamarin_Essentials__rgctx_fetch_206_llvm:
+	.globl _p_429_plt_Xamarin_Essentials__rgctx_fetch_206_llvm
+.private_extern _p_429_plt_Xamarin_Essentials__rgctx_fetch_206_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_206
+plt_Xamarin_Essentials__rgctx_fetch_206:
+_p_429:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3792]
+br x16
+.word 12646
+_p_430_plt_Xamarin_Essentials__rgctx_fetch_207_llvm:
+	.globl _p_430_plt_Xamarin_Essentials__rgctx_fetch_207_llvm
+.private_extern _p_430_plt_Xamarin_Essentials__rgctx_fetch_207_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_207
+plt_Xamarin_Essentials__rgctx_fetch_207:
+_p_430:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3800]
+br x16
+.word 12692
+_p_431_plt_Xamarin_Essentials__rgctx_fetch_208_llvm:
+	.globl _p_431_plt_Xamarin_Essentials__rgctx_fetch_208_llvm
+.private_extern _p_431_plt_Xamarin_Essentials__rgctx_fetch_208_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_208
+plt_Xamarin_Essentials__rgctx_fetch_208:
+_p_431:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3808]
+br x16
+.word 12718
+_p_432_plt_Xamarin_Essentials__rgctx_fetch_209_llvm:
+	.globl _p_432_plt_Xamarin_Essentials__rgctx_fetch_209_llvm
+.private_extern _p_432_plt_Xamarin_Essentials__rgctx_fetch_209_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_209
+plt_Xamarin_Essentials__rgctx_fetch_209:
+_p_432:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3816]
+br x16
+.word 12726
+_p_433_plt_Xamarin_Essentials__rgctx_fetch_210_llvm:
+	.globl _p_433_plt_Xamarin_Essentials__rgctx_fetch_210_llvm
+.private_extern _p_433_plt_Xamarin_Essentials__rgctx_fetch_210_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_210
+plt_Xamarin_Essentials__rgctx_fetch_210:
+_p_433:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3824]
+br x16
+.word 12767
+_p_434_plt_Xamarin_Essentials__rgctx_fetch_211_llvm:
+	.globl _p_434_plt_Xamarin_Essentials__rgctx_fetch_211_llvm
+.private_extern _p_434_plt_Xamarin_Essentials__rgctx_fetch_211_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_211
+plt_Xamarin_Essentials__rgctx_fetch_211:
+_p_434:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3832]
+br x16
+.word 12775
+_p_435_plt_Xamarin_Essentials__rgctx_fetch_212_llvm:
+	.globl _p_435_plt_Xamarin_Essentials__rgctx_fetch_212_llvm
+.private_extern _p_435_plt_Xamarin_Essentials__rgctx_fetch_212_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_212
+plt_Xamarin_Essentials__rgctx_fetch_212:
+_p_435:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3840]
+br x16
+.word 12798
+_p_436_plt_Xamarin_Essentials__rgctx_fetch_213_llvm:
+	.globl _p_436_plt_Xamarin_Essentials__rgctx_fetch_213_llvm
+.private_extern _p_436_plt_Xamarin_Essentials__rgctx_fetch_213_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_213
+plt_Xamarin_Essentials__rgctx_fetch_213:
+_p_436:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3848]
+br x16
+.word 12821
+_p_437_plt_Xamarin_Essentials__rgctx_fetch_214_llvm:
+	.globl _p_437_plt_Xamarin_Essentials__rgctx_fetch_214_llvm
+.private_extern _p_437_plt_Xamarin_Essentials__rgctx_fetch_214_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_214
+plt_Xamarin_Essentials__rgctx_fetch_214:
+_p_437:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3856]
+br x16
+.word 12844
+_p_438_plt_Xamarin_Essentials__rgctx_fetch_215_llvm:
+	.globl _p_438_plt_Xamarin_Essentials__rgctx_fetch_215_llvm
+.private_extern _p_438_plt_Xamarin_Essentials__rgctx_fetch_215_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_215
+plt_Xamarin_Essentials__rgctx_fetch_215:
+_p_438:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3864]
+br x16
+.word 12867
+_p_439_plt_Xamarin_Essentials__rgctx_fetch_216_llvm:
+	.globl _p_439_plt_Xamarin_Essentials__rgctx_fetch_216_llvm
+.private_extern _p_439_plt_Xamarin_Essentials__rgctx_fetch_216_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_216
+plt_Xamarin_Essentials__rgctx_fetch_216:
+_p_439:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3872]
+br x16
+.word 12908
+_p_440_plt_Xamarin_Essentials__rgctx_fetch_217_llvm:
+	.globl _p_440_plt_Xamarin_Essentials__rgctx_fetch_217_llvm
+.private_extern _p_440_plt_Xamarin_Essentials__rgctx_fetch_217_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_217
+plt_Xamarin_Essentials__rgctx_fetch_217:
+_p_440:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3880]
+br x16
+.word 12916
+_p_441_plt_Xamarin_Essentials__rgctx_fetch_218_llvm:
+	.globl _p_441_plt_Xamarin_Essentials__rgctx_fetch_218_llvm
+.private_extern _p_441_plt_Xamarin_Essentials__rgctx_fetch_218_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_218
+plt_Xamarin_Essentials__rgctx_fetch_218:
+_p_441:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3888]
+br x16
+.word 12939
+_p_442_plt_Xamarin_Essentials__rgctx_fetch_219_llvm:
+	.globl _p_442_plt_Xamarin_Essentials__rgctx_fetch_219_llvm
+.private_extern _p_442_plt_Xamarin_Essentials__rgctx_fetch_219_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_219
+plt_Xamarin_Essentials__rgctx_fetch_219:
+_p_442:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3896]
+br x16
+.word 12980
+_p_443_plt_Xamarin_Essentials__rgctx_fetch_220_llvm:
+	.globl _p_443_plt_Xamarin_Essentials__rgctx_fetch_220_llvm
+.private_extern _p_443_plt_Xamarin_Essentials__rgctx_fetch_220_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_220
+plt_Xamarin_Essentials__rgctx_fetch_220:
+_p_443:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3904]
+br x16
+.word 12988
+_p_444_plt_Xamarin_Essentials__rgctx_fetch_221_llvm:
+	.globl _p_444_plt_Xamarin_Essentials__rgctx_fetch_221_llvm
+.private_extern _p_444_plt_Xamarin_Essentials__rgctx_fetch_221_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_221
+plt_Xamarin_Essentials__rgctx_fetch_221:
+_p_444:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3912]
+br x16
+.word 13011
+_p_445_plt_Xamarin_Essentials_Foundation_NSUserDefaults_ToDictionary_llvm:
+	.globl _p_445_plt_Xamarin_Essentials_Foundation_NSUserDefaults_ToDictionary_llvm
+.private_extern _p_445_plt_Xamarin_Essentials_Foundation_NSUserDefaults_ToDictionary_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_ToDictionary
+plt_Xamarin_Essentials_Foundation_NSUserDefaults_ToDictionary:
+_p_445:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3920]
+br x16
+.word 13034
+_p_446_plt_Xamarin_Essentials_Foundation_NSDictionary_get_Keys_llvm:
+	.globl _p_446_plt_Xamarin_Essentials_Foundation_NSDictionary_get_Keys_llvm
+.private_extern _p_446_plt_Xamarin_Essentials_Foundation_NSDictionary_get_Keys_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSDictionary_get_Keys
+plt_Xamarin_Essentials_Foundation_NSDictionary_get_Keys:
+_p_446:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3928]
+br x16
+.word 13039
+_p_447_plt_Xamarin_Essentials_Foundation_NSString_op_Implicit_Foundation_NSString_llvm:
+	.globl _p_447_plt_Xamarin_Essentials_Foundation_NSString_op_Implicit_Foundation_NSString_llvm
+.private_extern _p_447_plt_Xamarin_Essentials_Foundation_NSString_op_Implicit_Foundation_NSString_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSString_op_Implicit_Foundation_NSString
+plt_Xamarin_Essentials_Foundation_NSString_op_Implicit_Foundation_NSString:
+_p_447:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3936]
+br x16
+.word 13044
+_p_448_plt_Xamarin_Essentials_Foundation_NSUserDefaults_RemoveObject_string_llvm:
+	.globl _p_448_plt_Xamarin_Essentials_Foundation_NSUserDefaults_RemoveObject_string_llvm
+.private_extern _p_448_plt_Xamarin_Essentials_Foundation_NSUserDefaults_RemoveObject_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_RemoveObject_string
+plt_Xamarin_Essentials_Foundation_NSUserDefaults_RemoveObject_string:
+_p_448:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3944]
+br x16
+.word 13049
+_p_449_plt_Xamarin_Essentials__jit_icall_mono_arch_throw_corlib_exception_llvm:
+	.globl _p_449_plt_Xamarin_Essentials__jit_icall_mono_arch_throw_corlib_exception_llvm
+.private_extern _p_449_plt_Xamarin_Essentials__jit_icall_mono_arch_throw_corlib_exception_llvm
+	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_arch_throw_corlib_exception
+plt_Xamarin_Essentials__jit_icall_mono_arch_throw_corlib_exception:
+_p_449:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3952]
+br x16
+.word 13054
+_p_450_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetString_string_string_llvm:
+	.globl _p_450_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetString_string_string_llvm
+.private_extern _p_450_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetString_string_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetString_string_string
+plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetString_string_string:
+_p_450:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3960]
+br x16
+.word 13089
+_p_451_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetInt_System_nint_string_llvm:
+	.globl _p_451_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetInt_System_nint_string_llvm
+.private_extern _p_451_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetInt_System_nint_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetInt_System_nint_string
+plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetInt_System_nint_string:
+_p_451:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3968]
+br x16
+.word 13094
+_p_452_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetBool_bool_string_llvm:
+	.globl _p_452_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetBool_bool_string_llvm
+.private_extern _p_452_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetBool_bool_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetBool_bool_string
+plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetBool_bool_string:
+_p_452:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3976]
+br x16
+.word 13099
+_p_453_plt_Xamarin_Essentials_System_Convert_ToString_object_System_IFormatProvider_llvm:
+	.globl _p_453_plt_Xamarin_Essentials_System_Convert_ToString_object_System_IFormatProvider_llvm
+.private_extern _p_453_plt_Xamarin_Essentials_System_Convert_ToString_object_System_IFormatProvider_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Convert_ToString_object_System_IFormatProvider
+plt_Xamarin_Essentials_System_Convert_ToString_object_System_IFormatProvider:
+_p_453:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3984]
+br x16
+.word 13104
+_p_454_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetDouble_double_string_llvm:
+	.globl _p_454_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetDouble_double_string_llvm
+.private_extern _p_454_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetDouble_double_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetDouble_double_string
+plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetDouble_double_string:
+_p_454:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #3992]
+br x16
+.word 13109
+_p_455_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetFloat_single_string_llvm:
+	.globl _p_455_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetFloat_single_string_llvm
+.private_extern _p_455_plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetFloat_single_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetFloat_single_string
+plt_Xamarin_Essentials_Foundation_NSUserDefaults_SetFloat_single_string:
+_p_455:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #4000]
+br x16
+.word 13114
+_p_456_plt_Xamarin_Essentials_Foundation_NSUserDefaults_IntForKey_string_llvm:
+	.globl _p_456_plt_Xamarin_Essentials_Foundation_NSUserDefaults_IntForKey_string_llvm
+.private_extern _p_456_plt_Xamarin_Essentials_Foundation_NSUserDefaults_IntForKey_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_IntForKey_string
+plt_Xamarin_Essentials_Foundation_NSUserDefaults_IntForKey_string:
+_p_456:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #4008]
+br x16
+.word 13119
+_p_457_plt_Xamarin_Essentials_Foundation_NSUserDefaults_BoolForKey_string_llvm:
+	.globl _p_457_plt_Xamarin_Essentials_Foundation_NSUserDefaults_BoolForKey_string_llvm
+.private_extern _p_457_plt_Xamarin_Essentials_Foundation_NSUserDefaults_BoolForKey_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_BoolForKey_string
+plt_Xamarin_Essentials_Foundation_NSUserDefaults_BoolForKey_string:
+_p_457:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #4016]
+br x16
+.word 13124
+_p_458_plt_Xamarin_Essentials_Foundation_NSUserDefaults_StringForKey_string_llvm:
+	.globl _p_458_plt_Xamarin_Essentials_Foundation_NSUserDefaults_StringForKey_string_llvm
+.private_extern _p_458_plt_Xamarin_Essentials_Foundation_NSUserDefaults_StringForKey_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_StringForKey_string
+plt_Xamarin_Essentials_Foundation_NSUserDefaults_StringForKey_string:
+_p_458:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #4024]
+br x16
+.word 13129
+_p_459_plt_Xamarin_Essentials_System_Convert_ToInt64_string_System_IFormatProvider_llvm:
+	.globl _p_459_plt_Xamarin_Essentials_System_Convert_ToInt64_string_System_IFormatProvider_llvm
+.private_extern _p_459_plt_Xamarin_Essentials_System_Convert_ToInt64_string_System_IFormatProvider_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Convert_ToInt64_string_System_IFormatProvider
+plt_Xamarin_Essentials_System_Convert_ToInt64_string_System_IFormatProvider:
+_p_459:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #4032]
+br x16
+.word 13134
+_p_460_plt_Xamarin_Essentials_Foundation_NSUserDefaults_DoubleForKey_string_llvm:
+	.globl _p_460_plt_Xamarin_Essentials_Foundation_NSUserDefaults_DoubleForKey_string_llvm
+.private_extern _p_460_plt_Xamarin_Essentials_Foundation_NSUserDefaults_DoubleForKey_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_DoubleForKey_string
+plt_Xamarin_Essentials_Foundation_NSUserDefaults_DoubleForKey_string:
+_p_460:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #4040]
+br x16
+.word 13139
+_p_461_plt_Xamarin_Essentials_Foundation_NSUserDefaults_FloatForKey_string_llvm:
+	.globl _p_461_plt_Xamarin_Essentials_Foundation_NSUserDefaults_FloatForKey_string_llvm
+.private_extern _p_461_plt_Xamarin_Essentials_Foundation_NSUserDefaults_FloatForKey_string_llvm
+	.no_dead_strip plt_Xamarin_Essentials_Foundation_NSUserDefaults_FloatForKey_string
+plt_Xamarin_Essentials_Foundation_NSUserDefaults_FloatForKey_string:
+_p_461:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #4048]
+br x16
+.word 13144
+_p_462_plt_Xamarin_Essentials__rgctx_fetch_222_llvm:
+	.globl _p_462_plt_Xamarin_Essentials__rgctx_fetch_222_llvm
+.private_extern _p_462_plt_Xamarin_Essentials__rgctx_fetch_222_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_222
+plt_Xamarin_Essentials__rgctx_fetch_222:
+_p_462:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #4056]
+br x16
+.word 13166
+_p_463_plt_Xamarin_Essentials__rgctx_fetch_223_llvm:
+	.globl _p_463_plt_Xamarin_Essentials__rgctx_fetch_223_llvm
+.private_extern _p_463_plt_Xamarin_Essentials__rgctx_fetch_223_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_223
+plt_Xamarin_Essentials__rgctx_fetch_223:
+_p_463:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #4064]
+br x16
+.word 13174
+_p_464_plt_Xamarin_Essentials_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr_llvm:
+	.globl _p_464_plt_Xamarin_Essentials_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr_llvm
+.private_extern _p_464_plt_Xamarin_Essentials_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr_llvm
+	.no_dead_strip plt_Xamarin_Essentials_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr
+plt_Xamarin_Essentials_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr:
+_p_464:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #4072]
+br x16
+.word 13182
+_p_465_plt_Xamarin_Essentials__rgctx_fetch_224_llvm:
+	.globl _p_465_plt_Xamarin_Essentials__rgctx_fetch_224_llvm
+.private_extern _p_465_plt_Xamarin_Essentials__rgctx_fetch_224_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_224
+plt_Xamarin_Essentials__rgctx_fetch_224:
+_p_465:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #4080]
+br x16
+.word 13207
+_p_466_plt_Xamarin_Essentials__rgctx_fetch_225_llvm:
+	.globl _p_466_plt_Xamarin_Essentials__rgctx_fetch_225_llvm
+.private_extern _p_466_plt_Xamarin_Essentials__rgctx_fetch_225_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_225
+plt_Xamarin_Essentials__rgctx_fetch_225:
+_p_466:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #4088]
+br x16
+.word 13316
+_p_467_plt_Xamarin_Essentials_wrapper_alloc_object_Alloc_intptr_llvm:
+	.globl _p_467_plt_Xamarin_Essentials_wrapper_alloc_object_Alloc_intptr_llvm
+.private_extern _p_467_plt_Xamarin_Essentials_wrapper_alloc_object_Alloc_intptr_llvm
+	.no_dead_strip plt_Xamarin_Essentials_wrapper_alloc_object_Alloc_intptr
+plt_Xamarin_Essentials_wrapper_alloc_object_Alloc_intptr:
+_p_467:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+4096
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #0]
+br x16
+.word 13324
+_p_468_plt_Xamarin_Essentials__rgctx_fetch_226_llvm:
+	.globl _p_468_plt_Xamarin_Essentials__rgctx_fetch_226_llvm
+.private_extern _p_468_plt_Xamarin_Essentials__rgctx_fetch_226_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_226
+plt_Xamarin_Essentials__rgctx_fetch_226:
+_p_468:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+4096
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #8]
+br x16
+.word 13332
+_p_469_plt_Xamarin_Essentials_System_Globalization_CultureInfo_get_InvariantCulture_llvm:
+	.globl _p_469_plt_Xamarin_Essentials_System_Globalization_CultureInfo_get_InvariantCulture_llvm
+.private_extern _p_469_plt_Xamarin_Essentials_System_Globalization_CultureInfo_get_InvariantCulture_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Globalization_CultureInfo_get_InvariantCulture
+plt_Xamarin_Essentials_System_Globalization_CultureInfo_get_InvariantCulture:
+_p_469:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+4096
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #16]
+br x16
+.word 13340
+_p_470_plt_Xamarin_Essentials__rgctx_fetch_227_llvm:
+	.globl _p_470_plt_Xamarin_Essentials__rgctx_fetch_227_llvm
+.private_extern _p_470_plt_Xamarin_Essentials__rgctx_fetch_227_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_227
+plt_Xamarin_Essentials__rgctx_fetch_227:
+_p_470:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+4096
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #24]
+br x16
+.word 13362
+_p_471_plt_Xamarin_Essentials__rgctx_fetch_228_llvm:
+	.globl _p_471_plt_Xamarin_Essentials__rgctx_fetch_228_llvm
+.private_extern _p_471_plt_Xamarin_Essentials__rgctx_fetch_228_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_228
+plt_Xamarin_Essentials__rgctx_fetch_228:
+_p_471:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+4096
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #32]
+br x16
+.word 13487
+_p_472_plt_Xamarin_Essentials__rgctx_fetch_229_llvm:
+	.globl _p_472_plt_Xamarin_Essentials__rgctx_fetch_229_llvm
+.private_extern _p_472_plt_Xamarin_Essentials__rgctx_fetch_229_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_229
+plt_Xamarin_Essentials__rgctx_fetch_229:
+_p_472:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+4096
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #40]
+br x16
+.word 13495
+_p_473_plt_Xamarin_Essentials__rgctx_fetch_230_llvm:
+	.globl _p_473_plt_Xamarin_Essentials__rgctx_fetch_230_llvm
+.private_extern _p_473_plt_Xamarin_Essentials__rgctx_fetch_230_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_230
+plt_Xamarin_Essentials__rgctx_fetch_230:
+_p_473:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+4096
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #48]
+br x16
+.word 13503
+_p_474_plt_Xamarin_Essentials__jit_icall_mono_object_castclass_unbox_llvm:
+	.globl _p_474_plt_Xamarin_Essentials__jit_icall_mono_object_castclass_unbox_llvm
+.private_extern _p_474_plt_Xamarin_Essentials__jit_icall_mono_object_castclass_unbox_llvm
+	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_object_castclass_unbox
+plt_Xamarin_Essentials__jit_icall_mono_object_castclass_unbox:
+_p_474:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+4096
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #56]
+br x16
+.word 13511
+_p_475_plt_Xamarin_Essentials__rgctx_fetch_231_llvm:
+	.globl _p_475_plt_Xamarin_Essentials__rgctx_fetch_231_llvm
+.private_extern _p_475_plt_Xamarin_Essentials__rgctx_fetch_231_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_231
+plt_Xamarin_Essentials__rgctx_fetch_231:
+_p_475:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+4096
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #64]
+br x16
+.word 13558
+_p_476_plt_Xamarin_Essentials__rgctx_fetch_232_llvm:
+	.globl _p_476_plt_Xamarin_Essentials__rgctx_fetch_232_llvm
+.private_extern _p_476_plt_Xamarin_Essentials__rgctx_fetch_232_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_232
+plt_Xamarin_Essentials__rgctx_fetch_232:
+_p_476:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+4096
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #72]
+br x16
+.word 13566
+_p_477_plt_Xamarin_Essentials__rgctx_fetch_233_llvm:
+	.globl _p_477_plt_Xamarin_Essentials__rgctx_fetch_233_llvm
+.private_extern _p_477_plt_Xamarin_Essentials__rgctx_fetch_233_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_233
+plt_Xamarin_Essentials__rgctx_fetch_233:
+_p_477:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+4096
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #80]
+br x16
+.word 13574
+_p_478_plt_Xamarin_Essentials__rgctx_fetch_234_llvm:
+	.globl _p_478_plt_Xamarin_Essentials__rgctx_fetch_234_llvm
+.private_extern _p_478_plt_Xamarin_Essentials__rgctx_fetch_234_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_234
+plt_Xamarin_Essentials__rgctx_fetch_234:
+_p_478:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+4096
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #88]
+br x16
+.word 13599
+_p_479_plt_Xamarin_Essentials__rgctx_fetch_235_llvm:
+	.globl _p_479_plt_Xamarin_Essentials__rgctx_fetch_235_llvm
+.private_extern _p_479_plt_Xamarin_Essentials__rgctx_fetch_235_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_235
+plt_Xamarin_Essentials__rgctx_fetch_235:
+_p_479:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+4096
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #96]
+br x16
+.word 13625
+_p_480_plt_Xamarin_Essentials__rgctx_fetch_236_llvm:
+	.globl _p_480_plt_Xamarin_Essentials__rgctx_fetch_236_llvm
+.private_extern _p_480_plt_Xamarin_Essentials__rgctx_fetch_236_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_236
+plt_Xamarin_Essentials__rgctx_fetch_236:
+_p_480:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+4096
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #104]
+br x16
+.word 13648
+_p_481_plt_Xamarin_Essentials__rgctx_fetch_237_llvm:
+	.globl _p_481_plt_Xamarin_Essentials__rgctx_fetch_237_llvm
+.private_extern _p_481_plt_Xamarin_Essentials__rgctx_fetch_237_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_237
+plt_Xamarin_Essentials__rgctx_fetch_237:
+_p_481:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+4096
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #112]
+br x16
+.word 13698
+_p_482_plt_Xamarin_Essentials__rgctx_fetch_238_llvm:
+	.globl _p_482_plt_Xamarin_Essentials__rgctx_fetch_238_llvm
+.private_extern _p_482_plt_Xamarin_Essentials__rgctx_fetch_238_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_238
+plt_Xamarin_Essentials__rgctx_fetch_238:
+_p_482:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+4096
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #120]
+br x16
+.word 13706
+_p_483_plt_Xamarin_Essentials__rgctx_fetch_239_llvm:
+	.globl _p_483_plt_Xamarin_Essentials__rgctx_fetch_239_llvm
+.private_extern _p_483_plt_Xamarin_Essentials__rgctx_fetch_239_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_239
+plt_Xamarin_Essentials__rgctx_fetch_239:
+_p_483:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+4096
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #128]
+br x16
+.word 13738
+_p_484_plt_Xamarin_Essentials__jit_icall_mono_ldvirtfn_gshared_llvm:
+	.globl _p_484_plt_Xamarin_Essentials__jit_icall_mono_ldvirtfn_gshared_llvm
+.private_extern _p_484_plt_Xamarin_Essentials__jit_icall_mono_ldvirtfn_gshared_llvm
+	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_ldvirtfn_gshared
+plt_Xamarin_Essentials__jit_icall_mono_ldvirtfn_gshared:
+_p_484:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+4096
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #136]
+br x16
+.word 13761
+_p_485_plt_Xamarin_Essentials__rgctx_fetch_240_llvm:
+	.globl _p_485_plt_Xamarin_Essentials__rgctx_fetch_240_llvm
+.private_extern _p_485_plt_Xamarin_Essentials__rgctx_fetch_240_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_240
+plt_Xamarin_Essentials__rgctx_fetch_240:
+_p_485:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+4096
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #144]
+br x16
+.word 13793
+_p_486_plt_Xamarin_Essentials__rgctx_fetch_241_llvm:
+	.globl _p_486_plt_Xamarin_Essentials__rgctx_fetch_241_llvm
+.private_extern _p_486_plt_Xamarin_Essentials__rgctx_fetch_241_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_241
+plt_Xamarin_Essentials__rgctx_fetch_241:
+_p_486:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+4096
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #152]
+br x16
+.word 13801
+_p_487_plt_Xamarin_Essentials__rgctx_fetch_242_llvm:
+	.globl _p_487_plt_Xamarin_Essentials__rgctx_fetch_242_llvm
+.private_extern _p_487_plt_Xamarin_Essentials__rgctx_fetch_242_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_242
+plt_Xamarin_Essentials__rgctx_fetch_242:
+_p_487:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+4096
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #160]
+br x16
+.word 13824
+_p_488_plt_Xamarin_Essentials__rgctx_fetch_243_llvm:
+	.globl _p_488_plt_Xamarin_Essentials__rgctx_fetch_243_llvm
+.private_extern _p_488_plt_Xamarin_Essentials__rgctx_fetch_243_llvm
+	.no_dead_strip plt_Xamarin_Essentials__rgctx_fetch_243
+plt_Xamarin_Essentials__rgctx_fetch_243:
+_p_488:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+4096
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #168]
+br x16
+.word 13832
+_p_489_plt_Xamarin_Essentials_System_Collections_Generic_IntrospectiveSortUtilities_ThrowOrIgnoreBadComparer_object_llvm:
+	.globl _p_489_plt_Xamarin_Essentials_System_Collections_Generic_IntrospectiveSortUtilities_ThrowOrIgnoreBadComparer_object_llvm
+.private_extern _p_489_plt_Xamarin_Essentials_System_Collections_Generic_IntrospectiveSortUtilities_ThrowOrIgnoreBadComparer_object_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_Collections_Generic_IntrospectiveSortUtilities_ThrowOrIgnoreBadComparer_object
+plt_Xamarin_Essentials_System_Collections_Generic_IntrospectiveSortUtilities_ThrowOrIgnoreBadComparer_object:
+_p_489:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+4096
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #176]
+br x16
+.word 13855
+_p_490_plt_Xamarin_Essentials__jit_icall_mono_helper_newobj_mscorlib_llvm:
+	.globl _p_490_plt_Xamarin_Essentials__jit_icall_mono_helper_newobj_mscorlib_llvm
+.private_extern _p_490_plt_Xamarin_Essentials__jit_icall_mono_helper_newobj_mscorlib_llvm
+	.no_dead_strip plt_Xamarin_Essentials__jit_icall_mono_helper_newobj_mscorlib
+plt_Xamarin_Essentials__jit_icall_mono_helper_newobj_mscorlib:
+_p_490:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+4096
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #184]
+br x16
+.word 13860
+_p_491_plt_Xamarin_Essentials_System_InvalidOperationException__ctor_string_System_Exception_llvm:
+	.globl _p_491_plt_Xamarin_Essentials_System_InvalidOperationException__ctor_string_System_Exception_llvm
+.private_extern _p_491_plt_Xamarin_Essentials_System_InvalidOperationException__ctor_string_System_Exception_llvm
+	.no_dead_strip plt_Xamarin_Essentials_System_InvalidOperationException__ctor_string_System_Exception
+plt_Xamarin_Essentials_System_InvalidOperationException__ctor_string_System_Exception:
+_p_491:
+adrp x16, mono_aot_Xamarin_Essentials_got@PAGE+4096
+add x16, x16, mono_aot_Xamarin_Essentials_got@PAGEOFF
+ldr x16, [x16, #192]
+br x16
+.word 13890
 plt_end:
 _mono_aot_Xamarin_Essentialsplt_end:
 	.globl _mono_aot_Xamarin_Essentialsplt_end
@@ -8354,7 +11351,7 @@ _mono_aot_Xamarin_Essentialsplt_end:
 jit_got:
 _mono_aot_Xamarin_Essentialsjit_got:
 	.globl _mono_aot_Xamarin_Essentialsjit_got
-.lcomm mono_aot_Xamarin_Essentials_got, 2632
+.lcomm mono_aot_Xamarin_Essentials_got, 4296
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -8614,7 +11611,7 @@ LDIFF_SYM39=LTDIE_7 - Ldebug_info_start
 
 	.byte 1,33
 	.quad Xamarin_Essentials_Preferences_PlatformClear_string
-	.quad Lme_1f
+	.quad Lme_31
 
 	.byte 2,118,16,3
 	.asciz "sharedName"
@@ -8663,7 +11660,7 @@ Lfde0_start:
 	.align 3
 	.quad Xamarin_Essentials_Preferences_PlatformClear_string
 
-LDIFF_SYM48=Lme_1f - Xamarin_Essentials_Preferences_PlatformClear_string
+LDIFF_SYM48=Lme_31 - Xamarin_Essentials_Preferences_PlatformClear_string
 	.long LDIFF_SYM48
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,151,16,152,15,68,153,14,154,13
@@ -8761,7 +11758,7 @@ LDIFF_SYM63=LTDIE_10 - Ldebug_info_start
 
 	.byte 1,50
 	.quad Xamarin_Essentials_Preferences_PlatformSet_T_REF_string_T_REF_string
-	.quad Lme_20
+	.quad Lme_32
 
 	.byte 2,118,16,3
 	.asciz "key"
@@ -8875,7 +11872,7 @@ Lfde1_start:
 	.align 3
 	.quad Xamarin_Essentials_Preferences_PlatformSet_T_REF_string_T_REF_string
 
-LDIFF_SYM85=Lme_20 - Xamarin_Essentials_Preferences_PlatformSet_T_REF_string_T_REF_string
+LDIFF_SYM85=Lme_32 - Xamarin_Essentials_Preferences_PlatformSet_T_REF_string_T_REF_string
 	.long LDIFF_SYM85
 	.long 0
 	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,150,18,151,17,68,152,16,153,15,68,154,14
@@ -8890,7 +11887,7 @@ Lfde1_end:
 
 	.byte 1,89
 	.quad Xamarin_Essentials_Preferences_PlatformGet_T_REF_string_T_REF_string
-	.quad Lme_21
+	.quad Lme_33
 
 	.byte 2,118,16,3
 	.asciz "key"
@@ -8984,7 +11981,7 @@ Lfde2_start:
 	.align 3
 	.quad Xamarin_Essentials_Preferences_PlatformGet_T_REF_string_T_REF_string
 
-LDIFF_SYM103=Lme_21 - Xamarin_Essentials_Preferences_PlatformGet_T_REF_string_T_REF_string
+LDIFF_SYM103=Lme_33 - Xamarin_Essentials_Preferences_PlatformGet_T_REF_string_T_REF_string
 	.long LDIFF_SYM103
 	.long 0
 	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29,68,150,22,151,21,68,152,20,153,19,68,154,18
@@ -8999,7 +11996,7 @@ Lfde2_end:
 
 	.byte 1,50
 	.quad Xamarin_Essentials_Preferences_PlatformSet_T_GSHAREDVT_string_T_GSHAREDVT_string
-	.quad Lme_56
+	.quad Lme_69
 
 	.byte 2,118,16,3
 	.asciz "key"
@@ -9113,7 +12110,7 @@ Lfde3_start:
 	.align 3
 	.quad Xamarin_Essentials_Preferences_PlatformSet_T_GSHAREDVT_string_T_GSHAREDVT_string
 
-LDIFF_SYM125=Lme_56 - Xamarin_Essentials_Preferences_PlatformSet_T_GSHAREDVT_string_T_GSHAREDVT_string
+LDIFF_SYM125=Lme_69 - Xamarin_Essentials_Preferences_PlatformSet_T_GSHAREDVT_string_T_GSHAREDVT_string
 	.long LDIFF_SYM125
 	.long 0
 	.byte 12,31,0,68,14,208,1,157,26,158,25,68,13,29,68,150,24,151,23,68,152,22,153,21,68,154,20
@@ -9128,7 +12125,7 @@ Lfde3_end:
 
 	.byte 1,89
 	.quad Xamarin_Essentials_Preferences_PlatformGet_T_GSHAREDVT_string_T_GSHAREDVT_string
-	.quad Lme_57
+	.quad Lme_6a
 
 	.byte 2,118,16,3
 	.asciz "key"
@@ -9222,7 +12219,7 @@ Lfde4_start:
 	.align 3
 	.quad Xamarin_Essentials_Preferences_PlatformGet_T_GSHAREDVT_string_T_GSHAREDVT_string
 
-LDIFF_SYM143=Lme_57 - Xamarin_Essentials_Preferences_PlatformGet_T_GSHAREDVT_string_T_GSHAREDVT_string
+LDIFF_SYM143=Lme_6a - Xamarin_Essentials_Preferences_PlatformGet_T_GSHAREDVT_string_T_GSHAREDVT_string
 	.long LDIFF_SYM143
 	.long 0
 	.byte 12,31,0,68,14,224,1,157,28,158,27,68,13,29,68,149,26,150,25,68,151,24,152,23,68,153,22,154,21
@@ -9237,7 +12234,7 @@ Lfde4_end:
 
 	.byte 1,89
 	.quad Xamarin_Essentials_Preferences_PlatformGet_T_BOOL_string_T_BOOL_string
-	.quad Lme_58
+	.quad Lme_6b
 
 	.byte 2,118,16,3
 	.asciz "key"
@@ -9331,7 +12328,7 @@ Lfde5_start:
 	.align 3
 	.quad Xamarin_Essentials_Preferences_PlatformGet_T_BOOL_string_T_BOOL_string
 
-LDIFF_SYM161=Lme_58 - Xamarin_Essentials_Preferences_PlatformGet_T_BOOL_string_T_BOOL_string
+LDIFF_SYM161=Lme_6b - Xamarin_Essentials_Preferences_PlatformGet_T_BOOL_string_T_BOOL_string
 	.long LDIFF_SYM161
 	.long 0
 	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29,68,149,22,150,21,68,151,20,152,19,68,153,18,154,17
@@ -9346,7 +12343,7 @@ Lfde5_end:
 
 	.byte 1,50
 	.quad Xamarin_Essentials_Preferences_PlatformSet_T_BOOL_string_T_BOOL_string
-	.quad Lme_59
+	.quad Lme_6c
 
 	.byte 2,118,16,3
 	.asciz "key"
@@ -9460,12 +12457,2379 @@ Lfde6_start:
 	.align 3
 	.quad Xamarin_Essentials_Preferences_PlatformSet_T_BOOL_string_T_BOOL_string
 
-LDIFF_SYM183=Lme_59 - Xamarin_Essentials_Preferences_PlatformSet_T_BOOL_string_T_BOOL_string
+LDIFF_SYM183=Lme_6c - Xamarin_Essentials_Preferences_PlatformSet_T_BOOL_string_T_BOOL_string
 	.long LDIFF_SYM183
 	.long 0
 	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,149,20,150,19,68,151,18,152,17,68,153,16,154,15
 	.align 3
 Lfde6_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_11:
+
+	.byte 17
+	.asciz "System_IAsyncResult"
+
+	.byte 16,7
+	.asciz "System_IAsyncResult"
+
+LDIFF_SYM184=LTDIE_11 - Ldebug_info_start
+	.long LDIFF_SYM184
+LTDIE_11_POINTER:
+
+	.byte 13
+LDIFF_SYM185=LTDIE_11 - Ldebug_info_start
+	.long LDIFF_SYM185
+LTDIE_11_REFERENCE:
+
+	.byte 14
+LDIFF_SYM186=LTDIE_11 - Ldebug_info_start
+	.long LDIFF_SYM186
+LTDIE_17:
+
+	.byte 5
+	.asciz "System_Reflection_MemberInfo"
+
+	.byte 16,16
+LDIFF_SYM187=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM187
+	.byte 2,35,0,0,7
+	.asciz "System_Reflection_MemberInfo"
+
+LDIFF_SYM188=LTDIE_17 - Ldebug_info_start
+	.long LDIFF_SYM188
+LTDIE_17_POINTER:
+
+	.byte 13
+LDIFF_SYM189=LTDIE_17 - Ldebug_info_start
+	.long LDIFF_SYM189
+LTDIE_17_REFERENCE:
+
+	.byte 14
+LDIFF_SYM190=LTDIE_17 - Ldebug_info_start
+	.long LDIFF_SYM190
+LTDIE_16:
+
+	.byte 5
+	.asciz "System_Reflection_MethodBase"
+
+	.byte 16,16
+LDIFF_SYM191=LTDIE_17 - Ldebug_info_start
+	.long LDIFF_SYM191
+	.byte 2,35,0,0,7
+	.asciz "System_Reflection_MethodBase"
+
+LDIFF_SYM192=LTDIE_16 - Ldebug_info_start
+	.long LDIFF_SYM192
+LTDIE_16_POINTER:
+
+	.byte 13
+LDIFF_SYM193=LTDIE_16 - Ldebug_info_start
+	.long LDIFF_SYM193
+LTDIE_16_REFERENCE:
+
+	.byte 14
+LDIFF_SYM194=LTDIE_16 - Ldebug_info_start
+	.long LDIFF_SYM194
+LTDIE_15:
+
+	.byte 5
+	.asciz "System_Reflection_MethodInfo"
+
+	.byte 16,16
+LDIFF_SYM195=LTDIE_16 - Ldebug_info_start
+	.long LDIFF_SYM195
+	.byte 2,35,0,0,7
+	.asciz "System_Reflection_MethodInfo"
+
+LDIFF_SYM196=LTDIE_15 - Ldebug_info_start
+	.long LDIFF_SYM196
+LTDIE_15_POINTER:
+
+	.byte 13
+LDIFF_SYM197=LTDIE_15 - Ldebug_info_start
+	.long LDIFF_SYM197
+LTDIE_15_REFERENCE:
+
+	.byte 14
+LDIFF_SYM198=LTDIE_15 - Ldebug_info_start
+	.long LDIFF_SYM198
+LTDIE_19:
+
+	.byte 5
+	.asciz "System_Type"
+
+	.byte 24,16
+LDIFF_SYM199=LTDIE_17 - Ldebug_info_start
+	.long LDIFF_SYM199
+	.byte 2,35,0,6
+	.asciz "_impl"
+
+LDIFF_SYM200=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM200
+	.byte 2,35,16,0,7
+	.asciz "System_Type"
+
+LDIFF_SYM201=LTDIE_19 - Ldebug_info_start
+	.long LDIFF_SYM201
+LTDIE_19_POINTER:
+
+	.byte 13
+LDIFF_SYM202=LTDIE_19 - Ldebug_info_start
+	.long LDIFF_SYM202
+LTDIE_19_REFERENCE:
+
+	.byte 14
+LDIFF_SYM203=LTDIE_19 - Ldebug_info_start
+	.long LDIFF_SYM203
+LTDIE_18:
+
+	.byte 5
+	.asciz "System_DelegateData"
+
+	.byte 40,16
+LDIFF_SYM204=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM204
+	.byte 2,35,0,6
+	.asciz "target_type"
+
+LDIFF_SYM205=LTDIE_19_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM205
+	.byte 2,35,16,6
+	.asciz "method_name"
+
+LDIFF_SYM206=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM206
+	.byte 2,35,24,6
+	.asciz "curried_first_arg"
+
+LDIFF_SYM207=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM207
+	.byte 2,35,32,0,7
+	.asciz "System_DelegateData"
+
+LDIFF_SYM208=LTDIE_18 - Ldebug_info_start
+	.long LDIFF_SYM208
+LTDIE_18_POINTER:
+
+	.byte 13
+LDIFF_SYM209=LTDIE_18 - Ldebug_info_start
+	.long LDIFF_SYM209
+LTDIE_18_REFERENCE:
+
+	.byte 14
+LDIFF_SYM210=LTDIE_18 - Ldebug_info_start
+	.long LDIFF_SYM210
+LTDIE_14:
+
+	.byte 5
+	.asciz "System_Delegate"
+
+	.byte 120,16
+LDIFF_SYM211=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM211
+	.byte 2,35,0,6
+	.asciz "method_ptr"
+
+LDIFF_SYM212=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM212
+	.byte 2,35,16,6
+	.asciz "invoke_impl"
+
+LDIFF_SYM213=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM213
+	.byte 2,35,24,6
+	.asciz "m_target"
+
+LDIFF_SYM214=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM214
+	.byte 2,35,32,6
+	.asciz "method"
+
+LDIFF_SYM215=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM215
+	.byte 2,35,40,6
+	.asciz "delegate_trampoline"
+
+LDIFF_SYM216=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM216
+	.byte 2,35,48,6
+	.asciz "extra_arg"
+
+LDIFF_SYM217=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM217
+	.byte 2,35,56,6
+	.asciz "method_code"
+
+LDIFF_SYM218=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM218
+	.byte 2,35,64,6
+	.asciz "interp_method"
+
+LDIFF_SYM219=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM219
+	.byte 2,35,72,6
+	.asciz "interp_invoke_impl"
+
+LDIFF_SYM220=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM220
+	.byte 2,35,80,6
+	.asciz "method_info"
+
+LDIFF_SYM221=LTDIE_15_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM221
+	.byte 2,35,88,6
+	.asciz "original_method_info"
+
+LDIFF_SYM222=LTDIE_15_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM222
+	.byte 2,35,96,6
+	.asciz "data"
+
+LDIFF_SYM223=LTDIE_18_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM223
+	.byte 2,35,104,6
+	.asciz "method_is_virtual"
+
+LDIFF_SYM224=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM224
+	.byte 2,35,112,0,7
+	.asciz "System_Delegate"
+
+LDIFF_SYM225=LTDIE_14 - Ldebug_info_start
+	.long LDIFF_SYM225
+LTDIE_14_POINTER:
+
+	.byte 13
+LDIFF_SYM226=LTDIE_14 - Ldebug_info_start
+	.long LDIFF_SYM226
+LTDIE_14_REFERENCE:
+
+	.byte 14
+LDIFF_SYM227=LTDIE_14 - Ldebug_info_start
+	.long LDIFF_SYM227
+LTDIE_13:
+
+	.byte 5
+	.asciz "System_MulticastDelegate"
+
+	.byte 128,1,16
+LDIFF_SYM228=LTDIE_14 - Ldebug_info_start
+	.long LDIFF_SYM228
+	.byte 2,35,0,6
+	.asciz "delegates"
+
+LDIFF_SYM229=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM229
+	.byte 2,35,120,0,7
+	.asciz "System_MulticastDelegate"
+
+LDIFF_SYM230=LTDIE_13 - Ldebug_info_start
+	.long LDIFF_SYM230
+LTDIE_13_POINTER:
+
+	.byte 13
+LDIFF_SYM231=LTDIE_13 - Ldebug_info_start
+	.long LDIFF_SYM231
+LTDIE_13_REFERENCE:
+
+	.byte 14
+LDIFF_SYM232=LTDIE_13 - Ldebug_info_start
+	.long LDIFF_SYM232
+LTDIE_12:
+
+	.byte 5
+	.asciz "System_Func`2"
+
+	.byte 128,1,16
+LDIFF_SYM233=LTDIE_13 - Ldebug_info_start
+	.long LDIFF_SYM233
+	.byte 2,35,0,0,7
+	.asciz "System_Func`2"
+
+LDIFF_SYM234=LTDIE_12 - Ldebug_info_start
+	.long LDIFF_SYM234
+LTDIE_12_POINTER:
+
+	.byte 13
+LDIFF_SYM235=LTDIE_12 - Ldebug_info_start
+	.long LDIFF_SYM235
+LTDIE_12_REFERENCE:
+
+	.byte 14
+LDIFF_SYM236=LTDIE_12 - Ldebug_info_start
+	.long LDIFF_SYM236
+LTDIE_20:
+
+	.byte 5
+	.asciz "System_Action`1"
+
+	.byte 128,1,16
+LDIFF_SYM237=LTDIE_13 - Ldebug_info_start
+	.long LDIFF_SYM237
+	.byte 2,35,0,0,7
+	.asciz "System_Action`1"
+
+LDIFF_SYM238=LTDIE_20 - Ldebug_info_start
+	.long LDIFF_SYM238
+LTDIE_20_POINTER:
+
+	.byte 13
+LDIFF_SYM239=LTDIE_20 - Ldebug_info_start
+	.long LDIFF_SYM239
+LTDIE_20_REFERENCE:
+
+	.byte 14
+LDIFF_SYM240=LTDIE_20 - Ldebug_info_start
+	.long LDIFF_SYM240
+LTDIE_23:
+
+	.byte 5
+	.asciz "System_Threading_Tasks_TaskScheduler"
+
+	.byte 20,16
+LDIFF_SYM241=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM241
+	.byte 2,35,0,6
+	.asciz "m_taskSchedulerId"
+
+LDIFF_SYM242=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM242
+	.byte 2,35,16,0,7
+	.asciz "System_Threading_Tasks_TaskScheduler"
+
+LDIFF_SYM243=LTDIE_23 - Ldebug_info_start
+	.long LDIFF_SYM243
+LTDIE_23_POINTER:
+
+	.byte 13
+LDIFF_SYM244=LTDIE_23 - Ldebug_info_start
+	.long LDIFF_SYM244
+LTDIE_23_REFERENCE:
+
+	.byte 14
+LDIFF_SYM245=LTDIE_23 - Ldebug_info_start
+	.long LDIFF_SYM245
+LTDIE_27:
+
+	.byte 8
+	.asciz "System_Threading_SynchronizationContextProperties"
+
+	.byte 4
+LDIFF_SYM246=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM246
+	.byte 9
+	.asciz "None"
+
+	.byte 0,9
+	.asciz "RequireWaitNotification"
+
+	.byte 1,0,7
+	.asciz "System_Threading_SynchronizationContextProperties"
+
+LDIFF_SYM247=LTDIE_27 - Ldebug_info_start
+	.long LDIFF_SYM247
+LTDIE_27_POINTER:
+
+	.byte 13
+LDIFF_SYM248=LTDIE_27 - Ldebug_info_start
+	.long LDIFF_SYM248
+LTDIE_27_REFERENCE:
+
+	.byte 14
+LDIFF_SYM249=LTDIE_27 - Ldebug_info_start
+	.long LDIFF_SYM249
+LTDIE_26:
+
+	.byte 5
+	.asciz "System_Threading_SynchronizationContext"
+
+	.byte 20,16
+LDIFF_SYM250=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM250
+	.byte 2,35,0,6
+	.asciz "_props"
+
+LDIFF_SYM251=LTDIE_27 - Ldebug_info_start
+	.long LDIFF_SYM251
+	.byte 2,35,16,0,7
+	.asciz "System_Threading_SynchronizationContext"
+
+LDIFF_SYM252=LTDIE_26 - Ldebug_info_start
+	.long LDIFF_SYM252
+LTDIE_26_POINTER:
+
+	.byte 13
+LDIFF_SYM253=LTDIE_26 - Ldebug_info_start
+	.long LDIFF_SYM253
+LTDIE_26_REFERENCE:
+
+	.byte 14
+LDIFF_SYM254=LTDIE_26 - Ldebug_info_start
+	.long LDIFF_SYM254
+LTDIE_30:
+
+	.byte 17
+	.asciz "System_Collections_ICollection"
+
+	.byte 16,7
+	.asciz "System_Collections_ICollection"
+
+LDIFF_SYM255=LTDIE_30 - Ldebug_info_start
+	.long LDIFF_SYM255
+LTDIE_30_POINTER:
+
+	.byte 13
+LDIFF_SYM256=LTDIE_30 - Ldebug_info_start
+	.long LDIFF_SYM256
+LTDIE_30_REFERENCE:
+
+	.byte 14
+LDIFF_SYM257=LTDIE_30 - Ldebug_info_start
+	.long LDIFF_SYM257
+LTDIE_31:
+
+	.byte 17
+	.asciz "System_Collections_IEqualityComparer"
+
+	.byte 16,7
+	.asciz "System_Collections_IEqualityComparer"
+
+LDIFF_SYM258=LTDIE_31 - Ldebug_info_start
+	.long LDIFF_SYM258
+LTDIE_31_POINTER:
+
+	.byte 13
+LDIFF_SYM259=LTDIE_31 - Ldebug_info_start
+	.long LDIFF_SYM259
+LTDIE_31_REFERENCE:
+
+	.byte 14
+LDIFF_SYM260=LTDIE_31 - Ldebug_info_start
+	.long LDIFF_SYM260
+LTDIE_29:
+
+	.byte 5
+	.asciz "System_Collections_Hashtable"
+
+	.byte 80,16
+LDIFF_SYM261=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM261
+	.byte 2,35,0,6
+	.asciz "_buckets"
+
+LDIFF_SYM262=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM262
+	.byte 2,35,16,6
+	.asciz "_count"
+
+LDIFF_SYM263=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM263
+	.byte 2,35,56,6
+	.asciz "_occupancy"
+
+LDIFF_SYM264=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM264
+	.byte 2,35,60,6
+	.asciz "_loadsize"
+
+LDIFF_SYM265=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM265
+	.byte 2,35,64,6
+	.asciz "_loadFactor"
+
+LDIFF_SYM266=LDIE_R4 - Ldebug_info_start
+	.long LDIFF_SYM266
+	.byte 2,35,68,6
+	.asciz "_version"
+
+LDIFF_SYM267=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM267
+	.byte 2,35,72,6
+	.asciz "_isWriterInProgress"
+
+LDIFF_SYM268=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM268
+	.byte 2,35,76,6
+	.asciz "_keys"
+
+LDIFF_SYM269=LTDIE_30_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM269
+	.byte 2,35,24,6
+	.asciz "_values"
+
+LDIFF_SYM270=LTDIE_30_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM270
+	.byte 2,35,32,6
+	.asciz "_keycomparer"
+
+LDIFF_SYM271=LTDIE_31_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM271
+	.byte 2,35,40,6
+	.asciz "_syncRoot"
+
+LDIFF_SYM272=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM272
+	.byte 2,35,48,0,7
+	.asciz "System_Collections_Hashtable"
+
+LDIFF_SYM273=LTDIE_29 - Ldebug_info_start
+	.long LDIFF_SYM273
+LTDIE_29_POINTER:
+
+	.byte 13
+LDIFF_SYM274=LTDIE_29 - Ldebug_info_start
+	.long LDIFF_SYM274
+LTDIE_29_REFERENCE:
+
+	.byte 14
+LDIFF_SYM275=LTDIE_29 - Ldebug_info_start
+	.long LDIFF_SYM275
+LTDIE_32:
+
+	.byte 5
+	.asciz "System_Runtime_Remoting_Messaging_CallContextRemotingData"
+
+	.byte 16,16
+LDIFF_SYM276=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM276
+	.byte 2,35,0,0,7
+	.asciz "System_Runtime_Remoting_Messaging_CallContextRemotingData"
+
+LDIFF_SYM277=LTDIE_32 - Ldebug_info_start
+	.long LDIFF_SYM277
+LTDIE_32_POINTER:
+
+	.byte 13
+LDIFF_SYM278=LTDIE_32 - Ldebug_info_start
+	.long LDIFF_SYM278
+LTDIE_32_REFERENCE:
+
+	.byte 14
+LDIFF_SYM279=LTDIE_32 - Ldebug_info_start
+	.long LDIFF_SYM279
+LTDIE_33:
+
+	.byte 5
+	.asciz "System_Runtime_Remoting_Messaging_CallContextSecurityData"
+
+	.byte 16,16
+LDIFF_SYM280=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM280
+	.byte 2,35,0,0,7
+	.asciz "System_Runtime_Remoting_Messaging_CallContextSecurityData"
+
+LDIFF_SYM281=LTDIE_33 - Ldebug_info_start
+	.long LDIFF_SYM281
+LTDIE_33_POINTER:
+
+	.byte 13
+LDIFF_SYM282=LTDIE_33 - Ldebug_info_start
+	.long LDIFF_SYM282
+LTDIE_33_REFERENCE:
+
+	.byte 14
+LDIFF_SYM283=LTDIE_33 - Ldebug_info_start
+	.long LDIFF_SYM283
+LTDIE_28:
+
+	.byte 5
+	.asciz "System_Runtime_Remoting_Messaging_LogicalCallContext"
+
+	.byte 56,16
+LDIFF_SYM284=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM284
+	.byte 2,35,0,6
+	.asciz "m_Datastore"
+
+LDIFF_SYM285=LTDIE_29_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM285
+	.byte 2,35,16,6
+	.asciz "m_RemotingData"
+
+LDIFF_SYM286=LTDIE_32_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM286
+	.byte 2,35,24,6
+	.asciz "m_SecurityData"
+
+LDIFF_SYM287=LTDIE_33_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM287
+	.byte 2,35,32,6
+	.asciz "m_HostContext"
+
+LDIFF_SYM288=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM288
+	.byte 2,35,40,6
+	.asciz "m_IsCorrelationMgr"
+
+LDIFF_SYM289=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM289
+	.byte 2,35,48,0,7
+	.asciz "System_Runtime_Remoting_Messaging_LogicalCallContext"
+
+LDIFF_SYM290=LTDIE_28 - Ldebug_info_start
+	.long LDIFF_SYM290
+LTDIE_28_POINTER:
+
+	.byte 13
+LDIFF_SYM291=LTDIE_28 - Ldebug_info_start
+	.long LDIFF_SYM291
+LTDIE_28_REFERENCE:
+
+	.byte 14
+LDIFF_SYM292=LTDIE_28 - Ldebug_info_start
+	.long LDIFF_SYM292
+LTDIE_34:
+
+	.byte 5
+	.asciz "System_Runtime_Remoting_Messaging_IllogicalCallContext"
+
+	.byte 16,16
+LDIFF_SYM293=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM293
+	.byte 2,35,0,0,7
+	.asciz "System_Runtime_Remoting_Messaging_IllogicalCallContext"
+
+LDIFF_SYM294=LTDIE_34 - Ldebug_info_start
+	.long LDIFF_SYM294
+LTDIE_34_POINTER:
+
+	.byte 13
+LDIFF_SYM295=LTDIE_34 - Ldebug_info_start
+	.long LDIFF_SYM295
+LTDIE_34_REFERENCE:
+
+	.byte 14
+LDIFF_SYM296=LTDIE_34 - Ldebug_info_start
+	.long LDIFF_SYM296
+LTDIE_35:
+
+	.byte 8
+	.asciz "_Flags"
+
+	.byte 4
+LDIFF_SYM297=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM297
+	.byte 9
+	.asciz "None"
+
+	.byte 0,9
+	.asciz "IsNewCapture"
+
+	.byte 1,9
+	.asciz "IsFlowSuppressed"
+
+	.byte 2,9
+	.asciz "IsPreAllocatedDefault"
+
+	.byte 4,0,7
+	.asciz "_Flags"
+
+LDIFF_SYM298=LTDIE_35 - Ldebug_info_start
+	.long LDIFF_SYM298
+LTDIE_35_POINTER:
+
+	.byte 13
+LDIFF_SYM299=LTDIE_35 - Ldebug_info_start
+	.long LDIFF_SYM299
+LTDIE_35_REFERENCE:
+
+	.byte 14
+LDIFF_SYM300=LTDIE_35 - Ldebug_info_start
+	.long LDIFF_SYM300
+LTDIE_37:
+
+	.byte 17
+	.asciz "System_Collections_Generic_IEqualityComparer`1"
+
+	.byte 16,7
+	.asciz "System_Collections_Generic_IEqualityComparer`1"
+
+LDIFF_SYM301=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM301
+LTDIE_37_POINTER:
+
+	.byte 13
+LDIFF_SYM302=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM302
+LTDIE_37_REFERENCE:
+
+	.byte 14
+LDIFF_SYM303=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM303
+LTDIE_38:
+
+	.byte 5
+	.asciz "_KeyCollection"
+
+	.byte 24,16
+LDIFF_SYM304=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM304
+	.byte 2,35,0,6
+	.asciz "_dictionary"
+
+LDIFF_SYM305=LTDIE_36_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM305
+	.byte 2,35,16,0,7
+	.asciz "_KeyCollection"
+
+LDIFF_SYM306=LTDIE_38 - Ldebug_info_start
+	.long LDIFF_SYM306
+LTDIE_38_POINTER:
+
+	.byte 13
+LDIFF_SYM307=LTDIE_38 - Ldebug_info_start
+	.long LDIFF_SYM307
+LTDIE_38_REFERENCE:
+
+	.byte 14
+LDIFF_SYM308=LTDIE_38 - Ldebug_info_start
+	.long LDIFF_SYM308
+LTDIE_39:
+
+	.byte 5
+	.asciz "_ValueCollection"
+
+	.byte 24,16
+LDIFF_SYM309=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM309
+	.byte 2,35,0,6
+	.asciz "_dictionary"
+
+LDIFF_SYM310=LTDIE_36_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM310
+	.byte 2,35,16,0,7
+	.asciz "_ValueCollection"
+
+LDIFF_SYM311=LTDIE_39 - Ldebug_info_start
+	.long LDIFF_SYM311
+LTDIE_39_POINTER:
+
+	.byte 13
+LDIFF_SYM312=LTDIE_39 - Ldebug_info_start
+	.long LDIFF_SYM312
+LTDIE_39_REFERENCE:
+
+	.byte 14
+LDIFF_SYM313=LTDIE_39 - Ldebug_info_start
+	.long LDIFF_SYM313
+LTDIE_36:
+
+	.byte 5
+	.asciz "System_Collections_Generic_Dictionary`2"
+
+	.byte 80,16
+LDIFF_SYM314=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM314
+	.byte 2,35,0,6
+	.asciz "_buckets"
+
+LDIFF_SYM315=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM315
+	.byte 2,35,16,6
+	.asciz "_entries"
+
+LDIFF_SYM316=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM316
+	.byte 2,35,24,6
+	.asciz "_count"
+
+LDIFF_SYM317=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM317
+	.byte 2,35,64,6
+	.asciz "_freeList"
+
+LDIFF_SYM318=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM318
+	.byte 2,35,68,6
+	.asciz "_freeCount"
+
+LDIFF_SYM319=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM319
+	.byte 2,35,72,6
+	.asciz "_version"
+
+LDIFF_SYM320=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM320
+	.byte 2,35,76,6
+	.asciz "_comparer"
+
+LDIFF_SYM321=LTDIE_37_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM321
+	.byte 2,35,32,6
+	.asciz "_keys"
+
+LDIFF_SYM322=LTDIE_38_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM322
+	.byte 2,35,40,6
+	.asciz "_values"
+
+LDIFF_SYM323=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM323
+	.byte 2,35,48,6
+	.asciz "_syncRoot"
+
+LDIFF_SYM324=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM324
+	.byte 2,35,56,0,7
+	.asciz "System_Collections_Generic_Dictionary`2"
+
+LDIFF_SYM325=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM325
+LTDIE_36_POINTER:
+
+	.byte 13
+LDIFF_SYM326=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM326
+LTDIE_36_REFERENCE:
+
+	.byte 14
+LDIFF_SYM327=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM327
+LTDIE_40:
+
+	.byte 5
+	.asciz "System_Collections_Generic_List`1"
+
+	.byte 40,16
+LDIFF_SYM328=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM328
+	.byte 2,35,0,6
+	.asciz "_items"
+
+LDIFF_SYM329=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM329
+	.byte 2,35,16,6
+	.asciz "_size"
+
+LDIFF_SYM330=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM330
+	.byte 2,35,32,6
+	.asciz "_version"
+
+LDIFF_SYM331=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM331
+	.byte 2,35,36,6
+	.asciz "_syncRoot"
+
+LDIFF_SYM332=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM332
+	.byte 2,35,24,0,7
+	.asciz "System_Collections_Generic_List`1"
+
+LDIFF_SYM333=LTDIE_40 - Ldebug_info_start
+	.long LDIFF_SYM333
+LTDIE_40_POINTER:
+
+	.byte 13
+LDIFF_SYM334=LTDIE_40 - Ldebug_info_start
+	.long LDIFF_SYM334
+LTDIE_40_REFERENCE:
+
+	.byte 14
+LDIFF_SYM335=LTDIE_40 - Ldebug_info_start
+	.long LDIFF_SYM335
+LTDIE_25:
+
+	.byte 5
+	.asciz "System_Threading_ExecutionContext"
+
+	.byte 72,16
+LDIFF_SYM336=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM336
+	.byte 2,35,0,6
+	.asciz "_syncContext"
+
+LDIFF_SYM337=LTDIE_26_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM337
+	.byte 2,35,16,6
+	.asciz "_syncContextNoFlow"
+
+LDIFF_SYM338=LTDIE_26_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM338
+	.byte 2,35,24,6
+	.asciz "_logicalCallContext"
+
+LDIFF_SYM339=LTDIE_28_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM339
+	.byte 2,35,32,6
+	.asciz "_illogicalCallContext"
+
+LDIFF_SYM340=LTDIE_34_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM340
+	.byte 2,35,40,6
+	.asciz "_flags"
+
+LDIFF_SYM341=LTDIE_35 - Ldebug_info_start
+	.long LDIFF_SYM341
+	.byte 2,35,64,6
+	.asciz "_localValues"
+
+LDIFF_SYM342=LTDIE_36_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM342
+	.byte 2,35,48,6
+	.asciz "_localChangeNotifications"
+
+LDIFF_SYM343=LTDIE_40_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM343
+	.byte 2,35,56,0,7
+	.asciz "System_Threading_ExecutionContext"
+
+LDIFF_SYM344=LTDIE_25 - Ldebug_info_start
+	.long LDIFF_SYM344
+LTDIE_25_POINTER:
+
+	.byte 13
+LDIFF_SYM345=LTDIE_25 - Ldebug_info_start
+	.long LDIFF_SYM345
+LTDIE_25_REFERENCE:
+
+	.byte 14
+LDIFF_SYM346=LTDIE_25 - Ldebug_info_start
+	.long LDIFF_SYM346
+LTDIE_45:
+
+	.byte 5
+	.asciz "System_MarshalByRefObject"
+
+	.byte 24,16
+LDIFF_SYM347=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM347
+	.byte 2,35,0,6
+	.asciz "_identity"
+
+LDIFF_SYM348=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM348
+	.byte 2,35,16,0,7
+	.asciz "System_MarshalByRefObject"
+
+LDIFF_SYM349=LTDIE_45 - Ldebug_info_start
+	.long LDIFF_SYM349
+LTDIE_45_POINTER:
+
+	.byte 13
+LDIFF_SYM350=LTDIE_45 - Ldebug_info_start
+	.long LDIFF_SYM350
+LTDIE_45_REFERENCE:
+
+	.byte 14
+LDIFF_SYM351=LTDIE_45 - Ldebug_info_start
+	.long LDIFF_SYM351
+LTDIE_49:
+
+	.byte 5
+	.asciz "System_Runtime_ConstrainedExecution_CriticalFinalizerObject"
+
+	.byte 16,16
+LDIFF_SYM352=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM352
+	.byte 2,35,0,0,7
+	.asciz "System_Runtime_ConstrainedExecution_CriticalFinalizerObject"
+
+LDIFF_SYM353=LTDIE_49 - Ldebug_info_start
+	.long LDIFF_SYM353
+LTDIE_49_POINTER:
+
+	.byte 13
+LDIFF_SYM354=LTDIE_49 - Ldebug_info_start
+	.long LDIFF_SYM354
+LTDIE_49_REFERENCE:
+
+	.byte 14
+LDIFF_SYM355=LTDIE_49 - Ldebug_info_start
+	.long LDIFF_SYM355
+LTDIE_48:
+
+	.byte 5
+	.asciz "System_Runtime_InteropServices_SafeHandle"
+
+	.byte 32,16
+LDIFF_SYM356=LTDIE_49 - Ldebug_info_start
+	.long LDIFF_SYM356
+	.byte 2,35,0,6
+	.asciz "handle"
+
+LDIFF_SYM357=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM357
+	.byte 2,35,16,6
+	.asciz "_state"
+
+LDIFF_SYM358=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM358
+	.byte 2,35,24,6
+	.asciz "_ownsHandle"
+
+LDIFF_SYM359=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM359
+	.byte 2,35,28,6
+	.asciz "_fullyInitialized"
+
+LDIFF_SYM360=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM360
+	.byte 2,35,29,0,7
+	.asciz "System_Runtime_InteropServices_SafeHandle"
+
+LDIFF_SYM361=LTDIE_48 - Ldebug_info_start
+	.long LDIFF_SYM361
+LTDIE_48_POINTER:
+
+	.byte 13
+LDIFF_SYM362=LTDIE_48 - Ldebug_info_start
+	.long LDIFF_SYM362
+LTDIE_48_REFERENCE:
+
+	.byte 14
+LDIFF_SYM363=LTDIE_48 - Ldebug_info_start
+	.long LDIFF_SYM363
+LTDIE_47:
+
+	.byte 5
+	.asciz "Microsoft_Win32_SafeHandles_SafeHandleZeroOrMinusOneIsInvalid"
+
+	.byte 32,16
+LDIFF_SYM364=LTDIE_48 - Ldebug_info_start
+	.long LDIFF_SYM364
+	.byte 2,35,0,0,7
+	.asciz "Microsoft_Win32_SafeHandles_SafeHandleZeroOrMinusOneIsInvalid"
+
+LDIFF_SYM365=LTDIE_47 - Ldebug_info_start
+	.long LDIFF_SYM365
+LTDIE_47_POINTER:
+
+	.byte 13
+LDIFF_SYM366=LTDIE_47 - Ldebug_info_start
+	.long LDIFF_SYM366
+LTDIE_47_REFERENCE:
+
+	.byte 14
+LDIFF_SYM367=LTDIE_47 - Ldebug_info_start
+	.long LDIFF_SYM367
+LTDIE_46:
+
+	.byte 5
+	.asciz "Microsoft_Win32_SafeHandles_SafeWaitHandle"
+
+	.byte 32,16
+LDIFF_SYM368=LTDIE_47 - Ldebug_info_start
+	.long LDIFF_SYM368
+	.byte 2,35,0,0,7
+	.asciz "Microsoft_Win32_SafeHandles_SafeWaitHandle"
+
+LDIFF_SYM369=LTDIE_46 - Ldebug_info_start
+	.long LDIFF_SYM369
+LTDIE_46_POINTER:
+
+	.byte 13
+LDIFF_SYM370=LTDIE_46 - Ldebug_info_start
+	.long LDIFF_SYM370
+LTDIE_46_REFERENCE:
+
+	.byte 14
+LDIFF_SYM371=LTDIE_46 - Ldebug_info_start
+	.long LDIFF_SYM371
+LTDIE_44:
+
+	.byte 5
+	.asciz "System_Threading_WaitHandle"
+
+	.byte 48,16
+LDIFF_SYM372=LTDIE_45 - Ldebug_info_start
+	.long LDIFF_SYM372
+	.byte 2,35,0,6
+	.asciz "waitHandle"
+
+LDIFF_SYM373=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM373
+	.byte 2,35,24,6
+	.asciz "safeWaitHandle"
+
+LDIFF_SYM374=LTDIE_46_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM374
+	.byte 2,35,32,6
+	.asciz "hasThreadAffinity"
+
+LDIFF_SYM375=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM375
+	.byte 2,35,40,0,7
+	.asciz "System_Threading_WaitHandle"
+
+LDIFF_SYM376=LTDIE_44 - Ldebug_info_start
+	.long LDIFF_SYM376
+LTDIE_44_POINTER:
+
+	.byte 13
+LDIFF_SYM377=LTDIE_44 - Ldebug_info_start
+	.long LDIFF_SYM377
+LTDIE_44_REFERENCE:
+
+	.byte 14
+LDIFF_SYM378=LTDIE_44 - Ldebug_info_start
+	.long LDIFF_SYM378
+LTDIE_43:
+
+	.byte 5
+	.asciz "System_Threading_EventWaitHandle"
+
+	.byte 48,16
+LDIFF_SYM379=LTDIE_44 - Ldebug_info_start
+	.long LDIFF_SYM379
+	.byte 2,35,0,0,7
+	.asciz "System_Threading_EventWaitHandle"
+
+LDIFF_SYM380=LTDIE_43 - Ldebug_info_start
+	.long LDIFF_SYM380
+LTDIE_43_POINTER:
+
+	.byte 13
+LDIFF_SYM381=LTDIE_43 - Ldebug_info_start
+	.long LDIFF_SYM381
+LTDIE_43_REFERENCE:
+
+	.byte 14
+LDIFF_SYM382=LTDIE_43 - Ldebug_info_start
+	.long LDIFF_SYM382
+LTDIE_42:
+
+	.byte 5
+	.asciz "System_Threading_ManualResetEvent"
+
+	.byte 48,16
+LDIFF_SYM383=LTDIE_43 - Ldebug_info_start
+	.long LDIFF_SYM383
+	.byte 2,35,0,0,7
+	.asciz "System_Threading_ManualResetEvent"
+
+LDIFF_SYM384=LTDIE_42 - Ldebug_info_start
+	.long LDIFF_SYM384
+LTDIE_42_POINTER:
+
+	.byte 13
+LDIFF_SYM385=LTDIE_42 - Ldebug_info_start
+	.long LDIFF_SYM385
+LTDIE_42_REFERENCE:
+
+	.byte 14
+LDIFF_SYM386=LTDIE_42 - Ldebug_info_start
+	.long LDIFF_SYM386
+LTDIE_41:
+
+	.byte 5
+	.asciz "System_Threading_ManualResetEventSlim"
+
+	.byte 40,16
+LDIFF_SYM387=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM387
+	.byte 2,35,0,6
+	.asciz "m_lock"
+
+LDIFF_SYM388=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM388
+	.byte 2,35,16,6
+	.asciz "m_eventObj"
+
+LDIFF_SYM389=LTDIE_42_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM389
+	.byte 2,35,24,6
+	.asciz "m_combinedState"
+
+LDIFF_SYM390=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM390
+	.byte 2,35,32,0,7
+	.asciz "System_Threading_ManualResetEventSlim"
+
+LDIFF_SYM391=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM391
+LTDIE_41_POINTER:
+
+	.byte 13
+LDIFF_SYM392=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM392
+LTDIE_41_REFERENCE:
+
+	.byte 14
+LDIFF_SYM393=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM393
+LTDIE_52:
+
+	.byte 5
+	.asciz "System_Collections_Generic_LowLevelList`1"
+
+	.byte 32,16
+LDIFF_SYM394=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM394
+	.byte 2,35,0,6
+	.asciz "_items"
+
+LDIFF_SYM395=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM395
+	.byte 2,35,16,6
+	.asciz "_size"
+
+LDIFF_SYM396=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM396
+	.byte 2,35,24,6
+	.asciz "_version"
+
+LDIFF_SYM397=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM397
+	.byte 2,35,28,0,7
+	.asciz "System_Collections_Generic_LowLevelList`1"
+
+LDIFF_SYM398=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM398
+LTDIE_52_POINTER:
+
+	.byte 13
+LDIFF_SYM399=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM399
+LTDIE_52_REFERENCE:
+
+	.byte 14
+LDIFF_SYM400=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM400
+LTDIE_51:
+
+	.byte 5
+	.asciz "System_Collections_Generic_LowLevelListWithIList`1"
+
+	.byte 32,16
+LDIFF_SYM401=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM401
+	.byte 2,35,0,0,7
+	.asciz "System_Collections_Generic_LowLevelListWithIList`1"
+
+LDIFF_SYM402=LTDIE_51 - Ldebug_info_start
+	.long LDIFF_SYM402
+LTDIE_51_POINTER:
+
+	.byte 13
+LDIFF_SYM403=LTDIE_51 - Ldebug_info_start
+	.long LDIFF_SYM403
+LTDIE_51_REFERENCE:
+
+	.byte 14
+LDIFF_SYM404=LTDIE_51 - Ldebug_info_start
+	.long LDIFF_SYM404
+LTDIE_55:
+
+	.byte 17
+	.asciz "System_Collections_IDictionary"
+
+	.byte 16,7
+	.asciz "System_Collections_IDictionary"
+
+LDIFF_SYM405=LTDIE_55 - Ldebug_info_start
+	.long LDIFF_SYM405
+LTDIE_55_POINTER:
+
+	.byte 13
+LDIFF_SYM406=LTDIE_55 - Ldebug_info_start
+	.long LDIFF_SYM406
+LTDIE_55_REFERENCE:
+
+	.byte 14
+LDIFF_SYM407=LTDIE_55 - Ldebug_info_start
+	.long LDIFF_SYM407
+LTDIE_57:
+
+	.byte 17
+	.asciz "System_Collections_Generic_IList`1"
+
+	.byte 16,7
+	.asciz "System_Collections_Generic_IList`1"
+
+LDIFF_SYM408=LTDIE_57 - Ldebug_info_start
+	.long LDIFF_SYM408
+LTDIE_57_POINTER:
+
+	.byte 13
+LDIFF_SYM409=LTDIE_57 - Ldebug_info_start
+	.long LDIFF_SYM409
+LTDIE_57_REFERENCE:
+
+	.byte 14
+LDIFF_SYM410=LTDIE_57 - Ldebug_info_start
+	.long LDIFF_SYM410
+LTDIE_60:
+
+	.byte 17
+	.asciz "System_Collections_Generic_IEqualityComparer`1"
+
+	.byte 16,7
+	.asciz "System_Collections_Generic_IEqualityComparer`1"
+
+LDIFF_SYM411=LTDIE_60 - Ldebug_info_start
+	.long LDIFF_SYM411
+LTDIE_60_POINTER:
+
+	.byte 13
+LDIFF_SYM412=LTDIE_60 - Ldebug_info_start
+	.long LDIFF_SYM412
+LTDIE_60_REFERENCE:
+
+	.byte 14
+LDIFF_SYM413=LTDIE_60 - Ldebug_info_start
+	.long LDIFF_SYM413
+LTDIE_61:
+
+	.byte 5
+	.asciz "_KeyCollection"
+
+	.byte 24,16
+LDIFF_SYM414=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM414
+	.byte 2,35,0,6
+	.asciz "_dictionary"
+
+LDIFF_SYM415=LTDIE_59_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM415
+	.byte 2,35,16,0,7
+	.asciz "_KeyCollection"
+
+LDIFF_SYM416=LTDIE_61 - Ldebug_info_start
+	.long LDIFF_SYM416
+LTDIE_61_POINTER:
+
+	.byte 13
+LDIFF_SYM417=LTDIE_61 - Ldebug_info_start
+	.long LDIFF_SYM417
+LTDIE_61_REFERENCE:
+
+	.byte 14
+LDIFF_SYM418=LTDIE_61 - Ldebug_info_start
+	.long LDIFF_SYM418
+LTDIE_62:
+
+	.byte 5
+	.asciz "_ValueCollection"
+
+	.byte 24,16
+LDIFF_SYM419=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM419
+	.byte 2,35,0,6
+	.asciz "_dictionary"
+
+LDIFF_SYM420=LTDIE_59_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM420
+	.byte 2,35,16,0,7
+	.asciz "_ValueCollection"
+
+LDIFF_SYM421=LTDIE_62 - Ldebug_info_start
+	.long LDIFF_SYM421
+LTDIE_62_POINTER:
+
+	.byte 13
+LDIFF_SYM422=LTDIE_62 - Ldebug_info_start
+	.long LDIFF_SYM422
+LTDIE_62_REFERENCE:
+
+	.byte 14
+LDIFF_SYM423=LTDIE_62 - Ldebug_info_start
+	.long LDIFF_SYM423
+LTDIE_59:
+
+	.byte 5
+	.asciz "System_Collections_Generic_Dictionary`2"
+
+	.byte 80,16
+LDIFF_SYM424=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM424
+	.byte 2,35,0,6
+	.asciz "_buckets"
+
+LDIFF_SYM425=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM425
+	.byte 2,35,16,6
+	.asciz "_entries"
+
+LDIFF_SYM426=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM426
+	.byte 2,35,24,6
+	.asciz "_count"
+
+LDIFF_SYM427=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM427
+	.byte 2,35,64,6
+	.asciz "_freeList"
+
+LDIFF_SYM428=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM428
+	.byte 2,35,68,6
+	.asciz "_freeCount"
+
+LDIFF_SYM429=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM429
+	.byte 2,35,72,6
+	.asciz "_version"
+
+LDIFF_SYM430=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM430
+	.byte 2,35,76,6
+	.asciz "_comparer"
+
+LDIFF_SYM431=LTDIE_60_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM431
+	.byte 2,35,32,6
+	.asciz "_keys"
+
+LDIFF_SYM432=LTDIE_61_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM432
+	.byte 2,35,40,6
+	.asciz "_values"
+
+LDIFF_SYM433=LTDIE_62_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM433
+	.byte 2,35,48,6
+	.asciz "_syncRoot"
+
+LDIFF_SYM434=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM434
+	.byte 2,35,56,0,7
+	.asciz "System_Collections_Generic_Dictionary`2"
+
+LDIFF_SYM435=LTDIE_59 - Ldebug_info_start
+	.long LDIFF_SYM435
+LTDIE_59_POINTER:
+
+	.byte 13
+LDIFF_SYM436=LTDIE_59 - Ldebug_info_start
+	.long LDIFF_SYM436
+LTDIE_59_REFERENCE:
+
+	.byte 14
+LDIFF_SYM437=LTDIE_59 - Ldebug_info_start
+	.long LDIFF_SYM437
+LTDIE_63:
+
+	.byte 17
+	.asciz "System_Runtime_Serialization_IFormatterConverter"
+
+	.byte 16,7
+	.asciz "System_Runtime_Serialization_IFormatterConverter"
+
+LDIFF_SYM438=LTDIE_63 - Ldebug_info_start
+	.long LDIFF_SYM438
+LTDIE_63_POINTER:
+
+	.byte 13
+LDIFF_SYM439=LTDIE_63 - Ldebug_info_start
+	.long LDIFF_SYM439
+LTDIE_63_REFERENCE:
+
+	.byte 14
+LDIFF_SYM440=LTDIE_63 - Ldebug_info_start
+	.long LDIFF_SYM440
+LTDIE_58:
+
+	.byte 5
+	.asciz "System_Runtime_Serialization_SerializationInfo"
+
+	.byte 88,16
+LDIFF_SYM441=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM441
+	.byte 2,35,0,6
+	.asciz "m_members"
+
+LDIFF_SYM442=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM442
+	.byte 2,35,16,6
+	.asciz "m_data"
+
+LDIFF_SYM443=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM443
+	.byte 2,35,24,6
+	.asciz "m_types"
+
+LDIFF_SYM444=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM444
+	.byte 2,35,32,6
+	.asciz "m_nameToIndex"
+
+LDIFF_SYM445=LTDIE_59_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM445
+	.byte 2,35,40,6
+	.asciz "m_currMember"
+
+LDIFF_SYM446=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM446
+	.byte 2,35,80,6
+	.asciz "m_converter"
+
+LDIFF_SYM447=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM447
+	.byte 2,35,48,6
+	.asciz "m_fullTypeName"
+
+LDIFF_SYM448=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM448
+	.byte 2,35,56,6
+	.asciz "m_assemName"
+
+LDIFF_SYM449=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM449
+	.byte 2,35,64,6
+	.asciz "objectType"
+
+LDIFF_SYM450=LTDIE_19_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM450
+	.byte 2,35,72,6
+	.asciz "isFullTypeNameSetExplicit"
+
+LDIFF_SYM451=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM451
+	.byte 2,35,84,6
+	.asciz "isAssemblyNameSetExplicit"
+
+LDIFF_SYM452=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM452
+	.byte 2,35,85,6
+	.asciz "requireSameTokenInPartialTrust"
+
+LDIFF_SYM453=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM453
+	.byte 2,35,86,0,7
+	.asciz "System_Runtime_Serialization_SerializationInfo"
+
+LDIFF_SYM454=LTDIE_58 - Ldebug_info_start
+	.long LDIFF_SYM454
+LTDIE_58_POINTER:
+
+	.byte 13
+LDIFF_SYM455=LTDIE_58 - Ldebug_info_start
+	.long LDIFF_SYM455
+LTDIE_58_REFERENCE:
+
+	.byte 14
+LDIFF_SYM456=LTDIE_58 - Ldebug_info_start
+	.long LDIFF_SYM456
+LTDIE_65:
+
+	.byte 5
+	.asciz "System_Reflection_TypeInfo"
+
+	.byte 24,16
+LDIFF_SYM457=LTDIE_19 - Ldebug_info_start
+	.long LDIFF_SYM457
+	.byte 2,35,0,0,7
+	.asciz "System_Reflection_TypeInfo"
+
+LDIFF_SYM458=LTDIE_65 - Ldebug_info_start
+	.long LDIFF_SYM458
+LTDIE_65_POINTER:
+
+	.byte 13
+LDIFF_SYM459=LTDIE_65 - Ldebug_info_start
+	.long LDIFF_SYM459
+LTDIE_65_REFERENCE:
+
+	.byte 14
+LDIFF_SYM460=LTDIE_65 - Ldebug_info_start
+	.long LDIFF_SYM460
+LTDIE_69:
+
+	.byte 5
+	.asciz "System_Reflection_ConstructorInfo"
+
+	.byte 16,16
+LDIFF_SYM461=LTDIE_16 - Ldebug_info_start
+	.long LDIFF_SYM461
+	.byte 2,35,0,0,7
+	.asciz "System_Reflection_ConstructorInfo"
+
+LDIFF_SYM462=LTDIE_69 - Ldebug_info_start
+	.long LDIFF_SYM462
+LTDIE_69_POINTER:
+
+	.byte 13
+LDIFF_SYM463=LTDIE_69 - Ldebug_info_start
+	.long LDIFF_SYM463
+LTDIE_69_REFERENCE:
+
+	.byte 14
+LDIFF_SYM464=LTDIE_69 - Ldebug_info_start
+	.long LDIFF_SYM464
+LTDIE_68:
+
+	.byte 5
+	.asciz "System_Reflection_RuntimeConstructorInfo"
+
+	.byte 16,16
+LDIFF_SYM465=LTDIE_69 - Ldebug_info_start
+	.long LDIFF_SYM465
+	.byte 2,35,0,0,7
+	.asciz "System_Reflection_RuntimeConstructorInfo"
+
+LDIFF_SYM466=LTDIE_68 - Ldebug_info_start
+	.long LDIFF_SYM466
+LTDIE_68_POINTER:
+
+	.byte 13
+LDIFF_SYM467=LTDIE_68 - Ldebug_info_start
+	.long LDIFF_SYM467
+LTDIE_68_REFERENCE:
+
+	.byte 14
+LDIFF_SYM468=LTDIE_68 - Ldebug_info_start
+	.long LDIFF_SYM468
+LTDIE_67:
+
+	.byte 5
+	.asciz "System_Reflection_MonoCMethod"
+
+	.byte 40,16
+LDIFF_SYM469=LTDIE_68 - Ldebug_info_start
+	.long LDIFF_SYM469
+	.byte 2,35,0,6
+	.asciz "mhandle"
+
+LDIFF_SYM470=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM470
+	.byte 2,35,16,6
+	.asciz "name"
+
+LDIFF_SYM471=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM471
+	.byte 2,35,24,6
+	.asciz "reftype"
+
+LDIFF_SYM472=LTDIE_19_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM472
+	.byte 2,35,32,0,7
+	.asciz "System_Reflection_MonoCMethod"
+
+LDIFF_SYM473=LTDIE_67 - Ldebug_info_start
+	.long LDIFF_SYM473
+LTDIE_67_POINTER:
+
+	.byte 13
+LDIFF_SYM474=LTDIE_67 - Ldebug_info_start
+	.long LDIFF_SYM474
+LTDIE_67_REFERENCE:
+
+	.byte 14
+LDIFF_SYM475=LTDIE_67 - Ldebug_info_start
+	.long LDIFF_SYM475
+LTDIE_66:
+
+	.byte 5
+	.asciz "System_MonoTypeInfo"
+
+	.byte 32,16
+LDIFF_SYM476=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM476
+	.byte 2,35,0,6
+	.asciz "full_name"
+
+LDIFF_SYM477=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM477
+	.byte 2,35,16,6
+	.asciz "default_ctor"
+
+LDIFF_SYM478=LTDIE_67_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM478
+	.byte 2,35,24,0,7
+	.asciz "System_MonoTypeInfo"
+
+LDIFF_SYM479=LTDIE_66 - Ldebug_info_start
+	.long LDIFF_SYM479
+LTDIE_66_POINTER:
+
+	.byte 13
+LDIFF_SYM480=LTDIE_66 - Ldebug_info_start
+	.long LDIFF_SYM480
+LTDIE_66_REFERENCE:
+
+	.byte 14
+LDIFF_SYM481=LTDIE_66 - Ldebug_info_start
+	.long LDIFF_SYM481
+LTDIE_64:
+
+	.byte 5
+	.asciz "System_RuntimeType"
+
+	.byte 48,16
+LDIFF_SYM482=LTDIE_65 - Ldebug_info_start
+	.long LDIFF_SYM482
+	.byte 2,35,0,6
+	.asciz "type_info"
+
+LDIFF_SYM483=LTDIE_66_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM483
+	.byte 2,35,24,6
+	.asciz "GenericCache"
+
+LDIFF_SYM484=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM484
+	.byte 2,35,32,6
+	.asciz "m_serializationCtor"
+
+LDIFF_SYM485=LTDIE_68_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM485
+	.byte 2,35,40,0,7
+	.asciz "System_RuntimeType"
+
+LDIFF_SYM486=LTDIE_64 - Ldebug_info_start
+	.long LDIFF_SYM486
+LTDIE_64_POINTER:
+
+	.byte 13
+LDIFF_SYM487=LTDIE_64 - Ldebug_info_start
+	.long LDIFF_SYM487
+LTDIE_64_REFERENCE:
+
+	.byte 14
+LDIFF_SYM488=LTDIE_64 - Ldebug_info_start
+	.long LDIFF_SYM488
+LTDIE_70:
+
+	.byte 5
+	.asciz "System_EventHandler`1"
+
+	.byte 128,1,16
+LDIFF_SYM489=LTDIE_13 - Ldebug_info_start
+	.long LDIFF_SYM489
+	.byte 2,35,0,0,7
+	.asciz "System_EventHandler`1"
+
+LDIFF_SYM490=LTDIE_70 - Ldebug_info_start
+	.long LDIFF_SYM490
+LTDIE_70_POINTER:
+
+	.byte 13
+LDIFF_SYM491=LTDIE_70 - Ldebug_info_start
+	.long LDIFF_SYM491
+LTDIE_70_REFERENCE:
+
+	.byte 14
+LDIFF_SYM492=LTDIE_70 - Ldebug_info_start
+	.long LDIFF_SYM492
+LTDIE_56:
+
+	.byte 5
+	.asciz "System_Runtime_Serialization_SafeSerializationManager"
+
+	.byte 56,16
+LDIFF_SYM493=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM493
+	.byte 2,35,0,6
+	.asciz "m_serializedStates"
+
+LDIFF_SYM494=LTDIE_57_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM494
+	.byte 2,35,16,6
+	.asciz "m_savedSerializationInfo"
+
+LDIFF_SYM495=LTDIE_58_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM495
+	.byte 2,35,24,6
+	.asciz "m_realObject"
+
+LDIFF_SYM496=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM496
+	.byte 2,35,32,6
+	.asciz "m_realType"
+
+LDIFF_SYM497=LTDIE_64_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM497
+	.byte 2,35,40,6
+	.asciz "SerializeObjectState"
+
+LDIFF_SYM498=LTDIE_70_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM498
+	.byte 2,35,48,0,7
+	.asciz "System_Runtime_Serialization_SafeSerializationManager"
+
+LDIFF_SYM499=LTDIE_56 - Ldebug_info_start
+	.long LDIFF_SYM499
+LTDIE_56_POINTER:
+
+	.byte 13
+LDIFF_SYM500=LTDIE_56 - Ldebug_info_start
+	.long LDIFF_SYM500
+LTDIE_56_REFERENCE:
+
+	.byte 14
+LDIFF_SYM501=LTDIE_56 - Ldebug_info_start
+	.long LDIFF_SYM501
+LTDIE_54:
+
+	.byte 5
+	.asciz "System_Exception"
+
+	.byte 136,1,16
+LDIFF_SYM502=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM502
+	.byte 2,35,0,6
+	.asciz "_className"
+
+LDIFF_SYM503=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM503
+	.byte 2,35,16,6
+	.asciz "_message"
+
+LDIFF_SYM504=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM504
+	.byte 2,35,24,6
+	.asciz "_data"
+
+LDIFF_SYM505=LTDIE_55_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM505
+	.byte 2,35,32,6
+	.asciz "_innerException"
+
+LDIFF_SYM506=LTDIE_54_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM506
+	.byte 2,35,40,6
+	.asciz "_helpURL"
+
+LDIFF_SYM507=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM507
+	.byte 2,35,48,6
+	.asciz "_stackTrace"
+
+LDIFF_SYM508=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM508
+	.byte 2,35,56,6
+	.asciz "_stackTraceString"
+
+LDIFF_SYM509=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM509
+	.byte 2,35,64,6
+	.asciz "_remoteStackTraceString"
+
+LDIFF_SYM510=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM510
+	.byte 2,35,72,6
+	.asciz "_remoteStackIndex"
+
+LDIFF_SYM511=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM511
+	.byte 2,35,80,6
+	.asciz "_dynamicMethods"
+
+LDIFF_SYM512=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM512
+	.byte 2,35,88,6
+	.asciz "_HResult"
+
+LDIFF_SYM513=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM513
+	.byte 2,35,96,6
+	.asciz "_source"
+
+LDIFF_SYM514=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM514
+	.byte 2,35,104,6
+	.asciz "_safeSerializationManager"
+
+LDIFF_SYM515=LTDIE_56_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM515
+	.byte 2,35,112,6
+	.asciz "captured_traces"
+
+LDIFF_SYM516=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM516
+	.byte 2,35,120,6
+	.asciz "native_trace_ips"
+
+LDIFF_SYM517=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM517
+	.byte 3,35,128,1,0,7
+	.asciz "System_Exception"
+
+LDIFF_SYM518=LTDIE_54 - Ldebug_info_start
+	.long LDIFF_SYM518
+LTDIE_54_POINTER:
+
+	.byte 13
+LDIFF_SYM519=LTDIE_54 - Ldebug_info_start
+	.long LDIFF_SYM519
+LTDIE_54_REFERENCE:
+
+	.byte 14
+LDIFF_SYM520=LTDIE_54 - Ldebug_info_start
+	.long LDIFF_SYM520
+LTDIE_53:
+
+	.byte 5
+	.asciz "System_Runtime_ExceptionServices_ExceptionDispatchInfo"
+
+	.byte 32,16
+LDIFF_SYM521=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM521
+	.byte 2,35,0,6
+	.asciz "m_Exception"
+
+LDIFF_SYM522=LTDIE_54_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM522
+	.byte 2,35,16,6
+	.asciz "m_stackTrace"
+
+LDIFF_SYM523=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM523
+	.byte 2,35,24,0,7
+	.asciz "System_Runtime_ExceptionServices_ExceptionDispatchInfo"
+
+LDIFF_SYM524=LTDIE_53 - Ldebug_info_start
+	.long LDIFF_SYM524
+LTDIE_53_POINTER:
+
+	.byte 13
+LDIFF_SYM525=LTDIE_53 - Ldebug_info_start
+	.long LDIFF_SYM525
+LTDIE_53_REFERENCE:
+
+	.byte 14
+LDIFF_SYM526=LTDIE_53 - Ldebug_info_start
+	.long LDIFF_SYM526
+LTDIE_50:
+
+	.byte 5
+	.asciz "System_Threading_Tasks_TaskExceptionHolder"
+
+	.byte 48,16
+LDIFF_SYM527=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM527
+	.byte 2,35,0,6
+	.asciz "m_task"
+
+LDIFF_SYM528=LTDIE_22_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM528
+	.byte 2,35,16,6
+	.asciz "m_faultExceptions"
+
+LDIFF_SYM529=LTDIE_51_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM529
+	.byte 2,35,24,6
+	.asciz "m_cancellationException"
+
+LDIFF_SYM530=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM530
+	.byte 2,35,32,6
+	.asciz "m_isHandled"
+
+LDIFF_SYM531=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM531
+	.byte 2,35,40,0,7
+	.asciz "System_Threading_Tasks_TaskExceptionHolder"
+
+LDIFF_SYM532=LTDIE_50 - Ldebug_info_start
+	.long LDIFF_SYM532
+LTDIE_50_POINTER:
+
+	.byte 13
+LDIFF_SYM533=LTDIE_50 - Ldebug_info_start
+	.long LDIFF_SYM533
+LTDIE_50_REFERENCE:
+
+	.byte 14
+LDIFF_SYM534=LTDIE_50 - Ldebug_info_start
+	.long LDIFF_SYM534
+LTDIE_72:
+
+	.byte 5
+	.asciz "System_Collections_Generic_LowLevelList`1"
+
+	.byte 32,16
+LDIFF_SYM535=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM535
+	.byte 2,35,0,6
+	.asciz "_items"
+
+LDIFF_SYM536=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM536
+	.byte 2,35,16,6
+	.asciz "_size"
+
+LDIFF_SYM537=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM537
+	.byte 2,35,24,6
+	.asciz "_version"
+
+LDIFF_SYM538=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM538
+	.byte 2,35,28,0,7
+	.asciz "System_Collections_Generic_LowLevelList`1"
+
+LDIFF_SYM539=LTDIE_72 - Ldebug_info_start
+	.long LDIFF_SYM539
+LTDIE_72_POINTER:
+
+	.byte 13
+LDIFF_SYM540=LTDIE_72 - Ldebug_info_start
+	.long LDIFF_SYM540
+LTDIE_72_REFERENCE:
+
+	.byte 14
+LDIFF_SYM541=LTDIE_72 - Ldebug_info_start
+	.long LDIFF_SYM541
+LTDIE_71:
+
+	.byte 5
+	.asciz "System_Collections_Generic_LowLevelListWithIList`1"
+
+	.byte 32,16
+LDIFF_SYM542=LTDIE_72 - Ldebug_info_start
+	.long LDIFF_SYM542
+	.byte 2,35,0,0,7
+	.asciz "System_Collections_Generic_LowLevelListWithIList`1"
+
+LDIFF_SYM543=LTDIE_71 - Ldebug_info_start
+	.long LDIFF_SYM543
+LTDIE_71_POINTER:
+
+	.byte 13
+LDIFF_SYM544=LTDIE_71 - Ldebug_info_start
+	.long LDIFF_SYM544
+LTDIE_71_REFERENCE:
+
+	.byte 14
+LDIFF_SYM545=LTDIE_71 - Ldebug_info_start
+	.long LDIFF_SYM545
+LTDIE_24:
+
+	.byte 5
+	.asciz "_ContingentProperties"
+
+	.byte 72,16
+LDIFF_SYM546=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM546
+	.byte 2,35,0,6
+	.asciz "m_capturedContext"
+
+LDIFF_SYM547=LTDIE_25_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM547
+	.byte 2,35,16,6
+	.asciz "m_completionEvent"
+
+LDIFF_SYM548=LTDIE_41_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM548
+	.byte 2,35,24,6
+	.asciz "m_exceptionsHolder"
+
+LDIFF_SYM549=LTDIE_50_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM549
+	.byte 2,35,32,6
+	.asciz "m_cancellationToken"
+
+LDIFF_SYM550=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM550
+	.byte 2,35,40,6
+	.asciz "m_cancellationRegistration"
+
+LDIFF_SYM551=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM551
+	.byte 2,35,48,6
+	.asciz "m_internalCancellationRequested"
+
+LDIFF_SYM552=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM552
+	.byte 2,35,64,6
+	.asciz "m_completionCountdown"
+
+LDIFF_SYM553=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM553
+	.byte 2,35,68,6
+	.asciz "m_exceptionalChildren"
+
+LDIFF_SYM554=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM554
+	.byte 2,35,56,0,7
+	.asciz "_ContingentProperties"
+
+LDIFF_SYM555=LTDIE_24 - Ldebug_info_start
+	.long LDIFF_SYM555
+LTDIE_24_POINTER:
+
+	.byte 13
+LDIFF_SYM556=LTDIE_24 - Ldebug_info_start
+	.long LDIFF_SYM556
+LTDIE_24_REFERENCE:
+
+	.byte 14
+LDIFF_SYM557=LTDIE_24 - Ldebug_info_start
+	.long LDIFF_SYM557
+LTDIE_22:
+
+	.byte 5
+	.asciz "System_Threading_Tasks_Task"
+
+	.byte 72,16
+LDIFF_SYM558=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM558
+	.byte 2,35,0,6
+	.asciz "m_taskId"
+
+LDIFF_SYM559=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM559
+	.byte 2,35,64,6
+	.asciz "m_action"
+
+LDIFF_SYM560=LTDIE_14_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM560
+	.byte 2,35,16,6
+	.asciz "m_stateObject"
+
+LDIFF_SYM561=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM561
+	.byte 2,35,24,6
+	.asciz "m_taskScheduler"
+
+LDIFF_SYM562=LTDIE_23_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM562
+	.byte 2,35,32,6
+	.asciz "m_parent"
+
+LDIFF_SYM563=LTDIE_22_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM563
+	.byte 2,35,40,6
+	.asciz "m_stateFlags"
+
+LDIFF_SYM564=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM564
+	.byte 2,35,68,6
+	.asciz "m_continuationObject"
+
+LDIFF_SYM565=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM565
+	.byte 2,35,48,6
+	.asciz "m_contingentProperties"
+
+LDIFF_SYM566=LTDIE_24_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM566
+	.byte 2,35,56,0,7
+	.asciz "System_Threading_Tasks_Task"
+
+LDIFF_SYM567=LTDIE_22 - Ldebug_info_start
+	.long LDIFF_SYM567
+LTDIE_22_POINTER:
+
+	.byte 13
+LDIFF_SYM568=LTDIE_22 - Ldebug_info_start
+	.long LDIFF_SYM568
+LTDIE_22_REFERENCE:
+
+	.byte 14
+LDIFF_SYM569=LTDIE_22 - Ldebug_info_start
+	.long LDIFF_SYM569
+LTDIE_21:
+
+	.byte 5
+	.asciz "System_Threading_Tasks_Task`1"
+
+	.byte 80,16
+LDIFF_SYM570=LTDIE_22 - Ldebug_info_start
+	.long LDIFF_SYM570
+	.byte 2,35,0,6
+	.asciz "m_result"
+
+LDIFF_SYM571=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM571
+	.byte 2,35,72,0,7
+	.asciz "System_Threading_Tasks_Task`1"
+
+LDIFF_SYM572=LTDIE_21 - Ldebug_info_start
+	.long LDIFF_SYM572
+LTDIE_21_POINTER:
+
+	.byte 13
+LDIFF_SYM573=LTDIE_21 - Ldebug_info_start
+	.long LDIFF_SYM573
+LTDIE_21_REFERENCE:
+
+	.byte 14
+LDIFF_SYM574=LTDIE_21 - Ldebug_info_start
+	.long LDIFF_SYM574
+LTDIE_74:
+
+	.byte 5
+	.asciz "System_SystemException"
+
+	.byte 136,1,16
+LDIFF_SYM575=LTDIE_54 - Ldebug_info_start
+	.long LDIFF_SYM575
+	.byte 2,35,0,0,7
+	.asciz "System_SystemException"
+
+LDIFF_SYM576=LTDIE_74 - Ldebug_info_start
+	.long LDIFF_SYM576
+LTDIE_74_POINTER:
+
+	.byte 13
+LDIFF_SYM577=LTDIE_74 - Ldebug_info_start
+	.long LDIFF_SYM577
+LTDIE_74_REFERENCE:
+
+	.byte 14
+LDIFF_SYM578=LTDIE_74 - Ldebug_info_start
+	.long LDIFF_SYM578
+LTDIE_73:
+
+	.byte 5
+	.asciz "System_OperationCanceledException"
+
+	.byte 144,1,16
+LDIFF_SYM579=LTDIE_74 - Ldebug_info_start
+	.long LDIFF_SYM579
+	.byte 2,35,0,6
+	.asciz "_cancellationToken"
+
+LDIFF_SYM580=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM580
+	.byte 3,35,136,1,0,7
+	.asciz "System_OperationCanceledException"
+
+LDIFF_SYM581=LTDIE_73 - Ldebug_info_start
+	.long LDIFF_SYM581
+LTDIE_73_POINTER:
+
+	.byte 13
+LDIFF_SYM582=LTDIE_73 - Ldebug_info_start
+	.long LDIFF_SYM582
+LTDIE_73_REFERENCE:
+
+	.byte 14
+LDIFF_SYM583=LTDIE_73 - Ldebug_info_start
+	.long LDIFF_SYM583
+	.byte 2
+	.asciz "System.Threading.Tasks.TaskFactory`1<TResult_BOOL>:FromAsyncCoreLogic"
+	.asciz "System_Threading_Tasks_TaskFactory_1_TResult_BOOL_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_TResult_BOOL_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_TResult_BOOL_bool"
+
+	.byte 2,142,4
+	.quad System_Threading_Tasks_TaskFactory_1_TResult_BOOL_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_TResult_BOOL_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_TResult_BOOL_bool
+	.quad Lme_8d
+
+	.byte 2,118,16,3
+	.asciz "iar"
+
+LDIFF_SYM584=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM584
+	.byte 2,141,24,3
+	.asciz "endFunction"
+
+LDIFF_SYM585=LTDIE_12_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM585
+	.byte 1,105,3
+	.asciz "endAction"
+
+LDIFF_SYM586=LTDIE_20_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM586
+	.byte 2,141,32,3
+	.asciz "promise"
+
+LDIFF_SYM587=LTDIE_21_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM587
+	.byte 2,141,40,3
+	.asciz "requiresSynchronization"
+
+LDIFF_SYM588=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM588
+	.byte 2,141,48,11
+	.asciz "ex"
+
+LDIFF_SYM589=LTDIE_54_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM589
+	.byte 3,141,208,0,11
+	.asciz "oce"
+
+LDIFF_SYM590=LTDIE_73_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM590
+	.byte 3,141,216,0,11
+	.asciz "result"
+
+LDIFF_SYM591=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM591
+	.byte 3,141,224,0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM592=Lfde7_end - Lfde7_start
+	.long LDIFF_SYM592
+Lfde7_start:
+
+	.long 0
+	.align 3
+	.quad System_Threading_Tasks_TaskFactory_1_TResult_BOOL_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_TResult_BOOL_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_TResult_BOOL_bool
+
+LDIFF_SYM593=Lme_8d - System_Threading_Tasks_TaskFactory_1_TResult_BOOL_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_TResult_BOOL_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_TResult_BOOL_bool
+	.long LDIFF_SYM593
+	.long 0
+	.byte 12,31,0,68,14,128,2,157,32,158,31,68,13,29,68,153,30
+	.align 3
+Lfde7_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_75:
+
+	.byte 17
+	.asciz "System_Collections_Generic_IComparer`1"
+
+	.byte 16,7
+	.asciz "System_Collections_Generic_IComparer`1"
+
+LDIFF_SYM594=LTDIE_75 - Ldebug_info_start
+	.long LDIFF_SYM594
+LTDIE_75_POINTER:
+
+	.byte 13
+LDIFF_SYM595=LTDIE_75 - Ldebug_info_start
+	.long LDIFF_SYM595
+LTDIE_75_REFERENCE:
+
+	.byte 14
+LDIFF_SYM596=LTDIE_75 - Ldebug_info_start
+	.long LDIFF_SYM596
+	.byte 2
+	.asciz "System.Collections.Generic.ArraySortHelper`1<T_INT>:Sort"
+	.asciz "System_Collections_Generic_ArraySortHelper_1_T_INT_Sort_T_INT___int_int_System_Collections_Generic_IComparer_1_T_INT"
+
+	.byte 3,50
+	.quad System_Collections_Generic_ArraySortHelper_1_T_INT_Sort_T_INT___int_int_System_Collections_Generic_IComparer_1_T_INT
+	.quad Lme_137
+
+	.byte 2,118,16,3
+	.asciz "keys"
+
+LDIFF_SYM597=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM597
+	.byte 2,141,16,3
+	.asciz "index"
+
+LDIFF_SYM598=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM598
+	.byte 2,141,24,3
+	.asciz "length"
+
+LDIFF_SYM599=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM599
+	.byte 2,141,32,3
+	.asciz "comparer"
+
+LDIFF_SYM600=LTDIE_75_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM600
+	.byte 2,141,40,11
+	.asciz "e"
+
+LDIFF_SYM601=LTDIE_54_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM601
+	.byte 2,141,56,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM602=Lfde8_end - Lfde8_start
+	.long LDIFF_SYM602
+Lfde8_start:
+
+	.long 0
+	.align 3
+	.quad System_Collections_Generic_ArraySortHelper_1_T_INT_Sort_T_INT___int_int_System_Collections_Generic_IComparer_1_T_INT
+
+LDIFF_SYM603=Lme_137 - System_Collections_Generic_ArraySortHelper_1_T_INT_Sort_T_INT___int_int_System_Collections_Generic_IComparer_1_T_INT
+	.long LDIFF_SYM603
+	.long 0
+	.byte 12,31,0,68,14,208,1,157,26,158,25,68,13,29
+	.align 3
+Lfde8_end:
 
 .section __DWARF, __debug_info,regular,debug
 

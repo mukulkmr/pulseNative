@@ -1,56 +1,56 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
   <Jars>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/0/jl/formsviewgroup.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/1/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/16/jl/android.arch.core.common.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/17/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/18/jl/android.arch.lifecycle.common.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/19/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/20/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/21/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/22/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/23/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/24/jl/com.android.support.support-annotations.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/25/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/26/jl/com.android.support.collections.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/27/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/28/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/29/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/3/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/30/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/31/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/32/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/33/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/34/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/35/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/36/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/37/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/38/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/39/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/40/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/41/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/42/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/43/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/44/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/45/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/46/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/47/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/48/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/49/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/5/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/50/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/51/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/52/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/53/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/54/jl/bin/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/56/jl/classes.jar</Jar>
     <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/57/jl/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/56/jl/classes.jar</Jar>
     <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/58/jl/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/6/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/18/jl/android.arch.lifecycle.common.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/0/jl/formsviewgroup.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/16/jl/android.arch.core.common.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/26/jl/com.android.support.collections.jar</Jar>
     <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/65/jl/classes.jar</Jar>
-    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/66/jl/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/64/jl/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/24/jl/com.android.support.support-annotations.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/50/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/32/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/35/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/51/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/34/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/33/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/20/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/27/jl/bin/classes.jar</Jar>
     <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/9/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/29/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/42/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/45/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/6/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/28/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/17/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/1/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/19/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/21/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/44/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/43/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/38/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/36/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/31/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/54/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/53/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/30/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/37/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/39/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/52/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/46/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/41/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/48/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/23/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/3/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/49/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/40/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/47/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/5/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/22/jl/bin/classes.jar</Jar>
+    <Jar>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/25/jl/bin/classes.jar</Jar>
   </Jars>
   <ResolvedResourceDirectories>
     <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/1/jl/res</ResolvedResourceDirectory>
@@ -78,8 +78,8 @@
     <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/55/jl/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/58/jl/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/60/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/62/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/65/jl/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/61/jl/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/64/jl/res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
     <ResolvedAssetDirectory>obj/Release/lp/4/jl/assets</ResolvedAssetDirectory>
@@ -94,7 +94,7 @@
     <ResolvedAssetDirectory>obj/Release/lp/22/jl/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Release/lp/55/jl/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Release/lp/60/jl/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj/Release/lp/62/jl/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Release/lp/61/jl/assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
@@ -123,7 +123,7 @@
     <ResolvedResourceDirectoryStamp>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/55.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/58.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/60.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/62.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/65.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/61.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/lp/64.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

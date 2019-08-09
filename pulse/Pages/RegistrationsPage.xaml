@@ -1,93 +1,165 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage
- BackgroundColor="#fcfcfc"
- Padding="{OnPlatform iOS={StaticResource PageMarginiOS}}"
-    xmlns="http://xamarin.com/schemas/2014/forms" 
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    
-    NavigationPage.HasNavigationBar="False" x:Class="pulse.RegistrationsPage">
+    BackgroundColor="#fcfcfc"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    NavigationPage.HasNavigationBar="False"
+    x:Class="pulse.RegistrationsPage"
+    Title="Pulse"
+    ios:Page.UseSafeArea="true">
+
     <ContentPage.Content>
-        <AbsoluteLayout Margin="0,10,0,10">            
-            <StackLayout Margin="0,35,0,0" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
-                <Label x:Name="statusText" Margin="8" Text="you're all caught up. Hit the reload button for update" />  
-                
-                <ListView Margin="0,8,0,0" BackgroundColor="Transparent" VerticalOptions="FillAndExpand" HeightRequest="600" 
-                          SelectionMode="None" HasUnevenRows="true" 
+        <AbsoluteLayout Margin="0,10,0,10">
+            <StackLayout AbsoluteLayout.LayoutFlags="All"
+                         Margin="0,30,0,0"
+                         AbsoluteLayout.LayoutBounds="0,0,1,1">
+
+                <Label x:Name="statusText"
+                       Margin="8"
+                       HorizontalTextAlignment="Center"
+                       Text="you're all caught up. hit reload to refresh" />
+
+                <Frame Style="{StaticResource Card}"
+                       IsVisible="false"
+                       x:Name="ReceiptCard">
+                    <StackLayout>
+                        <Button Text="Print Receipt"
+                                Clicked="PrintReceipt" />
+                    </StackLayout>
+                </Frame>
+
+                <ListView Margin="0,8,0,0"
+                          BackgroundColor="Transparent"
+                          VerticalOptions="FillAndExpand"
+                          HeightRequest="600"
+                          SelectionMode="None"
+                          HasUnevenRows="true"
                           SeparatorColor="Transparent"
-                          x:Name="listView" ItemsSource="{Binding Registrations}">
-                      <ListView.ItemTemplate>
+                          x:Name="listView"
+                          ItemsSource="{Binding Registrations}">
+                    <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
-                                <StackLayout Margin="10" HorizontalOptions="FillAndExpand" Orientation="Vertical">
-                                    <Frame Padding="0" Margin="20,0,20,0"  HasShadow="false" Style="{StaticResource Card}">
-                                         <AbsoluteLayout HorizontalOptions="FillAndExpand" 
-                                                        VerticalOptions="FillAndExpand">      
-                                        
-                                            <Image Aspect="Fill" Source="{Binding background_summary}" AbsoluteLayout.LayoutFlags="All" 
-                                                AbsoluteLayout.LayoutBounds="0,0,1,1" />
-                                            
-                                            <Grid AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+                                <StackLayout Margin="10"
+                                             HorizontalOptions="FillAndExpand"
+                                             Orientation="Vertical">
+                                    <Frame Padding="0"
+                                           Margin="20,0,20,0"
+                                           BackgroundColor="#fcfcfc"
+                                           HasShadow="false"
+                                           Style="{StaticResource Card}">
+                                        <AbsoluteLayout HorizontalOptions="FillAndExpand"
+                                                        VerticalOptions="FillAndExpand">
+
+                                            <Image Aspect="Fill"
+                                                   Source="{Binding background_summary}"
+                                                   AbsoluteLayout.LayoutFlags="All"
+                                                   AbsoluteLayout.LayoutBounds="0,0,1,1" />
+
+                                            <Grid AbsoluteLayout.LayoutFlags="All"
+                                                  AbsoluteLayout.LayoutBounds="0,0,1,1">
                                                 <Grid.ColumnDefinitions>
                                                     <ColumnDefinition Width=".8*" />
                                                     <ColumnDefinition Width="*" />
                                                 </Grid.ColumnDefinitions>
-                                                
-                                                <Label Margin="20,10,0,0" Text="{Binding id}" FontFamily="{StaticResource ChunkFive}" FontSize="28"
-                                                       Grid.Column="0" Grid.Row="0" TextColor="{Binding summary_color}"  HorizontalOptions="Start"  />
-                                                
-                                                <Label Margin="0,5,0,0" Text="{Binding dept}" FontFamily="{StaticResource ChunkFive}" FontSize="28"
-                                                       Grid.Column="1"  Grid.Row="0"  TextColor="{Binding summary_color}"  HorizontalOptions="Start" />
-                                                
-                                                 <Label Margin="20,0,0,0" Text="{Binding ticket_details}" FontFamily="{StaticResource ChunkFive}" FontSize="16"
-                                                       Grid.Column="0" Grid.Row="1" TextColor="{Binding summary_color}"  HorizontalOptions="Start"  />
-                                                
-                                                <Label Margin="0,0,20,0" Text="{Binding name}" FontFamily="{StaticResource ChunkFive}" FontSize="16"
-                                                       Grid.Column="1"  Grid.Row="1"  TextColor="{Binding summary_color}" HorizontalTextAlignment="Start"  
+
+                                                <Label Margin="20,10,0,0"
+                                                       Text="{Binding id}"
+                                                       FontFamily="{StaticResource ChunkFive}"
+                                                       FontSize="Title"
+                                                       Grid.Column="0"
+                                                       Grid.Row="0"
+                                                       TextColor="{Binding summary_color}"
+                                                       HorizontalOptions="Start" />
+
+                                                <Label Margin="0,5,0,0"
+                                                       Text="{Binding dept}"
+                                                       FontFamily="{StaticResource ChunkFive}"
+                                                       FontSize="Title"
+                                                       Grid.Column="1"
+                                                       Grid.Row="0"
+                                                       TextColor="{Binding summary_color}"
+                                                       HorizontalOptions="Start" />
+
+                                                <Label Margin="20,0,0,0"
+                                                       Text="{Binding ticket_details}"
+                                                       FontFamily="{StaticResource ChunkFive}"
+                                                       FontSize="Body"
+                                                       Grid.Column="0"
+                                                       Grid.Row="1"
+                                                       TextColor="{Binding summary_color}"
+                                                       HorizontalOptions="Start" />
+
+                                                <Label Margin="0,0,20,0"
+                                                       Text="{Binding name}"
+                                                       FontFamily="{StaticResource ChunkFive}"
+                                                       FontSize="Body"
+                                                       Grid.Column="1"
+                                                       Grid.Row="1"
+                                                       TextColor="{Binding summary_color}"
+                                                       HorizontalTextAlignment="Start"
                                                        HorizontalOptions="Start" />
                                             </Grid>
-                                            
-                                            <ImageButton IsVisible="{Binding remove_visible}" BackgroundColor="{StaticResource AccentColor}" Source="remove_white" Clicked="RemoveButtonPressedAsync" AbsoluteLayout.LayoutFlags="PositionProportional"
-                                                    AbsoluteLayout.LayoutBounds="1,0,38,38" CornerRadius="19" CommandParameter="{Binding id}" /> 
 
-                                                                                            
+                                            <ImageButton IsVisible="{Binding remove_visible}"
+                                                         BackgroundColor="{StaticResource AccentColor}"
+                                                         Source="remove_white"
+                                                         Clicked="RemoveButtonPressedAsync"
+                                                         AbsoluteLayout.LayoutFlags="PositionProportional"
+                                                         AbsoluteLayout.LayoutBounds="1,0,38,38"
+                                                         CornerRadius="19"
+                                                         CommandParameter="{Binding id}" />
+
+
                                             <AbsoluteLayout.GestureRecognizers>
-                                                 <TapGestureRecognizer CommandParameter="{Binding .}" Tapped="TicketTapped" />
+                                                <TapGestureRecognizer CommandParameter="{Binding .}"
+                                                                      Tapped="TicketTapped" />
                                             </AbsoluteLayout.GestureRecognizers>
 
-                                         </AbsoluteLayout>                                     
+                                        </AbsoluteLayout>
                                     </Frame>
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-                
+
             </StackLayout>
-            
-             <Frame IsVisible="false"
+
+            <Frame IsVisible="false"
                    x:Name="DetailsCard"
-                   AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional" 
+                   AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional"
                    Padding="0"
                    Margin="5"
                    CornerRadius="2"
                    AbsoluteLayout.LayoutBounds="0,50,1,1">
-                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                    
-                      <ImageButton HorizontalOptions="Center" BackgroundColor="Transparent" Source="close" Clicked="ClosePopUp"/>
-
-                      <WebView Navigating="Handle_Navigating" Navigated="Handle_Navigated" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="webview" />
+                <StackLayout HorizontalOptions="FillAndExpand"
+                             VerticalOptions="FillAndExpand">
+                    <ImageButton HorizontalOptions="Center"
+                                 BackgroundColor="Transparent"
+                                 Source="close"
+                                 Clicked="ClosePopUp" />
+                    <WebView Navigating="Handle_Navigating"
+                             Navigated="Handle_Navigated"
+                             HorizontalOptions="FillAndExpand"
+                             VerticalOptions="FillAndExpand"
+                             x:Name="webview" />
                 </StackLayout>
             </Frame>
-            
-            <ActivityIndicator x:Name="Loading" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds=".5,.5,50,50"  IsRunning="true" IsVisible="false"  />
 
-            <ImageButton Source="refresh" x:Name="ReloadButton" BackgroundColor="Transparent" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.05,0,30,30" Clicked="OnReloadButtonClicked" />
-            <BoxView Color="{StaticResource AccentColor}" Rotation="45" CornerRadius="8" AbsoluteLayout.LayoutFlags="PositionProportional" Margin="0,2,0,0" AbsoluteLayout.LayoutBounds=".5,0,30,32">
-                <BoxView.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OpenPulsePage" />
-                </BoxView.GestureRecognizers>
-            </BoxView>
-            <ImageButton BackgroundColor="Transparent" Clicked="Handle_Clicked" Source="pawprint" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds=".95,0,30,30" />
+            <ActivityIndicator x:Name="Loading"
+                               AbsoluteLayout.LayoutFlags="PositionProportional"
+                               AbsoluteLayout.LayoutBounds=".5,.5,50,50"
+                               IsRunning="true"
+                               IsVisible="false" />
+
+            <ImageButton Source="refresh"
+                         x:Name="ReloadButton"
+                         BackgroundColor="Transparent"
+                         AbsoluteLayout.LayoutFlags="PositionProportional"
+                         AbsoluteLayout.LayoutBounds="0.5,0,30,30"
+                         Clicked="OnReloadButtonClicked" />
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

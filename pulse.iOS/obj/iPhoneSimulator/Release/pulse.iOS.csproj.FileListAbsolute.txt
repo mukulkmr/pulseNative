@@ -57,12 +57,10 @@
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Xamarin.Forms.PancakeView.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Xamarin.Forms.Material.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Xamarin.Forms.Material.pdb
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/MaterialComponents.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/pulse.dll
-/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/pulse.pdb
 /Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/ibtool/_BundleResourceWithLogicalName.items
 /Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/actool/_PartialAppManifest.items
 /Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Release/actool/_BundleResourceWithLogicalName.items

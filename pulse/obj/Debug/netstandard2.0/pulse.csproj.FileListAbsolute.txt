@@ -20,3 +20,5 @@
 /Users/mukulkumar/Projects/pulse/pulse/obj/Debug/netstandard2.0/pulse.dll
 /Users/mukulkumar/Projects/pulse/pulse/obj/Debug/netstandard2.0/pulse.pdb
 /Users/mukulkumar/Projects/pulse/pulse/obj/Debug/netstandard2.0/pulse.csprojAssemblyReference.cache
+/Users/mukulkumar/Projects/pulse/pulse/obj/Debug/netstandard2.0/Pages/EventsSchedulePage.xaml.g.cs
+/Users/mukulkumar/Projects/pulse/pulse/obj/Debug/netstandard2.0/Pages/TutorialsPage.xaml.g.cs

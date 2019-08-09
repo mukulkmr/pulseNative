@@ -172,7 +172,7 @@ System_Net_Http_HttpClient__SendAsyncWorkerd__48_MoveNext:
 .word 0xaa1803f7
 .word 0x394102e0
 .word 0x34000140
-.word 0xd2843b40
+.word 0xd28442c0
 .word 0xf2a00020
 bl _p_588
 .word 0xaa0003e2
@@ -245,7 +245,7 @@ bl _p_1026
 .word 0xf9408ba0
 .word 0x39410000
 .word 0x34000140
-.word 0xd2843b40
+.word 0xd28442c0
 .word 0xf2a00020
 bl _p_588
 .word 0xaa0003e2
@@ -961,7 +961,7 @@ ldr x0, [x16, #296]
 .word 0xaa1403f3
 .word 0x39410260
 .word 0x34000140
-.word 0xd2843b40
+.word 0xd28442c0
 .word 0xf2a00020
 bl _p_588
 .word 0xaa0003e2

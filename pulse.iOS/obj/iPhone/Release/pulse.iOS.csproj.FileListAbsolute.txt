@@ -57,7 +57,6 @@
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhone/Release/Xamarin.Forms.Material.pdb
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhone/Release/MaterialComponents.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhone/Release/pulse.dll
-/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhone/Release/pulse.pdb
 /Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhone/Release/ibtool/_BundleResourceWithLogicalName.items
 /Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhone/Release/actool/_PartialAppManifest.items
 /Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhone/Release/actool/_BundleResourceWithLogicalName.items
@@ -73,4 +72,3 @@
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhone/Release/Microsoft.AppCenter.Analytics.iOS.Bindings.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhone/Release/Microsoft.AppCenter.Crashes.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhone/Release/Microsoft.AppCenter.Crashes.iOS.Bindings.dll
-/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhone/Release/Xamarin.Forms.PancakeView.dll

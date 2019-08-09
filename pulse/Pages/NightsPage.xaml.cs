@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Net.Http;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
@@ -20,22 +21,19 @@ namespace pulse
         public string contact { get; set; }
         [DataMember]
         public string venue { get; set; }
-
-        public string image { get => $"https://app.aiimspulse.website/assets/covers/events/{id}.jpg"; }
+        [DataMember]
+        public string image { get => $"https://res.cloudinary.com/demo/image/fetch/h_300,f_auto/https://app.aiimspulse.website/assets/covers/events/{id}.png"; }
     }
-
 
     public partial class NightsPage : ContentPage
     {
-        public IList<Show> Shows { get; private set; }
+        public ObservableCollection<Show> Shows { get; private set; }
         readonly string id = Preferences.Get("Id", "0");
 
         public NightsPage()
         {
             InitializeComponent();
-
-             _ = UpdateAsync();
-
+            Task.Run(UpdateAsync);
             BindingContext = this;
         }
 
@@ -45,35 +43,31 @@ namespace pulse
 
             if (current == NetworkAccess.Internet)
             {
-                try
+                try  
                 {
-                    Loading.IsVisible = true;
-
                     HttpClient httpClient = new HttpClient();
                     HttpResponseMessage responseMessage = await httpClient.GetAsync($"https://app.aiimspulse.website/scripts/data/nights.php?guid={id}");
 
                     if (responseMessage.IsSuccessStatusCode)
                     {
                         string json = await responseMessage.Content.ReadAsStringAsync();
-                        Shows = JsonConvert.DeserializeObject<List<Show>>(json);
-
+                        Shows = JsonConvert.DeserializeObject<ObservableCollection<Show>>(json);
+                         
                         if (Shows != null && Shows.Count != 0)
                         {
                             listView.ItemsSource = Shows;
                             statusText.IsVisible = false;
                         }
-
-                        Loading.IsVisible = false;
                     }
                 }
                 catch
                 {
-                    statusText.Text = "Could not connect to the network, Please reload";
+                    statusText.Text = "Could not connect to the network, hit reload to refresh";
                 }
             }
             else
             {
-                statusText.Text = "Could not connect to the network, Please reload";
+                statusText.Text = "Could not connect to the network, hit reload to refresh";
             }
         }
 
@@ -84,9 +78,5 @@ namespace pulse
 
             await UpdateAsync();
         }
-
-        void Handle_Clicked(object sender, EventArgs e) => Navigation.PushModalAsync(new CatsPage());
-
-        void OpenPulsePage(object sender, EventArgs e) => Navigation.PushModalAsync(new PulsePage());
     }
 }

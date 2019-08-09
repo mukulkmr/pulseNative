@@ -9043,7 +9043,7 @@ LTDIE_55:
 	.byte 5
 	.asciz "System_Globalization_CodePageDataItem"
 
-	.byte 40,16
+	.byte 56,16
 LDIFF_SYM368=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM368
 	.byte 2,35,0,6
@@ -9051,143 +9051,153 @@ LDIFF_SYM368=LTDIE_1 - Ldebug_info_start
 
 LDIFF_SYM369=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM369
-	.byte 2,35,24,6
+	.byte 2,35,40,6
 	.asciz "m_uiFamilyCodePage"
 
 LDIFF_SYM370=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM370
-	.byte 2,35,28,6
+	.byte 2,35,44,6
 	.asciz "m_webName"
 
 LDIFF_SYM371=LDIE_STRING - Ldebug_info_start
 	.long LDIFF_SYM371
 	.byte 2,35,16,6
+	.asciz "m_headerName"
+
+LDIFF_SYM372=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM372
+	.byte 2,35,24,6
+	.asciz "m_bodyName"
+
+LDIFF_SYM373=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM373
+	.byte 2,35,32,6
 	.asciz "m_flags"
 
-LDIFF_SYM372=LDIE_U4 - Ldebug_info_start
-	.long LDIFF_SYM372
-	.byte 2,35,32,0,7
+LDIFF_SYM374=LDIE_U4 - Ldebug_info_start
+	.long LDIFF_SYM374
+	.byte 2,35,48,0,7
 	.asciz "System_Globalization_CodePageDataItem"
 
-LDIFF_SYM373=LTDIE_55 - Ldebug_info_start
-	.long LDIFF_SYM373
+LDIFF_SYM375=LTDIE_55 - Ldebug_info_start
+	.long LDIFF_SYM375
 LTDIE_55_POINTER:
 
 	.byte 13
-LDIFF_SYM374=LTDIE_55 - Ldebug_info_start
-	.long LDIFF_SYM374
+LDIFF_SYM376=LTDIE_55 - Ldebug_info_start
+	.long LDIFF_SYM376
 LTDIE_55_REFERENCE:
 
 	.byte 14
-LDIFF_SYM375=LTDIE_55 - Ldebug_info_start
-	.long LDIFF_SYM375
+LDIFF_SYM377=LTDIE_55 - Ldebug_info_start
+	.long LDIFF_SYM377
 LTDIE_57:
 
 	.byte 5
 	.asciz "System_Text_EncoderFallback"
 
 	.byte 16,16
-LDIFF_SYM376=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM376
+LDIFF_SYM378=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM378
 	.byte 2,35,0,0,7
 	.asciz "System_Text_EncoderFallback"
 
-LDIFF_SYM377=LTDIE_57 - Ldebug_info_start
-	.long LDIFF_SYM377
+LDIFF_SYM379=LTDIE_57 - Ldebug_info_start
+	.long LDIFF_SYM379
 LTDIE_57_POINTER:
 
 	.byte 13
-LDIFF_SYM378=LTDIE_57 - Ldebug_info_start
-	.long LDIFF_SYM378
+LDIFF_SYM380=LTDIE_57 - Ldebug_info_start
+	.long LDIFF_SYM380
 LTDIE_57_REFERENCE:
 
 	.byte 14
-LDIFF_SYM379=LTDIE_57 - Ldebug_info_start
-	.long LDIFF_SYM379
+LDIFF_SYM381=LTDIE_57 - Ldebug_info_start
+	.long LDIFF_SYM381
 LTDIE_58:
 
 	.byte 5
 	.asciz "System_Text_DecoderFallback"
 
 	.byte 16,16
-LDIFF_SYM380=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM380
+LDIFF_SYM382=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM382
 	.byte 2,35,0,0,7
 	.asciz "System_Text_DecoderFallback"
 
-LDIFF_SYM381=LTDIE_58 - Ldebug_info_start
-	.long LDIFF_SYM381
+LDIFF_SYM383=LTDIE_58 - Ldebug_info_start
+	.long LDIFF_SYM383
 LTDIE_58_POINTER:
 
 	.byte 13
-LDIFF_SYM382=LTDIE_58 - Ldebug_info_start
-	.long LDIFF_SYM382
+LDIFF_SYM384=LTDIE_58 - Ldebug_info_start
+	.long LDIFF_SYM384
 LTDIE_58_REFERENCE:
 
 	.byte 14
-LDIFF_SYM383=LTDIE_58 - Ldebug_info_start
-	.long LDIFF_SYM383
+LDIFF_SYM385=LTDIE_58 - Ldebug_info_start
+	.long LDIFF_SYM385
 LTDIE_54:
 
 	.byte 5
 	.asciz "System_Text_Encoding"
 
 	.byte 48,16
-LDIFF_SYM384=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM384
+LDIFF_SYM386=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM386
 	.byte 2,35,0,6
 	.asciz "m_codePage"
 
-LDIFF_SYM385=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM385
+LDIFF_SYM387=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM387
 	.byte 2,35,40,6
 	.asciz "dataItem"
 
-LDIFF_SYM386=LTDIE_55_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM386
+LDIFF_SYM388=LTDIE_55_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM388
 	.byte 2,35,16,6
 	.asciz "m_deserializedFromEverett"
 
-LDIFF_SYM387=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM387
+LDIFF_SYM389=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM389
 	.byte 2,35,44,6
 	.asciz "m_isReadOnly"
 
-LDIFF_SYM388=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM388
+LDIFF_SYM390=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM390
 	.byte 2,35,45,6
 	.asciz "encoderFallback"
 
-LDIFF_SYM389=LTDIE_57_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM389
+LDIFF_SYM391=LTDIE_57_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM391
 	.byte 2,35,24,6
 	.asciz "decoderFallback"
 
-LDIFF_SYM390=LTDIE_58_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM390
+LDIFF_SYM392=LTDIE_58_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM392
 	.byte 2,35,32,0,7
 	.asciz "System_Text_Encoding"
 
-LDIFF_SYM391=LTDIE_54 - Ldebug_info_start
-	.long LDIFF_SYM391
+LDIFF_SYM393=LTDIE_54 - Ldebug_info_start
+	.long LDIFF_SYM393
 LTDIE_54_POINTER:
 
 	.byte 13
-LDIFF_SYM392=LTDIE_54 - Ldebug_info_start
-	.long LDIFF_SYM392
+LDIFF_SYM394=LTDIE_54 - Ldebug_info_start
+	.long LDIFF_SYM394
 LTDIE_54_REFERENCE:
 
 	.byte 14
-LDIFF_SYM393=LTDIE_54 - Ldebug_info_start
-	.long LDIFF_SYM393
+LDIFF_SYM395=LTDIE_54 - Ldebug_info_start
+	.long LDIFF_SYM395
 LTDIE_59:
 
 	.byte 8
 	.asciz "System_Xml_Formatting"
 
 	.byte 4
-LDIFF_SYM394=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM394
+LDIFF_SYM396=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM396
 	.byte 9
 	.asciz "None"
 
@@ -9197,26 +9207,26 @@ LDIFF_SYM394=LDIE_I4 - Ldebug_info_start
 	.byte 1,0,7
 	.asciz "System_Xml_Formatting"
 
-LDIFF_SYM395=LTDIE_59 - Ldebug_info_start
-	.long LDIFF_SYM395
+LDIFF_SYM397=LTDIE_59 - Ldebug_info_start
+	.long LDIFF_SYM397
 LTDIE_59_POINTER:
 
 	.byte 13
-LDIFF_SYM396=LTDIE_59 - Ldebug_info_start
-	.long LDIFF_SYM396
+LDIFF_SYM398=LTDIE_59 - Ldebug_info_start
+	.long LDIFF_SYM398
 LTDIE_59_REFERENCE:
 
 	.byte 14
-LDIFF_SYM397=LTDIE_59 - Ldebug_info_start
-	.long LDIFF_SYM397
+LDIFF_SYM399=LTDIE_59 - Ldebug_info_start
+	.long LDIFF_SYM399
 LTDIE_60:
 
 	.byte 8
 	.asciz "_State"
 
 	.byte 4
-LDIFF_SYM398=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM398
+LDIFF_SYM400=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM400
 	.byte 9
 	.asciz "Start"
 
@@ -9250,26 +9260,26 @@ LDIFF_SYM398=LDIE_I4 - Ldebug_info_start
 	.byte 9,0,7
 	.asciz "_State"
 
-LDIFF_SYM399=LTDIE_60 - Ldebug_info_start
-	.long LDIFF_SYM399
+LDIFF_SYM401=LTDIE_60 - Ldebug_info_start
+	.long LDIFF_SYM401
 LTDIE_60_POINTER:
 
 	.byte 13
-LDIFF_SYM400=LTDIE_60 - Ldebug_info_start
-	.long LDIFF_SYM400
+LDIFF_SYM402=LTDIE_60 - Ldebug_info_start
+	.long LDIFF_SYM402
 LTDIE_60_REFERENCE:
 
 	.byte 14
-LDIFF_SYM401=LTDIE_60 - Ldebug_info_start
-	.long LDIFF_SYM401
+LDIFF_SYM403=LTDIE_60 - Ldebug_info_start
+	.long LDIFF_SYM403
 LTDIE_61:
 
 	.byte 8
 	.asciz "_Token"
 
 	.byte 4
-LDIFF_SYM402=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM402
+LDIFF_SYM404=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM404
 	.byte 9
 	.asciz "PI"
 
@@ -9315,92 +9325,92 @@ LDIFF_SYM402=LDIE_I4 - Ldebug_info_start
 	.byte 13,0,7
 	.asciz "_Token"
 
-LDIFF_SYM403=LTDIE_61 - Ldebug_info_start
-	.long LDIFF_SYM403
+LDIFF_SYM405=LTDIE_61 - Ldebug_info_start
+	.long LDIFF_SYM405
 LTDIE_61_POINTER:
 
 	.byte 13
-LDIFF_SYM404=LTDIE_61 - Ldebug_info_start
-	.long LDIFF_SYM404
+LDIFF_SYM406=LTDIE_61 - Ldebug_info_start
+	.long LDIFF_SYM406
 LTDIE_61_REFERENCE:
 
 	.byte 14
-LDIFF_SYM405=LTDIE_61 - Ldebug_info_start
-	.long LDIFF_SYM405
+LDIFF_SYM407=LTDIE_61 - Ldebug_info_start
+	.long LDIFF_SYM407
 LTDIE_63:
 
 	.byte 5
 	.asciz "System_Xml_Base64Encoder"
 
 	.byte 40,16
-LDIFF_SYM406=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM406
+LDIFF_SYM408=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM408
 	.byte 2,35,0,6
 	.asciz "leftOverBytes"
 
-LDIFF_SYM407=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM407
+LDIFF_SYM409=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM409
 	.byte 2,35,16,6
 	.asciz "leftOverBytesCount"
 
-LDIFF_SYM408=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM408
+LDIFF_SYM410=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM410
 	.byte 2,35,32,6
 	.asciz "charsLine"
 
-LDIFF_SYM409=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM409
+LDIFF_SYM411=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM411
 	.byte 2,35,24,0,7
 	.asciz "System_Xml_Base64Encoder"
 
-LDIFF_SYM410=LTDIE_63 - Ldebug_info_start
-	.long LDIFF_SYM410
+LDIFF_SYM412=LTDIE_63 - Ldebug_info_start
+	.long LDIFF_SYM412
 LTDIE_63_POINTER:
 
 	.byte 13
-LDIFF_SYM411=LTDIE_63 - Ldebug_info_start
-	.long LDIFF_SYM411
+LDIFF_SYM413=LTDIE_63 - Ldebug_info_start
+	.long LDIFF_SYM413
 LTDIE_63_REFERENCE:
 
 	.byte 14
-LDIFF_SYM412=LTDIE_63 - Ldebug_info_start
-	.long LDIFF_SYM412
+LDIFF_SYM414=LTDIE_63 - Ldebug_info_start
+	.long LDIFF_SYM414
 LTDIE_62:
 
 	.byte 5
 	.asciz "System_Xml_XmlTextWriterBase64Encoder"
 
 	.byte 48,16
-LDIFF_SYM413=LTDIE_63 - Ldebug_info_start
-	.long LDIFF_SYM413
+LDIFF_SYM415=LTDIE_63 - Ldebug_info_start
+	.long LDIFF_SYM415
 	.byte 2,35,0,6
 	.asciz "xmlTextEncoder"
 
-LDIFF_SYM414=LTDIE_52_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM414
+LDIFF_SYM416=LTDIE_52_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM416
 	.byte 2,35,40,0,7
 	.asciz "System_Xml_XmlTextWriterBase64Encoder"
 
-LDIFF_SYM415=LTDIE_62 - Ldebug_info_start
-	.long LDIFF_SYM415
+LDIFF_SYM417=LTDIE_62 - Ldebug_info_start
+	.long LDIFF_SYM417
 LTDIE_62_POINTER:
 
 	.byte 13
-LDIFF_SYM416=LTDIE_62 - Ldebug_info_start
-	.long LDIFF_SYM416
+LDIFF_SYM418=LTDIE_62 - Ldebug_info_start
+	.long LDIFF_SYM418
 LTDIE_62_REFERENCE:
 
 	.byte 14
-LDIFF_SYM417=LTDIE_62 - Ldebug_info_start
-	.long LDIFF_SYM417
+LDIFF_SYM419=LTDIE_62 - Ldebug_info_start
+	.long LDIFF_SYM419
 LTDIE_64:
 
 	.byte 8
 	.asciz "_SpecialAttr"
 
 	.byte 4
-LDIFF_SYM418=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM418
+LDIFF_SYM420=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM420
 	.byte 9
 	.asciz "None"
 
@@ -9416,161 +9426,161 @@ LDIFF_SYM418=LDIE_I4 - Ldebug_info_start
 	.byte 3,0,7
 	.asciz "_SpecialAttr"
 
-LDIFF_SYM419=LTDIE_64 - Ldebug_info_start
-	.long LDIFF_SYM419
+LDIFF_SYM421=LTDIE_64 - Ldebug_info_start
+	.long LDIFF_SYM421
 LTDIE_64_POINTER:
 
 	.byte 13
-LDIFF_SYM420=LTDIE_64 - Ldebug_info_start
-	.long LDIFF_SYM420
+LDIFF_SYM422=LTDIE_64 - Ldebug_info_start
+	.long LDIFF_SYM422
 LTDIE_64_REFERENCE:
 
 	.byte 14
-LDIFF_SYM421=LTDIE_64 - Ldebug_info_start
-	.long LDIFF_SYM421
+LDIFF_SYM423=LTDIE_64 - Ldebug_info_start
+	.long LDIFF_SYM423
 LTDIE_50:
 
 	.byte 5
 	.asciz "System_Xml_XmlTextWriter"
 
 	.byte 160,1,16
-LDIFF_SYM422=LTDIE_51 - Ldebug_info_start
-	.long LDIFF_SYM422
+LDIFF_SYM424=LTDIE_51 - Ldebug_info_start
+	.long LDIFF_SYM424
 	.byte 2,35,0,6
 	.asciz "textWriter"
 
-LDIFF_SYM423=LTDIE_47_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM423
+LDIFF_SYM425=LTDIE_47_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM425
 	.byte 2,35,24,6
 	.asciz "xmlEncoder"
 
-LDIFF_SYM424=LTDIE_52_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM424
+LDIFF_SYM426=LTDIE_52_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM426
 	.byte 2,35,32,6
 	.asciz "encoding"
 
-LDIFF_SYM425=LTDIE_54_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM425
+LDIFF_SYM427=LTDIE_54_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM427
 	.byte 2,35,40,6
 	.asciz "formatting"
 
-LDIFF_SYM426=LTDIE_59 - Ldebug_info_start
-	.long LDIFF_SYM426
+LDIFF_SYM428=LTDIE_59 - Ldebug_info_start
+	.long LDIFF_SYM428
 	.byte 2,35,104,6
 	.asciz "indented"
 
-LDIFF_SYM427=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM427
+LDIFF_SYM429=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM429
 	.byte 2,35,108,6
 	.asciz "indentation"
 
-LDIFF_SYM428=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM428
+LDIFF_SYM430=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM430
 	.byte 2,35,112,6
 	.asciz "indentChar"
 
-LDIFF_SYM429=LDIE_CHAR - Ldebug_info_start
-	.long LDIFF_SYM429
+LDIFF_SYM431=LDIE_CHAR - Ldebug_info_start
+	.long LDIFF_SYM431
 	.byte 2,35,116,6
 	.asciz "stack"
 
-LDIFF_SYM430=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM430
+LDIFF_SYM432=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM432
 	.byte 2,35,48,6
 	.asciz "top"
 
-LDIFF_SYM431=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM431
+LDIFF_SYM433=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM433
 	.byte 2,35,120,6
 	.asciz "stateTable"
 
-LDIFF_SYM432=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM432
+LDIFF_SYM434=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM434
 	.byte 2,35,56,6
 	.asciz "currentState"
 
-LDIFF_SYM433=LTDIE_60 - Ldebug_info_start
-	.long LDIFF_SYM433
+LDIFF_SYM435=LTDIE_60 - Ldebug_info_start
+	.long LDIFF_SYM435
 	.byte 2,35,124,6
 	.asciz "lastToken"
 
-LDIFF_SYM434=LTDIE_61 - Ldebug_info_start
-	.long LDIFF_SYM434
+LDIFF_SYM436=LTDIE_61 - Ldebug_info_start
+	.long LDIFF_SYM436
 	.byte 3,35,128,1,6
 	.asciz "base64Encoder"
 
-LDIFF_SYM435=LTDIE_62_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM435
+LDIFF_SYM437=LTDIE_62_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM437
 	.byte 2,35,64,6
 	.asciz "quoteChar"
 
-LDIFF_SYM436=LDIE_CHAR - Ldebug_info_start
-	.long LDIFF_SYM436
+LDIFF_SYM438=LDIE_CHAR - Ldebug_info_start
+	.long LDIFF_SYM438
 	.byte 3,35,132,1,6
 	.asciz "curQuoteChar"
 
-LDIFF_SYM437=LDIE_CHAR - Ldebug_info_start
-	.long LDIFF_SYM437
+LDIFF_SYM439=LDIE_CHAR - Ldebug_info_start
+	.long LDIFF_SYM439
 	.byte 3,35,134,1,6
 	.asciz "namespaces"
 
-LDIFF_SYM438=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM438
+LDIFF_SYM440=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM440
 	.byte 3,35,136,1,6
 	.asciz "specialAttr"
 
-LDIFF_SYM439=LTDIE_64 - Ldebug_info_start
-	.long LDIFF_SYM439
+LDIFF_SYM441=LTDIE_64 - Ldebug_info_start
+	.long LDIFF_SYM441
 	.byte 3,35,140,1,6
 	.asciz "prefixForXmlNs"
 
-LDIFF_SYM440=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM440
+LDIFF_SYM442=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM442
 	.byte 2,35,72,6
 	.asciz "flush"
 
-LDIFF_SYM441=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM441
+LDIFF_SYM443=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM443
 	.byte 3,35,144,1,6
 	.asciz "nsStack"
 
-LDIFF_SYM442=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM442
+LDIFF_SYM444=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM444
 	.byte 2,35,80,6
 	.asciz "nsTop"
 
-LDIFF_SYM443=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM443
+LDIFF_SYM445=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM445
 	.byte 3,35,148,1,6
 	.asciz "nsHashtable"
 
-LDIFF_SYM444=LTDIE_21_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM444
+LDIFF_SYM446=LTDIE_21_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM446
 	.byte 2,35,88,6
 	.asciz "useNsHashtable"
 
-LDIFF_SYM445=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM445
+LDIFF_SYM447=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM447
 	.byte 3,35,152,1,6
 	.asciz "xmlCharType"
 
-LDIFF_SYM446=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM446
+LDIFF_SYM448=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM448
 	.byte 2,35,96,0,7
 	.asciz "System_Xml_XmlTextWriter"
 
-LDIFF_SYM447=LTDIE_50 - Ldebug_info_start
-	.long LDIFF_SYM447
+LDIFF_SYM449=LTDIE_50 - Ldebug_info_start
+	.long LDIFF_SYM449
 LTDIE_50_POINTER:
 
 	.byte 13
-LDIFF_SYM448=LTDIE_50 - Ldebug_info_start
-	.long LDIFF_SYM448
+LDIFF_SYM450=LTDIE_50 - Ldebug_info_start
+	.long LDIFF_SYM450
 LTDIE_50_REFERENCE:
 
 	.byte 14
-LDIFF_SYM449=LTDIE_50 - Ldebug_info_start
-	.long LDIFF_SYM449
+LDIFF_SYM451=LTDIE_50 - Ldebug_info_start
+	.long LDIFF_SYM451
 	.byte 2
 	.asciz "System.Runtime.Diagnostics.EtwDiagnosticTrace:BuildTrace"
 	.asciz "System_Runtime_Diagnostics_EtwDiagnosticTrace_BuildTrace_System_Runtime_Diagnostics_EventDescriptor__string_System_Runtime_TracePayload_string"
@@ -9582,57 +9592,57 @@ LDIFF_SYM449=LTDIE_50 - Ldebug_info_start
 	.byte 2,118,16,3
 	.asciz "eventDescriptor"
 
-LDIFF_SYM450=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM450
+LDIFF_SYM452=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM452
 	.byte 2,141,24,3
 	.asciz "description"
 
-LDIFF_SYM451=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM451
+LDIFF_SYM453=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM453
 	.byte 2,141,32,3
 	.asciz "payload"
 
-LDIFF_SYM452=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM452
+LDIFF_SYM454=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM454
 	.byte 1,80,3
 	.asciz "msdnTraceCode"
 
-LDIFF_SYM453=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM453
+LDIFF_SYM455=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM455
 	.byte 1,106,11
 	.asciz "sb"
 
-LDIFF_SYM454=LTDIE_45_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM454
+LDIFF_SYM456=LTDIE_45_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM456
 	.byte 2,141,48,11
 	.asciz "stringWriter"
 
-LDIFF_SYM455=LTDIE_46_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM455
+LDIFF_SYM457=LTDIE_46_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM457
 	.byte 2,141,56,11
 	.asciz "writer"
 
-LDIFF_SYM456=LTDIE_50_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM456
+LDIFF_SYM458=LTDIE_50_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM458
 	.byte 3,141,192,0,11
 	.asciz "V_3"
 
-LDIFF_SYM457=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM457
+LDIFF_SYM459=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM459
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM458=Lfde1_end - Lfde1_start
-	.long LDIFF_SYM458
+LDIFF_SYM460=Lfde1_end - Lfde1_start
+	.long LDIFF_SYM460
 Lfde1_start:
 
 	.long 0
 	.align 3
 	.quad System_Runtime_Diagnostics_EtwDiagnosticTrace_BuildTrace_System_Runtime_Diagnostics_EventDescriptor__string_System_Runtime_TracePayload_string
 
-LDIFF_SYM459=Lme_93 - System_Runtime_Diagnostics_EtwDiagnosticTrace_BuildTrace_System_Runtime_Diagnostics_EventDescriptor__string_System_Runtime_TracePayload_string
-	.long LDIFF_SYM459
+LDIFF_SYM461=Lme_93 - System_Runtime_Diagnostics_EtwDiagnosticTrace_BuildTrace_System_Runtime_Diagnostics_EventDescriptor__string_System_Runtime_TracePayload_string
+	.long LDIFF_SYM461
 	.long 0
 	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,154,20
 	.align 3
@@ -9645,198 +9655,198 @@ LTDIE_68:
 	.asciz "_EtwEnableCallback"
 
 	.byte 128,1,16
-LDIFF_SYM460=LTDIE_36 - Ldebug_info_start
-	.long LDIFF_SYM460
+LDIFF_SYM462=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM462
 	.byte 2,35,0,0,7
 	.asciz "_EtwEnableCallback"
 
-LDIFF_SYM461=LTDIE_68 - Ldebug_info_start
-	.long LDIFF_SYM461
+LDIFF_SYM463=LTDIE_68 - Ldebug_info_start
+	.long LDIFF_SYM463
 LTDIE_68_POINTER:
 
 	.byte 13
-LDIFF_SYM462=LTDIE_68 - Ldebug_info_start
-	.long LDIFF_SYM462
+LDIFF_SYM464=LTDIE_68 - Ldebug_info_start
+	.long LDIFF_SYM464
 LTDIE_68_REFERENCE:
 
 	.byte 14
-LDIFF_SYM463=LTDIE_68 - Ldebug_info_start
-	.long LDIFF_SYM463
+LDIFF_SYM465=LTDIE_68 - Ldebug_info_start
+	.long LDIFF_SYM465
 LTDIE_67:
 
 	.byte 5
 	.asciz "System_Runtime_Diagnostics_DiagnosticsEventProvider"
 
 	.byte 80,16
-LDIFF_SYM464=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM464
+LDIFF_SYM466=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM466
 	.byte 2,35,0,6
 	.asciz "etwCallback"
 
-LDIFF_SYM465=LTDIE_68_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM465
+LDIFF_SYM467=LTDIE_68_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM467
 	.byte 2,35,16,6
 	.asciz "traceRegistrationHandle"
 
-LDIFF_SYM466=LDIE_I8 - Ldebug_info_start
-	.long LDIFF_SYM466
+LDIFF_SYM468=LDIE_I8 - Ldebug_info_start
+	.long LDIFF_SYM468
 	.byte 2,35,24,6
 	.asciz "currentTraceLevel"
 
-LDIFF_SYM467=LDIE_U1 - Ldebug_info_start
-	.long LDIFF_SYM467
+LDIFF_SYM469=LDIE_U1 - Ldebug_info_start
+	.long LDIFF_SYM469
 	.byte 2,35,32,6
 	.asciz "anyKeywordMask"
 
-LDIFF_SYM468=LDIE_I8 - Ldebug_info_start
-	.long LDIFF_SYM468
+LDIFF_SYM470=LDIE_I8 - Ldebug_info_start
+	.long LDIFF_SYM470
 	.byte 2,35,40,6
 	.asciz "allKeywordMask"
 
-LDIFF_SYM469=LDIE_I8 - Ldebug_info_start
-	.long LDIFF_SYM469
+LDIFF_SYM471=LDIE_I8 - Ldebug_info_start
+	.long LDIFF_SYM471
 	.byte 2,35,48,6
 	.asciz "isProviderEnabled"
 
-LDIFF_SYM470=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM470
+LDIFF_SYM472=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM472
 	.byte 2,35,56,6
 	.asciz "providerId"
 
-LDIFF_SYM471=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM471
+LDIFF_SYM473=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM473
 	.byte 2,35,60,6
 	.asciz "isDisposed"
 
-LDIFF_SYM472=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM472
+LDIFF_SYM474=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM474
 	.byte 2,35,76,0,7
 	.asciz "System_Runtime_Diagnostics_DiagnosticsEventProvider"
 
-LDIFF_SYM473=LTDIE_67 - Ldebug_info_start
-	.long LDIFF_SYM473
+LDIFF_SYM475=LTDIE_67 - Ldebug_info_start
+	.long LDIFF_SYM475
 LTDIE_67_POINTER:
 
 	.byte 13
-LDIFF_SYM474=LTDIE_67 - Ldebug_info_start
-	.long LDIFF_SYM474
+LDIFF_SYM476=LTDIE_67 - Ldebug_info_start
+	.long LDIFF_SYM476
 LTDIE_67_REFERENCE:
 
 	.byte 14
-LDIFF_SYM475=LTDIE_67 - Ldebug_info_start
-	.long LDIFF_SYM475
+LDIFF_SYM477=LTDIE_67 - Ldebug_info_start
+	.long LDIFF_SYM477
 LTDIE_69:
 
 	.byte 5
 	.asciz "System_Action"
 
 	.byte 128,1,16
-LDIFF_SYM476=LTDIE_36 - Ldebug_info_start
-	.long LDIFF_SYM476
+LDIFF_SYM478=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM478
 	.byte 2,35,0,0,7
 	.asciz "System_Action"
 
-LDIFF_SYM477=LTDIE_69 - Ldebug_info_start
-	.long LDIFF_SYM477
+LDIFF_SYM479=LTDIE_69 - Ldebug_info_start
+	.long LDIFF_SYM479
 LTDIE_69_POINTER:
 
 	.byte 13
-LDIFF_SYM478=LTDIE_69 - Ldebug_info_start
-	.long LDIFF_SYM478
+LDIFF_SYM480=LTDIE_69 - Ldebug_info_start
+	.long LDIFF_SYM480
 LTDIE_69_REFERENCE:
 
 	.byte 14
-LDIFF_SYM479=LTDIE_69 - Ldebug_info_start
-	.long LDIFF_SYM479
+LDIFF_SYM481=LTDIE_69 - Ldebug_info_start
+	.long LDIFF_SYM481
 LTDIE_66:
 
 	.byte 5
 	.asciz "System_Runtime_Diagnostics_EtwProvider"
 
 	.byte 96,16
-LDIFF_SYM480=LTDIE_67 - Ldebug_info_start
-	.long LDIFF_SYM480
+LDIFF_SYM482=LTDIE_67 - Ldebug_info_start
+	.long LDIFF_SYM482
 	.byte 2,35,0,6
 	.asciz "invokeControllerCallback"
 
-LDIFF_SYM481=LTDIE_69_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM481
+LDIFF_SYM483=LTDIE_69_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM483
 	.byte 2,35,80,6
 	.asciz "end2EndActivityTracingEnabled"
 
-LDIFF_SYM482=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM482
+LDIFF_SYM484=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM484
 	.byte 2,35,88,0,7
 	.asciz "System_Runtime_Diagnostics_EtwProvider"
 
-LDIFF_SYM483=LTDIE_66 - Ldebug_info_start
-	.long LDIFF_SYM483
+LDIFF_SYM485=LTDIE_66 - Ldebug_info_start
+	.long LDIFF_SYM485
 LTDIE_66_POINTER:
 
 	.byte 13
-LDIFF_SYM484=LTDIE_66 - Ldebug_info_start
-	.long LDIFF_SYM484
+LDIFF_SYM486=LTDIE_66 - Ldebug_info_start
+	.long LDIFF_SYM486
 LTDIE_66_REFERENCE:
 
 	.byte 14
-LDIFF_SYM485=LTDIE_66 - Ldebug_info_start
-	.long LDIFF_SYM485
+LDIFF_SYM487=LTDIE_66 - Ldebug_info_start
+	.long LDIFF_SYM487
 LTDIE_65:
 
 	.byte 5
 	.asciz "System_Runtime_Diagnostics_EtwDiagnosticTrace"
 
 	.byte 88,16
-LDIFF_SYM486=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM486
+LDIFF_SYM488=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM488
 	.byte 2,35,0,6
 	.asciz "etwProvider"
 
-LDIFF_SYM487=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM487
+LDIFF_SYM489=LTDIE_66_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM489
 	.byte 2,35,64,6
 	.asciz "etwProviderId"
 
-LDIFF_SYM488=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM488
+LDIFF_SYM490=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM490
 	.byte 2,35,72,0,7
 	.asciz "System_Runtime_Diagnostics_EtwDiagnosticTrace"
 
-LDIFF_SYM489=LTDIE_65 - Ldebug_info_start
-	.long LDIFF_SYM489
+LDIFF_SYM491=LTDIE_65 - Ldebug_info_start
+	.long LDIFF_SYM491
 LTDIE_65_POINTER:
 
 	.byte 13
-LDIFF_SYM490=LTDIE_65 - Ldebug_info_start
-	.long LDIFF_SYM490
+LDIFF_SYM492=LTDIE_65 - Ldebug_info_start
+	.long LDIFF_SYM492
 LTDIE_65_REFERENCE:
 
 	.byte 14
-LDIFF_SYM491=LTDIE_65 - Ldebug_info_start
-	.long LDIFF_SYM491
+LDIFF_SYM493=LTDIE_65 - Ldebug_info_start
+	.long LDIFF_SYM493
 LTDIE_70:
 
 	.byte 5
 	.asciz "System_Runtime_Diagnostics_TraceRecord"
 
 	.byte 16,16
-LDIFF_SYM492=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM492
+LDIFF_SYM494=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM494
 	.byte 2,35,0,0,7
 	.asciz "System_Runtime_Diagnostics_TraceRecord"
 
-LDIFF_SYM493=LTDIE_70 - Ldebug_info_start
-	.long LDIFF_SYM493
+LDIFF_SYM495=LTDIE_70 - Ldebug_info_start
+	.long LDIFF_SYM495
 LTDIE_70_POINTER:
 
 	.byte 13
-LDIFF_SYM494=LTDIE_70 - Ldebug_info_start
-	.long LDIFF_SYM494
+LDIFF_SYM496=LTDIE_70 - Ldebug_info_start
+	.long LDIFF_SYM496
 LTDIE_70_REFERENCE:
 
 	.byte 14
-LDIFF_SYM495=LTDIE_70 - Ldebug_info_start
-	.long LDIFF_SYM495
+LDIFF_SYM497=LTDIE_70 - Ldebug_info_start
+	.long LDIFF_SYM497
 	.byte 2
 	.asciz "System.Runtime.Diagnostics.EtwDiagnosticTrace:GetSerializedPayload"
 	.asciz "System_Runtime_Diagnostics_EtwDiagnosticTrace_GetSerializedPayload_object_System_Runtime_Diagnostics_TraceRecord_System_Exception_bool"
@@ -9848,72 +9858,72 @@ LDIFF_SYM495=LTDIE_70 - Ldebug_info_start
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM496=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM496
+LDIFF_SYM498=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM498
 	.byte 0,3
 	.asciz "source"
 
-LDIFF_SYM497=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM497
+LDIFF_SYM499=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM499
 	.byte 2,141,56,3
 	.asciz "traceRecord"
 
-LDIFF_SYM498=LTDIE_70_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM498
+LDIFF_SYM500=LTDIE_70_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM500
 	.byte 3,141,192,0,3
 	.asciz "exception"
 
-LDIFF_SYM499=LTDIE_16_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM499
+LDIFF_SYM501=LTDIE_16_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM501
 	.byte 3,141,200,0,3
 	.asciz "getServiceReference"
 
-LDIFF_SYM500=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM500
+LDIFF_SYM502=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM502
 	.byte 3,141,208,0,11
 	.asciz "eventSource"
 
-LDIFF_SYM501=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM501
+LDIFF_SYM503=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM503
 	.byte 1,102,11
 	.asciz "extendedData"
 
-LDIFF_SYM502=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM502
+LDIFF_SYM504=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM504
 	.byte 1,101,11
 	.asciz "serializedException"
 
-LDIFF_SYM503=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM503
+LDIFF_SYM505=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM505
 	.byte 1,100,11
 	.asciz "sb"
 
-LDIFF_SYM504=LTDIE_45_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM504
+LDIFF_SYM506=LTDIE_45_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM506
 	.byte 3,141,248,1,11
 	.asciz "stringWriter"
 
-LDIFF_SYM505=LTDIE_46_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM505
+LDIFF_SYM507=LTDIE_46_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM507
 	.byte 3,141,128,2,11
 	.asciz "writer"
 
-LDIFF_SYM506=LTDIE_50_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM506
+LDIFF_SYM508=LTDIE_50_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM508
 	.byte 3,141,136,2,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM507=Lfde2_end - Lfde2_start
-	.long LDIFF_SYM507
+LDIFF_SYM509=Lfde2_end - Lfde2_start
+	.long LDIFF_SYM509
 Lfde2_start:
 
 	.long 0
 	.align 3
 	.quad System_Runtime_Diagnostics_EtwDiagnosticTrace_GetSerializedPayload_object_System_Runtime_Diagnostics_TraceRecord_System_Exception_bool
 
-LDIFF_SYM508=Lme_98 - System_Runtime_Diagnostics_EtwDiagnosticTrace_GetSerializedPayload_object_System_Runtime_Diagnostics_TraceRecord_System_Exception_bool
-	.long LDIFF_SYM508
+LDIFF_SYM510=Lme_98 - System_Runtime_Diagnostics_EtwDiagnosticTrace_GetSerializedPayload_object_System_Runtime_Diagnostics_TraceRecord_System_Exception_bool
+	.long LDIFF_SYM510
 	.long 0
 	.byte 12,31,0,68,14,128,3,157,48,158,47,68,13,29,68,148,46,149,45,68,150,44
 	.align 3
@@ -9932,47 +9942,47 @@ Lfde2_end:
 	.byte 2,118,16,3
 	.asciz "exception"
 
-LDIFF_SYM509=LTDIE_16_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM509
+LDIFF_SYM511=LTDIE_16_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM511
 	.byte 2,141,24,3
 	.asciz "maxTraceStringLength"
 
-LDIFF_SYM510=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM510
+LDIFF_SYM512=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM512
 	.byte 2,141,32,11
 	.asciz "sb"
 
-LDIFF_SYM511=LTDIE_45_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM511
+LDIFF_SYM513=LTDIE_45_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM513
 	.byte 2,141,40,11
 	.asciz "stringWriter"
 
-LDIFF_SYM512=LTDIE_46_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM512
+LDIFF_SYM514=LTDIE_46_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM514
 	.byte 2,141,48,11
 	.asciz "xml"
 
-LDIFF_SYM513=LTDIE_50_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM513
+LDIFF_SYM515=LTDIE_50_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM515
 	.byte 2,141,56,11
 	.asciz "V_3"
 
-LDIFF_SYM514=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM514
+LDIFF_SYM516=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM516
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM515=Lfde3_end - Lfde3_start
-	.long LDIFF_SYM515
+LDIFF_SYM517=Lfde3_end - Lfde3_start
+	.long LDIFF_SYM517
 Lfde3_start:
 
 	.long 0
 	.align 3
 	.quad System_Runtime_Diagnostics_EtwDiagnosticTrace_ExceptionToTraceString_System_Exception_int
 
-LDIFF_SYM516=Lme_a2 - System_Runtime_Diagnostics_EtwDiagnosticTrace_ExceptionToTraceString_System_Exception_int
-	.long LDIFF_SYM516
+LDIFF_SYM518=Lme_a2 - System_Runtime_Diagnostics_EtwDiagnosticTrace_ExceptionToTraceString_System_Exception_int
+	.long LDIFF_SYM518
 	.long 0
 	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,154,20
 	.align 3
@@ -9987,92 +9997,92 @@ LTDIE_71:
 	.byte 16,7
 	.asciz "System_Collections_Generic_IList`1"
 
-LDIFF_SYM517=LTDIE_71 - Ldebug_info_start
-	.long LDIFF_SYM517
+LDIFF_SYM519=LTDIE_71 - Ldebug_info_start
+	.long LDIFF_SYM519
 LTDIE_71_POINTER:
 
 	.byte 13
-LDIFF_SYM518=LTDIE_71 - Ldebug_info_start
-	.long LDIFF_SYM518
+LDIFF_SYM520=LTDIE_71 - Ldebug_info_start
+	.long LDIFF_SYM520
 LTDIE_71_REFERENCE:
 
 	.byte 14
-LDIFF_SYM519=LTDIE_71 - Ldebug_info_start
-	.long LDIFF_SYM519
+LDIFF_SYM521=LTDIE_71 - Ldebug_info_start
+	.long LDIFF_SYM521
 LTDIE_74:
 
 	.byte 5
 	.asciz "System_SystemException"
 
 	.byte 136,1,16
-LDIFF_SYM520=LTDIE_16 - Ldebug_info_start
-	.long LDIFF_SYM520
+LDIFF_SYM522=LTDIE_16 - Ldebug_info_start
+	.long LDIFF_SYM522
 	.byte 2,35,0,0,7
 	.asciz "System_SystemException"
 
-LDIFF_SYM521=LTDIE_74 - Ldebug_info_start
-	.long LDIFF_SYM521
+LDIFF_SYM523=LTDIE_74 - Ldebug_info_start
+	.long LDIFF_SYM523
 LTDIE_74_POINTER:
 
 	.byte 13
-LDIFF_SYM522=LTDIE_74 - Ldebug_info_start
-	.long LDIFF_SYM522
+LDIFF_SYM524=LTDIE_74 - Ldebug_info_start
+	.long LDIFF_SYM524
 LTDIE_74_REFERENCE:
 
 	.byte 14
-LDIFF_SYM523=LTDIE_74 - Ldebug_info_start
-	.long LDIFF_SYM523
+LDIFF_SYM525=LTDIE_74 - Ldebug_info_start
+	.long LDIFF_SYM525
 LTDIE_73:
 
 	.byte 5
 	.asciz "System_Runtime_InteropServices_ExternalException"
 
 	.byte 136,1,16
-LDIFF_SYM524=LTDIE_74 - Ldebug_info_start
-	.long LDIFF_SYM524
+LDIFF_SYM526=LTDIE_74 - Ldebug_info_start
+	.long LDIFF_SYM526
 	.byte 2,35,0,0,7
 	.asciz "System_Runtime_InteropServices_ExternalException"
 
-LDIFF_SYM525=LTDIE_73 - Ldebug_info_start
-	.long LDIFF_SYM525
+LDIFF_SYM527=LTDIE_73 - Ldebug_info_start
+	.long LDIFF_SYM527
 LTDIE_73_POINTER:
 
 	.byte 13
-LDIFF_SYM526=LTDIE_73 - Ldebug_info_start
-	.long LDIFF_SYM526
+LDIFF_SYM528=LTDIE_73 - Ldebug_info_start
+	.long LDIFF_SYM528
 LTDIE_73_REFERENCE:
 
 	.byte 14
-LDIFF_SYM527=LTDIE_73 - Ldebug_info_start
-	.long LDIFF_SYM527
+LDIFF_SYM529=LTDIE_73 - Ldebug_info_start
+	.long LDIFF_SYM529
 LTDIE_72:
 
 	.byte 5
 	.asciz "System_ComponentModel_Win32Exception"
 
 	.byte 144,1,16
-LDIFF_SYM528=LTDIE_73 - Ldebug_info_start
-	.long LDIFF_SYM528
+LDIFF_SYM530=LTDIE_73 - Ldebug_info_start
+	.long LDIFF_SYM530
 	.byte 2,35,0,6
 	.asciz "nativeErrorCode"
 
-LDIFF_SYM529=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM529
+LDIFF_SYM531=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM531
 	.byte 3,35,136,1,0,7
 	.asciz "System_ComponentModel_Win32Exception"
 
-LDIFF_SYM530=LTDIE_72 - Ldebug_info_start
-	.long LDIFF_SYM530
+LDIFF_SYM532=LTDIE_72 - Ldebug_info_start
+	.long LDIFF_SYM532
 LTDIE_72_POINTER:
 
 	.byte 13
-LDIFF_SYM531=LTDIE_72 - Ldebug_info_start
-	.long LDIFF_SYM531
+LDIFF_SYM533=LTDIE_72 - Ldebug_info_start
+	.long LDIFF_SYM533
 LTDIE_72_REFERENCE:
 
 	.byte 14
-LDIFF_SYM532=LTDIE_72 - Ldebug_info_start
-	.long LDIFF_SYM532
+LDIFF_SYM534=LTDIE_72 - Ldebug_info_start
+	.long LDIFF_SYM534
 LTDIE_75:
 
 	.byte 17
@@ -10081,51 +10091,51 @@ LTDIE_75:
 	.byte 16,7
 	.asciz "System_Collections_Generic_IEnumerator`1"
 
-LDIFF_SYM533=LTDIE_75 - Ldebug_info_start
-	.long LDIFF_SYM533
+LDIFF_SYM535=LTDIE_75 - Ldebug_info_start
+	.long LDIFF_SYM535
 LTDIE_75_POINTER:
 
 	.byte 13
-LDIFF_SYM534=LTDIE_75 - Ldebug_info_start
-	.long LDIFF_SYM534
+LDIFF_SYM536=LTDIE_75 - Ldebug_info_start
+	.long LDIFF_SYM536
 LTDIE_75_REFERENCE:
 
 	.byte 14
-LDIFF_SYM535=LTDIE_75 - Ldebug_info_start
-	.long LDIFF_SYM535
+LDIFF_SYM537=LTDIE_75 - Ldebug_info_start
+	.long LDIFF_SYM537
 LTDIE_76:
 
 	.byte 5
 	.asciz "System_Tuple`2"
 
 	.byte 32,16
-LDIFF_SYM536=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM536
+LDIFF_SYM538=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM538
 	.byte 2,35,0,6
 	.asciz "m_Item1"
 
-LDIFF_SYM537=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM537
+LDIFF_SYM539=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM539
 	.byte 2,35,16,6
 	.asciz "m_Item2"
 
-LDIFF_SYM538=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM538
+LDIFF_SYM540=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM540
 	.byte 2,35,24,0,7
 	.asciz "System_Tuple`2"
 
-LDIFF_SYM539=LTDIE_76 - Ldebug_info_start
-	.long LDIFF_SYM539
+LDIFF_SYM541=LTDIE_76 - Ldebug_info_start
+	.long LDIFF_SYM541
 LTDIE_76_POINTER:
 
 	.byte 13
-LDIFF_SYM540=LTDIE_76 - Ldebug_info_start
-	.long LDIFF_SYM540
+LDIFF_SYM542=LTDIE_76 - Ldebug_info_start
+	.long LDIFF_SYM542
 LTDIE_76_REFERENCE:
 
 	.byte 14
-LDIFF_SYM541=LTDIE_76 - Ldebug_info_start
-	.long LDIFF_SYM541
+LDIFF_SYM543=LTDIE_76 - Ldebug_info_start
+	.long LDIFF_SYM543
 	.byte 2
 	.asciz "System.Runtime.Diagnostics.EtwDiagnosticTrace:WriteExceptionToTraceString"
 	.asciz "System_Runtime_Diagnostics_EtwDiagnosticTrace_WriteExceptionToTraceString_System_Xml_XmlTextWriter_System_Exception_int_int"
@@ -10137,72 +10147,72 @@ LDIFF_SYM541=LTDIE_76 - Ldebug_info_start
 	.byte 2,118,16,3
 	.asciz "xml"
 
-LDIFF_SYM542=LTDIE_50_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM542
+LDIFF_SYM544=LTDIE_50_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM544
 	.byte 3,141,200,0,3
 	.asciz "exception"
 
-LDIFF_SYM543=LTDIE_16_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM543
+LDIFF_SYM545=LTDIE_16_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM545
 	.byte 1,105,3
 	.asciz "remainingLength"
 
-LDIFF_SYM544=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM544
+LDIFF_SYM546=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM546
 	.byte 3,141,208,0,3
 	.asciz "remainingAllowedRecursionDepth"
 
-LDIFF_SYM545=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM545
+LDIFF_SYM547=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM547
 	.byte 1,106,11
 	.asciz "exceptionInfo"
 
-LDIFF_SYM546=LTDIE_71_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM546
+LDIFF_SYM548=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM548
 	.byte 1,104,11
 	.asciz "win32Exception"
 
-LDIFF_SYM547=LTDIE_72_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM547
+LDIFF_SYM549=LTDIE_72_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM549
 	.byte 1,102,11
 	.asciz "V_2"
 
-LDIFF_SYM548=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM548
+LDIFF_SYM550=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM550
 	.byte 3,141,216,0,11
 	.asciz "V_3"
 
-LDIFF_SYM549=LTDIE_75_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM549
+LDIFF_SYM551=LTDIE_75_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM551
 	.byte 3,141,224,0,11
 	.asciz "item"
 
-LDIFF_SYM550=LTDIE_76_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM550
+LDIFF_SYM552=LTDIE_76_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM552
 	.byte 1,104,11
 	.asciz "exceptionData"
 
-LDIFF_SYM551=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM551
+LDIFF_SYM553=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM553
 	.byte 1,104,11
 	.asciz "innerException"
 
-LDIFF_SYM552=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM552
+LDIFF_SYM554=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM554
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM553=Lfde4_end - Lfde4_start
-	.long LDIFF_SYM553
+LDIFF_SYM555=Lfde4_end - Lfde4_start
+	.long LDIFF_SYM555
 Lfde4_start:
 
 	.long 0
 	.align 3
 	.quad System_Runtime_Diagnostics_EtwDiagnosticTrace_WriteExceptionToTraceString_System_Xml_XmlTextWriter_System_Exception_int_int
 
-LDIFF_SYM554=Lme_a3 - System_Runtime_Diagnostics_EtwDiagnosticTrace_WriteExceptionToTraceString_System_Xml_XmlTextWriter_System_Exception_int_int
-	.long LDIFF_SYM554
+LDIFF_SYM556=Lme_a3 - System_Runtime_Diagnostics_EtwDiagnosticTrace_WriteExceptionToTraceString_System_Xml_XmlTextWriter_System_Exception_int_int
+	.long LDIFF_SYM556
 	.long 0
 	.byte 12,31,0,68,14,208,1,157,26,158,25,68,13,29,68,148,24,149,23,68,150,22,151,21,68,152,20,153,19,68,154,18
 	.align 3
@@ -10221,52 +10231,52 @@ Lfde4_end:
 	.byte 2,118,16,3
 	.asciz "exception"
 
-LDIFF_SYM555=LTDIE_16_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM555
+LDIFF_SYM557=LTDIE_16_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM557
 	.byte 2,141,24,3
 	.asciz "remainingLength"
 
-LDIFF_SYM556=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM556
+LDIFF_SYM558=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM558
 	.byte 2,141,32,3
 	.asciz "remainingAllowedRecursionDepth"
 
-LDIFF_SYM557=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM557
+LDIFF_SYM559=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM559
 	.byte 1,106,11
 	.asciz "sb"
 
-LDIFF_SYM558=LTDIE_45_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM558
+LDIFF_SYM560=LTDIE_45_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM560
 	.byte 2,141,40,11
 	.asciz "stringWriter"
 
-LDIFF_SYM559=LTDIE_46_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM559
+LDIFF_SYM561=LTDIE_46_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM561
 	.byte 2,141,48,11
 	.asciz "xml"
 
-LDIFF_SYM560=LTDIE_50_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM560
+LDIFF_SYM562=LTDIE_50_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM562
 	.byte 2,141,56,11
 	.asciz "V_3"
 
-LDIFF_SYM561=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM561
+LDIFF_SYM563=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM563
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM562=Lfde5_end - Lfde5_start
-	.long LDIFF_SYM562
+LDIFF_SYM564=Lfde5_end - Lfde5_start
+	.long LDIFF_SYM564
 Lfde5_start:
 
 	.long 0
 	.align 3
 	.quad System_Runtime_Diagnostics_EtwDiagnosticTrace_GetInnerException_System_Exception_int_int
 
-LDIFF_SYM563=Lme_a4 - System_Runtime_Diagnostics_EtwDiagnosticTrace_GetInnerException_System_Exception_int_int
-	.long LDIFF_SYM563
+LDIFF_SYM565=Lme_a4 - System_Runtime_Diagnostics_EtwDiagnosticTrace_GetInnerException_System_Exception_int_int
+	.long LDIFF_SYM565
 	.long 0
 	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,154,20
 	.align 3
@@ -10281,18 +10291,18 @@ LTDIE_77:
 	.byte 16,7
 	.asciz "System_Collections_IEnumerator"
 
-LDIFF_SYM564=LTDIE_77 - Ldebug_info_start
-	.long LDIFF_SYM564
+LDIFF_SYM566=LTDIE_77 - Ldebug_info_start
+	.long LDIFF_SYM566
 LTDIE_77_POINTER:
 
 	.byte 13
-LDIFF_SYM565=LTDIE_77 - Ldebug_info_start
-	.long LDIFF_SYM565
+LDIFF_SYM567=LTDIE_77 - Ldebug_info_start
+	.long LDIFF_SYM567
 LTDIE_77_REFERENCE:
 
 	.byte 14
-LDIFF_SYM566=LTDIE_77 - Ldebug_info_start
-	.long LDIFF_SYM566
+LDIFF_SYM568=LTDIE_77 - Ldebug_info_start
+	.long LDIFF_SYM568
 LTDIE_78:
 
 	.byte 17
@@ -10301,18 +10311,18 @@ LTDIE_78:
 	.byte 16,7
 	.asciz "System_IDisposable"
 
-LDIFF_SYM567=LTDIE_78 - Ldebug_info_start
-	.long LDIFF_SYM567
+LDIFF_SYM569=LTDIE_78 - Ldebug_info_start
+	.long LDIFF_SYM569
 LTDIE_78_POINTER:
 
 	.byte 13
-LDIFF_SYM568=LTDIE_78 - Ldebug_info_start
-	.long LDIFF_SYM568
+LDIFF_SYM570=LTDIE_78 - Ldebug_info_start
+	.long LDIFF_SYM570
 LTDIE_78_REFERENCE:
 
 	.byte 14
-LDIFF_SYM569=LTDIE_78 - Ldebug_info_start
-	.long LDIFF_SYM569
+LDIFF_SYM571=LTDIE_78 - Ldebug_info_start
+	.long LDIFF_SYM571
 	.byte 2
 	.asciz "System.Runtime.Diagnostics.EtwDiagnosticTrace:GetExceptionData"
 	.asciz "System_Runtime_Diagnostics_EtwDiagnosticTrace_GetExceptionData_System_Exception"
@@ -10324,57 +10334,57 @@ LDIFF_SYM569=LTDIE_78 - Ldebug_info_start
 	.byte 2,118,16,3
 	.asciz "exception"
 
-LDIFF_SYM570=LTDIE_16_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM570
+LDIFF_SYM572=LTDIE_16_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM572
 	.byte 1,106,11
 	.asciz "sb"
 
-LDIFF_SYM571=LTDIE_45_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM571
+LDIFF_SYM573=LTDIE_45_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM573
 	.byte 2,141,32,11
 	.asciz "stringWriter"
 
-LDIFF_SYM572=LTDIE_46_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM572
+LDIFF_SYM574=LTDIE_46_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM574
 	.byte 2,141,40,11
 	.asciz "xml"
 
-LDIFF_SYM573=LTDIE_50_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM573
+LDIFF_SYM575=LTDIE_50_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM575
 	.byte 2,141,48,11
 	.asciz "V_3"
 
-LDIFF_SYM574=LTDIE_77_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM574
+LDIFF_SYM576=LTDIE_77_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM576
 	.byte 2,141,56,11
 	.asciz "dataItem"
 
-LDIFF_SYM575=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM575
+LDIFF_SYM577=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM577
 	.byte 1,105,11
 	.asciz "V_5"
 
-LDIFF_SYM576=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM576
+LDIFF_SYM578=LTDIE_78_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM578
 	.byte 3,141,192,0,11
 	.asciz "V_6"
 
-LDIFF_SYM577=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM577
+LDIFF_SYM579=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM579
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM578=Lfde6_end - Lfde6_start
-	.long LDIFF_SYM578
+LDIFF_SYM580=Lfde6_end - Lfde6_start
+	.long LDIFF_SYM580
 Lfde6_start:
 
 	.long 0
 	.align 3
 	.quad System_Runtime_Diagnostics_EtwDiagnosticTrace_GetExceptionData_System_Exception
 
-LDIFF_SYM579=Lme_a5 - System_Runtime_Diagnostics_EtwDiagnosticTrace_GetExceptionData_System_Exception
-	.long LDIFF_SYM579
+LDIFF_SYM581=Lme_a5 - System_Runtime_Diagnostics_EtwDiagnosticTrace_GetExceptionData_System_Exception
+	.long LDIFF_SYM581
 	.long 0
 	.byte 12,31,0,68,14,224,1,157,28,158,27,68,13,29,68,153,26,154,25
 	.align 3
@@ -10387,8 +10397,8 @@ LTDIE_79:
 	.asciz "System_Diagnostics_TraceEventType"
 
 	.byte 4
-LDIFF_SYM580=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM580
+LDIFF_SYM582=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM582
 	.byte 9
 	.asciz "Critical"
 
@@ -10422,147 +10432,147 @@ LDIFF_SYM580=LDIE_I4 - Ldebug_info_start
 	.byte 128,32,0,7
 	.asciz "System_Diagnostics_TraceEventType"
 
-LDIFF_SYM581=LTDIE_79 - Ldebug_info_start
-	.long LDIFF_SYM581
+LDIFF_SYM583=LTDIE_79 - Ldebug_info_start
+	.long LDIFF_SYM583
 LTDIE_79_POINTER:
 
 	.byte 13
-LDIFF_SYM582=LTDIE_79 - Ldebug_info_start
-	.long LDIFF_SYM582
+LDIFF_SYM584=LTDIE_79 - Ldebug_info_start
+	.long LDIFF_SYM584
 LTDIE_79_REFERENCE:
 
 	.byte 14
-LDIFF_SYM583=LTDIE_79 - Ldebug_info_start
-	.long LDIFF_SYM583
+LDIFF_SYM585=LTDIE_79 - Ldebug_info_start
+	.long LDIFF_SYM585
 LTDIE_81:
 
 	.byte 5
 	.asciz "_KeyCollection"
 
 	.byte 24,16
-LDIFF_SYM584=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM584
+LDIFF_SYM586=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM586
 	.byte 2,35,0,6
 	.asciz "_dictionary"
 
-LDIFF_SYM585=LTDIE_80_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM585
+LDIFF_SYM587=LTDIE_80_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM587
 	.byte 2,35,16,0,7
 	.asciz "_KeyCollection"
 
-LDIFF_SYM586=LTDIE_81 - Ldebug_info_start
-	.long LDIFF_SYM586
+LDIFF_SYM588=LTDIE_81 - Ldebug_info_start
+	.long LDIFF_SYM588
 LTDIE_81_POINTER:
 
 	.byte 13
-LDIFF_SYM587=LTDIE_81 - Ldebug_info_start
-	.long LDIFF_SYM587
+LDIFF_SYM589=LTDIE_81 - Ldebug_info_start
+	.long LDIFF_SYM589
 LTDIE_81_REFERENCE:
 
 	.byte 14
-LDIFF_SYM588=LTDIE_81 - Ldebug_info_start
-	.long LDIFF_SYM588
+LDIFF_SYM590=LTDIE_81 - Ldebug_info_start
+	.long LDIFF_SYM590
 LTDIE_82:
 
 	.byte 5
 	.asciz "_ValueCollection"
 
 	.byte 24,16
-LDIFF_SYM589=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM589
+LDIFF_SYM591=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM591
 	.byte 2,35,0,6
 	.asciz "_dictionary"
 
-LDIFF_SYM590=LTDIE_80_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM590
+LDIFF_SYM592=LTDIE_80_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM592
 	.byte 2,35,16,0,7
 	.asciz "_ValueCollection"
 
-LDIFF_SYM591=LTDIE_82 - Ldebug_info_start
-	.long LDIFF_SYM591
+LDIFF_SYM593=LTDIE_82 - Ldebug_info_start
+	.long LDIFF_SYM593
 LTDIE_82_POINTER:
 
 	.byte 13
-LDIFF_SYM592=LTDIE_82 - Ldebug_info_start
-	.long LDIFF_SYM592
+LDIFF_SYM594=LTDIE_82 - Ldebug_info_start
+	.long LDIFF_SYM594
 LTDIE_82_REFERENCE:
 
 	.byte 14
-LDIFF_SYM593=LTDIE_82 - Ldebug_info_start
-	.long LDIFF_SYM593
+LDIFF_SYM595=LTDIE_82 - Ldebug_info_start
+	.long LDIFF_SYM595
 LTDIE_80:
 
 	.byte 5
 	.asciz "System_Collections_Generic_Dictionary`2"
 
 	.byte 80,16
-LDIFF_SYM594=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM594
+LDIFF_SYM596=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM596
 	.byte 2,35,0,6
 	.asciz "_buckets"
 
-LDIFF_SYM595=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM595
+LDIFF_SYM597=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM597
 	.byte 2,35,16,6
 	.asciz "_entries"
 
-LDIFF_SYM596=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM596
+LDIFF_SYM598=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM598
 	.byte 2,35,24,6
 	.asciz "_count"
 
-LDIFF_SYM597=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM597
+LDIFF_SYM599=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM599
 	.byte 2,35,64,6
 	.asciz "_freeList"
 
-LDIFF_SYM598=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM598
+LDIFF_SYM600=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM600
 	.byte 2,35,68,6
 	.asciz "_freeCount"
 
-LDIFF_SYM599=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM599
+LDIFF_SYM601=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM601
 	.byte 2,35,72,6
 	.asciz "_version"
 
-LDIFF_SYM600=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM600
+LDIFF_SYM602=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM602
 	.byte 2,35,76,6
 	.asciz "_comparer"
 
-LDIFF_SYM601=LTDIE_22_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM601
+LDIFF_SYM603=LTDIE_22_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM603
 	.byte 2,35,32,6
 	.asciz "_keys"
 
-LDIFF_SYM602=LTDIE_81_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM602
+LDIFF_SYM604=LTDIE_81_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM604
 	.byte 2,35,40,6
 	.asciz "_values"
 
-LDIFF_SYM603=LTDIE_82_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM603
+LDIFF_SYM605=LTDIE_82_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM605
 	.byte 2,35,48,6
 	.asciz "_syncRoot"
 
-LDIFF_SYM604=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM604
+LDIFF_SYM606=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM606
 	.byte 2,35,56,0,7
 	.asciz "System_Collections_Generic_Dictionary`2"
 
-LDIFF_SYM605=LTDIE_80 - Ldebug_info_start
-	.long LDIFF_SYM605
+LDIFF_SYM607=LTDIE_80 - Ldebug_info_start
+	.long LDIFF_SYM607
 LTDIE_80_POINTER:
 
 	.byte 13
-LDIFF_SYM606=LTDIE_80 - Ldebug_info_start
-	.long LDIFF_SYM606
+LDIFF_SYM608=LTDIE_80 - Ldebug_info_start
+	.long LDIFF_SYM608
 LTDIE_80_REFERENCE:
 
 	.byte 14
-LDIFF_SYM607=LTDIE_80 - Ldebug_info_start
-	.long LDIFF_SYM607
+LDIFF_SYM609=LTDIE_80 - Ldebug_info_start
+	.long LDIFF_SYM609
 	.byte 2
 	.asciz "System.Runtime.Diagnostics.EventLogger:UnsafeLogEvent"
 	.asciz "System_Runtime_Diagnostics_EventLogger_UnsafeLogEvent_System_Diagnostics_TraceEventType_uint16_uint_bool_string__"
@@ -10574,137 +10584,137 @@ LDIFF_SYM607=LTDIE_80 - Ldebug_info_start
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM608=LTDIE_40_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM608
+LDIFF_SYM610=LTDIE_40_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM610
 	.byte 3,141,200,0,3
 	.asciz "type"
 
-LDIFF_SYM609=LTDIE_79 - Ldebug_info_start
-	.long LDIFF_SYM609
+LDIFF_SYM611=LTDIE_79 - Ldebug_info_start
+	.long LDIFF_SYM611
 	.byte 3,141,208,0,3
 	.asciz "eventLogCategory"
 
-LDIFF_SYM610=LDIE_U2 - Ldebug_info_start
-	.long LDIFF_SYM610
+LDIFF_SYM612=LDIE_U2 - Ldebug_info_start
+	.long LDIFF_SYM612
 	.byte 3,141,216,0,3
 	.asciz "eventId"
 
-LDIFF_SYM611=LDIE_U4 - Ldebug_info_start
-	.long LDIFF_SYM611
+LDIFF_SYM613=LDIE_U4 - Ldebug_info_start
+	.long LDIFF_SYM613
 	.byte 3,141,224,0,3
 	.asciz "shouldTrace"
 
-LDIFF_SYM612=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM612
+LDIFF_SYM614=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM614
 	.byte 1,105,3
 	.asciz "values"
 
-LDIFF_SYM613=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM613
+LDIFF_SYM615=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM615
 	.byte 1,106,11
 	.asciz "eventLogEntryLength"
 
-LDIFF_SYM614=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM614
+LDIFF_SYM616=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM616
 	.byte 1,103,11
 	.asciz "logValues"
 
-LDIFF_SYM615=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM615
+LDIFF_SYM617=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM617
 	.byte 1,102,11
 	.asciz "normalizedProcessName"
 
-LDIFF_SYM616=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM616
+LDIFF_SYM618=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM618
 	.byte 1,101,11
 	.asciz "invariantProcessId"
 
-LDIFF_SYM617=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM617
+LDIFF_SYM619=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM619
 	.byte 1,101,11
 	.asciz "sidBA"
 
-LDIFF_SYM618=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM618
+LDIFF_SYM620=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM620
 	.byte 1,103,11
 	.asciz "stringRoots"
 
-LDIFF_SYM619=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM619
+LDIFF_SYM621=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM621
 	.byte 1,101,11
 	.asciz "stringsRootHandle"
 
-LDIFF_SYM620=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM620
+LDIFF_SYM622=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM622
 	.byte 3,141,128,1,11
 	.asciz "stringHandles"
 
-LDIFF_SYM621=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM621
+LDIFF_SYM623=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM623
 	.byte 3,141,136,1,11
 	.asciz "i"
 
-LDIFF_SYM622=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM622
+LDIFF_SYM624=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM624
 	.byte 1,101,11
 	.asciz "stringValue"
 
-LDIFF_SYM623=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM623
+LDIFF_SYM625=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM625
 	.byte 1,100,11
 	.asciz "V_10"
 
-LDIFF_SYM624=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM624
+LDIFF_SYM626=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM626
 	.byte 3,141,144,1,11
 	.asciz "truncationLength"
 
-LDIFF_SYM625=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM625
+LDIFF_SYM627=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM627
 	.byte 1,103,11
 	.asciz "i"
 
-LDIFF_SYM626=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM626
+LDIFF_SYM628=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM628
 	.byte 1,101,11
 	.asciz "strIndex"
 
-LDIFF_SYM627=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM627
+LDIFF_SYM629=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM629
 	.byte 1,100,11
 	.asciz "V_14"
 
-LDIFF_SYM628=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM628
+LDIFF_SYM630=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM630
 	.byte 3,141,152,1,11
 	.asciz "gcHandle"
 
-LDIFF_SYM629=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM629
+LDIFF_SYM631=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM631
 	.byte 3,141,248,0,11
 	.asciz "eventValues"
 
-LDIFF_SYM630=LTDIE_80_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM630
+LDIFF_SYM632=LTDIE_80_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM632
 	.byte 1,105,11
 	.asciz "i"
 
-LDIFF_SYM631=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM631
+LDIFF_SYM633=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM633
 	.byte 3,141,160,1,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM632=Lfde7_end - Lfde7_start
-	.long LDIFF_SYM632
+LDIFF_SYM634=Lfde7_end - Lfde7_start
+	.long LDIFF_SYM634
 Lfde7_start:
 
 	.long 0
 	.align 3
 	.quad System_Runtime_Diagnostics_EventLogger_UnsafeLogEvent_System_Diagnostics_TraceEventType_uint16_uint_bool_string__
 
-LDIFF_SYM633=Lme_bf - System_Runtime_Diagnostics_EventLogger_UnsafeLogEvent_System_Diagnostics_TraceEventType_uint16_uint_bool_string__
-	.long LDIFF_SYM633
+LDIFF_SYM635=Lme_bf - System_Runtime_Diagnostics_EventLogger_UnsafeLogEvent_System_Diagnostics_TraceEventType_uint16_uint_bool_string__
+	.long LDIFF_SYM635
 	.long 0
 	.byte 12,31,0,68,14,224,2,157,44,158,43,68,13,29,68,147,42,148,41,68,149,40,150,39,68,151,38,68,153,37,154,36
 	.align 3
@@ -10719,476 +10729,476 @@ LTDIE_85:
 	.byte 16,7
 	.asciz "System_ComponentModel_ISite"
 
-LDIFF_SYM634=LTDIE_85 - Ldebug_info_start
-	.long LDIFF_SYM634
+LDIFF_SYM636=LTDIE_85 - Ldebug_info_start
+	.long LDIFF_SYM636
 LTDIE_85_POINTER:
 
 	.byte 13
-LDIFF_SYM635=LTDIE_85 - Ldebug_info_start
-	.long LDIFF_SYM635
+LDIFF_SYM637=LTDIE_85 - Ldebug_info_start
+	.long LDIFF_SYM637
 LTDIE_85_REFERENCE:
 
 	.byte 14
-LDIFF_SYM636=LTDIE_85 - Ldebug_info_start
-	.long LDIFF_SYM636
+LDIFF_SYM638=LTDIE_85 - Ldebug_info_start
+	.long LDIFF_SYM638
 LTDIE_87:
 
 	.byte 5
 	.asciz "_ListEntry"
 
 	.byte 40,16
-LDIFF_SYM637=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM637
+LDIFF_SYM639=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM639
 	.byte 2,35,0,6
 	.asciz "_next"
 
-LDIFF_SYM638=LTDIE_87_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM638
+LDIFF_SYM640=LTDIE_87_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM640
 	.byte 2,35,16,6
 	.asciz "_key"
 
-LDIFF_SYM639=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM639
+LDIFF_SYM641=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM641
 	.byte 2,35,24,6
 	.asciz "_handler"
 
-LDIFF_SYM640=LTDIE_37_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM640
+LDIFF_SYM642=LTDIE_37_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM642
 	.byte 2,35,32,0,7
 	.asciz "_ListEntry"
 
-LDIFF_SYM641=LTDIE_87 - Ldebug_info_start
-	.long LDIFF_SYM641
+LDIFF_SYM643=LTDIE_87 - Ldebug_info_start
+	.long LDIFF_SYM643
 LTDIE_87_POINTER:
 
 	.byte 13
-LDIFF_SYM642=LTDIE_87 - Ldebug_info_start
-	.long LDIFF_SYM642
+LDIFF_SYM644=LTDIE_87 - Ldebug_info_start
+	.long LDIFF_SYM644
 LTDIE_87_REFERENCE:
 
 	.byte 14
-LDIFF_SYM643=LTDIE_87 - Ldebug_info_start
-	.long LDIFF_SYM643
+LDIFF_SYM645=LTDIE_87 - Ldebug_info_start
+	.long LDIFF_SYM645
 LTDIE_86:
 
 	.byte 5
 	.asciz "System_ComponentModel_EventHandlerList"
 
 	.byte 32,16
-LDIFF_SYM644=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM644
+LDIFF_SYM646=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM646
 	.byte 2,35,0,6
 	.asciz "_head"
 
-LDIFF_SYM645=LTDIE_87_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM645
+LDIFF_SYM647=LTDIE_87_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM647
 	.byte 2,35,16,6
 	.asciz "_parent"
 
-LDIFF_SYM646=LTDIE_84_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM646
+LDIFF_SYM648=LTDIE_84_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM648
 	.byte 2,35,24,0,7
 	.asciz "System_ComponentModel_EventHandlerList"
 
-LDIFF_SYM647=LTDIE_86 - Ldebug_info_start
-	.long LDIFF_SYM647
+LDIFF_SYM649=LTDIE_86 - Ldebug_info_start
+	.long LDIFF_SYM649
 LTDIE_86_POINTER:
 
 	.byte 13
-LDIFF_SYM648=LTDIE_86 - Ldebug_info_start
-	.long LDIFF_SYM648
+LDIFF_SYM650=LTDIE_86 - Ldebug_info_start
+	.long LDIFF_SYM650
 LTDIE_86_REFERENCE:
 
 	.byte 14
-LDIFF_SYM649=LTDIE_86 - Ldebug_info_start
-	.long LDIFF_SYM649
+LDIFF_SYM651=LTDIE_86 - Ldebug_info_start
+	.long LDIFF_SYM651
 LTDIE_84:
 
 	.byte 5
 	.asciz "System_ComponentModel_Component"
 
 	.byte 40,16
-LDIFF_SYM650=LTDIE_48 - Ldebug_info_start
-	.long LDIFF_SYM650
+LDIFF_SYM652=LTDIE_48 - Ldebug_info_start
+	.long LDIFF_SYM652
 	.byte 2,35,0,6
 	.asciz "site"
 
-LDIFF_SYM651=LTDIE_85_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM651
+LDIFF_SYM653=LTDIE_85_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM653
 	.byte 2,35,24,6
 	.asciz "events"
 
-LDIFF_SYM652=LTDIE_86_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM652
+LDIFF_SYM654=LTDIE_86_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM654
 	.byte 2,35,32,0,7
 	.asciz "System_ComponentModel_Component"
 
-LDIFF_SYM653=LTDIE_84 - Ldebug_info_start
-	.long LDIFF_SYM653
+LDIFF_SYM655=LTDIE_84 - Ldebug_info_start
+	.long LDIFF_SYM655
 LTDIE_84_POINTER:
 
 	.byte 13
-LDIFF_SYM654=LTDIE_84 - Ldebug_info_start
-	.long LDIFF_SYM654
+LDIFF_SYM656=LTDIE_84 - Ldebug_info_start
+	.long LDIFF_SYM656
 LTDIE_84_REFERENCE:
 
 	.byte 14
-LDIFF_SYM655=LTDIE_84 - Ldebug_info_start
-	.long LDIFF_SYM655
+LDIFF_SYM657=LTDIE_84 - Ldebug_info_start
+	.long LDIFF_SYM657
 LTDIE_91:
 
 	.byte 5
 	.asciz "System_Runtime_ConstrainedExecution_CriticalFinalizerObject"
 
 	.byte 16,16
-LDIFF_SYM656=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM656
+LDIFF_SYM658=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM658
 	.byte 2,35,0,0,7
 	.asciz "System_Runtime_ConstrainedExecution_CriticalFinalizerObject"
 
-LDIFF_SYM657=LTDIE_91 - Ldebug_info_start
-	.long LDIFF_SYM657
+LDIFF_SYM659=LTDIE_91 - Ldebug_info_start
+	.long LDIFF_SYM659
 LTDIE_91_POINTER:
 
 	.byte 13
-LDIFF_SYM658=LTDIE_91 - Ldebug_info_start
-	.long LDIFF_SYM658
+LDIFF_SYM660=LTDIE_91 - Ldebug_info_start
+	.long LDIFF_SYM660
 LTDIE_91_REFERENCE:
 
 	.byte 14
-LDIFF_SYM659=LTDIE_91 - Ldebug_info_start
-	.long LDIFF_SYM659
+LDIFF_SYM661=LTDIE_91 - Ldebug_info_start
+	.long LDIFF_SYM661
 LTDIE_90:
 
 	.byte 5
 	.asciz "System_Runtime_InteropServices_SafeHandle"
 
 	.byte 32,16
-LDIFF_SYM660=LTDIE_91 - Ldebug_info_start
-	.long LDIFF_SYM660
+LDIFF_SYM662=LTDIE_91 - Ldebug_info_start
+	.long LDIFF_SYM662
 	.byte 2,35,0,6
 	.asciz "handle"
 
-LDIFF_SYM661=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM661
+LDIFF_SYM663=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM663
 	.byte 2,35,16,6
 	.asciz "_state"
 
-LDIFF_SYM662=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM662
+LDIFF_SYM664=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM664
 	.byte 2,35,24,6
 	.asciz "_ownsHandle"
 
-LDIFF_SYM663=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM663
+LDIFF_SYM665=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM665
 	.byte 2,35,28,6
 	.asciz "_fullyInitialized"
 
-LDIFF_SYM664=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM664
+LDIFF_SYM666=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM666
 	.byte 2,35,29,0,7
 	.asciz "System_Runtime_InteropServices_SafeHandle"
 
-LDIFF_SYM665=LTDIE_90 - Ldebug_info_start
-	.long LDIFF_SYM665
+LDIFF_SYM667=LTDIE_90 - Ldebug_info_start
+	.long LDIFF_SYM667
 LTDIE_90_POINTER:
 
 	.byte 13
-LDIFF_SYM666=LTDIE_90 - Ldebug_info_start
-	.long LDIFF_SYM666
+LDIFF_SYM668=LTDIE_90 - Ldebug_info_start
+	.long LDIFF_SYM668
 LTDIE_90_REFERENCE:
 
 	.byte 14
-LDIFF_SYM667=LTDIE_90 - Ldebug_info_start
-	.long LDIFF_SYM667
+LDIFF_SYM669=LTDIE_90 - Ldebug_info_start
+	.long LDIFF_SYM669
 LTDIE_89:
 
 	.byte 5
 	.asciz "Microsoft_Win32_SafeHandles_SafeHandleZeroOrMinusOneIsInvalid"
 
 	.byte 32,16
-LDIFF_SYM668=LTDIE_90 - Ldebug_info_start
-	.long LDIFF_SYM668
+LDIFF_SYM670=LTDIE_90 - Ldebug_info_start
+	.long LDIFF_SYM670
 	.byte 2,35,0,0,7
 	.asciz "Microsoft_Win32_SafeHandles_SafeHandleZeroOrMinusOneIsInvalid"
 
-LDIFF_SYM669=LTDIE_89 - Ldebug_info_start
-	.long LDIFF_SYM669
+LDIFF_SYM671=LTDIE_89 - Ldebug_info_start
+	.long LDIFF_SYM671
 LTDIE_89_POINTER:
 
 	.byte 13
-LDIFF_SYM670=LTDIE_89 - Ldebug_info_start
-	.long LDIFF_SYM670
+LDIFF_SYM672=LTDIE_89 - Ldebug_info_start
+	.long LDIFF_SYM672
 LTDIE_89_REFERENCE:
 
 	.byte 14
-LDIFF_SYM671=LTDIE_89 - Ldebug_info_start
-	.long LDIFF_SYM671
+LDIFF_SYM673=LTDIE_89 - Ldebug_info_start
+	.long LDIFF_SYM673
 LTDIE_88:
 
 	.byte 5
 	.asciz "Microsoft_Win32_SafeHandles_SafeProcessHandle"
 
 	.byte 32,16
-LDIFF_SYM672=LTDIE_89 - Ldebug_info_start
-	.long LDIFF_SYM672
+LDIFF_SYM674=LTDIE_89 - Ldebug_info_start
+	.long LDIFF_SYM674
 	.byte 2,35,0,0,7
 	.asciz "Microsoft_Win32_SafeHandles_SafeProcessHandle"
 
-LDIFF_SYM673=LTDIE_88 - Ldebug_info_start
-	.long LDIFF_SYM673
+LDIFF_SYM675=LTDIE_88 - Ldebug_info_start
+	.long LDIFF_SYM675
 LTDIE_88_POINTER:
 
 	.byte 13
-LDIFF_SYM674=LTDIE_88 - Ldebug_info_start
-	.long LDIFF_SYM674
+LDIFF_SYM676=LTDIE_88 - Ldebug_info_start
+	.long LDIFF_SYM676
 LTDIE_88_REFERENCE:
 
 	.byte 14
-LDIFF_SYM675=LTDIE_88 - Ldebug_info_start
-	.long LDIFF_SYM675
+LDIFF_SYM677=LTDIE_88 - Ldebug_info_start
+	.long LDIFF_SYM677
 LTDIE_93:
 
 	.byte 5
 	.asciz "System_Collections_ReadOnlyCollectionBase"
 
 	.byte 24,16
-LDIFF_SYM676=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM676
+LDIFF_SYM678=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM678
 	.byte 2,35,0,6
 	.asciz "_list"
 
-LDIFF_SYM677=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM677
+LDIFF_SYM679=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM679
 	.byte 2,35,16,0,7
 	.asciz "System_Collections_ReadOnlyCollectionBase"
 
-LDIFF_SYM678=LTDIE_93 - Ldebug_info_start
-	.long LDIFF_SYM678
+LDIFF_SYM680=LTDIE_93 - Ldebug_info_start
+	.long LDIFF_SYM680
 LTDIE_93_POINTER:
 
 	.byte 13
-LDIFF_SYM679=LTDIE_93 - Ldebug_info_start
-	.long LDIFF_SYM679
+LDIFF_SYM681=LTDIE_93 - Ldebug_info_start
+	.long LDIFF_SYM681
 LTDIE_93_REFERENCE:
 
 	.byte 14
-LDIFF_SYM680=LTDIE_93 - Ldebug_info_start
-	.long LDIFF_SYM680
+LDIFF_SYM682=LTDIE_93 - Ldebug_info_start
+	.long LDIFF_SYM682
 LTDIE_92:
 
 	.byte 5
 	.asciz "System_Diagnostics_ProcessThreadCollection"
 
 	.byte 24,16
-LDIFF_SYM681=LTDIE_93 - Ldebug_info_start
-	.long LDIFF_SYM681
+LDIFF_SYM683=LTDIE_93 - Ldebug_info_start
+	.long LDIFF_SYM683
 	.byte 2,35,0,0,7
 	.asciz "System_Diagnostics_ProcessThreadCollection"
 
-LDIFF_SYM682=LTDIE_92 - Ldebug_info_start
-	.long LDIFF_SYM682
+LDIFF_SYM684=LTDIE_92 - Ldebug_info_start
+	.long LDIFF_SYM684
 LTDIE_92_POINTER:
 
 	.byte 13
-LDIFF_SYM683=LTDIE_92 - Ldebug_info_start
-	.long LDIFF_SYM683
+LDIFF_SYM685=LTDIE_92 - Ldebug_info_start
+	.long LDIFF_SYM685
 LTDIE_92_REFERENCE:
 
 	.byte 14
-LDIFF_SYM684=LTDIE_92 - Ldebug_info_start
-	.long LDIFF_SYM684
+LDIFF_SYM686=LTDIE_92 - Ldebug_info_start
+	.long LDIFF_SYM686
 LTDIE_94:
 
 	.byte 5
 	.asciz "System_Diagnostics_ProcessModuleCollection"
 
 	.byte 24,16
-LDIFF_SYM685=LTDIE_93 - Ldebug_info_start
-	.long LDIFF_SYM685
+LDIFF_SYM687=LTDIE_93 - Ldebug_info_start
+	.long LDIFF_SYM687
 	.byte 2,35,0,0,7
 	.asciz "System_Diagnostics_ProcessModuleCollection"
 
-LDIFF_SYM686=LTDIE_94 - Ldebug_info_start
-	.long LDIFF_SYM686
+LDIFF_SYM688=LTDIE_94 - Ldebug_info_start
+	.long LDIFF_SYM688
 LTDIE_94_POINTER:
 
 	.byte 13
-LDIFF_SYM687=LTDIE_94 - Ldebug_info_start
-	.long LDIFF_SYM687
+LDIFF_SYM689=LTDIE_94 - Ldebug_info_start
+	.long LDIFF_SYM689
 LTDIE_94_REFERENCE:
 
 	.byte 14
-LDIFF_SYM688=LTDIE_94 - Ldebug_info_start
-	.long LDIFF_SYM688
+LDIFF_SYM690=LTDIE_94 - Ldebug_info_start
+	.long LDIFF_SYM690
 LTDIE_95:
 
 	.byte 5
 	.asciz "System_EventHandler"
 
 	.byte 128,1,16
-LDIFF_SYM689=LTDIE_36 - Ldebug_info_start
-	.long LDIFF_SYM689
+LDIFF_SYM691=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM691
 	.byte 2,35,0,0,7
 	.asciz "System_EventHandler"
 
-LDIFF_SYM690=LTDIE_95 - Ldebug_info_start
-	.long LDIFF_SYM690
+LDIFF_SYM692=LTDIE_95 - Ldebug_info_start
+	.long LDIFF_SYM692
 LTDIE_95_POINTER:
 
 	.byte 13
-LDIFF_SYM691=LTDIE_95 - Ldebug_info_start
-	.long LDIFF_SYM691
+LDIFF_SYM693=LTDIE_95 - Ldebug_info_start
+	.long LDIFF_SYM693
 LTDIE_95_REFERENCE:
 
 	.byte 14
-LDIFF_SYM692=LTDIE_95 - Ldebug_info_start
-	.long LDIFF_SYM692
+LDIFF_SYM694=LTDIE_95 - Ldebug_info_start
+	.long LDIFF_SYM694
 LTDIE_98:
 
 	.byte 5
 	.asciz "Microsoft_Win32_SafeHandles_SafeWaitHandle"
 
 	.byte 32,16
-LDIFF_SYM693=LTDIE_89 - Ldebug_info_start
-	.long LDIFF_SYM693
+LDIFF_SYM695=LTDIE_89 - Ldebug_info_start
+	.long LDIFF_SYM695
 	.byte 2,35,0,0,7
 	.asciz "Microsoft_Win32_SafeHandles_SafeWaitHandle"
 
-LDIFF_SYM694=LTDIE_98 - Ldebug_info_start
-	.long LDIFF_SYM694
+LDIFF_SYM696=LTDIE_98 - Ldebug_info_start
+	.long LDIFF_SYM696
 LTDIE_98_POINTER:
 
 	.byte 13
-LDIFF_SYM695=LTDIE_98 - Ldebug_info_start
-	.long LDIFF_SYM695
+LDIFF_SYM697=LTDIE_98 - Ldebug_info_start
+	.long LDIFF_SYM697
 LTDIE_98_REFERENCE:
 
 	.byte 14
-LDIFF_SYM696=LTDIE_98 - Ldebug_info_start
-	.long LDIFF_SYM696
+LDIFF_SYM698=LTDIE_98 - Ldebug_info_start
+	.long LDIFF_SYM698
 LTDIE_97:
 
 	.byte 5
 	.asciz "System_Threading_WaitHandle"
 
 	.byte 48,16
-LDIFF_SYM697=LTDIE_48 - Ldebug_info_start
-	.long LDIFF_SYM697
+LDIFF_SYM699=LTDIE_48 - Ldebug_info_start
+	.long LDIFF_SYM699
 	.byte 2,35,0,6
 	.asciz "waitHandle"
 
-LDIFF_SYM698=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM698
+LDIFF_SYM700=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM700
 	.byte 2,35,24,6
 	.asciz "safeWaitHandle"
 
-LDIFF_SYM699=LTDIE_98_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM699
+LDIFF_SYM701=LTDIE_98_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM701
 	.byte 2,35,32,6
 	.asciz "hasThreadAffinity"
 
-LDIFF_SYM700=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM700
+LDIFF_SYM702=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM702
 	.byte 2,35,40,0,7
 	.asciz "System_Threading_WaitHandle"
 
-LDIFF_SYM701=LTDIE_97 - Ldebug_info_start
-	.long LDIFF_SYM701
+LDIFF_SYM703=LTDIE_97 - Ldebug_info_start
+	.long LDIFF_SYM703
 LTDIE_97_POINTER:
 
 	.byte 13
-LDIFF_SYM702=LTDIE_97 - Ldebug_info_start
-	.long LDIFF_SYM702
+LDIFF_SYM704=LTDIE_97 - Ldebug_info_start
+	.long LDIFF_SYM704
 LTDIE_97_REFERENCE:
 
 	.byte 14
-LDIFF_SYM703=LTDIE_97 - Ldebug_info_start
-	.long LDIFF_SYM703
+LDIFF_SYM705=LTDIE_97 - Ldebug_info_start
+	.long LDIFF_SYM705
 LTDIE_100:
 
 	.byte 5
 	.asciz "System_Threading_EventWaitHandle"
 
 	.byte 48,16
-LDIFF_SYM704=LTDIE_97 - Ldebug_info_start
-	.long LDIFF_SYM704
+LDIFF_SYM706=LTDIE_97 - Ldebug_info_start
+	.long LDIFF_SYM706
 	.byte 2,35,0,0,7
 	.asciz "System_Threading_EventWaitHandle"
 
-LDIFF_SYM705=LTDIE_100 - Ldebug_info_start
-	.long LDIFF_SYM705
+LDIFF_SYM707=LTDIE_100 - Ldebug_info_start
+	.long LDIFF_SYM707
 LTDIE_100_POINTER:
 
 	.byte 13
-LDIFF_SYM706=LTDIE_100 - Ldebug_info_start
-	.long LDIFF_SYM706
+LDIFF_SYM708=LTDIE_100 - Ldebug_info_start
+	.long LDIFF_SYM708
 LTDIE_100_REFERENCE:
 
 	.byte 14
-LDIFF_SYM707=LTDIE_100 - Ldebug_info_start
-	.long LDIFF_SYM707
+LDIFF_SYM709=LTDIE_100 - Ldebug_info_start
+	.long LDIFF_SYM709
 LTDIE_99:
 
 	.byte 5
 	.asciz "System_Threading_ManualResetEvent"
 
 	.byte 48,16
-LDIFF_SYM708=LTDIE_100 - Ldebug_info_start
-	.long LDIFF_SYM708
+LDIFF_SYM710=LTDIE_100 - Ldebug_info_start
+	.long LDIFF_SYM710
 	.byte 2,35,0,0,7
 	.asciz "System_Threading_ManualResetEvent"
 
-LDIFF_SYM709=LTDIE_99 - Ldebug_info_start
-	.long LDIFF_SYM709
+LDIFF_SYM711=LTDIE_99 - Ldebug_info_start
+	.long LDIFF_SYM711
 LTDIE_99_POINTER:
 
 	.byte 13
-LDIFF_SYM710=LTDIE_99 - Ldebug_info_start
-	.long LDIFF_SYM710
+LDIFF_SYM712=LTDIE_99 - Ldebug_info_start
+	.long LDIFF_SYM712
 LTDIE_99_REFERENCE:
 
 	.byte 14
-LDIFF_SYM711=LTDIE_99 - Ldebug_info_start
-	.long LDIFF_SYM711
+LDIFF_SYM713=LTDIE_99 - Ldebug_info_start
+	.long LDIFF_SYM713
 LTDIE_96:
 
 	.byte 5
 	.asciz "System_Threading_RegisteredWaitHandle"
 
 	.byte 48,16
-LDIFF_SYM712=LTDIE_48 - Ldebug_info_start
-	.long LDIFF_SYM712
+LDIFF_SYM714=LTDIE_48 - Ldebug_info_start
+	.long LDIFF_SYM714
 	.byte 2,35,0,6
 	.asciz "_finalEvent"
 
-LDIFF_SYM713=LTDIE_97_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM713
+LDIFF_SYM715=LTDIE_97_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM715
 	.byte 2,35,24,6
 	.asciz "_cancelEvent"
 
-LDIFF_SYM714=LTDIE_99_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM714
+LDIFF_SYM716=LTDIE_99_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM716
 	.byte 2,35,32,6
 	.asciz "_unregistered"
 
-LDIFF_SYM715=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM715
+LDIFF_SYM717=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM717
 	.byte 2,35,40,0,7
 	.asciz "System_Threading_RegisteredWaitHandle"
 
-LDIFF_SYM716=LTDIE_96 - Ldebug_info_start
-	.long LDIFF_SYM716
+LDIFF_SYM718=LTDIE_96 - Ldebug_info_start
+	.long LDIFF_SYM718
 LTDIE_96_POINTER:
 
 	.byte 13
-LDIFF_SYM717=LTDIE_96 - Ldebug_info_start
-	.long LDIFF_SYM717
+LDIFF_SYM719=LTDIE_96 - Ldebug_info_start
+	.long LDIFF_SYM719
 LTDIE_96_REFERENCE:
 
 	.byte 14
-LDIFF_SYM718=LTDIE_96 - Ldebug_info_start
-	.long LDIFF_SYM718
+LDIFF_SYM720=LTDIE_96 - Ldebug_info_start
+	.long LDIFF_SYM720
 LTDIE_101:
 
 	.byte 17
@@ -11197,77 +11207,77 @@ LTDIE_101:
 	.byte 16,7
 	.asciz "System_ComponentModel_ISynchronizeInvoke"
 
-LDIFF_SYM719=LTDIE_101 - Ldebug_info_start
-	.long LDIFF_SYM719
+LDIFF_SYM721=LTDIE_101 - Ldebug_info_start
+	.long LDIFF_SYM721
 LTDIE_101_POINTER:
 
 	.byte 13
-LDIFF_SYM720=LTDIE_101 - Ldebug_info_start
-	.long LDIFF_SYM720
+LDIFF_SYM722=LTDIE_101 - Ldebug_info_start
+	.long LDIFF_SYM722
 LTDIE_101_REFERENCE:
 
 	.byte 14
-LDIFF_SYM721=LTDIE_101 - Ldebug_info_start
-	.long LDIFF_SYM721
+LDIFF_SYM723=LTDIE_101 - Ldebug_info_start
+	.long LDIFF_SYM723
 LTDIE_103:
 
 	.byte 5
 	.asciz "System_IO_TextReader"
 
 	.byte 24,16
-LDIFF_SYM722=LTDIE_48 - Ldebug_info_start
-	.long LDIFF_SYM722
+LDIFF_SYM724=LTDIE_48 - Ldebug_info_start
+	.long LDIFF_SYM724
 	.byte 2,35,0,0,7
 	.asciz "System_IO_TextReader"
 
-LDIFF_SYM723=LTDIE_103 - Ldebug_info_start
-	.long LDIFF_SYM723
+LDIFF_SYM725=LTDIE_103 - Ldebug_info_start
+	.long LDIFF_SYM725
 LTDIE_103_POINTER:
 
 	.byte 13
-LDIFF_SYM724=LTDIE_103 - Ldebug_info_start
-	.long LDIFF_SYM724
+LDIFF_SYM726=LTDIE_103 - Ldebug_info_start
+	.long LDIFF_SYM726
 LTDIE_103_REFERENCE:
 
 	.byte 14
-LDIFF_SYM725=LTDIE_103 - Ldebug_info_start
-	.long LDIFF_SYM725
+LDIFF_SYM727=LTDIE_103 - Ldebug_info_start
+	.long LDIFF_SYM727
 LTDIE_108:
 
 	.byte 5
 	.asciz "System_Threading_Tasks_TaskScheduler"
 
 	.byte 20,16
-LDIFF_SYM726=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM726
+LDIFF_SYM728=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM728
 	.byte 2,35,0,6
 	.asciz "m_taskSchedulerId"
 
-LDIFF_SYM727=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM727
+LDIFF_SYM729=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM729
 	.byte 2,35,16,0,7
 	.asciz "System_Threading_Tasks_TaskScheduler"
 
-LDIFF_SYM728=LTDIE_108 - Ldebug_info_start
-	.long LDIFF_SYM728
+LDIFF_SYM730=LTDIE_108 - Ldebug_info_start
+	.long LDIFF_SYM730
 LTDIE_108_POINTER:
 
 	.byte 13
-LDIFF_SYM729=LTDIE_108 - Ldebug_info_start
-	.long LDIFF_SYM729
+LDIFF_SYM731=LTDIE_108 - Ldebug_info_start
+	.long LDIFF_SYM731
 LTDIE_108_REFERENCE:
 
 	.byte 14
-LDIFF_SYM730=LTDIE_108 - Ldebug_info_start
-	.long LDIFF_SYM730
+LDIFF_SYM732=LTDIE_108 - Ldebug_info_start
+	.long LDIFF_SYM732
 LTDIE_112:
 
 	.byte 8
 	.asciz "System_Threading_SynchronizationContextProperties"
 
 	.byte 4
-LDIFF_SYM731=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM731
+LDIFF_SYM733=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM733
 	.byte 9
 	.asciz "None"
 
@@ -11277,171 +11287,171 @@ LDIFF_SYM731=LDIE_I4 - Ldebug_info_start
 	.byte 1,0,7
 	.asciz "System_Threading_SynchronizationContextProperties"
 
-LDIFF_SYM732=LTDIE_112 - Ldebug_info_start
-	.long LDIFF_SYM732
+LDIFF_SYM734=LTDIE_112 - Ldebug_info_start
+	.long LDIFF_SYM734
 LTDIE_112_POINTER:
 
 	.byte 13
-LDIFF_SYM733=LTDIE_112 - Ldebug_info_start
-	.long LDIFF_SYM733
+LDIFF_SYM735=LTDIE_112 - Ldebug_info_start
+	.long LDIFF_SYM735
 LTDIE_112_REFERENCE:
 
 	.byte 14
-LDIFF_SYM734=LTDIE_112 - Ldebug_info_start
-	.long LDIFF_SYM734
+LDIFF_SYM736=LTDIE_112 - Ldebug_info_start
+	.long LDIFF_SYM736
 LTDIE_111:
 
 	.byte 5
 	.asciz "System_Threading_SynchronizationContext"
 
 	.byte 20,16
-LDIFF_SYM735=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM735
+LDIFF_SYM737=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM737
 	.byte 2,35,0,6
 	.asciz "_props"
 
-LDIFF_SYM736=LTDIE_112 - Ldebug_info_start
-	.long LDIFF_SYM736
+LDIFF_SYM738=LTDIE_112 - Ldebug_info_start
+	.long LDIFF_SYM738
 	.byte 2,35,16,0,7
 	.asciz "System_Threading_SynchronizationContext"
 
-LDIFF_SYM737=LTDIE_111 - Ldebug_info_start
-	.long LDIFF_SYM737
+LDIFF_SYM739=LTDIE_111 - Ldebug_info_start
+	.long LDIFF_SYM739
 LTDIE_111_POINTER:
 
 	.byte 13
-LDIFF_SYM738=LTDIE_111 - Ldebug_info_start
-	.long LDIFF_SYM738
+LDIFF_SYM740=LTDIE_111 - Ldebug_info_start
+	.long LDIFF_SYM740
 LTDIE_111_REFERENCE:
 
 	.byte 14
-LDIFF_SYM739=LTDIE_111 - Ldebug_info_start
-	.long LDIFF_SYM739
+LDIFF_SYM741=LTDIE_111 - Ldebug_info_start
+	.long LDIFF_SYM741
 LTDIE_114:
 
 	.byte 5
 	.asciz "System_Runtime_Remoting_Messaging_CallContextRemotingData"
 
 	.byte 16,16
-LDIFF_SYM740=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM740
+LDIFF_SYM742=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM742
 	.byte 2,35,0,0,7
 	.asciz "System_Runtime_Remoting_Messaging_CallContextRemotingData"
 
-LDIFF_SYM741=LTDIE_114 - Ldebug_info_start
-	.long LDIFF_SYM741
+LDIFF_SYM743=LTDIE_114 - Ldebug_info_start
+	.long LDIFF_SYM743
 LTDIE_114_POINTER:
 
 	.byte 13
-LDIFF_SYM742=LTDIE_114 - Ldebug_info_start
-	.long LDIFF_SYM742
+LDIFF_SYM744=LTDIE_114 - Ldebug_info_start
+	.long LDIFF_SYM744
 LTDIE_114_REFERENCE:
 
 	.byte 14
-LDIFF_SYM743=LTDIE_114 - Ldebug_info_start
-	.long LDIFF_SYM743
+LDIFF_SYM745=LTDIE_114 - Ldebug_info_start
+	.long LDIFF_SYM745
 LTDIE_115:
 
 	.byte 5
 	.asciz "System_Runtime_Remoting_Messaging_CallContextSecurityData"
 
 	.byte 16,16
-LDIFF_SYM744=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM744
+LDIFF_SYM746=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM746
 	.byte 2,35,0,0,7
 	.asciz "System_Runtime_Remoting_Messaging_CallContextSecurityData"
 
-LDIFF_SYM745=LTDIE_115 - Ldebug_info_start
-	.long LDIFF_SYM745
+LDIFF_SYM747=LTDIE_115 - Ldebug_info_start
+	.long LDIFF_SYM747
 LTDIE_115_POINTER:
 
 	.byte 13
-LDIFF_SYM746=LTDIE_115 - Ldebug_info_start
-	.long LDIFF_SYM746
+LDIFF_SYM748=LTDIE_115 - Ldebug_info_start
+	.long LDIFF_SYM748
 LTDIE_115_REFERENCE:
 
 	.byte 14
-LDIFF_SYM747=LTDIE_115 - Ldebug_info_start
-	.long LDIFF_SYM747
+LDIFF_SYM749=LTDIE_115 - Ldebug_info_start
+	.long LDIFF_SYM749
 LTDIE_113:
 
 	.byte 5
 	.asciz "System_Runtime_Remoting_Messaging_LogicalCallContext"
 
 	.byte 56,16
-LDIFF_SYM748=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM748
+LDIFF_SYM750=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM750
 	.byte 2,35,0,6
 	.asciz "m_Datastore"
 
-LDIFF_SYM749=LTDIE_12_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM749
+LDIFF_SYM751=LTDIE_12_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM751
 	.byte 2,35,16,6
 	.asciz "m_RemotingData"
 
-LDIFF_SYM750=LTDIE_114_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM750
+LDIFF_SYM752=LTDIE_114_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM752
 	.byte 2,35,24,6
 	.asciz "m_SecurityData"
 
-LDIFF_SYM751=LTDIE_115_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM751
+LDIFF_SYM753=LTDIE_115_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM753
 	.byte 2,35,32,6
 	.asciz "m_HostContext"
 
-LDIFF_SYM752=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM752
+LDIFF_SYM754=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM754
 	.byte 2,35,40,6
 	.asciz "m_IsCorrelationMgr"
 
-LDIFF_SYM753=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM753
+LDIFF_SYM755=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM755
 	.byte 2,35,48,0,7
 	.asciz "System_Runtime_Remoting_Messaging_LogicalCallContext"
 
-LDIFF_SYM754=LTDIE_113 - Ldebug_info_start
-	.long LDIFF_SYM754
+LDIFF_SYM756=LTDIE_113 - Ldebug_info_start
+	.long LDIFF_SYM756
 LTDIE_113_POINTER:
 
 	.byte 13
-LDIFF_SYM755=LTDIE_113 - Ldebug_info_start
-	.long LDIFF_SYM755
+LDIFF_SYM757=LTDIE_113 - Ldebug_info_start
+	.long LDIFF_SYM757
 LTDIE_113_REFERENCE:
 
 	.byte 14
-LDIFF_SYM756=LTDIE_113 - Ldebug_info_start
-	.long LDIFF_SYM756
+LDIFF_SYM758=LTDIE_113 - Ldebug_info_start
+	.long LDIFF_SYM758
 LTDIE_116:
 
 	.byte 5
 	.asciz "System_Runtime_Remoting_Messaging_IllogicalCallContext"
 
 	.byte 16,16
-LDIFF_SYM757=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM757
+LDIFF_SYM759=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM759
 	.byte 2,35,0,0,7
 	.asciz "System_Runtime_Remoting_Messaging_IllogicalCallContext"
 
-LDIFF_SYM758=LTDIE_116 - Ldebug_info_start
-	.long LDIFF_SYM758
+LDIFF_SYM760=LTDIE_116 - Ldebug_info_start
+	.long LDIFF_SYM760
 LTDIE_116_POINTER:
 
 	.byte 13
-LDIFF_SYM759=LTDIE_116 - Ldebug_info_start
-	.long LDIFF_SYM759
+LDIFF_SYM761=LTDIE_116 - Ldebug_info_start
+	.long LDIFF_SYM761
 LTDIE_116_REFERENCE:
 
 	.byte 14
-LDIFF_SYM760=LTDIE_116 - Ldebug_info_start
-	.long LDIFF_SYM760
+LDIFF_SYM762=LTDIE_116 - Ldebug_info_start
+	.long LDIFF_SYM762
 LTDIE_117:
 
 	.byte 8
 	.asciz "_Flags"
 
 	.byte 4
-LDIFF_SYM761=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM761
+LDIFF_SYM763=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM763
 	.byte 9
 	.asciz "None"
 
@@ -11457,18 +11467,18 @@ LDIFF_SYM761=LDIE_I4 - Ldebug_info_start
 	.byte 4,0,7
 	.asciz "_Flags"
 
-LDIFF_SYM762=LTDIE_117 - Ldebug_info_start
-	.long LDIFF_SYM762
+LDIFF_SYM764=LTDIE_117 - Ldebug_info_start
+	.long LDIFF_SYM764
 LTDIE_117_POINTER:
 
 	.byte 13
-LDIFF_SYM763=LTDIE_117 - Ldebug_info_start
-	.long LDIFF_SYM763
+LDIFF_SYM765=LTDIE_117 - Ldebug_info_start
+	.long LDIFF_SYM765
 LTDIE_117_REFERENCE:
 
 	.byte 14
-LDIFF_SYM764=LTDIE_117 - Ldebug_info_start
-	.long LDIFF_SYM764
+LDIFF_SYM766=LTDIE_117 - Ldebug_info_start
+	.long LDIFF_SYM766
 LTDIE_119:
 
 	.byte 17
@@ -11477,1265 +11487,1265 @@ LTDIE_119:
 	.byte 16,7
 	.asciz "System_Collections_Generic_IEqualityComparer`1"
 
-LDIFF_SYM765=LTDIE_119 - Ldebug_info_start
-	.long LDIFF_SYM765
+LDIFF_SYM767=LTDIE_119 - Ldebug_info_start
+	.long LDIFF_SYM767
 LTDIE_119_POINTER:
 
 	.byte 13
-LDIFF_SYM766=LTDIE_119 - Ldebug_info_start
-	.long LDIFF_SYM766
+LDIFF_SYM768=LTDIE_119 - Ldebug_info_start
+	.long LDIFF_SYM768
 LTDIE_119_REFERENCE:
 
 	.byte 14
-LDIFF_SYM767=LTDIE_119 - Ldebug_info_start
-	.long LDIFF_SYM767
+LDIFF_SYM769=LTDIE_119 - Ldebug_info_start
+	.long LDIFF_SYM769
 LTDIE_120:
 
 	.byte 5
 	.asciz "_KeyCollection"
 
 	.byte 24,16
-LDIFF_SYM768=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM768
+LDIFF_SYM770=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM770
 	.byte 2,35,0,6
 	.asciz "_dictionary"
 
-LDIFF_SYM769=LTDIE_118_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM769
+LDIFF_SYM771=LTDIE_118_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM771
 	.byte 2,35,16,0,7
 	.asciz "_KeyCollection"
 
-LDIFF_SYM770=LTDIE_120 - Ldebug_info_start
-	.long LDIFF_SYM770
+LDIFF_SYM772=LTDIE_120 - Ldebug_info_start
+	.long LDIFF_SYM772
 LTDIE_120_POINTER:
 
 	.byte 13
-LDIFF_SYM771=LTDIE_120 - Ldebug_info_start
-	.long LDIFF_SYM771
+LDIFF_SYM773=LTDIE_120 - Ldebug_info_start
+	.long LDIFF_SYM773
 LTDIE_120_REFERENCE:
 
 	.byte 14
-LDIFF_SYM772=LTDIE_120 - Ldebug_info_start
-	.long LDIFF_SYM772
+LDIFF_SYM774=LTDIE_120 - Ldebug_info_start
+	.long LDIFF_SYM774
 LTDIE_121:
 
 	.byte 5
 	.asciz "_ValueCollection"
 
 	.byte 24,16
-LDIFF_SYM773=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM773
+LDIFF_SYM775=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM775
 	.byte 2,35,0,6
 	.asciz "_dictionary"
 
-LDIFF_SYM774=LTDIE_118_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM774
+LDIFF_SYM776=LTDIE_118_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM776
 	.byte 2,35,16,0,7
 	.asciz "_ValueCollection"
 
-LDIFF_SYM775=LTDIE_121 - Ldebug_info_start
-	.long LDIFF_SYM775
+LDIFF_SYM777=LTDIE_121 - Ldebug_info_start
+	.long LDIFF_SYM777
 LTDIE_121_POINTER:
 
 	.byte 13
-LDIFF_SYM776=LTDIE_121 - Ldebug_info_start
-	.long LDIFF_SYM776
+LDIFF_SYM778=LTDIE_121 - Ldebug_info_start
+	.long LDIFF_SYM778
 LTDIE_121_REFERENCE:
 
 	.byte 14
-LDIFF_SYM777=LTDIE_121 - Ldebug_info_start
-	.long LDIFF_SYM777
+LDIFF_SYM779=LTDIE_121 - Ldebug_info_start
+	.long LDIFF_SYM779
 LTDIE_118:
 
 	.byte 5
 	.asciz "System_Collections_Generic_Dictionary`2"
 
 	.byte 80,16
-LDIFF_SYM778=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM778
+LDIFF_SYM780=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM780
 	.byte 2,35,0,6
 	.asciz "_buckets"
 
-LDIFF_SYM779=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM779
+LDIFF_SYM781=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM781
 	.byte 2,35,16,6
 	.asciz "_entries"
 
-LDIFF_SYM780=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM780
+LDIFF_SYM782=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM782
 	.byte 2,35,24,6
 	.asciz "_count"
 
-LDIFF_SYM781=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM781
+LDIFF_SYM783=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM783
 	.byte 2,35,64,6
 	.asciz "_freeList"
 
-LDIFF_SYM782=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM782
+LDIFF_SYM784=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM784
 	.byte 2,35,68,6
 	.asciz "_freeCount"
 
-LDIFF_SYM783=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM783
+LDIFF_SYM785=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM785
 	.byte 2,35,72,6
 	.asciz "_version"
 
-LDIFF_SYM784=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM784
+LDIFF_SYM786=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM786
 	.byte 2,35,76,6
 	.asciz "_comparer"
 
-LDIFF_SYM785=LTDIE_119_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM785
+LDIFF_SYM787=LTDIE_119_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM787
 	.byte 2,35,32,6
 	.asciz "_keys"
 
-LDIFF_SYM786=LTDIE_120_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM786
+LDIFF_SYM788=LTDIE_120_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM788
 	.byte 2,35,40,6
 	.asciz "_values"
 
-LDIFF_SYM787=LTDIE_121_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM787
+LDIFF_SYM789=LTDIE_121_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM789
 	.byte 2,35,48,6
 	.asciz "_syncRoot"
 
-LDIFF_SYM788=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM788
+LDIFF_SYM790=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM790
 	.byte 2,35,56,0,7
 	.asciz "System_Collections_Generic_Dictionary`2"
 
-LDIFF_SYM789=LTDIE_118 - Ldebug_info_start
-	.long LDIFF_SYM789
+LDIFF_SYM791=LTDIE_118 - Ldebug_info_start
+	.long LDIFF_SYM791
 LTDIE_118_POINTER:
 
 	.byte 13
-LDIFF_SYM790=LTDIE_118 - Ldebug_info_start
-	.long LDIFF_SYM790
+LDIFF_SYM792=LTDIE_118 - Ldebug_info_start
+	.long LDIFF_SYM792
 LTDIE_118_REFERENCE:
 
 	.byte 14
-LDIFF_SYM791=LTDIE_118 - Ldebug_info_start
-	.long LDIFF_SYM791
+LDIFF_SYM793=LTDIE_118 - Ldebug_info_start
+	.long LDIFF_SYM793
 LTDIE_122:
 
 	.byte 5
 	.asciz "System_Collections_Generic_List`1"
 
 	.byte 40,16
-LDIFF_SYM792=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM792
+LDIFF_SYM794=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM794
 	.byte 2,35,0,6
 	.asciz "_items"
 
-LDIFF_SYM793=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM793
+LDIFF_SYM795=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM795
 	.byte 2,35,16,6
 	.asciz "_size"
 
-LDIFF_SYM794=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM794
+LDIFF_SYM796=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM796
 	.byte 2,35,32,6
 	.asciz "_version"
 
-LDIFF_SYM795=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM795
+LDIFF_SYM797=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM797
 	.byte 2,35,36,6
 	.asciz "_syncRoot"
 
-LDIFF_SYM796=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM796
+LDIFF_SYM798=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM798
 	.byte 2,35,24,0,7
 	.asciz "System_Collections_Generic_List`1"
 
-LDIFF_SYM797=LTDIE_122 - Ldebug_info_start
-	.long LDIFF_SYM797
+LDIFF_SYM799=LTDIE_122 - Ldebug_info_start
+	.long LDIFF_SYM799
 LTDIE_122_POINTER:
 
 	.byte 13
-LDIFF_SYM798=LTDIE_122 - Ldebug_info_start
-	.long LDIFF_SYM798
+LDIFF_SYM800=LTDIE_122 - Ldebug_info_start
+	.long LDIFF_SYM800
 LTDIE_122_REFERENCE:
 
 	.byte 14
-LDIFF_SYM799=LTDIE_122 - Ldebug_info_start
-	.long LDIFF_SYM799
+LDIFF_SYM801=LTDIE_122 - Ldebug_info_start
+	.long LDIFF_SYM801
 LTDIE_110:
 
 	.byte 5
 	.asciz "System_Threading_ExecutionContext"
 
 	.byte 72,16
-LDIFF_SYM800=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM800
+LDIFF_SYM802=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM802
 	.byte 2,35,0,6
 	.asciz "_syncContext"
 
-LDIFF_SYM801=LTDIE_111_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM801
+LDIFF_SYM803=LTDIE_111_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM803
 	.byte 2,35,16,6
 	.asciz "_syncContextNoFlow"
 
-LDIFF_SYM802=LTDIE_111_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM802
+LDIFF_SYM804=LTDIE_111_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM804
 	.byte 2,35,24,6
 	.asciz "_logicalCallContext"
 
-LDIFF_SYM803=LTDIE_113_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM803
+LDIFF_SYM805=LTDIE_113_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM805
 	.byte 2,35,32,6
 	.asciz "_illogicalCallContext"
 
-LDIFF_SYM804=LTDIE_116_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM804
+LDIFF_SYM806=LTDIE_116_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM806
 	.byte 2,35,40,6
 	.asciz "_flags"
 
-LDIFF_SYM805=LTDIE_117 - Ldebug_info_start
-	.long LDIFF_SYM805
+LDIFF_SYM807=LTDIE_117 - Ldebug_info_start
+	.long LDIFF_SYM807
 	.byte 2,35,64,6
 	.asciz "_localValues"
 
-LDIFF_SYM806=LTDIE_118_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM806
+LDIFF_SYM808=LTDIE_118_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM808
 	.byte 2,35,48,6
 	.asciz "_localChangeNotifications"
 
-LDIFF_SYM807=LTDIE_122_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM807
+LDIFF_SYM809=LTDIE_122_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM809
 	.byte 2,35,56,0,7
 	.asciz "System_Threading_ExecutionContext"
 
-LDIFF_SYM808=LTDIE_110 - Ldebug_info_start
-	.long LDIFF_SYM808
+LDIFF_SYM810=LTDIE_110 - Ldebug_info_start
+	.long LDIFF_SYM810
 LTDIE_110_POINTER:
 
 	.byte 13
-LDIFF_SYM809=LTDIE_110 - Ldebug_info_start
-	.long LDIFF_SYM809
+LDIFF_SYM811=LTDIE_110 - Ldebug_info_start
+	.long LDIFF_SYM811
 LTDIE_110_REFERENCE:
 
 	.byte 14
-LDIFF_SYM810=LTDIE_110 - Ldebug_info_start
-	.long LDIFF_SYM810
+LDIFF_SYM812=LTDIE_110 - Ldebug_info_start
+	.long LDIFF_SYM812
 LTDIE_123:
 
 	.byte 5
 	.asciz "System_Threading_ManualResetEventSlim"
 
 	.byte 40,16
-LDIFF_SYM811=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM811
+LDIFF_SYM813=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM813
 	.byte 2,35,0,6
 	.asciz "m_lock"
 
-LDIFF_SYM812=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM812
+LDIFF_SYM814=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM814
 	.byte 2,35,16,6
 	.asciz "m_eventObj"
 
-LDIFF_SYM813=LTDIE_99_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM813
+LDIFF_SYM815=LTDIE_99_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM815
 	.byte 2,35,24,6
 	.asciz "m_combinedState"
 
-LDIFF_SYM814=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM814
+LDIFF_SYM816=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM816
 	.byte 2,35,32,0,7
 	.asciz "System_Threading_ManualResetEventSlim"
 
-LDIFF_SYM815=LTDIE_123 - Ldebug_info_start
-	.long LDIFF_SYM815
+LDIFF_SYM817=LTDIE_123 - Ldebug_info_start
+	.long LDIFF_SYM817
 LTDIE_123_POINTER:
 
 	.byte 13
-LDIFF_SYM816=LTDIE_123 - Ldebug_info_start
-	.long LDIFF_SYM816
+LDIFF_SYM818=LTDIE_123 - Ldebug_info_start
+	.long LDIFF_SYM818
 LTDIE_123_REFERENCE:
 
 	.byte 14
-LDIFF_SYM817=LTDIE_123 - Ldebug_info_start
-	.long LDIFF_SYM817
+LDIFF_SYM819=LTDIE_123 - Ldebug_info_start
+	.long LDIFF_SYM819
 LTDIE_126:
 
 	.byte 5
 	.asciz "System_Collections_Generic_LowLevelList`1"
 
 	.byte 32,16
-LDIFF_SYM818=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM818
+LDIFF_SYM820=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM820
 	.byte 2,35,0,6
 	.asciz "_items"
 
-LDIFF_SYM819=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM819
+LDIFF_SYM821=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM821
 	.byte 2,35,16,6
 	.asciz "_size"
 
-LDIFF_SYM820=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM820
+LDIFF_SYM822=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM822
 	.byte 2,35,24,6
 	.asciz "_version"
 
-LDIFF_SYM821=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM821
+LDIFF_SYM823=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM823
 	.byte 2,35,28,0,7
 	.asciz "System_Collections_Generic_LowLevelList`1"
 
-LDIFF_SYM822=LTDIE_126 - Ldebug_info_start
-	.long LDIFF_SYM822
+LDIFF_SYM824=LTDIE_126 - Ldebug_info_start
+	.long LDIFF_SYM824
 LTDIE_126_POINTER:
 
 	.byte 13
-LDIFF_SYM823=LTDIE_126 - Ldebug_info_start
-	.long LDIFF_SYM823
+LDIFF_SYM825=LTDIE_126 - Ldebug_info_start
+	.long LDIFF_SYM825
 LTDIE_126_REFERENCE:
 
 	.byte 14
-LDIFF_SYM824=LTDIE_126 - Ldebug_info_start
-	.long LDIFF_SYM824
+LDIFF_SYM826=LTDIE_126 - Ldebug_info_start
+	.long LDIFF_SYM826
 LTDIE_125:
 
 	.byte 5
 	.asciz "System_Collections_Generic_LowLevelListWithIList`1"
 
 	.byte 32,16
-LDIFF_SYM825=LTDIE_126 - Ldebug_info_start
-	.long LDIFF_SYM825
+LDIFF_SYM827=LTDIE_126 - Ldebug_info_start
+	.long LDIFF_SYM827
 	.byte 2,35,0,0,7
 	.asciz "System_Collections_Generic_LowLevelListWithIList`1"
 
-LDIFF_SYM826=LTDIE_125 - Ldebug_info_start
-	.long LDIFF_SYM826
+LDIFF_SYM828=LTDIE_125 - Ldebug_info_start
+	.long LDIFF_SYM828
 LTDIE_125_POINTER:
 
 	.byte 13
-LDIFF_SYM827=LTDIE_125 - Ldebug_info_start
-	.long LDIFF_SYM827
+LDIFF_SYM829=LTDIE_125 - Ldebug_info_start
+	.long LDIFF_SYM829
 LTDIE_125_REFERENCE:
 
 	.byte 14
-LDIFF_SYM828=LTDIE_125 - Ldebug_info_start
-	.long LDIFF_SYM828
+LDIFF_SYM830=LTDIE_125 - Ldebug_info_start
+	.long LDIFF_SYM830
 LTDIE_127:
 
 	.byte 5
 	.asciz "System_Runtime_ExceptionServices_ExceptionDispatchInfo"
 
 	.byte 32,16
-LDIFF_SYM829=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM829
+LDIFF_SYM831=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM831
 	.byte 2,35,0,6
 	.asciz "m_Exception"
 
-LDIFF_SYM830=LTDIE_16_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM830
+LDIFF_SYM832=LTDIE_16_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM832
 	.byte 2,35,16,6
 	.asciz "m_stackTrace"
 
-LDIFF_SYM831=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM831
+LDIFF_SYM833=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM833
 	.byte 2,35,24,0,7
 	.asciz "System_Runtime_ExceptionServices_ExceptionDispatchInfo"
 
-LDIFF_SYM832=LTDIE_127 - Ldebug_info_start
-	.long LDIFF_SYM832
+LDIFF_SYM834=LTDIE_127 - Ldebug_info_start
+	.long LDIFF_SYM834
 LTDIE_127_POINTER:
 
 	.byte 13
-LDIFF_SYM833=LTDIE_127 - Ldebug_info_start
-	.long LDIFF_SYM833
+LDIFF_SYM835=LTDIE_127 - Ldebug_info_start
+	.long LDIFF_SYM835
 LTDIE_127_REFERENCE:
 
 	.byte 14
-LDIFF_SYM834=LTDIE_127 - Ldebug_info_start
-	.long LDIFF_SYM834
+LDIFF_SYM836=LTDIE_127 - Ldebug_info_start
+	.long LDIFF_SYM836
 LTDIE_124:
 
 	.byte 5
 	.asciz "System_Threading_Tasks_TaskExceptionHolder"
 
 	.byte 48,16
-LDIFF_SYM835=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM835
+LDIFF_SYM837=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM837
 	.byte 2,35,0,6
 	.asciz "m_task"
 
-LDIFF_SYM836=LTDIE_107_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM836
+LDIFF_SYM838=LTDIE_107_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM838
 	.byte 2,35,16,6
 	.asciz "m_faultExceptions"
 
-LDIFF_SYM837=LTDIE_125_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM837
+LDIFF_SYM839=LTDIE_125_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM839
 	.byte 2,35,24,6
 	.asciz "m_cancellationException"
 
-LDIFF_SYM838=LTDIE_127_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM838
+LDIFF_SYM840=LTDIE_127_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM840
 	.byte 2,35,32,6
 	.asciz "m_isHandled"
 
-LDIFF_SYM839=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM839
+LDIFF_SYM841=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM841
 	.byte 2,35,40,0,7
 	.asciz "System_Threading_Tasks_TaskExceptionHolder"
 
-LDIFF_SYM840=LTDIE_124 - Ldebug_info_start
-	.long LDIFF_SYM840
+LDIFF_SYM842=LTDIE_124 - Ldebug_info_start
+	.long LDIFF_SYM842
 LTDIE_124_POINTER:
 
 	.byte 13
-LDIFF_SYM841=LTDIE_124 - Ldebug_info_start
-	.long LDIFF_SYM841
+LDIFF_SYM843=LTDIE_124 - Ldebug_info_start
+	.long LDIFF_SYM843
 LTDIE_124_REFERENCE:
 
 	.byte 14
-LDIFF_SYM842=LTDIE_124 - Ldebug_info_start
-	.long LDIFF_SYM842
+LDIFF_SYM844=LTDIE_124 - Ldebug_info_start
+	.long LDIFF_SYM844
 LTDIE_129:
 
 	.byte 5
 	.asciz "System_Collections_Generic_LowLevelList`1"
 
 	.byte 32,16
-LDIFF_SYM843=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM843
+LDIFF_SYM845=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM845
 	.byte 2,35,0,6
 	.asciz "_items"
 
-LDIFF_SYM844=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM844
+LDIFF_SYM846=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM846
 	.byte 2,35,16,6
 	.asciz "_size"
 
-LDIFF_SYM845=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM845
+LDIFF_SYM847=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM847
 	.byte 2,35,24,6
 	.asciz "_version"
 
-LDIFF_SYM846=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM846
+LDIFF_SYM848=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM848
 	.byte 2,35,28,0,7
 	.asciz "System_Collections_Generic_LowLevelList`1"
 
-LDIFF_SYM847=LTDIE_129 - Ldebug_info_start
-	.long LDIFF_SYM847
+LDIFF_SYM849=LTDIE_129 - Ldebug_info_start
+	.long LDIFF_SYM849
 LTDIE_129_POINTER:
 
 	.byte 13
-LDIFF_SYM848=LTDIE_129 - Ldebug_info_start
-	.long LDIFF_SYM848
+LDIFF_SYM850=LTDIE_129 - Ldebug_info_start
+	.long LDIFF_SYM850
 LTDIE_129_REFERENCE:
 
 	.byte 14
-LDIFF_SYM849=LTDIE_129 - Ldebug_info_start
-	.long LDIFF_SYM849
+LDIFF_SYM851=LTDIE_129 - Ldebug_info_start
+	.long LDIFF_SYM851
 LTDIE_128:
 
 	.byte 5
 	.asciz "System_Collections_Generic_LowLevelListWithIList`1"
 
 	.byte 32,16
-LDIFF_SYM850=LTDIE_129 - Ldebug_info_start
-	.long LDIFF_SYM850
+LDIFF_SYM852=LTDIE_129 - Ldebug_info_start
+	.long LDIFF_SYM852
 	.byte 2,35,0,0,7
 	.asciz "System_Collections_Generic_LowLevelListWithIList`1"
 
-LDIFF_SYM851=LTDIE_128 - Ldebug_info_start
-	.long LDIFF_SYM851
+LDIFF_SYM853=LTDIE_128 - Ldebug_info_start
+	.long LDIFF_SYM853
 LTDIE_128_POINTER:
 
 	.byte 13
-LDIFF_SYM852=LTDIE_128 - Ldebug_info_start
-	.long LDIFF_SYM852
+LDIFF_SYM854=LTDIE_128 - Ldebug_info_start
+	.long LDIFF_SYM854
 LTDIE_128_REFERENCE:
 
 	.byte 14
-LDIFF_SYM853=LTDIE_128 - Ldebug_info_start
-	.long LDIFF_SYM853
+LDIFF_SYM855=LTDIE_128 - Ldebug_info_start
+	.long LDIFF_SYM855
 LTDIE_109:
 
 	.byte 5
 	.asciz "_ContingentProperties"
 
 	.byte 72,16
-LDIFF_SYM854=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM854
+LDIFF_SYM856=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM856
 	.byte 2,35,0,6
 	.asciz "m_capturedContext"
 
-LDIFF_SYM855=LTDIE_110_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM855
+LDIFF_SYM857=LTDIE_110_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM857
 	.byte 2,35,16,6
 	.asciz "m_completionEvent"
 
-LDIFF_SYM856=LTDIE_123_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM856
+LDIFF_SYM858=LTDIE_123_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM858
 	.byte 2,35,24,6
 	.asciz "m_exceptionsHolder"
 
-LDIFF_SYM857=LTDIE_124_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM857
+LDIFF_SYM859=LTDIE_124_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM859
 	.byte 2,35,32,6
 	.asciz "m_cancellationToken"
 
-LDIFF_SYM858=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM858
+LDIFF_SYM860=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM860
 	.byte 2,35,40,6
 	.asciz "m_cancellationRegistration"
 
-LDIFF_SYM859=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM859
+LDIFF_SYM861=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM861
 	.byte 2,35,48,6
 	.asciz "m_internalCancellationRequested"
 
-LDIFF_SYM860=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM860
+LDIFF_SYM862=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM862
 	.byte 2,35,64,6
 	.asciz "m_completionCountdown"
 
-LDIFF_SYM861=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM861
+LDIFF_SYM863=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM863
 	.byte 2,35,68,6
 	.asciz "m_exceptionalChildren"
 
-LDIFF_SYM862=LTDIE_128_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM862
+LDIFF_SYM864=LTDIE_128_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM864
 	.byte 2,35,56,0,7
 	.asciz "_ContingentProperties"
 
-LDIFF_SYM863=LTDIE_109 - Ldebug_info_start
-	.long LDIFF_SYM863
+LDIFF_SYM865=LTDIE_109 - Ldebug_info_start
+	.long LDIFF_SYM865
 LTDIE_109_POINTER:
 
 	.byte 13
-LDIFF_SYM864=LTDIE_109 - Ldebug_info_start
-	.long LDIFF_SYM864
+LDIFF_SYM866=LTDIE_109 - Ldebug_info_start
+	.long LDIFF_SYM866
 LTDIE_109_REFERENCE:
 
 	.byte 14
-LDIFF_SYM865=LTDIE_109 - Ldebug_info_start
-	.long LDIFF_SYM865
+LDIFF_SYM867=LTDIE_109 - Ldebug_info_start
+	.long LDIFF_SYM867
 LTDIE_107:
 
 	.byte 5
 	.asciz "System_Threading_Tasks_Task"
 
 	.byte 72,16
-LDIFF_SYM866=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM866
+LDIFF_SYM868=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM868
 	.byte 2,35,0,6
 	.asciz "m_taskId"
 
-LDIFF_SYM867=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM867
+LDIFF_SYM869=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM869
 	.byte 2,35,64,6
 	.asciz "m_action"
 
-LDIFF_SYM868=LTDIE_37_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM868
+LDIFF_SYM870=LTDIE_37_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM870
 	.byte 2,35,16,6
 	.asciz "m_stateObject"
 
-LDIFF_SYM869=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM869
+LDIFF_SYM871=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM871
 	.byte 2,35,24,6
 	.asciz "m_taskScheduler"
 
-LDIFF_SYM870=LTDIE_108_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM870
+LDIFF_SYM872=LTDIE_108_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM872
 	.byte 2,35,32,6
 	.asciz "m_parent"
 
-LDIFF_SYM871=LTDIE_107_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM871
+LDIFF_SYM873=LTDIE_107_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM873
 	.byte 2,35,40,6
 	.asciz "m_stateFlags"
 
-LDIFF_SYM872=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM872
+LDIFF_SYM874=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM874
 	.byte 2,35,68,6
 	.asciz "m_continuationObject"
 
-LDIFF_SYM873=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM873
+LDIFF_SYM875=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM875
 	.byte 2,35,48,6
 	.asciz "m_contingentProperties"
 
-LDIFF_SYM874=LTDIE_109_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM874
+LDIFF_SYM876=LTDIE_109_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM876
 	.byte 2,35,56,0,7
 	.asciz "System_Threading_Tasks_Task"
 
-LDIFF_SYM875=LTDIE_107 - Ldebug_info_start
-	.long LDIFF_SYM875
+LDIFF_SYM877=LTDIE_107 - Ldebug_info_start
+	.long LDIFF_SYM877
 LTDIE_107_POINTER:
 
 	.byte 13
-LDIFF_SYM876=LTDIE_107 - Ldebug_info_start
-	.long LDIFF_SYM876
+LDIFF_SYM878=LTDIE_107 - Ldebug_info_start
+	.long LDIFF_SYM878
 LTDIE_107_REFERENCE:
 
 	.byte 14
-LDIFF_SYM877=LTDIE_107 - Ldebug_info_start
-	.long LDIFF_SYM877
+LDIFF_SYM879=LTDIE_107 - Ldebug_info_start
+	.long LDIFF_SYM879
 LTDIE_106:
 
 	.byte 5
 	.asciz "System_Threading_Tasks_Task`1"
 
 	.byte 80,16
-LDIFF_SYM878=LTDIE_107 - Ldebug_info_start
-	.long LDIFF_SYM878
+LDIFF_SYM880=LTDIE_107 - Ldebug_info_start
+	.long LDIFF_SYM880
 	.byte 2,35,0,6
 	.asciz "m_result"
 
-LDIFF_SYM879=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM879
+LDIFF_SYM881=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM881
 	.byte 2,35,72,0,7
 	.asciz "System_Threading_Tasks_Task`1"
 
-LDIFF_SYM880=LTDIE_106 - Ldebug_info_start
-	.long LDIFF_SYM880
+LDIFF_SYM882=LTDIE_106 - Ldebug_info_start
+	.long LDIFF_SYM882
 LTDIE_106_POINTER:
 
 	.byte 13
-LDIFF_SYM881=LTDIE_106 - Ldebug_info_start
-	.long LDIFF_SYM881
+LDIFF_SYM883=LTDIE_106 - Ldebug_info_start
+	.long LDIFF_SYM883
 LTDIE_106_REFERENCE:
 
 	.byte 14
-LDIFF_SYM882=LTDIE_106 - Ldebug_info_start
-	.long LDIFF_SYM882
+LDIFF_SYM884=LTDIE_106 - Ldebug_info_start
+	.long LDIFF_SYM884
 LTDIE_130:
 
 	.byte 5
 	.asciz "System_AsyncCallback"
 
 	.byte 128,1,16
-LDIFF_SYM883=LTDIE_36 - Ldebug_info_start
-	.long LDIFF_SYM883
+LDIFF_SYM885=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM885
 	.byte 2,35,0,0,7
 	.asciz "System_AsyncCallback"
 
-LDIFF_SYM884=LTDIE_130 - Ldebug_info_start
-	.long LDIFF_SYM884
+LDIFF_SYM886=LTDIE_130 - Ldebug_info_start
+	.long LDIFF_SYM886
 LTDIE_130_POINTER:
 
 	.byte 13
-LDIFF_SYM885=LTDIE_130 - Ldebug_info_start
-	.long LDIFF_SYM885
+LDIFF_SYM887=LTDIE_130 - Ldebug_info_start
+	.long LDIFF_SYM887
 LTDIE_130_REFERENCE:
 
 	.byte 14
-LDIFF_SYM886=LTDIE_130 - Ldebug_info_start
-	.long LDIFF_SYM886
+LDIFF_SYM888=LTDIE_130 - Ldebug_info_start
+	.long LDIFF_SYM888
 LTDIE_105:
 
 	.byte 5
 	.asciz "_ReadWriteTask"
 
 	.byte 128,1,16
-LDIFF_SYM887=LTDIE_106 - Ldebug_info_start
-	.long LDIFF_SYM887
+LDIFF_SYM889=LTDIE_106 - Ldebug_info_start
+	.long LDIFF_SYM889
 	.byte 2,35,0,6
 	.asciz "_isRead"
 
-LDIFF_SYM888=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM888
+LDIFF_SYM890=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM890
 	.byte 2,35,112,6
 	.asciz "_stream"
 
-LDIFF_SYM889=LTDIE_104_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM889
+LDIFF_SYM891=LTDIE_104_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM891
 	.byte 2,35,80,6
 	.asciz "_buffer"
 
-LDIFF_SYM890=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM890
+LDIFF_SYM892=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM892
 	.byte 2,35,88,6
 	.asciz "_offset"
 
-LDIFF_SYM891=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM891
+LDIFF_SYM893=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM893
 	.byte 2,35,116,6
 	.asciz "_count"
 
-LDIFF_SYM892=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM892
+LDIFF_SYM894=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM894
 	.byte 2,35,120,6
 	.asciz "_callback"
 
-LDIFF_SYM893=LTDIE_130_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM893
+LDIFF_SYM895=LTDIE_130_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM895
 	.byte 2,35,96,6
 	.asciz "_context"
 
-LDIFF_SYM894=LTDIE_110_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM894
+LDIFF_SYM896=LTDIE_110_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM896
 	.byte 2,35,104,0,7
 	.asciz "_ReadWriteTask"
 
-LDIFF_SYM895=LTDIE_105 - Ldebug_info_start
-	.long LDIFF_SYM895
+LDIFF_SYM897=LTDIE_105 - Ldebug_info_start
+	.long LDIFF_SYM897
 LTDIE_105_POINTER:
 
 	.byte 13
-LDIFF_SYM896=LTDIE_105 - Ldebug_info_start
-	.long LDIFF_SYM896
+LDIFF_SYM898=LTDIE_105 - Ldebug_info_start
+	.long LDIFF_SYM898
 LTDIE_105_REFERENCE:
 
 	.byte 14
-LDIFF_SYM897=LTDIE_105 - Ldebug_info_start
-	.long LDIFF_SYM897
+LDIFF_SYM899=LTDIE_105 - Ldebug_info_start
+	.long LDIFF_SYM899
 LTDIE_133:
 
 	.byte 5
 	.asciz "System_Threading_Tasks_Task`1"
 
 	.byte 80,16
-LDIFF_SYM898=LTDIE_107 - Ldebug_info_start
-	.long LDIFF_SYM898
+LDIFF_SYM900=LTDIE_107 - Ldebug_info_start
+	.long LDIFF_SYM900
 	.byte 2,35,0,6
 	.asciz "m_result"
 
-LDIFF_SYM899=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM899
+LDIFF_SYM901=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM901
 	.byte 2,35,72,0,7
 	.asciz "System_Threading_Tasks_Task`1"
 
-LDIFF_SYM900=LTDIE_133 - Ldebug_info_start
-	.long LDIFF_SYM900
+LDIFF_SYM902=LTDIE_133 - Ldebug_info_start
+	.long LDIFF_SYM902
 LTDIE_133_POINTER:
 
 	.byte 13
-LDIFF_SYM901=LTDIE_133 - Ldebug_info_start
-	.long LDIFF_SYM901
+LDIFF_SYM903=LTDIE_133 - Ldebug_info_start
+	.long LDIFF_SYM903
 LTDIE_133_REFERENCE:
 
 	.byte 14
-LDIFF_SYM902=LTDIE_133 - Ldebug_info_start
-	.long LDIFF_SYM902
+LDIFF_SYM904=LTDIE_133 - Ldebug_info_start
+	.long LDIFF_SYM904
 LTDIE_132:
 
 	.byte 5
 	.asciz "_TaskNode"
 
 	.byte 96,16
-LDIFF_SYM903=LTDIE_133 - Ldebug_info_start
-	.long LDIFF_SYM903
+LDIFF_SYM905=LTDIE_133 - Ldebug_info_start
+	.long LDIFF_SYM905
 	.byte 2,35,0,6
 	.asciz "Prev"
 
-LDIFF_SYM904=LTDIE_132_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM904
+LDIFF_SYM906=LTDIE_132_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM906
 	.byte 2,35,80,6
 	.asciz "Next"
 
-LDIFF_SYM905=LTDIE_132_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM905
+LDIFF_SYM907=LTDIE_132_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM907
 	.byte 2,35,88,0,7
 	.asciz "_TaskNode"
 
-LDIFF_SYM906=LTDIE_132 - Ldebug_info_start
-	.long LDIFF_SYM906
+LDIFF_SYM908=LTDIE_132 - Ldebug_info_start
+	.long LDIFF_SYM908
 LTDIE_132_POINTER:
 
 	.byte 13
-LDIFF_SYM907=LTDIE_132 - Ldebug_info_start
-	.long LDIFF_SYM907
+LDIFF_SYM909=LTDIE_132 - Ldebug_info_start
+	.long LDIFF_SYM909
 LTDIE_132_REFERENCE:
 
 	.byte 14
-LDIFF_SYM908=LTDIE_132 - Ldebug_info_start
-	.long LDIFF_SYM908
+LDIFF_SYM910=LTDIE_132 - Ldebug_info_start
+	.long LDIFF_SYM910
 LTDIE_131:
 
 	.byte 5
 	.asciz "System_Threading_SemaphoreSlim"
 
 	.byte 64,16
-LDIFF_SYM909=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM909
+LDIFF_SYM911=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM911
 	.byte 2,35,0,6
 	.asciz "m_currentCount"
 
-LDIFF_SYM910=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM910
+LDIFF_SYM912=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM912
 	.byte 2,35,48,6
 	.asciz "m_maxCount"
 
-LDIFF_SYM911=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM911
+LDIFF_SYM913=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM913
 	.byte 2,35,52,6
 	.asciz "m_waitCount"
 
-LDIFF_SYM912=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM912
+LDIFF_SYM914=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM914
 	.byte 2,35,56,6
 	.asciz "m_lockObj"
 
-LDIFF_SYM913=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM913
+LDIFF_SYM915=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM915
 	.byte 2,35,16,6
 	.asciz "m_waitHandle"
 
-LDIFF_SYM914=LTDIE_99_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM914
+LDIFF_SYM916=LTDIE_99_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM916
 	.byte 2,35,24,6
 	.asciz "m_asyncHead"
 
-LDIFF_SYM915=LTDIE_132_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM915
+LDIFF_SYM917=LTDIE_132_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM917
 	.byte 2,35,32,6
 	.asciz "m_asyncTail"
 
-LDIFF_SYM916=LTDIE_132_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM916
+LDIFF_SYM918=LTDIE_132_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM918
 	.byte 2,35,40,0,7
 	.asciz "System_Threading_SemaphoreSlim"
 
-LDIFF_SYM917=LTDIE_131 - Ldebug_info_start
-	.long LDIFF_SYM917
+LDIFF_SYM919=LTDIE_131 - Ldebug_info_start
+	.long LDIFF_SYM919
 LTDIE_131_POINTER:
 
 	.byte 13
-LDIFF_SYM918=LTDIE_131 - Ldebug_info_start
-	.long LDIFF_SYM918
+LDIFF_SYM920=LTDIE_131 - Ldebug_info_start
+	.long LDIFF_SYM920
 LTDIE_131_REFERENCE:
 
 	.byte 14
-LDIFF_SYM919=LTDIE_131 - Ldebug_info_start
-	.long LDIFF_SYM919
+LDIFF_SYM921=LTDIE_131 - Ldebug_info_start
+	.long LDIFF_SYM921
 LTDIE_104:
 
 	.byte 5
 	.asciz "System_IO_Stream"
 
 	.byte 40,16
-LDIFF_SYM920=LTDIE_48 - Ldebug_info_start
-	.long LDIFF_SYM920
+LDIFF_SYM922=LTDIE_48 - Ldebug_info_start
+	.long LDIFF_SYM922
 	.byte 2,35,0,6
 	.asciz "_activeReadWriteTask"
 
-LDIFF_SYM921=LTDIE_105_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM921
+LDIFF_SYM923=LTDIE_105_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM923
 	.byte 2,35,24,6
 	.asciz "_asyncActiveSemaphore"
 
-LDIFF_SYM922=LTDIE_131_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM922
+LDIFF_SYM924=LTDIE_131_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM924
 	.byte 2,35,32,0,7
 	.asciz "System_IO_Stream"
 
-LDIFF_SYM923=LTDIE_104 - Ldebug_info_start
-	.long LDIFF_SYM923
+LDIFF_SYM925=LTDIE_104 - Ldebug_info_start
+	.long LDIFF_SYM925
 LTDIE_104_POINTER:
 
 	.byte 13
-LDIFF_SYM924=LTDIE_104 - Ldebug_info_start
-	.long LDIFF_SYM924
+LDIFF_SYM926=LTDIE_104 - Ldebug_info_start
+	.long LDIFF_SYM926
 LTDIE_104_REFERENCE:
 
 	.byte 14
-LDIFF_SYM925=LTDIE_104 - Ldebug_info_start
-	.long LDIFF_SYM925
+LDIFF_SYM927=LTDIE_104 - Ldebug_info_start
+	.long LDIFF_SYM927
 LTDIE_135:
 
 	.byte 5
 	.asciz "System_Text_DecoderFallbackBuffer"
 
 	.byte 32,16
-LDIFF_SYM926=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM926
+LDIFF_SYM928=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM928
 	.byte 2,35,0,6
 	.asciz "byteStart"
 
-LDIFF_SYM927=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM927
+LDIFF_SYM929=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM929
 	.byte 2,35,16,6
 	.asciz "charEnd"
 
-LDIFF_SYM928=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM928
+LDIFF_SYM930=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM930
 	.byte 2,35,24,0,7
 	.asciz "System_Text_DecoderFallbackBuffer"
 
-LDIFF_SYM929=LTDIE_135 - Ldebug_info_start
-	.long LDIFF_SYM929
+LDIFF_SYM931=LTDIE_135 - Ldebug_info_start
+	.long LDIFF_SYM931
 LTDIE_135_POINTER:
 
 	.byte 13
-LDIFF_SYM930=LTDIE_135 - Ldebug_info_start
-	.long LDIFF_SYM930
+LDIFF_SYM932=LTDIE_135 - Ldebug_info_start
+	.long LDIFF_SYM932
 LTDIE_135_REFERENCE:
 
 	.byte 14
-LDIFF_SYM931=LTDIE_135 - Ldebug_info_start
-	.long LDIFF_SYM931
+LDIFF_SYM933=LTDIE_135 - Ldebug_info_start
+	.long LDIFF_SYM933
 LTDIE_134:
 
 	.byte 5
 	.asciz "System_Text_Decoder"
 
 	.byte 32,16
-LDIFF_SYM932=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM932
+LDIFF_SYM934=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM934
 	.byte 2,35,0,6
 	.asciz "_fallback"
 
-LDIFF_SYM933=LTDIE_58_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM933
+LDIFF_SYM935=LTDIE_58_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM935
 	.byte 2,35,16,6
 	.asciz "_fallbackBuffer"
 
-LDIFF_SYM934=LTDIE_135_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM934
+LDIFF_SYM936=LTDIE_135_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM936
 	.byte 2,35,24,0,7
 	.asciz "System_Text_Decoder"
 
-LDIFF_SYM935=LTDIE_134 - Ldebug_info_start
-	.long LDIFF_SYM935
+LDIFF_SYM937=LTDIE_134 - Ldebug_info_start
+	.long LDIFF_SYM937
 LTDIE_134_POINTER:
 
 	.byte 13
-LDIFF_SYM936=LTDIE_134 - Ldebug_info_start
-	.long LDIFF_SYM936
+LDIFF_SYM938=LTDIE_134 - Ldebug_info_start
+	.long LDIFF_SYM938
 LTDIE_134_REFERENCE:
 
 	.byte 14
-LDIFF_SYM937=LTDIE_134 - Ldebug_info_start
-	.long LDIFF_SYM937
+LDIFF_SYM939=LTDIE_134 - Ldebug_info_start
+	.long LDIFF_SYM939
 LTDIE_102:
 
 	.byte 5
 	.asciz "System_IO_StreamReader"
 
 	.byte 104,16
-LDIFF_SYM938=LTDIE_103 - Ldebug_info_start
-	.long LDIFF_SYM938
+LDIFF_SYM940=LTDIE_103 - Ldebug_info_start
+	.long LDIFF_SYM940
 	.byte 2,35,0,6
 	.asciz "stream"
 
-LDIFF_SYM939=LTDIE_104_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM939
+LDIFF_SYM941=LTDIE_104_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM941
 	.byte 2,35,24,6
 	.asciz "encoding"
 
-LDIFF_SYM940=LTDIE_54_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM940
+LDIFF_SYM942=LTDIE_54_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM942
 	.byte 2,35,32,6
 	.asciz "decoder"
 
-LDIFF_SYM941=LTDIE_134_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM941
+LDIFF_SYM943=LTDIE_134_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM943
 	.byte 2,35,40,6
 	.asciz "byteBuffer"
 
-LDIFF_SYM942=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM942
+LDIFF_SYM944=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM944
 	.byte 2,35,48,6
 	.asciz "charBuffer"
 
-LDIFF_SYM943=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM943
+LDIFF_SYM945=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM945
 	.byte 2,35,56,6
 	.asciz "_preamble"
 
-LDIFF_SYM944=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM944
+LDIFF_SYM946=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM946
 	.byte 2,35,64,6
 	.asciz "charPos"
 
-LDIFF_SYM945=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM945
+LDIFF_SYM947=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM947
 	.byte 2,35,80,6
 	.asciz "charLen"
 
-LDIFF_SYM946=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM946
+LDIFF_SYM948=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM948
 	.byte 2,35,84,6
 	.asciz "byteLen"
 
-LDIFF_SYM947=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM947
+LDIFF_SYM949=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM949
 	.byte 2,35,88,6
 	.asciz "bytePos"
 
-LDIFF_SYM948=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM948
+LDIFF_SYM950=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM950
 	.byte 2,35,92,6
 	.asciz "_maxCharsPerBuffer"
 
-LDIFF_SYM949=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM949
+LDIFF_SYM951=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM951
 	.byte 2,35,96,6
 	.asciz "_detectEncoding"
 
-LDIFF_SYM950=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM950
+LDIFF_SYM952=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM952
 	.byte 2,35,100,6
 	.asciz "_checkPreamble"
 
-LDIFF_SYM951=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM951
+LDIFF_SYM953=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM953
 	.byte 2,35,101,6
 	.asciz "_isBlocked"
 
-LDIFF_SYM952=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM952
+LDIFF_SYM954=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM954
 	.byte 2,35,102,6
 	.asciz "_closable"
 
-LDIFF_SYM953=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM953
+LDIFF_SYM955=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM955
 	.byte 2,35,103,6
 	.asciz "_asyncReadTask"
 
-LDIFF_SYM954=LTDIE_107_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM954
+LDIFF_SYM956=LTDIE_107_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM956
 	.byte 2,35,72,0,7
 	.asciz "System_IO_StreamReader"
 
-LDIFF_SYM955=LTDIE_102 - Ldebug_info_start
-	.long LDIFF_SYM955
+LDIFF_SYM957=LTDIE_102 - Ldebug_info_start
+	.long LDIFF_SYM957
 LTDIE_102_POINTER:
 
 	.byte 13
-LDIFF_SYM956=LTDIE_102 - Ldebug_info_start
-	.long LDIFF_SYM956
+LDIFF_SYM958=LTDIE_102 - Ldebug_info_start
+	.long LDIFF_SYM958
 LTDIE_102_REFERENCE:
 
 	.byte 14
-LDIFF_SYM957=LTDIE_102 - Ldebug_info_start
-	.long LDIFF_SYM957
+LDIFF_SYM959=LTDIE_102 - Ldebug_info_start
+	.long LDIFF_SYM959
 LTDIE_139:
 
 	.byte 5
 	.asciz "System_Text_EncoderNLS"
 
 	.byte 48,16
-LDIFF_SYM958=LTDIE_137 - Ldebug_info_start
-	.long LDIFF_SYM958
+LDIFF_SYM960=LTDIE_137 - Ldebug_info_start
+	.long LDIFF_SYM960
 	.byte 2,35,0,6
 	.asciz "_charLeftOver"
 
-LDIFF_SYM959=LDIE_CHAR - Ldebug_info_start
-	.long LDIFF_SYM959
+LDIFF_SYM961=LDIE_CHAR - Ldebug_info_start
+	.long LDIFF_SYM961
 	.byte 2,35,40,6
 	.asciz "_encoding"
 
-LDIFF_SYM960=LTDIE_54_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM960
+LDIFF_SYM962=LTDIE_54_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM962
 	.byte 2,35,32,6
 	.asciz "_mustFlush"
 
-LDIFF_SYM961=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM961
+LDIFF_SYM963=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM963
 	.byte 2,35,42,6
 	.asciz "_throwOnOverflow"
 
-LDIFF_SYM962=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM962
+LDIFF_SYM964=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM964
 	.byte 2,35,43,6
 	.asciz "_charsUsed"
 
-LDIFF_SYM963=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM963
+LDIFF_SYM965=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM965
 	.byte 2,35,44,0,7
 	.asciz "System_Text_EncoderNLS"
 
-LDIFF_SYM964=LTDIE_139 - Ldebug_info_start
-	.long LDIFF_SYM964
+LDIFF_SYM966=LTDIE_139 - Ldebug_info_start
+	.long LDIFF_SYM966
 LTDIE_139_POINTER:
 
 	.byte 13
-LDIFF_SYM965=LTDIE_139 - Ldebug_info_start
-	.long LDIFF_SYM965
+LDIFF_SYM967=LTDIE_139 - Ldebug_info_start
+	.long LDIFF_SYM967
 LTDIE_139_REFERENCE:
 
 	.byte 14
-LDIFF_SYM966=LTDIE_139 - Ldebug_info_start
-	.long LDIFF_SYM966
+LDIFF_SYM968=LTDIE_139 - Ldebug_info_start
+	.long LDIFF_SYM968
 LTDIE_138:
 
 	.byte 5
 	.asciz "System_Text_EncoderFallbackBuffer"
 
 	.byte 48,16
-LDIFF_SYM967=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM967
+LDIFF_SYM969=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM969
 	.byte 2,35,0,6
 	.asciz "charStart"
 
-LDIFF_SYM968=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM968
+LDIFF_SYM970=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM970
 	.byte 2,35,24,6
 	.asciz "charEnd"
 
-LDIFF_SYM969=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM969
+LDIFF_SYM971=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM971
 	.byte 2,35,32,6
 	.asciz "encoder"
 
-LDIFF_SYM970=LTDIE_139_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM970
+LDIFF_SYM972=LTDIE_139_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM972
 	.byte 2,35,16,6
 	.asciz "setEncoder"
 
-LDIFF_SYM971=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM971
+LDIFF_SYM973=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM973
 	.byte 2,35,40,6
 	.asciz "bUsedEncoder"
 
-LDIFF_SYM972=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM972
+LDIFF_SYM974=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM974
 	.byte 2,35,41,6
 	.asciz "bFallingBack"
 
-LDIFF_SYM973=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM973
+LDIFF_SYM975=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM975
 	.byte 2,35,42,6
 	.asciz "iRecursionCount"
 
-LDIFF_SYM974=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM974
+LDIFF_SYM976=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM976
 	.byte 2,35,44,0,7
 	.asciz "System_Text_EncoderFallbackBuffer"
 
-LDIFF_SYM975=LTDIE_138 - Ldebug_info_start
-	.long LDIFF_SYM975
+LDIFF_SYM977=LTDIE_138 - Ldebug_info_start
+	.long LDIFF_SYM977
 LTDIE_138_POINTER:
 
 	.byte 13
-LDIFF_SYM976=LTDIE_138 - Ldebug_info_start
-	.long LDIFF_SYM976
+LDIFF_SYM978=LTDIE_138 - Ldebug_info_start
+	.long LDIFF_SYM978
 LTDIE_138_REFERENCE:
 
 	.byte 14
-LDIFF_SYM977=LTDIE_138 - Ldebug_info_start
-	.long LDIFF_SYM977
+LDIFF_SYM979=LTDIE_138 - Ldebug_info_start
+	.long LDIFF_SYM979
 LTDIE_137:
 
 	.byte 5
 	.asciz "System_Text_Encoder"
 
 	.byte 32,16
-LDIFF_SYM978=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM978
+LDIFF_SYM980=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM980
 	.byte 2,35,0,6
 	.asciz "_fallback"
 
-LDIFF_SYM979=LTDIE_57_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM979
+LDIFF_SYM981=LTDIE_57_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM981
 	.byte 2,35,16,6
 	.asciz "_fallbackBuffer"
 
-LDIFF_SYM980=LTDIE_138_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM980
+LDIFF_SYM982=LTDIE_138_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM982
 	.byte 2,35,24,0,7
 	.asciz "System_Text_Encoder"
 
-LDIFF_SYM981=LTDIE_137 - Ldebug_info_start
-	.long LDIFF_SYM981
+LDIFF_SYM983=LTDIE_137 - Ldebug_info_start
+	.long LDIFF_SYM983
 LTDIE_137_POINTER:
 
 	.byte 13
-LDIFF_SYM982=LTDIE_137 - Ldebug_info_start
-	.long LDIFF_SYM982
+LDIFF_SYM984=LTDIE_137 - Ldebug_info_start
+	.long LDIFF_SYM984
 LTDIE_137_REFERENCE:
 
 	.byte 14
-LDIFF_SYM983=LTDIE_137 - Ldebug_info_start
-	.long LDIFF_SYM983
+LDIFF_SYM985=LTDIE_137 - Ldebug_info_start
+	.long LDIFF_SYM985
 LTDIE_136:
 
 	.byte 5
 	.asciz "System_IO_StreamWriter"
 
 	.byte 104,16
-LDIFF_SYM984=LTDIE_47 - Ldebug_info_start
-	.long LDIFF_SYM984
+LDIFF_SYM986=LTDIE_47 - Ldebug_info_start
+	.long LDIFF_SYM986
 	.byte 2,35,0,6
 	.asciz "stream"
 
-LDIFF_SYM985=LTDIE_104_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM985
+LDIFF_SYM987=LTDIE_104_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM987
 	.byte 2,35,40,6
 	.asciz "encoding"
 
-LDIFF_SYM986=LTDIE_54_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM986
+LDIFF_SYM988=LTDIE_54_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM988
 	.byte 2,35,48,6
 	.asciz "encoder"
 
-LDIFF_SYM987=LTDIE_137_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM987
+LDIFF_SYM989=LTDIE_137_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM989
 	.byte 2,35,56,6
 	.asciz "byteBuffer"
 
-LDIFF_SYM988=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM988
+LDIFF_SYM990=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM990
 	.byte 2,35,64,6
 	.asciz "charBuffer"
 
-LDIFF_SYM989=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM989
+LDIFF_SYM991=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM991
 	.byte 2,35,72,6
 	.asciz "charPos"
 
-LDIFF_SYM990=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM990
+LDIFF_SYM992=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM992
 	.byte 2,35,88,6
 	.asciz "charLen"
 
-LDIFF_SYM991=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM991
+LDIFF_SYM993=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM993
 	.byte 2,35,92,6
 	.asciz "autoFlush"
 
-LDIFF_SYM992=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM992
+LDIFF_SYM994=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM994
 	.byte 2,35,96,6
 	.asciz "haveWrittenPreamble"
 
-LDIFF_SYM993=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM993
+LDIFF_SYM995=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM995
 	.byte 2,35,97,6
 	.asciz "closable"
 
-LDIFF_SYM994=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM994
+LDIFF_SYM996=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM996
 	.byte 2,35,98,6
 	.asciz "_asyncWriteTask"
 
-LDIFF_SYM995=LTDIE_107_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM995
+LDIFF_SYM997=LTDIE_107_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM997
 	.byte 2,35,80,0,7
 	.asciz "System_IO_StreamWriter"
 
-LDIFF_SYM996=LTDIE_136 - Ldebug_info_start
-	.long LDIFF_SYM996
+LDIFF_SYM998=LTDIE_136 - Ldebug_info_start
+	.long LDIFF_SYM998
 LTDIE_136_POINTER:
 
 	.byte 13
-LDIFF_SYM997=LTDIE_136 - Ldebug_info_start
-	.long LDIFF_SYM997
+LDIFF_SYM999=LTDIE_136 - Ldebug_info_start
+	.long LDIFF_SYM999
 LTDIE_136_REFERENCE:
 
 	.byte 14
-LDIFF_SYM998=LTDIE_136 - Ldebug_info_start
-	.long LDIFF_SYM998
+LDIFF_SYM1000=LTDIE_136 - Ldebug_info_start
+	.long LDIFF_SYM1000
 LTDIE_140:
 
 	.byte 8
 	.asciz "_StreamReadMode"
 
 	.byte 4
-LDIFF_SYM999=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM999
+LDIFF_SYM1001=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1001
 	.byte 9
 	.asciz "undefined"
 
@@ -12748,264 +12758,264 @@ LDIFF_SYM999=LDIE_I4 - Ldebug_info_start
 	.byte 2,0,7
 	.asciz "_StreamReadMode"
 
-LDIFF_SYM1000=LTDIE_140 - Ldebug_info_start
-	.long LDIFF_SYM1000
+LDIFF_SYM1002=LTDIE_140 - Ldebug_info_start
+	.long LDIFF_SYM1002
 LTDIE_140_POINTER:
 
 	.byte 13
-LDIFF_SYM1001=LTDIE_140 - Ldebug_info_start
-	.long LDIFF_SYM1001
+LDIFF_SYM1003=LTDIE_140 - Ldebug_info_start
+	.long LDIFF_SYM1003
 LTDIE_140_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1002=LTDIE_140 - Ldebug_info_start
-	.long LDIFF_SYM1002
+LDIFF_SYM1004=LTDIE_140 - Ldebug_info_start
+	.long LDIFF_SYM1004
 LTDIE_141:
 
 	.byte 5
 	.asciz "System_Diagnostics_AsyncStreamReader"
 
 	.byte 80,16
-LDIFF_SYM1003=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM1003
+LDIFF_SYM1005=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM1005
 	.byte 2,35,0,6
 	.asciz "stream"
 
-LDIFF_SYM1004=LTDIE_104_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1004
+LDIFF_SYM1006=LTDIE_104_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1006
 	.byte 2,35,16,6
 	.asciz "encoding"
 
-LDIFF_SYM1005=LTDIE_54_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1005
+LDIFF_SYM1007=LTDIE_54_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1007
 	.byte 2,35,24,6
 	.asciz "decoder"
 
-LDIFF_SYM1006=LTDIE_134_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1006
+LDIFF_SYM1008=LTDIE_134_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1008
 	.byte 2,35,32,6
 	.asciz "byteBuffer"
 
-LDIFF_SYM1007=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1007
+LDIFF_SYM1009=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1009
 	.byte 2,35,40,6
 	.asciz "charBuffer"
 
-LDIFF_SYM1008=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1008
+LDIFF_SYM1010=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1010
 	.byte 2,35,48,6
 	.asciz "cancelOperation"
 
-LDIFF_SYM1009=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1009
+LDIFF_SYM1011=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1011
 	.byte 2,35,72,6
 	.asciz "eofEvent"
 
-LDIFF_SYM1010=LTDIE_99_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1010
+LDIFF_SYM1012=LTDIE_99_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1012
 	.byte 2,35,56,6
 	.asciz "syncObject"
 
-LDIFF_SYM1011=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1011
+LDIFF_SYM1013=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1013
 	.byte 2,35,64,0,7
 	.asciz "System_Diagnostics_AsyncStreamReader"
 
-LDIFF_SYM1012=LTDIE_141 - Ldebug_info_start
-	.long LDIFF_SYM1012
+LDIFF_SYM1014=LTDIE_141 - Ldebug_info_start
+	.long LDIFF_SYM1014
 LTDIE_141_POINTER:
 
 	.byte 13
-LDIFF_SYM1013=LTDIE_141 - Ldebug_info_start
-	.long LDIFF_SYM1013
+LDIFF_SYM1015=LTDIE_141 - Ldebug_info_start
+	.long LDIFF_SYM1015
 LTDIE_141_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1014=LTDIE_141 - Ldebug_info_start
-	.long LDIFF_SYM1014
+LDIFF_SYM1016=LTDIE_141 - Ldebug_info_start
+	.long LDIFF_SYM1016
 LTDIE_83:
 
 	.byte 5
 	.asciz "System_Diagnostics_Process"
 
 	.byte 200,1,16
-LDIFF_SYM1015=LTDIE_84 - Ldebug_info_start
-	.long LDIFF_SYM1015
+LDIFF_SYM1017=LTDIE_84 - Ldebug_info_start
+	.long LDIFF_SYM1017
 	.byte 2,35,0,6
 	.asciz "haveProcessId"
 
-LDIFF_SYM1016=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1016
+LDIFF_SYM1018=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1018
 	.byte 3,35,152,1,6
 	.asciz "processId"
 
-LDIFF_SYM1017=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1017
+LDIFF_SYM1019=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1019
 	.byte 3,35,156,1,6
 	.asciz "haveProcessHandle"
 
-LDIFF_SYM1018=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1018
+LDIFF_SYM1020=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1020
 	.byte 3,35,160,1,6
 	.asciz "m_processHandle"
 
-LDIFF_SYM1019=LTDIE_88_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1019
+LDIFF_SYM1021=LTDIE_88_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1021
 	.byte 2,35,40,6
 	.asciz "isRemoteMachine"
 
-LDIFF_SYM1020=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1020
+LDIFF_SYM1022=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1022
 	.byte 3,35,161,1,6
 	.asciz "machineName"
 
-LDIFF_SYM1021=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1021
+LDIFF_SYM1023=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1023
 	.byte 2,35,48,6
 	.asciz "m_processAccess"
 
-LDIFF_SYM1022=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1022
+LDIFF_SYM1024=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1024
 	.byte 3,35,164,1,6
 	.asciz "threads"
 
-LDIFF_SYM1023=LTDIE_92_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1023
+LDIFF_SYM1025=LTDIE_92_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1025
 	.byte 2,35,56,6
 	.asciz "modules"
 
-LDIFF_SYM1024=LTDIE_94_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1024
+LDIFF_SYM1026=LTDIE_94_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1026
 	.byte 2,35,64,6
 	.asciz "haveWorkingSetLimits"
 
-LDIFF_SYM1025=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1025
+LDIFF_SYM1027=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1027
 	.byte 3,35,168,1,6
 	.asciz "havePriorityClass"
 
-LDIFF_SYM1026=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1026
+LDIFF_SYM1028=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1028
 	.byte 3,35,169,1,6
 	.asciz "watchForExit"
 
-LDIFF_SYM1027=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1027
+LDIFF_SYM1029=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1029
 	.byte 3,35,170,1,6
 	.asciz "watchingForExit"
 
-LDIFF_SYM1028=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1028
+LDIFF_SYM1030=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1030
 	.byte 3,35,171,1,6
 	.asciz "onExited"
 
-LDIFF_SYM1029=LTDIE_95_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1029
+LDIFF_SYM1031=LTDIE_95_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1031
 	.byte 2,35,72,6
 	.asciz "exited"
 
-LDIFF_SYM1030=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1030
+LDIFF_SYM1032=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1032
 	.byte 3,35,172,1,6
 	.asciz "exitCode"
 
-LDIFF_SYM1031=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1031
+LDIFF_SYM1033=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1033
 	.byte 3,35,176,1,6
 	.asciz "signaled"
 
-LDIFF_SYM1032=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1032
+LDIFF_SYM1034=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1034
 	.byte 3,35,180,1,6
 	.asciz "haveExitTime"
 
-LDIFF_SYM1033=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1033
+LDIFF_SYM1035=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1035
 	.byte 3,35,181,1,6
 	.asciz "raisedOnExited"
 
-LDIFF_SYM1034=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1034
+LDIFF_SYM1036=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1036
 	.byte 3,35,182,1,6
 	.asciz "registeredWaitHandle"
 
-LDIFF_SYM1035=LTDIE_96_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1035
+LDIFF_SYM1037=LTDIE_96_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1037
 	.byte 2,35,80,6
 	.asciz "waitHandle"
 
-LDIFF_SYM1036=LTDIE_97_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1036
+LDIFF_SYM1038=LTDIE_97_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1038
 	.byte 2,35,88,6
 	.asciz "synchronizingObject"
 
-LDIFF_SYM1037=LTDIE_101_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1037
+LDIFF_SYM1039=LTDIE_101_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1039
 	.byte 2,35,96,6
 	.asciz "standardOutput"
 
-LDIFF_SYM1038=LTDIE_102_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1038
+LDIFF_SYM1040=LTDIE_102_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1040
 	.byte 2,35,104,6
 	.asciz "standardInput"
 
-LDIFF_SYM1039=LTDIE_136_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1039
+LDIFF_SYM1041=LTDIE_136_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1041
 	.byte 2,35,112,6
 	.asciz "standardError"
 
-LDIFF_SYM1040=LTDIE_102_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1040
+LDIFF_SYM1042=LTDIE_102_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1042
 	.byte 2,35,120,6
 	.asciz "disposed"
 
-LDIFF_SYM1041=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1041
+LDIFF_SYM1043=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1043
 	.byte 3,35,183,1,6
 	.asciz "outputStreamReadMode"
 
-LDIFF_SYM1042=LTDIE_140 - Ldebug_info_start
-	.long LDIFF_SYM1042
+LDIFF_SYM1044=LTDIE_140 - Ldebug_info_start
+	.long LDIFF_SYM1044
 	.byte 3,35,184,1,6
 	.asciz "errorStreamReadMode"
 
-LDIFF_SYM1043=LTDIE_140 - Ldebug_info_start
-	.long LDIFF_SYM1043
+LDIFF_SYM1045=LTDIE_140 - Ldebug_info_start
+	.long LDIFF_SYM1045
 	.byte 3,35,188,1,6
 	.asciz "inputStreamReadMode"
 
-LDIFF_SYM1044=LTDIE_140 - Ldebug_info_start
-	.long LDIFF_SYM1044
+LDIFF_SYM1046=LTDIE_140 - Ldebug_info_start
+	.long LDIFF_SYM1046
 	.byte 3,35,192,1,6
 	.asciz "output"
 
-LDIFF_SYM1045=LTDIE_141_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1045
+LDIFF_SYM1047=LTDIE_141_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1047
 	.byte 3,35,128,1,6
 	.asciz "error"
 
-LDIFF_SYM1046=LTDIE_141_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1046
+LDIFF_SYM1048=LTDIE_141_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1048
 	.byte 3,35,136,1,6
 	.asciz "process_name"
 
-LDIFF_SYM1047=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1047
+LDIFF_SYM1049=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1049
 	.byte 3,35,144,1,0,7
 	.asciz "System_Diagnostics_Process"
 
-LDIFF_SYM1048=LTDIE_83 - Ldebug_info_start
-	.long LDIFF_SYM1048
+LDIFF_SYM1050=LTDIE_83 - Ldebug_info_start
+	.long LDIFF_SYM1050
 LTDIE_83_POINTER:
 
 	.byte 13
-LDIFF_SYM1049=LTDIE_83 - Ldebug_info_start
-	.long LDIFF_SYM1049
+LDIFF_SYM1051=LTDIE_83 - Ldebug_info_start
+	.long LDIFF_SYM1051
 LTDIE_83_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1050=LTDIE_83 - Ldebug_info_start
-	.long LDIFF_SYM1050
+LDIFF_SYM1052=LTDIE_83 - Ldebug_info_start
+	.long LDIFF_SYM1052
 	.byte 2
 	.asciz "System.Runtime.Diagnostics.EventLogger:IsInPartialTrust"
 	.asciz "System_Runtime_Diagnostics_EventLogger_IsInPartialTrust"
@@ -13017,32 +13027,32 @@ LDIFF_SYM1050=LTDIE_83 - Ldebug_info_start
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1051=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1051
+LDIFF_SYM1053=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1053
 	.byte 0,11
 	.asciz "retval"
 
-LDIFF_SYM1052=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1052
+LDIFF_SYM1054=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1054
 	.byte 2,141,32,11
 	.asciz "process"
 
-LDIFF_SYM1053=LTDIE_83_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1053
+LDIFF_SYM1055=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1055
 	.byte 2,141,40,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1054=Lfde8_end - Lfde8_start
-	.long LDIFF_SYM1054
+LDIFF_SYM1056=Lfde8_end - Lfde8_start
+	.long LDIFF_SYM1056
 Lfde8_start:
 
 	.long 0
 	.align 3
 	.quad System_Runtime_Diagnostics_EventLogger_IsInPartialTrust
 
-LDIFF_SYM1055=Lme_c5 - System_Runtime_Diagnostics_EventLogger_IsInPartialTrust
-	.long LDIFF_SYM1055
+LDIFF_SYM1057=Lme_c5 - System_Runtime_Diagnostics_EventLogger_IsInPartialTrust
+	.long LDIFF_SYM1057
 	.long 0
 	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,154,12
 	.align 3
@@ -13055,33 +13065,33 @@ LTDIE_142:
 	.asciz "System_Runtime_ExceptionTrace"
 
 	.byte 32,16
-LDIFF_SYM1056=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM1056
+LDIFF_SYM1058=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM1058
 	.byte 2,35,0,6
 	.asciz "eventSourceName"
 
-LDIFF_SYM1057=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1057
+LDIFF_SYM1059=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1059
 	.byte 2,35,16,6
 	.asciz "diagnosticTrace"
 
-LDIFF_SYM1058=LTDIE_65_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1058
+LDIFF_SYM1060=LTDIE_65_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1060
 	.byte 2,35,24,0,7
 	.asciz "System_Runtime_ExceptionTrace"
 
-LDIFF_SYM1059=LTDIE_142 - Ldebug_info_start
-	.long LDIFF_SYM1059
+LDIFF_SYM1061=LTDIE_142 - Ldebug_info_start
+	.long LDIFF_SYM1061
 LTDIE_142_POINTER:
 
 	.byte 13
-LDIFF_SYM1060=LTDIE_142 - Ldebug_info_start
-	.long LDIFF_SYM1060
+LDIFF_SYM1062=LTDIE_142 - Ldebug_info_start
+	.long LDIFF_SYM1062
 LTDIE_142_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1061=LTDIE_142 - Ldebug_info_start
-	.long LDIFF_SYM1061
+LDIFF_SYM1063=LTDIE_142 - Ldebug_info_start
+	.long LDIFF_SYM1063
 	.byte 2
 	.asciz "System.Runtime.ExceptionTrace:TraceException<TException_GSHAREDVT>"
 	.asciz "System_Runtime_ExceptionTrace_TraceException_TException_GSHAREDVT_TException_GSHAREDVT"
@@ -13093,27 +13103,27 @@ LDIFF_SYM1061=LTDIE_142 - Ldebug_info_start
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1062=LTDIE_142_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1062
+LDIFF_SYM1064=LTDIE_142_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1064
 	.byte 2,141,40,3
 	.asciz "exception"
 
-LDIFF_SYM1063=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1063
+LDIFF_SYM1065=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1065
 	.byte 1,80,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1064=Lfde9_end - Lfde9_start
-	.long LDIFF_SYM1064
+LDIFF_SYM1066=Lfde9_end - Lfde9_start
+	.long LDIFF_SYM1066
 Lfde9_start:
 
 	.long 0
 	.align 3
 	.quad System_Runtime_ExceptionTrace_TraceException_TException_GSHAREDVT_TException_GSHAREDVT
 
-LDIFF_SYM1065=Lme_d1 - System_Runtime_ExceptionTrace_TraceException_TException_GSHAREDVT_TException_GSHAREDVT
-	.long LDIFF_SYM1065
+LDIFF_SYM1067=Lme_d1 - System_Runtime_ExceptionTrace_TraceException_TException_GSHAREDVT_TException_GSHAREDVT
+	.long LDIFF_SYM1067
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10,153,9
 	.align 3
@@ -13132,32 +13142,32 @@ Lfde9_end:
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1066=LTDIE_142_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1066
+LDIFF_SYM1068=LTDIE_142_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1068
 	.byte 1,105,3
 	.asciz "exception"
 
-LDIFF_SYM1067=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1067
+LDIFF_SYM1069=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1069
 	.byte 1,80,3
 	.asciz "eventSource"
 
-LDIFF_SYM1068=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1068
+LDIFF_SYM1070=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1070
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1069=Lfde10_end - Lfde10_start
-	.long LDIFF_SYM1069
+LDIFF_SYM1071=Lfde10_end - Lfde10_start
+	.long LDIFF_SYM1071
 Lfde10_start:
 
 	.long 0
 	.align 3
 	.quad System_Runtime_ExceptionTrace_TraceException_TException_GSHAREDVT_TException_GSHAREDVT_string
 
-LDIFF_SYM1070=Lme_d2 - System_Runtime_ExceptionTrace_TraceException_TException_GSHAREDVT_TException_GSHAREDVT_string
-	.long LDIFF_SYM1070
+LDIFF_SYM1072=Lme_d2 - System_Runtime_ExceptionTrace_TraceException_TException_GSHAREDVT_TException_GSHAREDVT_string
+	.long LDIFF_SYM1072
 	.long 0
 	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,148,14,149,13,68,150,12,151,11,68,152,10,153,9,68,154,8
 	.align 3

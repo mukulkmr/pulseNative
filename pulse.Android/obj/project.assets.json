@@ -995,7 +995,7 @@
           "build/MonoAndroid80/Xamarin.Firebase.Messaging.targets": {}
         }
       },
-      "Xamarin.Forms/4.1.0.581479": {
+      "Xamarin.Forms/4.1.0.618606": {
         "type": "package",
         "dependencies": {
           "Xamarin.Android.Support.CustomTabs": "28.0.0.1",
@@ -1023,22 +1023,7 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.PancakeView/1.0.21": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Forms": "3.5.0.129452"
-        },
-        "frameworkAssemblies": [
-          "Java.Interop"
-        ],
-        "compile": {
-          "lib/monoandroid90/Xamarin.Forms.PancakeView.dll": {}
-        },
-        "runtime": {
-          "lib/monoandroid90/Xamarin.Forms.PancakeView.dll": {}
-        }
-      },
-      "Xamarin.Forms.Visual.Material/4.1.0.581479": {
+      "Xamarin.Forms.Visual.Material/4.1.0.618606": {
         "type": "package",
         "dependencies": {
           "Xamarin.Android.Support.Design": "28.0.0.1",
@@ -1101,8 +1086,7 @@
           "Newtonsoft.Json": "12.0.2",
           "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.2.0",
-          "Xamarin.Forms": "4.1.0.581479",
-          "Xamarin.Forms.PancakeView": "1.0.21"
+          "Xamarin.Forms": "4.1.0.581479"
         },
         "compile": {
           "bin/placeholder/pulse.dll": {}
@@ -2262,10 +2246,10 @@
         "xamarin.firebase.messaging.nuspec"
       ]
     },
-    "Xamarin.Forms/4.1.0.581479": {
-      "sha512": "wrO8AOW1xsFoGgT1SUvJ9OEeqAduJOm0xezZGNe0rCiAv2N9Qc/n5uywhlSia1s1k+Zy/hOrhZ4b7/EM6z9oog==",
+    "Xamarin.Forms/4.1.0.618606": {
+      "sha512": "qJoOu0DiSzsfQj7nuMtKUcl39KsUxfU9yDJ5HU1flM+hnOrSD6IyDgKKxOkqIdmVwAL8R6hISz+b8MB4P5oDFw==",
       "type": "package",
-      "path": "xamarin.forms/4.1.0.581479",
+      "path": "xamarin.forms/4.1.0.618606",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2504,29 +2488,14 @@
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.1.0.581479.nupkg.sha512",
+        "xamarin.forms.4.1.0.618606.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
-    "Xamarin.Forms.PancakeView/1.0.21": {
-      "sha512": "MQkBObAAFw4V/rvIL8e2MigNjSZLse4w6r9mYf89334PznAWSfnfGiQoNModq8+2lGYfVIWjC9kuQy9QXqtpuQ==",
+    "Xamarin.Forms.Visual.Material/4.1.0.618606": {
+      "sha512": "iwdGBTarIG9XCHLsonMa0tnF5DJEJc2H//M2nUkcxnQNjr6A0xqP/blVUZ8hR1iszAA0qONlEla9A2g6QUqzeg==",
       "type": "package",
-      "path": "xamarin.forms.pancakeview/1.0.21",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/monoandroid81/Xamarin.Forms.PancakeView.dll",
-        "lib/monoandroid90/Xamarin.Forms.PancakeView.dll",
-        "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll",
-        "lib/xamarinios10/Xamarin.Forms.PancakeView.dll",
-        "xamarin.forms.pancakeview.1.0.21.nupkg.sha512",
-        "xamarin.forms.pancakeview.nuspec"
-      ]
-    },
-    "Xamarin.Forms.Visual.Material/4.1.0.581479": {
-      "sha512": "vUREinM4sqfaENpxGuWcOacIu7svuZJrtfG251vXxX8mYPHPiSsfIwA88/uvrmzGKfsxrk1xxkBaBTaxG0BLQQ==",
-      "type": "package",
-      "path": "xamarin.forms.visual.material/4.1.0.581479",
+      "path": "xamarin.forms.visual.material/4.1.0.618606",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2540,7 +2509,7 @@
         "lib/netstandard1.0/_._",
         "lib/tizen40/Xamarin.Forms.Material.dll",
         "lib/tizen40/Xamarin.Forms.Material.pdb",
-        "xamarin.forms.visual.material.4.1.0.581479.nupkg.sha512",
+        "xamarin.forms.visual.material.4.1.0.618606.nupkg.sha512",
         "xamarin.forms.visual.material.nuspec"
       ]
     },
@@ -2579,6 +2548,7 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
+      "Com.Airbnb.Xamarin.Forms.Lottie >= 3.0.0",
       "Microsoft.AppCenter >= 2.1.1",
       "Microsoft.AppCenter.Analytics >= 2.1.1",
       "Microsoft.AppCenter.Crashes >= 2.1.1",
@@ -2592,9 +2562,8 @@
       "Xamarin.Android.Support.v7.CardView >= 28.0.0.1",
       "Xamarin.Android.Support.v7.MediaRouter >= 28.0.0.1",
       "Xamarin.Essentials >= 1.2.0",
-      "Xamarin.Forms >= 4.1.0.581479",
-      "Xamarin.Forms.PancakeView >= 1.0.21",
-      "Xamarin.Forms.Visual.Material >= 4.1.0.581479",
+      "Xamarin.Forms >= 4.1.0.618606",
+      "Xamarin.Forms.Visual.Material >= 4.1.0.618606",
       "pulse >= 1.0.0"
     ]
   },
@@ -2633,6 +2602,10 @@
     "frameworks": {
       "monoandroid90": {
         "dependencies": {
+          "Com.Airbnb.Xamarin.Forms.Lottie": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
           "Microsoft.AppCenter": {
             "target": "Package",
             "version": "[2.1.1, )"
@@ -2687,15 +2660,11 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.1.0.581479, )"
-          },
-          "Xamarin.Forms.PancakeView": {
-            "target": "Package",
-            "version": "[1.0.21, )"
+            "version": "[4.1.0.618606, )"
           },
           "Xamarin.Forms.Visual.Material": {
             "target": "Package",
-            "version": "[4.1.0.581479, )"
+            "version": "[4.1.0.618606, )"
           }
         }
       }
