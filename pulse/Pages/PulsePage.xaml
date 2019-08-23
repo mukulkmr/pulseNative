@@ -21,13 +21,13 @@
                         </Grid.ColumnDefinitions>
                         
                         <ImageButton Grid.Column="0" Source="facebook_button"
-                                     CommandParameter="https://www.facebook.com/PulseAnnualFestAiims/app/190322544333196/"
+                                     CommandParameter="https://www.facebook.com/PulseAnnualFestAiims/"
                                      Clicked="OpenLink"/>
                         <ImageButton Grid.Column="1" Source="intagram_button" 
                                      CommandParameter="https://www.instagram.com/pulse.aiims/"
                                      Clicked="OpenLink"/>
                         <ImageButton Grid.Column="2" Source="youtube_button"  
-                                     CommandParameter="https://www.youtube.com/channel/UCDIHSW7GgqLS05X2xG8wRow-"
+                                     CommandParameter="https://www.youtube.com/channel/UCDIHSW7GgqLS05X2xG8wRow"
                                      Clicked="OpenLink"/>
                     </Grid>
                 </StackLayout>

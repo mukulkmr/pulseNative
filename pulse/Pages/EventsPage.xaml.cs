@@ -1,25 +1,30 @@
 ﻿using Xamarin.Forms;
-using System.Collections.ObjectModel;
 using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
 
 namespace pulse
 {
+    [Serializable]
     public class Dept
     {
+        [DataMember]
         public string Id { get; set; }
+        [DataMember]
         public string Name { get; set; }
+        [DataMember]
         public string Color { get; set; }
     }
 
     public partial class EventsPage : ContentPage
     {
-        public ObservableCollection<Dept> Depts { get; set; }
+        public IList<Dept> Depts { get; set; }
 
         public EventsPage()
         {
             InitializeComponent();
 
-            Depts = new ObservableCollection<Dept>
+            Depts = new List<Dept>
             {
 
                 new Dept
@@ -64,6 +69,8 @@ namespace pulse
                     Color = "#D4145A"
                 }
             };
+
+            listview.ItemsSource = Depts;
 
             BindingContext = this;
         }

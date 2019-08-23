@@ -12,8 +12,9 @@
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Microsoft.AppCenter.Push.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Microsoft.AppCenter.Push.iOS.Bindings.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Newtonsoft.Json.dll
-/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Plugin.LocalNotifications.Abstractions.dll
-/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Plugin.LocalNotifications.dll
+/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Toasts.Forms.Plugin.Abstractions.dll
+/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Toasts.Forms.Plugin.Abstractions.pdb
+/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Toasts.Forms.Plugin.iOS.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Xamarin.Essentials.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Xamarin.Essentials.pdb
 /Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Release/Xamarin.Forms.Core.dll

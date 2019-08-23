@@ -70,3 +70,5 @@ Microsoft.AppCenter.Analytics
 Microsoft.AppCenter.Crashes.Android.Bindings
 Microsoft.AppCenter.Crashes
 Xamarin.Forms.PancakeView
+Toasts.Forms.Plugin.Abstractions
+Toasts.Forms.Plugin.Droid

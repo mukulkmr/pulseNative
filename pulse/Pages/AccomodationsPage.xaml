@@ -17,34 +17,27 @@
                     <StackLayout>
                         <Label x:Name="AccomodationStatus"
                                FontSize="Large"
+                               HorizontalTextAlignment="Center"
                                FontAttributes="Bold"
                                Text="Status Loading..." />
                         <Label x:Name="AccomodationRooms"
+                               HorizontalTextAlignment="Center"
                                FontSize="Large" />
                         <Label x:Name="AccomodationDates"
+                               HorizontalTextAlignment="Center"
                                FontSize="Large" />
                     </StackLayout>
                 </Frame>
 
                 <Frame x:Name="AccomodationsCard"
                        Style="{StaticResource Card}">
-                    <Grid RowSpacing="0">
+                    <Grid RowSpacing="8">
 
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width=".5*" />
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
-
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="50" />
-                            <RowDefinition Height="50" />
-                            <RowDefinition Height="50" />
-                            <RowDefinition Height="50" />
-                            <RowDefinition Height="50" />
-                            <RowDefinition Height="50" />
-                            <RowDefinition Height="50" />
-                        </Grid.RowDefinitions>
 
 
                         <Label Text="Request Accommodations"
@@ -59,74 +52,80 @@
                                Grid.Row="1"
                                HorizontalTextAlignment="Start"
                                VerticalTextAlignment="Center"
-                               Text="Number of Rooms" />
+                               Text="Rooms" />
                         <Label x:Name="roomText"
                                FontSize="Large"
                                FontAttributes="Bold"
                                HorizontalTextAlignment="End"
                                VerticalTextAlignment="Center"
-                               Text="1"
+                               Text="0"
                                Grid.Row="1"
                                Grid.Column="1" />
                         <Stepper x:Name="rooms"
                                  Maximum="5"
-                                 Minimum="1"
+                                 Minimum="0"
                                  Grid.Column="2"
                                  Grid.Row="1"
                                  ValueChanged="Room_ValueChanged" />
 
-                        <Label Grid.Column="0"
+                        <Label Grid.ColumnSpan="3"
                                Grid.Row="2"
+                               HorizontalTextAlignment="Center"
+                               VerticalTextAlignment="Center"
+                               Text="OR" />
+
+                        <Label Grid.Column="0"
+                               Grid.Row="3"
                                HorizontalTextAlignment="Start"
                                VerticalTextAlignment="Center"
-                               Text="Can Share with" />
+                               Text="People" />
                         <Label x:Name="shareText"
                                FontSize="Large"
                                FontAttributes="Bold"
                                HorizontalTextAlignment="End"
                                VerticalTextAlignment="Center"
                                Text="0"
-                               Grid.Row="2"
+                               Grid.Row="3"
                                Grid.Column="1" />
                         <Stepper x:Name="share"
                                  Maximum="5"
                                  Minimum="0"
                                  Grid.Column="2"
-                                 Grid.Row="2"
+                                 Grid.Row="3"
                                  ValueChanged="Share_ValueChanged" />
 
                         <Label VerticalTextAlignment="Center"
                                HorizontalTextAlignment="Start"
                                Grid.Column="0"
-                               Grid.Row="3"
+                               Grid.Row="4"
                                Text="On Campus?" />
                         <Switch Grid.Column="2"
-                                Grid.Row="3"
+                                Grid.Row="4"
                                 x:Name="OnCampus"
                                 VerticalOptions="Center" />
 
                         <Label VerticalTextAlignment="Center"
                                HorizontalTextAlignment="Start"
                                Grid.Column="0"
-                               Grid.Row="4"
+                               Grid.Row="5"
                                Text="Check In" />
                         <DatePicker Grid.Column="2"
-                                    Grid.Row="4"
+                                    Grid.Row="5"
                                     x:Name="checkin"
                                     VerticalOptions="Center" />
 
                         <Label VerticalTextAlignment="Center"
                                HorizontalTextAlignment="Start"
                                Grid.Column="0"
-                               Grid.Row="5"
+                               Grid.Row="6"
                                Text="Check Out" />
                         <DatePicker Grid.Column="2"
-                                    Grid.Row="5"
+                                    Grid.Row="6"
                                     x:Name="checkout"
                                     VerticalOptions="Center" />
 
                         <Button Clicked="OnRequestAccomodations"
-                                Grid.Row="6"
+                                Grid.Row="7"
                                 Grid.ColumnSpan="3"
                                 Text="Request" />
                     </Grid>

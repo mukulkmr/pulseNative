@@ -41,9 +41,6 @@ namespace pulse
             AccomodationsCard.IsVisible = !Preferences.Get("Accomodations", false);
             AccomodationSummary.IsVisible = Preferences.Get("Accomodations", false);
 
-            AccomodationsCard.IsVisible &= Preferences.Get("MedicalStudent", true)
-                && Preferences.Get("College", "All India Institute of Medical Sciences, New Delhi") != "Students' Union Invite";
-
             if (AccomodationSummary.IsVisible)
                 _ = UpdateAsync();
         }
@@ -88,9 +85,9 @@ namespace pulse
 
                 var formContent = new FormUrlEncodedContent(new[] {
                         new KeyValuePair<string, string>("guid", id),
-                        new KeyValuePair<string, string>("people", "0"),
+                        new KeyValuePair<string, string>("people", share.Value.ToString()),
                         new KeyValuePair<string, string>("rooms", rooms.Value.ToString()),
-                        new KeyValuePair<string, string>("sharewith", share.Value.ToString()),
+                        new KeyValuePair<string, string>("sharewith", "0"),
                         new KeyValuePair<string, string>("oncampus", OnCampus.IsToggled.ToString()),
                         new KeyValuePair<string, string>("team", "NaN"),
                         new KeyValuePair<string, string>("checkin", $"{checkin.Date.Year}-{checkin.Date.Month}-{checkin.Date.Day}"),
@@ -115,11 +112,30 @@ namespace pulse
         void Room_ValueChanged(object sender, ValueChangedEventArgs e)
         {
             roomText.Text = e.NewValue.ToString();
+
+            if (e.NewValue >= 1)
+            {
+                share.IsVisible = false;
+            }
+            else
+            {
+                share.IsVisible = true;
+            }
+
         }
 
         void Share_ValueChanged(object sender, ValueChangedEventArgs e)
         {
             shareText.Text = e.NewValue.ToString();
+
+            if(e.NewValue >= 1)
+            {
+                rooms.IsVisible = false;
+            }
+            else
+            {
+                rooms.IsVisible = true;
+            }
         }
 
         async void Handle_Clicked(object sender, EventArgs e) => await Navigation.PopModalAsync();

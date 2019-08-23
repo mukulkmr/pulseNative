@@ -28,7 +28,6 @@
 /Users/mukulkumar/.nuget/packages/xamarin.essentials/1.2.0/lib/xamarinios10/Xamarin.Essentials.dll
 /Users/mukulkumar/.nuget/packages/microsoft.appcenter.push/2.1.1/lib/Xamarin.iOS10/Microsoft.AppCenter.Push.dll
 /Users/mukulkumar/.nuget/packages/microsoft.appcenter.push/2.1.1/lib/Xamarin.iOS10/Microsoft.AppCenter.Push.iOS.Bindings.dll
-/Users/mukulkumar/.nuget/packages/xamarin.forms.pancakeview/1.1.1/lib/xamarinios10/Xamarin.Forms.PancakeView.dll
 /Users/mukulkumar/.nuget/packages/com.airbnb.xamarin.forms.lottie/3.0.0/lib/xamarinios10/Lottie.Forms.dll
 /Users/mukulkumar/.nuget/packages/com.airbnb.ios.lottie/2.5.8/lib/xamarinios10/Lottie.iOS.dll
 /Users/mukulkumar/.nuget/packages/microsoft.appcenter/2.1.1/lib/Xamarin.iOS10/Microsoft.AppCenter.dll

@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              BackgroundColor="#fcfcfc"
-             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              NavigationPage.HasNavigationBar="False"
@@ -13,164 +12,153 @@
         <AbsoluteLayout>
 
             <StackLayout AbsoluteLayout.LayoutFlags="All"
-                         Margin="0,20,0,0"
                          AbsoluteLayout.LayoutBounds="0,0,1,1">
 
-                <Frame HasShadow="false"
-                       VerticalOptions="FillAndExpand"
-                       BackgroundColor="Transparent"
-                       Margin="20,5,20,0"
-                       Padding="0"
-                       x:Name="ScheduleCard">
-                    <ScrollView>
-                        <StackLayout>
-                            <Grid HorizontalOptions="FillAndExpand"
-                                  Margin="5">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="*" />
-                                </Grid.ColumnDefinitions>
+                <StackLayout.Margin>
+                    <OnPlatform x:TypeArguments="Thickness">
+                        <On Platform="iOS">15,50,15,0</On>
+                        <On Platform="Android">15,20,15,0</On>
+                    </OnPlatform>
+                </StackLayout.Margin>
 
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="40" />
-                                </Grid.RowDefinitions>
+                <Frame BackgroundColor="#fcfcfc"
+                       Margin="5"
+                       Padding="8"
+                       Visual="Material"
+                       CornerRadius="25">
 
-                                <Label x:Name="ColoredButtonFirst"
-                                       BackgroundColor="Transparent"
-                                       Grid.Column="0"
-                                       TextColor="Black"
-                                       Text="16"
-                                       FontSize="28">
-                                    <Label.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="LoadSchedule"
-                                                              CommandParameter="0" />
-                                    </Label.GestureRecognizers>
-                                </Label>
+                    <Grid HorizontalOptions="Fill"
+                          HeightRequest="50"
+                          Margin="5">
+                        <Label x:Name="ColoredButtonFirst"
+                               BackgroundColor="Transparent"
+                               Grid.Column="0"
+                               TextColor="#27D"
+                               VerticalTextAlignment="Center"
+                               Text="16"
+                               FontSize="Large">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="LoadSchedule"
+                                                      CommandParameter="0" />
+                            </Label.GestureRecognizers>
+                        </Label>
 
-                                <Label BackgroundColor="Transparent"
-                                       Grid.Column="1"
-                                       TextColor="Black"
-                                       Text="17"
-                                       FontSize="18">
-                                    <Label.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="LoadSchedule"
-                                                              CommandParameter="1" />
-                                    </Label.GestureRecognizers>
-                                </Label>
+                        <Label BackgroundColor="Transparent"
+                               Grid.Column="1"
+                               Text="17"
+                               VerticalTextAlignment="Center"
+                               FontSize="Large">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="LoadSchedule"
+                                                      CommandParameter="1" />
+                            </Label.GestureRecognizers>
+                        </Label>
 
-                                <Label BackgroundColor="Transparent"
-                                       Grid.Column="2"
-                                       TextColor="Black"
-                                       Text="18"
-                                       FontSize="18">
-                                    <Label.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="LoadSchedule"
-                                                              CommandParameter="2" />
-                                    </Label.GestureRecognizers>
-                                </Label>
+                        <Label BackgroundColor="Transparent"
+                               Grid.Column="2"
+                               Text="18"
+                               VerticalTextAlignment="Center"
+                               FontSize="Large">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="LoadSchedule"
+                                                      CommandParameter="2" />
+                            </Label.GestureRecognizers>
+                        </Label>
 
-                                <Label BackgroundColor="Transparent"
-                                       Grid.Column="3"
-                                       TextColor="Black"
-                                       Text="19"
-                                       FontSize="18">
-                                    <Label.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="LoadSchedule"
-                                                              CommandParameter="3" />
-                                    </Label.GestureRecognizers>
-                                </Label>
+                        <Label BackgroundColor="Transparent"
+                               Grid.Column="3"
+                               Text="19"
+                               VerticalTextAlignment="Center"
+                               FontSize="Large">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="LoadSchedule"
+                                                      CommandParameter="3" />
+                            </Label.GestureRecognizers>
+                        </Label>
 
-                                <Label BackgroundColor="Transparent"
-                                       Grid.Column="4"
-                                       TextColor="Black"
-                                       Text="20"
-                                       FontSize="18">
-                                    <Label.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="LoadSchedule"
-                                                              CommandParameter="4" />
-                                    </Label.GestureRecognizers>
-                                </Label>
+                        <Label BackgroundColor="Transparent"
+                               Grid.Column="4"
+                               Text="20"
+                               VerticalTextAlignment="Center"
+                               FontSize="Large">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="LoadSchedule"
+                                                      CommandParameter="4" />
+                            </Label.GestureRecognizers>
+                        </Label>
 
-                                <Label BackgroundColor="Transparent"
-                                       Grid.Column="5"
-                                       TextColor="Black"
-                                       Text="21"
-                                       FontSize="18">
-                                    <Label.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="LoadSchedule"
-                                                              CommandParameter="5" />
-                                    </Label.GestureRecognizers>
-                                </Label>
+                        <Label BackgroundColor="Transparent"
+                               Grid.Column="5"
+                               Text="21"
+                               VerticalTextAlignment="Center"
+                               FontSize="Large">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="LoadSchedule"
+                                                      CommandParameter="5" />
+                            </Label.GestureRecognizers>
+                        </Label>
 
-                                <Label BackgroundColor="Transparent"
-                                       Grid.Column="6"
-                                       TextColor="Black"
-                                       Text="22"
-                                       FontSize="18">
-                                    <Label.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="LoadSchedule"
-                                                              CommandParameter="6" />
-                                    </Label.GestureRecognizers>
-                                </Label>
-                            </Grid>
-
-                            <Label HorizontalOptions="Center"
-                                   x:Name="statusText" />
-
-                            <ListView SelectionMode="None"
-                                      SeparatorColor="Transparent"
-                                      HasUnevenRows="true"
-                                      BackgroundColor="Transparent"
-                                      x:Name="listView"
-                                      ItemTapped="Handle_ItemTapped"
-                                      ItemsSource="{Binding Events}">
-
-                                <ListView.ItemTemplate>
-                                    <DataTemplate>
-                                        <ViewCell>
-                                            <Frame BackgroundColor="Transparent"
-                                                   HasShadow="false"
-                                                   Margin="5"
-                                                   Padding="15">
-                                                <Grid>
-                                                    <Grid.ColumnDefinitions>
-                                                        <ColumnDefinition Width="*" />
-                                                        <ColumnDefinition Width=".5*" />
-                                                        <ColumnDefinition Width=".5*" />
-                                                        <ColumnDefinition Width=".3*" />
-                                                    </Grid.ColumnDefinitions>
-
-                                                    <Label Grid.Column="0"
-                                                           HorizontalOptions="Start"
-                                                           Text="{Binding name}"
-                                                           FontSize="Body" />
-                                                    <Label Grid.Column="1"
-                                                           HorizontalOptions="Center"
-                                                           Text="{Binding dept}"
-                                                           FontSize="Caption" />
-                                                    <Label Grid.Column="2"
-                                                           HorizontalOptions="Center"
-                                                           Text="{Binding time_string}"
-                                                           FontSize="Caption" />
-                                                    <Label Grid.Column="3"
-                                                           HorizontalOptions="End"
-                                                           FontFamily="{StaticResource MaterialFontFamily}"
-                                                           FontSize="Large"
-                                                           Text="{Binding statusIcon}" />
-                                                </Grid>
-                                            </Frame>
-                                        </ViewCell>
-                                    </DataTemplate>
-                                </ListView.ItemTemplate>
-                            </ListView>
-                        </StackLayout>
-                    </ScrollView>
+                        <Label BackgroundColor="Transparent"
+                               Grid.Column="6"
+                               Text="22"
+                               VerticalTextAlignment="Center"
+                               FontSize="Large">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="LoadSchedule"
+                                                      CommandParameter="6" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Grid>
                 </Frame>
+
+                <Label HorizontalOptions="Center"
+                       x:Name="statusText" />
+
+                <ListView SelectionMode="None"
+                          SeparatorColor="Transparent"
+                          HasUnevenRows="true"
+                          BackgroundColor="Transparent"
+                          x:Name="listView"
+                          ItemTapped="Handle_ItemTapped"
+                          VerticalOptions="FillAndExpand"
+                          Margin="10,10,10,0"
+                          ItemsSource="{Binding Events}">
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width=".7*" />
+                                        <ColumnDefinition Width=".3*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0"
+                                           HorizontalOptions="Start"
+                                           VerticalTextAlignment="Center"
+                                           Text="{Binding name}"
+                                           Margin="15,15,0,15"
+                                           FontSize="Large" />
+                                    <Label Grid.Column="1"
+                                           HorizontalOptions="Center"
+                                           VerticalTextAlignment="Center"
+                                           Text="{Binding time_string}"
+                                           Margin="0,15,0,15"
+                                           FontSize="Medium" />
+                                    <Label Grid.Column="2"
+                                           HorizontalOptions="End"
+                                           VerticalTextAlignment="Center"
+                                           Margin="0,15,15,15"
+                                           FontFamily="{StaticResource MaterialFontFamily}"
+                                           FontSize="Title"
+                                           Text="{Binding statusIcon}" />
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
             </StackLayout>
 
             <Frame IsVisible="false"
@@ -179,7 +167,7 @@
                    Padding="0"
                    Margin="5"
                    CornerRadius="2"
-                   AbsoluteLayout.LayoutBounds="0,50,1,1">
+                   AbsoluteLayout.LayoutBounds="0,30,1,1">
                 <StackLayout HorizontalOptions="FillAndExpand"
                              VerticalOptions="FillAndExpand">
 

@@ -76,6 +76,18 @@ namespace pulse
 
         async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
         {
+            if ((Preferences.Get("State", "Delhi") != "Delhi") && !Preferences.Get("DelCard", false))
+            {
+                bool x = await DisplayAlert("Purchase Delcard", @"You need a delcard for subscribing", "Yes", "No");
+                if (x)
+                {
+                    await Navigation.PopModalAsync();
+                    await Shell.Current.GoToAsync("account");
+                }
+
+                return;
+            }
+
             Event _event = e.Item as Event;
 
             Venue = _event.venue;

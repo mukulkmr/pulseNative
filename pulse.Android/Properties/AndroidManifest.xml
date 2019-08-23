@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="80" android:versionName="2.1" package="com.aiimssu.pulse">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="105" android:versionName="2.75" package="com.aiimssu.pulse">
 	<uses-sdk android:minSdkVersion="23" android:targetSdkVersion="28" />
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<application android:label="Pulse" android:hardwareAccelerated="true" android:icon="@drawable/icon">
-		<meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/notifications_active" />
+		<meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/notifications" />
 		<meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/notification" />
 	</application>
 </manifest>

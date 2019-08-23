@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="80" android:versionName="2.1" package="com.aiimssu.pulse">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="105" android:versionName="2.75" package="com.aiimssu.pulse">
   <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="28" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <application android:label="Pulse" android:hardwareAccelerated="true" android:icon="@drawable/icon" android:name="android.support.multidex.MultiDexApplication" android:allowBackup="true">
-    <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/notifications_active" />
+    <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/notifications" />
     <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/notification" />
     <activity android:icon="@mipmap/icon" android:label="Pulse" android:screenOrientation="portrait" android:theme="@style/MainTheme.Splash" android:name="md5000982224b2ad7f4c1f5a5bde51957fd.MainActivity">
       <intent-filter>
@@ -25,7 +25,7 @@
         <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
       </intent-filter>
     </service>
-    <receiver android:enabled="true" android:label="Local Notifications Plugin Broadcast Receiver" android:name="md51251ca0436b286678a1cd2c1ca81248e.ScheduledAlarmHandler" />
+    <receiver android:enabled="true" android:label="Toasts Broadcast Receiver" android:name="md53ffbd632ae255fbd20dd51d770591bc9.AlarmHandler" />
     <service android:name="md5dcb6eccdc824e0677ffae8ccdde42930.KeepAliveService" />
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Battery Broadcast Receiver" android:name="md5d630c3d3bfb5f5558520331566132d97.BatteryBroadcastReceiver" />
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Energy Saver Broadcast Receiver" android:name="md5d630c3d3bfb5f5558520331566132d97.EnergySaverBroadcastReceiver" />

@@ -69,7 +69,6 @@
 /Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Debug/pulse.iOS.csproj.CopyComplete
 /Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Debug/pulse.iOS.exe
 /Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Debug/pulse.iOS.pdb
-/Users/mukulkumar/Projects/pulse/pulse.iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.PancakeView.dll
 /Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.4-12.2/ibtool/_BundleResourceWithLogicalName.items
 /Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.4-12.2/actool/_PartialAppManifest.items
 /Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.4-12.2/actool/_BundleResourceWithLogicalName.items

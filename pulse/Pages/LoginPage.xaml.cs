@@ -8,7 +8,6 @@ using Xamarin.Forms;
 using Xamarin.Essentials;
 using System.Runtime.Serialization;
 using System.Net.Mail;
-using Xamarin.Forms.Xaml;
 
 namespace pulse
 {
@@ -22,11 +21,17 @@ namespace pulse
         [DataMember]
         public string college { get; set; }
         [DataMember]
+        public string state { get; set; }
+        [DataMember]
         public string number { get; set; }
         [DataMember]
         public string email { get; set; }
         [DataMember]
         public int medical_student { get; set; }
+        [DataMember]
+        public int activated { get; set; }
+
+
         [DataMember]
         public bool delcard { get; set; }
         [DataMember]
@@ -53,7 +58,7 @@ namespace pulse
             States.Add("Andhra Pradesh"); // 1
             States.Add("Assam"); // 2
             States.Add("Bihar"); // 3
-            States.Add("Chandigarh"); // 4
+            States.Add("Chhattisgarh"); // 4
             States.Add("Dadra and Nagar Haveli"); //5
             States.Add("Delhi"); // 6
             States.Add("Goa"); // 7
@@ -77,8 +82,8 @@ namespace pulse
             States.Add("Uttarakhand"); // 25
             States.Add("Uttar Pradesh"); // 26
 
-            Colleges.Add(0, new string[] { "Not MCI registered College", "Andaman & Nicobar Islands Institute of Medical Sciences, Port Blair" });
-            Colleges.Add(1, new string[]{   "Not MCI registered College",
+            Colleges.Add(0, new string[] { "Others", "Andaman & Nicobar Islands Institute of Medical Sciences, Port Blair" });
+            Colleges.Add(1, new string[]{   "Others",
                                             "ACSR Government Medical College Nellore",
                                             "All India Institute of Medical Sciences, Mangalagiri, Vijayawada",
                                             "Alluri Sitaram Raju Academy of Medical Sciences, Eluru",
@@ -110,13 +115,13 @@ namespace pulse
                                             "SVIMS - Sri Padmavathi Medical College for Women, Alipiri Road, Tirupati",
                                             "S V Medical College, Tirupati",
                                             "Viswabharathi Medical College, Kurnool"});
-            Colleges.Add(2, new string[] {   "Not MCI registered College", "Assam Medial College, Dibrugarh",
+            Colleges.Add(2, new string[] {   "Others", "Assam Medial College, Dibrugarh",
                                                     "Fakhruddin Ali Ahmed Medical College, Barpeta, Assam",
                                                     "Gauhati Medical College, Guwahati",
                                                     "Jorhat Medical College & Hospital , Jorhat",
                                                     "Silchar Medical College, Silchar",
                                                     "Tezpur Medical College & Hospital, Tezpur"});
-            Colleges.Add(3, new string[] { "Not MCI registered College",   "All India Institute of Medical Sciences, Patna",
+            Colleges.Add(3, new string[] { "Others",   "All India Institute of Medical Sciences, Patna",
                                                     "Anugrah Narayan Magadh Medical College, Gaya",
                                                     "Darbhanga Medical College, Lehriasarai",
                                                     "Government Medical College, Bettiah",
@@ -131,7 +136,7 @@ namespace pulse
                                                     "Patna Medical College, Patna",
                                                     "Shri Krishna Medical College, Muzzafarpur",
                                                     "Vardhman Institute of Medical Sciences, Pawapuri, Nalanda"});
-            Colleges.Add(4, new string[] { "Not MCI registered College",  "All India Institute of Medical Sciences, Raipur",
+            Colleges.Add(4, new string[] { "Others",  "All India Institute of Medical Sciences, Raipur",
                                                         "Chandulal Chandrakar Memorial Medical College, Durg",
                                                         "Chhattisgarh Institute of Medical Sciences, Bilaspur",
                                                         "Government Medical College, Ambikapur (Surguja), Chhattisgarh",
@@ -141,8 +146,8 @@ namespace pulse
                                                         "Pt. J N M Medical College, Raipur",
                                                         "Raipur Institute of Medical Sciences (RIMS), Raipur",
                                                         "Shri Shankaracharya Institute of Medical Sciences, Bhilai"});
-            Colleges.Add(5, new string[] { "Not MCI registered College", "Shri Vinoba Bhave Institute of Medical Sciences, (Govt. Medical College) Silvassa, U.T" });
-            Colleges.Add(6, new string[] {  "Not MCI registered College","All India Institute of Medical Sciences, New Delhi",
+            Colleges.Add(5, new string[] { "Others", "Shri Vinoba Bhave Institute of Medical Sciences, (Govt. Medical College) Silvassa, U.T" });
+            Colleges.Add(6, new string[] {  "Others","All India Institute of Medical Sciences, New Delhi",
                                             "Army College of Medical Sciences, New Delhi",
                                             "Dr. Baba Saheb Ambedkar Medical College, Rohini, Delhi",
                                             "Hamdard Institute of Medical Sciences & Research, New Delhi",
@@ -151,8 +156,8 @@ namespace pulse
                                             "North Delhi Muncipal Corporation Medical College, Delhi",
                                             "University College of Medical Sciences & GTB Hospital, New Delhi",
                                             "Vardhman Mahavir Medical College & Safdarjung Hospital, Delhi"});
-            Colleges.Add(7, new string[] { "Not MCI registered College", "Goa Medical College, Panaji" });
-            Colleges.Add(8, new string[] {"Not MCI registered College",  "Ahmedabad Municipal Coporation Medical Education Trust Medical College, Ahmedabad",
+            Colleges.Add(7, new string[] { "Others", "Goa Medical College, Panaji" });
+            Colleges.Add(8, new string[] {"Others",  "Ahmedabad Municipal Coporation Medical Education Trust Medical College, Ahmedabad",
                                             "Banas Medical College and Research Institute, Palanpur, Gujarat",
                                             "B J Medical College, Ahmedabad",
                                             "CU Shah Medical College, Surendra Nagar",
@@ -181,7 +186,7 @@ namespace pulse
                                             "Smt. N.H.L.Municipal Medical College, Ahmedabad",
                                             "Surat Municipal Institute of Medical Education & Research, Surat",
                                             "Zydus Medical College & Hospital, Dahod" });
-            Colleges.Add(9, new string[] {  "Not MCI registered College","Adesh Medical College and Hospital, Shahabad, Kurukshetra, Haryana",
+            Colleges.Add(9, new string[] {  "Others","Adesh Medical College and Hospital, Shahabad, Kurukshetra, Haryana",
                                             "Al Falah School of Medical Sciences & Research Centre, Faridabad",
                                             "BPS Government Medical College for Women, Sonepat",
                                             "Employees State Insurance Corporation Medical College, Faridabad",
@@ -193,14 +198,14 @@ namespace pulse
                                             "Pt. B D Sharma Postgraduate Institute of Medical Sciences, Rohtak (Haryana)",
                                             "Shaheed Hasan Khan Mewati Government Medical College, Nalhar",
                                             "World College of Medical Sciences & Researc, Jhajjar, Haryana"});
-            Colleges.Add(10, new string[] { "Not MCI registered College","Dr. Radhakrishnan Government Medical College, Hamirpur, H.P",
+            Colleges.Add(10, new string[] { "Others","Dr. Radhakrishnan Government Medical College, Hamirpur, H.P",
                                             "Dr. Rajendar Prasad Government Medical College, Tanda, H.P",
                                             "Government Medical College, Nahan, Sirmour H.P.",
                                             "Indira Gandhi Medical College, Shimla",
                                             "Maharishi Markandeshwar Medical College & Hospital, Solan",
                                             "Pt. Jawahar Lal Nehru Government Medical College, Chamba",
                                             "Shri Lal Bahadur Shastri Government Medical College, Mandi, HP"});
-            Colleges.Add(11, new string[] { "Not MCI registered College","Acharya Shri Chander College of Medical Sciences, Jammu",
+            Colleges.Add(11, new string[] { "Others","Acharya Shri Chander College of Medical Sciences, Jammu",
                                             "Government Medical College, Anantnag",
                                             "Government Medical College & Associated Hospital, Rajouri, J&K",
                                             "Government Medical College, Baramulla",
@@ -208,10 +213,10 @@ namespace pulse
                                             "Government Medical College, Kathua",
                                             "Government Medical College, Srinagar",
                                             "Sher-I-Kashmir Instt. Of Medical Sciences, Srinagar"});
-            Colleges.Add(12, new string[] { "Not MCI registered College","M G M Medical College, Jamshedpur",
+            Colleges.Add(12, new string[] { "Others","M G M Medical College, Jamshedpur",
                                             "Patliputra Medical College, Dhanbad",
                                             "Rajendra Institute of Medical Sciences, Ranchi"});
-            Colleges.Add(13, new string[] { "Not MCI registered College","Adichunchanagiri Institute of Medical Sciences Bellur",
+            Colleges.Add(13, new string[] { "Others","Adichunchanagiri Institute of Medical Sciences Bellur",
                                             "A J Institute of Medical Sciences & Research Centre, Mangalore",
                                             "Akash Institute of Medical Sciences & Research Centre, Devanhalli, Bangalore, Karnataka",
                                             "Al-Ameen Medical College,Bijapur",
@@ -270,7 +275,7 @@ namespace pulse
                                             "Vijaynagar Institute of Medical Sciences, Bellary",
                                             "Vydehi Institute Of Medical Sciences & Research Centre, Bangalore",
                                             "Yenepoya Medical College, Mangalore" });
-            Colleges.Add(14, new string[] {"Not MCI registered College", "Academy of Medical Sceiences,Pariyaram, Kannur",
+            Colleges.Add(14, new string[] {"Others", "Academy of Medical Sceiences,Pariyaram, Kannur",
                                             "Al-Azhar Medical College and Super Speciality Hospital, Thodupuzha",
                                             "Amala Institute of Medical Sciences, Thrissur",
                                             "Amrita School of Medicine, Elamkara, Kochi",
@@ -304,7 +309,7 @@ namespace pulse
                                             "S.R. Medical College & Research Centre, Akathumjuri, Vennicode, Varkala, Thiruvananthapuram",
                                             "T D Medical College, Alleppey (Allappuzha)",
                                             "Travancore Medical College, Kollam"});
-            Colleges.Add(15, new string[] {"Not MCI registered College","All India Institute of Medical Sciences, Bhopal",
+            Colleges.Add(15, new string[] {"Others","All India Institute of Medical Sciences, Bhopal",
 "Amaltas Institute of Medical Sciences, Dewas",
 "Bundelkhand Medical College, Sagar",
 "Chirayu Medical College and Hospital, Bairagarh,Bhopal",
@@ -327,7 +332,7 @@ namespace pulse
 "Shyam Shah Medical College, Rewa",
 "Sri Aurobindo Medical College and Post Graduate Institute , Indore",
 "Sukh Sagar Medical College and Hospital, Jabalpur" });
-            Colleges.Add(16, new string[] { "Not MCI registered College","ACPM Medical College, Dhule",
+            Colleges.Add(16, new string[] { "Others","ACPM Medical College, Dhule",
 "All India Institute of Medical Sciences, Nagpur",
 "Armed Forces Medical College, Pune",
 "Ashwini Rural Medical College, Hospital & Research Centre, Solapur",
@@ -384,7 +389,7 @@ namespace pulse
 "Regional Institute of Medical Sciences, Imphal",
 "North Eastern Indira Gandhi Regional Instt. of Health and Medical Sciences, Shillong",
 "Mizoram Institute of Medical Education and Research, Mizoram"});
-            Colleges.Add(17, new string[] { "Not MCI registered College","All India Institute of Medical Sciences, Bhubaneswar",
+            Colleges.Add(17, new string[] { "Others","All India Institute of Medical Sciences, Bhubaneswar",
                                             "Government Medical College & Hospital (Renamed as Bhima Bhoi Medical College & Hospital), Balangir",
                                             "Government Medical College & Hospital (Renamed as Fakir Mohan Medical College & Hospital), Balasore",
                                             "Hi-Tech Medical College & Hospital, Bhubaneswar",
@@ -396,7 +401,7 @@ namespace pulse
                                             "Saheed Laxman Nayak Medical College & Hospital, Koraput",
                                             "SCB Medical College, Cuttack",
                                             "Veer Surendra Sai Institute of Medical Sciences and Research, Burla" });
-            Colleges.Add(18, new string[] { "Not MCI registered College",
+            Colleges.Add(18, new string[] { "Others",
                                             "Aarupadai Veedu Medical College, Pondicherry",
                                             "Indira Gandhi Medical College & Research Institute, Puducherry",
                                             "Jawaharlal Institute of Postgraduate Medical Education & Research, Puducherry",
@@ -406,7 +411,7 @@ namespace pulse
                                             "Sri Manakula Vinayagar Medical College & Hospital, Pondicherry",
                                             "Sri Venkateswaraa Medical College, Hospital & Research Centre, Pondicherry",
                                             "Vinayaka Missions Medical College, Karaikal, Pondicherry" });
-            Colleges.Add(19, new string[] { "Not MCI registered College",
+            Colleges.Add(19, new string[] { "Others",
                                             "Adesh Institute of Medical Sciences & Research, Bhatinda",
                                             "Christian Medical College, Ludhiana",
                                             "Dayanand Medical College & Hospital, Ludhiana",
@@ -415,7 +420,7 @@ namespace pulse
                                             "Guru Govind Singh Medical College, Faridkot",
                                             "Punjab Institute of Medical Sciences, Jalandhar",
                                             "Sri Guru Ram Das Institute of Medical Sciences and Research, Sri Amritsar" });
-            Colleges.Add(20, new string[] {"Not MCI registered College",
+            Colleges.Add(20, new string[] {"Others",
                                             "All India Institute of Medical Sciences, Jodhpur",
                                             "American International Institute of Medical Sciences, Bedwas",
                                             "Ananta Institute of Medical Sciences & Research Centre, Rajsamand",
@@ -439,8 +444,8 @@ namespace pulse
                                             "RUHS College of Medical Sciences, Jaipur",
                                             "Sardar Patel Medical College, Bikaner",
                                             "SMS Medical College, Jaipur"});
-            Colleges.Add(21, new string[] { "Not MCI registered College", "Sikkim Manipal Institute of Medical Sciences, Gangtok" });
-            Colleges.Add(22, new string[] { "Not MCI registered College",
+            Colleges.Add(21, new string[] { "Others", "Sikkim Manipal Institute of Medical Sciences, Gangtok" });
+            Colleges.Add(22, new string[] { "Others",
                                             "ACS Medical College and Hospital, Chennai",
                                             "Annapoorna Medical College & Hospital, Salem",
                                             "Chengalpattu Medical College, Chengalpattu",
@@ -490,7 +495,7 @@ namespace pulse
                                             "Trichy SRM Medical College Hospital & Research Centre, Trichy",
                                             "Velammal Medical College Hospital and Research Institute, Madurai",
                                             "Vinayaka Missions Kirupananda Variyar Medical College, Salem"});
-            Colleges.Add(23, new string[] { "Not MCI registered College",
+            Colleges.Add(23, new string[] { "Others",
                                             "Apollo Institute of Medical Sciences and Research, Hyderabad",
                                             "Ayaan Institute of Medical Sciences, Teaching Hospital & Research Centre, Kanaka Mamidi, R.R. Dist",
                                             "Bhaskar Medical College, Yenkapally",
@@ -523,17 +528,17 @@ namespace pulse
                                             "Shadan Institute of Medical Sciences,Research Centre and Teaching Hospital, Peerancheru",
                                             "Surabhi Institute of Medical Sciences, Siddipet, Telangana",
                                             "S V S Medical College, Mehboobnagar"});
-            Colleges.Add(24, new string[] { "Not MCI registered College",
+            Colleges.Add(24, new string[] { "Others",
                                             "Agartala Government Medical College,Agartala",
                                             "Tripura Medical College and Dr. B R A M Teaching Hospital, Agartala"});
-            Colleges.Add(25, new string[] { "Not MCI registered College",
+            Colleges.Add(25, new string[] { "Others",
                                             "All India Institute of Medical Sciences, Rishikesh",
                                             "Doon Medical College, Dehradun, Uttarakhand",
                                             "Government Medical College (Prev.Uttarakhand Forest Hospital Trust Med.Col.), Haldwani",
                                             "Himalayan Institute of Medical Sciences, Dehradun",
                                             "Shri Guru Ram Rai Institute of Medical & Health Sciences, Dehradun",
                                             "Veer Chandra Singh Garhwali Govt. Medical Sc. & Research Instt, Srinagar, Pauri Garhwal"});
-            Colleges.Add(26, new string[] { "Not MCI registered College",
+            Colleges.Add(26, new string[] { "Others",
                                             "BRD Medical College, Gorakhpur",
                                             "Career Instt. Of Medical Sciences & Hospital, Lucknow",
                                             "Dr. Ram Manohar Lohia Institute of Medical Sciences,Lucknow",
@@ -625,16 +630,16 @@ namespace pulse
         }
 
         void Handle_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        {in
             CollegePicker.ItemsSource = Colleges[StatesPicker.SelectedIndex];
         }
 
-        void SendMail(string id, string name, string college)
+        void SendMailAsync(string id, string name, string college)
         {
             MailMessage mail = new MailMessage();
-            SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+            SmtpClient smtpClient = new SmtpClient("smtp.gmail.com");
 
-            mail.From = new MailAddress("aiims2019su@gmail.com");
+            mail.From = new MailAddress("pulse19.aiims@gmail.com");
             mail.To.Add(userEmail.Text);
             mail.Subject = "Welcome to pulse 2019";
             mail.IsBodyHtml = true;
@@ -651,25 +656,30 @@ namespace pulse
                     $"Whether registering for some of the events / programs or becoming a delegate at Pulse, this app will cater all your needs as we are going paper - less in terms of registering and handling data.Why not use your smart phones as an access key to anywhere and everywhere.All suggestions and Feedbacks welcome.Hope you have a great time ahead.</ p >" +
                     $"Stay connected to us on " +
                     $"<ul>" +
-                    $"<li><a href='https://www.facebook.com/PulseAnnualFestAiims/app/190322544333196/'>Facebook</a></li>" +
+                    $"<li><a href='https://drive.google.com/file/d/1dGJnQKgi_bfFDVSA0jYHr8SZgzPvl9Kc/view'>Payment Procedings</a> </li>" +
+                    $"<li><a href='https://drive.google.com/file/d/1dGJnQKgi_bfFDVSA0jYHr8SZgzPvl9Kc/view'>Pulse 2019 Brochure</a> </li>" +
+                    $"<li><a href='https://drive.google.com/open?id=1NHtR-JquO3cC-7zq7I5DrEWERUU-8VC-'>Our Team</a> </li>" +
+                    $"<li><a href='https://www.facebook.com/PulseAnnualFestAiims/'>Facebook</a></li>" +
                     $"<li><a href='https://www.instagram.com/pulse.aiims/'>Instagram</a></li>" +
-                    $"<li><a href='https://www.youtube.com/channel/UCDIHSW7GgqLS05X2xG8wRow-'>Youtube</a></li>" +
+                    $"<li><a href='https://www.youtube.com/channel/UCDIHSW7GgqLS05X2xG8wRow'>Youtube</a></li>" +
                     $"<li><a href='https://aiimspulse.website'>Website</a> </li>" +
                     $"</ul>" +
                     $"<b>Note- We advice you to keep a print out of this registration slip for contingencies.</b>" +
                     $"<b>In case you lose the access to your phone(your phone being dead/broken/stolen-by-aliens), you will be able to take part in the events by using your QR code and valid ID card.</b>";
 
 
-            SmtpServer.Port = 587;
-            SmtpServer.Credentials = new System.Net.NetworkCredential("aiims2019su", "zoXxis-rexjy6-daqkez");
-            SmtpServer.EnableSsl = true;
+            smtpClient.Port = 587;
+            smtpClient.Credentials = new System.Net.NetworkCredential("pulse19.aiims", "keftaq-cifkyk-guMbo1");
+            smtpClient.EnableSsl = true;
 
-            SmtpServer.Send(mail);
+            smtpClient.Send(mail);
+
+            DisplayAlert("Alert", "Check your inbox for your  unique id for login", "OK");
         }
 
         void ResendMail(object sender, EventArgs e)
         {
-            SendMail(_id, _name, _college);
+            SendMailAsync(_id, _name, _college);
         }
 
         async void Login(object sender, EventArgs e)
@@ -686,7 +696,6 @@ namespace pulse
 
             if (!MedicalStudent.IsToggled)
                 college = CollegePickerOther.Text;
-
 
             if (userName.Text == null || userEmail.Text == null || college == null)
             {
@@ -710,6 +719,7 @@ namespace pulse
                     new KeyValuePair<string, string>("name", userName.Text),
                     new KeyValuePair<string, string>("email", userEmail.Text),
                     new KeyValuePair<string, string>("college", (string)college),
+                    new KeyValuePair<string, string>("state", (string)StatesPicker.SelectedItem),
                     new KeyValuePair<string, string>("number", userMobile.Text),
                     new KeyValuePair<string, string>("medical_student", MedicalStudent.IsToggled.ToString())
                 });
@@ -717,14 +727,12 @@ namespace pulse
                 string uri = "https://app.aiimspulse.website/scripts/adduser.php";
                 await httpClient.PostAsync(uri, formContent);
 
-                SendMail(id, userName.Text, (string)college);
+                SendMailAsync(id, userName.Text, (string)college);
 
                 _id = id;
                 _name = userName.Text;
                 _college = (string)college;
 
-
-                await DisplayAlert("Alert", "Check your inbox for your  unique id for login", "OK");
                 ResendMailButton.IsVisible = true;
             }
             catch (Exception ex)
@@ -732,7 +740,7 @@ namespace pulse
                 Registerbutton.IsVisible = true;
 
                 Console.WriteLine(ex);
-                await DisplayAlert("Alert", "Something went wrong", "OK");
+                await DisplayAlert("Alert", "Something went wrong :: " + ex.Message, "OK");
             }
 
             Loading.IsVisible = false;
@@ -776,12 +784,21 @@ namespace pulse
                     Preferences.Set("Id", user.guid);
                     Preferences.Set("MedicalStudent", user.medical_student == 1);
                     Preferences.Set("DelCard", user.delcard);
+                    Preferences.Set("State", user.state);
                     Preferences.Set("Accomodations", user.accomodations);
-
                     Preferences.Set("College", user.college);
 
                     AppCenter.SetUserId(user.guid);
-                    await Navigation.PushModalAsync(new TutorialsPage());
+                    Application.Current.MainPage = new MainPage();
+
+                    bool x = await Application.Current.MainPage.DisplayAlert("Purchase Delcard", @"Delegate card or Del-card is your ID, your proof of being a delegate. It allows access to:
+                                                                                                    1. All the Pro Shows i.e. P-Wave show and the Star Nights.
+                                                                                                    2. All the individual and group events of various departments (not including some of the Gymkhana events)
+                                                                                                    3. Accommodation services. Non delegates can not avail the accommodation services offered by AIIMS Delhi.", "Yes", "No");
+                    if (x)
+                    {
+                        await Shell.Current.GoToAsync("account");
+                    }
                 }
                 else
                 {
@@ -807,7 +824,7 @@ namespace pulse
 
         void StudentToggle(object sender, ToggledEventArgs e)
         {
-            StatesPicker.IsVisible = e.Value;
+            //StatesPicker.IsVisible = e.Value;
             CollegePicker.IsVisible = e.Value;
 
             CollegePickerOther.IsVisible = !e.Value;
@@ -832,7 +849,7 @@ namespace pulse
 
         void MobileInfo(object sender, EventArgs e)
         {
-            DisplayAlert("Why do we need this?", "We are collecting your phone number so that event organisers may coordinate with you. We ensure your privacy.", "OK");
+            DisplayAlert("Why do we need this?", "We are collecting your phone number so that event organisers may coordinate with you. We shall ensure your privacy.", "OK");
         }
 
         void SwitchTab(object sender, EventArgs e)

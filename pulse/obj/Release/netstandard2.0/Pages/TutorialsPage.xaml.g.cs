@@ -14,27 +14,27 @@ namespace pulse {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages/TutorialsPage.xaml")]
-    public partial class TutorialsPage : global::Xamarin.Forms.ContentPage {
+    public partial class TutorialsPage : global::Xamarin.Forms.Shell {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Frame SlideShow;
+        private global::Xamarin.Forms.BackButtonBehavior BackButton1;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Frame Slide1;
+        private global::Xamarin.Forms.ListView listView;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Frame Slide2;
+        private global::Xamarin.Forms.BackButtonBehavior BackButton2;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Frame Slide3;
+        private global::Xamarin.Forms.ListView faq;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(TutorialsPage));
-            SlideShow = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Frame>(this, "SlideShow");
-            Slide1 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Frame>(this, "Slide1");
-            Slide2 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Frame>(this, "Slide2");
-            Slide3 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Frame>(this, "Slide3");
+            BackButton1 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.BackButtonBehavior>(this, "BackButton1");
+            listView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "listView");
+            BackButton2 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.BackButtonBehavior>(this, "BackButton2");
+            faq = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "faq");
         }
     }
 }

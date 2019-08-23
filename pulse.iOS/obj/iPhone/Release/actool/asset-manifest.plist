@@ -32,13 +32,12 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./notifications_active.imageset/(null)[2d][outline_notifications_active_black_24dp-1.png]</string>
-				<string>./notifications_active.imageset/(null)[2d][outline_notifications_active_black_24dp.png]</string>
+				<string>./tutorial_1.imageset/(null)[2d][2.png]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhone/Release/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
-			<string>The image set "notifications_active" has 2 unassigned children.</string>
+			<string>The image set "tutorial_1" has an unassigned child.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>
@@ -58,13 +57,40 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./notifications_active.imageset/(null)[2d][outline_notifications_active_black_24dp-1.png]</string>
-				<string>./notifications_active.imageset/(null)[2d][outline_notifications_active_black_24dp.png]</string>
+				<string>./notifications.imageset/(null)[2d][notifications.png]</string>
+				<string>./notifications.imageset/(null)[2d][outline_notifications_active_black_24dp-1.png]</string>
+				<string>./notifications.imageset/(null)[2d][outline_notifications_active_black_24dp.png]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhone/Release/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
-			<string>The image set "notifications_active" has 2 unassigned children.</string>
+			<string>The image set "notifications" has 3 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./tutorial_1.imageset/(null)[2d][2.png]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhone/Release/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "tutorial_1" has an unassigned child.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./notifications.imageset/(null)[2d][notifications.png]</string>
+				<string>./notifications.imageset/(null)[2d][outline_notifications_active_black_24dp-1.png]</string>
+				<string>./notifications.imageset/(null)[2d][outline_notifications_active_black_24dp.png]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/mukulkumar/Projects/pulse/pulse.iOS/obj/iPhone/Release/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "notifications" has 3 unassigned children.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>

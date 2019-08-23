@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage NavigationPage.HasNavigationBar="False"
-             BackgroundColor="#888"
+             BackgroundColor="#bbb"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="pulse.AccountsPage"
              Title="Pulse"
-             Shell.BackgroundColor="#888"
+             Shell.BackgroundColor="#bbb"
              ios:Page.UseSafeArea="true">
     <ContentPage.Content>
         <AbsoluteLayout Margin="0,10,0,10">
@@ -20,14 +20,13 @@
                                  HorizontalOptions="Center"
                                  Clicked="OnReloadButtonClicked" />
                     <Frame x:Name="QRCard"
-                           BackgroundColor="#999"
                            Style="{StaticResource Card}">
                         <StackLayout>
                             <Label HorizontalTextAlignment="Center"
                                    x:Name="QRStatus"
                                    Margin="5"
                                    FontAttributes="Bold"
-                                   FontSize="Large"
+                                   FontSize="Body"
                                    Text="Loading..." />
                             <Image  Source="qr"
                                     HeightRequest="150">
@@ -38,69 +37,62 @@
                             <Label HorizontalTextAlignment="Center"
                                    Text="Click to reveal QR code"
                                    TextColor="#666"
-                                   FontSize="Small" />
+                                   FontSize="Caption" />
                         </StackLayout>
                     </Frame>
 
-                    <Frame IsVisible="{Binding DelCardRequest}"
-                           x:Name="DelCardRequestCard"
+                    <Frame x:Name="DelCardRequestCard"
+                           IsVisible="{Binding DelCardRequest}"
                            Style="{StaticResource Card}">
-                        <StackLayout>
-                            <Button HorizontalOptions="CenterAndExpand"
-                                    Clicked="OnPurchaseDelCard"
-                                    Text="Purchase Delcard" />
-                        </StackLayout>
+                        <Button HorizontalOptions="Fill"
+                                Clicked="OnPurchaseDelCard"
+                                Text="Purchase Delcard" />
+                    </Frame>
+
+
+                    <Frame x:Name="AmbassadorRequestCard" IsVisible="{Binding AmbassadorRequest}"
+                           Style="{StaticResource Card}">
+                        <Button HorizontalOptions="Fill"
+                                Clicked="JoinAmbassador"
+                                Text="Join Ambassador Program" />
                     </Frame>
 
                     <Frame Style="{StaticResource Card}">
                         <StackLayout>
                             <Label HorizontalTextAlignment="Center"
                                    Text="{Binding Name}"
-                                   FontSize="Large"
+                                   FontSize="Body"
                                    Margin="5"
                                    FontAttributes="Bold" />
                             <Label HorizontalTextAlignment="Center"
+                                   FontSize="Medium"
                                    Text="{Binding Email}" />
                             <Label HorizontalTextAlignment="Center"
+                                   FontSize="Medium"
                                    Text="{Binding College}" />
 
-                            <Grid Margin="5">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width=".2*" />
-                                </Grid.ColumnDefinitions>
+                            <Label Margin="10"
+                                   HorizontalTextAlignment="Center"
+                                   FontSize="Small"
+                                   Text="{Binding Id}" />
 
-                                <Label Grid.Column="0"
-                                       VerticalOptions="Center"
-                                       FontSize="Small"
-                                       Text="{Binding Id}"
-                                       HorizontalTextAlignment="End" />
-
-                                <Label Grid.Column="1"
-                                       TextColor="#666"
-                                       FontFamily="{StaticResource MaterialFontFamily}"
-                                       FontSize="28"
-                                       HorizontalTextAlignment="Center"
-                                       Text="filter_none">
-                                    <Label.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="CopyGuid" />
-                                    </Label.GestureRecognizers>
-                                </Label>
-
-                            </Grid>
+                            <Button Text="Copy Guid"
+                                    HorizontalOptions="Center"
+                                    Clicked="CopyGuid" />
 
                         </StackLayout>
                     </Frame>
 
-                    <Frame IsVisible="{Binding AccomodationsRequest}"
-                           Style="{StaticResource Card}">
+                    <Frame x:Name="AccomodationsCard" IsVisible="False" Style="{StaticResource Card}">
                         <Button Text="Avail Accommodations Services"
+                                HorizontalOptions="FillAndExpand"
                                 Clicked="OpenAccomodations" />
                     </Frame>
 
                     <Frame Style="{StaticResource Card}">
                         <Button Text="Logout"
                                 BackgroundColor="Red"
+                                HorizontalOptions="Fill"
                                 Clicked="LogOut" />
                     </Frame>
                 </StackLayout>
@@ -112,14 +104,14 @@
                    Padding="0"
                    Margin="5"
                    CornerRadius="2"
-                   BackgroundColor="#666"
-                   AbsoluteLayout.LayoutBounds="0,50,1,1">
+                   AbsoluteLayout.LayoutBounds="0,20,1,1">
                 <StackLayout HorizontalOptions="FillAndExpand"
                              VerticalOptions="FillAndExpand">
 
                     <ImageButton HorizontalOptions="Center"
                                  BackgroundColor="Transparent"
                                  Source="close"
+                                 WidthRequest="30"
                                  Clicked="ClosePopUp" />
                     <Image x:Name="QRImageLarge"
                            HorizontalOptions="FillAndExpand"

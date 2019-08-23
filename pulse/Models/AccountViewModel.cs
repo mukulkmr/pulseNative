@@ -48,7 +48,7 @@ namespace pulse.ViewModels
         [DataMember]
         public bool DelCardRequest { get; private set; } = false;
         [DataMember]
-        public bool AccomodationsRequest { get; private set; } = true;
+        public bool AmbassadorRequest { get; private set; } = false;
         [DataMember]
         public string College { get; private set; }
 
@@ -61,14 +61,15 @@ namespace pulse.ViewModels
             College = Preferences.Get("College", "All India Institute of Medical Sciences, New Delhi");
 
             DelCardRequest = !Preferences.Get("DelCard", false);
+            AmbassadorRequest = !Preferences.Get("Ambassador", false);
+
 
             if (!Preferences.Get("MedicalStudent", true)
                 || College == "Not MCI registered College")
+            {
                 DelCardRequest = false;
-
-            if (!Preferences.Get("MedicalStudent", true)
-                || College == "Not MCI registered College")
-                AccomodationsRequest = false;
+                AmbassadorRequest = false;
+            }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

@@ -3,7 +3,9 @@ using Android.Content;
 using Android.Content.PM;
 using Android.OS;
 using Lottie.Forms.Droid;
+using Plugin.Toasts;
 using Xamarin.Essentials;
+using Xamarin.Forms;
 
 namespace pulse.Droid
 {
@@ -22,6 +24,10 @@ namespace pulse.Droid
 
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             global::Xamarin.Forms.FormsMaterial.Init(this, savedInstanceState);
+
+
+            DependencyService.Register<ToastNotification>(); // Register your dependency
+            ToastNotification.Init(this);
 
             AnimationViewRenderer.Init();
 

@@ -14,8 +14,6 @@
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/Mono.Android.dll
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/mscorlib.dll
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/Newtonsoft.Json.dll
-/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/Plugin.LocalNotifications.Abstractions.dll
-/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/Plugin.LocalNotifications.dll
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/pulse.dll
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/System.Core.dll
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/System.dll
@@ -23,6 +21,8 @@
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/System.Numerics.Vectors.dll
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/System.Xml.dll
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/System.Xml.Linq.dll
+/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/Toasts.Forms.Plugin.Abstractions.dll
+/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/Toasts.Forms.Plugin.Droid.dll
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/Xamarin.Android.Arch.Core.Common.dll
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/Xamarin.Android.Arch.Core.Runtime.dll
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/Xamarin.Android.Arch.Lifecycle.Common.dll
@@ -83,5 +83,7 @@
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/System.IO.Compression.FileSystem.dll
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/System.ComponentModel.Composition.dll
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/System.Web.Services.dll
-/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/System.Runtime.dll
 /Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/Mono.Security.dll
+/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/System.Runtime.dll
+/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/System.Threading.Tasks.dll
+/Users/mukulkumar/Projects/pulse/pulse.Android/obj/Release/android/assets/System.Collections.Concurrent.dll

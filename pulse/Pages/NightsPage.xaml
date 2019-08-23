@@ -30,7 +30,6 @@
                    Text="you're all caught up. hit reload to refresh" />
             <ListView BackgroundColor="Transparent"
                       SelectionMode="None"
-                      HeightRequest="600"
                       VerticalOptions="FillAndExpand"
                       SeparatorColor="Transparent"
                       HasUnevenRows="true"
@@ -40,19 +39,20 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Frame Style="{StaticResource Card}"
-                                   HorizontalOptions="Fill"
-                                   BackgroundColor="#fcfcfc">
-                                <StackLayout HorizontalOptions="FillAndExpand">
+                            <Frame Style="{StaticResource Card}" BackgroundColor="#f0f0f0"
+                                   HorizontalOptions="Fill">
+                                <StackLayout Margin="10"
+                                    HorizontalOptions="FillAndExpand">
                                     <Image Source="{Binding image}"
-                                           HeightRequest="300"
+                                           HeightRequest="200"
                                            IsOpaque="True"
-                                           Aspect="AspectFit" />
+                                           Margin="0,0,0,10"
+                                           Aspect="AspectFill" />
                                     <Label Text="{Binding name}"
                                            TextColor="#666"
                                            FontAttributes="Bold"
                                            FontSize="Large" />
-                                    <Label Text="{Binding contact}"
+                                    <Label Text="A Delcard is required for this event"
                                            TextColor="#666" />
                                 </StackLayout>
                             </Frame>

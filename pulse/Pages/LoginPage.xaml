@@ -12,7 +12,8 @@
             <StackLayout>
                 <Label Grid.Column="0"
                        Text="Pulse 2019"
-                       VerticalOptions="Center"
+                       Margin="0,20,0,0"
+                       VerticalTextAlignment="Center"
                        HorizontalTextAlignment="Center"
                        FontSize="48">
                     <Label.GestureRecognizers>
@@ -174,7 +175,7 @@
                                     <Label Grid.Column="0"
                                            VerticalOptions="Center"
                                            HorizontalOptions="Start"
-                                           Text="Medical Student" />
+                                           Text="MCI Registered College ?" />
                                     <Switch x:Name="MedicalStudent"
                                             IsToggled="true"
                                             Grid.Column="1"

@@ -1,6 +1,8 @@
 ﻿using Foundation;
 using Lottie.Forms.iOS.Renderers;
+using Plugin.Toasts;
 using UIKit;
+using Xamarin.Forms;
 
 namespace pulse.iOS
 {
@@ -21,6 +23,9 @@ namespace pulse.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             global::Xamarin.Forms.FormsMaterial.Init();
+
+            DependencyService.Register<ToastNotification>(); // Register your dependency
+            ToastNotification.Init();
 
             LoadApplication(new App());
 

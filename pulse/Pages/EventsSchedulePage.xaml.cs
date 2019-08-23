@@ -5,7 +5,6 @@ using Newtonsoft.Json;
 using Xamarin.Forms;
 using System.Collections.ObjectModel;
 using Xamarin.Essentials;
-using Xamarin.Forms.Xaml;
 
 namespace pulse
 {
@@ -29,7 +28,7 @@ namespace pulse
             Events = new ObservableCollection<Event>();
             ActiveLabel = ColoredButtonFirst;
 
-            Task.Run(UpdateAsync);
+            MainThread.BeginInvokeOnMainThread(async () => await UpdateAsync());
             BindingContext = this;
         }
 
@@ -72,7 +71,7 @@ namespace pulse
                         Loading.IsVisible = false;
                     }
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
                     statusText.IsVisible = true;
@@ -86,21 +85,32 @@ namespace pulse
             }
         }
 
-        void LoadSchedule(object sender, EventArgs e)
+        async void LoadSchedule(object sender, EventArgs e)
         {
-            ActiveLabel.FontSize = 18;
+            ActiveLabel.TextColor = Color.FromHex("#666");
             ActiveLabel = sender as Label;
-            ActiveLabel.FontSize = 28;
+            ActiveLabel.TextColor = Color.FromHex("#27D");
 
             string day = (string)(e as TappedEventArgs).Parameter;
 
             Day = day;
 
-            _ = UpdateAsync();
+            await UpdateAsync();
         }
 
         async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
         {
+            if ((Preferences.Get("State", "Delhi") != "Delhi" ) && !Preferences.Get("DelCard", false))
+            {
+                bool x = await DisplayAlert("Purchase Delcard", @"You need a delcard for subscribing", "Yes", "No");
+                if (x)
+                {
+                    await Shell.Current.GoToAsync("account");
+                }
+
+                return;
+            }
+
             Event _event = e.Item as Event;
 
             Venue = _event.venue;

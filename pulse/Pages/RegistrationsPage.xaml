@@ -11,6 +11,7 @@
 
     <ContentPage.Content>
         <AbsoluteLayout Margin="0,10,0,10">
+
             <StackLayout AbsoluteLayout.LayoutFlags="All"
                          Margin="0,30,0,0"
                          AbsoluteLayout.LayoutBounds="0,0,1,1">
@@ -64,19 +65,19 @@
                                                     <ColumnDefinition Width="*" />
                                                 </Grid.ColumnDefinitions>
 
-                                                <Label Margin="20,10,0,0"
+                                                <Label Margin="20,20,0,0"
                                                        Text="{Binding id}"
                                                        FontFamily="{StaticResource ChunkFive}"
-                                                       FontSize="Title"
+                                                       FontSize="Subtitle"
                                                        Grid.Column="0"
                                                        Grid.Row="0"
                                                        TextColor="{Binding summary_color}"
                                                        HorizontalOptions="Start" />
 
-                                                <Label Margin="0,5,0,0"
+                                                <Label Margin="0,20,0,0"
                                                        Text="{Binding dept}"
                                                        FontFamily="{StaticResource ChunkFive}"
-                                                       FontSize="Title"
+                                                       FontSize="Subtitle"
                                                        Grid.Column="1"
                                                        Grid.Row="0"
                                                        TextColor="{Binding summary_color}"
@@ -85,7 +86,7 @@
                                                 <Label Margin="20,0,0,0"
                                                        Text="{Binding ticket_details}"
                                                        FontFamily="{StaticResource ChunkFive}"
-                                                       FontSize="Body"
+                                                       FontSize="Caption"
                                                        Grid.Column="0"
                                                        Grid.Row="1"
                                                        TextColor="{Binding summary_color}"
@@ -94,7 +95,7 @@
                                                 <Label Margin="0,0,20,0"
                                                        Text="{Binding name}"
                                                        FontFamily="{StaticResource ChunkFive}"
-                                                       FontSize="Body"
+                                                       FontSize="Caption"
                                                        Grid.Column="1"
                                                        Grid.Row="1"
                                                        TextColor="{Binding summary_color}"
@@ -127,16 +128,25 @@
 
             </StackLayout>
 
+            
+            <ImageButton Source="refresh"
+                         x:Name="ReloadButton"
+                         BackgroundColor="Transparent"
+                         AbsoluteLayout.LayoutFlags="PositionProportional"
+                         AbsoluteLayout.LayoutBounds="0.5,0,30,30"
+                         Clicked="OnReloadButtonClicked" />
+
             <Frame IsVisible="false"
                    x:Name="DetailsCard"
                    AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional"
                    Padding="0"
                    Margin="5"
                    CornerRadius="2"
-                   AbsoluteLayout.LayoutBounds="0,50,1,1">
+                   AbsoluteLayout.LayoutBounds="0,0,1,1">
                 <StackLayout HorizontalOptions="FillAndExpand"
                              VerticalOptions="FillAndExpand">
                     <ImageButton HorizontalOptions="Center"
+                                 WidthRequest="30"
                                  BackgroundColor="Transparent"
                                  Source="close"
                                  Clicked="ClosePopUp" />
@@ -153,13 +163,6 @@
                                AbsoluteLayout.LayoutBounds=".5,.5,50,50"
                                IsRunning="true"
                                IsVisible="false" />
-
-            <ImageButton Source="refresh"
-                         x:Name="ReloadButton"
-                         BackgroundColor="Transparent"
-                         AbsoluteLayout.LayoutFlags="PositionProportional"
-                         AbsoluteLayout.LayoutBounds="0.5,0,30,30"
-                         Clicked="OnReloadButtonClicked" />
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

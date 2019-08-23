@@ -30,7 +30,7 @@
             <ShellContent Title="Department">
                 <local:EventsPage />
             </ShellContent>
-            <ShellContent Title="Schdedule">
+            <ShellContent Title="Schedule">
                 <local:EventsSchedulePage />
             </ShellContent>
             <ShellContent Title="Star shows">
@@ -46,7 +46,7 @@
         </Tab>
 
         <Tab Title="Notifications"
-             Icon="notifications_active">
+             Icon="notifications">
             <ShellContent>
                 <local:NotificationsPage />
             </ShellContent>
@@ -63,6 +63,10 @@
     <MenuItem Text="About Pulse"
               IconImageSource="info"
               Clicked="PushPulsePage" />
+
+    <MenuItem Text="About Pulse"
+              IconImageSource="support"
+              Clicked="PushHelpPage" />
 
     <MenuItem Text="About Us"
               IconImageSource="pawprint"

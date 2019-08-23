@@ -4,11 +4,9 @@ using System.Collections.ObjectModel;
 using System.Net.Http;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
-using System.Windows.Input;
 using Newtonsoft.Json;
 using Xamarin.Essentials;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace pulse
 {
@@ -27,14 +25,12 @@ namespace pulse
         public string name { get; set; }
         [DataMember]
         public int cost { get; set; }
-        [DataMember]
-        public int frontcr { get; set; }
+
         [DataMember]
         public string approvedby { get; set; }
         [DataMember]
         public string transaction_date { get; set; }
-        [DataMember]
-        public string team { get; set; }
+
         [DataMember]
         public string transaction_id { get; set; }
         [DataMember]
@@ -87,7 +83,7 @@ namespace pulse
         }
 
         [DataMember]
-        public bool remove_visible { get => (status == "PND" || delcard_paid) && eventid != "DEL"; }
+        public bool remove_visible { get => (status == "PND" || delcard_paid); }
 
         [DataMember]
         public string ticket_details
@@ -187,7 +183,7 @@ namespace pulse
 
         async void PrintReceipt(object sender, EventArgs e)
         {
-            await Browser.OpenAsync($"https://app.aiimspulse.website/views/admin/bill.php?guid={id}&name=${Preferences.Get("Name", "Cannot fetch name")}&college={Preferences.Get("College", "All India Institute of Medical Sciences, New Delhi")}", BrowserLaunchMode.SystemPreferred);
+            await Browser.OpenAsync($"https://app.aiimspulse.website/views/admin/bill.php?guid={id}&name={Preferences.Get("Name", "Cannot fetch name")}&college={Preferences.Get("College", "All India Institute of Medical Sciences, New Delhi")}", BrowserLaunchMode.SystemPreferred);
         }
 
         async void TicketTapped(object sender, EventArgs e)

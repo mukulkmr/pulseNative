@@ -3,6 +3,7 @@
 --executable=pulse.iOS
  --debug
  --sgen-conc
+ --nolink
 --sdkroot=/Applications/Xcode.app/Contents/Developer
 --sdk=12.2
 --targetver=10.0
@@ -215,7 +216,6 @@
 -r=/Users/mukulkumar/.nuget/packages/xamarin.forms/4.1.0.618606/lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll
 -r=/Users/mukulkumar/.nuget/packages/xamarin.forms/4.1.0.618606/lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
 -r=/Users/mukulkumar/.nuget/packages/xamarin.forms/4.1.0.618606/lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
--r=/Users/mukulkumar/.nuget/packages/xamarin.forms.pancakeview/1.1.1/lib/xamarinios10/Xamarin.Forms.PancakeView.dll
 -r=/Users/mukulkumar/.nuget/packages/xamarin.forms.visual.material/4.1.0.618606/lib/Xamarin.iOS10/Xamarin.Forms.Material.dll
 -r=/Users/mukulkumar/.nuget/packages/xamarin.ios.materialcomponents/72.2.0.1/lib/Xamarin.iOS/MaterialComponents.dll
 -r=/Users/mukulkumar/Projects/pulse/pulse/bin/Debug/netstandard2.0/pulse.dll

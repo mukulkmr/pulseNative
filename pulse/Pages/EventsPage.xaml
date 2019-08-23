@@ -13,6 +13,7 @@
                   SeparatorColor="Transparent"
                   HasUnevenRows="true"
                   BackgroundColor="Transparent"
+                  x:Name="listview"
                   ItemsSource="{Binding Depts}">
             <ListView.Margin>
                 <OnPlatform x:TypeArguments="Thickness">

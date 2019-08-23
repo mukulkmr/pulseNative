@@ -10,10 +10,10 @@ Microsoft.AppCenter
 Microsoft.AppCenter.Push.Android.Bindings
 Microsoft.AppCenter.Push
 Newtonsoft.Json
-Plugin.LocalNotifications.Abstractions
-Plugin.LocalNotifications
 pulse
 System.Runtime
+Toasts.Forms.Plugin.Abstractions
+Toasts.Forms.Plugin.Droid
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Core.Runtime
 Xamarin.Android.Arch.Lifecycle.Common

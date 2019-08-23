@@ -8,13 +8,16 @@ using Newtonsoft.Json;
 using System.Reflection;
 using System;
 using System.Runtime.Serialization;
-using Xamarin.Forms.Xaml;
+using Plugin.Toasts;
 
 namespace pulse
 {
     [Serializable]
     public class WebStatus
     {
+        [DataMember]
+        public string name;
+
         [DataMember]
         public string status;
     }
@@ -57,21 +60,31 @@ namespace pulse
                         {
                             if (status[0].status == "CNF")
                             {
-                                QRStatus.Text = "Delcard Confirmed";
-                                Preferences.Set("DelCard", true);
+                                QRStatus.Text = $"{status[0].name} confirmed";
+
+                                AccomodationsCard.IsVisible = true;
                                 QRCard.BackgroundColor = Color.FromHex("#ffd4f0");
                             }
                             else if (status[0].status == "PND")
                             {
                                 QRStatus.Text = "Delcard Pending";
-                                Preferences.Set("DelCard", false);
+                                AccomodationsCard.IsVisible = false;
                                 QRCard.BackgroundColor = Color.FromHex("#fff");
                             }
+
+                            Preferences.Set("DelCard", true);
+                            DelCardRequestCard.IsVisible = false;
+                        }
+                        else
+                        {
+                            DelCardRequestCard.IsVisible = true;
+                            Preferences.Set("DelCard", false);
                         }
                     }
                 }
                 catch
                 {
+                    AccomodationsCard.IsVisible = false;
                     QRStatus.Text = "Delcard status error";
                     QRCard.BackgroundColor = Color.FromHex("#fff");
                 }
@@ -109,12 +122,10 @@ namespace pulse
 
                 string uri = "https://app.aiimspulse.website/scripts/register.php";
                 await httpClient.PostAsync(uri, formContent);
+                await DisplayAlert("Alert", "Proceed to payments tab", "OK");
                 await UpdateAsync();
 
                 Preferences.Set("DelCard", true);
-
-                QRCard.IsVisible = true;
-                await DisplayAlert("Alert", "Proceed to payments tab", "OK");
             }
         }
 
@@ -137,10 +148,14 @@ namespace pulse
         async void CopyGuid(object sender, EventArgs e)
         {
             await Clipboard.SetTextAsync(id);
+        }
 
-            Label label = sender as Label;
-            await label.ScaleTo(1.8,100, Easing.BounceIn);
-            await label.ScaleTo(1, 100, Easing.BounceOut);
+
+        async void JoinAmbassador(object sender, EventArgs e)
+        {
+            Preferences.Set("Ambassador", false);
+            AmbassadorRequestCard.IsVisible = false;
+            await Browser.OpenAsync("https://docs.google.com/forms/d/e/1FAIpQLScmwHB_iyjM7LYluBk_EvMWQBJtMWgaB9xm4O3GJywVyujZDA/viewform?usp=sf_link");
         }
 
         async void QRCodePopUp(object sender, EventArgs e)

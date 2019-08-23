@@ -1,22 +1,26 @@
 ﻿<Properties StartupConfiguration="{D592D262-83E9-4942-A1ED-D176AC32BDE5}|Default">
   <MonoDevelop.Ide.ItemProperties.pulse.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F14C94B5-B3D0-4ADA-BD4C-FE9B4072489B" />
   <MonoDevelop.Ide.ItemProperties.pulse HideGettingStarted="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="pulse/Pages/RegistrationsPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="pulse/Pages/LoginPage.xaml.cs">
     <Files>
-      <File FileName="pulse/Pages/EventsPage.xaml" Line="33" Column="52" />
-      <File FileName="pulse/Pages/AccountsPage.xaml" Line="34" Column="11" />
-      <File FileName="pulse/App.xaml" Line="33" Column="52" />
+      <File FileName="pulse/Pages/TutorialsPage.xaml" Line="69" Column="47" />
+      <File FileName="pulse/Pages/LoginPage.xaml" Line="179" Column="1" />
+      <File FileName="pulse/Pages/LoginPage.xaml.cs" Line="30" Column="31" />
+      <File FileName="pulse/Pages/EventsSchedulePage.xaml" Line="147" Column="53" />
       <File FileName="pulse/Pages/NotificationsPage.xaml" Line="38" Column="1" />
-      <File FileName="pulse/Pages/EventsSchedulePage.xaml" Line="163" Column="75" />
-      <File FileName="pulse/Pages/RegistrationsPage.xaml" Line="1" Column="1" />
+      <File FileName="pulse/Models/Event.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="pulse" expanded="True">
             <Node name="pulse" expanded="True">
+              <Node name="Models" expanded="True" />
               <Node name="Pages" expanded="True">
-                <Node name="RegistrationsPage.xaml" selected="True" />
+                <Node name="LoginPage.xaml" expanded="True">
+                  <Node name="LoginPage.xaml.cs" selected="True" />
+                </Node>
+                <Node name="TutorialsPage.xaml" expanded="True" />
               </Node>
             </Node>
           </Node>

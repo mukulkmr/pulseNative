@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "a48f411d431914acb48d1a10914db3cdd0a07d2d"
+    "signature": "0e6fd8fbdda7bab0c1a2ba383a0dddb6d8ddc47f"
   },
   "compilationOptions": {},
   "targets": {
@@ -16,7 +16,7 @@
           "Microsoft.AppCenter.Push": "2.1.1",
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "12.0.2",
-          "Xam.Plugins.Notifier": "3.0.1",
+          "Toasts.Forms.Plugin": "3.3.2",
           "Xamarin.Essentials": "1.2.0",
           "Xamarin.Forms": "4.1.0.581479"
         },
@@ -98,13 +98,9 @@
           }
         }
       },
-      "Xam.Plugins.Notifier/3.0.1": {
+      "Toasts.Forms.Plugin/3.3.2": {
         "runtime": {
-          "lib/netstandard1.0/Plugin.LocalNotifications.Abstractions.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          },
-          "lib/netstandard1.0/Plugin.LocalNotifications.dll": {
+          "lib/netstandard1.1/Toasts.Forms.Plugin.Abstractions.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -208,12 +204,12 @@
       "path": "system.numerics.vectors/4.5.0",
       "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
     },
-    "Xam.Plugins.Notifier/3.0.1": {
+    "Toasts.Forms.Plugin/3.3.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-QH/+zX9w/hMg1AOAj+a62cIJIqd4tSOSBnGGprHIhfJWHG+v+P6VvIqZSTr9z1dZDd2JfhA7Iz2KGBr4MJ2lOQ==",
-      "path": "xam.plugins.notifier/3.0.1",
-      "hashPath": "xam.plugins.notifier.3.0.1.nupkg.sha512"
+      "sha512": "sha512-Cg+uc+GPV2rfGLYl/gyW7oo5YPPZ0/jG1Bj6KRihecoOy0Ju4HfKith9pd8CIXerS9DH7x8vqV5jrPaKXEGenA==",
+      "path": "toasts.forms.plugin/3.3.2",
+      "hashPath": "toasts.forms.plugin.3.3.2.nupkg.sha512"
     },
     "Xamarin.Essentials/1.2.0": {
       "type": "package",

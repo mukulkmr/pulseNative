@@ -24,6 +24,7 @@
 @class AppDelegate;
 @class OpenTK_Platform_iPhoneOS_CADisplayLinkTimeSource;
 @class OpenTK_Platform_iPhoneOS_iPhoneOSGameView;
+@class UNUserNotificationCenterDelegate;
 @class GLKViewDelegate;
 @class CLLocationManagerDelegate;
 @class WKNavigationDelegate;
@@ -65,11 +66,12 @@
 @class UIKit_UINavigationBar_UINavigationBarAppearance;
 @class UIKit_UISearchBar__UISearchBarDelegate;
 @class UIKit_UISearchController___Xamarin_UISearchResultsUpdating;
+@class UIKit_UIScrollView_UIScrollViewAppearance;
+@class UIKit_UITableView_UITableViewAppearance;
 @class UIKit_UITextField__UITextFieldDelegate;
 @class UIKit_UITextField_UITextFieldAppearance;
 @class UIKit_UIScrollView__UIScrollViewDelegate;
 @class UIKit_UITextView__UITextViewDelegate;
-@class UIKit_UIScrollView_UIScrollViewAppearance;
 @class UIKit_UITextView_UITextViewAppearance;
 @class UIKit_UIWindow_UIWindowAppearance;
 @class UIKit_UICollectionReusableView_UICollectionReusableViewAppearance;
@@ -522,6 +524,7 @@
 @class MDCThumbTrack;
 @class MaterialComponents_ThumbView_ThumbViewAppearance;
 @class MDCThumbView;
+@class Plugin_Toasts_UNNotificationManager_UserNotificationCenterDelegate;
 @protocol MSPushDelegate;
 @class MSPushDelegate;
 @class Microsoft_AppCenter_Push_iOS_PushDelegate;
@@ -644,6 +647,11 @@
 	-(id) initWithFrame:(CGRect)p0;
 @end
 
+@interface UNUserNotificationCenterDelegate : NSObject<UNUserNotificationCenterDelegate> {
+}
+	-(id) init;
+@end
+
 @interface GLKViewDelegate : NSObject<GLKViewDelegate> {
 }
 	-(id) init;
@@ -733,6 +741,7 @@
 	-(id) retain;
 	-(int) xamarinGetGCHandle;
 	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(UIColor *) backgroundColor;
 	-(UIColor *) tintColor;
 	-(BOOL) conformsToProtocol:(void *)p0;
 @end
@@ -770,11 +779,15 @@
 	-(NSDictionary *) titleTextAttributes;
 @end
 
-@interface UIKit_UITextField_UITextFieldAppearance : UIKit_UIControl_UIControlAppearance {
+@interface UIKit_UIScrollView_UIScrollViewAppearance : UIKit_UIView_UIViewAppearance {
 }
 @end
 
-@interface UIKit_UIScrollView_UIScrollViewAppearance : UIKit_UIView_UIViewAppearance {
+@interface UIKit_UITableView_UITableViewAppearance : UIKit_UIScrollView_UIScrollViewAppearance {
+}
+@end
+
+@interface UIKit_UITextField_UITextFieldAppearance : UIKit_UIControl_UIControlAppearance {
 }
 @end
 

@@ -20,6 +20,8 @@ extern void *mono_aot_module_Xamarin_Forms_Platform_info;
 extern void *mono_aot_module_Xamarin_Forms_Platform_iOS_info;
 extern void *mono_aot_module_Xamarin_Forms_Material_info;
 extern void *mono_aot_module_MaterialComponents_info;
+extern void *mono_aot_module_Toasts_Forms_Plugin_iOS_info;
+extern void *mono_aot_module_Toasts_Forms_Plugin_Abstractions_info;
 extern void *mono_aot_module_pulse_info;
 extern void *mono_aot_module_Xamarin_Forms_Xaml_info;
 extern void *mono_aot_module_Microsoft_AppCenter_Push_info;
@@ -34,8 +36,6 @@ extern void *mono_aot_module_Microsoft_AppCenter_Crashes_iOS_Bindings_info;
 extern void *mono_aot_module_Microsoft_AppCenter_Analytics_info;
 extern void *mono_aot_module_Microsoft_AppCenter_Analytics_iOS_Bindings_info;
 extern void *mono_aot_module_Newtonsoft_Json_info;
-extern void *mono_aot_module_Plugin_LocalNotifications_info;
-extern void *mono_aot_module_Plugin_LocalNotifications_Abstractions_info;
 
 void xamarin_register_modules_impl ()
 {
@@ -59,6 +59,8 @@ void xamarin_register_modules_impl ()
 	mono_aot_register_module (mono_aot_module_Xamarin_Forms_Platform_iOS_info);
 	mono_aot_register_module (mono_aot_module_Xamarin_Forms_Material_info);
 	mono_aot_register_module (mono_aot_module_MaterialComponents_info);
+	mono_aot_register_module (mono_aot_module_Toasts_Forms_Plugin_iOS_info);
+	mono_aot_register_module (mono_aot_module_Toasts_Forms_Plugin_Abstractions_info);
 	mono_aot_register_module (mono_aot_module_pulse_info);
 	mono_aot_register_module (mono_aot_module_Xamarin_Forms_Xaml_info);
 	mono_aot_register_module (mono_aot_module_Microsoft_AppCenter_Push_info);
@@ -73,8 +75,6 @@ void xamarin_register_modules_impl ()
 	mono_aot_register_module (mono_aot_module_Microsoft_AppCenter_Analytics_info);
 	mono_aot_register_module (mono_aot_module_Microsoft_AppCenter_Analytics_iOS_Bindings_info);
 	mono_aot_register_module (mono_aot_module_Newtonsoft_Json_info);
-	mono_aot_register_module (mono_aot_module_Plugin_LocalNotifications_info);
-	mono_aot_register_module (mono_aot_module_Plugin_LocalNotifications_Abstractions_info);
 
 }
 

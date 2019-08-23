@@ -19,8 +19,6 @@ namespace pulse
         [DataMember]
         public string type { get; set; }
         [DataMember]
-        public int members { get; set; }
-        [DataMember]
         public int cost { get; set; }
         [DataMember]
         public string contact { get; set; }
